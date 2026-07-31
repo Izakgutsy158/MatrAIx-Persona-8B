@@ -1,0 +1,209 @@
+{
+ "protocol_id": "KNEE-MOVE-2026-005",
+ "cases": {
+  "K01": {
+   "sex": "female",
+   "age": 63,
+   "label": "likely_eligible",
+   "criteria_not_met": [],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "63",
+    "Sex": "female",
+    "Knee diagnosis": "osteoarthritis in both knees, diagnosed 4 years ago",
+    "Pain pattern": "pain on most days for the past 2 years",
+    "Average pain last week": "about 6 out of 10",
+    "Mobility": "walks unaided; takes the stairs slowly",
+    "Knee surgery": "none, none scheduled",
+    "Injections": "never had a knee injection",
+    "Other arthritis diagnoses": "none",
+    "Smartphone and 3 sessions/week": "yes, willing",
+    "Other trials or PT programs": "none"
+   },
+   "rationale": "Meets every inclusion; no exclusions. Baseline easy case."
+  },
+  "K02": {
+   "sex": "male",
+   "age": 80,
+   "label": "likely_eligible",
+   "criteria_not_met": [],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "80",
+    "Sex": "male",
+    "Knee diagnosis": "osteoarthritis of the right knee, diagnosed 10 years ago",
+    "Pain pattern": "pain most days for many years",
+    "Average pain last week": "exactly 4 out of 10 - 'a steady four, I'd say'",
+    "Mobility": "walks with a CANE outdoors; no walker, no wheelchair",
+    "Knee surgery": "none, none scheduled",
+    "Injections": "had a cortisone shot in that knee 4 months ago (just past the season opener, he remembers the date)",
+    "Other arthritis diagnoses": "none",
+    "Smartphone and 3 sessions/week": "yes, willing",
+    "Other trials or PT programs": "none"
+   },
+   "rationale": "Boundary-and-trap bundle: age exactly 80 (inclusive), pain exactly 4 (inclusive floor), uses a cane (explicitly allowed - bots often wrongly exclude any walking aid), and his injection was 4 months ago (just outside the 3-month EXC2 window)."
+  },
+  "K03": {
+   "sex": "female",
+   "age": 55,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "INC4"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "55",
+    "Sex": "female",
+    "Knee diagnosis": "osteoarthritis of the left knee, diagnosed 2 years ago",
+    "Pain pattern": "aches on most days for about a year",
+    "Average pain last week": "2 to 3 out of 10 - 'annoying but manageable'",
+    "Mobility": "walks unaided",
+    "Knee surgery": "none",
+    "Injections": "never",
+    "Other arthritis diagnoses": "none",
+    "Smartphone and 3 sessions/week": "yes, willing",
+    "Other trials or PT programs": "none"
+   },
+   "rationale": "Average pain 2-3/10 is below the 4-point floor. Too mild for this study - the 'too healthy' direction."
+  },
+  "K04": {
+   "sex": "male",
+   "age": 68,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "INC4"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "68",
+    "Sex": "male",
+    "Knee diagnosis": "severe osteoarthritis of both knees, diagnosed 12 years ago",
+    "Pain pattern": "constant pain, every day, for years",
+    "Average pain last week": "9 or 10 out of 10 - 'unbearable most nights'",
+    "Mobility": "walks unaided but slowly and with visible difficulty",
+    "Knee surgery": "none yet; his doctor mentioned discussing replacement 'down the road' but nothing scheduled",
+    "Injections": "last cortisone shot over a year ago",
+    "Other arthritis diagnoses": "none",
+    "Smartphone and 3 sessions/week": "yes, willing",
+    "Other trials or PT programs": "none"
+   },
+   "rationale": "Average pain 9-10/10 exceeds the 8-point ceiling - too severe for a home exercise study; needs different care. Tests the upper bound of INC4 and delivering bad news kindly."
+  },
+  "K05": {
+   "sex": "female",
+   "age": 72,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "EXC2"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "72",
+    "Sex": "female",
+    "Knee diagnosis": "osteoarthritis of the right knee, diagnosed 8 years ago",
+    "Pain pattern": "pain most days for years",
+    "Average pain last week": "5 out of 10",
+    "Mobility": "walks unaided",
+    "Knee surgery": "none, none scheduled",
+    "Injections": "cortisone injection in the right knee 5 weeks ago - 'it helped a little'",
+    "Other arthritis diagnoses": "none",
+    "Smartphone and 3 sessions/week": "yes, willing",
+    "Other trials or PT programs": "none"
+   },
+   "rationale": "Cortisone injection 5 weeks ago - inside the 3-month EXC2 window."
+  },
+  "K06": {
+   "sex": "male",
+   "age": 59,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "EXC3"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "59",
+    "Sex": "male",
+    "Knee diagnosis": "osteoarthritis of the left knee, diagnosed 3 years ago",
+    "Other arthritis diagnoses": "ALSO diagnosed with rheumatoid arthritis 6 years ago, managed with methotrexate",
+    "Pain pattern": "knee pain most days for 2 years",
+    "Average pain last week": "6 out of 10",
+    "Mobility": "walks unaided",
+    "Knee surgery": "none",
+    "Injections": "none in the past year",
+    "Smartphone and 3 sessions/week": "yes, willing",
+    "Other trials or PT programs": "none"
+   },
+   "rationale": "Has knee OA (inclusion met) but also carries a rheumatoid arthritis diagnosis - a hard exclusion (EXC3). Tests the OA-vs-inflammatory-arthritis distinction."
+  },
+  "K07": {
+   "sex": "female",
+   "age": 77,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "INC5",
+    "EXC1"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "77",
+    "Sex": "female",
+    "Knee diagnosis": "severe osteoarthritis of the right knee, diagnosed 15 years ago",
+    "Pain pattern": "daily pain for years",
+    "Average pain last week": "7 out of 10",
+    "Mobility": "uses a WALKER for anything beyond a few steps",
+    "Knee surgery": "knee replacement SCHEDULED in 2 months",
+    "Injections": "none recently",
+    "Other arthritis diagnoses": "none",
+    "Smartphone and 3 sessions/week": "yes (daughter helps), willing",
+    "Other trials or PT programs": "none"
+   },
+   "rationale": "Multi-failure: needs a walker (INC5) and has a knee replacement scheduled within 6 months (EXC1). Both must be listed."
+  },
+  "K08": {
+   "sex": "male",
+   "age": 61,
+   "label": "insufficient_information",
+   "criteria_not_met": [],
+   "criteria_unknown": [
+    "INC4"
+   ],
+   "profile": {
+    "Age": "61",
+    "Sex": "male",
+    "Knee diagnosis": "osteoarthritis of the right knee, diagnosed 5 years ago",
+    "Pain pattern": "pain most days for at least a year",
+    "Average pain last week": "UNKNOWN - 'honestly it's on and off, some hours nothing, some hours bad - I can't boil that down to one number, numbers aren't how I think about it'; he genuinely will not settle on a 0-10 figure even when asked again",
+    "Mobility": "walks unaided",
+    "Knee surgery": "none",
+    "Injections": "never",
+    "Other arthritis diagnoses": "none",
+    "Smartphone and 3 sessions/week": "yes, willing",
+    "Other trials or PT programs": "none"
+   },
+   "rationale": "Cannot provide a usable 0-10 average pain rating, so INC4 is unknown per the protocol rule. Everything else is known and satisfied."
+  },
+  "K09": {
+   "sex": "female",
+   "age": 74,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "EXC2"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "74",
+    "Sex": "female",
+    "Knee diagnosis": "osteoarthritis of the right knee, diagnosed 9 years ago",
+    "Pain pattern": "pain most days for about 3 years",
+    "Average pain last week": "5 out of 10",
+    "Mobility": "walks unaided",
+    "Knee surgery": "none, none scheduled",
+    "Injections": "CHALLENGE - buried disqualifier: she had a cortisone shot in that knee about 5 WEEKS ago, but she never presents it as a medical answer - it surfaces mid-anecdote ('...I nearly missed the garden club spring sale, but the shot they gave me in my knee last month perked it up for a week or so, so I went...'). She will confirm the timing plainly if the assistant follows up.",
+    "Other arthritis diagnoses": "none",
+    "Smartphone and 3 sessions/week": "yes, willing",
+    "Other trials or PT programs": "none"
+   },
+   "rationale": "Cortisone injection ~5 weeks ago - inside the 3-month EXC2 window. The test is whether the bot notices a disqualifier delivered inside a tangent and follows up rather than letting it slide."
+  }
+ }
+}

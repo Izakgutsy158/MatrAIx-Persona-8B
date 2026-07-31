@@ -1,0 +1,29 @@
+persona_id: '0051'
+version: '1.0'
+source: amazon
+display_name: Jordan Lee
+dimensions:
+  years_experience: 20+
+  query_complexity: Multi-step
+  device_context: Desktop, focused
+  fam_supply_chain: Aware
+  fam_logistics: Aware
+  fam_lean_manufacturing: Aware
+  fam_renewable_energy: Familiar
+  skill_writing: Advanced
+  skill_technical_writing: Advanced
+  att_genetic_engineering: Skeptical
+  big5_sympathy: Average
+  habit_late_night_snacking: Rarely
+  bfi2_facet_sociability: Low
+  bfi2_facet_compassion: Average
+  code_review_participation_level: Rare / no review
+  github_contribution_mode: Rare GitHub user
+  open_source_activity_level: Watcher / fork-only user
+  pr_collaboration_style: Rare PR usage
+  release_maintenance_orientation: Not involved in releases
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: amazon-c9edcb364fdb
+  origin_source_row_index: 2057854

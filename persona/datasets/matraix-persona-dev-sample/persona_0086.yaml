@@ -1,0 +1,103 @@
+persona_id: 0086
+version: '1.0'
+source: stackoverflow
+display_name: Jordan Lee
+dimensions:
+  age_bracket: 25-34
+  region: North America
+  domain: Software & AI
+  highest_education: Bachelor's
+  role_function: Engineering
+  years_experience: 11-20
+  life_stage: Early career
+  tech_savviness: Comfortable
+  risk_tolerance: Risk-averse
+  decision_style: Analytical
+  emotional_state: Skeptical
+  trust_level: Skeptical
+  fam_machine_learning: Aware
+  fam_operating_systems: Familiar
+  fam_cloud_infrastructure: Familiar
+  fam_devops: Familiar
+  skill_writing: Advanced
+  skill_system_design: Advanced
+  skill_technical_writing: Intermediate
+  tool_python: Regular
+  tool_notion: Regular
+  tool_jira: Regular
+  tool_jetbrains_ides: Regular
+  tool_linux_cli: Regular
+  tool_asana: Regular
+  tool_chatgpt: Regular
+  topic_productivity: Interested
+  topic_self_improvement: Interested
+  att_ai: Skeptical
+  att_open_source: Positive
+  ind_technology: Veteran
+  lstyle_device_ecosystem: Mixed
+  cog_learning_pace: Deliberate
+  trait_curiosity: Strong
+  trait_prudence: Strong
+  trait_self_regulation: Strong
+  trait_adaptability: Strong
+  val_security_stability: Moderate
+  val_achievement: Core value
+  val_community: Minor
+  val_independence: Important
+  val_recognition: Moderate
+  val_personal_growth: Moderate
+  pref_team_vs_solo: Team-leaning
+  pref_speed_vs_accuracy: Accuracy first
+  pref_stability_vs_change: Balanced
+  demo_employment_status: Full-time
+  demo_generation: Millennial
+  lifex_career_path_shape: Just starting
+  lifex_education_journey: Traditional track
+  lifex_formative_decade: 2000s
+  schwartz_value_security: Low
+  sdt_need_competence: High
+  mft_liberty_oppression: High
+  dospert_ethical_risk_tolerance: Very low
+  ai_task_code_generation: Plans partial AI use
+  ai_task_code_review: Does not plan AI use
+  ai_task_codebase_learning: Does not plan AI use
+  ai_task_data_generation_analytics: Currently partially AI-assisted
+  ai_task_debugging_fixing: Plans partial AI use
+  ai_task_deployment_monitoring: Does not plan AI use
+  ai_task_documentation: Plans partial AI use
+  ai_task_learning_concepts: Does not plan AI use
+  ai_task_project_planning: Does not plan AI use
+  ai_task_search_answers: Currently partially AI-assisted
+  ai_task_testing: Does not plan AI use
+  coding_agent_adoption_barrier: Accuracy / reliability concerns
+  coding_agent_failure_tolerance: Very low tolerance
+  coding_agent_security_expectation: Requires strict security review
+  coding_agent_usage_frequency: No plans
+  coding_agent_workflow_impact: No clear change
+  coding_ai_complexity_comfort: Avoids AI for complexity
+  coding_ai_job_threat_perception: Serious threat concern
+  coding_ai_output_trust: Distrusts until proven
+  coding_ai_sentiment: Somewhat unfavorable
+  coding_ai_usage_frequency: Monthly or infrequent
+  coding_tool_ai_capability_importance: Low
+  coding_tool_alternative_sensitivity: Moderate concern
+  coding_tool_api_completeness_importance: Critical
+  coding_tool_ethics_blocker: Major concern
+  coding_tool_obsolescence_blocker: Minor concern
+  coding_tool_open_source_importance: Moderate
+  coding_tool_reliability_latency_importance: High
+  coding_tool_security_privacy_blocker: Minor concern
+  dev_contribution_context: Employee work
+  dev_ic_manager_orientation: Individual contributor
+  dev_professional_status: Professional developer
+  dev_role_archetype: Other developer
+  dev_toolchain_complexity: Moderate multi-tool workflow
+  future_developer_skill_belief: Communication and collaboration
+  human_help_boundary_for_ai_coding: When trust is low
+  stackoverflow_participation_style: Does not participate
+  stackoverflow_usage_pattern: Weekly reference
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: stackoverflow-3a93f4f6fe5c
+  origin_source_row_index: 2204320

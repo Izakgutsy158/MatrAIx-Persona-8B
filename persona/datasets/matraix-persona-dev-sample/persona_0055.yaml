@@ -1,0 +1,55 @@
+persona_id: '0055'
+version: '1.0'
+source: amazon
+display_name: Ava Martinez
+dimensions:
+  age_bracket: 45-54
+  region: North America
+  gender_identity: Woman
+  domain_characteristics: Hobbyist
+  life_stage: Mid-life
+  major_life_events: Health journey
+  trust_level: Verifying
+  economic_motivation: Value-driven
+  fam_textiles: Familiar
+  skill_writing: Intermediate
+  skill_storytelling: Intermediate
+  skill_research: Intermediate
+  skill_critical_thinking: Intermediate
+  skill_cooking: Intermediate
+  skill_empathy: Advanced
+  topic_fitness: Interested
+  topic_spirituality: Neutral
+  topic_interior_design: Interested
+  att_online_reviews: Positive
+  sport_swimming: Play
+  lstyle_diet_type: Flexitarian
+  health_dietary_restriction: Medical
+  trait_curiosity: Moderate
+  trait_creativity: Moderate
+  trait_love_of_learning: Slight
+  trait_bravery: Moderate
+  trait_perseverance: Slight
+  trait_kindness: Slight
+  trait_forgiveness: Slight
+  trait_humility: Slight
+  trait_self_regulation: Moderate
+  trait_hope_optimism: Slight
+  trait_playfulness: Slight
+  trait_spirituality: Slight
+  trait_ambition: Slight
+  trait_loyalty: Slight
+  trait_adaptability: Moderate
+  val_family: Important
+  val_health: Important
+  val_creativity_self_expression: Important
+  demo_children_count: 2 children
+  demo_generation: Boomer
+  demo_parental_status: Parent of adults
+  lifex_adversity_level: Overcame major hardship
+  lifex_parenting_journey: Grown children
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: amazon-71592cf91fb6
+  origin_source_row_index: 2074140

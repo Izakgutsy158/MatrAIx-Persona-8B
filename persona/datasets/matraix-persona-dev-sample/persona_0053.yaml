@@ -1,0 +1,22 @@
+persona_id: '0053'
+version: '1.0'
+source: amazon
+display_name: Alex Rivera
+dimensions:
+  emotional_state: Calm
+  query_complexity: Simple factual
+  att_new_technology: Positive
+  att_online_reviews: Positive
+  bookg_mystery: Like
+  sport_golf: Play
+  cog_patience: Moderate
+  cog_open_mindedness: Moderate
+  cog_feedback_receptiveness: Moderate
+  cog_procrastination: Moderate
+  cog_question_asking: Rarely asks
+  cog_numeracy_comfort: Moderate
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: amazon-00547038e164
+  origin_source_row_index: 2063030

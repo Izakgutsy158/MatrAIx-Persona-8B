@@ -1,0 +1,24 @@
+persona_id: '0144'
+version: '1.0'
+source: gss
+display_name: Ethan Brooks
+dimensions:
+  age_bracket: 65-74
+  region: North America
+  gender_identity: Woman
+  socioeconomic_band: Lower-middle
+  highest_education: Bachelor's
+  political_lean: Center
+  att_traditional_gender_roles: Opposed
+  health_general_health: Fair
+  demo_marital_status: Divorced
+  demo_children_count: None
+  demo_employment_status: Full-time
+  demo_religion_affiliation: Christian
+  demo_citizenship_status: Citizen by birth
+  demo_ethnicity_broad: Black / African
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: gss-3eb66cbf4290
+  origin_source_row_index: 2285408

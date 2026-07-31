@@ -1,0 +1,100 @@
+persona_id: '0053'
+version: '1.0'
+source: wiki:Q349280
+dimensions:
+  region: East Asia
+  gender_identity: Man
+  socioeconomic_band: High income
+  primary_language: Japanese
+  domain: Public Sector
+  research_output: Occasional author
+  seniority: Retired
+  company_size: Public sector
+  role_function: Executive
+  years_experience: 6-10
+  life_stage: Retirement
+  cultural_background: Collectivist (East Asian)
+  dominant_trait: High neuroticism
+  risk_tolerance: Risk-seeking
+  skill_writing: Advanced
+  topic_poetry: Passionate
+  lang_japanese: Native
+  ind_government: Veteran
+  cult_japan: Native
+  bookg_poetry: Love
+  big5_imagination: High
+  big5_artistic_interest: High
+  big5_emotionality: High
+  big5_adventurousness: High
+  big5_dutifulness: Very low
+  big5_self_discipline: Very low
+  big5_cautiousness: Very low
+  big5_friendliness: Low
+  big5_gregariousness: Low
+  big5_assertiveness: High
+  big5_activity_level: High
+  big5_excitement_seeking: Very high
+  big5_morality: Very low
+  big5_altruism: Very low
+  big5_cooperation: Very low
+  big5_sympathy: Very low
+  big5_anger: Very high
+  big5_immoderation: Very high
+  big5_vulnerability: High
+  cog_patience: Low
+  cog_open_mindedness: Low
+  cog_assertiveness: Very high
+  cog_emotional_expressiveness: Very high
+  cog_conflict_approach: Confronting
+  cog_feedback_receptiveness: Low
+  cog_empathy_expression: Low
+  cog_politeness: Rude
+  health_mental_health: In crisis
+  acad_literature: Interested
+  acad_creative_writing: Interested
+  trait_curiosity: Slight
+  trait_creativity: Moderate
+  trait_open_mindedness: Absent
+  trait_capacity_for_love: Slight
+  trait_kindness: Absent
+  trait_social_intelligence: Absent
+  trait_leadership: Absent
+  trait_prudence: Absent
+  trait_self_regulation: Absent
+  trait_appreciation_of_beauty: Moderate
+  trait_playfulness: Slight
+  trait_empathy: Absent
+  trait_discipline: Absent
+  demo_marital_status: Married
+  demo_children_count: 3+ children
+  demo_employment_status: Retired
+  demo_religion_affiliation: Folk / traditional
+  demo_ethnicity_broad: East Asian
+  demo_birth_order: Eldest
+  demo_parental_status: Parent of adults
+  lifex_childhood_environment: Privileged
+  lifex_immigration_generation: Native multi-generational
+  lifex_parenting_journey: Grown children
+  lifex_health_journey: Mental health journey
+  lifex_loss_experience: Lost a parent
+  lifex_public_recognition: Famous
+  lifex_service_history: Public office
+  bfi2_domain_extraversion: Average
+  bfi2_domain_agreeableness: Very low
+  bfi2_domain_conscientiousness: Very low
+  bfi2_domain_negative_emotionality: Very high
+  bfi2_domain_open_mindedness: High
+  bfi2_facet_sociability: Low
+  bfi2_facet_assertiveness: High
+  bfi2_facet_energy_level: High
+  bfi2_facet_compassion: Very low
+  bfi2_facet_respectfulness: Very low
+  bfi2_facet_responsibility: Very low
+  bfi2_facet_emotional_volatility: Very high
+  bfi2_facet_aesthetic_sensitivity: High
+  bfi2_facet_creative_imagination: High
+  dospert_ethical_risk_tolerance: Very high
+  dospert_recreational_risk_tolerance: Very high
+  dospert_social_risk_tolerance: High
+  interpersonal_agency_dominance: Very high
+  interpersonal_communion_warmth: Very low

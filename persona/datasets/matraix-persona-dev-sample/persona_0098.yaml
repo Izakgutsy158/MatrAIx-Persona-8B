@@ -1,0 +1,227 @@
+persona_id: 0098
+version: '1.0'
+source: prism
+display_name: Sienna Carter
+dimensions:
+  age_bracket: 25-34
+  region: North America
+  gender_identity: Woman
+  primary_language: English
+  english_proficiency: Fluent (C1-C2)
+  domain_characteristics: Hobbyist
+  highest_education: Bachelor's
+  seniority: Entry
+  years_experience: 0-2
+  linkedin_activity: Job seeker
+  life_stage: Early career
+  major_life_events: None notable
+  cultural_background: Mixed / diaspora
+  tech_savviness: Comfortable
+  dominant_trait: High openness
+  values_priority: Autonomy
+  political_lean: Left
+  religiosity: Secular
+  emotional_state: Calm
+  intent: Learn / explain
+  query_complexity: Open-ended creative
+  expertise_gap: Novice asking expert
+  trust_level: Verifying
+  safety_sensitivity: High-stakes (medical/legal/financial)
+  prior_context: Returning user
+  device_context: Desktop, focused
+  fam_machine_learning: Familiar
+  fam_deep_learning: Aware
+  fam_sociology: Familiar
+  fam_political_science: Familiar
+  fam_international_relations: Aware
+  fam_philosophy: Familiar
+  fam_ethics: Proficient
+  fam_public_health: Aware
+  fam_natural_language_processing: Familiar
+  fam_human_computer_interaction: Familiar
+  fam_ux_research: Aware
+  fam_religious_studies: Aware
+  tool_chatgpt: Regular
+  topic_politics: Passionate
+  topic_technology: Interested
+  topic_pets: Interested
+  topic_philosophy: Interested
+  topic_religion: Indifferent
+  topic_spirituality: Neutral
+  topic_volunteering: Interested
+  topic_activism: Passionate
+  topic_environment: Passionate
+  topic_sustainability: Interested
+  topic_self_improvement: Interested
+  topic_mindfulness: Interested
+  lang_english: Fluent
+  att_ai: Positive
+  att_data_privacy: Skeptical
+  att_immigration: Positive
+  att_government_regulation: Positive
+  att_climate_action: Positive
+  att_renewable_energy: Positive
+  att_vaccines: Positive
+  att_organized_religion: Skeptical
+  att_traditional_gender_roles: Opposed
+  att_labor_unions: Positive
+  att_higher_education: Positive
+  att_authority: Skeptical
+  att_new_technology: Positive
+  att_surveillance: Skeptical
+  att_consumerism: Skeptical
+  att_veganism: Positive
+  att_fast_fashion: Skeptical
+  att_gun_ownership: Opposed
+  att_free_speech: Positive
+  ind_technology: Some exposure
+  cult_united_states: Native
+  big5_intellect: High
+  big5_liberalism: Very high
+  big5_assertiveness: High
+  big5_trust: High
+  big5_morality: Very high
+  big5_altruism: Very high
+  big5_cooperation: High
+  big5_sympathy: Very high
+  cog_verbosity: Concise
+  cog_formality: Neutral
+  cog_directness: Direct
+  cog_detail_orientation: Moderate
+  cog_abstraction: Balanced
+  cog_optimism: High
+  cog_curiosity: High
+  cog_skepticism: Moderate
+  cog_open_mindedness: Very high
+  cog_assertiveness: High
+  cog_emotional_expressiveness: High
+  cog_conflict_approach: Collaborative
+  cog_feedback_receptiveness: High
+  cog_ambiguity_tolerance: Moderate
+  cog_big_picture_vs_detail: Both
+  cog_risk_framing: Opportunity-focused
+  cog_empathy_expression: High
+  cog_precision_of_language: Precise
+  cog_use_of_jargon: Light
+  cog_politeness: Polite
+  acad_environmental_science: Interested
+  acad_political_theory: Interested
+  trait_curiosity: Moderate
+  trait_creativity: Moderate
+  trait_love_of_learning: Moderate
+  trait_open_mindedness: Signature
+  trait_perspective: Strong
+  trait_bravery: Moderate
+  trait_honesty: Strong
+  trait_zest: Moderate
+  trait_capacity_for_love: Strong
+  trait_kindness: Strong
+  trait_social_intelligence: Strong
+  trait_fairness: Signature
+  trait_humility: Moderate
+  trait_prudence: Strong
+  trait_hope_optimism: Strong
+  trait_spirituality: Absent
+  trait_empathy: Signature
+  trait_generosity: Strong
+  val_family: Important
+  val_career_success: Moderate
+  val_health: Important
+  val_personal_freedom: Core value
+  val_security_stability: Important
+  val_power_influence: Irrelevant
+  val_achievement: Important
+  val_creativity_self_expression: Core value
+  val_community: Core value
+  val_spirituality_faith: Irrelevant
+  val_knowledge_truth: Core value
+  val_independence: Core value
+  val_justice_fairness: Core value
+  val_sustainability: Core value
+  val_helping_others: Core value
+  val_personal_growth: Important
+  val_integrity_honesty: Core value
+  val_order_structure: Moderate
+  val_equality: Core value
+  val_privacy: Important
+  pref_speed_vs_accuracy: Accuracy first
+  demo_marital_status: Married
+  demo_employment_status: Unemployed
+  demo_generation: Millennial
+  demo_religion_affiliation: None
+  demo_ethnicity_broad: Multiracial
+  demo_home_language: Same as primary
+  demo_political_engagement: Engaged voter
+  lifex_geographic_mobility: Never left hometown
+  lifex_travel_breadth: Never left country
+  lifex_career_path_shape: Just starting
+  lifex_education_journey: Traditional track
+  lifex_financial_trajectory: Volatile
+  lifex_adversity_level: Minor setbacks
+  lifex_immigration_generation: Third+ generation
+  lifex_entrepreneurship_history: Never considered
+  lifex_relationship_history: Married once
+  lifex_faith_journey: Always secular
+  lifex_cultural_exposure: Some exposure
+  lifex_formative_decade: 2010s
+  lifex_turning_point: No single one
+  lifex_languages_lifetime: One
+  lifex_hometown_tie: Rarely returns
+  bfi2_domain_agreeableness: Very high
+  bfi2_domain_open_mindedness: Very high
+  bfi2_facet_assertiveness: High
+  bfi2_facet_compassion: Very high
+  bfi2_facet_respectfulness: Very high
+  bfi2_facet_trust: High
+  bfi2_facet_responsibility: High
+  bfi2_facet_intellectual_curiosity: High
+  bfi2_facet_creative_imagination: High
+  schwartz_value_self_direction: Very high
+  schwartz_value_stimulation: High
+  schwartz_value_achievement: High
+  schwartz_value_power: Low
+  schwartz_value_security: High
+  schwartz_value_conformity: Low
+  schwartz_value_tradition: Low
+  schwartz_value_benevolence: Very high
+  schwartz_value_universalism: Very high
+  sdt_need_autonomy: Very high
+  sdt_need_competence: High
+  sdt_need_relatedness: Very high
+  mft_care_harm: Very high
+  mft_fairness_cheating: Very high
+  mft_authority_subversion: Low
+  mft_liberty_oppression: Very high
+  need_for_cognition: High
+  dospert_health_safety_risk_tolerance: Very low
+  interpersonal_agency_dominance: Average
+  interpersonal_communion_warmth: Very high
+  ai_task_code_generation: Not applicable
+  ai_task_code_review: Not applicable
+  ai_task_codebase_learning: Not applicable
+  ai_task_data_generation_analytics: Not applicable
+  ai_task_debugging_fixing: Not applicable
+  ai_task_deployment_monitoring: Not applicable
+  ai_task_documentation: Not applicable
+  ai_task_learning_concepts: Currently partially AI-assisted
+  ai_task_project_planning: Not applicable
+  ai_task_refactoring: Not applicable
+  ai_task_search_answers: Currently partially AI-assisted
+  ai_task_testing: Not applicable
+  coding_agent_usage_frequency: Daily
+  coding_ai_complexity_comfort: Comfortable with bounded complex tasks
+  coding_ai_learning_source: Self-experimentation
+  coding_ai_output_trust: Trusts after verification
+  coding_ai_sentiment: Somewhat favorable
+  coding_ai_usage_frequency: Daily
+  coding_tool_ai_capability_importance: High
+  coding_tool_ethics_blocker: Hard blocker
+  coding_tool_reliability_latency_importance: High
+  coding_tool_security_privacy_blocker: Major concern
+  future_developer_skill_belief: Ethical judgment
+  human_help_boundary_for_ai_coding: When trust is low
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: prism-135557c14a32
+  origin_source_row_index: 2211617

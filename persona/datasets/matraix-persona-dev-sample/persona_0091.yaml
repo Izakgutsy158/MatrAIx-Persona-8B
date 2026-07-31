@@ -1,0 +1,218 @@
+persona_id: 0091
+version: '1.0'
+source: prism
+display_name: Amina Diallo
+dimensions:
+  age_bracket: 18-24
+  region: Sub-Saharan Africa
+  gender_identity: Woman
+  english_proficiency: Fluent (C1-C2)
+  domain_characteristics: Student
+  highest_education: Bachelor's
+  seniority: Entry
+  years_experience: 0-2
+  life_stage: Early career
+  major_life_events: None notable
+  cultural_background: African
+  tech_savviness: Comfortable
+  dominant_trait: High openness
+  values_priority: Achievement
+  religiosity: Observant
+  intent: Learn / explain
+  query_complexity: Open-ended creative
+  expertise_gap: Peer-level
+  tone_expected: Formal
+  trust_level: Verifying
+  safety_sensitivity: High-stakes (medical/legal/financial)
+  prior_context: Returning user
+  fam_machine_learning: Familiar
+  fam_deep_learning: Familiar
+  fam_sociology: Familiar
+  fam_psychology: Familiar
+  fam_philosophy: Familiar
+  fam_ethics: Proficient
+  fam_natural_language_processing: Familiar
+  fam_human_computer_interaction: Familiar
+  fam_ux_research: Aware
+  fam_theology: Familiar
+  fam_religious_studies: Aware
+  skill_empathy: Advanced
+  skill_fact_checking: Advanced
+  tool_chatgpt: Regular
+  topic_technology: Interested
+  topic_philosophy: Interested
+  topic_religion: Interested
+  topic_spirituality: Interested
+  topic_social_media: Interested
+  topic_productivity: Interested
+  topic_self_improvement: Passionate
+  topic_mindfulness: Interested
+  lang_english: Fluent
+  att_ai: Positive
+  att_data_privacy: Skeptical
+  att_globalization: Positive
+  att_organized_religion: Positive
+  att_higher_education: Positive
+  att_new_technology: Positive
+  att_surveillance: Skeptical
+  att_free_speech: Positive
+  att_privacy_vs_security: Skeptical
+  att_globalized_supply_chains: Positive
+  ind_technology: Some exposure
+  cult_south_africa: Native
+  musg_gospel: Like
+  big5_imagination: High
+  big5_emotionality: High
+  big5_adventurousness: High
+  big5_intellect: Very high
+  big5_liberalism: Very high
+  big5_self_efficacy: High
+  big5_dutifulness: High
+  big5_achievement_striving: High
+  big5_self_discipline: High
+  big5_friendliness: High
+  big5_trust: Very high
+  big5_morality: Very high
+  big5_altruism: Very high
+  big5_cooperation: High
+  big5_sympathy: Very high
+  cog_verbosity: Concise
+  cog_formality: Formal
+  cog_directness: Direct
+  cog_humor: Serious
+  cog_detail_orientation: High
+  cog_abstraction: Balanced
+  cog_optimism: High
+  cog_patience: High
+  cog_curiosity: High
+  cog_skepticism: Moderate
+  cog_open_mindedness: Very high
+  cog_assertiveness: Moderate
+  cog_emotional_expressiveness: High
+  cog_conflict_approach: Collaborative
+  cog_feedback_receptiveness: High
+  cog_ambiguity_tolerance: Moderate
+  cog_perfectionism: High
+  cog_attention_span: Long
+  cog_learning_pace: Average
+  cog_question_asking: Sometimes
+  cog_decision_speed: Deliberate
+  cog_confidence_calibration: Well-calibrated
+  cog_big_picture_vs_detail: Both
+  cog_risk_framing: Balanced
+  cog_empathy_expression: Very high
+  cog_storytelling: Moderate
+  cog_precision_of_language: Precise
+  cog_use_of_jargon: Avoids jargon
+  cog_emoji_use: Never
+  cog_politeness: Very polite
+  trait_curiosity: Strong
+  trait_love_of_learning: Strong
+  trait_open_mindedness: Signature
+  trait_perspective: Moderate
+  trait_perseverance: Signature
+  trait_honesty: Signature
+  trait_kindness: Signature
+  trait_social_intelligence: Moderate
+  trait_fairness: Strong
+  trait_hope_optimism: Moderate
+  trait_spirituality: Moderate
+  trait_ambition: Strong
+  trait_empathy: Signature
+  trait_resilience: Strong
+  trait_discipline: Moderate
+  trait_adaptability: Strong
+  val_career_success: Important
+  val_personal_freedom: Important
+  val_security_stability: Important
+  val_adventure: Moderate
+  val_tradition: Moderate
+  val_achievement: Core value
+  val_community: Important
+  val_spirituality_faith: Important
+  val_knowledge_truth: Core value
+  val_independence: Important
+  val_justice_fairness: Core value
+  val_helping_others: Important
+  val_personal_growth: Core value
+  val_integrity_honesty: Core value
+  val_order_structure: Moderate
+  val_equality: Core value
+  val_privacy: Important
+  pref_speed_vs_accuracy: Accuracy first
+  pref_quality_vs_quantity: Quality first
+  pref_early_vs_late: Early adopter
+  pref_detail_brief_vs_full: Detail-leaning
+  pref_competition_vs_collab: Highly collaborative
+  demo_marital_status: Single
+  demo_children_count: None
+  demo_employment_status: Full-time
+  demo_generation: Gen Z
+  demo_religion_affiliation: Christian
+  demo_ethnicity_broad: Black / African
+  demo_home_language: Same as primary
+  demo_parental_status: Not a parent
+  demo_relationship_length: Not in one
+  lifex_career_path_shape: Just starting
+  lifex_education_journey: Traditional track
+  lifex_adversity_level: Sheltered
+  lifex_immigration_generation: Native multi-generational
+  lifex_entrepreneurship_history: Never considered
+  lifex_relationship_history: Limited
+  lifex_parenting_journey: No children
+  lifex_faith_journey: Lifelong faith
+  lifex_cultural_exposure: Some exposure
+  lifex_formative_decade: 2020s
+  lifex_turning_point: No single one
+  lifex_languages_lifetime: One
+  bfi2_domain_agreeableness: Very high
+  bfi2_domain_conscientiousness: High
+  bfi2_domain_open_mindedness: Very high
+  bfi2_facet_compassion: Very high
+  bfi2_facet_respectfulness: High
+  bfi2_facet_trust: Very high
+  bfi2_facet_productiveness: High
+  bfi2_facet_responsibility: High
+  bfi2_facet_intellectual_curiosity: Very high
+  bfi2_facet_creative_imagination: High
+  schwartz_value_self_direction: High
+  schwartz_value_stimulation: High
+  schwartz_value_achievement: Very high
+  schwartz_value_security: High
+  schwartz_value_tradition: High
+  schwartz_value_benevolence: Very high
+  schwartz_value_universalism: Very high
+  sdt_need_autonomy: High
+  sdt_need_competence: High
+  sdt_need_relatedness: High
+  mft_care_harm: Very high
+  mft_fairness_cheating: High
+  mft_liberty_oppression: High
+  need_for_cognition: Very high
+  dospert_ethical_risk_tolerance: High
+  dospert_social_risk_tolerance: High
+  interpersonal_agency_dominance: Average
+  interpersonal_communion_warmth: Very high
+  ai_task_learning_concepts: Currently partially AI-assisted
+  ai_task_search_answers: Currently partially AI-assisted
+  coding_agent_security_expectation: Expects basic secret / privacy checks
+  coding_agent_usage_frequency: Weekly
+  coding_ai_complexity_comfort: Only simple / boilerplate tasks
+  coding_ai_job_threat_perception: Unsure / mixed
+  coding_ai_learning_source: Self-experimentation
+  coding_ai_output_trust: Trusts after verification
+  coding_ai_sentiment: Somewhat favorable
+  coding_ai_usage_frequency: Weekly
+  coding_tool_ai_capability_importance: High
+  coding_tool_ethics_blocker: Hard blocker
+  coding_tool_obsolescence_blocker: Moderate concern
+  coding_tool_reliability_latency_importance: High
+  coding_tool_security_privacy_blocker: Major concern
+  developer_help_seeking_preference: Ask AI first
+  future_developer_skill_belief: Ethical judgment
+  human_help_boundary_for_ai_coding: When trust is low
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: prism-49126d6144de
+  origin_source_row_index: 2211286

@@ -1,0 +1,1123 @@
+{
+  "kind": "validation-subset",
+  "count": 86,
+  "schema_version": "1.0",
+  "source_dataset": "MatrAIx2026/MatrAIx_Persona_1M_Public_Release",
+  "attributes": [
+    "code_comment_style",
+    "code_naming_verbosity",
+    "code_summary_documentation",
+    "cog_emoji_use",
+    "cog_humor",
+    "cog_politeness",
+    "cog_storytelling",
+    "cog_use_of_jargon",
+    "cog_verbosity",
+    "register"
+  ],
+  "design": "10 attr x (5 pos+5 neg), by actual decoded value",
+  "personas": [
+    {
+      "persona_id": "0001",
+      "source": "amazon",
+      "orig_id": "AEDZF2GJQLWW3ONX5DSI64FNVYVQ",
+      "attribute_hits": [
+        {
+          "attribute": "code_comment_style",
+          "polarity": "positive",
+          "value": "Extensive inline comments"
+        }
+      ]
+    },
+    {
+      "persona_id": "0004",
+      "source": "real_human_survey",
+      "orig_id": "real_human_survey_0002",
+      "attribute_hits": [
+        {
+          "attribute": "code_naming_verbosity",
+          "polarity": "negative",
+          "value": "Single-letter names"
+        }
+      ]
+    },
+    {
+      "persona_id": "0006",
+      "source": "synthetic",
+      "orig_id": "row2050709154",
+      "attribute_hits": [
+        {
+          "attribute": "code_summary_documentation",
+          "polarity": "positive",
+          "value": "Always includes function-level TLDR"
+        }
+      ]
+    },
+    {
+      "persona_id": "0007",
+      "source": "synthetic",
+      "orig_id": "row2050717396",
+      "attribute_hits": [
+        {
+          "attribute": "code_summary_documentation",
+          "polarity": "positive",
+          "value": "Always includes function-level TLDR"
+        }
+      ]
+    },
+    {
+      "persona_id": "0008",
+      "source": "synthetic",
+      "orig_id": "row3862327088",
+      "attribute_hits": [
+        {
+          "attribute": "code_summary_documentation",
+          "polarity": "positive",
+          "value": "Always includes function-level TLDR"
+        }
+      ]
+    },
+    {
+      "persona_id": "0009",
+      "source": "synthetic",
+      "orig_id": "row4148065650",
+      "attribute_hits": [
+        {
+          "attribute": "code_summary_documentation",
+          "polarity": "positive",
+          "value": "Always includes function-level TLDR"
+        }
+      ]
+    },
+    {
+      "persona_id": "0010",
+      "source": "synthetic",
+      "orig_id": "row8818386280",
+      "attribute_hits": [
+        {
+          "attribute": "code_summary_documentation",
+          "polarity": "positive",
+          "value": "Always includes function-level TLDR"
+        }
+      ]
+    },
+    {
+      "persona_id": "0011",
+      "source": "real_human_survey",
+      "orig_id": "real_human_survey_0026",
+      "attribute_hits": [
+        {
+          "attribute": "code_naming_verbosity",
+          "polarity": "negative",
+          "value": "Single-letter names"
+        }
+      ]
+    },
+    {
+      "persona_id": "0012",
+      "source": "real_human_survey",
+      "orig_id": "real_human_survey_0031",
+      "attribute_hits": [
+        {
+          "attribute": "code_naming_verbosity",
+          "polarity": "negative",
+          "value": "Single-letter names"
+        }
+      ]
+    },
+    {
+      "persona_id": "0013",
+      "source": "real_human_survey",
+      "orig_id": "real_human_survey_0041",
+      "attribute_hits": [
+        {
+          "attribute": "code_naming_verbosity",
+          "polarity": "negative",
+          "value": "Single-letter names"
+        }
+      ]
+    },
+    {
+      "persona_id": "0014",
+      "source": "real_human_survey",
+      "orig_id": "real_human_survey_0084",
+      "attribute_hits": [
+        {
+          "attribute": "code_naming_verbosity",
+          "polarity": "negative",
+          "value": "Single-letter names"
+        }
+      ]
+    },
+    {
+      "persona_id": "0015",
+      "source": "stackoverflow",
+      "orig_id": "stackoverflow_2023_1208_1911",
+      "attribute_hits": [
+        {
+          "attribute": "code_comment_style",
+          "polarity": "negative",
+          "value": "No comments"
+        }
+      ]
+    },
+    {
+      "persona_id": "0016",
+      "source": "stackoverflow",
+      "orig_id": "stackoverflow_2023_1355_2150",
+      "attribute_hits": [
+        {
+          "attribute": "code_comment_style",
+          "polarity": "negative",
+          "value": "No comments"
+        }
+      ]
+    },
+    {
+      "persona_id": "0017",
+      "source": "stackoverflow",
+      "orig_id": "stackoverflow_2023_1408_2217",
+      "attribute_hits": [
+        {
+          "attribute": "code_comment_style",
+          "polarity": "positive",
+          "value": "Extensive inline comments"
+        }
+      ]
+    },
+    {
+      "persona_id": "0018",
+      "source": "stackoverflow",
+      "orig_id": "stackoverflow_2023_22065_33791",
+      "attribute_hits": [
+        {
+          "attribute": "code_summary_documentation",
+          "polarity": "negative",
+          "value": "Never includes TLDR"
+        }
+      ]
+    },
+    {
+      "persona_id": "0019",
+      "source": "stackoverflow",
+      "orig_id": "stackoverflow_2023_253_408",
+      "attribute_hits": [
+        {
+          "attribute": "code_naming_verbosity",
+          "polarity": "positive",
+          "value": "Highly verbose (long descriptive names)"
+        }
+      ]
+    },
+    {
+      "persona_id": "0020",
+      "source": "stackoverflow",
+      "orig_id": "stackoverflow_2023_2871_4538",
+      "attribute_hits": [
+        {
+          "attribute": "code_comment_style",
+          "polarity": "negative",
+          "value": "No comments"
+        }
+      ]
+    },
+    {
+      "persona_id": "0021",
+      "source": "stackoverflow",
+      "orig_id": "stackoverflow_2023_352_562",
+      "attribute_hits": [
+        {
+          "attribute": "code_naming_verbosity",
+          "polarity": "positive",
+          "value": "Highly verbose (long descriptive names)"
+        }
+      ]
+    },
+    {
+      "persona_id": "0022",
+      "source": "stackoverflow",
+      "orig_id": "stackoverflow_2023_4081_6404",
+      "attribute_hits": [
+        {
+          "attribute": "code_comment_style",
+          "polarity": "positive",
+          "value": "Extensive inline comments"
+        }
+      ]
+    },
+    {
+      "persona_id": "0023",
+      "source": "stackoverflow",
+      "orig_id": "stackoverflow_2023_4675_7377",
+      "attribute_hits": [
+        {
+          "attribute": "code_comment_style",
+          "polarity": "positive",
+          "value": "Extensive inline comments"
+        }
+      ]
+    },
+    {
+      "persona_id": "0024",
+      "source": "stackoverflow",
+      "orig_id": "stackoverflow_2023_560_888",
+      "attribute_hits": [
+        {
+          "attribute": "code_comment_style",
+          "polarity": "negative",
+          "value": "No comments"
+        }
+      ]
+    },
+    {
+      "persona_id": "0025",
+      "source": "stackoverflow",
+      "orig_id": "stackoverflow_2023_5948_9327",
+      "attribute_hits": [
+        {
+          "attribute": "code_comment_style",
+          "polarity": "negative",
+          "value": "No comments"
+        }
+      ]
+    },
+    {
+      "persona_id": "0026",
+      "source": "stackoverflow",
+      "orig_id": "stackoverflow_2023_648_1023",
+      "attribute_hits": [
+        {
+          "attribute": "code_naming_verbosity",
+          "polarity": "positive",
+          "value": "Highly verbose (long descriptive names)"
+        }
+      ]
+    },
+    {
+      "persona_id": "0027",
+      "source": "stackoverflow",
+      "orig_id": "stackoverflow_2023_870_1385",
+      "attribute_hits": [
+        {
+          "attribute": "code_naming_verbosity",
+          "polarity": "positive",
+          "value": "Highly verbose (long descriptive names)"
+        }
+      ]
+    },
+    {
+      "persona_id": "0029",
+      "source": "wiki",
+      "orig_id": "Q102371",
+      "attribute_hits": [
+        {
+          "attribute": "cog_verbosity",
+          "polarity": "negative",
+          "value": "Terse"
+        }
+      ]
+    },
+    {
+      "persona_id": "0030",
+      "source": "wiki",
+      "orig_id": "Q11262",
+      "attribute_hits": [
+        {
+          "attribute": "cog_politeness",
+          "polarity": "negative",
+          "value": "Rude"
+        }
+      ]
+    },
+    {
+      "persona_id": "0031",
+      "source": "wiki",
+      "orig_id": "Q11280349",
+      "attribute_hits": [
+        {
+          "attribute": "cog_emoji_use",
+          "polarity": "positive",
+          "value": "Heavy"
+        }
+      ]
+    },
+    {
+      "persona_id": "0032",
+      "source": "wiki",
+      "orig_id": "Q1280035",
+      "attribute_hits": [
+        {
+          "attribute": "cog_verbosity",
+          "polarity": "negative",
+          "value": "Terse"
+        }
+      ]
+    },
+    {
+      "persona_id": "0033",
+      "source": "wiki",
+      "orig_id": "Q128708",
+      "attribute_hits": [
+        {
+          "attribute": "register",
+          "polarity": "positive",
+          "value": "Formal / standard"
+        }
+      ]
+    },
+    {
+      "persona_id": "0034",
+      "source": "wiki",
+      "orig_id": "Q154938",
+      "attribute_hits": [
+        {
+          "attribute": "cog_politeness",
+          "polarity": "positive",
+          "value": "Very polite"
+        }
+      ]
+    },
+    {
+      "persona_id": "0035",
+      "source": "wiki",
+      "orig_id": "Q160627",
+      "attribute_hits": [
+        {
+          "attribute": "cog_emoji_use",
+          "polarity": "negative",
+          "value": "Never"
+        }
+      ]
+    },
+    {
+      "persona_id": "0036",
+      "source": "wiki",
+      "orig_id": "Q1699316",
+      "attribute_hits": [
+        {
+          "attribute": "cog_politeness",
+          "polarity": "negative",
+          "value": "Rude"
+        }
+      ]
+    },
+    {
+      "persona_id": "0037",
+      "source": "wiki",
+      "orig_id": "Q193531",
+      "attribute_hits": [
+        {
+          "attribute": "cog_emoji_use",
+          "polarity": "negative",
+          "value": "Never"
+        },
+        {
+          "attribute": "cog_use_of_jargon",
+          "polarity": "negative",
+          "value": "Avoids jargon"
+        },
+        {
+          "attribute": "register",
+          "polarity": "positive",
+          "value": "Formal / standard"
+        }
+      ]
+    },
+    {
+      "persona_id": "0040",
+      "source": "wiki",
+      "orig_id": "Q211041",
+      "attribute_hits": [
+        {
+          "attribute": "cog_use_of_jargon",
+          "polarity": "positive",
+          "value": "Heavy"
+        }
+      ]
+    },
+    {
+      "persona_id": "0041",
+      "source": "wiki",
+      "orig_id": "Q213879",
+      "attribute_hits": [
+        {
+          "attribute": "register",
+          "polarity": "negative",
+          "value": "Colloquial"
+        }
+      ]
+    },
+    {
+      "persona_id": "0042",
+      "source": "wiki",
+      "orig_id": "Q23",
+      "attribute_hits": [
+        {
+          "attribute": "cog_politeness",
+          "polarity": "positive",
+          "value": "Very polite"
+        }
+      ]
+    },
+    {
+      "persona_id": "0043",
+      "source": "wiki",
+      "orig_id": "Q235901",
+      "attribute_hits": [
+        {
+          "attribute": "cog_storytelling",
+          "polarity": "negative",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "persona_id": "0044",
+      "source": "wiki",
+      "orig_id": "Q265270",
+      "attribute_hits": [
+        {
+          "attribute": "cog_verbosity",
+          "polarity": "negative",
+          "value": "Terse"
+        }
+      ]
+    },
+    {
+      "persona_id": "0045",
+      "source": "wiki",
+      "orig_id": "Q297425",
+      "attribute_hits": [
+        {
+          "attribute": "cog_emoji_use",
+          "polarity": "negative",
+          "value": "Never"
+        },
+        {
+          "attribute": "cog_humor",
+          "polarity": "negative",
+          "value": "Serious"
+        },
+        {
+          "attribute": "register",
+          "polarity": "positive",
+          "value": "Formal / standard"
+        }
+      ]
+    },
+    {
+      "persona_id": "0046",
+      "source": "wiki",
+      "orig_id": "Q310155",
+      "attribute_hits": [
+        {
+          "attribute": "cog_use_of_jargon",
+          "polarity": "negative",
+          "value": "Avoids jargon"
+        }
+      ]
+    },
+    {
+      "persona_id": "0047",
+      "source": "wiki",
+      "orig_id": "Q311253",
+      "attribute_hits": [
+        {
+          "attribute": "register",
+          "polarity": "negative",
+          "value": "Colloquial"
+        }
+      ]
+    },
+    {
+      "persona_id": "0049",
+      "source": "wiki",
+      "orig_id": "Q315963",
+      "attribute_hits": [
+        {
+          "attribute": "cog_use_of_jargon",
+          "polarity": "negative",
+          "value": "Avoids jargon"
+        }
+      ]
+    },
+    {
+      "persona_id": "0050",
+      "source": "wiki",
+      "orig_id": "Q3181096",
+      "attribute_hits": [
+        {
+          "attribute": "code_naming_verbosity",
+          "polarity": "positive",
+          "value": "Highly verbose (long descriptive names)"
+        },
+        {
+          "attribute": "code_summary_documentation",
+          "polarity": "negative",
+          "value": "Never includes TLDR"
+        }
+      ]
+    },
+    {
+      "persona_id": "0051",
+      "source": "wiki",
+      "orig_id": "Q34474",
+      "attribute_hits": [
+        {
+          "attribute": "cog_humor",
+          "polarity": "negative",
+          "value": "Serious"
+        }
+      ]
+    },
+    {
+      "persona_id": "0053",
+      "source": "wiki",
+      "orig_id": "Q349280",
+      "attribute_hits": [
+        {
+          "attribute": "cog_politeness",
+          "polarity": "negative",
+          "value": "Rude"
+        }
+      ]
+    },
+    {
+      "persona_id": "0054",
+      "source": "wiki",
+      "orig_id": "Q35500",
+      "attribute_hits": [
+        {
+          "attribute": "cog_storytelling",
+          "polarity": "negative",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "persona_id": "0055",
+      "source": "wiki",
+      "orig_id": "Q355350",
+      "attribute_hits": [
+        {
+          "attribute": "code_comment_style",
+          "polarity": "positive",
+          "value": "Extensive inline comments"
+        },
+        {
+          "attribute": "code_summary_documentation",
+          "polarity": "negative",
+          "value": "Never includes TLDR"
+        }
+      ]
+    },
+    {
+      "persona_id": "0056",
+      "source": "wiki",
+      "orig_id": "Q3610686",
+      "attribute_hits": [
+        {
+          "attribute": "cog_emoji_use",
+          "polarity": "positive",
+          "value": "Heavy"
+        }
+      ]
+    },
+    {
+      "persona_id": "0057",
+      "source": "wiki",
+      "orig_id": "Q36268",
+      "attribute_hits": [
+        {
+          "attribute": "cog_use_of_jargon",
+          "polarity": "negative",
+          "value": "Avoids jargon"
+        },
+        {
+          "attribute": "register",
+          "polarity": "negative",
+          "value": "Colloquial"
+        }
+      ]
+    },
+    {
+      "persona_id": "0058",
+      "source": "wiki",
+      "orig_id": "Q36724",
+      "attribute_hits": [
+        {
+          "attribute": "cog_storytelling",
+          "polarity": "negative",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "persona_id": "0059",
+      "source": "wiki",
+      "orig_id": "Q37340",
+      "attribute_hits": [
+        {
+          "attribute": "cog_emoji_use",
+          "polarity": "negative",
+          "value": "Never"
+        },
+        {
+          "attribute": "cog_humor",
+          "polarity": "negative",
+          "value": "Serious"
+        },
+        {
+          "attribute": "cog_storytelling",
+          "polarity": "negative",
+          "value": "None"
+        }
+      ]
+    },
+    {
+      "persona_id": "0060",
+      "source": "wiki",
+      "orig_id": "Q41410",
+      "attribute_hits": [
+        {
+          "attribute": "cog_verbosity",
+          "polarity": "negative",
+          "value": "Terse"
+        }
+      ]
+    },
+    {
+      "persona_id": "0061",
+      "source": "wiki",
+      "orig_id": "Q43444",
+      "attribute_hits": [
+        {
+          "attribute": "cog_use_of_jargon",
+          "polarity": "negative",
+          "value": "Avoids jargon"
+        }
+      ]
+    },
+    {
+      "persona_id": "0062",
+      "source": "wiki",
+      "orig_id": "Q43989",
+      "attribute_hits": [
+        {
+          "attribute": "register",
+          "polarity": "negative",
+          "value": "Colloquial"
+        }
+      ]
+    },
+    {
+      "persona_id": "0063",
+      "source": "wiki",
+      "orig_id": "Q444459",
+      "attribute_hits": [
+        {
+          "attribute": "cog_use_of_jargon",
+          "polarity": "positive",
+          "value": "Heavy"
+        }
+      ]
+    },
+    {
+      "persona_id": "0064",
+      "source": "wiki",
+      "orig_id": "Q44520",
+      "attribute_hits": [
+        {
+          "attribute": "cog_politeness",
+          "polarity": "positive",
+          "value": "Very polite"
+        }
+      ]
+    },
+    {
+      "persona_id": "0065",
+      "source": "wiki",
+      "orig_id": "Q459604",
+      "attribute_hits": [
+        {
+          "attribute": "cog_use_of_jargon",
+          "polarity": "positive",
+          "value": "Heavy"
+        }
+      ]
+    },
+    {
+      "persona_id": "0066",
+      "source": "wiki",
+      "orig_id": "Q474235",
+      "attribute_hits": [
+        {
+          "attribute": "cog_emoji_use",
+          "polarity": "negative",
+          "value": "Never"
+        },
+        {
+          "attribute": "cog_humor",
+          "polarity": "negative",
+          "value": "Serious"
+        },
+        {
+          "attribute": "cog_use_of_jargon",
+          "polarity": "positive",
+          "value": "Heavy"
+        },
+        {
+          "attribute": "register",
+          "polarity": "positive",
+          "value": "Formal / standard"
+        }
+      ]
+    },
+    {
+      "persona_id": "0067",
+      "source": "wiki",
+      "orig_id": "Q51110",
+      "attribute_hits": [
+        {
+          "attribute": "cog_emoji_use",
+          "polarity": "positive",
+          "value": "Heavy"
+        }
+      ]
+    },
+    {
+      "persona_id": "0068",
+      "source": "wiki",
+      "orig_id": "Q51676",
+      "attribute_hits": [
+        {
+          "attribute": "cog_storytelling",
+          "polarity": "negative",
+          "value": "None"
+        },
+        {
+          "attribute": "register",
+          "polarity": "positive",
+          "value": "Formal / standard"
+        }
+      ]
+    },
+    {
+      "persona_id": "0069",
+      "source": "wiki",
+      "orig_id": "Q527384",
+      "attribute_hits": [
+        {
+          "attribute": "code_summary_documentation",
+          "polarity": "negative",
+          "value": "Never includes TLDR"
+        }
+      ]
+    },
+    {
+      "persona_id": "0070",
+      "source": "wiki",
+      "orig_id": "Q5487832",
+      "attribute_hits": [
+        {
+          "attribute": "cog_emoji_use",
+          "polarity": "positive",
+          "value": "Heavy"
+        }
+      ]
+    },
+    {
+      "persona_id": "0071",
+      "source": "wiki",
+      "orig_id": "Q5552968",
+      "attribute_hits": [
+        {
+          "attribute": "cog_politeness",
+          "polarity": "negative",
+          "value": "Rude"
+        }
+      ]
+    },
+    {
+      "persona_id": "0072",
+      "source": "synthetic",
+      "orig_id": "row270717191",
+      "attribute_hits": [
+        {
+          "attribute": "cog_storytelling",
+          "polarity": "positive",
+          "value": "Very high"
+        }
+      ]
+    },
+    {
+      "persona_id": "0073",
+      "source": "wiki",
+      "orig_id": "Q6390070",
+      "attribute_hits": [
+        {
+          "attribute": "cog_politeness",
+          "polarity": "negative",
+          "value": "Rude"
+        }
+      ]
+    },
+    {
+      "persona_id": "0074",
+      "source": "wiki",
+      "orig_id": "Q673567",
+      "attribute_hits": [
+        {
+          "attribute": "register",
+          "polarity": "negative",
+          "value": "Colloquial"
+        }
+      ]
+    },
+    {
+      "persona_id": "0076",
+      "source": "wiki",
+      "orig_id": "Q8018",
+      "attribute_hits": [
+        {
+          "attribute": "cog_use_of_jargon",
+          "polarity": "positive",
+          "value": "Heavy"
+        }
+      ]
+    },
+    {
+      "persona_id": "0077",
+      "source": "wiki",
+      "orig_id": "Q8049762",
+      "attribute_hits": [
+        {
+          "attribute": "cog_emoji_use",
+          "polarity": "positive",
+          "value": "Heavy"
+        }
+      ]
+    },
+    {
+      "persona_id": "0078",
+      "source": "wiki",
+      "orig_id": "Q8612",
+      "attribute_hits": [
+        {
+          "attribute": "cog_humor",
+          "polarity": "negative",
+          "value": "Serious"
+        }
+      ]
+    },
+    {
+      "persona_id": "0079",
+      "source": "wiki",
+      "orig_id": "Q9047",
+      "attribute_hits": [
+        {
+          "attribute": "cog_politeness",
+          "polarity": "positive",
+          "value": "Very polite"
+        }
+      ]
+    },
+    {
+      "persona_id": "0080",
+      "source": "wiki",
+      "orig_id": "Q92765",
+      "attribute_hits": [
+        {
+          "attribute": "code_summary_documentation",
+          "polarity": "negative",
+          "value": "Never includes TLDR"
+        },
+        {
+          "attribute": "cog_verbosity",
+          "polarity": "negative",
+          "value": "Terse"
+        }
+      ]
+    },
+    {
+      "persona_id": "0081",
+      "source": "synthetic",
+      "orig_id": "row270719720",
+      "attribute_hits": [
+        {
+          "attribute": "cog_storytelling",
+          "polarity": "positive",
+          "value": "Very high"
+        }
+      ]
+    },
+    {
+      "persona_id": "0082",
+      "source": "wiki",
+      "orig_id": "Q981839",
+      "attribute_hits": [
+        {
+          "attribute": "cog_politeness",
+          "polarity": "positive",
+          "value": "Very polite"
+        }
+      ]
+    },
+    {
+      "persona_id": "0083",
+      "source": "synthetic",
+      "orig_id": "row270723655",
+      "attribute_hits": [
+        {
+          "attribute": "cog_storytelling",
+          "polarity": "positive",
+          "value": "Very high"
+        }
+      ]
+    },
+    {
+      "persona_id": "0084",
+      "source": "synthetic",
+      "orig_id": "row270725006",
+      "attribute_hits": [
+        {
+          "attribute": "cog_storytelling",
+          "polarity": "positive",
+          "value": "Very high"
+        }
+      ]
+    },
+    {
+      "persona_id": "0085",
+      "source": "synthetic",
+      "orig_id": "row396816066",
+      "attribute_hits": [
+        {
+          "attribute": "cog_storytelling",
+          "polarity": "positive",
+          "value": "Very high"
+        }
+      ]
+    },
+    {
+      "persona_id": "0086",
+      "source": "wiki",
+      "orig_id": "Q7198",
+      "attribute_hits": [
+        {
+          "attribute": "cog_humor",
+          "polarity": "positive",
+          "value": "Playful"
+        }
+      ]
+    },
+    {
+      "persona_id": "0087",
+      "source": "wiki",
+      "orig_id": "Q6483306",
+      "attribute_hits": [
+        {
+          "attribute": "cog_humor",
+          "polarity": "positive",
+          "value": "Playful"
+        }
+      ]
+    },
+    {
+      "persona_id": "0088",
+      "source": "wiki",
+      "orig_id": "Q5371640",
+      "attribute_hits": [
+        {
+          "attribute": "cog_humor",
+          "polarity": "positive",
+          "value": "Playful"
+        }
+      ]
+    },
+    {
+      "persona_id": "0089",
+      "source": "wiki",
+      "orig_id": "Q451096",
+      "attribute_hits": [
+        {
+          "attribute": "cog_humor",
+          "polarity": "positive",
+          "value": "Playful"
+        }
+      ]
+    },
+    {
+      "persona_id": "0090",
+      "source": "wiki",
+      "orig_id": "Q6552846",
+      "attribute_hits": [
+        {
+          "attribute": "cog_humor",
+          "polarity": "positive",
+          "value": "Playful"
+        }
+      ]
+    },
+    {
+      "persona_id": "0091",
+      "source": "real_human_survey",
+      "orig_id": "real_human_survey_0102",
+      "attribute_hits": [
+        {
+          "attribute": "cog_verbosity",
+          "polarity": "positive",
+          "value": "Rambling"
+        }
+      ]
+    },
+    {
+      "persona_id": "0092",
+      "source": "real_human_survey",
+      "orig_id": "real_human_survey_0448",
+      "attribute_hits": [
+        {
+          "attribute": "cog_verbosity",
+          "polarity": "positive",
+          "value": "Rambling"
+        }
+      ]
+    },
+    {
+      "persona_id": "0093",
+      "source": "real_human_survey",
+      "orig_id": "real_human_survey_0097",
+      "attribute_hits": [
+        {
+          "attribute": "cog_verbosity",
+          "polarity": "positive",
+          "value": "Rambling"
+        }
+      ]
+    },
+    {
+      "persona_id": "0094",
+      "source": "real_human_survey",
+      "orig_id": "real_human_survey_0169",
+      "attribute_hits": [
+        {
+          "attribute": "cog_verbosity",
+          "polarity": "positive",
+          "value": "Rambling"
+        }
+      ]
+    },
+    {
+      "persona_id": "0095",
+      "source": "real_human_survey",
+      "orig_id": "real_human_survey_0071",
+      "attribute_hits": [
+        {
+          "attribute": "cog_verbosity",
+          "polarity": "positive",
+          "value": "Rambling"
+        }
+      ]
+    }
+  ]
+}

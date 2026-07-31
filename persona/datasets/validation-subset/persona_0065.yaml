@@ -1,0 +1,190 @@
+persona_id: '0065'
+version: '1.0'
+source: wiki:Q459604
+dimensions:
+  age_bracket: 45-54
+  region: Western Europe
+  gender_identity: Man
+  urbanicity: Rural
+  primary_language: French
+  multilingualism: Trilingual+
+  register: Formal / standard
+  domain: Arts & Humanities
+  domain_characteristics: Practitioner
+  academic_field: Humanities
+  research_output: Prolific publisher
+  seniority: Director
+  company_size: Academia
+  role_function: Research
+  years_experience: 20+
+  life_stage: Mid-life
+  major_life_events: Migration / immigration
+  cultural_background: Individualist (Western)
+  dominant_trait: High openness
+  risk_tolerance: Cautious
+  decision_style: Deliberative
+  values_priority: Tradition
+  religiosity: Devout
+  safety_sensitivity: Benign
+  economic_motivation: Indifferent
+  fam_political_science: Aware
+  fam_philosophy: Proficient
+  fam_ethics: Proficient
+  fam_history: Familiar
+  fam_theology: Expert
+  fam_religious_studies: Expert
+  skill_writing: Master
+  skill_storytelling: Advanced
+  skill_leadership: Advanced
+  skill_research: Advanced
+  skill_critical_thinking: Advanced
+  skill_interpretation: Master
+  topic_literature: Passionate
+  topic_history: Interested
+  topic_religion: Passionate
+  topic_spirituality: Passionate
+  lang_french: Native
+  lang_italian: Fluent
+  att_organized_religion: Enthusiast
+  att_higher_education: Positive
+  att_authority: Positive
+  ind_telecommunications: None
+  cult_france: Native
+  cult_italy: Lived there
+  big5_imagination: High
+  big5_artistic_interest: High
+  big5_adventurousness: Average
+  big5_intellect: Very high
+  big5_liberalism: Low
+  big5_self_efficacy: High
+  big5_orderliness: High
+  big5_dutifulness: Very high
+  big5_achievement_striving: High
+  big5_self_discipline: High
+  big5_cautiousness: High
+  big5_assertiveness: High
+  big5_activity_level: High
+  big5_morality: Very high
+  lstyle_household_size: Communal
+  cog_verbosity: Wordy
+  cog_formality: Very formal
+  cog_humor: Serious
+  cog_detail_orientation: Very high
+  cog_abstraction: Highly abstract
+  cog_curiosity: High
+  cog_open_mindedness: Low
+  cog_assertiveness: High
+  cog_emotional_expressiveness: Moderate
+  cog_perfectionism: High
+  cog_attention_span: Very long
+  cog_reading_vs_watching: Strongly prefers reading
+  cog_visual_vs_verbal: Strongly verbal
+  cog_big_picture_vs_detail: Both
+  cog_storytelling: Moderate
+  cog_precision_of_language: Very precise
+  cog_use_of_jargon: Heavy
+  cog_emoji_use: Never
+  acad_literature: Passionate
+  acad_creative_writing: Interested
+  acad_philosophy: Interested
+  trait_curiosity: Strong
+  trait_creativity: Moderate
+  trait_love_of_learning: Signature
+  trait_open_mindedness: Moderate
+  trait_perspective: Strong
+  trait_bravery: Moderate
+  trait_perseverance: Strong
+  trait_honesty: Strong
+  trait_capacity_for_love: Moderate
+  trait_social_intelligence: Moderate
+  trait_teamwork: Moderate
+  trait_leadership: Strong
+  trait_humility: Moderate
+  trait_prudence: Strong
+  trait_self_regulation: Strong
+  trait_appreciation_of_beauty: Moderate
+  trait_hope_optimism: Moderate
+  trait_playfulness: Absent
+  trait_spirituality: Signature
+  trait_ambition: Strong
+  trait_resilience: Strong
+  trait_discipline: Signature
+  trait_loyalty: Strong
+  trait_adaptability: Moderate
+  val_family: Irrelevant
+  val_career_success: Moderate
+  val_wealth: Irrelevant
+  val_personal_freedom: Minor
+  val_security_stability: Moderate
+  val_adventure: Irrelevant
+  val_tradition: Core value
+  val_power_influence: Minor
+  val_achievement: Important
+  val_creativity_self_expression: Important
+  val_community: Core value
+  val_spirituality_faith: Core value
+  val_knowledge_truth: Core value
+  val_social_status: Minor
+  val_independence: Minor
+  val_loyalty: Core value
+  val_recognition: Minor
+  val_helping_others: Important
+  val_personal_growth: Important
+  val_fun_enjoyment: Irrelevant
+  val_integrity_honesty: Core value
+  val_beauty_aesthetics: Moderate
+  val_order_structure: Important
+  demo_marital_status: Single
+  demo_children_count: None
+  demo_housing_status: Shared housing
+  demo_religion_affiliation: Christian
+  demo_ethnicity_broad: White / European
+  demo_veteran_status: Civilian
+  demo_parental_status: Not a parent
+  demo_relationship_length: Not in one
+  lifex_geographic_mobility: Moved internationally
+  lifex_travel_breadth: Lived abroad
+  lifex_career_path_shape: Linear climb
+  lifex_education_journey: Traditional track
+  lifex_adversity_level: Significant struggles
+  lifex_immigration_generation: First-generation immigrant
+  lifex_military_history: Never served
+  lifex_entrepreneurship_history: Never considered
+  lifex_relationship_history: Limited
+  lifex_parenting_journey: No children
+  lifex_faith_journey: Lifelong faith
+  lifex_cultural_exposure: Lived across cultures
+  lifex_public_recognition: Publicly notable
+  lifex_service_history: Long-term volunteer
+  lifex_hometown_tie: No connection
+  bfi2_domain_conscientiousness: High
+  bfi2_domain_open_mindedness: High
+  bfi2_facet_assertiveness: High
+  bfi2_facet_energy_level: High
+  bfi2_facet_respectfulness: High
+  bfi2_facet_organization: High
+  bfi2_facet_productiveness: High
+  bfi2_facet_responsibility: Very high
+  bfi2_facet_intellectual_curiosity: Very high
+  bfi2_facet_aesthetic_sensitivity: High
+  bfi2_facet_creative_imagination: High
+  schwartz_value_self_direction: Low
+  schwartz_value_stimulation: Low
+  schwartz_value_hedonism: Very low
+  schwartz_value_achievement: High
+  schwartz_value_power: Low
+  schwartz_value_security: Average
+  schwartz_value_conformity: Very high
+  schwartz_value_tradition: Very high
+  schwartz_value_benevolence: High
+  schwartz_value_universalism: High
+  sdt_need_autonomy: Low
+  sdt_need_competence: Very high
+  sdt_need_relatedness: High
+  mft_loyalty_betrayal: High
+  mft_authority_subversion: High
+  mft_sanctity_degradation: Very high
+  need_for_cognition: Very high
+  dospert_ethical_risk_tolerance: Low
+  interpersonal_agency_dominance: High
+  interpersonal_communion_warmth: High

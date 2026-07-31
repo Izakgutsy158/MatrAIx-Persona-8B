@@ -1,0 +1,31 @@
+artifactName: user_feedback.json
+instructions: |
+  You've finished researching MU in the Stocks app. Answer from what you
+  actually saw and decided — do not revise your buy/sell/hold call here.
+  Focus on whether the chart and news felt like enough information, how much
+  the earnings context mattered, and how confident you feel about the call
+  you already made.
+fields:
+  - key: informationSufficiency
+    prompt: Did the Stocks app provide enough information (chart + news) to form a confident opinion?
+    kind: enum
+    choices: [yes, partially, no]
+  - key: earningsInfluence
+    prompt: How much did the earnings context influence your final sentiment?
+    kind: enum
+    choices: [heavily, somewhat, minimally]
+  - key: overallConfidenceRating
+    prompt: Overall, how confident are you in your buy/sell/hold decision from 1 to 10?
+    kind: integer
+    minimum: 1
+    maximum: 10
+    explanation:
+      key: reason
+      prompt: Briefly explain what drove your decision in your own voice.
+  - key: wouldActOnIt
+    prompt: "Optional: would you actually put real money behind this decision?"
+    kind: boolean
+    required: false
+  - key: missingInfoNote
+    prompt: "Optional: what additional information would have helped you decide?"
+    required: false

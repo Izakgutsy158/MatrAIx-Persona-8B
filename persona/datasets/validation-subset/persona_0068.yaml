@@ -1,0 +1,160 @@
+persona_id: 0068
+version: '1.0'
+source: wiki:Q51676
+dimensions:
+  region: MENA
+  gender_identity: Man
+  urbanicity: Nomadic / remote
+  register: Formal / standard
+  domain: Arts & Humanities
+  domain_characteristics: Practitioner
+  institution_tier: Not applicable
+  major_life_events: Migration / immigration
+  cultural_background: Middle Eastern
+  dominant_trait: High agreeableness
+  risk_tolerance: Risk-averse
+  decision_style: Consensus-driven
+  values_priority: Tradition
+  religiosity: Devout
+  safety_sensitivity: Benign
+  fam_theology: Expert
+  fam_religious_studies: Expert
+  skill_public_speaking: Master
+  skill_leadership: Advanced
+  skill_people_management: Advanced
+  skill_conflict_resolution: Master
+  skill_empathy: Advanced
+  skill_persuasion: Advanced
+  skill_presenting: Advanced
+  topic_religion: Passionate
+  topic_spirituality: Passionate
+  att_organized_religion: Enthusiast
+  att_authority: Positive
+  ind_education: Some exposure
+  cult_egypt: Lived there
+  cult_israel: Native
+  big5_emotionality: High
+  big5_self_efficacy: Low
+  big5_dutifulness: High
+  big5_achievement_striving: Low
+  big5_self_discipline: High
+  big5_cautiousness: Low
+  big5_friendliness: Very high
+  big5_gregariousness: High
+  big5_assertiveness: Low
+  big5_activity_level: Low
+  big5_cheerfulness: High
+  big5_morality: Average
+  big5_altruism: Very high
+  big5_cooperation: Very high
+  big5_modesty: Very high
+  big5_sympathy: High
+  big5_anxiety: High
+  big5_anger: Low
+  big5_self_consciousness: High
+  big5_vulnerability: High
+  trait_love_of_learning: Moderate
+  trait_perspective: Moderate
+  trait_bravery: Slight
+  trait_perseverance: Strong
+  trait_honesty: Strong
+  trait_capacity_for_love: Signature
+  trait_kindness: Signature
+  trait_social_intelligence: Signature
+  trait_teamwork: Strong
+  trait_fairness: Moderate
+  trait_leadership: Strong
+  trait_forgiveness: Moderate
+  trait_humility: Strong
+  trait_prudence: Slight
+  trait_self_regulation: Strong
+  trait_hope_optimism: Moderate
+  trait_spirituality: Signature
+  trait_ambition: Slight
+  trait_empathy: Strong
+  trait_resilience: Strong
+  trait_discipline: Moderate
+  trait_generosity: Moderate
+  trait_loyalty: Strong
+  trait_competitiveness: Absent
+  trait_adaptability: Moderate
+  val_family: Core value
+  val_career_success: Moderate
+  val_personal_freedom: Minor
+  val_security_stability: Important
+  val_tradition: Core value
+  val_power_influence: Moderate
+  val_achievement: Important
+  val_community: Core value
+  val_spirituality_faith: Core value
+  val_knowledge_truth: Important
+  val_social_status: Moderate
+  val_independence: Minor
+  val_justice_fairness: Important
+  val_loyalty: Core value
+  val_recognition: Minor
+  val_helping_others: Core value
+  val_integrity_honesty: Core value
+  val_order_structure: Core value
+  val_patriotism: Important
+  pref_lead_vs_follow: Leans support
+  pref_competition_vs_collab: Collaborative
+  demo_marital_status: Married
+  demo_children_count: 3+ children
+  demo_employment_status: Full-time
+  demo_religion_affiliation: Jewish
+  demo_ethnicity_broad: Middle Eastern
+  demo_veteran_status: Civilian
+  demo_birth_order: Middle
+  demo_parental_status: Parent of adults
+  demo_relationship_length: 15+ years
+  lifex_childhood_environment: Hardship
+  lifex_geographic_mobility: Moved internationally
+  lifex_travel_breadth: Well-traveled
+  lifex_career_path_shape: Linear climb
+  lifex_adversity_level: Overcame major hardship
+  lifex_immigration_generation: First-generation immigrant
+  lifex_military_history: Never served
+  lifex_relationship_history: Married once
+  lifex_parenting_journey: Grown children
+  lifex_health_journey: No major events
+  lifex_loss_experience: Lost a partner / child
+  lifex_faith_journey: Lifelong faith
+  lifex_cultural_exposure: Some exposure
+  lifex_public_recognition: Famous
+  lifex_service_history: Public office
+  lifex_turning_point: No single one
+  lifex_hometown_tie: No connection
+  bfi2_domain_extraversion: Average
+  bfi2_domain_agreeableness: Very high
+  bfi2_domain_conscientiousness: High
+  bfi2_domain_negative_emotionality: Average
+  bfi2_facet_sociability: High
+  bfi2_facet_assertiveness: Low
+  bfi2_facet_energy_level: Low
+  bfi2_facet_compassion: Very high
+  bfi2_facet_respectfulness: High
+  bfi2_facet_productiveness: Average
+  bfi2_facet_responsibility: High
+  bfi2_facet_anxiety: High
+  bfi2_facet_emotional_volatility: Low
+  schwartz_value_self_direction: Low
+  schwartz_value_achievement: High
+  schwartz_value_power: Average
+  schwartz_value_security: High
+  schwartz_value_conformity: Very high
+  schwartz_value_tradition: Very high
+  schwartz_value_benevolence: Very high
+  schwartz_value_universalism: High
+  sdt_need_autonomy: Low
+  sdt_need_competence: High
+  sdt_need_relatedness: Very high
+  mft_care_harm: Very high
+  mft_loyalty_betrayal: High
+  mft_authority_subversion: Very high
+  mft_sanctity_degradation: Very high
+  dospert_ethical_risk_tolerance: Low
+  dospert_health_safety_risk_tolerance: Low
+  dospert_social_risk_tolerance: Low
+  interpersonal_agency_dominance: Low
+  interpersonal_communion_warmth: Very high

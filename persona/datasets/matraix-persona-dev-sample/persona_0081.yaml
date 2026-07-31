@@ -1,0 +1,84 @@
+persona_id: 0081
+version: '1.0'
+source: stackoverflow
+display_name: Sofia Andersson
+dimensions:
+  age_bracket: 45-54
+  region: Western Europe
+  domain: Healthcare & Medicine
+  highest_education: Master's
+  company_size: Startup (<50)
+  role_function: Engineering
+  years_experience: 20+
+  fam_databases: Expert
+  fam_cloud_infrastructure: Expert
+  fam_devops: Familiar
+  skill_coding: Master
+  skill_debugging: Master
+  skill_system_design: Master
+  skill_time_management: Advanced
+  skill_prioritization: Advanced
+  skill_research: Master
+  skill_critical_thinking: Master
+  skill_problem_solving: Master
+  skill_logical_reasoning: Master
+  tool_sql: Power user
+  tool_slack: Regular
+  tool_microsoft_teams: Regular
+  tool_azure: Regular
+  tool_vs_code: Regular
+  att_ai: Opposed
+  att_new_technology: Positive
+  att_online_reviews: Positive
+  att_open_source: Positive
+  ind_healthcare: Experienced
+  lstyle_commute_mode: Remote
+  lstyle_device_ecosystem: Mixed
+  cog_detail_orientation: High
+  cog_reading_vs_watching: Strongly prefers reading
+  trait_love_of_learning: Strong
+  pref_team_vs_solo: Team-leaning
+  pref_speed_vs_accuracy: Accuracy first
+  demo_employment_status: Full-time
+  demo_generation: Gen X
+  lifex_education_journey: Advanced degrees
+  code_structure_preference: Object-oriented design
+  code_abstraction_level: Moderate abstraction
+  code_dependencies_approach: Lean on libraries (minimal custom code)
+  code_performance_priority: Readability-first then optimize if needed
+  code_refactoring_frequency: Refactor when necessary
+  prog_javascript: Proficient
+  prog_sql: Proficient
+  schwartz_value_achievement: High
+  schwartz_value_security: High
+  sdt_need_autonomy: High
+  sdt_need_relatedness: Average
+  need_for_closure: High
+  interpersonal_communion_warmth: High
+  ai_task_code_generation: Does not plan AI use
+  ai_task_code_review: Does not plan AI use
+  ai_task_codebase_learning: Does not plan AI use
+  ai_task_data_generation_analytics: Does not plan AI use
+  ai_task_debugging_fixing: Does not plan AI use
+  ai_task_deployment_monitoring: Does not plan AI use
+  ai_task_documentation: Does not plan AI use
+  ai_task_learning_concepts: Does not plan AI use
+  ai_task_project_planning: Does not plan AI use
+  ai_task_refactoring: Does not plan AI use
+  ai_task_search_answers: Does not plan AI use
+  ai_task_testing: Does not plan AI use
+  code_type_system_orientation: Strong static typing preference
+  coding_agent_usage_frequency: No plans
+  coding_ai_usage_frequency: Never used
+  dev_contribution_context: Employee work
+  dev_ic_manager_orientation: Individual contributor
+  dev_professional_status: Professional developer
+  dev_role_archetype: Full-stack developer
+  developer_help_seeking_preference: Ask teammates first
+  stackoverflow_participation_style: Votes / bookmarks
+  stackoverflow_usage_pattern: Multiple times daily
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: stackoverflow-91689b26946c
+  origin_source_row_index: 2182180

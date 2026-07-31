@@ -1,0 +1,32 @@
+persona_id: '0052'
+version: '1.0'
+source: amazon
+display_name: Quinn Santos
+dimensions:
+  gender_identity: Woman
+  decision_style: Analytical
+  expertise_gap: Novice asking expert
+  trust_level: Verifying
+  safety_sensitivity: Benign
+  accessibility_needs: Visual
+  economic_motivation: Value-driven
+  topic_pets: Interested
+  topic_collecting: Interested
+  att_online_reviews: Positive
+  health_vision: Corrected
+  health_medication_use: Daily
+  health_contrast_need: Prefers
+  trait_creativity: Slight
+  trait_fairness: Slight
+  trait_humility: Slight
+  trait_playfulness: Slight
+  trait_empathy: Slight
+  trait_adaptability: Slight
+  mft_care_harm: High
+  need_for_closure: High
+  dospert_health_safety_risk_tolerance: Low
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: amazon-cc4e49d56bb7
+  origin_source_row_index: 2061062

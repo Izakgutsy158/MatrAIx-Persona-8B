@@ -1,0 +1,42 @@
+# IKEA Room Planner — CUA variant (persona-computer-1 on the shared-web-cua-linux
+# desktop: headed Chromium under Xvfb, driven by screenshots + xdotool). Claude
+# Sonnet 4.5 computer-use via Amazon Bedrock.
+#   export AWS_BEARER_TOKEN_BEDROCK=...   # Bedrock API key (bearer token)
+#   export AWS_REGION=us-east-1
+#
+#   uv run harbor run -c configs/jobs/example-job-recipe/appSim-web-cua-ikea-room-planner-bedrock.yaml
+
+job_name: appSim-web-cua-ikea-room-planner-bedrock
+jobs_dir: jobs
+n_attempts: 1
+timeout_multiplier: 1.0
+n_concurrent_trials: 1
+quiet: false
+
+environment:
+  type: docker
+  delete: true
+
+agents:
+  - name: persona-computer-1
+    model_name: bedrock/us.anthropic.claude-sonnet-4-5-20250929-v1:0
+    kwargs:
+      persona_path: persona/datasets/matraix-persona-dev-sample/persona_0042.yaml
+      # IKEA's Room Planner is WebGL2-only ("Betrakta Material Shaders ...
+      # require WebGL2, which isn't supported on this device"). The desktop has
+      # no GPU, and the default --disable-gpu drops WebGL entirely, so opt into
+      # ANGLE + SwiftShader software rasterisation for this task.
+      enable_webgl: true
+      # Cap the screenshot loop. Bedrock rejects any request carrying >100
+      # images ("Too much media: 0 document pages + 101 images > 100"), and the
+      # runtime only trims screenshot history during *token*-triggered
+      # compaction — which never fires here (peak ~147k of a 200k window), so
+      # images accumulate until the request is refused. A verified good run
+      # finished in 86 steps / 84 screenshots; an 85-turn cap keeps every run
+      # clear of the image ceiling with headroom to spare. Paired with the
+      # "submit by turn ~70" budget in instruction.md so the persona writes
+      # room_plan.json before the cap rather than exploring until it stops.
+      max_turns: 85
+
+tasks:
+  - path: application/tasks/web_ikea-room-planner

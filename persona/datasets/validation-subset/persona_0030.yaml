@@ -1,0 +1,76 @@
+persona_id: '0030'
+version: '1.0'
+source: wiki:Q11262
+dimensions:
+  gender_identity: Man
+  register: Technical jargon
+  domain: Software & AI
+  domain_characteristics: Practitioner
+  institution_tier: Mid-tier university
+  research_output: Occasional author
+  seniority: Manager
+  company_size: Academia
+  role_function: Engineering
+  years_experience: 20+
+  life_stage: Mid-life
+  tech_savviness: Comfortable
+  dominant_trait: High neuroticism
+  values_priority: Autonomy
+  emotional_state: Frustrated
+  safety_sensitivity: Benign
+  fam_computer_networking: Proficient
+  fam_operating_systems: Proficient
+  skill_writing: Advanced
+  skill_storytelling: Advanced
+  skill_system_design: Advanced
+  skill_leadership: Intermediate
+  skill_people_management: Intermediate
+  skill_problem_solving: Advanced
+  topic_gaming: Interested
+  topic_technology: Passionate
+  topic_literature: Interested
+  ind_technology: Veteran
+  ind_media: Experienced
+  ind_entertainment: Some exposure
+  ind_gaming: Some exposure
+  ind_publishing: Experienced
+  ind_education: Experienced
+  cult_new_zealand: Lived there
+  big5_morality: Low
+  big5_anger: High
+  cog_humor: Sarcastic
+  cog_patience: Low
+  cog_assertiveness: Very high
+  cog_emotional_expressiveness: High
+  cog_conflict_approach: Confronting
+  cog_risk_framing: Threat-focused
+  cog_empathy_expression: Low
+  cog_use_of_jargon: Moderate
+  cog_politeness: Rude
+  acad_computer_science: Interested
+  acad_literature: Interested
+  acad_creative_writing: Interested
+  acad_business_studies: Interested
+  trait_honesty: Absent
+  trait_kindness: Absent
+  trait_social_intelligence: Strong
+  trait_teamwork: Moderate
+  trait_self_regulation: Absent
+  trait_empathy: Absent
+  val_personal_freedom: Important
+  val_power_influence: Core value
+  val_achievement: Moderate
+  val_knowledge_truth: Moderate
+  val_independence: Important
+  pref_work_location: Strongly office
+  lifex_career_path_shape: Multiple pivots
+  lifex_education_journey: Traditional track
+  lifex_formative_decade: 1980s
+  lifex_public_recognition: Publicly notable
+  schwartz_value_self_direction: High
+  schwartz_value_achievement: Average
+  schwartz_value_power: Very high
+  sdt_need_autonomy: High
+  sdt_need_competence: High
+  interpersonal_agency_dominance: Very high
+  interpersonal_communion_warmth: Very low

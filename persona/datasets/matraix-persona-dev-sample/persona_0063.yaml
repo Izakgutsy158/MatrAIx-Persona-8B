@@ -1,0 +1,74 @@
+persona_id: '0063'
+version: '1.0'
+source: stackoverflow
+display_name: Maya Patel
+dimensions:
+  age_bracket: 65+
+  region: North America
+  domain: Software & AI
+  domain_characteristics: Practitioner
+  highest_education: Master's
+  role_function: Engineering
+  years_experience: 20+
+  life_stage: Retirement
+  decision_style: Analytical
+  fam_machine_learning: Aware
+  fam_databases: Familiar
+  fam_operating_systems: Familiar
+  fam_compilers: Familiar
+  skill_coding: Master
+  skill_mentoring: Advanced
+  skill_problem_solving: Master
+  tool_vim: Regular
+  tool_zoom: Regular
+  tool_chatgpt: Regular
+  topic_technology: Interested
+  att_ai: Skeptical
+  ind_technology: Veteran
+  lstyle_commute_mode: Remote
+  lstyle_device_ecosystem: Mixed
+  cog_detail_orientation: High
+  cog_reading_vs_watching: Prefers reading
+  trait_love_of_learning: Strong
+  trait_prudence: Strong
+  trait_adaptability: Strong
+  pref_early_vs_late: Late adopter
+  pref_text_vs_call: Prefers text
+  demo_employment_status: Part-time
+  demo_generation: Boomer
+  lifex_career_path_shape: Linear climb
+  lifex_education_journey: Advanced degrees
+  lifex_formative_decade: 1960s-70s
+  need_for_closure: High
+  ai_task_code_generation: Does not plan AI use
+  ai_task_code_review: Does not plan AI use
+  ai_task_codebase_learning: Does not plan AI use
+  ai_task_data_generation_analytics: Does not plan AI use
+  ai_task_debugging_fixing: Does not plan AI use
+  ai_task_deployment_monitoring: Does not plan AI use
+  ai_task_documentation: Does not plan AI use
+  ai_task_learning_concepts: Does not plan AI use
+  ai_task_project_planning: Does not plan AI use
+  ai_task_refactoring: Does not plan AI use
+  ai_task_search_answers: Does not plan AI use
+  ai_task_testing: Does not plan AI use
+  codebase_onboarding_style: Reads architecture / docs first
+  coding_agent_failure_tolerance: Does not use agents
+  coding_agent_usage_frequency: No plans
+  coding_agent_workflow_impact: No clear change
+  coding_ai_learning_source: Not learning AI tooling
+  coding_ai_sentiment: Neutral / indifferent
+  coding_ai_usage_frequency: Tried but not active
+  debugging_strategy: Search / ask externally
+  dev_contribution_context: Employee work
+  dev_ic_manager_orientation: Individual contributor
+  dev_professional_status: Professional developer
+  dev_role_archetype: Other developer
+  dev_toolchain_complexity: Focused small stack
+  human_help_boundary_for_ai_coding: Rarely needs human help
+  stackoverflow_usage_pattern: Weekly reference
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: stackoverflow-d5ead6c2614e
+  origin_source_row_index: 2119218

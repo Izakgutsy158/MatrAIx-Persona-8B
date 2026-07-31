@@ -1,0 +1,181 @@
+persona_id: '0103'
+version: '1.0'
+source: prism
+display_name: Emma Dubois
+dimensions:
+  age_bracket: 45-54
+  region: Western Europe
+  gender_identity: Woman
+  primary_language: English
+  english_proficiency: Fluent (C1-C2)
+  highest_education: Bachelor's
+  seniority: Mid
+  years_experience: 11-20
+  life_stage: Mid-life
+  cultural_background: Individualist (Western)
+  tech_savviness: Comfortable
+  religiosity: Secular
+  intent: Learn / explain
+  query_complexity: Simple factual
+  expertise_gap: Novice asking expert
+  tone_expected: Blunt
+  safety_sensitivity: Sensitive personal
+  prior_context: Returning user
+  economic_motivation: Cost-sensitive
+  fam_machine_learning: Aware
+  fam_deep_learning: Aware
+  fam_ethics: Familiar
+  skill_empathy: Advanced
+  skill_fact_checking: Advanced
+  tool_chatgpt: Occasional
+  topic_travel: Interested
+  topic_technology: Interested
+  topic_science: Interested
+  topic_pets: Interested
+  topic_history: Interested
+  topic_philosophy: Interested
+  topic_religion: Indifferent
+  topic_spirituality: Neutral
+  topic_volunteering: Interested
+  topic_activism: Neutral
+  topic_environment: Interested
+  topic_sustainability: Interested
+  topic_productivity: Interested
+  topic_self_improvement: Interested
+  topic_mindfulness: Interested
+  lang_english: Fluent
+  att_ai: Positive
+  att_climate_action: Positive
+  att_organized_religion: Skeptical
+  att_higher_education: Positive
+  att_new_technology: Positive
+  att_minimalism: Positive
+  att_consumerism: Skeptical
+  att_fast_fashion: Skeptical
+  att_free_speech: Enthusiast
+  ind_technology: Some exposure
+  cult_united_kingdom: Native
+  big5_intellect: High
+  big5_trust: High
+  big5_morality: Very high
+  big5_altruism: High
+  big5_sympathy: High
+  big5_immoderation: Low
+  lstyle_shopping_style: Bargain hunter
+  lstyle_work_schedule: 9-to-5
+  lstyle_frugality: Frugal saver
+  cog_verbosity: Concise
+  cog_formality: Formal
+  cog_directness: Blunt
+  cog_humor: Serious
+  cog_detail_orientation: High
+  cog_abstraction: Concrete
+  cog_optimism: Moderate
+  cog_patience: High
+  cog_curiosity: High
+  cog_skepticism: High
+  cog_open_mindedness: High
+  cog_assertiveness: Moderate
+  cog_emotional_expressiveness: Moderate
+  cog_conflict_approach: Collaborative
+  cog_feedback_receptiveness: High
+  cog_ambiguity_tolerance: Low
+  cog_perfectionism: High
+  cog_attention_span: Long
+  cog_learning_pace: Average
+  cog_question_asking: Sometimes
+  cog_decision_speed: Deliberate
+  cog_confidence_calibration: Well-calibrated
+  cog_reading_vs_watching: Prefers reading
+  cog_visual_vs_verbal: Verbal
+  cog_big_picture_vs_detail: Detail
+  cog_risk_framing: Threat-focused
+  cog_empathy_expression: High
+  cog_storytelling: Low
+  cog_precision_of_language: Precise
+  cog_use_of_jargon: Avoids jargon
+  cog_emoji_use: Never
+  cog_politeness: Polite
+  peeve_unexplained_jargon: Major peeve
+  trait_open_mindedness: Moderate
+  trait_perspective: Strong
+  trait_honesty: Signature
+  trait_capacity_for_love: Strong
+  trait_kindness: Strong
+  trait_social_intelligence: Moderate
+  trait_fairness: Signature
+  trait_prudence: Strong
+  trait_self_regulation: Moderate
+  trait_empathy: Strong
+  trait_discipline: Moderate
+  trait_adaptability: Moderate
+  val_tradition: Important
+  val_knowledge_truth: Core value
+  val_justice_fairness: Core value
+  val_sustainability: Important
+  val_helping_others: Important
+  val_personal_growth: Important
+  val_integrity_honesty: Core value
+  val_equality: Core value
+  pref_city_vs_nature: Prefers nature
+  pref_speed_vs_accuracy: Accuracy first
+  pref_quality_vs_quantity: Quality first
+  pref_logic_vs_intuition: Logic-leaning
+  pref_save_vs_spend: Saver-leaning
+  pref_indoor_vs_outdoor: Outdoor-leaning
+  pref_early_vs_late: Mainstream
+  pref_detail_brief_vs_full: Every detail
+  pref_stability_vs_change: Stability-leaning
+  demo_marital_status: Single
+  demo_employment_status: Full-time
+  demo_generation: Gen X
+  demo_religion_affiliation: None
+  demo_ethnicity_broad: White / European
+  demo_home_language: Same as primary
+  demo_parental_status: Not a parent
+  demo_relationship_length: Not in one
+  lifex_education_journey: Traditional track
+  lifex_relationship_history: Limited
+  lifex_parenting_journey: No children
+  lifex_faith_journey: Lapsed / left faith
+  lifex_formative_decade: 1990s
+  lifex_languages_lifetime: One
+  bfi2_domain_agreeableness: High
+  bfi2_domain_conscientiousness: High
+  bfi2_domain_open_mindedness: High
+  bfi2_facet_compassion: High
+  bfi2_facet_respectfulness: Very high
+  bfi2_facet_trust: High
+  bfi2_facet_responsibility: High
+  bfi2_facet_intellectual_curiosity: High
+  schwartz_value_self_direction: High
+  schwartz_value_hedonism: Low
+  schwartz_value_achievement: High
+  schwartz_value_conformity: Low
+  schwartz_value_benevolence: High
+  schwartz_value_universalism: Very high
+  sdt_need_autonomy: High
+  sdt_need_competence: High
+  mft_care_harm: High
+  mft_fairness_cheating: High
+  need_for_cognition: Very high
+  ai_task_learning_concepts: Currently partially AI-assisted
+  ai_task_search_answers: Currently partially AI-assisted
+  coding_agent_explanation_preference: Explain decisions and tradeoffs
+  coding_agent_security_expectation: Expects basic secret / privacy checks
+  coding_agent_usage_frequency: Weekly
+  coding_ai_complexity_comfort: Only simple / boilerplate tasks
+  coding_ai_output_trust: Trusts after verification
+  coding_ai_sentiment: Somewhat favorable
+  coding_ai_usage_frequency: Weekly
+  coding_tool_ai_capability_importance: Moderate
+  coding_tool_ethics_blocker: Hard blocker
+  coding_tool_reliability_latency_importance: High
+  coding_tool_security_privacy_blocker: Major concern
+  future_developer_skill_belief: Ethical judgment
+  human_help_boundary_for_ai_coding: When trust is low
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: prism-25281825f0c5
+  origin_source_row_index: 2211846

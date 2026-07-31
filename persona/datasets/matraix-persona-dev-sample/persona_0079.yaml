@@ -1,0 +1,84 @@
+persona_id: 0079
+version: '1.0'
+source: stackoverflow
+display_name: Ava Martinez
+dimensions:
+  age_bracket: 25-34
+  region: North America
+  domain: Software & AI
+  subject_specialty: Machine learning
+  domain_characteristics: Practitioner
+  highest_education: Bachelor's
+  institution_tier: Online / bootcamp
+  role_function: Engineering
+  years_experience: 11-20
+  life_stage: Early career
+  emotional_state: Frustrated
+  fam_machine_learning: Expert
+  fam_data_science: Expert
+  fam_databases: Familiar
+  fam_operating_systems: Familiar
+  fam_cloud_infrastructure: Familiar
+  skill_coding: Advanced
+  skill_data_analysis: Advanced
+  skill_research: Advanced
+  skill_problem_solving: Advanced
+  tool_python: Regular
+  tool_jira: Regular
+  tool_microsoft_teams: Regular
+  topic_productivity: Interested
+  topic_self_improvement: Interested
+  att_ai: Skeptical
+  att_rapid_change: Skeptical
+  ind_technology: Experienced
+  lstyle_commute_mode: Remote
+  cog_learning_pace: Fast
+  cog_question_asking: Rarely asks
+  trait_love_of_learning: Strong
+  trait_adaptability: Strong
+  val_achievement: Important
+  val_knowledge_truth: Important
+  val_independence: Important
+  val_personal_growth: Important
+  pref_team_vs_solo: Team-leaning
+  pref_speed_vs_accuracy: Accuracy first
+  demo_household_income: $100k-200k
+  demo_employment_status: Full-time
+  demo_generation: Millennial
+  lifex_career_path_shape: Just starting
+  lifex_education_journey: Traditional track
+  code_error_handling: Explicit error returns/validation
+  prog_python: Proficient
+  prog_bash: Familiar
+  ai_task_code_generation: Does not plan AI use
+  ai_task_code_review: Does not plan AI use
+  ai_task_codebase_learning: Does not plan AI use
+  ai_task_data_generation_analytics: Does not plan AI use
+  ai_task_debugging_fixing: Does not plan AI use
+  ai_task_deployment_monitoring: Does not plan AI use
+  ai_task_documentation: Does not plan AI use
+  ai_task_learning_concepts: Does not plan AI use
+  ai_task_project_planning: Does not plan AI use
+  ai_task_refactoring: Does not plan AI use
+  ai_task_search_answers: Does not plan AI use
+  ai_task_testing: Does not plan AI use
+  codebase_onboarding_style: Reads architecture / docs first
+  coding_agent_failure_tolerance: Does not use agents
+  coding_agent_usage_frequency: No plans
+  coding_agent_workflow_impact: No clear change
+  coding_ai_complexity_comfort: Avoids AI for complexity
+  coding_ai_output_trust: Does not trust
+  coding_ai_sentiment: Somewhat unfavorable
+  coding_ai_usage_frequency: Tried but not active
+  dev_contribution_context: Employee work
+  dev_ic_manager_orientation: Individual contributor
+  dev_professional_status: Professional developer
+  dev_role_archetype: Data / ML developer
+  developer_help_seeking_preference: Search Stack Overflow / Q&A first
+  stackoverflow_participation_style: Reads / searches only
+  stackoverflow_usage_pattern: Weekly reference
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: stackoverflow-0da531da7915
+  origin_source_row_index: 2177158

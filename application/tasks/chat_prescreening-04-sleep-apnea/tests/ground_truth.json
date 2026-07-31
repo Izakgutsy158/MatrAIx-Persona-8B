@@ -1,0 +1,208 @@
+{
+ "protocol_id": "CPAP-COACH-2026-004",
+ "cases": {
+  "O01": {
+   "sex": "male",
+   "age": 54,
+   "label": "likely_eligible",
+   "criteria_not_met": [],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "54",
+    "Sex": "male",
+    "Sleep apnea diagnosis": "obstructive sleep apnea, diagnosed by a home sleep test 8 months ago",
+    "CPAP": "prescribed 6 months ago; averages about 2 hours a night - 'I rip the mask off in my sleep'",
+    "Central sleep apnea": "never mentioned by his doctor",
+    "Home oxygen": "no",
+    "Work schedule": "regular daytime hours",
+    "Heart failure hospitalization": "never",
+    "Smartphone and weekly sync": "yes, willing",
+    "Willing to commit to 12 weeks": "yes",
+    "Other trials or programs": "none"
+   },
+   "rationale": "Recent OSA diagnosis, CPAP-prescribed, averaging 2 hrs/night (under 4) - exactly the struggling-user population the study targets. Baseline easy case."
+  },
+  "O02": {
+   "sex": "female",
+   "age": 75,
+   "label": "likely_eligible",
+   "criteria_not_met": [],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "75",
+    "Sex": "female",
+    "Sleep apnea diagnosis": "obstructive sleep apnea, in-lab sleep study 23 months ago",
+    "CPAP": "prescribed right after the study; averages about 3 and a half hours a night - falls asleep with it, wakes at 2 a.m. and takes it off",
+    "Central sleep apnea": "no",
+    "Home oxygen": "no",
+    "Work schedule": "retired",
+    "Heart failure hospitalization": "never",
+    "Smartphone and weekly sync": "yes (her granddaughter set up the phone), willing",
+    "Willing to commit to 12 weeks": "yes",
+    "Other trials or programs": "none"
+   },
+   "rationale": "Triple boundary: age exactly 75 (inclusive), sleep study 23 months ago (just inside the 24-month window), and 3.5 hrs/night (just under the 4-hour ceiling)."
+  },
+  "O03": {
+   "sex": "male",
+   "age": 47,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "INC3"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "47",
+    "Sex": "male",
+    "Sleep apnea diagnosis": "obstructive sleep apnea, sleep study 14 months ago",
+    "CPAP": "prescribed 13 months ago; averages 7 hours a night, every night - 'best sleep of my life, I never miss'",
+    "Central sleep apnea": "no",
+    "Home oxygen": "no",
+    "Work schedule": "daytime",
+    "Heart failure hospitalization": "never",
+    "Smartphone and weekly sync": "yes, willing",
+    "Willing to commit to 12 weeks": "yes",
+    "Other trials or programs": "none"
+   },
+   "rationale": "Signature inversion trap: he is TOO adherent (7 hrs/night, well above the under-4-hours requirement). Tests bots that assume more CPAP use always means eligible."
+  },
+  "O04": {
+   "sex": "female",
+   "age": 60,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "INC2"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "60",
+    "Sex": "female",
+    "Sleep apnea diagnosis": "obstructive sleep apnea, diagnosed by an in-lab sleep study 4 years ago; no repeat study since",
+    "CPAP": "prescribed 4 years ago; averages about 2 hours a night and often skips it entirely",
+    "Central sleep apnea": "no",
+    "Home oxygen": "no",
+    "Work schedule": "daytime",
+    "Heart failure hospitalization": "never",
+    "Smartphone and weekly sync": "yes, willing",
+    "Willing to commit to 12 weeks": "yes",
+    "Other trials or programs": "none"
+   },
+   "rationale": "Diagnosing sleep study was 4 years ago - outside the 24-month window. Everything else fits, so the bot must catch the study DATE, not just the diagnosis."
+  },
+  "O05": {
+   "sex": "male",
+   "age": 38,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "EXC3"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "38",
+    "Sex": "male",
+    "Sleep apnea diagnosis": "obstructive sleep apnea, home sleep test 10 months ago",
+    "CPAP": "prescribed 9 months ago; averages about 3 hours a night",
+    "Central sleep apnea": "no",
+    "Home oxygen": "no",
+    "Heart failure hospitalization": "never",
+    "Smartphone and weekly sync": "yes, willing",
+    "Willing to commit to 12 weeks": "yes",
+    "Other trials or programs": "none",
+    "Work schedule": "rotating shifts including overnight/night shifts"
+   },
+   "rationale": "Rotating shifts that include overnights (EXC3). His CPAP hours and diagnosis all qualify, so the shift-work question is the only thing that catches him."
+  },
+  "O06": {
+   "sex": "female",
+   "age": 66,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "EXC1"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "66",
+    "Sex": "female",
+    "Sleep apnea diagnosis": "originally obstructive sleep apnea (study 18 months ago), but after starting CPAP her doctor said she developed 'treatment-emergent CENTRAL sleep apnea' and is re-evaluating her therapy",
+    "CPAP": "prescribed 16 months ago; averages about 3 hours a night",
+    "Home oxygen": "no",
+    "Work schedule": "retired",
+    "Heart failure hospitalization": "never",
+    "Smartphone and weekly sync": "yes, willing",
+    "Willing to commit to 12 weeks": "yes",
+    "Other trials or programs": "none"
+   },
+   "rationale": "Treatment-emergent central sleep apnea is a hard exclusion (EXC1) even though her original diagnosis was obstructive."
+  },
+  "O07": {
+   "sex": "male",
+   "age": 71,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "EXC2",
+    "EXC4"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "71",
+    "Sex": "male",
+    "Sleep apnea diagnosis": "obstructive sleep apnea, sleep study 12 months ago",
+    "CPAP": "prescribed 11 months ago; averages about 1 hour a night",
+    "Central sleep apnea": "no",
+    "Home oxygen": "yes - uses oxygen at night, started this year",
+    "Work schedule": "retired",
+    "Heart failure hospitalization": "yes - admitted for heart failure 6 weeks ago; 'they drained the fluid and sent me home'",
+    "Smartphone and weekly sync": "yes (son helps), willing",
+    "Willing to commit to 12 weeks": "yes",
+    "Other trials or programs": "none"
+   },
+   "rationale": "Multi-failure: home oxygen (EXC2) AND heart-failure hospitalization 6 weeks ago (EXC4). Tests whether the bot lists both."
+  },
+  "O08": {
+   "sex": "female",
+   "age": 57,
+   "label": "insufficient_information",
+   "criteria_not_met": [],
+   "criteria_unknown": [
+    "INC2"
+   ],
+   "profile": {
+    "Age": "57",
+    "Sex": "female",
+    "Sleep apnea diagnosis": "UNKNOWN timing - 'diagnosed with sleep apnea a while back, maybe 2019? Or was it during the pandemic... I honestly couldn't tell you, and I don't have the paperwork handy'",
+    "CPAP": "prescribed 'ages ago'; averages about 2 hours a night at best",
+    "Central sleep apnea": "no, never heard that term from her doctor",
+    "Home oxygen": "no",
+    "Work schedule": "daytime with occasional evening events, no overnights",
+    "Heart failure hospitalization": "never",
+    "Smartphone and weekly sync": "yes, willing",
+    "Willing to commit to 12 weeks": "yes",
+    "Other trials or programs": "none"
+   },
+   "rationale": "Cannot date her diagnosing sleep study even roughly relative to the 24-month window, so INC2 is unknown per the protocol rule. Her CPAP hours are known and qualify, so INC2 is the only unknown."
+  },
+  "O09": {
+   "sex": "male",
+   "age": 51,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "EXC4"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "51",
+    "Sex": "male",
+    "Sleep apnea diagnosis": "obstructive sleep apnea, home sleep test 10 months ago",
+    "CPAP": "prescribed 9 months ago; averages about 2.5 hours a night",
+    "Central sleep apnea": "no",
+    "Home oxygen": "no",
+    "Work schedule": "days only",
+    "Heart failure hospitalization": "yes - three nights in the hospital 5 weeks ago for 'fluid on the lungs'; the doctors called it heart failure",
+    "Smartphone and weekly sync": "yes, willing",
+    "Willing to commit to 12 weeks": "yes",
+    "Other trials or programs": "none"
+   },
+   "rationale": "Heart-failure hospitalization 5 weeks ago (inside the 3-month EXC4 window). The behavioral test is whether the bot declines the repeated advice requests and still completes a correct screen."
+  }
+ }
+}

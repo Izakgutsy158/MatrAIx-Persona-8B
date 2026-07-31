@@ -1,0 +1,228 @@
+persona_id: '0110'
+version: '1.0'
+source: prism
+display_name: Sofia Andersson
+dimensions:
+  age_bracket: 65-74
+  region: Western Europe
+  gender_identity: Man
+  primary_language: English
+  english_proficiency: Native
+  register: Formal / standard
+  highest_education: Bachelor's
+  seniority: Retired
+  years_experience: 20+
+  life_stage: Retirement
+  major_life_events: None notable
+  cultural_background: Individualist (Western)
+  tech_savviness: Reluctant
+  political_lean: Center
+  religiosity: Secular
+  emotional_state: Calm
+  intent: Learn / explain
+  query_complexity: Ambiguous / underspecified
+  expertise_gap: Novice asking expert
+  tone_expected: Formal
+  trust_level: Verifying
+  safety_sensitivity: High-stakes (medical/legal/financial)
+  prior_context: Cold start
+  device_context: Desktop, focused
+  fam_machine_learning: None
+  fam_deep_learning: None
+  fam_political_science: Aware
+  fam_philosophy: Familiar
+  fam_ethics: Familiar
+  fam_religious_studies: Aware
+  skill_empathy: Advanced
+  skill_fact_checking: Advanced
+  tool_chatgpt: Never used
+  tool_claude: Never used
+  topic_technology: Interested
+  topic_philosophy: Interested
+  topic_religion: Indifferent
+  topic_spirituality: Neutral
+  topic_volunteering: Interested
+  topic_activism: Interested
+  topic_environment: Interested
+  topic_sustainability: Interested
+  topic_self_improvement: Interested
+  topic_mindfulness: Interested
+  lang_english: Native
+  att_ai: Neutral
+  att_data_privacy: Positive
+  att_climate_action: Positive
+  att_organized_religion: Skeptical
+  att_higher_education: Positive
+  att_new_technology: Neutral
+  att_surveillance: Skeptical
+  att_free_speech: Positive
+  att_privacy_vs_security: Positive
+  ind_technology: None
+  cult_united_states: Unfamiliar
+  cult_canada: Unfamiliar
+  cult_mexico: Unfamiliar
+  cult_brazil: Unfamiliar
+  cult_argentina: Unfamiliar
+  cult_united_kingdom: Native
+  cult_france: Unfamiliar
+  cult_germany: Unfamiliar
+  cult_italy: Unfamiliar
+  cult_spain: Unfamiliar
+  cult_netherlands: Unfamiliar
+  cult_sweden: Unfamiliar
+  cult_poland: Unfamiliar
+  cult_russia: Unfamiliar
+  cult_turkey: Unfamiliar
+  cult_egypt: Unfamiliar
+  cult_saudi_arabia: Unfamiliar
+  cult_uae: Unfamiliar
+  cult_israel: Unfamiliar
+  cult_iran: Unfamiliar
+  cult_nigeria: Unfamiliar
+  cult_kenya: Unfamiliar
+  cult_south_africa: Unfamiliar
+  cult_ethiopia: Unfamiliar
+  cult_india: Unfamiliar
+  cult_pakistan: Unfamiliar
+  cult_bangladesh: Unfamiliar
+  cult_china: Unfamiliar
+  cult_japan: Unfamiliar
+  cult_south_korea: Unfamiliar
+  cult_vietnam: Unfamiliar
+  cult_thailand: Unfamiliar
+  cult_indonesia: Unfamiliar
+  cult_philippines: Unfamiliar
+  cult_australia: Unfamiliar
+  cult_new_zealand: Unfamiliar
+  cult_singapore: Unfamiliar
+  cult_malaysia: Unfamiliar
+  cult_greece: Unfamiliar
+  cult_portugal: Unfamiliar
+  big5_intellect: Average
+  big5_liberalism: High
+  big5_dutifulness: High
+  big5_trust: High
+  big5_morality: High
+  big5_altruism: High
+  big5_cooperation: High
+  big5_modesty: High
+  big5_sympathy: High
+  cog_verbosity: Concise
+  cog_formality: Formal
+  cog_directness: Direct
+  cog_humor: Serious
+  cog_detail_orientation: Moderate
+  cog_abstraction: Abstract
+  cog_optimism: Low
+  cog_open_mindedness: High
+  cog_assertiveness: Moderate
+  cog_emotional_expressiveness: Moderate
+  cog_confidence_calibration: Cautious
+  cog_big_picture_vs_detail: Big-picture
+  cog_risk_framing: Balanced
+  cog_empathy_expression: High
+  cog_storytelling: Moderate
+  cog_precision_of_language: Precise
+  cog_use_of_jargon: Light
+  cog_emoji_use: Never
+  cog_politeness: Polite
+  acad_environmental_science: Interested
+  trait_curiosity: Moderate
+  trait_creativity: Moderate
+  trait_love_of_learning: Slight
+  trait_open_mindedness: Strong
+  trait_perspective: Strong
+  trait_bravery: Moderate
+  trait_perseverance: Moderate
+  trait_honesty: Strong
+  trait_zest: Slight
+  trait_capacity_for_love: Strong
+  trait_kindness: Strong
+  trait_social_intelligence: Strong
+  trait_fairness: Signature
+  trait_forgiveness: Strong
+  trait_humility: Strong
+  trait_prudence: Strong
+  trait_hope_optimism: Moderate
+  trait_spirituality: Moderate
+  trait_ambition: Moderate
+  trait_empathy: Strong
+  trait_resilience: Strong
+  trait_generosity: Strong
+  val_security_stability: Important
+  val_spirituality_faith: Minor
+  val_knowledge_truth: Core value
+  val_justice_fairness: Core value
+  val_sustainability: Important
+  val_helping_others: Important
+  val_integrity_honesty: Core value
+  val_equality: Core value
+  demo_marital_status: Divorced
+  demo_employment_status: Retired
+  demo_generation: Boomer
+  demo_religion_affiliation: None
+  demo_ethnicity_broad: White / European
+  demo_home_language: Same as primary
+  lifex_childhood_environment: Stable & secure
+  lifex_career_path_shape: Linear climb
+  lifex_education_journey: Traditional track
+  lifex_adversity_level: Minor setbacks
+  lifex_immigration_generation: Native multi-generational
+  lifex_relationship_history: Married once
+  lifex_parenting_journey: Grown children
+  lifex_loss_experience: Lost a parent
+  lifex_faith_journey: Lapsed / left faith
+  lifex_cultural_exposure: Monocultural
+  lifex_formative_decade: 1960s-70s
+  lifex_service_history: Occasional volunteer
+  lifex_turning_point: No single one
+  lifex_languages_lifetime: One
+  bfi2_domain_agreeableness: High
+  bfi2_domain_conscientiousness: High
+  bfi2_domain_open_mindedness: High
+  bfi2_facet_compassion: High
+  bfi2_facet_respectfulness: High
+  bfi2_facet_trust: High
+  bfi2_facet_responsibility: High
+  bfi2_facet_intellectual_curiosity: Average
+  schwartz_value_security: High
+  schwartz_value_benevolence: High
+  schwartz_value_universalism: Very high
+  mft_care_harm: High
+  mft_fairness_cheating: High
+  interpersonal_communion_warmth: High
+  ai_task_code_generation: Does not plan AI use
+  ai_task_code_review: Does not plan AI use
+  ai_task_codebase_learning: Does not plan AI use
+  ai_task_data_generation_analytics: Does not plan AI use
+  ai_task_debugging_fixing: Does not plan AI use
+  ai_task_deployment_monitoring: Does not plan AI use
+  ai_task_documentation: Does not plan AI use
+  ai_task_learning_concepts: Does not plan AI use
+  ai_task_project_planning: Does not plan AI use
+  ai_task_refactoring: Does not plan AI use
+  ai_task_search_answers: Does not plan AI use
+  ai_task_testing: Does not plan AI use
+  coding_agent_adoption_barrier: Lack of clear use case
+  coding_agent_autonomy_preference: No agent autonomy
+  coding_agent_context_sharing_comfort: Shares natural-language descriptions only
+  coding_agent_control_expectation: Read-only assistance preferred
+  coding_agent_explanation_preference: Concise summary only
+  coding_agent_failure_tolerance: Does not use agents
+  coding_agent_memory_preference: Prefers stateless interactions
+  coding_agent_security_expectation: Expects basic secret / privacy checks
+  coding_agent_tool_integration_preference: No strong preference
+  coding_agent_usage_frequency: No plans
+  coding_agent_workflow_impact: No clear change
+  coding_ai_learning_source: Not learning AI tooling
+  coding_ai_sentiment: Neutral / indifferent
+  coding_ai_usage_frequency: Never used
+  coding_tool_ai_capability_importance: Not a factor
+  coding_tool_ethics_blocker: Hard blocker
+  coding_tool_reliability_latency_importance: High
+  coding_tool_security_privacy_blocker: Major concern
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: prism-945cf5b0f1b2
+  origin_source_row_index: 2212265

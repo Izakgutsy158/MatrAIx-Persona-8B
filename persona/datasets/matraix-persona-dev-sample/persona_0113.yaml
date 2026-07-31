@@ -1,0 +1,172 @@
+persona_id: '0113'
+version: '1.0'
+source: prism
+display_name: Jordan Lee
+dimensions:
+  age_bracket: 65-74
+  region: North America
+  gender_identity: Woman
+  primary_language: English
+  english_proficiency: Native
+  register: Formal / standard
+  highest_education: Bachelor's
+  seniority: Retired
+  years_experience: 20+
+  life_stage: Empty nester
+  major_life_events: Caregiving
+  cultural_background: Individualist (Western)
+  tech_savviness: Cautious adopter
+  values_priority: Community
+  religiosity: Observant
+  emotional_state: Calm
+  intent: Learn / explain
+  query_complexity: Simple factual
+  expertise_gap: Novice asking expert
+  tone_expected: Warm / empathetic
+  trust_level: Verifying
+  safety_sensitivity: Benign
+  fam_machine_learning: Aware
+  fam_deep_learning: Aware
+  fam_philosophy: Familiar
+  fam_ethics: Familiar
+  fam_natural_language_processing: Aware
+  fam_theology: Familiar
+  fam_religious_studies: Aware
+  skill_mentoring: Intermediate
+  skill_empathy: Advanced
+  tool_zoom: Regular
+  tool_chatgpt: Occasional
+  tool_claude: Occasional
+  topic_technology: Interested
+  topic_parenting: Interested
+  topic_philosophy: Interested
+  topic_religion: Interested
+  topic_spirituality: Interested
+  lang_english: Native
+  att_ai: Positive
+  att_organized_religion: Positive
+  att_higher_education: Positive
+  att_new_technology: Positive
+  att_free_speech: Positive
+  ind_technology: Some exposure
+  cult_united_states: Native
+  big5_dutifulness: High
+  big5_cheerfulness: High
+  big5_trust: High
+  big5_morality: Very high
+  big5_altruism: High
+  big5_sympathy: High
+  cog_verbosity: Concise
+  cog_formality: Neutral
+  cog_directness: Direct
+  cog_humor: Serious
+  cog_detail_orientation: Moderate
+  cog_abstraction: Balanced
+  cog_optimism: High
+  cog_patience: High
+  cog_curiosity: Moderate
+  cog_skepticism: Low
+  cog_open_mindedness: High
+  cog_assertiveness: Moderate
+  cog_emotional_expressiveness: High
+  cog_conflict_approach: Avoidant
+  cog_feedback_receptiveness: High
+  cog_ambiguity_tolerance: Moderate
+  cog_perfectionism: Moderate
+  cog_attention_span: Average
+  cog_learning_pace: Average
+  cog_question_asking: Sometimes
+  cog_decision_speed: Deliberate
+  cog_confidence_calibration: Cautious
+  cog_reading_vs_watching: No preference
+  cog_visual_vs_verbal: Mixed
+  cog_risk_framing: Opportunity-focused
+  cog_empathy_expression: Very high
+  cog_storytelling: High
+  cog_precision_of_language: Average
+  cog_use_of_jargon: Avoids jargon
+  cog_emoji_use: Never
+  cog_politeness: Very polite
+  trait_curiosity: Moderate
+  trait_creativity: Slight
+  trait_love_of_learning: Moderate
+  trait_open_mindedness: Moderate
+  trait_perspective: Strong
+  trait_honesty: Strong
+  trait_zest: Moderate
+  trait_capacity_for_love: Strong
+  trait_kindness: Signature
+  trait_social_intelligence: Strong
+  trait_fairness: Strong
+  trait_forgiveness: Moderate
+  trait_humility: Moderate
+  trait_prudence: Strong
+  trait_self_regulation: Strong
+  trait_gratitude: Moderate
+  trait_hope_optimism: Strong
+  trait_spirituality: Strong
+  trait_empathy: Strong
+  trait_generosity: Moderate
+  trait_loyalty: Strong
+  val_family: Core value
+  val_tradition: Important
+  val_community: Core value
+  val_spirituality_faith: Important
+  val_knowledge_truth: Important
+  val_justice_fairness: Core value
+  val_loyalty: Core value
+  val_helping_others: Core value
+  val_integrity_honesty: Core value
+  val_equality: Core value
+  demo_marital_status: Divorced
+  demo_children_count: 2 children
+  demo_employment_status: Full-time
+  demo_generation: Boomer
+  demo_religion_affiliation: Christian
+  demo_ethnicity_broad: White / European
+  demo_home_language: Same as primary
+  demo_parental_status: Grandparent
+  demo_relationship_length: Not in one
+  lifex_education_journey: Traditional track
+  lifex_relationship_history: Remarried
+  lifex_parenting_journey: Raising grandchildren
+  lifex_faith_journey: Lifelong faith
+  lifex_formative_decade: 1960s-70s
+  lifex_turning_point: No single one
+  lifex_languages_lifetime: One
+  bfi2_domain_agreeableness: Very high
+  bfi2_domain_conscientiousness: High
+  bfi2_facet_compassion: High
+  bfi2_facet_trust: High
+  bfi2_facet_responsibility: High
+  schwartz_value_conformity: High
+  schwartz_value_tradition: High
+  schwartz_value_benevolence: Very high
+  schwartz_value_universalism: High
+  sdt_need_competence: High
+  sdt_need_relatedness: Very high
+  mft_fairness_cheating: High
+  need_for_cognition: High
+  dospert_ethical_risk_tolerance: High
+  dospert_social_risk_tolerance: Average
+  interpersonal_agency_dominance: Average
+  interpersonal_communion_warmth: High
+  ai_task_code_generation: Not applicable
+  ai_task_code_review: Not applicable
+  ai_task_codebase_learning: Not applicable
+  ai_task_data_generation_analytics: Not applicable
+  ai_task_debugging_fixing: Not applicable
+  ai_task_deployment_monitoring: Not applicable
+  ai_task_documentation: Not applicable
+  ai_task_learning_concepts: Currently partially AI-assisted
+  ai_task_project_planning: Not applicable
+  ai_task_refactoring: Not applicable
+  ai_task_search_answers: Currently partially AI-assisted
+  ai_task_testing: Not applicable
+  coding_tool_ethics_blocker: Hard blocker
+  coding_tool_security_privacy_blocker: Major concern
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: prism-a313d0d49304
+  origin_source_row_index: 2212411

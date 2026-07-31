@@ -1,0 +1,340 @@
+persona_id: '0005'
+version: '1.0'
+source: wiki
+display_name: Marco Rossi
+dimensions:
+  age_bracket: 18-24
+  region: Western Europe
+  gender_identity: Man
+  urbanicity: 'null'
+  socioeconomic_band: 'null'
+  primary_language: English
+  english_proficiency: Native
+  multilingualism: Monolingual
+  register: 'null'
+  domain: Public Sector
+  domain_characteristics: Practitioner
+  company_size: Public sector
+  role_function: Executive
+  life_stage: Early career
+  major_life_events: Military service
+  cultural_background: Individualist (Western)
+  dominant_trait: High bravery
+  risk_tolerance: Risk-seeking
+  decision_style: Analytical
+  values_priority: Achievement
+  fam_aviation: Expert
+  fam_military_strategy: Familiar
+  skill_writing: None
+  skill_copywriting: None
+  skill_editing: None
+  skill_storytelling: None
+  skill_public_speaking: None
+  skill_negotiation: None
+  skill_coding: None
+  skill_debugging: None
+  skill_code_review: None
+  skill_system_design: None
+  skill_data_analysis: None
+  skill_data_visualization: None
+  skill_statistical_modeling: None
+  skill_spreadsheet_modeling: None
+  skill_financial_modeling: None
+  skill_project_management: None
+  skill_product_strategy: None
+  skill_leadership: Intermediate
+  skill_people_management: None
+  skill_mentoring: None
+  skill_coaching: None
+  skill_conflict_resolution: None
+  skill_time_management: None
+  skill_prioritization: None
+  skill_research: None
+  skill_critical_thinking: Intermediate
+  skill_problem_solving: Intermediate
+  skill_mathematics: Intermediate
+  skill_mental_arithmetic: Intermediate
+  skill_logical_reasoning: Intermediate
+  skill_language_learning: None
+  skill_translation: None
+  skill_interpretation: None
+  skill_design_thinking: None
+  skill_prototyping: None
+  skill_sketching: None
+  skill_drawing: None
+  skill_painting: None
+  skill_photography: None
+  skill_videography: None
+  skill_video_editing: None
+  skill_audio_production: None
+  skill_cooking: None
+  skill_baking: None
+  skill_budgeting: None
+  skill_investing: None
+  skill_diy_repair: None
+  skill_gardening: None
+  skill_driving: None
+  skill_technical_writing: None
+  lang_english: Native
+  lang_mandarin: None
+  lang_cantonese: None
+  lang_spanish: None
+  lang_hindi: None
+  lang_arabic: None
+  lang_french: None
+  lang_portuguese: None
+  lang_bengali: None
+  lang_russian: None
+  lang_japanese: None
+  lang_german: None
+  lang_korean: None
+  lang_italian: None
+  lang_turkish: None
+  lang_vietnamese: None
+  lang_thai: None
+  lang_indonesian: None
+  lang_malay: None
+  lang_swahili: None
+  lang_dutch: None
+  lang_polish: None
+  lang_ukrainian: None
+  lang_persian: None
+  lang_hebrew: None
+  lang_greek: None
+  lang_czech: None
+  lang_hungarian: None
+  lang_romanian: None
+  lang_swedish: None
+  lang_norwegian: None
+  lang_danish: None
+  lang_finnish: None
+  lang_tagalog: None
+  lang_urdu: None
+  lang_tamil: None
+  lang_telugu: None
+  lang_marathi: None
+  lang_punjabi: None
+  lang_gujarati: None
+  lang_hausa: None
+  lang_yoruba: None
+  lang_igbo: None
+  lang_amharic: None
+  lang_zulu: None
+  lang_afrikaans: None
+  lang_serbian: None
+  att_traditional_gender_roles: 'null'
+  att_risk_taking: Enthusiast
+  att_authority: Positive
+  att_new_technology: Positive
+  ind_technology: None
+  ind_healthcare: None
+  ind_finance: None
+  ind_banking: None
+  ind_insurance: None
+  ind_retail: None
+  ind_e_commerce: None
+  ind_manufacturing: None
+  ind_automotive: None
+  ind_aerospace: Veteran
+  ind_energy: None
+  ind_oil_gas: None
+  ind_utilities: None
+  ind_construction: None
+  ind_real_estate: None
+  ind_hospitality: None
+  ind_travel_tourism: None
+  ind_restaurants: None
+  ind_agriculture: None
+  ind_food_beverage: None
+  ind_pharmaceuticals: None
+  ind_biotech: None
+  ind_telecommunications: None
+  ind_media: None
+  ind_entertainment: None
+  ind_gaming: None
+  ind_publishing: None
+  ind_advertising: None
+  ind_government: Veteran
+  ind_defense: Veteran
+  ind_nonprofit: None
+  ind_logistics: None
+  ind_transportation: Experienced
+  ind_shipping: None
+  ind_mining: None
+  ind_chemicals: None
+  ind_textiles: None
+  ind_apparel: None
+  ind_consumer_electronics: None
+  ind_semiconductors: None
+  ind_legal_services: None
+  ind_consulting: None
+  ind_accounting: None
+  ind_marketing_agencies: None
+  ind_fitness_wellness: None
+  ind_beauty_cosmetics: None
+  ind_sports: None
+  ind_music: None
+  ind_fine_art: None
+  cult_united_states: Unfamiliar
+  cult_canada: Unfamiliar
+  cult_mexico: Unfamiliar
+  cult_brazil: Unfamiliar
+  cult_argentina: Unfamiliar
+  cult_united_kingdom: Native
+  cult_france: Unfamiliar
+  cult_germany: Unfamiliar
+  cult_italy: Lived there
+  cult_spain: Unfamiliar
+  cult_netherlands: Unfamiliar
+  cult_sweden: Unfamiliar
+  cult_poland: Unfamiliar
+  cult_russia: Unfamiliar
+  cult_turkey: Unfamiliar
+  cult_egypt: Unfamiliar
+  cult_saudi_arabia: Unfamiliar
+  cult_uae: Unfamiliar
+  cult_israel: Unfamiliar
+  cult_iran: Unfamiliar
+  cult_nigeria: Unfamiliar
+  cult_kenya: Unfamiliar
+  cult_south_africa: Unfamiliar
+  cult_ethiopia: Unfamiliar
+  cult_india: Unfamiliar
+  cult_pakistan: Unfamiliar
+  cult_bangladesh: Unfamiliar
+  cult_china: Unfamiliar
+  cult_japan: Unfamiliar
+  cult_south_korea: Unfamiliar
+  cult_vietnam: Unfamiliar
+  cult_thailand: Unfamiliar
+  cult_indonesia: Unfamiliar
+  cult_philippines: Unfamiliar
+  cult_australia: Unfamiliar
+  cult_new_zealand: Unfamiliar
+  cult_singapore: Unfamiliar
+  cult_malaysia: Unfamiliar
+  cult_greece: Unfamiliar
+  cult_portugal: Unfamiliar
+  big5_adventurousness: Very high
+  big5_self_efficacy: High
+  big5_dutifulness: Very high
+  big5_achievement_striving: High
+  big5_cautiousness: Low
+  big5_excitement_seeking: High
+  health_general_health: Excellent
+  health_chronic_condition: None
+  health_mobility: Full
+  health_vision: Corrected
+  health_hearing: Normal
+  health_color_vision: Typical
+  health_dexterity: Full
+  health_mental_health: Stable
+  health_stress_level: Very high
+  health_energy_level: High
+  health_sleep_quality: 'null'
+  health_pain_level: 'null'
+  health_medication_use: 'null'
+  health_dietary_restriction: 'null'
+  health_neurodivergence: Neurotypical
+  health_caregiver_status: Not a caregiver
+  health_health_literacy: High
+  health_insurance_status: 'null'
+  health_fitness_level: Fit
+  health_cognitive_load_capacity: Very high
+  health_contrast_need: 'No'
+  health_text_size_need: 'No'
+  health_assistive_tech: None
+  health_motion_sensitivity: None
+  health_attention_condition: None
+  trait_curiosity: Absent
+  trait_creativity: Absent
+  trait_love_of_learning: Absent
+  trait_open_mindedness: Absent
+  trait_perspective: Absent
+  trait_bravery: Signature
+  trait_perseverance: Strong
+  trait_honesty: Absent
+  trait_zest: Absent
+  trait_capacity_for_love: Absent
+  trait_kindness: Absent
+  trait_social_intelligence: Absent
+  trait_teamwork: Absent
+  trait_fairness: Absent
+  trait_leadership: Absent
+  trait_forgiveness: Absent
+  trait_humility: Absent
+  trait_prudence: Absent
+  trait_self_regulation: Absent
+  trait_appreciation_of_beauty: Absent
+  trait_gratitude: Absent
+  trait_hope_optimism: Absent
+  trait_playfulness: Absent
+  trait_spirituality: Absent
+  trait_ambition: Strong
+  trait_empathy: Absent
+  trait_resilience: Strong
+  trait_discipline: Strong
+  trait_generosity: Absent
+  trait_loyalty: Strong
+  trait_competitiveness: Strong
+  trait_adaptability: Moderate
+  val_career_success: Core value
+  val_adventure: Core value
+  val_achievement: Core value
+  val_recognition: Important
+  val_patriotism: Core value
+  demo_marital_status: 'null'
+  demo_children_count: 'null'
+  demo_household_income: 'null'
+  demo_employment_status: 'null'
+  demo_housing_status: 'null'
+  demo_generation: Millennial
+  demo_religion_affiliation: 'null'
+  demo_sexual_orientation: 'null'
+  demo_citizenship_status: Citizen by birth
+  demo_ethnicity_broad: White / European
+  demo_disability_status: No disability
+  demo_veteran_status: Veteran
+  demo_birth_order: 'null'
+  demo_home_language: 'null'
+  demo_political_engagement: 'null'
+  demo_parental_status: Not a parent
+  demo_relationship_length: 'null'
+  demo_driver_status: 'null'
+  lifex_geographic_mobility: Moved internationally
+  lifex_travel_breadth: A few countries
+  lifex_career_path_shape: Just starting
+  lifex_adversity_level: Overcame major hardship
+  lifex_military_history: Career veteran
+  lifex_formative_decade: 1910s
+  lifex_public_recognition: Industry-recognized
+  lifex_service_history: Activist / organizer
+  lifex_turning_point: No single one
+  lifex_languages_lifetime: One
+  schwartz_value_self_direction: High
+  schwartz_value_stimulation: High
+  schwartz_value_hedonism: Low
+  schwartz_value_achievement: High
+  schwartz_value_power: Average
+  schwartz_value_security: Low
+  schwartz_value_conformity: Average
+  schwartz_value_tradition: Average
+  schwartz_value_benevolence: Average
+  schwartz_value_universalism: Average
+  sdt_need_autonomy: High
+  sdt_need_competence: High
+  sdt_need_relatedness: Average
+  need_for_cognition: High
+  dospert_health_safety_risk_tolerance: Very high
+  code_review_participation_level: No coding activity
+  commit_cadence_style: No coding activity
+  github_contribution_mode: No coding activity
+  issue_engagement_style: No coding activity
+  open_source_activity_level: No coding activity
+  pr_collaboration_style: No coding activity
+  release_maintenance_orientation: No coding activity
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: wiki-4e77abc87228
+  origin_source_row_index: 394420

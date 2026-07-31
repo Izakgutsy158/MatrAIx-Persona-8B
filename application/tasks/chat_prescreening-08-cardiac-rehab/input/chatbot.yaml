@@ -1,0 +1,33 @@
+transport: sidecar_http
+runtimeDefaults:
+  applicationId: prescreening_assistant
+  applicationContext: clinical_trial_prescreening
+  domain: clinical_trial_prescreening
+capabilities:
+  - text_chat
+connection:
+  baseUrlEnv: CHATBOT_UPSTREAM_PRESCREENING
+  legacyBaseUrlEnv: PRESCREENING_CHATBOT_URL
+  baseUrl: http://prescreening-chatbot:8000
+  healthPath: /health
+protocol:
+  sendMessage:
+    method: POST
+    path: /v1/messages
+    sessionIdField: sessionId
+    messageField: message
+    titleField: title
+    botTypeField: botType
+    engineField: engine
+    staticBody:
+      applicationId: prescreening_assistant
+      applicationContext: clinical_trial_prescreening
+      protocolId: HEART-HOME-2026-008
+  response:
+    sessionIdField: sessionId
+    replyField: reply
+    turnField: turn
+artifacts:
+  transcript: transcript.json
+  applicationResult: application_result.json
+  feedback: user_feedback.json

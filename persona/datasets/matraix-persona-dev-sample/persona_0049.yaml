@@ -1,0 +1,19 @@
+persona_id: 0049
+version: '1.0'
+source: amazon
+display_name: Maya Patel
+dimensions:
+  tech_savviness: Comfortable
+  ind_retail: Experienced
+  lstyle_work_schedule: Shift work
+  lstyle_reading_freq: Weekly
+  cog_open_mindedness: Moderate
+  cog_feedback_receptiveness: High
+  health_medication_use: Occasional
+  acad_literature: Interested
+  pref_work_location: Strongly office
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: amazon-f77f530fb841
+  origin_source_row_index: 2054427

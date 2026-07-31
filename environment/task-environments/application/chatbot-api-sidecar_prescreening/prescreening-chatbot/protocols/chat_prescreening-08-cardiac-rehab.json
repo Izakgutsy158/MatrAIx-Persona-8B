@@ -1,0 +1,132 @@
+{
+ "protocol_id": "HEART-HOME-2026-008",
+ "study_title": "Home-Based Digital Cardiac Rehabilitation (HEART-HOME)",
+ "design_summary": "12-week, single-arm study of an app-guided home cardiac rehabilitation program after a recent cardiac event. Participants complete three guided exercise sessions per week with heart-rate monitoring through the study app.",
+ "criteria": [
+  {
+   "id": "INC1",
+   "kind": "inclusion",
+   "text": "Age 30 to 80 years old, inclusive.",
+   "keywords": [
+    "\\bage\\b",
+    "how old",
+    "\\byears?\\s+old\\b",
+    "date of birth"
+   ],
+   "probe": "To begin, how old are you?"
+  },
+  {
+   "id": "INC2",
+   "kind": "inclusion",
+   "text": "Heart attack, coronary stent placement, or bypass surgery between 1 and 6 months ago (events less than 1 month ago are too recent for home rehab; events more than 6 months ago fall outside the program design).",
+   "keywords": [
+    "heart attack",
+    "\\bstent\\b",
+    "bypass",
+    "when.{0,30}(procedure|event|surgery)",
+    "myocardial",
+    "cardiac event"
+   ],
+   "probe": "What was your cardiac event - a heart attack, stent, or bypass - and when did it happen?",
+   "unknown_rule": "If the participant cannot identify a qualifying event type or cannot place it, even roughly, relative to the 1-to-6-month window, INC2 is unknown."
+  },
+  {
+   "id": "INC3",
+   "kind": "inclusion",
+   "text": "Cleared for exercise by their cardiologist.",
+   "keywords": [
+    "\\bcleared\\b",
+    "cardiologist.{0,30}(exercise|okay|approved)",
+    "permission.{0,20}exercise",
+    "approved.{0,20}exercise",
+    "green.?light"
+   ],
+   "probe": "Has your cardiologist cleared you for exercise?"
+  },
+  {
+   "id": "INC4",
+   "kind": "inclusion",
+   "text": "Owns a smartphone and is willing to complete three guided exercise sessions per week.",
+   "keywords": [
+    "smart\\s*phone",
+    "\\bphone\\b",
+    "\\bapp\\b",
+    "three sessions|3 sessions",
+    "sessions (a|per) week"
+   ],
+   "probe": "Do you own a smartphone, and could you complete three guided exercise sessions a week?"
+  },
+  {
+   "id": "INC5",
+   "kind": "inclusion",
+   "text": "Able to walk without a walker or wheelchair.",
+   "keywords": [
+    "\\bwalker\\b",
+    "wheelchair",
+    "walk without",
+    "get around",
+    "walking aid"
+   ],
+   "probe": "Are you able to walk without a walker or wheelchair?"
+  },
+  {
+   "id": "INC6",
+   "kind": "inclusion",
+   "text": "Willing to participate for the full 12 weeks.",
+   "keywords": [
+    "12[\\s-]*week",
+    "twelve[\\s-]*week",
+    "\\bcommit",
+    "full (program|study|duration)"
+   ],
+   "probe": "The program runs a full 12 weeks - is that a commitment you can make?"
+  },
+  {
+   "id": "EXC1",
+   "kind": "exclusion",
+   "text": "Chest pain at rest, or worsening chest pain, within the past month (unstable symptoms).",
+   "keywords": [
+    "chest (pain|tightness|pressure)",
+    "angina",
+    "at rest",
+    "symptoms.{0,20}(worse|worsening)"
+   ],
+   "probe": "In the past month, have you had any chest pain at rest, or chest pain that is getting worse?"
+  },
+  {
+   "id": "EXC2",
+   "kind": "exclusion",
+   "text": "Told they have severe aortic stenosis (severe narrowing of a heart valve).",
+   "keywords": [
+    "aortic stenosis",
+    "\\bvalve\\b",
+    "stenosis"
+   ],
+   "probe": "Have you ever been told you have severe aortic stenosis, that is, a severely narrowed heart valve?"
+  },
+  {
+   "id": "EXC3",
+   "kind": "exclusion",
+   "text": "Currently uses supplemental oxygen at home.",
+   "keywords": [
+    "\\boxygen\\b",
+    "o2 (at home|therapy)"
+   ],
+   "probe": "Do you use supplemental oxygen at home?"
+  },
+  {
+   "id": "EXC4",
+   "kind": "exclusion",
+   "text": "Currently enrolled in another interventional clinical trial or attending a formal cardiac rehabilitation program.",
+   "keywords": [
+    "(another|other|different)\\s+(clinical\\s+|research\\s+)?(trial|study|studies)",
+    "\\benrolled\\b",
+    "cardiac rehab",
+    "rehab program",
+    "research (study|program)",
+    "participating in (a|any)"
+   ],
+   "probe": "Are you currently in another clinical trial, or attending a formal cardiac rehab program?"
+  }
+ ]
+}

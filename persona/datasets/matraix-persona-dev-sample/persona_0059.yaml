@@ -1,0 +1,88 @@
+persona_id: 0059
+version: '1.0'
+source: stackoverflow
+display_name: Amina Diallo
+dimensions:
+  age_bracket: 35-44
+  region: Sub-Saharan Africa
+  domain: Software & AI
+  subject_specialty: Machine learning
+  highest_education: Bachelor's
+  role_function: Research
+  years_experience: 11-20
+  tech_savviness: Comfortable
+  fam_machine_learning: Expert
+  fam_statistics: Expert
+  fam_data_science: Expert
+  fam_databases: Proficient
+  fam_operating_systems: Proficient
+  fam_cloud_infrastructure: Familiar
+  fam_devops: Familiar
+  skill_coding: Master
+  skill_debugging: Master
+  skill_code_review: Master
+  skill_data_analysis: Master
+  skill_problem_solving: Master
+  tool_python: Power user
+  tool_r: Power user
+  tool_sql: Power user
+  tool_slack: Regular
+  tool_microsoft_teams: Regular
+  tool_aws: Regular
+  tool_vim: Regular
+  tool_zoom: Regular
+  tool_trello: Regular
+  tool_chatgpt: Regular
+  topic_productivity: Interested
+  topic_self_improvement: Interested
+  att_ai: Positive
+  att_open_source: Positive
+  lstyle_commute_mode: Remote
+  lstyle_device_ecosystem: Mixed
+  peeve_being_interrupted: Annoys
+  trait_curiosity: Strong
+  trait_love_of_learning: Strong
+  trait_adaptability: Strong
+  val_achievement: Important
+  val_knowledge_truth: Important
+  val_personal_growth: Important
+  demo_employment_status: Full-time
+  demo_generation: Millennial
+  lifex_career_path_shape: Linear climb
+  lifex_education_journey: Traditional track
+  code_comment_style: Docstring/documentation blocks only
+  prog_python: Proficient
+  prog_rust: Familiar
+  prog_lua: Familiar
+  prog_r: Proficient
+  prog_sql: Proficient
+  prog_bash: Familiar
+  sdt_need_autonomy: High
+  sdt_need_competence: High
+  sdt_need_relatedness: High
+  need_for_cognition: High
+  ai_task_code_generation: Currently partially AI-assisted
+  ai_task_code_review: Currently partially AI-assisted
+  ai_task_codebase_learning: Currently partially AI-assisted
+  ai_task_debugging_fixing: Currently partially AI-assisted
+  ai_task_deployment_monitoring: Does not plan AI use
+  ai_task_documentation: Plans partial AI use
+  ai_task_learning_concepts: Currently partially AI-assisted
+  ai_task_project_planning: Does not plan AI use
+  ai_task_testing: Plans partial AI use
+  codebase_onboarding_style: Reads architecture / docs first
+  coding_ai_output_trust: Trusts after verification
+  coding_ai_sentiment: Somewhat favorable
+  coding_ai_usage_frequency: Daily
+  debugging_strategy: Search / ask externally
+  dev_contribution_context: Employee work
+  dev_ic_manager_orientation: Individual contributor
+  dev_professional_status: Professional developer
+  dev_role_archetype: Data / ML developer
+  open_source_activity_level: Occasional contributor
+  stackoverflow_usage_pattern: Occasional troubleshooting
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: stackoverflow-26d21d6d5721
+  origin_source_row_index: 2106399

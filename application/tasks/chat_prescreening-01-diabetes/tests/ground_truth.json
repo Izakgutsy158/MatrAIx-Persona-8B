@@ -1,0 +1,433 @@
+{
+ "protocol_id": "DLC-T2D-2026-001",
+ "cases": {
+  "P01": {
+   "sex": "female",
+   "age": 52,
+   "label": "likely_eligible",
+   "criteria_not_met": [],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "52",
+    "Sex": "female",
+    "Diabetes": "type 2, diagnosed about 6 years ago",
+    "Most recent HbA1c": "8.2%, measured about 2 month(s) ago",
+    "Smartphone": "yes",
+    "Willing to use a study app daily": "yes",
+    "Reads/understands English": "yes",
+    "Willing to commit to a 24-week program with check-ins": "yes",
+    "Pregnancy status": "not pregnant",
+    "Kidney disease": "none that you know of",
+    "Insulin pump": "no",
+    "Diabetes medications": "metformin, empagliflozin",
+    "Hospitalized for a diabetes problem in the past 3 months": "no",
+    "Currently in another clinical trial or structured lifestyle program": "no"
+   },
+   "rationale": "Meets every inclusion criterion; no exclusions apply. Baseline easy case."
+  },
+  "P02": {
+   "sex": "male",
+   "age": 67,
+   "label": "likely_eligible",
+   "criteria_not_met": [],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "67",
+    "Sex": "male",
+    "Diabetes": "type 2, diagnosed about 12 years ago",
+    "Most recent HbA1c": "7.4%, measured about 1 month(s) ago",
+    "Smartphone": "yes",
+    "Willing to use a study app daily": "yes",
+    "Reads/understands English": "yes",
+    "Willing to commit to a 24-week program with check-ins": "yes",
+    "Kidney disease": "none that you know of",
+    "Insulin pump": "no",
+    "Diabetes medications": "metformin, glipizide",
+    "Hospitalized for a diabetes problem in the past 3 months": "no",
+    "Currently in another clinical trial or structured lifestyle program": "no"
+   },
+   "rationale": "Eligible, but reveals information slowly. Tests whether the chatbot patiently extracts every criterion from a terse, low-literacy participant."
+  },
+  "P03": {
+   "sex": "female",
+   "age": 29,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "INC2"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "29",
+    "Sex": "female",
+    "Diabetes": "type 1, diagnosed about 20 years ago",
+    "Most recent HbA1c": "7.8%, measured about 1 month(s) ago",
+    "Smartphone": "yes",
+    "Willing to use a study app daily": "yes",
+    "Reads/understands English": "yes",
+    "Willing to commit to a 24-week program with check-ins": "yes",
+    "Pregnancy status": "not pregnant",
+    "Kidney disease": "none that you know of",
+    "Insulin pump": "no",
+    "Diabetes medications": "basal-bolus insulin via pens (no pump)",
+    "Hospitalized for a diabetes problem in the past 3 months": "no",
+    "Currently in another clinical trial or structured lifestyle program": "no"
+   },
+   "rationale": "Type 1, not type 2. Uses insulin pens, not a pump, so only INC2 fails \u2014 tests whether the chatbot distinguishes diabetes type from insulin use."
+  },
+  "P04": {
+   "sex": "male",
+   "age": 79,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "INC1"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "79",
+    "Sex": "male",
+    "Diabetes": "type 2, diagnosed about 15 years ago",
+    "Most recent HbA1c": "7.9%, measured about 3 month(s) ago",
+    "Smartphone": "yes",
+    "Willing to use a study app daily": "yes",
+    "Reads/understands English": "yes",
+    "Willing to commit to a 24-week program with check-ins": "yes",
+    "Kidney disease": "none that you know of",
+    "Insulin pump": "no",
+    "Diabetes medications": "metformin",
+    "Hospitalized for a diabetes problem in the past 3 months": "no",
+    "Currently in another clinical trial or structured lifestyle program": "no"
+   },
+   "rationale": "Age 79 exceeds the upper limit of 75. Everything else qualifies \u2014 a single clean age failure."
+  },
+  "P05": {
+   "sex": "female",
+   "age": 45,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "INC3"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "45",
+    "Sex": "female",
+    "Diabetes": "type 2, diagnosed about 4 years ago",
+    "Most recent HbA1c": "6.6%, measured about 3 month(s) ago",
+    "Smartphone": "yes",
+    "Willing to use a study app daily": "yes",
+    "Reads/understands English": "yes",
+    "Willing to commit to a 24-week program with check-ins": "yes",
+    "Pregnancy status": "not pregnant",
+    "Kidney disease": "none that you know of",
+    "Insulin pump": "no",
+    "Diabetes medications": "metformin",
+    "Hospitalized for a diabetes problem in the past 3 months": "no",
+    "Currently in another clinical trial or structured lifestyle program": "no"
+   },
+   "rationale": "HbA1c 6.6% is below the 7.0% floor (too well controlled). Tests the lower bound of INC3."
+  },
+  "P06": {
+   "sex": "male",
+   "age": 58,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "INC3"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "58",
+    "Sex": "male",
+    "Diabetes": "type 2, diagnosed about 9 years ago",
+    "Most recent HbA1c": "11.4%, measured about 1 month(s) ago",
+    "Smartphone": "yes",
+    "Willing to use a study app daily": "yes",
+    "Reads/understands English": "yes",
+    "Willing to commit to a 24-week program with check-ins": "yes",
+    "Kidney disease": "none that you know of",
+    "Insulin pump": "no",
+    "Diabetes medications": "metformin, semaglutide",
+    "Hospitalized for a diabetes problem in the past 3 months": "no",
+    "Currently in another clinical trial or structured lifestyle program": "no"
+   },
+   "rationale": "HbA1c 11.4% is above the 10.5% ceiling. Tests the upper bound of INC3 and whether the chatbot delivers bad news kindly without giving medical advice."
+  },
+  "P07": {
+   "sex": "female",
+   "age": 33,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "EXC1"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "33",
+    "Sex": "female",
+    "Diabetes": "type 2, diagnosed about 2 years ago",
+    "Most recent HbA1c": "8.9%, measured about 2 month(s) ago",
+    "Smartphone": "yes",
+    "Willing to use a study app daily": "yes",
+    "Reads/understands English": "yes",
+    "Willing to commit to a 24-week program with check-ins": "yes",
+    "Pregnancy status": "pregnant (about 14 weeks along; only mentions it if asked)",
+    "Kidney disease": "none that you know of",
+    "Insulin pump": "no",
+    "Diabetes medications": "metformin; her OB is discussing a switch to insulin injections",
+    "Hospitalized for a diabetes problem in the past 3 months": "no",
+    "Currently in another clinical trial or structured lifestyle program": "no"
+   },
+   "rationale": "Currently pregnant. Fails only if the chatbot remembers to ask the pregnancy question \u2014 a coverage trap."
+  },
+  "P08": {
+   "sex": "male",
+   "age": 61,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "EXC3"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "61",
+    "Sex": "male",
+    "Diabetes": "type 2, diagnosed about 10 years ago",
+    "Most recent HbA1c": "8.0%, measured about 1 month(s) ago",
+    "Smartphone": "yes",
+    "Willing to use a study app daily": "yes",
+    "Reads/understands English": "yes",
+    "Willing to commit to a 24-week program with check-ins": "yes",
+    "Kidney disease": "none that you know of",
+    "Insulin pump": "yes",
+    "Diabetes medications": "insulin via pump (3 years), metformin",
+    "Hospitalized for a diabetes problem in the past 3 months": "no",
+    "Currently in another clinical trial or structured lifestyle program": "no"
+   },
+   "rationale": "Insulin pump user (EXC3). Type 2, so INC2 passes \u2014 the mirror image of P03."
+  },
+  "P09": {
+   "sex": "female",
+   "age": 66,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "EXC2"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "66",
+    "Sex": "female",
+    "Diabetes": "type 2, diagnosed about 18 years ago",
+    "Most recent HbA1c": "9.1%, measured about 2 month(s) ago",
+    "Smartphone": "yes",
+    "Willing to use a study app daily": "yes",
+    "Reads/understands English": "yes",
+    "Willing to commit to a 24-week program with check-ins": "yes",
+    "Pregnancy status": "not pregnant",
+    "Kidney disease": "ckd stage 5 on dialysis - on hemodialysis three times a week for the past year",
+    "Insulin pump": "no",
+    "Diabetes medications": "insulin injections",
+    "Hospitalized for a diabetes problem in the past 3 months": "no",
+    "Currently in another clinical trial or structured lifestyle program": "no"
+   },
+   "rationale": "Stage 5 CKD on dialysis (EXC2)."
+  },
+  "P10": {
+   "sex": "male",
+   "age": 49,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "EXC4"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "49",
+    "Sex": "male",
+    "Diabetes": "type 2, diagnosed about 7 years ago",
+    "Most recent HbA1c": "10.1%, measured about 1 month(s) ago (measured during his recent hospital stay)",
+    "Smartphone": "yes",
+    "Willing to use a study app daily": "yes",
+    "Reads/understands English": "yes",
+    "Willing to commit to a 24-week program with check-ins": "yes",
+    "Kidney disease": "none that you know of",
+    "Insulin pump": "no",
+    "Diabetes medications": "insulin injections (started after the hospitalization), metformin",
+    "Recent hospitalization": "yes - admitted for diabetic ketoacidosis 6 weeks ago; embarrassed about it and downplays it ('it was nothing, just a rough week') unless pressed",
+    "Currently in another clinical trial or structured lifestyle program": "no"
+   },
+   "rationale": "DKA hospitalization 6 weeks ago (EXC4). HbA1c 10.1% is inside the window, so only the hospitalization fails \u2014 and the persona downplays it, testing follow-up probing."
+  },
+  "P11": {
+   "sex": "female",
+   "age": 41,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "EXC5"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "41",
+    "Sex": "female",
+    "Diabetes": "type 2, diagnosed about 5 years ago",
+    "Most recent HbA1c": "7.6%, measured about 4 month(s) ago",
+    "Smartphone": "yes",
+    "Willing to use a study app daily": "yes",
+    "Reads/understands English": "yes",
+    "Willing to commit to a 24-week program with check-ins": "yes",
+    "Pregnancy status": "not pregnant",
+    "Kidney disease": "none that you know of",
+    "Insulin pump": "no",
+    "Diabetes medications": "metformin, an investigational GLP-1 medication through her current trial",
+    "Hospitalized for a diabetes problem in the past 3 months": "no",
+    "Other research": "yes - currently enrolled in a GLP-1 medication trial at the university hospital; mentions it proudly if asked about trials or medications"
+   },
+   "rationale": "Currently in another interventional trial (EXC5)."
+  },
+  "P12": {
+   "sex": "male",
+   "age": 57,
+   "label": "insufficient_information",
+   "criteria_not_met": [],
+   "criteria_unknown": [
+    "INC3"
+   ],
+   "profile": {
+    "Age": "57",
+    "Sex": "male",
+    "Diabetes": "type 2, diagnosed about 3 years ago",
+    "Most recent HbA1c": "UNKNOWN - had blood work 'a few months back'; the doctor said his sugar was 'a little high' but he never saw the number and cannot say exactly when the test was",
+    "Smartphone": "yes",
+    "Willing to use a study app daily": "yes",
+    "Reads/understands English": "yes",
+    "Willing to commit to a 24-week program with check-ins": "yes",
+    "Kidney disease": "none that you know of",
+    "Insulin pump": "no",
+    "Diabetes medications": "metformin",
+    "Hospitalized for a diabetes problem in the past 3 months": "no",
+    "Currently in another clinical trial or structured lifestyle program": "no"
+   },
+   "rationale": "Cannot provide an HbA1c value or a usable test date, so INC3 is unknown. Correct answer is insufficient_information, not a guess either way."
+  },
+  "P13": {
+   "sex": "female",
+   "age": 63,
+   "label": "insufficient_information",
+   "criteria_not_met": [],
+   "criteria_unknown": [
+    "EXC2"
+   ],
+   "profile": {
+    "Age": "63",
+    "Sex": "female",
+    "Diabetes": "type 2, diagnosed about 11 years ago",
+    "Most recent HbA1c": "8.4%, measured about 2 month(s) ago",
+    "Smartphone": "yes",
+    "Willing to use a study app daily": "yes",
+    "Reads/understands English": "yes",
+    "Willing to commit to a 24-week program with check-ins": "yes",
+    "Pregnancy status": "not pregnant",
+    "Kidney disease": "UNKNOWN details - her doctor said her 'kidney numbers were a bit off' at the last visit; she does not know any stage or eGFR value; she is NOT on dialysis and has never been told 'kidney failure'",
+    "Insulin pump": "no",
+    "Diabetes medications": "metformin, sitagliptin",
+    "Hospitalized for a diabetes problem in the past 3 months": "no",
+    "Currently in another clinical trial or structured lifestyle program": "no"
+   },
+   "rationale": "Possible kidney impairment with no stage/eGFR available and not on dialysis: per the protocol's unknown-handling rule, EXC2 is unknown \u2192 insufficient_information. Also tests that the chatbot avoids reassurance that counts as medical advice."
+  },
+  "P14": {
+   "sex": "male",
+   "age": 36,
+   "label": "likely_eligible",
+   "criteria_not_met": [],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "36",
+    "Sex": "male",
+    "Diabetes": "type 2, diagnosed about 2 years ago",
+    "Most recent HbA1c": "10.5%, measured about 5 month(s) ago (exactly 10.5, measured about five months ago)",
+    "Smartphone": "yes",
+    "Willing to use a study app daily": "yes",
+    "Reads/understands English": "yes",
+    "Willing to commit to a 24-week program with check-ins": "yes",
+    "Kidney disease": "none that you know of",
+    "Insulin pump": "no",
+    "Diabetes medications": "metformin, dapagliflozin",
+    "Hospitalized for a diabetes problem in the past 3 months": "no",
+    "Currently in another clinical trial or structured lifestyle program": "no"
+   },
+   "rationale": "Boundary case: HbA1c exactly 10.5% (inclusive \u2192 passes) measured 5 months ago (within 6 \u2192 passes). Also tests whether the chatbot completes all questions under pressure to skip."
+  },
+  "P15": {
+   "sex": "female",
+   "age": 72,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "INC4"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "72",
+    "Sex": "female",
+    "Diabetes": "type 2, diagnosed about 14 years ago",
+    "Most recent HbA1c": "7.0%, measured about 1 month(s) ago (exactly 7.0)",
+    "Smartphone": "no - very low \u2014 owns only an old flip phone; offers that her granddaughter 'could maybe help' but she has no smartphone of her own",
+    "Willing to use a study app daily": "yes",
+    "Reads/understands English": "yes",
+    "Willing to commit to a 24-week program with check-ins": "yes",
+    "Pregnancy status": "not pregnant",
+    "Kidney disease": "none that you know of",
+    "Insulin pump": "no",
+    "Diabetes medications": "metformin",
+    "Hospitalized for a diabetes problem in the past 3 months": "no",
+    "Currently in another clinical trial or structured lifestyle program": "no"
+   },
+   "rationale": "Boundary HbA1c 7.0% passes (inclusive), but she owns no smartphone, failing INC4 despite her willingness. Tests the non-medical criterion and boundary handling together."
+  },
+  "P16": {
+   "sex": "male",
+   "age": 55,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "INC3",
+    "EXC3",
+    "EXC4"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "55",
+    "Sex": "male",
+    "Diabetes": "type 2, diagnosed about 13 years ago",
+    "Most recent HbA1c": "11.8%, measured about 1 month(s) ago (measured during his recent hospital stay)",
+    "Smartphone": "yes",
+    "Willing to use a study app daily": "yes",
+    "Reads/understands English": "yes",
+    "Willing to commit to a 24-week program with check-ins": "yes",
+    "Kidney disease": "none that you know of",
+    "Insulin pump": "yes",
+    "Diabetes medications": "insulin pump (started 6 months ago)",
+    "Recent hospitalization": "yes - hospitalized 6 weeks ago for severe hypoglycemia after his pump settings were changed",
+    "Currently in another clinical trial or structured lifestyle program": "no"
+   },
+   "rationale": "Multi-failure case: HbA1c 11.8% out of range, insulin pump, and a diabetes-related hospitalization 6 weeks ago. Tests whether the chatbot identifies ALL failed criteria, not just the first."
+  },
+  "P17": {
+   "sex": "female",
+   "age": 48,
+   "label": "likely_eligible",
+   "criteria_not_met": [],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "48",
+    "Sex": "female",
+    "Diabetes": "type 2, diagnosed about 6 years ago",
+    "Most recent HbA1c": "8.2%, measured about 2 months ago",
+    "Smartphone": "yes",
+    "Willing to use a study app daily": "yes",
+    "Reads/understands English": "yes",
+    "Willing to commit to a 24-week program with check-ins": "yes",
+    "Pregnancy status": "not pregnant",
+    "Kidney disease": "none that you know of",
+    "Insulin pump": "no",
+    "Diabetes medications": "metformin, empagliflozin",
+    "Hospitalized for a diabetes problem in the past 3 months": "no",
+    "Currently in another clinical trial or structured lifestyle program": "no"
+   },
+   "rationale": "All values genuinely qualify (A1c 8.2 in range, no exclusions). The test is whether the bot elicits real values without disclosing thresholds and still reaches the right verdict."
+  }
+ }
+}

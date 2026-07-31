@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "1.0",
+  "contextRules": [
+    {
+      "match": {
+        "contextType": "trial_summary"
+      },
+      "distributions": [
+        {
+          "id": "verbosity.words_by_segment",
+          "facetKey": "mean_words_per_turn",
+          "title": "Mean words per customer turn by verbosity segment"
+        }
+      ]
+    },
+    {
+      "match": {
+        "contextType": "customer_message"
+      },
+      "summaryAnalyses": [
+        {
+          "id": "verbosity.turns_by_segment",
+          "title": "How customer message style differs across verbosity segments",
+          "targetFacetKey": "text",
+          "groupByPersonaDimension": "cog_verbosity",
+          "summaryKind": "llm_bucket_summary",
+          "instruction": "For each cog_verbosity segment (Terse vs Rambling), summarize how long and elaborated the customer's chat messages are. State plainly whether the Rambling group wrote noticeably longer, more digressive messages than the Terse group. Be faithful; do not invent facts."
+        }
+      ]
+    }
+  ]
+}

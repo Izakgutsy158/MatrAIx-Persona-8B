@@ -1,0 +1,69 @@
+persona_id: '0041'
+version: '1.0'
+source: amazon
+display_name: Quinn Santos
+dimensions:
+  domain_characteristics: Hobbyist
+  tech_savviness: Comfortable
+  risk_tolerance: Cautious
+  decision_style: Analytical
+  trust_level: Verifying
+  time_pressure: No rush
+  fam_horticulture: Familiar
+  fam_computer_networking: Familiar
+  att_homeownership: Positive
+  att_new_technology: Positive
+  att_brand_loyalty: Positive
+  att_online_reviews: Positive
+  att_subscription_services: Positive
+  att_surveillance: Positive
+  att_consumerism: Positive
+  att_privacy_vs_security: Positive
+  lstyle_household_size: 3-4 people
+  lstyle_tidiness: Tidy
+  lstyle_frugality: Balanced
+  lstyle_giving: Occasional
+  lstyle_device_ecosystem: Mixed
+  lstyle_coffee_ritual: Home brew
+  lstyle_fashion_sense: Practical
+  lstyle_hobby_intensity: Dedicated
+  cog_verbosity: Concise
+  cog_formality: Neutral
+  cog_directness: Direct
+  cog_humor: Serious
+  cog_detail_orientation: High
+  cog_abstraction: Very concrete
+  cog_optimism: Moderate
+  cog_patience: High
+  cog_curiosity: Moderate
+  cog_skepticism: Moderate
+  cog_open_mindedness: Moderate
+  cog_assertiveness: Moderate
+  cog_ambiguity_tolerance: Low
+  cog_perfectionism: Moderate
+  cog_attention_span: Average
+  cog_question_asking: Rarely asks
+  cog_decision_speed: Deliberate
+  cog_confidence_calibration: Well-calibrated
+  cog_visual_vs_verbal: Verbal
+  cog_big_picture_vs_detail: Detail
+  cog_empathy_expression: Moderate
+  cog_storytelling: Low
+  cog_use_of_jargon: Avoids jargon
+  cog_politeness: Polite
+  health_caregiver_status: Child caregiver
+  hob_vegetable_gardening: Curious
+  trait_curiosity: Moderate
+  trait_creativity: Slight
+  trait_love_of_learning: Moderate
+  trait_open_mindedness: Moderate
+  trait_perspective: Slight
+  trait_perseverance: Slight
+  trait_social_intelligence: Slight
+  trait_resilience: Slight
+  need_for_closure: High
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: amazon-b1c08d54f780
+  origin_source_row_index: 2041211

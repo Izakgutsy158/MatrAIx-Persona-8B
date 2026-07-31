@@ -1,0 +1,179 @@
+persona_id: '0104'
+version: '1.0'
+source: prism
+display_name: Jordan Lee
+dimensions:
+  age_bracket: 45-54
+  region: North America
+  gender_identity: Man
+  primary_language: English
+  english_proficiency: Fluent (C1-C2)
+  highest_education: Bachelor's
+  seniority: Mid
+  years_experience: 11-20
+  life_stage: Mid-life
+  cultural_background: Individualist (Western)
+  tech_savviness: Comfortable
+  values_priority: Achievement
+  religiosity: Observant
+  emotional_state: Calm
+  intent: Verify a claim
+  query_complexity: Ambiguous / underspecified
+  expertise_gap: Peer-level
+  trust_level: Verifying
+  safety_sensitivity: Benign
+  prior_context: Returning user
+  device_context: Desktop, focused
+  fam_machine_learning: Familiar
+  fam_deep_learning: Familiar
+  fam_philosophy: Familiar
+  fam_ethics: Proficient
+  fam_natural_language_processing: Familiar
+  fam_theology: Familiar
+  fam_religious_studies: Aware
+  skill_empathy: Advanced
+  skill_fact_checking: Advanced
+  tool_chatgpt: Regular
+  tool_claude: Occasional
+  topic_technology: Interested
+  topic_philosophy: Interested
+  topic_religion: Interested
+  topic_spirituality: Interested
+  topic_self_improvement: Interested
+  topic_mindfulness: Interested
+  lang_english: Fluent
+  att_ai: Positive
+  att_data_privacy: Skeptical
+  att_organized_religion: Positive
+  att_higher_education: Positive
+  att_new_technology: Positive
+  att_free_speech: Positive
+  att_privacy_vs_security: Skeptical
+  ind_technology: Some exposure
+  cult_united_states: Native
+  big5_imagination: Average
+  big5_artistic_interest: Average
+  big5_emotionality: High
+  big5_adventurousness: Average
+  big5_intellect: High
+  big5_liberalism: High
+  big5_self_efficacy: High
+  big5_dutifulness: High
+  big5_friendliness: High
+  big5_cheerfulness: High
+  big5_trust: High
+  big5_morality: Very high
+  big5_altruism: High
+  big5_cooperation: High
+  big5_sympathy: High
+  big5_depression: Low
+  big5_immoderation: Low
+  lstyle_work_schedule: 9-to-5
+  cog_verbosity: Concise
+  cog_formality: Neutral
+  cog_directness: Direct
+  cog_humor: Serious
+  cog_abstraction: Abstract
+  cog_optimism: High
+  cog_patience: High
+  cog_curiosity: Moderate
+  cog_skepticism: High
+  cog_open_mindedness: Moderate
+  cog_emotional_expressiveness: Moderate
+  cog_conflict_approach: Avoidant
+  cog_feedback_receptiveness: High
+  cog_ambiguity_tolerance: Moderate
+  cog_perfectionism: High
+  cog_learning_pace: Average
+  cog_decision_speed: Deliberate
+  cog_confidence_calibration: Well-calibrated
+  cog_big_picture_vs_detail: Big-picture
+  cog_risk_framing: Threat-focused
+  cog_empathy_expression: High
+  cog_precision_of_language: Average
+  cog_politeness: Polite
+  trait_curiosity: Moderate
+  trait_creativity: Moderate
+  trait_love_of_learning: Moderate
+  trait_open_mindedness: Strong
+  trait_perspective: Strong
+  trait_honesty: Signature
+  trait_capacity_for_love: Signature
+  trait_kindness: Signature
+  trait_social_intelligence: Strong
+  trait_fairness: Strong
+  trait_spirituality: Moderate
+  trait_empathy: Signature
+  val_tradition: Important
+  val_achievement: Core value
+  val_creativity_self_expression: Important
+  val_community: Important
+  val_spirituality_faith: Important
+  val_knowledge_truth: Core value
+  val_independence: Important
+  val_justice_fairness: Core value
+  val_helping_others: Important
+  val_integrity_honesty: Core value
+  val_equality: Core value
+  pref_speed_vs_accuracy: Accuracy first
+  pref_quality_vs_quantity: Quality first
+  pref_logic_vs_intuition: Logic-leaning
+  pref_early_vs_late: Early adopter
+  pref_novelty_vs_familiarity: Novelty-leaning
+  pref_detail_brief_vs_full: Detail-leaning
+  pref_competition_vs_collab: Collaborative
+  pref_stability_vs_change: Stability-leaning
+  demo_marital_status: Married
+  demo_employment_status: Full-time
+  demo_generation: Gen X
+  demo_religion_affiliation: Christian
+  demo_ethnicity_broad: Black / African
+  lifex_education_journey: Traditional track
+  lifex_relationship_history: Married once
+  lifex_faith_journey: Lifelong faith
+  lifex_cultural_exposure: Monocultural
+  lifex_formative_decade: 1990s
+  lifex_languages_lifetime: One
+  bfi2_domain_agreeableness: Very high
+  bfi2_domain_conscientiousness: High
+  bfi2_domain_negative_emotionality: Low
+  bfi2_domain_open_mindedness: High
+  bfi2_facet_compassion: Very high
+  bfi2_facet_respectfulness: High
+  bfi2_facet_trust: High
+  bfi2_facet_responsibility: High
+  bfi2_facet_depression: Low
+  bfi2_facet_intellectual_curiosity: High
+  bfi2_facet_creative_imagination: High
+  schwartz_value_self_direction: High
+  schwartz_value_hedonism: Low
+  schwartz_value_achievement: High
+  schwartz_value_conformity: High
+  schwartz_value_tradition: High
+  schwartz_value_benevolence: High
+  schwartz_value_universalism: High
+  sdt_need_autonomy: High
+  sdt_need_competence: High
+  sdt_need_relatedness: High
+  mft_care_harm: Very high
+  mft_fairness_cheating: High
+  mft_liberty_oppression: High
+  need_for_cognition: High
+  dospert_ethical_risk_tolerance: Very high
+  interpersonal_communion_warmth: High
+  ai_task_learning_concepts: Currently partially AI-assisted
+  ai_task_search_answers: Currently partially AI-assisted
+  coding_agent_usage_frequency: Weekly
+  coding_ai_complexity_comfort: Comfortable with bounded complex tasks
+  coding_ai_learning_source: Self-experimentation
+  coding_ai_sentiment: Somewhat favorable
+  coding_ai_usage_frequency: Weekly
+  coding_tool_ai_capability_importance: High
+  coding_tool_ethics_blocker: Hard blocker
+  coding_tool_security_privacy_blocker: Major concern
+  future_developer_skill_belief: Ethical judgment
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: prism-f3d6476fe7bf
+  origin_source_row_index: 2211875

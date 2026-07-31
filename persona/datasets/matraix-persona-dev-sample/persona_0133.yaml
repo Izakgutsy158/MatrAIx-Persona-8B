@@ -1,0 +1,24 @@
+persona_id: '0133'
+version: '1.0'
+source: gss
+display_name: Sienna Carter
+dimensions:
+  age_bracket: 55-64
+  region: North America
+  gender_identity: Man
+  socioeconomic_band: Lower-middle
+  highest_education: Secondary
+  political_lean: Center
+  religiosity: Spiritual
+  trust_level: Trusting
+  health_general_health: Good
+  demo_marital_status: Widowed
+  demo_children_count: 2 children
+  demo_employment_status: Full-time
+  demo_religion_affiliation: Christian
+  demo_citizenship_status: Citizen by birth
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: gss-923724229f55
+  origin_source_row_index: 2258963

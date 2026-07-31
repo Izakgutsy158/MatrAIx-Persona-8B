@@ -1,0 +1,186 @@
+persona_id: '0105'
+version: '1.0'
+source: prism
+display_name: Sofia Andersson
+dimensions:
+  age_bracket: 35-44
+  region: Western Europe
+  gender_identity: Woman
+  primary_language: English
+  english_proficiency: Native
+  register: Formal / standard
+  highest_education: Bachelor's
+  seniority: Mid
+  years_experience: 6-10
+  life_stage: Early career
+  major_life_events: None notable
+  cultural_background: Mixed / diaspora
+  tech_savviness: Cautious adopter
+  values_priority: Autonomy
+  religiosity: Secular
+  intent: Learn / explain
+  query_complexity: Simple factual
+  expertise_gap: Novice asking expert
+  tone_expected: Formal
+  safety_sensitivity: Benign
+  prior_context: Cold start
+  fam_machine_learning: Aware
+  fam_deep_learning: Aware
+  fam_ethics: Familiar
+  fam_natural_language_processing: Aware
+  skill_empathy: Intermediate
+  skill_fact_checking: Advanced
+  tool_chatgpt: Tried it
+  tool_claude: Tried it
+  topic_technology: Interested
+  topic_religion: Indifferent
+  topic_volunteering: Interested
+  topic_sustainability: Interested
+  topic_productivity: Interested
+  topic_self_improvement: Interested
+  topic_mindfulness: Interested
+  lang_english: Native
+  att_ai: Neutral
+  att_higher_education: Positive
+  att_new_technology: Neutral
+  ind_technology: Some exposure
+  cult_united_kingdom: Native
+  big5_self_efficacy: High
+  big5_dutifulness: High
+  big5_friendliness: High
+  big5_morality: High
+  big5_altruism: High
+  big5_cooperation: High
+  big5_sympathy: High
+  lstyle_work_schedule: 9-to-5
+  cog_verbosity: Concise
+  cog_formality: Formal
+  cog_directness: Direct
+  cog_humor: Serious
+  cog_detail_orientation: High
+  cog_abstraction: Balanced
+  cog_optimism: Moderate
+  cog_patience: High
+  cog_curiosity: Moderate
+  cog_skepticism: Moderate
+  cog_open_mindedness: High
+  cog_assertiveness: Moderate
+  cog_emotional_expressiveness: High
+  cog_conflict_approach: Collaborative
+  cog_feedback_receptiveness: High
+  cog_ambiguity_tolerance: Moderate
+  cog_perfectionism: High
+  cog_attention_span: Average
+  cog_learning_pace: Average
+  cog_question_asking: Sometimes
+  cog_decision_speed: Deliberate
+  cog_confidence_calibration: Well-calibrated
+  cog_big_picture_vs_detail: Detail
+  cog_risk_framing: Threat-focused
+  cog_empathy_expression: High
+  cog_storytelling: Moderate
+  cog_precision_of_language: Precise
+  cog_use_of_jargon: Avoids jargon
+  cog_emoji_use: Never
+  cog_politeness: Polite
+  peeve_typos: Major peeve
+  peeve_unexplained_jargon: Annoys
+  peeve_condescension: Major peeve
+  trait_curiosity: Moderate
+  trait_love_of_learning: Moderate
+  trait_open_mindedness: Strong
+  trait_kindness: Strong
+  trait_empathy: Strong
+  trait_generosity: Moderate
+  val_personal_freedom: Important
+  val_security_stability: Important
+  val_community: Important
+  val_spirituality_faith: Irrelevant
+  val_knowledge_truth: Core value
+  val_independence: Core value
+  val_helping_others: Core value
+  val_integrity_honesty: Core value
+  val_order_structure: Important
+  pref_speed_vs_accuracy: Accuracy first
+  pref_quality_vs_quantity: Quality first
+  pref_logic_vs_intuition: Logic-leaning
+  pref_early_vs_late: Late adopter
+  pref_novelty_vs_familiarity: Comfort-leaning
+  pref_detail_brief_vs_full: Detail-leaning
+  pref_competition_vs_collab: Collaborative
+  pref_stability_vs_change: Stability-leaning
+  demo_marital_status: Single
+  demo_children_count: None
+  demo_employment_status: Full-time
+  demo_generation: Gen X
+  demo_religion_affiliation: None
+  demo_ethnicity_broad: South Asian
+  demo_home_language: Same as primary
+  demo_parental_status: Not a parent
+  demo_relationship_length: Not in one
+  lifex_geographic_mobility: Never left hometown
+  lifex_travel_breadth: Never left country
+  lifex_career_path_shape: Linear climb
+  lifex_education_journey: Traditional track
+  lifex_adversity_level: Minor setbacks
+  lifex_immigration_generation: Second-generation
+  lifex_entrepreneurship_history: Never considered
+  lifex_relationship_history: Limited
+  lifex_parenting_journey: No children
+  lifex_faith_journey: Lapsed / left faith
+  lifex_formative_decade: 2000s
+  lifex_service_history: Occasional volunteer
+  lifex_turning_point: No single one
+  lifex_languages_lifetime: One
+  bfi2_domain_agreeableness: High
+  bfi2_domain_conscientiousness: High
+  bfi2_facet_compassion: High
+  bfi2_facet_respectfulness: High
+  bfi2_facet_responsibility: High
+  schwartz_value_self_direction: High
+  schwartz_value_security: High
+  schwartz_value_benevolence: High
+  schwartz_value_universalism: High
+  sdt_need_autonomy: High
+  sdt_need_relatedness: High
+  mft_care_harm: High
+  need_for_cognition: High
+  interpersonal_communion_warmth: High
+  ai_task_code_generation: Does not plan AI use
+  ai_task_code_review: Does not plan AI use
+  ai_task_codebase_learning: Does not plan AI use
+  ai_task_data_generation_analytics: Does not plan AI use
+  ai_task_debugging_fixing: Does not plan AI use
+  ai_task_deployment_monitoring: Does not plan AI use
+  ai_task_documentation: Does not plan AI use
+  ai_task_learning_concepts: Currently partially AI-assisted
+  ai_task_project_planning: Does not plan AI use
+  ai_task_refactoring: Does not plan AI use
+  ai_task_search_answers: Currently partially AI-assisted
+  ai_task_testing: Does not plan AI use
+  coding_agent_adoption_barrier: Lack of clear use case
+  coding_agent_autonomy_preference: No agent autonomy
+  coding_agent_context_sharing_comfort: Shares natural-language descriptions only
+  coding_agent_control_expectation: Read-only assistance preferred
+  coding_agent_explanation_preference: Concise summary only
+  coding_agent_failure_tolerance: Does not use agents
+  coding_agent_memory_preference: Prefers stateless interactions
+  coding_agent_security_expectation: Expects basic secret / privacy checks
+  coding_agent_usage_frequency: Not yet but interested
+  coding_agent_workflow_impact: No clear change
+  coding_ai_complexity_comfort: Only simple / boilerplate tasks
+  coding_ai_learning_source: Not learning AI tooling
+  coding_ai_output_trust: Neutral / depends on task
+  coding_ai_sentiment: Neutral / indifferent
+  coding_ai_usage_frequency: Monthly or infrequent
+  coding_tool_ai_capability_importance: Moderate
+  coding_tool_ethics_blocker: Major concern
+  coding_tool_reliability_latency_importance: High
+  coding_tool_security_privacy_blocker: Hard blocker
+  future_developer_skill_belief: Ethical judgment
+  human_help_boundary_for_ai_coding: When trust is low
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: prism-2938084cc1e5
+  origin_source_row_index: 2211882

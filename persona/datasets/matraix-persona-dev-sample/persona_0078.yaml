@@ -1,0 +1,88 @@
+persona_id: 0078
+version: '1.0'
+source: stackoverflow
+display_name: Petra Jansen
+dimensions:
+  age_bracket: 45-54
+  region: Eastern Europe
+  domain: Software & AI
+  domain_characteristics: Practitioner
+  highest_education: Vocational / cert
+  company_size: Enterprise (5k+)
+  role_function: Engineering
+  years_experience: 20+
+  tech_savviness: Comfortable
+  emotional_state: Frustrated
+  fam_machine_learning: Aware
+  fam_cybersecurity: Aware
+  fam_databases: Proficient
+  fam_operating_systems: Proficient
+  fam_compilers: Familiar
+  fam_cloud_infrastructure: Proficient
+  fam_devops: Proficient
+  skill_writing: Master
+  skill_coding: Master
+  skill_debugging: Master
+  skill_code_review: Master
+  skill_system_design: Master
+  skill_research: Master
+  skill_critical_thinking: Master
+  skill_problem_solving: Master
+  skill_logical_reasoning: Master
+  tool_sql: Regular
+  tool_jira: Regular
+  tool_microsoft_teams: Regular
+  tool_docker: Regular
+  tool_kubernetes: Regular
+  tool_azure: Regular
+  tool_vs_code: Regular
+  att_ai: Skeptical
+  ind_technology: Veteran
+  lstyle_commute_mode: Remote
+  lstyle_device_ecosystem: Windows
+  cog_detail_orientation: High
+  cog_reading_vs_watching: Prefers reading
+  trait_love_of_learning: Strong
+  trait_adaptability: Strong
+  val_achievement: Important
+  val_knowledge_truth: Important
+  val_independence: Important
+  pref_speed_vs_accuracy: Accuracy first
+  demo_employment_status: Full-time
+  demo_generation: Gen X
+  lifex_education_journey: Dropped out
+  prog_javascript: Proficient
+  prog_typescript: Proficient
+  prog_sql: Proficient
+  prog_bash: Proficient
+  prog_powershell: Proficient
+  ai_task_code_generation: Does not plan AI use
+  ai_task_code_review: Does not plan AI use
+  ai_task_codebase_learning: Does not plan AI use
+  ai_task_data_generation_analytics: Does not plan AI use
+  ai_task_debugging_fixing: Does not plan AI use
+  ai_task_deployment_monitoring: Does not plan AI use
+  ai_task_documentation: Does not plan AI use
+  ai_task_learning_concepts: Does not plan AI use
+  ai_task_project_planning: Does not plan AI use
+  ai_task_refactoring: Does not plan AI use
+  ai_task_search_answers: Does not plan AI use
+  ai_task_testing: Does not plan AI use
+  codebase_onboarding_style: Reads architecture / docs first
+  coding_agent_usage_frequency: No plans
+  coding_ai_learning_source: Not learning AI tooling
+  coding_ai_sentiment: Somewhat unfavorable
+  coding_ai_usage_frequency: Tried but not active
+  dev_contribution_context: Mixed contexts
+  dev_ic_manager_orientation: Individual contributor
+  dev_professional_status: Professional developer
+  dev_role_archetype: Full-stack developer
+  dev_toolchain_complexity: Large integrated toolchain
+  developer_help_seeking_preference: Ask teammates first
+  stackoverflow_participation_style: Reads / searches only
+  stackoverflow_usage_pattern: Multiple times daily
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: stackoverflow-036eeccac904
+  origin_source_row_index: 2175590

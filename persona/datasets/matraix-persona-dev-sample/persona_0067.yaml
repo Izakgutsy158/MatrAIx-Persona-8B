@@ -1,0 +1,63 @@
+persona_id: '0067'
+version: '1.0'
+source: stackoverflow
+display_name: Ivan Kowalski
+dimensions:
+  age_bracket: 35-44
+  region: Eastern Europe
+  domain: Software & AI
+  domain_characteristics: Practitioner
+  highest_education: Bachelor's
+  role_function: Engineering
+  years_experience: 11-20
+  tech_savviness: Comfortable
+  fam_computer_networking: Familiar
+  fam_databases: Expert
+  fam_operating_systems: Expert
+  fam_cloud_infrastructure: Expert
+  fam_devops: Expert
+  skill_writing: Master
+  skill_public_speaking: Master
+  skill_coding: Master
+  tool_notion: Regular
+  tool_jira: Regular
+  tool_microsoft_teams: Regular
+  tool_kubernetes: Regular
+  tool_aws: Regular
+  tool_azure: Regular
+  tool_vs_code: Regular
+  tool_jetbrains_ides: Regular
+  tool_zoom: Regular
+  tool_chatgpt: Regular
+  lang_english: Fluent
+  att_ai: Neutral
+  att_new_technology: Positive
+  att_open_source: Positive
+  ind_technology: Experienced
+  trait_love_of_learning: Strong
+  trait_adaptability: Strong
+  demo_employment_status: Full-time
+  demo_generation: Millennial
+  lifex_career_path_shape: Linear climb
+  lifex_education_journey: Largely self-taught
+  lifex_formative_decade: 1980s
+  code_dependencies_approach: Lean on libraries (minimal custom code)
+  prog_javascript: Proficient
+  code_modularity_preference: Highly modular small components
+  code_type_system_orientation: Strong static typing preference
+  codebase_onboarding_style: Reads architecture / docs first
+  coding_agent_usage_frequency: No plans
+  coding_ai_output_trust: Neutral / depends on task
+  coding_ai_sentiment: Neutral / indifferent
+  coding_ai_usage_frequency: Tried but not active
+  dev_contribution_context: Employee work
+  dev_ic_manager_orientation: Individual contributor
+  dev_professional_status: Professional developer
+  dev_role_archetype: Other developer
+  stackoverflow_participation_style: Reads / searches only
+  stackoverflow_usage_pattern: Multiple times daily
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: stackoverflow-62ac9b944507
+  origin_source_row_index: 2139309

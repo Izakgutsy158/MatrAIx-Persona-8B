@@ -1,0 +1,11 @@
+schemaVersion: "1.0"
+id: probe_cog_emoji_use_v1
+title: Short survey
+description: Open-ended survey to probe whether the cog_emoji_use persona attribute is expressed.
+questions:
+  - id: q_main
+    prompt: >-
+      Think of an app you use all the time and genuinely love. Write a short, casual one-paragraph review of it to post in the app store — say what it is and why it makes your day better.
+    type: free_text
+    construct: probe
+    required: true

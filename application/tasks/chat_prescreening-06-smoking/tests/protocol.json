@@ -1,0 +1,149 @@
+{
+ "protocol_id": "QUIT-PATCH-2026-006",
+ "study_title": "App-Supported Quit Program With Nicotine Patch (QUIT-PATCH)",
+ "design_summary": "10-week, single-arm study combining a quit-coaching app with a standard course of nicotine patches. Participants set a quit date within 30 days of enrolling and check in through the app daily.",
+ "criteria": [
+  {
+   "id": "INC1",
+   "kind": "inclusion",
+   "text": "Age 18 to 70 years old, inclusive.",
+   "keywords": [
+    "\\bage\\b",
+    "how old",
+    "\\byears?\\s+old\\b",
+    "date of birth"
+   ],
+   "probe": "To start, how old are you?"
+  },
+  {
+   "id": "INC2",
+   "kind": "inclusion",
+   "text": "Currently smokes 10 or more cigarettes per day, on average.",
+   "keywords": [
+    "cigarettes? (a|per) day",
+    "how many cigarette",
+    "how much do you smoke",
+    "\\bpack\\b",
+    "smoke (a|per) day"
+   ],
+   "probe": "On an average day, how many cigarettes do you smoke?",
+   "unknown_rule": "If the participant cannot give a usable estimate of cigarettes per day, INC2 is unknown."
+  },
+  {
+   "id": "INC3",
+   "kind": "inclusion",
+   "text": "Has smoked for at least 1 year.",
+   "keywords": [
+    "how long.{0,25}smok",
+    "years.{0,20}smok",
+    "smok.{0,20}years",
+    "when did you start"
+   ],
+   "probe": "How long have you been smoking?"
+  },
+  {
+   "id": "INC4",
+   "kind": "inclusion",
+   "text": "Willing to set a quit date within the next 30 days.",
+   "keywords": [
+    "quit date",
+    "set a date",
+    "ready to quit",
+    "next 30 days|next month",
+    "when.{0,30}quit"
+   ],
+   "probe": "Would you be willing to set a quit date within the next 30 days?"
+  },
+  {
+   "id": "INC5",
+   "kind": "inclusion",
+   "text": "Owns a smartphone and is willing to check in through the study app daily.",
+   "keywords": [
+    "smart\\s*phone",
+    "\\bphone\\b",
+    "\\bapp\\b",
+    "check[\\s-]*in"
+   ],
+   "probe": "Do you own a smartphone, and would you be willing to do a short daily check-in in our app?"
+  },
+  {
+   "id": "INC6",
+   "kind": "inclusion",
+   "text": "Willing to participate for the full 10 weeks.",
+   "keywords": [
+    "10[\\s-]*week",
+    "ten[\\s-]*week",
+    "\\bcommit",
+    "full (program|study|duration)"
+   ],
+   "probe": "The program runs a full 10 weeks - is that a commitment you can make?"
+  },
+  {
+   "id": "EXC1",
+   "kind": "exclusion",
+   "text": "Currently pregnant or breastfeeding, or planning pregnancy within the next 6 months.",
+   "keywords": [
+    "pregnan",
+    "breast\\s*feed",
+    "\\bnursing\\b",
+    "expecting"
+   ],
+   "probe": "Are you currently pregnant or breastfeeding, or planning a pregnancy in the next six months?",
+   "not_applicable_when": {
+    "sex": "male"
+   }
+  },
+  {
+   "id": "EXC2",
+   "kind": "exclusion",
+   "text": "Heart attack or stroke within the past 3 months.",
+   "keywords": [
+    "heart attack",
+    "stroke",
+    "cardiac (event|arrest)",
+    "myocardial"
+   ],
+   "probe": "Have you had a heart attack or stroke in the past three months?"
+  },
+  {
+   "id": "EXC3",
+   "kind": "exclusion",
+   "text": "Currently using another quit medication or nicotine replacement product (for example varenicline, bupropion, nicotine gum, lozenges, or patches).",
+   "keywords": [
+    "varenicline|chantix",
+    "bupropion|zyban",
+    "nicotine (gum|patch|lozenge|replacement|spray)",
+    "quit (medication|aid)",
+    "\\bnrt\\b"
+   ],
+   "probe": "Are you currently using any quit medication or nicotine replacement, like varenicline, bupropion, or nicotine gum?"
+  },
+  {
+   "id": "EXC4",
+   "kind": "exclusion",
+   "text": "A skin condition that prevents wearing adhesive patches (for example severe eczema or psoriasis at the usual application sites).",
+   "keywords": [
+    "\\bskin\\b",
+    "eczema",
+    "psoriasis",
+    "adhesive",
+    "patch.{0,25}(react|skin|rash)",
+    "\\brash\\b"
+   ],
+   "probe": "Do you have any skin condition that would keep you from wearing an adhesive patch on your arm or torso?"
+  },
+  {
+   "id": "EXC5",
+   "kind": "exclusion",
+   "text": "Currently enrolled in another interventional clinical trial or structured quit program.",
+   "keywords": [
+    "(another|other|different)\\s+(clinical\\s+|research\\s+)?(trial|study|studies)",
+    "\\benrolled\\b",
+    "research (study|program)",
+    "quit program",
+    "participating in (a|any)"
+   ],
+   "probe": "Are you currently enrolled in another clinical trial or a structured quit program?"
+  }
+ ]
+}

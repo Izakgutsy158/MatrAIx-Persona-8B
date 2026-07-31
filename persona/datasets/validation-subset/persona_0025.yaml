@@ -1,0 +1,57 @@
+persona_id: '0025'
+version: '1.0'
+source: stackoverflow:stackoverflow_2023_5948_9327
+dimensions:
+  age_bracket: 18-24
+  region: Southeast Asia
+  domain: Software & AI
+  highest_education: Primary
+  institution_tier: Self-taught
+  seniority: Student / intern
+  years_experience: 0-2
+  life_stage: Student
+  tech_savviness: Digital native
+  fam_machine_learning: Familiar
+  fam_deep_learning: Familiar
+  fam_statistics: Familiar
+  fam_data_science: Familiar
+  fam_cybersecurity: Familiar
+  fam_cryptography: Familiar
+  fam_computer_networking: Familiar
+  fam_databases: Familiar
+  fam_distributed_systems: Familiar
+  fam_operating_systems: Familiar
+  fam_compilers: Familiar
+  fam_cloud_infrastructure: Familiar
+  fam_devops: Familiar
+  fam_game_development: Familiar
+  fam_computer_graphics: Familiar
+  fam_computer_vision: Familiar
+  fam_natural_language_processing: Familiar
+  fam_human_computer_interaction: Familiar
+  fam_ux_research: Familiar
+  tool_python: Regular
+  tool_docker: Regular
+  tool_aws: Regular
+  tool_vs_code: Regular
+  tool_zoom: Regular
+  tool_chatgpt: Regular
+  tool_github_copilot: Regular
+  att_ai: Skeptical
+  cog_reading_vs_watching: Prefers reading
+  demo_employment_status: Student
+  demo_generation: Gen Z
+  lifex_career_path_shape: Just starting
+  lifex_education_journey: Traditional track
+  code_comment_style: No comments
+  code_testing_approach: No tests
+  prog_dart: Familiar
+  ai_task_code_generation: Currently partially AI-assisted
+  coding_ai_learning_source: Self-experimentation
+  coding_ai_usage_frequency: Daily
+  dev_contribution_context: Personal projects
+  dev_ic_manager_orientation: Student / learner
+  dev_professional_status: Student developer
+  dev_role_archetype: Student / learner
+  dev_toolchain_complexity: Moderate multi-tool workflow
+  stackoverflow_participation_style: Reads / searches only

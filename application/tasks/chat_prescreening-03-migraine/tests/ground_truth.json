@@ -1,0 +1,205 @@
+{
+ "protocol_id": "MIG-CARE-2026-003",
+ "cases": {
+  "G01": {
+   "sex": "female",
+   "age": 34,
+   "label": "likely_eligible",
+   "criteria_not_met": [],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "34",
+    "Sex": "female",
+    "Migraine history": "diagnosed with migraine 10 years ago",
+    "Migraine days per month": "about 6, steady for the past year",
+    "Acute medication use": "sumatriptan on about 5 days a month",
+    "Preventive medication": "propranolol, same dose for over a year",
+    "Smartphone and diary": "yes; already tracks headaches in a notes app",
+    "Willing to commit to 12 weeks": "yes",
+    "Pregnancy status": "not pregnant",
+    "Cluster headache": "never diagnosed",
+    "Other trials or programs": "none"
+   },
+   "rationale": "6 migraine days/month in the 4-14 window, acute meds well under 15 days, stable preventive. Baseline easy case."
+  },
+  "G02": {
+   "sex": "male",
+   "age": 65,
+   "label": "likely_eligible",
+   "criteria_not_met": [],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "65",
+    "Sex": "male",
+    "Migraine history": "diagnosed with migraine in his thirties",
+    "Migraine days per month": "exactly 14 on average - he keeps a paper calendar and knows the count",
+    "Acute medication use": "naproxen on 14 days a month, the same days he has attacks",
+    "Preventive medication": "topiramate, same dose for 6 months",
+    "Smartphone and diary": "yes, willing",
+    "Willing to commit to 12 weeks": "yes",
+    "Cluster headache": "never diagnosed",
+    "Other trials or programs": "none"
+   },
+   "rationale": "Triple boundary: age exactly 65 (inclusive), 14 migraine days (inclusive ceiling of INC3), acute meds 14 days (just under the 15-day EXC2 threshold)."
+  },
+  "G03": {
+   "sex": "female",
+   "age": 41,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "INC3"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "41",
+    "Sex": "female",
+    "Migraine history": "diagnosed with migraine 15 years ago; 'it's basically constant now'",
+    "Migraine days per month": "around 20 - more days with a headache than without",
+    "Acute medication use": "rizatriptan about 8 days a month (rationing her pills)",
+    "Preventive medication": "amitriptyline, stable for 2 years",
+    "Smartphone and diary": "yes",
+    "Willing to commit to 12 weeks": "yes",
+    "Pregnancy status": "not pregnant",
+    "Cluster headache": "never diagnosed",
+    "Other trials or programs": "none"
+   },
+   "rationale": "About 20 headache days/month exceeds the 14-day ceiling (chronic pattern). Acute meds are only 8 days, so EXC2 passes - the failure is INC3 alone."
+  },
+  "G04": {
+   "sex": "male",
+   "age": 29,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "EXC2"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "29",
+    "Sex": "male",
+    "Migraine history": "diagnosed with migraine 4 years ago",
+    "Migraine days per month": "about 8 real migraine days",
+    "Acute medication use": "takes ibuprofen 'pretty much every day, 20-plus days a month' - for the migraines but also 'just in case' on work days",
+    "Preventive medication": "none",
+    "Smartphone and diary": "yes",
+    "Willing to commit to 12 weeks": "yes",
+    "Cluster headache": "never diagnosed",
+    "Other trials or programs": "none"
+   },
+   "rationale": "Migraine days (8) are in range, but acute pain-reliever use on 20+ days/month meets the medication-overuse exclusion. Tests separating attack-day count from medication-day count."
+  },
+  "G05": {
+   "sex": "female",
+   "age": 52,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "EXC3"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "52",
+    "Sex": "female",
+    "Migraine history": "diagnosed with migraine 20 years ago",
+    "Migraine days per month": "about 7",
+    "Acute medication use": "sumatriptan on about 6 days a month",
+    "Preventive medication": "her neurologist started her on amitriptyline 3 weeks ago",
+    "Smartphone and diary": "yes",
+    "Willing to commit to 12 weeks": "yes",
+    "Pregnancy status": "not pregnant",
+    "Cluster headache": "never diagnosed",
+    "Other trials or programs": "none"
+   },
+   "rationale": "Started a new preventive (amitriptyline) 3 weeks ago - inside the 8-week EXC3 window."
+  },
+  "G06": {
+   "sex": "male",
+   "age": 45,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "EXC4"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "45",
+    "Sex": "male",
+    "Migraine history": "diagnosed with migraine in his twenties",
+    "Cluster headache": "ALSO diagnosed with cluster headache two years ago - short, one-sided attacks that come in bouts around his eye",
+    "Migraine days per month": "about 5 migraine days (separate from the cluster bouts)",
+    "Acute medication use": "sumatriptan injections during cluster bouts; about 6 days a month overall",
+    "Preventive medication": "verapamil, stable for a year",
+    "Smartphone and diary": "yes",
+    "Willing to commit to 12 weeks": "yes",
+    "Other trials or programs": "none"
+   },
+   "rationale": "Meets the migraine inclusion but also carries a cluster-headache diagnosis, which is a hard exclusion (EXC4)."
+  },
+  "G07": {
+   "sex": "female",
+   "age": 27,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "INC3",
+    "EXC1"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "27",
+    "Sex": "female",
+    "Migraine history": "diagnosed with migraine 6 years ago",
+    "Migraine days per month": "about 3 - they eased off a lot last year",
+    "Acute medication use": "rizatriptan about 3 days a month",
+    "Preventive medication": "none",
+    "Smartphone and diary": "yes",
+    "Willing to commit to 12 weeks": "yes",
+    "Pregnancy status": "pregnant - about 10 weeks along; mentions it only if asked",
+    "Cluster headache": "never diagnosed",
+    "Other trials or programs": "none"
+   },
+   "rationale": "Multi-failure: only 3 migraine days/month (below the 4-day floor) AND currently pregnant (EXC1, a coverage trap the bot must remember to ask). Both must be listed."
+  },
+  "G08": {
+   "sex": "male",
+   "age": 58,
+   "label": "insufficient_information",
+   "criteria_not_met": [],
+   "criteria_unknown": [
+    "INC3"
+   ],
+   "profile": {
+    "Age": "58",
+    "Sex": "male",
+    "Migraine history": "doctor told him years ago his bad headaches were migraines",
+    "Migraine days per month": "UNKNOWN - 'they come and go, some months are bad, some are fine; I've honestly never counted'",
+    "Acute medication use": "acetaminophen 'now and then', maybe 4-5 days a month",
+    "Preventive medication": "none",
+    "Smartphone and diary": "yes",
+    "Willing to commit to 12 weeks": "yes",
+    "Cluster headache": "never diagnosed",
+    "Other trials or programs": "none"
+   },
+   "rationale": "Cannot give a usable estimate of monthly migraine days, so INC3 is unknown per the protocol rule. Acute-med use is estimable and fine, so only INC3 is unknown."
+  },
+  "G09": {
+   "sex": "female",
+   "age": 38,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "INC3"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "38",
+    "Sex": "female",
+    "Migraine history": "diagnosed with migraine 12 years ago",
+    "Migraine days per month": "CHALLENGE - self-corrector: when FIRST asked, you guess from memory 'maybe 5 or 6 days a month?'. Before the conversation ends - at the latest right after the next question is answered - you check the headache-diary app on your phone and CORRECT yourself unprompted: 'Actually, I just looked at my diary app - it's been more like 16 or 17 days a month for the past three months.' The corrected figure (16-17 days/month) is the truth; stick to it firmly afterwards.",
+    "Acute medication use": "naproxen on about 6 days a month",
+    "Preventive medication": "none",
+    "Smartphone and daily diary": "yes, willing",
+    "Willing to commit to 12 weeks": "yes",
+    "Pregnancy status": "not pregnant",
+    "Cluster headache": "never diagnosed",
+    "Other trials or programs": "none"
+   },
+   "rationale": "Corrected truth is 16-17 migraine days/month - above the 14-day ceiling (chronic pattern). A bot that anchors on her first guess of '5 or 6' will wrongly call her eligible; it must use the corrected value."
+  }
+ }
+}

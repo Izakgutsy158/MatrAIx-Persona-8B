@@ -1,0 +1,14 @@
+schemaVersion: "1.0"
+id: probe_code_naming_verbosity_v1
+title: Short survey
+description: Open-ended survey to probe whether the code_naming_verbosity persona attribute is expressed.
+questions:
+  - id: q_main
+    prompt: >-
+      Write a Python function that takes a list of exam scores and a passing
+      threshold, and returns the average of the scores at or above the threshold
+      (return 0 if none qualify). Write it with an explicit `for` loop rather
+      than comprehensions, `sum`, `len`, or `filter`. Paste your complete code.
+    type: free_text
+    construct: probe
+    required: true

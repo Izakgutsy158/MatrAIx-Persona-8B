@@ -1,0 +1,294 @@
+persona_id: '0064'
+version: '1.0'
+source: wiki:Q44520
+dimensions:
+  age_bracket: 25-34
+  region: Western Europe
+  gender_identity: Woman
+  urbanicity: Small town
+  socioeconomic_band: Lower-middle
+  primary_language: English
+  english_proficiency: Native
+  register: Formal / standard
+  domain: Arts & Humanities
+  subject_specialty: Comparative literature
+  domain_characteristics: Practitioner
+  highest_education: Secondary
+  academic_field: Humanities
+  institution_tier: Not applicable
+  research_output: Occasional author
+  seniority: Mid
+  company_size: Solo / freelance
+  role_function: Teaching
+  years_experience: 6-10
+  life_stage: Early career
+  major_life_events: Bereavement
+  cultural_background: Individualist (Western)
+  dominant_trait: High conscientiousness
+  risk_tolerance: Balanced
+  decision_style: Deliberative
+  values_priority: Autonomy
+  political_lean: Center-left
+  religiosity: Observant
+  safety_sensitivity: Benign
+  media_diet: Long-form
+  economic_motivation: Cost-sensitive
+  fam_curriculum_design: Familiar
+  fam_pedagogy: Proficient
+  fam_geology: Familiar
+  fam_political_science: Familiar
+  fam_comparative_literature: Expert
+  fam_ethics: Familiar
+  fam_history: Familiar
+  fam_art_history: Aware
+  fam_music_theory: Familiar
+  fam_theology: Familiar
+  fam_religious_studies: Proficient
+  skill_writing: Master
+  skill_storytelling: Master
+  skill_drawing: Intermediate
+  skill_painting: Intermediate
+  topic_politics: Interested
+  topic_travel: Interested
+  topic_science: Interested
+  topic_music: Interested
+  topic_visual_art: Interested
+  topic_literature: Passionate
+  topic_poetry: Passionate
+  topic_history: Interested
+  topic_religion: Interested
+  topic_spirituality: Interested
+  topic_activism: Interested
+  topic_collecting: Interested
+  lang_english: Native
+  att_traditional_gender_roles: Opposed
+  att_higher_education: Positive
+  att_authority: Skeptical
+  att_free_speech: Positive
+  ind_publishing: Experienced
+  ind_education: Experienced
+  cult_united_kingdom: Native
+  musg_classical: Like
+  bookg_literary_fiction: Love
+  bookg_fantasy: Like
+  bookg_biography: Like
+  bookg_history: Like
+  bookg_poetry: Love
+  mbti_type: ISFJ — Defender
+  big5_imagination: High
+  big5_artistic_interest: Very high
+  big5_emotionality: High
+  big5_adventurousness: Low
+  big5_intellect: High
+  big5_liberalism: High
+  big5_self_efficacy: High
+  big5_orderliness: High
+  big5_dutifulness: Very high
+  big5_achievement_striving: High
+  big5_self_discipline: High
+  big5_cautiousness: High
+  big5_friendliness: Average
+  big5_gregariousness: Low
+  big5_assertiveness: Low
+  big5_activity_level: Average
+  big5_excitement_seeking: Low
+  big5_cheerfulness: Low
+  big5_trust: Average
+  big5_morality: High
+  big5_altruism: High
+  big5_cooperation: High
+  big5_modesty: High
+  big5_sympathy: High
+  big5_anxiety: High
+  big5_anger: Low
+  big5_depression: High
+  big5_self_consciousness: High
+  big5_immoderation: Low
+  big5_vulnerability: High
+  lstyle_travel_freq: A few trips/yr
+  lstyle_household_size: 5+ people
+  lstyle_social_battery: Introvert
+  lstyle_reading_freq: Daily
+  lstyle_hobby_intensity: Dedicated
+  cog_formality: Formal
+  cog_directness: Direct
+  cog_humor: Serious
+  cog_detail_orientation: High
+  cog_abstraction: Concrete
+  cog_optimism: Low
+  cog_patience: Very high
+  cog_curiosity: High
+  cog_open_mindedness: High
+  cog_assertiveness: Moderate
+  cog_emotional_expressiveness: Low
+  cog_conflict_approach: Confronting
+  cog_perfectionism: High
+  cog_reading_vs_watching: Strongly prefers reading
+  cog_visual_vs_verbal: Mixed
+  cog_big_picture_vs_detail: Both
+  cog_empathy_expression: High
+  cog_storytelling: Very high
+  cog_precision_of_language: Precise
+  cog_emoji_use: Never
+  cog_politeness: Very polite
+  health_general_health: Poor
+  health_chronic_condition: Managed
+  health_mobility: Uses mobility aid
+  health_mental_health: Struggling
+  health_stress_level: High
+  health_energy_level: Low
+  health_medication_use: Daily
+  health_caregiver_status: Not a caregiver
+  acad_earth_science: Interested
+  acad_world_history: Interested
+  acad_geography: Interested
+  acad_civics: Interested
+  acad_literature: Passionate
+  acad_creative_writing: Passionate
+  acad_visual_art: Interested
+  acad_music: Interested
+  acad_political_theory: Interested
+  trait_curiosity: Strong
+  trait_creativity: Signature
+  trait_love_of_learning: Strong
+  trait_open_mindedness: Strong
+  trait_perspective: Strong
+  trait_bravery: Strong
+  trait_perseverance: Signature
+  trait_honesty: Signature
+  trait_zest: Slight
+  trait_capacity_for_love: Strong
+  trait_kindness: Moderate
+  trait_social_intelligence: Slight
+  trait_teamwork: Strong
+  trait_fairness: Strong
+  trait_leadership: Slight
+  trait_humility: Strong
+  trait_prudence: Moderate
+  trait_self_regulation: Strong
+  trait_appreciation_of_beauty: Moderate
+  trait_hope_optimism: Moderate
+  trait_playfulness: Moderate
+  trait_spirituality: Strong
+  trait_ambition: Strong
+  trait_empathy: Strong
+  trait_resilience: Strong
+  trait_discipline: Signature
+  trait_loyalty: Strong
+  trait_competitiveness: Slight
+  trait_adaptability: Moderate
+  val_family: Core value
+  val_career_success: Important
+  val_wealth: Minor
+  val_health: Moderate
+  val_personal_freedom: Core value
+  val_security_stability: Moderate
+  val_adventure: Minor
+  val_tradition: Moderate
+  val_power_influence: Minor
+  val_achievement: Important
+  val_creativity_self_expression: Core value
+  val_community: Important
+  val_spirituality_faith: Important
+  val_knowledge_truth: Core value
+  val_social_status: Minor
+  val_independence: Core value
+  val_justice_fairness: Core value
+  val_loyalty: Important
+  val_recognition: Moderate
+  val_helping_others: Important
+  val_personal_growth: Important
+  val_fun_enjoyment: Minor
+  val_integrity_honesty: Core value
+  val_beauty_aesthetics: Moderate
+  val_order_structure: Moderate
+  val_equality: Core value
+  val_privacy: Important
+  pref_team_vs_solo: Solo-leaning
+  pref_plan_vs_spontaneous: Planned
+  pref_city_vs_nature: Prefers nature
+  pref_speed_vs_accuracy: Accuracy-leaning
+  pref_quality_vs_quantity: Quality first
+  pref_lead_vs_follow: Leans support
+  pref_indoor_vs_outdoor: Outdoor-leaning
+  pref_big_group_vs_one_on_one: 1-on-1 leaning
+  pref_competition_vs_collab: Collaborative
+  pref_stability_vs_change: Stability-leaning
+  demo_marital_status: Single
+  demo_employment_status: Self-employed
+  demo_housing_status: Living with family
+  demo_religion_affiliation: Christian
+  demo_citizenship_status: Citizen by birth
+  demo_ethnicity_broad: White / European
+  demo_disability_status: Chronic illness
+  demo_veteran_status: Civilian
+  demo_birth_order: Youngest
+  demo_home_language: Same as primary
+  demo_parental_status: Not a parent
+  demo_relationship_length: Not in one
+  lifex_childhood_environment: Turbulent
+  lifex_geographic_mobility: Moved within region
+  lifex_travel_breadth: Never left country
+  lifex_career_path_shape: Pivoted once
+  lifex_education_journey: Traditional track
+  lifex_financial_trajectory: Stable
+  lifex_adversity_level: Overcame major hardship
+  lifex_immigration_generation: Second-generation
+  lifex_military_history: Never served
+  lifex_entrepreneurship_history: Considered it
+  lifex_relationship_history: Limited
+  lifex_parenting_journey: No children
+  lifex_health_journey: Recovered from illness
+  lifex_loss_experience: Multiple bereavements
+  lifex_faith_journey: Lifelong faith
+  lifex_cultural_exposure: Monocultural
+  lifex_public_recognition: Famous
+  lifex_turning_point: No single one
+  lifex_hometown_tie: Still there
+  bfi2_domain_extraversion: Low
+  bfi2_domain_agreeableness: High
+  bfi2_domain_conscientiousness: High
+  bfi2_domain_negative_emotionality: High
+  bfi2_domain_open_mindedness: High
+  bfi2_facet_sociability: Low
+  bfi2_facet_assertiveness: Low
+  bfi2_facet_energy_level: Average
+  bfi2_facet_compassion: High
+  bfi2_facet_respectfulness: High
+  bfi2_facet_trust: Average
+  bfi2_facet_organization: High
+  bfi2_facet_productiveness: High
+  bfi2_facet_responsibility: Very high
+  bfi2_facet_anxiety: High
+  bfi2_facet_depression: High
+  bfi2_facet_emotional_volatility: Average
+  bfi2_facet_intellectual_curiosity: High
+  bfi2_facet_aesthetic_sensitivity: Very high
+  bfi2_facet_creative_imagination: High
+  schwartz_value_self_direction: High
+  schwartz_value_stimulation: Low
+  schwartz_value_hedonism: Low
+  schwartz_value_achievement: High
+  schwartz_value_power: Low
+  schwartz_value_security: Average
+  schwartz_value_conformity: Low
+  schwartz_value_tradition: Average
+  schwartz_value_benevolence: High
+  schwartz_value_universalism: Very high
+  sdt_need_autonomy: High
+  sdt_need_competence: High
+  sdt_need_relatedness: High
+  mft_care_harm: Very high
+  mft_fairness_cheating: High
+  mft_loyalty_betrayal: High
+  mft_authority_subversion: Average
+  mft_liberty_oppression: Very high
+  need_for_cognition: High
+  need_for_closure: High
+  dospert_ethical_risk_tolerance: High
+  dospert_financial_risk_tolerance: Average
+  dospert_social_risk_tolerance: High
+  attachment_anxiety: High
+  attachment_avoidance: Low
+  interpersonal_agency_dominance: Low
+  interpersonal_communion_warmth: High

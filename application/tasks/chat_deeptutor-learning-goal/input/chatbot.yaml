@@ -1,0 +1,32 @@
+transport: sidecar_http
+runtimeDefaults:
+  applicationId: deeptutor
+  applicationContext: education_tutoring
+  domain: education
+  maxTurns: 16
+capabilities:
+  - text_chat
+connection:
+  baseUrlEnv: CHATBOT_UPSTREAM_DEEPTUTOR
+  baseUrl: http://tutor-adapter:8000
+  healthPath: /health
+protocol:
+  sendMessage:
+    method: POST
+    path: /v1/messages
+    sessionIdField: sessionId
+    messageField: message
+    titleField: title
+    botTypeField: botType
+    contextField: applicationContext
+    staticBody:
+      applicationId: deeptutor
+      applicationContext: education_tutoring
+  response:
+    sessionIdField: sessionId
+    replyField: reply
+    turnField: turn
+artifacts:
+  transcript: transcript.json
+  applicationResult: application_result.json
+  feedback: user_feedback.json

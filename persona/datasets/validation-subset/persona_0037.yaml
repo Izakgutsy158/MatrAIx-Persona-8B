@@ -1,0 +1,240 @@
+persona_id: '0037'
+version: '1.0'
+source: wiki:Q193531
+dimensions:
+  region: Western Europe
+  gender_identity: Woman
+  urbanicity: Small town
+  socioeconomic_band: Middle
+  primary_language: English
+  english_proficiency: Native
+  register: Formal / standard
+  domain: Law & Policy
+  domain_characteristics: Hobbyist
+  highest_education: Vocational / cert
+  academic_field: Arts
+  life_stage: Retirement
+  major_life_events: None notable
+  cultural_background: Individualist (Western)
+  dominant_trait: High openness
+  risk_tolerance: Cautious
+  decision_style: Analytical
+  values_priority: Community
+  trust_level: Verifying
+  safety_sensitivity: Benign
+  economic_motivation: Indifferent
+  fam_criminal_law: Familiar
+  fam_sociology: Familiar
+  fam_psychology: Proficient
+  fam_religious_studies: Aware
+  skill_research: Advanced
+  skill_critical_thinking: Master
+  skill_problem_solving: Master
+  skill_logical_reasoning: Advanced
+  skill_active_listening: Advanced
+  topic_literature: Interested
+  topic_true_crime: Passionate
+  topic_volunteering: Interested
+  lang_english: Native
+  att_organized_religion: Positive
+  att_higher_education: Positive
+  att_authority: Positive
+  cult_united_kingdom: Native
+  cult_italy: Studied
+  bookg_mystery: Love
+  sport_equestrian: Play
+  sport_fencing: Play
+  big5_imagination: High
+  big5_emotionality: Low
+  big5_adventurousness: Average
+  big5_intellect: Very high
+  big5_self_efficacy: High
+  big5_orderliness: High
+  big5_achievement_striving: High
+  big5_self_discipline: High
+  big5_cautiousness: High
+  big5_friendliness: Average
+  big5_gregariousness: High
+  big5_assertiveness: High
+  big5_activity_level: High
+  big5_excitement_seeking: Low
+  big5_cheerfulness: Average
+  big5_trust: Low
+  big5_morality: High
+  big5_altruism: Average
+  big5_cooperation: Low
+  big5_modesty: High
+  big5_sympathy: Average
+  big5_immoderation: Low
+  big5_vulnerability: Low
+  lstyle_smoking: Never
+  lstyle_household_size: 2 people
+  lstyle_work_schedule: Unemployed
+  lstyle_frugality: Frugal saver
+  cog_verbosity: Balanced
+  cog_formality: Formal
+  cog_directness: Direct
+  cog_humor: Dry
+  cog_detail_orientation: Very high
+  cog_abstraction: Balanced
+  cog_optimism: Low
+  cog_patience: Very high
+  cog_curiosity: Very high
+  cog_skepticism: High
+  cog_open_mindedness: Moderate
+  cog_assertiveness: High
+  cog_emotional_expressiveness: Low
+  cog_conflict_approach: Confronting
+  cog_ambiguity_tolerance: High
+  cog_attention_span: Very long
+  cog_decision_speed: Deliberate
+  cog_confidence_calibration: Well-calibrated
+  cog_big_picture_vs_detail: Both
+  cog_risk_framing: Threat-focused
+  cog_empathy_expression: Moderate
+  cog_storytelling: High
+  cog_precision_of_language: Precise
+  cog_use_of_jargon: Avoids jargon
+  cog_emoji_use: Never
+  cog_politeness: Polite
+  health_general_health: Fair
+  health_mobility: Mild limitation
+  health_mental_health: Thriving
+  health_energy_level: Moderate
+  health_caregiver_status: Not a caregiver
+  health_fitness_level: Sedentary
+  health_cognitive_load_capacity: Very high
+  acad_psychology: Interested
+  acad_sociology: Interested
+  acad_foreign_languages: Interested
+  acad_logic: Interested
+  trait_curiosity: Signature
+  trait_creativity: Strong
+  trait_love_of_learning: Moderate
+  trait_open_mindedness: Moderate
+  trait_perspective: Signature
+  trait_bravery: Moderate
+  trait_perseverance: Strong
+  trait_honesty: Moderate
+  trait_zest: Moderate
+  trait_capacity_for_love: Slight
+  trait_kindness: Moderate
+  trait_social_intelligence: Signature
+  trait_teamwork: Slight
+  trait_fairness: Moderate
+  trait_leadership: Slight
+  trait_humility: Moderate
+  trait_prudence: Strong
+  trait_self_regulation: Moderate
+  trait_appreciation_of_beauty: Slight
+  trait_hope_optimism: Slight
+  trait_playfulness: Slight
+  trait_spirituality: Slight
+  trait_ambition: Slight
+  trait_empathy: Moderate
+  trait_resilience: Strong
+  trait_discipline: Strong
+  trait_generosity: Moderate
+  trait_loyalty: Moderate
+  trait_competitiveness: Slight
+  trait_adaptability: Moderate
+  val_family: Minor
+  val_career_success: Minor
+  val_wealth: Minor
+  val_health: Moderate
+  val_personal_freedom: Important
+  val_security_stability: Important
+  val_adventure: Moderate
+  val_tradition: Core value
+  val_power_influence: Minor
+  val_achievement: Important
+  val_community: Core value
+  val_knowledge_truth: Core value
+  val_social_status: Moderate
+  val_independence: Core value
+  val_justice_fairness: Core value
+  val_loyalty: Moderate
+  val_recognition: Minor
+  val_helping_others: Important
+  val_fun_enjoyment: Moderate
+  val_integrity_honesty: Important
+  val_order_structure: Important
+  val_privacy: Minor
+  pref_team_vs_solo: Solo-leaning
+  pref_city_vs_nature: Prefers nature
+  pref_routine_vs_variety: Routine-leaning
+  pref_speed_vs_accuracy: Accuracy-leaning
+  pref_logic_vs_intuition: Balanced
+  pref_save_vs_spend: Saver-leaning
+  pref_lead_vs_follow: Leans lead
+  pref_novelty_vs_familiarity: Comfort-leaning
+  pref_detail_brief_vs_full: Detail-leaning
+  pref_stability_vs_change: Stability-leaning
+  demo_marital_status: Single
+  demo_employment_status: Retired
+  demo_housing_status: Own outright
+  demo_religion_affiliation: Christian
+  demo_citizenship_status: Citizen by birth
+  demo_ethnicity_broad: White / European
+  demo_disability_status: No disability
+  demo_veteran_status: Civilian
+  demo_home_language: Same as primary
+  demo_parental_status: Not a parent
+  demo_relationship_length: Not in one
+  lifex_childhood_environment: Privileged
+  lifex_geographic_mobility: Never left hometown
+  lifex_travel_breadth: A few countries
+  lifex_education_journey: Traditional track
+  lifex_financial_trajectory: Downward
+  lifex_adversity_level: Minor setbacks
+  lifex_immigration_generation: Native multi-generational
+  lifex_military_history: Never served
+  lifex_entrepreneurship_history: Never considered
+  lifex_relationship_history: Limited
+  lifex_parenting_journey: No children
+  lifex_health_journey: Recovered from illness
+  lifex_cultural_exposure: Some exposure
+  lifex_public_recognition: Locally known
+  lifex_service_history: Occasional volunteer
+  lifex_languages_lifetime: Two
+  lifex_hometown_tie: Still there
+  bfi2_domain_extraversion: Average
+  bfi2_domain_agreeableness: Low
+  bfi2_domain_conscientiousness: High
+  bfi2_domain_negative_emotionality: Low
+  bfi2_domain_open_mindedness: High
+  bfi2_facet_sociability: Average
+  bfi2_facet_assertiveness: High
+  bfi2_facet_energy_level: High
+  bfi2_facet_compassion: Average
+  bfi2_facet_respectfulness: Average
+  bfi2_facet_trust: Low
+  bfi2_facet_organization: High
+  bfi2_facet_productiveness: High
+  bfi2_facet_responsibility: High
+  bfi2_facet_emotional_volatility: Low
+  bfi2_facet_intellectual_curiosity: Very high
+  bfi2_facet_creative_imagination: High
+  schwartz_value_self_direction: Very high
+  schwartz_value_stimulation: Average
+  schwartz_value_hedonism: Low
+  schwartz_value_achievement: High
+  schwartz_value_power: Low
+  schwartz_value_security: High
+  schwartz_value_conformity: High
+  schwartz_value_tradition: High
+  schwartz_value_benevolence: High
+  schwartz_value_universalism: High
+  sdt_need_autonomy: Very high
+  sdt_need_competence: Very high
+  sdt_need_relatedness: High
+  mft_care_harm: High
+  mft_fairness_cheating: Very high
+  mft_authority_subversion: High
+  need_for_cognition: Very high
+  need_for_closure: High
+  dospert_financial_risk_tolerance: Low
+  dospert_health_safety_risk_tolerance: Low
+  dospert_social_risk_tolerance: High
+  interpersonal_agency_dominance: High
+  interpersonal_communion_warmth: Average

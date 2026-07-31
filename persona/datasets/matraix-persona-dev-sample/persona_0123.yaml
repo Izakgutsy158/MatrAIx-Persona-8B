@@ -1,0 +1,25 @@
+persona_id: '0123'
+version: '1.0'
+source: gss
+display_name: Jordan Lee
+dimensions:
+  age_bracket: 35-44
+  region: North America
+  gender_identity: Woman
+  socioeconomic_band: Lower-middle
+  highest_education: Bachelor's
+  political_lean: Left
+  religiosity: Spiritual
+  att_traditional_gender_roles: Opposed
+  health_general_health: Good
+  demo_marital_status: Divorced
+  demo_children_count: 3+ children
+  demo_employment_status: Full-time
+  demo_religion_affiliation: Christian
+  demo_citizenship_status: Citizen by birth
+  demo_ethnicity_broad: White / European
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: gss-66d916737261
+  origin_source_row_index: 2235350

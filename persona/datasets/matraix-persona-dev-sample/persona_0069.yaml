@@ -1,0 +1,72 @@
+persona_id: 0069
+version: '1.0'
+source: stackoverflow
+display_name: Li Wei Chen
+dimensions:
+  age_bracket: 25-34
+  region: East Asia
+  english_proficiency: Fluent (C1-C2)
+  domain: Software & AI
+  domain_characteristics: Practitioner
+  highest_education: Bachelor's
+  company_size: Mid (500-5k)
+  role_function: Engineering
+  years_experience: 6-10
+  life_stage: Early career
+  fam_computer_networking: Familiar
+  fam_databases: Familiar
+  fam_operating_systems: Familiar
+  fam_cloud_infrastructure: Familiar
+  fam_devops: Familiar
+  tool_jetbrains_ides: Regular
+  tool_zoom: Regular
+  tool_chatgpt: Regular
+  topic_entrepreneurship: Interested
+  att_ai: Positive
+  att_open_source: Positive
+  ind_technology: Veteran
+  lstyle_primary_messenger: WeChat
+  lstyle_device_ecosystem: Mixed
+  peeve_being_interrupted: Major peeve
+  trait_love_of_learning: Strong
+  trait_adaptability: Strong
+  pref_team_vs_solo: Team-leaning
+  demo_employment_status: Full-time
+  demo_generation: Millennial
+  lifex_career_path_shape: Linear climb
+  lifex_education_journey: Traditional track
+  prog_java: Familiar
+  prog_go: Familiar
+  prog_php: Familiar
+  ai_task_code_generation: Plans partial AI use
+  ai_task_code_review: Plans partial AI use
+  ai_task_codebase_learning: Plans partial AI use
+  ai_task_data_generation_analytics: Plans partial AI use
+  ai_task_debugging_fixing: Plans partial AI use
+  ai_task_deployment_monitoring: Plans partial AI use
+  ai_task_documentation: Plans partial AI use
+  ai_task_learning_concepts: Plans partial AI use
+  ai_task_project_planning: Plans partial AI use
+  ai_task_refactoring: Plans partial AI use
+  ai_task_search_answers: Currently partially AI-assisted
+  ai_task_testing: Plans partial AI use
+  coding_agent_failure_tolerance: Does not use agents
+  coding_agent_usage_frequency: Not yet but interested
+  coding_agent_workflow_impact: No clear change
+  coding_ai_output_trust: Neutral / depends on task
+  coding_ai_sentiment: Somewhat favorable
+  coding_ai_usage_frequency: Tried but not active
+  coding_tool_ai_capability_importance: High
+  dev_contribution_context: Mixed contexts
+  dev_ic_manager_orientation: Individual contributor
+  dev_professional_status: Professional developer
+  dev_role_archetype: Back-end developer
+  dev_toolchain_complexity: Large integrated toolchain
+  open_source_activity_level: Regular contributor
+  stackoverflow_participation_style: Reads / searches only
+  stackoverflow_usage_pattern: Weekly reference
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: stackoverflow-799b1002c681
+  origin_source_row_index: 2144317

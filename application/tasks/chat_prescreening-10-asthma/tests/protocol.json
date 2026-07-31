@@ -1,0 +1,143 @@
+{
+ "protocol_id": "BREATHE-EASY-2026-010",
+ "study_title": "Smart Inhaler Support for Uncontrolled Asthma (BREATHE-EASY)",
+ "design_summary": "16-week, single-arm study of a sensor-equipped 'smart' controller inhaler with app-based adherence coaching for adults whose asthma is not well controlled. Participants use the study app daily.",
+ "criteria": [
+  {
+   "id": "INC1",
+   "kind": "inclusion",
+   "text": "Age 18 to 65 years old, inclusive.",
+   "keywords": [
+    "\\bage\\b",
+    "how old",
+    "\\byears?\\s+old\\b",
+    "date of birth"
+   ],
+   "probe": "To start, how old are you?"
+  },
+  {
+   "id": "INC2",
+   "kind": "inclusion",
+   "text": "Physician-diagnosed asthma.",
+   "keywords": [
+    "asthma.{0,20}diagnos",
+    "diagnos.{0,20}asthma",
+    "\\basthma\\b"
+   ],
+   "probe": "Have you been diagnosed with asthma by a doctor?"
+  },
+  {
+   "id": "INC3",
+   "kind": "inclusion",
+   "text": "Prescribed a daily controller (preventer/maintenance) inhaler.",
+   "keywords": [
+    "controller",
+    "preventer",
+    "maintenance inhaler",
+    "daily inhaler",
+    "steroid inhaler",
+    "flovent|advair|symbicort|qvar|pulmicort|breo"
+   ],
+   "probe": "Are you prescribed a daily controller inhaler - the kind you take every day, not just when symptoms hit?",
+   "unknown_rule": "If the participant cannot identify whether any of their inhalers is a daily controller, INC3 is unknown."
+  },
+  {
+   "id": "INC4",
+   "kind": "inclusion",
+   "text": "Uses a rescue (reliever) inhaler 2 or more times per week, on average, over the past month (indicating suboptimal control).",
+   "keywords": [
+    "rescue",
+    "reliever",
+    "albuterol|ventolin|salbutamol|proair",
+    "times (a|per) week",
+    "how often.{0,25}inhaler"
+   ],
+   "probe": "How often do you use your rescue inhaler in a typical week?",
+   "unknown_rule": "If the participant cannot estimate weekly rescue-inhaler use, INC4 is unknown."
+  },
+  {
+   "id": "INC5",
+   "kind": "inclusion",
+   "text": "Owns a smartphone and is willing to use the study app daily.",
+   "keywords": [
+    "smart\\s*phone",
+    "\\bphone\\b",
+    "\\bapp\\b",
+    "mobile"
+   ],
+   "probe": "Do you own a smartphone, and would you be willing to use our study app every day?"
+  },
+  {
+   "id": "INC6",
+   "kind": "inclusion",
+   "text": "Willing to participate for the full 16 weeks.",
+   "keywords": [
+    "16[\\s-]*week",
+    "sixteen[\\s-]*week",
+    "\\bcommit",
+    "full (program|study|duration)"
+   ],
+   "probe": "The program runs a full 16 weeks - is that a commitment you can make?"
+  },
+  {
+   "id": "EXC1",
+   "kind": "exclusion",
+   "text": "Diagnosed COPD, emphysema, or chronic bronchitis (including asthma-COPD overlap).",
+   "keywords": [
+    "\\bcopd\\b",
+    "emphysema",
+    "chronic bronchitis",
+    "overlap"
+   ],
+   "probe": "Have you ever been diagnosed with COPD, emphysema, or chronic bronchitis?"
+  },
+  {
+   "id": "EXC2",
+   "kind": "exclusion",
+   "text": "Currently smokes cigarettes daily.",
+   "keywords": [
+    "\\bsmoke\\b",
+    "cigarette",
+    "tobacco",
+    "\\bsmoking\\b"
+   ],
+   "probe": "Do you currently smoke cigarettes?"
+  },
+  {
+   "id": "EXC3",
+   "kind": "exclusion",
+   "text": "Took an oral corticosteroid course (for example prednisone) for asthma within the past 4 weeks.",
+   "keywords": [
+    "prednisone",
+    "oral steroid",
+    "steroid (pill|tablet|course|burst)"
+   ],
+   "probe": "Have you taken an oral steroid like prednisone for your asthma in the past four weeks?"
+  },
+  {
+   "id": "EXC4",
+   "kind": "exclusion",
+   "text": "Hospitalized or treated in an emergency department for asthma within the past 3 months.",
+   "keywords": [
+    "hospital",
+    "emergency",
+    "\\ber\\b",
+    "\\badmitted\\b"
+   ],
+   "probe": "In the past three months, have you been to the hospital or emergency room for your asthma?"
+  },
+  {
+   "id": "EXC5",
+   "kind": "exclusion",
+   "text": "Currently enrolled in another interventional clinical trial or structured asthma program.",
+   "keywords": [
+    "(another|other|different)\\s+(clinical\\s+|research\\s+)?(trial|study|studies)",
+    "\\benrolled\\b",
+    "research (study|program)",
+    "asthma program",
+    "participating in (a|any)"
+   ],
+   "probe": "Are you currently enrolled in another clinical trial or a structured asthma program?"
+  }
+ ]
+}

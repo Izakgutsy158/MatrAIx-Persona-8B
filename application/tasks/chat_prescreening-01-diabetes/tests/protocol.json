@@ -1,0 +1,159 @@
+{
+ "protocol_id": "DLC-T2D-2026-001",
+ "study_title": "Digital Lifestyle Coaching for Adults With Type 2 Diabetes (DLC-T2D)",
+ "design_summary": "24-week, single-arm study of a smartphone-based lifestyle coaching program (nutrition, physical activity, and glucose-awareness education). Participants use the study app daily and complete a short remote check-in every 4 weeks.",
+ "criteria": [
+  {
+   "id": "INC1",
+   "kind": "inclusion",
+   "text": "Age 18 to 75 years old, inclusive.",
+   "keywords": [
+    "\\bage\\b",
+    "how old",
+    "\\byears?\\s+old\\b",
+    "date of birth",
+    "\\bbirthday\\b"
+   ],
+   "probe": "To start, how old are you?"
+  },
+  {
+   "id": "INC2",
+   "kind": "inclusion",
+   "text": "Physician-diagnosed type 2 diabetes. (Type 1, gestational diabetes, and prediabetes do NOT qualify.)",
+   "keywords": [
+    "type\\s*1",
+    "type\\s*2",
+    "type of diabetes",
+    "kind of diabetes",
+    "which type",
+    "diagnos"
+   ],
+   "probe": "What type of diabetes have you been diagnosed with?"
+  },
+  {
+   "id": "INC3",
+   "kind": "inclusion",
+   "text": "Most recent HbA1c between 7.0% and 10.5% inclusive, measured within the past 6 months.",
+   "keywords": [
+    "\\ba1c\\b",
+    "hba1c",
+    "hemoglobin",
+    "blood sugar (test|number|level|result)",
+    "sugar (test|number|level|result)"
+   ],
+   "probe": "What was your most recent HbA1c result, and roughly when was it measured?",
+   "unknown_rule": "If the participant cannot provide an HbA1c value OR cannot say roughly when it was measured, INC3 is unknown."
+  },
+  {
+   "id": "INC4",
+   "kind": "inclusion",
+   "text": "Owns a smartphone (iOS or Android) with internet access, and is willing to use the study app daily.",
+   "keywords": [
+    "smart\\s*phone",
+    "\\bphone\\b",
+    "mobile",
+    "\\bapp\\b",
+    "\\bandroid\\b",
+    "\\biphone\\b",
+    "\\bios\\b"
+   ],
+   "probe": "Do you own a smartphone, and would you be comfortable using our study app every day?"
+  },
+  {
+   "id": "INC5",
+   "kind": "inclusion",
+   "text": "Able to read and understand English.",
+   "keywords": [
+    "\\benglish\\b",
+    "\\blanguage\\b"
+   ],
+   "probe": "Are you able to read and understand English comfortably?"
+  },
+  {
+   "id": "INC6",
+   "kind": "inclusion",
+   "text": "Willing to participate for the full 24 weeks, including a check-in every 4 weeks.",
+   "keywords": [
+    "24[\\s-]*week",
+    "twenty[\\s-]*four[\\s-]*week",
+    "six[\\s-]*month",
+    "6[\\s-]*month",
+    "\\bcommit",
+    "full (program|study|duration|length)",
+    "check[\\s-]*in",
+    "stay (in|with) the (study|program)"
+   ],
+   "probe": "The program runs a full 24 weeks with a short check-in every 4 weeks - is that a commitment you can make?"
+  },
+  {
+   "id": "EXC1",
+   "kind": "exclusion",
+   "text": "Currently pregnant or breastfeeding, or planning pregnancy within the next 6 months.",
+   "keywords": [
+    "pregnan",
+    "breast\\s*feed",
+    "\\bnursing\\b",
+    "expecting"
+   ],
+   "probe": "Are you currently pregnant or breastfeeding, or planning a pregnancy in the next six months?",
+   "not_applicable_when": {
+    "sex": "male"
+   }
+  },
+  {
+   "id": "EXC2",
+   "kind": "exclusion",
+   "text": "Chronic kidney disease stage 4 or 5, eGFR below 30, or currently on dialysis.",
+   "keywords": [
+    "kidney",
+    "\\brenal\\b",
+    "dialysis",
+    "\\begfr\\b",
+    "\\bckd\\b"
+   ],
+   "probe": "Have you ever been told you have chronic kidney disease, or are you on dialysis?",
+   "unknown_rule": "If the participant reports possible kidney problems but cannot state a stage, eGFR, or dialysis status, EXC2 is unknown."
+  },
+  {
+   "id": "EXC3",
+   "kind": "exclusion",
+   "text": "Currently using an insulin pump or automated insulin delivery (closed-loop) system. Insulin by injection (pens/syringes) is allowed.",
+   "keywords": [
+    "insulin pump",
+    "\\bpump\\b",
+    "closed[\\s-]*loop",
+    "automated insulin",
+    "\\binsulin\\b"
+   ],
+   "probe": "Do you use an insulin pump or any automated insulin delivery device?"
+  },
+  {
+   "id": "EXC4",
+   "kind": "exclusion",
+   "text": "Hospitalized for a diabetes-related event (e.g., diabetic ketoacidosis, hyperosmolar state, severe hypoglycemia) within the past 3 months.",
+   "keywords": [
+    "hospital",
+    "\\bemergency\\b",
+    "\\ber\\b",
+    "ketoacidosis",
+    "\\bdka\\b",
+    "hypoglycemi",
+    "\\badmitted\\b"
+   ],
+   "probe": "In the past three months, have you been hospitalized for a diabetes-related problem?"
+  },
+  {
+   "id": "EXC5",
+   "kind": "exclusion",
+   "text": "Currently enrolled in another interventional clinical trial or structured lifestyle program.",
+   "keywords": [
+    "(another|other|different)\\s+(clinical\\s+|research\\s+|interventional\\s+)?(trial|study|studies)",
+    "\\benrolled\\b",
+    "research (study|program)",
+    "lifestyle program",
+    "participating in (a|any)"
+   ],
+   "probe": "Are you currently enrolled in another clinical trial or a structured lifestyle program?"
+  }
+ ]
+}

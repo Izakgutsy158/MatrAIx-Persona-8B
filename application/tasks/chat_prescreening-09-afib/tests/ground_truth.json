@@ -1,0 +1,202 @@
+{
+ "protocol_id": "WATCH-AF-2026-009",
+ "cases": {
+  "A01": {
+   "sex": "female",
+   "age": 67,
+   "label": "likely_eligible",
+   "criteria_not_met": [],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "67",
+    "Sex": "female",
+    "Heart rhythm history": "never told of any irregular rhythm; normal EKGs at physicals",
+    "Implanted devices": "none",
+    "Blood thinners": "none - only a statin and vitamin D",
+    "Heart hospitalizations": "never",
+    "Watch willingness": "yes - already wears a fitness tracker all day",
+    "Smartphone": "yes",
+    "Willing to commit to 26 weeks": "yes",
+    "Other trials or monitoring studies": "none"
+   },
+   "rationale": "No rhythm diagnosis, no devices, no anticoagulants. Baseline easy case."
+  },
+  "A02": {
+   "sex": "male",
+   "age": 85,
+   "label": "likely_eligible",
+   "criteria_not_met": [],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "85",
+    "Sex": "male",
+    "Heart rhythm history": "never told of any irregular rhythm",
+    "Implanted devices": "none",
+    "Blood thinners": "none - takes a low-dose aspirin, which he knows 'isn't a real blood thinner, the doctor said'",
+    "Heart hospitalizations": "never",
+    "Watch willingness": "yes, will wear it all day",
+    "Smartphone": "yes - his grandson set it up and handles the 'fiddly bits'",
+    "Willing to commit to 26 weeks": "yes",
+    "Other trials or monitoring studies": "none"
+   },
+   "rationale": "Boundary: age exactly 85 (inclusive ceiling). Aspirin is an antiplatelet, not an anticoagulant, so EXC2 passes - a small pharmacological trap."
+  },
+  "A03": {
+   "sex": "female",
+   "age": 72,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "INC2",
+    "EXC2"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "72",
+    "Sex": "female",
+    "Heart rhythm history": "diagnosed with ATRIAL FIBRILLATION 6 years ago - 'it comes and goes; I feel it flutter'; managed by her cardiologist",
+    "Implanted devices": "none",
+    "Blood thinners": "yes - apixaban, twice a day, because of the AF",
+    "Heart hospitalizations": "none recent",
+    "Watch willingness": "yes, enthusiastically - she assumes an AF study is perfect for someone with AF",
+    "Smartphone": "yes",
+    "Willing to commit to 26 weeks": "yes",
+    "Other trials or monitoring studies": "none"
+   },
+   "rationale": "Signature inversion: this is a screening study for UNDIAGNOSED AF, so her existing AF diagnosis fails INC2, and her apixaban meets EXC2. Tests bots that assume having the condition means qualifying, and requires listing both criteria."
+  },
+  "A04": {
+   "sex": "male",
+   "age": 63,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "EXC2"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "63",
+    "Sex": "male",
+    "Heart rhythm history": "never told of any irregular rhythm",
+    "Implanted devices": "none",
+    "Blood thinners": "yes - takes rivaroxaban daily since a blood clot in his leg (DVT) last year; NOT for any heart rhythm issue",
+    "Heart hospitalizations": "never",
+    "Watch willingness": "yes",
+    "Smartphone": "yes",
+    "Willing to commit to 26 weeks": "yes",
+    "Other trials or monitoring studies": "none"
+   },
+   "rationale": "On an anticoagulant (rivaroxaban) for a DVT - EXC2 excludes anticoagulant use regardless of the reason, even with no rhythm diagnosis. Tests reading the criterion as written."
+  },
+  "A05": {
+   "sex": "female",
+   "age": 78,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "EXC1"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "78",
+    "Sex": "female",
+    "Heart rhythm history": "no AF; she had a slow heartbeat ('bradycardia')",
+    "Implanted devices": "PACEMAKER placed in 2023 for the slow heartbeat",
+    "Blood thinners": "none",
+    "Heart hospitalizations": "not in the past year",
+    "Watch willingness": "yes",
+    "Smartphone": "yes",
+    "Willing to commit to 26 weeks": "yes",
+    "Other trials or monitoring studies": "none"
+   },
+   "rationale": "Implanted pacemaker (EXC1). Her bradycardia history is not AF, so INC2 passes - only the device excludes her."
+  },
+  "A06": {
+   "sex": "male",
+   "age": 48,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "INC1"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "48",
+    "Sex": "male",
+    "Heart rhythm history": "none",
+    "Implanted devices": "none",
+    "Blood thinners": "none",
+    "Heart hospitalizations": "never",
+    "Watch willingness": "yes",
+    "Smartphone": "yes",
+    "Willing to commit to 26 weeks": "yes",
+    "Other trials or monitoring studies": "none"
+   },
+   "rationale": "Age 48 is below the 50-year floor - AF screening targets older adults. Everything else qualifies."
+  },
+  "A07": {
+   "sex": "female",
+   "age": 81,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "INC2",
+    "EXC1",
+    "EXC2"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "81",
+    "Sex": "female",
+    "Heart rhythm history": "diagnosed atrial fibrillation 10 years ago",
+    "Implanted devices": "pacemaker since 2021",
+    "Blood thinners": "warfarin, with regular INR checks",
+    "Heart hospitalizations": "none in the past year",
+    "Watch willingness": "yes",
+    "Smartphone": "yes (daughter manages it)",
+    "Willing to commit to 26 weeks": "yes",
+    "Other trials or monitoring studies": "none"
+   },
+   "rationale": "Triple failure: existing AF diagnosis (INC2), pacemaker (EXC1), and warfarin (EXC2). Tests whether the bot lists ALL THREE, not just the first it finds."
+  },
+  "A08": {
+   "sex": "male",
+   "age": 70,
+   "label": "insufficient_information",
+   "criteria_not_met": [],
+   "criteria_unknown": [
+    "INC2"
+   ],
+   "profile": {
+    "Age": "70",
+    "Sex": "male",
+    "Heart rhythm history": "UNKNOWN whether AF was ever diagnosed - 'years ago a doctor at a walk-in clinic said my heartbeat was a bit irregular and I should get it checked; I never followed up, and nobody has mentioned it since. Whether that was ever a formal diagnosis of anything, I genuinely couldn't say'",
+    "Implanted devices": "none",
+    "Blood thinners": "none",
+    "Heart hospitalizations": "never",
+    "Watch willingness": "yes",
+    "Smartphone": "yes",
+    "Willing to commit to 26 weeks": "yes",
+    "Other trials or monitoring studies": "none"
+   },
+   "rationale": "Reports a past irregular-rhythm remark but cannot say whether AF was formally diagnosed - exactly the case the protocol's unknown rule marks INC2 unknown. Correct answer is insufficient_information, not a guess in either direction."
+  },
+  "A09": {
+   "sex": "female",
+   "age": 74,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "EXC3"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "74",
+    "Sex": "female",
+    "Heart rhythm history": "never told of any irregular rhythm",
+    "Implanted devices": "none",
+    "Blood thinners": "none",
+    "Heart hospitalizations": "yes - kept overnight in the cardiac unit about 2 months ago when her blood pressure spiked ('a hypertensive scare, they called it')",
+    "Watch willingness": "yes",
+    "Smartphone": "yes",
+    "Willing to commit to 26 weeks": "yes",
+    "Other trials or monitoring studies": "none"
+   },
+   "rationale": "Hospitalized overnight for a heart problem (hypertensive scare, cardiac unit) 2 months ago - inside the 3-month EXC3 window. The behavioral test is extracting one relevant fact from a stream of oversharing."
+  }
+ }
+}

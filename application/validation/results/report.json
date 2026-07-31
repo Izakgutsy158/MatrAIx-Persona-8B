@@ -1,0 +1,262 @@
+{
+  "code-comment-style": {
+    "survey": {
+      "pos_expressed": 5,
+      "pos_n": 5,
+      "neg_expressed": 5,
+      "neg_n": 5
+    },
+    "chat": {
+      "pos_expressed": 5,
+      "pos_n": 5,
+      "neg_expressed": 5,
+      "neg_n": 5
+    },
+    "web": {
+      "pos_expressed": 5,
+      "pos_n": 5,
+      "neg_expressed": 5,
+      "neg_n": 5
+    },
+    "osapp-linux": {
+      "pos_expressed": 5,
+      "pos_n": 5,
+      "neg_expressed": 5,
+      "neg_n": 5
+    }
+  },
+  "code-naming-verbosity": {
+    "survey": {
+      "pos_expressed": 5,
+      "pos_n": 5,
+      "neg_expressed": 5,
+      "neg_n": 5
+    },
+    "chat": {
+      "pos_expressed": 4,
+      "pos_n": 5,
+      "neg_expressed": 5,
+      "neg_n": 5
+    },
+    "web": {
+      "pos_expressed": 5,
+      "pos_n": 5,
+      "neg_expressed": 5,
+      "neg_n": 5
+    },
+    "osapp-linux": {
+      "pos_expressed": 5,
+      "pos_n": 5,
+      "neg_expressed": 5,
+      "neg_n": 5
+    }
+  },
+  "code-summary-documentation": {
+    "survey": {
+      "pos_expressed": 5,
+      "pos_n": 5,
+      "neg_expressed": 5,
+      "neg_n": 5
+    },
+    "chat": {
+      "pos_expressed": 5,
+      "pos_n": 5,
+      "neg_expressed": 5,
+      "neg_n": 5
+    },
+    "web": {
+      "pos_expressed": 5,
+      "pos_n": 5,
+      "neg_expressed": 5,
+      "neg_n": 5
+    },
+    "osapp-linux": {
+      "pos_expressed": 5,
+      "pos_n": 5,
+      "neg_expressed": 5,
+      "neg_n": 5
+    }
+  },
+  "cog-emoji-use": {
+    "survey": {
+      "pos_expressed": 5,
+      "pos_n": 5,
+      "neg_expressed": 5,
+      "neg_n": 5
+    },
+    "chat": {
+      "pos_expressed": 5,
+      "pos_n": 5,
+      "neg_expressed": 5,
+      "neg_n": 5
+    },
+    "web": {
+      "pos_expressed": 5,
+      "pos_n": 5,
+      "neg_expressed": 5,
+      "neg_n": 5
+    },
+    "osapp-linux": {
+      "pos_expressed": 4,
+      "pos_n": 5,
+      "neg_expressed": 5,
+      "neg_n": 5
+    }
+  },
+  "cog-humor": {
+    "survey": {
+      "pos_expressed": 5,
+      "pos_n": 5,
+      "neg_expressed": 5,
+      "neg_n": 5
+    },
+    "chat": {
+      "pos_expressed": 5,
+      "pos_n": 5,
+      "neg_expressed": 5,
+      "neg_n": 5
+    },
+    "web": {
+      "pos_expressed": 5,
+      "pos_n": 5,
+      "neg_expressed": 5,
+      "neg_n": 5
+    },
+    "osapp-linux": {
+      "pos_expressed": 3,
+      "pos_n": 5,
+      "neg_expressed": 5,
+      "neg_n": 5
+    }
+  },
+  "cog-politeness": {
+    "survey": {
+      "pos_expressed": 5,
+      "pos_n": 5,
+      "neg_expressed": 5,
+      "neg_n": 5
+    },
+    "chat": {
+      "pos_expressed": 5,
+      "pos_n": 5,
+      "neg_expressed": 5,
+      "neg_n": 5
+    },
+    "web": {
+      "pos_expressed": 5,
+      "pos_n": 5,
+      "neg_expressed": 5,
+      "neg_n": 5
+    },
+    "osapp-linux": {
+      "pos_expressed": 5,
+      "pos_n": 5,
+      "neg_expressed": 0,
+      "neg_n": 5
+    }
+  },
+  "cog-storytelling": {
+    "survey": {
+      "pos_expressed": 5,
+      "pos_n": 5,
+      "neg_expressed": 3,
+      "neg_n": 5
+    },
+    "chat": {
+      "pos_expressed": 5,
+      "pos_n": 5,
+      "neg_expressed": 5,
+      "neg_n": 5
+    },
+    "web": {
+      "pos_expressed": 5,
+      "pos_n": 5,
+      "neg_expressed": 3,
+      "neg_n": 5
+    },
+    "osapp-linux": {
+      "pos_expressed": 5,
+      "pos_n": 5,
+      "neg_expressed": 1,
+      "neg_n": 5
+    }
+  },
+  "cog-use-of-jargon": {
+    "survey": {
+      "pos_expressed": 5,
+      "pos_n": 5,
+      "neg_expressed": 5,
+      "neg_n": 5
+    },
+    "chat": {
+      "pos_expressed": 4,
+      "pos_n": 5,
+      "neg_expressed": 4,
+      "neg_n": 5
+    },
+    "web": {
+      "pos_expressed": 5,
+      "pos_n": 5,
+      "neg_expressed": 5,
+      "neg_n": 5
+    },
+    "osapp-linux": {
+      "pos_expressed": 5,
+      "pos_n": 5,
+      "neg_expressed": 4,
+      "neg_n": 5
+    }
+  },
+  "cog-verbosity": {
+    "survey": {
+      "pos_expressed": 4,
+      "pos_n": 5,
+      "neg_expressed": 5,
+      "neg_n": 5
+    },
+    "chat": {
+      "pos_expressed": 2,
+      "pos_n": 5,
+      "neg_expressed": 5,
+      "neg_n": 5
+    },
+    "web": {
+      "pos_expressed": 5,
+      "pos_n": 5,
+      "neg_expressed": 4,
+      "neg_n": 5
+    },
+    "osapp-linux": {
+      "pos_expressed": 3,
+      "pos_n": 5,
+      "neg_expressed": 5,
+      "neg_n": 5
+    }
+  },
+  "register": {
+    "survey": {
+      "pos_expressed": 4,
+      "pos_n": 5,
+      "neg_expressed": 5,
+      "neg_n": 5
+    },
+    "chat": {
+      "pos_expressed": 4,
+      "pos_n": 5,
+      "neg_expressed": 4,
+      "neg_n": 5
+    },
+    "web": {
+      "pos_expressed": 4,
+      "pos_n": 5,
+      "neg_expressed": 4,
+      "neg_n": 5
+    },
+    "osapp-linux": {
+      "pos_expressed": 4,
+      "pos_n": 5,
+      "neg_expressed": 4,
+      "neg_n": 5
+    }
+  }
+}

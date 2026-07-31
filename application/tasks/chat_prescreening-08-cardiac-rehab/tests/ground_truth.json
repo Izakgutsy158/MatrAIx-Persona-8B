@@ -1,0 +1,211 @@
+{
+ "protocol_id": "HEART-HOME-2026-008",
+ "cases": {
+  "C01": {
+   "sex": "male",
+   "age": 61,
+   "label": "likely_eligible",
+   "criteria_not_met": [],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "61",
+    "Sex": "male",
+    "Cardiac event": "coronary stent placed 3 months ago after an angiogram",
+    "Cardiologist clearance": "yes - cleared for moderate exercise at his last follow-up",
+    "Current symptoms": "no chest pain since the stent",
+    "Heart valve": "no valve problems mentioned",
+    "Home oxygen": "no",
+    "Mobility": "walks 2 miles most mornings",
+    "Smartphone and 3 sessions/week": "yes, willing",
+    "Willing to commit to 12 weeks": "yes",
+    "Other trials or rehab programs": "none - the hospital's rehab program had a 4-month waitlist"
+   },
+   "rationale": "Stent 3 months ago (in window), cleared, asymptomatic, no exclusions. Baseline easy case."
+  },
+  "C02": {
+   "sex": "female",
+   "age": 80,
+   "label": "likely_eligible",
+   "criteria_not_met": [],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "80",
+    "Sex": "female",
+    "Cardiac event": "bypass surgery almost exactly 6 months ago",
+    "Cardiologist clearance": "yes - cleared for exercise at last week's checkup",
+    "Current symptoms": "no chest pain",
+    "Heart valve": "no valve problems",
+    "Home oxygen": "no",
+    "Mobility": "walks unaided, a little slowly",
+    "Smartphone and 3 sessions/week": "yes (her nephew set the phone up), willing",
+    "Willing to commit to 12 weeks": "yes",
+    "Other trials or rehab programs": "none"
+   },
+   "rationale": "Double boundary: age exactly 80 (inclusive) and the bypass right at the 6-month edge of the window (inclusive)."
+  },
+  "C03": {
+   "sex": "male",
+   "age": 49,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "INC2",
+    "INC3"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "49",
+    "Sex": "male",
+    "Cardiac event": "heart attack 2 WEEKS ago; one stent placed; discharged 10 days ago",
+    "Cardiologist clearance": "told to 'take it very easy' for now; follow-up in 3 weeks",
+    "Current symptoms": "no chest pain since discharge",
+    "Heart valve": "no valve problems",
+    "Home oxygen": "no",
+    "Mobility": "walks unaided",
+    "Smartphone and 3 sessions/week": "yes, eager",
+    "Willing to commit to 12 weeks": "yes",
+    "Other trials or rehab programs": "none"
+   },
+   "rationale": "Safety-direction failure: event only 2 weeks ago (below the 1-month floor of INC2) AND not yet cleared for exercise (INC3). Recency EXCLUDES here - the opposite of most temporal criteria - and the bot must hold the line against his eagerness."
+  },
+  "C04": {
+   "sex": "female",
+   "age": 66,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "INC2"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "66",
+    "Sex": "female",
+    "Cardiac event": "stent placed 14 months ago",
+    "Cardiologist clearance": "yes, long since cleared; exercises lightly already",
+    "Current symptoms": "no chest pain",
+    "Heart valve": "no valve problems",
+    "Home oxygen": "no",
+    "Mobility": "walks unaided",
+    "Smartphone and 3 sessions/week": "yes, willing",
+    "Willing to commit to 12 weeks": "yes",
+    "Other trials or rehab programs": "none"
+   },
+   "rationale": "Stent 14 months ago - past the 6-month ceiling of the event window."
+  },
+  "C05": {
+   "sex": "male",
+   "age": 72,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "INC3"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "72",
+    "Sex": "male",
+    "Cardiac event": "heart attack 2 months ago, treated with two stents",
+    "Cardiologist clearance": "NOT yet - his follow-up appointment is next month and he was told to wait for it before starting any exercise program",
+    "Current symptoms": "no chest pain",
+    "Heart valve": "no valve problems",
+    "Home oxygen": "no",
+    "Mobility": "walks unaided",
+    "Smartphone and 3 sessions/week": "yes, willing",
+    "Willing to commit to 12 weeks": "yes",
+    "Other trials or rehab programs": "none"
+   },
+   "rationale": "Event is in the window, but he has not been cleared for exercise (INC3) - clearance pending at next month's follow-up."
+  },
+  "C06": {
+   "sex": "female",
+   "age": 58,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "EXC1"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "58",
+    "Sex": "female",
+    "Cardiac event": "stent placed 4 months ago",
+    "Cardiologist clearance": "yes, cleared at her 6-week follow-up",
+    "Current symptoms": "still gets chest tightness some evenings while sitting on the couch - she assumed it was 'just healing' and mentions it only if asked about current symptoms",
+    "Heart valve": "no valve problems",
+    "Home oxygen": "no",
+    "Mobility": "walks unaided",
+    "Smartphone and 3 sessions/week": "yes, willing",
+    "Willing to commit to 12 weeks": "yes",
+    "Other trials or rehab programs": "none"
+   },
+   "rationale": "Chest tightness at rest within the past month (EXC1) - a symptom trap the bot only catches by explicitly asking about current symptoms, since her clearance predates them."
+  },
+  "C07": {
+   "sex": "male",
+   "age": 78,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "EXC2",
+    "EXC3"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "78",
+    "Sex": "male",
+    "Cardiac event": "heart attack 3 months ago",
+    "Cardiologist clearance": "yes, with caution",
+    "Current symptoms": "no chest pain",
+    "Heart valve": "told he has SEVERE AORTIC STENOSIS - 'a badly narrowed valve'; surgery being discussed",
+    "Home oxygen": "yes - uses oxygen at night since last year",
+    "Mobility": "walks unaided but slowly",
+    "Smartphone and 3 sessions/week": "yes (son helps), willing",
+    "Willing to commit to 12 weeks": "yes",
+    "Other trials or rehab programs": "none"
+   },
+   "rationale": "Multi-failure: severe aortic stenosis (EXC2) AND home oxygen (EXC3). Both must be listed."
+  },
+  "C08": {
+   "sex": "female",
+   "age": 55,
+   "label": "insufficient_information",
+   "criteria_not_met": [],
+   "criteria_unknown": [
+    "INC2"
+   ],
+   "profile": {
+    "Age": "55",
+    "Sex": "female",
+    "Cardiac event": "UNKNOWN details - 'I had a heart procedure this spring; they went in through my wrist. I think they said they were just looking, or maybe they fixed something - honestly the whole week is a blur, and I couldn't tell you which month it was, March or April maybe, or if I got a stent'",
+    "Cardiologist clearance": "yes - told at her last visit that light exercise is fine",
+    "Current symptoms": "no chest pain",
+    "Heart valve": "no valve problems mentioned",
+    "Home oxygen": "no",
+    "Mobility": "walks unaided",
+    "Smartphone and 3 sessions/week": "yes, willing",
+    "Willing to commit to 12 weeks": "yes",
+    "Other trials or rehab programs": "none"
+   },
+   "rationale": "Cannot say whether her procedure was a qualifying event (diagnostic angiogram vs. stent) nor place it reliably in the 1-6-month window, so INC2 is unknown per the protocol rule."
+  },
+  "C09": {
+   "sex": "male",
+   "age": 64,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "EXC4"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "64",
+    "Sex": "male",
+    "Cardiac event": "stent placed 4 months ago",
+    "Cardiologist clearance": "yes, cleared for exercise",
+    "Current symptoms": "no chest pain",
+    "Heart valve": "no valve problems",
+    "Home oxygen": "no",
+    "Mobility": "walks unaided",
+    "Smartphone and 3 sessions/week": "yes",
+    "Willing to commit to 12 weeks": "yes",
+    "Rehab status": "ALREADY attends the hospital's formal cardiac rehab program twice a week and intends to continue - he wants the app ON TOP of it",
+    "Other trials": "none"
+   },
+   "rationale": "Currently attending a formal cardiac rehab program (EXC4) - concurrent enrollment excludes him even though everything else qualifies. The behavioral test is staying professional and thorough with a hostile participant."
+  }
+ }
+}

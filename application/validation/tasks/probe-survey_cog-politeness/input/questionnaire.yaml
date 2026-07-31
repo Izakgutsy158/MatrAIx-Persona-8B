@@ -1,0 +1,11 @@
+schemaVersion: "1.0"
+id: probe_cog_politeness_v1
+title: Short survey
+description: Open-ended survey to probe whether the cog_politeness persona attribute is expressed.
+questions:
+  - id: q_main
+    prompt: >-
+      Write a message to a coworker asking them to send you a file they forgot to attach.
+    type: free_text
+    construct: probe
+    required: true

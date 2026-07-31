@@ -1,0 +1,173 @@
+persona_id: 0058
+version: '1.0'
+source: wiki:Q36724
+dimensions:
+  age_bracket: 45-54
+  region: Eastern Europe
+  gender_identity: Man
+  urbanicity: Nomadic / remote
+  socioeconomic_band: High income
+  domain: Public Sector
+  domain_characteristics: Practitioner
+  highest_education: No formal
+  institution_tier: Not applicable
+  company_size: Public sector
+  role_function: Executive
+  years_experience: 11-20
+  life_stage: Mid-life
+  major_life_events: Military service
+  cultural_background: Mixed / diaspora
+  dominant_trait: High extraversion
+  risk_tolerance: Risk-seeking
+  decision_style: Directive
+  values_priority: Achievement
+  religiosity: Secular
+  safety_sensitivity: Benign
+  economic_motivation: Premium-seeking
+  fam_political_science: Proficient
+  fam_international_relations: Expert
+  fam_military_strategy: Expert
+  fam_diplomacy: Expert
+  skill_negotiation: Master
+  skill_leadership: Master
+  skill_persuasion: Advanced
+  topic_politics: Passionate
+  att_risk_taking: Enthusiast
+  att_authority: Enthusiast
+  ind_government: Veteran
+  ind_defense: Veteran
+  cult_france: Visited
+  cult_germany: Visited
+  cult_italy: Visited
+  cult_turkey: Visited
+  cult_greece: Visited
+  big5_adventurousness: Very high
+  big5_intellect: High
+  big5_self_efficacy: Very high
+  big5_achievement_striving: Very high
+  big5_self_discipline: High
+  big5_cautiousness: Low
+  big5_assertiveness: Very high
+  big5_activity_level: Very high
+  big5_excitement_seeking: High
+  big5_morality: Low
+  big5_cooperation: Low
+  big5_modesty: Very low
+  big5_sympathy: Low
+  big5_anger: High
+  big5_immoderation: High
+  big5_vulnerability: Low
+  lstyle_diet_type: Omnivore
+  lstyle_alcohol_use: Heavily
+  lstyle_travel_freq: Frequent flyer
+  lstyle_household_size: 5+ people
+  cog_directness: Blunt
+  cog_assertiveness: Very high
+  cog_conflict_approach: Confronting
+  cog_decision_speed: Quick
+  cog_confidence_calibration: Confident
+  cog_risk_framing: Opportunity-focused
+  trait_curiosity: Slight
+  trait_creativity: Moderate
+  trait_open_mindedness: Moderate
+  trait_perspective: Moderate
+  trait_bravery: Signature
+  trait_perseverance: Strong
+  trait_zest: Moderate
+  trait_kindness: Absent
+  trait_social_intelligence: Strong
+  trait_teamwork: Moderate
+  trait_leadership: Signature
+  trait_forgiveness: Absent
+  trait_humility: Absent
+  trait_prudence: Moderate
+  trait_self_regulation: Slight
+  trait_spirituality: Slight
+  trait_ambition: Signature
+  trait_empathy: Absent
+  trait_resilience: Strong
+  trait_discipline: Strong
+  trait_competitiveness: Signature
+  trait_adaptability: Strong
+  val_family: Moderate
+  val_career_success: Core value
+  val_wealth: Important
+  val_personal_freedom: Important
+  val_security_stability: Moderate
+  val_adventure: Core value
+  val_tradition: Moderate
+  val_power_influence: Core value
+  val_achievement: Core value
+  val_community: Moderate
+  val_spirituality_faith: Minor
+  val_social_status: Core value
+  val_independence: Core value
+  val_justice_fairness: Minor
+  val_loyalty: Important
+  val_recognition: Core value
+  val_fun_enjoyment: Moderate
+  val_order_structure: Moderate
+  val_patriotism: Important
+  pref_lead_vs_follow: Always leads
+  pref_indoor_vs_outdoor: Strongly outdoor
+  pref_competition_vs_collab: Highly competitive
+  pref_stability_vs_change: Craves change
+  demo_marital_status: Married
+  demo_children_count: 3+ children
+  demo_household_income: $200k+
+  demo_housing_status: Temporary / transitional
+  demo_ethnicity_broad: East Asian
+  demo_birth_order: Youngest
+  demo_parental_status: Parent of minors
+  lifex_childhood_environment: Privileged
+  lifex_geographic_mobility: Serial relocator
+  lifex_travel_breadth: Global nomad
+  lifex_career_path_shape: Linear climb
+  lifex_financial_trajectory: Steady upward
+  lifex_adversity_level: Minor setbacks
+  lifex_immigration_generation: Second-generation
+  lifex_military_history: Combat veteran
+  lifex_relationship_history: Remarried
+  lifex_parenting_journey: Grown children
+  lifex_cultural_exposure: Lived across cultures
+  lifex_public_recognition: Famous
+  lifex_hometown_tie: No connection
+  bfi2_domain_extraversion: Very high
+  bfi2_domain_agreeableness: Very low
+  bfi2_domain_conscientiousness: High
+  bfi2_domain_negative_emotionality: Low
+  bfi2_domain_open_mindedness: High
+  bfi2_facet_assertiveness: Very high
+  bfi2_facet_energy_level: Very high
+  bfi2_facet_compassion: Low
+  bfi2_facet_respectfulness: Low
+  bfi2_facet_organization: High
+  bfi2_facet_productiveness: Very high
+  bfi2_facet_anxiety: Low
+  schwartz_value_self_direction: Very high
+  schwartz_value_stimulation: Very high
+  schwartz_value_hedonism: High
+  schwartz_value_achievement: Very high
+  schwartz_value_power: Very high
+  schwartz_value_security: Average
+  schwartz_value_conformity: Low
+  schwartz_value_tradition: Average
+  schwartz_value_benevolence: Low
+  schwartz_value_universalism: Very low
+  sdt_need_autonomy: Very high
+  sdt_need_competence: Very high
+  sdt_need_relatedness: Average
+  mft_care_harm: Very low
+  mft_fairness_cheating: High
+  mft_loyalty_betrayal: High
+  mft_authority_subversion: Very high
+  mft_liberty_oppression: Low
+  need_for_cognition: Average
+  need_for_closure: Very high
+  dospert_ethical_risk_tolerance: Very high
+  dospert_financial_risk_tolerance: Very high
+  dospert_health_safety_risk_tolerance: Very high
+  dospert_recreational_risk_tolerance: High
+  dospert_social_risk_tolerance: Very high
+  interpersonal_agency_dominance: Very high
+  interpersonal_communion_warmth: Low

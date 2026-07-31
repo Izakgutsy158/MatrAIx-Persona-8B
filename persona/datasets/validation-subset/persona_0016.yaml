@@ -1,0 +1,58 @@
+persona_id: '0016'
+version: '1.0'
+source: stackoverflow:stackoverflow_2023_1355_2150
+dimensions:
+  age_bracket: 25-34
+  region: Eastern Europe
+  domain: Software & AI
+  subject_specialty: Operations
+  domain_characteristics: Hobbyist
+  highest_education: Master's
+  company_size: SMB (50-500)
+  role_function: Engineering
+  years_experience: 3-5
+  life_stage: Early career
+  fam_machine_learning: None
+  fam_deep_learning: None
+  fam_data_science: None
+  fam_computer_networking: Familiar
+  fam_databases: Familiar
+  fam_distributed_systems: Familiar
+  fam_operating_systems: Familiar
+  fam_devops: Familiar
+  fam_computer_vision: None
+  fam_natural_language_processing: None
+  tool_python: Regular
+  att_ai: Opposed
+  att_new_technology: Skeptical
+  ind_finance: Experienced
+  lstyle_commute_mode: Remote
+  lstyle_primary_messenger: Telegram
+  lstyle_device_ecosystem: Mixed
+  trait_love_of_learning: Strong
+  pref_early_vs_late: Mainstream
+  demo_employment_status: Full-time
+  demo_generation: Millennial
+  lifex_education_journey: Advanced degrees
+  code_comment_style: No comments
+  ai_task_code_generation: Does not plan AI use
+  ai_task_code_review: Does not plan AI use
+  ai_task_codebase_learning: Does not plan AI use
+  ai_task_data_generation_analytics: Does not plan AI use
+  ai_task_debugging_fixing: Does not plan AI use
+  ai_task_deployment_monitoring: Does not plan AI use
+  ai_task_documentation: Does not plan AI use
+  ai_task_learning_concepts: Does not plan AI use
+  ai_task_project_planning: Does not plan AI use
+  ai_task_refactoring: Does not plan AI use
+  ai_task_search_answers: Does not plan AI use
+  ai_task_testing: Does not plan AI use
+  coding_agent_usage_frequency: No plans
+  coding_ai_sentiment: Somewhat unfavorable
+  coding_ai_usage_frequency: Never used
+  dev_contribution_context: Employee work
+  dev_ic_manager_orientation: Individual contributor
+  dev_professional_status: Professional developer
+  dev_role_archetype: Back-end developer
+  stackoverflow_participation_style: Comments / discusses
+  stackoverflow_usage_pattern: Multiple times daily

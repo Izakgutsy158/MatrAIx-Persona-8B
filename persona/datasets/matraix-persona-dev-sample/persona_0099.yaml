@@ -1,0 +1,193 @@
+persona_id: 0099
+version: '1.0'
+source: prism
+display_name: Ava Martinez
+dimensions:
+  age_bracket: 45-54
+  region: North America
+  gender_identity: Woman
+  primary_language: English
+  english_proficiency: Fluent (C1-C2)
+  multilingualism: Monolingual
+  highest_education: Some college
+  life_stage: Mid-life
+  cultural_background: Individualist (Western)
+  tech_savviness: Cautious adopter
+  religiosity: Observant
+  intent: Learn / explain
+  expertise_gap: Novice asking expert
+  tone_expected: Formal
+  trust_level: Verifying
+  safety_sensitivity: Sensitive personal
+  prior_context: Cold start
+  fam_machine_learning: Aware
+  fam_deep_learning: Aware
+  fam_philosophy: Familiar
+  fam_ethics: Familiar
+  fam_natural_language_processing: Aware
+  fam_theology: Familiar
+  fam_religious_studies: Aware
+  skill_empathy: Advanced
+  skill_fact_checking: Intermediate
+  tool_chatgpt: Occasional
+  topic_technology: Interested
+  topic_parenting: Interested
+  topic_religion: Passionate
+  topic_spirituality: Interested
+  lang_english: Fluent
+  att_ai: Positive
+  att_organized_religion: Positive
+  att_new_technology: Positive
+  ind_technology: None
+  ind_healthcare: None
+  ind_finance: None
+  ind_banking: None
+  ind_insurance: None
+  ind_retail: None
+  ind_e_commerce: None
+  ind_manufacturing: None
+  ind_automotive: None
+  ind_aerospace: None
+  ind_energy: None
+  ind_oil_gas: None
+  ind_utilities: None
+  ind_construction: None
+  ind_real_estate: None
+  ind_hospitality: None
+  ind_travel_tourism: None
+  ind_restaurants: None
+  ind_agriculture: None
+  ind_food_beverage: None
+  ind_pharmaceuticals: None
+  ind_biotech: None
+  ind_media: None
+  ind_entertainment: None
+  ind_gaming: None
+  ind_publishing: None
+  ind_advertising: None
+  ind_government: None
+  ind_defense: None
+  ind_nonprofit: None
+  ind_logistics: None
+  ind_transportation: None
+  ind_shipping: None
+  ind_mining: None
+  ind_chemicals: None
+  ind_textiles: None
+  ind_apparel: None
+  ind_consumer_electronics: None
+  ind_semiconductors: None
+  ind_legal_services: None
+  ind_consulting: None
+  ind_accounting: None
+  ind_marketing_agencies: None
+  ind_fitness_wellness: None
+  ind_beauty_cosmetics: None
+  ind_sports: None
+  ind_music: None
+  ind_fine_art: None
+  cult_united_states: Native
+  big5_trust: High
+  big5_morality: High
+  big5_altruism: High
+  big5_sympathy: High
+  lstyle_work_schedule: Unemployed
+  cog_verbosity: Concise
+  cog_formality: Formal
+  cog_directness: Direct
+  cog_detail_orientation: Moderate
+  cog_abstraction: Abstract
+  cog_optimism: High
+  cog_patience: Moderate
+  cog_curiosity: Moderate
+  cog_skepticism: Low
+  cog_open_mindedness: Moderate
+  cog_assertiveness: Moderate
+  cog_emotional_expressiveness: High
+  cog_ambiguity_tolerance: Moderate
+  cog_perfectionism: Low
+  cog_big_picture_vs_detail: Big-picture
+  cog_risk_framing: Balanced
+  cog_empathy_expression: High
+  cog_precision_of_language: Loose
+  cog_use_of_jargon: Avoids jargon
+  cog_politeness: Polite
+  trait_honesty: Strong
+  trait_capacity_for_love: Strong
+  trait_kindness: Strong
+  trait_spirituality: Strong
+  trait_empathy: Strong
+  val_family: Important
+  val_security_stability: Important
+  val_tradition: Important
+  val_community: Important
+  val_spirituality_faith: Core value
+  val_knowledge_truth: Important
+  val_justice_fairness: Important
+  val_loyalty: Important
+  val_helping_others: Important
+  val_integrity_honesty: Core value
+  val_equality: Important
+  pref_speed_vs_accuracy: Accuracy first
+  pref_quality_vs_quantity: Quality first
+  pref_early_vs_late: Mainstream
+  pref_detail_brief_vs_full: Every detail
+  pref_competition_vs_collab: Collaborative
+  pref_stability_vs_change: Craves stability
+  demo_marital_status: Divorced
+  demo_employment_status: Unemployed
+  demo_generation: Gen X
+  demo_religion_affiliation: Christian
+  demo_ethnicity_broad: White / European
+  demo_home_language: Same as primary
+  demo_parental_status: Parent of minors
+  demo_relationship_length: Not in one
+  lifex_education_journey: Dropped out
+  lifex_relationship_history: Remarried
+  lifex_parenting_journey: Grown children
+  lifex_faith_journey: Lifelong faith
+  lifex_formative_decade: 1980s
+  lifex_languages_lifetime: One
+  bfi2_domain_agreeableness: High
+  bfi2_facet_compassion: High
+  bfi2_facet_respectfulness: High
+  bfi2_facet_trust: High
+  schwartz_value_security: High
+  schwartz_value_conformity: High
+  schwartz_value_tradition: High
+  schwartz_value_benevolence: Very high
+  schwartz_value_universalism: High
+  sdt_need_competence: High
+  sdt_need_relatedness: High
+  mft_care_harm: High
+  mft_fairness_cheating: High
+  mft_authority_subversion: High
+  mft_sanctity_degradation: High
+  need_for_cognition: Average
+  dospert_health_safety_risk_tolerance: Low
+  interpersonal_communion_warmth: High
+  ai_task_code_generation: Not applicable
+  ai_task_code_review: Not applicable
+  ai_task_codebase_learning: Not applicable
+  ai_task_data_generation_analytics: Not applicable
+  ai_task_debugging_fixing: Not applicable
+  ai_task_deployment_monitoring: Not applicable
+  ai_task_documentation: Not applicable
+  ai_task_learning_concepts: Currently partially AI-assisted
+  ai_task_project_planning: Not applicable
+  ai_task_refactoring: Not applicable
+  ai_task_search_answers: Currently partially AI-assisted
+  ai_task_testing: Not applicable
+  coding_agent_adoption_barrier: Lack of clear use case
+  coding_agent_context_sharing_comfort: Shares natural-language descriptions only
+  coding_agent_control_expectation: Read-only assistance preferred
+  coding_agent_explanation_preference: Concise summary only
+  coding_agent_failure_tolerance: Very low tolerance
+  coding_agent_memory_preference: Prefers stateless interactions
+  coding_agent_security_expectation: Relies on human review
+  coding_tool_ethics_blocker: Major concern
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: prism-6a55cf90fddf
+  origin_source_row_index: 2211724

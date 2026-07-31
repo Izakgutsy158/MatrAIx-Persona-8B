@@ -1,0 +1,463 @@
+persona_id: 0069
+version: '1.0'
+source: wiki:Q527384
+dimensions:
+  region: South Asia
+  gender_identity: Man
+  primary_language: English
+  register: Formal / standard
+  domain: Arts & Humanities
+  subject_specialty: Comparative literature
+  domain_characteristics: Cutting-edge researcher
+  highest_education: No formal
+  academic_field: Interdisciplinary
+  institution_tier: Not applicable
+  research_output: Prolific publisher
+  seniority: Retired
+  role_function: Research
+  years_experience: 20+
+  linkedin_activity: Inactive
+  cultural_background: South Asian
+  tech_savviness: Reluctant
+  dominant_trait: High openness
+  expertise_gap: Expert testing the system
+  fam_machine_learning: None
+  fam_deep_learning: None
+  fam_statistics: Familiar
+  fam_data_science: None
+  fam_cardiology: None
+  fam_neurology: None
+  fam_oncology: None
+  fam_pediatrics: None
+  fam_psychiatry: None
+  fam_radiology: None
+  fam_surgery: None
+  fam_immunology: None
+  fam_constitutional_law: None
+  fam_contract_law: None
+  fam_criminal_law: None
+  fam_tax_law: None
+  fam_intellectual_property: None
+  fam_corporate_finance: None
+  fam_quantitative_trading: None
+  fam_accounting: Familiar
+  fam_auditing: None
+  fam_macroeconomics: None
+  fam_microeconomics: None
+  fam_behavioral_economics: None
+  fam_curriculum_design: None
+  fam_pedagogy: None
+  fam_special_education: None
+  fam_structural_engineering: None
+  fam_mechanical_engineering: None
+  fam_electrical_engineering: None
+  fam_civil_engineering: None
+  fam_chemical_engineering: None
+  fam_aerospace_engineering: None
+  fam_robotics: None
+  fam_control_systems: None
+  fam_molecular_biology: None
+  fam_genetics: None
+  fam_biochemistry: None
+  fam_organic_chemistry: None
+  fam_physical_chemistry: None
+  fam_particle_physics: None
+  fam_astrophysics: None
+  fam_astronomy: Familiar
+  fam_geology: None
+  fam_oceanography: None
+  fam_climate_science: None
+  fam_ecology: None
+  fam_sociology: None
+  fam_psychology: None
+  fam_cognitive_science: None
+  fam_anthropology: None
+  fam_international_relations: None
+  fam_comparative_literature: Familiar
+  fam_philosophy: Aware
+  fam_ethics: None
+  fam_history: Aware
+  fam_archaeology: None
+  fam_linguistics: Expert
+  fam_art_history: None
+  fam_music_theory: Familiar
+  fam_film_studies: None
+  fam_architecture: None
+  fam_urban_planning: None
+  fam_landscape_design: None
+  fam_agronomy: None
+  fam_horticulture: None
+  fam_veterinary_medicine: None
+  fam_nursing: None
+  fam_pharmacology: None
+  fam_public_health: None
+  fam_epidemiology: None
+  fam_nutrition: None
+  fam_sports_science: None
+  fam_cybersecurity: None
+  fam_cryptography: None
+  fam_computer_networking: None
+  fam_databases: None
+  fam_distributed_systems: None
+  fam_operating_systems: None
+  fam_compilers: None
+  fam_cloud_infrastructure: None
+  fam_devops: None
+  fam_game_development: None
+  fam_computer_graphics: None
+  fam_computer_vision: None
+  fam_natural_language_processing: None
+  fam_human_computer_interaction: None
+  fam_ux_research: None
+  fam_graphic_design: None
+  fam_industrial_design: None
+  fam_typography: None
+  fam_journalism: None
+  fam_public_relations: None
+  fam_brand_marketing: None
+  fam_performance_marketing: None
+  fam_seo: None
+  fam_sales_engineering: None
+  fam_supply_chain: None
+  fam_logistics: None
+  fam_operations_management: None
+  fam_lean_manufacturing: None
+  fam_quality_assurance: None
+  fam_human_resources: None
+  fam_organizational_psychology: None
+  fam_project_management: None
+  fam_product_management: None
+  fam_venture_capital: None
+  fam_private_equity: None
+  fam_real_estate: None
+  fam_insurance: None
+  fam_actuarial_science: None
+  fam_hospitality_management: None
+  fam_culinary_arts: None
+  fam_sommelier_knowledge: None
+  fam_fashion_design: None
+  fam_textiles: None
+  fam_photography: None
+  fam_cinematography: None
+  fam_music_production: None
+  fam_sound_engineering: None
+  fam_animation: None
+  fam_3d_modeling: None
+  fam_geographic_information_systems: None
+  fam_meteorology: None
+  fam_forestry: None
+  fam_marine_biology: None
+  fam_paleontology: None
+  fam_materials_science: None
+  fam_nanotechnology: None
+  fam_renewable_energy: None
+  fam_nuclear_engineering: None
+  fam_petroleum_engineering: None
+  fam_mining: None
+  fam_aviation: None
+  fam_maritime_navigation: None
+  fam_military_strategy: None
+  fam_diplomacy: None
+  fam_social_work: None
+  fam_counseling: None
+  fam_theology: None
+  fam_library_science: None
+  skill_writing: Master
+  skill_copywriting: None
+  skill_editing: None
+  skill_storytelling: None
+  skill_public_speaking: None
+  skill_negotiation: None
+  skill_coding: Master
+  skill_debugging: None
+  skill_code_review: None
+  skill_system_design: Advanced
+  skill_data_analysis: Master
+  skill_data_visualization: None
+  skill_statistical_modeling: Master
+  skill_spreadsheet_modeling: None
+  skill_financial_modeling: None
+  skill_project_management: None
+  skill_product_strategy: None
+  skill_leadership: None
+  skill_people_management: None
+  skill_mentoring: None
+  skill_coaching: None
+  skill_conflict_resolution: None
+  skill_time_management: None
+  skill_prioritization: None
+  skill_research: Master
+  skill_critical_thinking: Master
+  skill_problem_solving: Master
+  skill_mathematics: Master
+  skill_mental_arithmetic: None
+  skill_logical_reasoning: Master
+  skill_language_learning: None
+  skill_translation: None
+  skill_interpretation: None
+  skill_design_thinking: None
+  skill_prototyping: None
+  skill_sketching: None
+  skill_drawing: None
+  skill_painting: None
+  skill_photography: None
+  skill_videography: None
+  skill_video_editing: None
+  skill_audio_production: None
+  skill_cooking: None
+  skill_baking: None
+  skill_budgeting: None
+  skill_investing: None
+  skill_diy_repair: None
+  skill_gardening: None
+  skill_driving: None
+  skill_technical_writing: Master
+  topic_technology: Passionate
+  topic_science: Passionate
+  topic_music: Passionate
+  topic_literature: Passionate
+  topic_poetry: Passionate
+  topic_languages: Passionate
+  ind_technology: None
+  ind_healthcare: None
+  ind_finance: None
+  ind_banking: None
+  ind_insurance: None
+  ind_retail: None
+  ind_e_commerce: None
+  ind_manufacturing: None
+  ind_automotive: None
+  ind_aerospace: None
+  ind_energy: None
+  ind_oil_gas: None
+  ind_utilities: None
+  ind_construction: None
+  ind_real_estate: None
+  ind_hospitality: None
+  ind_travel_tourism: None
+  ind_restaurants: None
+  ind_agriculture: None
+  ind_food_beverage: None
+  ind_pharmaceuticals: None
+  ind_biotech: None
+  ind_telecommunications: None
+  ind_media: None
+  ind_entertainment: None
+  ind_gaming: None
+  ind_publishing: None
+  ind_advertising: None
+  ind_education: None
+  ind_government: None
+  ind_defense: None
+  ind_nonprofit: None
+  ind_logistics: None
+  ind_transportation: None
+  ind_shipping: None
+  ind_mining: None
+  ind_chemicals: None
+  ind_textiles: None
+  ind_apparel: None
+  ind_consumer_electronics: None
+  ind_semiconductors: None
+  ind_legal_services: None
+  ind_consulting: None
+  ind_accounting: None
+  ind_marketing_agencies: None
+  ind_fitness_wellness: None
+  ind_beauty_cosmetics: None
+  ind_sports: None
+  ind_music: None
+  ind_fine_art: None
+  cult_india: Native
+  bookg_poetry: Like
+  big5_imagination: Very high
+  big5_artistic_interest: Very high
+  big5_emotionality: Very high
+  big5_adventurousness: Very high
+  big5_intellect: Very high
+  big5_liberalism: Very high
+  big5_self_efficacy: Very high
+  big5_orderliness: High
+  big5_dutifulness: Very high
+  big5_achievement_striving: High
+  big5_self_discipline: Very high
+  big5_cautiousness: Very high
+  big5_friendliness: Very high
+  big5_gregariousness: Very high
+  big5_assertiveness: Very high
+  big5_activity_level: Very high
+  big5_excitement_seeking: Very high
+  big5_cheerfulness: Very high
+  big5_trust: Very high
+  big5_morality: Very high
+  big5_altruism: Very high
+  big5_cooperation: Very high
+  big5_modesty: Very high
+  big5_sympathy: Very high
+  big5_anxiety: Very high
+  big5_anger: Very high
+  big5_depression: Very high
+  big5_self_consciousness: Very high
+  big5_immoderation: Very high
+  big5_vulnerability: Very high
+  cog_detail_orientation: Very high
+  cog_abstraction: Highly abstract
+  cog_numeracy_comfort: Very high
+  cog_visual_vs_verbal: Mixed
+  cog_big_picture_vs_detail: Detail
+  cog_precision_of_language: Very precise
+  cog_use_of_jargon: Heavy
+  cog_emoji_use: Never
+  acad_algebra: Interested
+  acad_geometry: Neutral
+  acad_calculus: Neutral
+  acad_statistics: Passionate
+  acad_physics: Neutral
+  acad_chemistry: Neutral
+  acad_biology: Neutral
+  acad_earth_science: Neutral
+  acad_computer_science: Passionate
+  acad_economics: Neutral
+  acad_psychology: Neutral
+  acad_sociology: Neutral
+  acad_world_history: Neutral
+  acad_geography: Neutral
+  acad_civics: Neutral
+  acad_literature: Passionate
+  acad_creative_writing: Passionate
+  acad_foreign_languages: Passionate
+  acad_philosophy: Neutral
+  acad_visual_art: Neutral
+  acad_music: Interested
+  acad_drama: Neutral
+  acad_physical_education: Neutral
+  acad_health_science: Neutral
+  acad_business_studies: Neutral
+  acad_environmental_science: Neutral
+  acad_logic: Passionate
+  acad_astronomy: Neutral
+  acad_anthropology: Neutral
+  trait_curiosity: Signature
+  trait_creativity: Signature
+  trait_love_of_learning: Strong
+  trait_open_mindedness: Strong
+  trait_perspective: Strong
+  trait_bravery: Moderate
+  trait_perseverance: Strong
+  trait_honesty: Moderate
+  trait_zest: Moderate
+  trait_capacity_for_love: Signature
+  trait_kindness: Signature
+  trait_social_intelligence: Signature
+  trait_teamwork: Signature
+  trait_fairness: Signature
+  trait_leadership: Moderate
+  trait_forgiveness: Signature
+  trait_humility: Signature
+  trait_prudence: Moderate
+  trait_self_regulation: Strong
+  trait_appreciation_of_beauty: Strong
+  trait_gratitude: Signature
+  trait_hope_optimism: Signature
+  trait_playfulness: Moderate
+  trait_spirituality: Signature
+  trait_ambition: Strong
+  trait_empathy: Signature
+  trait_resilience: Signature
+  trait_discipline: Signature
+  trait_generosity: Signature
+  trait_loyalty: Signature
+  trait_competitiveness: Signature
+  trait_adaptability: Signature
+  demo_ethnicity_broad: South Asian
+  lifex_public_recognition: Industry-recognized
+  lifex_languages_lifetime: One
+  code_comment_style: Docstring/documentation blocks only
+  code_summary_documentation: Never includes TLDR
+  code_naming_verbosity: Terse abbreviated names
+  code_indentation_style: Inconsistent/mixed
+  code_structure_preference: Functional programming style
+  code_error_handling: Minimal error handling
+  code_abstraction_level: Highly abstract and generic
+  code_dependencies_approach: Prefer custom implementations
+  code_performance_priority: Readability-first then optimize if needed
+  code_testing_approach: No tests
+  code_refactoring_frequency: Rarely refactors
+  prog_python: None
+  prog_javascript: None
+  prog_typescript: None
+  prog_java: None
+  prog_c: None
+  prog_go: None
+  prog_rust: None
+  prog_ruby: None
+  prog_php: None
+  prog_swift: None
+  prog_kotlin: None
+  prog_objective_c: None
+  prog_scala: None
+  prog_haskell: None
+  prog_elixir: None
+  prog_erlang: None
+  prog_clojure: None
+  prog_lua: None
+  prog_perl: None
+  prog_r: None
+  prog_julia: None
+  prog_matlab: None
+  prog_sql: None
+  prog_bash: None
+  prog_powershell: None
+  prog_dart: None
+  prog_f: None
+  prog_ocaml: None
+  prog_assembly: None
+  prog_cobol: None
+  prog_fortran: None
+  prog_solidity: None
+  prog_graphql: None
+  bfi2_domain_extraversion: Very high
+  bfi2_domain_agreeableness: Very high
+  bfi2_domain_conscientiousness: High
+  bfi2_domain_negative_emotionality: Very high
+  bfi2_domain_open_mindedness: Very high
+  bfi2_facet_sociability: Very high
+  bfi2_facet_assertiveness: Very high
+  bfi2_facet_energy_level: Very high
+  bfi2_facet_compassion: Very high
+  bfi2_facet_respectfulness: Very high
+  bfi2_facet_trust: Very high
+  bfi2_facet_organization: High
+  bfi2_facet_productiveness: High
+  bfi2_facet_responsibility: Very high
+  bfi2_facet_anxiety: Very high
+  bfi2_facet_depression: Very high
+  bfi2_facet_emotional_volatility: Very high
+  bfi2_facet_intellectual_curiosity: Very high
+  bfi2_facet_aesthetic_sensitivity: Very high
+  bfi2_facet_creative_imagination: Very high
+  ai_task_code_generation: Not applicable
+  ai_task_code_review: Not applicable
+  ai_task_codebase_learning: Not applicable
+  ai_task_data_generation_analytics: Not applicable
+  ai_task_debugging_fixing: Not applicable
+  ai_task_deployment_monitoring: Not applicable
+  ai_task_documentation: Not applicable
+  ai_task_learning_concepts: Not applicable
+  ai_task_project_planning: Not applicable
+  ai_task_refactoring: Not applicable
+  ai_task_search_answers: Not applicable
+  ai_task_testing: Not applicable
+  code_review_participation_level: Frequent reviewer
+  commit_cadence_style: Many small commits
+  dev_contribution_context: Academic / student work
+  dev_ic_manager_orientation: Not applicable
+  dev_primary_work_surface: Mixed surfaces
+  dev_professional_status: Non-developer technologist
+  dev_role_archetype: Other developer
+  dev_toolchain_complexity: Minimal toolchain
+  github_contribution_mode: Code pusher
+  issue_engagement_style: Detailed bug reports
+  open_source_activity_level: No coding activity
+  pr_collaboration_style: Small focused PRs
+  release_maintenance_orientation: Active release maintainer

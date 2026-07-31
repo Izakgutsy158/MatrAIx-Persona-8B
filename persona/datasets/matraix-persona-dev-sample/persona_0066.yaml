@@ -1,0 +1,46 @@
+persona_id: '0066'
+version: '1.0'
+source: stackoverflow
+display_name: Jordan Lee
+dimensions:
+  age_bracket: 25-34
+  domain: Healthcare & Medicine
+  domain_characteristics: Student
+  highest_education: Bachelor's
+  company_size: SMB (50-500)
+  role_function: Engineering
+  years_experience: 0-2
+  life_stage: Early career
+  skill_coding: Beginner
+  tool_sql: Regular
+  tool_microsoft_teams: Regular
+  tool_chatgpt: Regular
+  topic_productivity: Interested
+  att_ai: Positive
+  att_new_technology: Positive
+  ind_healthcare: Experienced
+  cog_reading_vs_watching: Prefers video
+  peeve_being_interrupted: Annoys
+  trait_love_of_learning: Strong
+  trait_adaptability: Strong
+  demo_employment_status: Full-time
+  demo_generation: Millennial
+  lifex_career_path_shape: Just starting
+  lifex_education_journey: Traditional track
+  coding_ai_learning_source: Online courses / videos
+  coding_ai_output_trust: Trusts after verification
+  coding_ai_sentiment: Somewhat favorable
+  debugging_strategy: Search / ask externally
+  dev_contribution_context: Employee work
+  dev_ic_manager_orientation: Individual contributor
+  dev_professional_status: Professional developer
+  dev_role_archetype: Full-stack developer
+  dev_toolchain_complexity: Focused small stack
+  human_help_boundary_for_ai_coding: When trust is low
+  stackoverflow_participation_style: Reads / searches only
+  stackoverflow_usage_pattern: Multiple times daily
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: stackoverflow-6c08562c4da8
+  origin_source_row_index: 2135175

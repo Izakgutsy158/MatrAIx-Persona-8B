@@ -1,0 +1,144 @@
+persona_id: 0019
+version: '1.0'
+source: wiki
+display_name: Arif Hassan
+dimensions:
+  age_bracket: 35-44
+  region: Southeast Asia
+  gender_identity: Man
+  urbanicity: Dense urban
+  socioeconomic_band: Middle
+  primary_language: English
+  english_proficiency: Native
+  multilingualism: Monolingual
+  register: Formal / standard
+  domain: Skilled Trades
+  domain_characteristics: Practitioner
+  highest_education: Bachelor's
+  institution_tier: Top-tier research
+  seniority: Mid
+  years_experience: 11-20
+  life_stage: Mid-life
+  major_life_events: None notable
+  cultural_background: Individualist (Western)
+  dominant_trait: 'null'
+  values_priority: Achievement
+  topic_sports: Passionate
+  topic_fitness: Passionate
+  lang_english: Native
+  ind_technology: None
+  ind_healthcare: None
+  ind_finance: None
+  ind_banking: None
+  ind_insurance: None
+  ind_retail: None
+  ind_e_commerce: None
+  ind_manufacturing: None
+  ind_automotive: None
+  ind_aerospace: None
+  ind_energy: None
+  ind_oil_gas: None
+  ind_utilities: None
+  ind_construction: None
+  ind_real_estate: None
+  ind_hospitality: None
+  ind_travel_tourism: None
+  ind_restaurants: None
+  ind_agriculture: None
+  ind_food_beverage: None
+  ind_pharmaceuticals: None
+  ind_biotech: None
+  ind_telecommunications: None
+  ind_media: None
+  ind_entertainment: None
+  ind_gaming: None
+  ind_publishing: None
+  ind_advertising: None
+  ind_education: None
+  ind_government: None
+  ind_defense: None
+  ind_nonprofit: None
+  ind_logistics: None
+  ind_transportation: None
+  ind_shipping: None
+  ind_mining: None
+  ind_chemicals: None
+  ind_textiles: None
+  ind_apparel: None
+  ind_consumer_electronics: None
+  ind_semiconductors: None
+  ind_legal_services: None
+  ind_consulting: None
+  ind_accounting: None
+  ind_marketing_agencies: None
+  ind_fitness_wellness: None
+  ind_beauty_cosmetics: None
+  ind_sports: Veteran
+  ind_music: None
+  ind_fine_art: None
+  cult_united_states: Native
+  cult_vietnam: Lived there
+  sport_basketball: Play
+  lstyle_exercise_freq: Daily
+  lstyle_work_schedule: Shift work
+  trait_curiosity: 'null'
+  trait_creativity: 'null'
+  trait_love_of_learning: 'null'
+  trait_open_mindedness: 'null'
+  trait_perspective: 'null'
+  trait_bravery: 'null'
+  trait_perseverance: 'null'
+  trait_honesty: 'null'
+  trait_zest: 'null'
+  trait_capacity_for_love: 'null'
+  trait_kindness: 'null'
+  trait_social_intelligence: 'null'
+  trait_teamwork: 'null'
+  trait_fairness: 'null'
+  trait_leadership: 'null'
+  trait_forgiveness: 'null'
+  trait_humility: 'null'
+  trait_prudence: 'null'
+  trait_self_regulation: 'null'
+  trait_appreciation_of_beauty: 'null'
+  trait_gratitude: 'null'
+  trait_hope_optimism: 'null'
+  trait_playfulness: 'null'
+  trait_spirituality: 'null'
+  trait_ambition: 'null'
+  trait_empathy: 'null'
+  trait_resilience: 'null'
+  trait_discipline: 'null'
+  trait_generosity: 'null'
+  trait_loyalty: 'null'
+  trait_competitiveness: 'null'
+  trait_adaptability: 'null'
+  val_career_success: Core value
+  val_health: Core value
+  val_achievement: Core value
+  pref_work_location: Strongly office
+  pref_team_vs_solo: Strongly team
+  pref_competition_vs_collab: Highly competitive
+  demo_employment_status: Full-time
+  demo_generation: Millennial
+  demo_citizenship_status: Citizen by birth
+  lifex_geographic_mobility: Moved internationally
+  lifex_travel_breadth: A few countries
+  lifex_career_path_shape: Linear climb
+  lifex_education_journey: Traditional track
+  lifex_financial_trajectory: Steady upward
+  lifex_immigration_generation: Native multi-generational
+  lifex_military_history: Never served
+  lifex_entrepreneurship_history: Never considered
+  lifex_cultural_exposure: Some exposure
+  lifex_formative_decade: 1990s
+  lifex_public_recognition: Industry-recognized
+  lifex_languages_lifetime: One
+  schwartz_value_achievement: High
+  sdt_need_competence: High
+  dev_professional_status: Non-developer technologist
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: wiki-4a649159d1bc
+  origin_source_row_index: 1381056

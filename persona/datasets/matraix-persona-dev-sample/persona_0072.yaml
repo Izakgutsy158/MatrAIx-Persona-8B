@@ -1,0 +1,86 @@
+persona_id: '0072'
+version: '1.0'
+source: stackoverflow
+display_name: Alex Rivera
+dimensions:
+  age_bracket: 25-34
+  domain: Software & AI
+  domain_characteristics: Practitioner
+  highest_education: Bachelor's
+  company_size: SMB (50-500)
+  role_function: Engineering
+  years_experience: 6-10
+  life_stage: Early career
+  tech_savviness: Comfortable
+  learning_style: Reading / writing
+  fam_machine_learning: Familiar
+  fam_computer_networking: Familiar
+  fam_databases: Familiar
+  fam_operating_systems: Familiar
+  fam_cloud_infrastructure: Familiar
+  fam_devops: Familiar
+  skill_time_management: Intermediate
+  tool_python: Regular
+  tool_jira: Regular
+  tool_microsoft_teams: Regular
+  tool_vs_code: Regular
+  tool_jetbrains_ides: Regular
+  tool_zoom: Regular
+  tool_trello: Regular
+  tool_chatgpt: Regular
+  tool_github_copilot: Regular
+  topic_technology: Interested
+  topic_productivity: Interested
+  topic_self_improvement: Interested
+  lang_english: Fluent
+  att_ai: Positive
+  att_new_technology: Enthusiast
+  att_open_source: Enthusiast
+  lstyle_device_ecosystem: Mixed
+  trait_curiosity: Strong
+  trait_love_of_learning: Strong
+  trait_adaptability: Strong
+  val_knowledge_truth: Important
+  val_personal_growth: Important
+  pref_speed_vs_accuracy: Accuracy-leaning
+  demo_employment_status: Full-time
+  lifex_career_path_shape: Just starting
+  prog_typescript: None
+  sdt_need_autonomy: High
+  sdt_need_competence: High
+  sdt_need_relatedness: High
+  need_for_cognition: High
+  ai_task_code_generation: Currently partially AI-assisted
+  ai_task_code_review: Plans partial AI use
+  ai_task_codebase_learning: Currently partially AI-assisted
+  ai_task_data_generation_analytics: Does not plan AI use
+  ai_task_debugging_fixing: Currently partially AI-assisted
+  ai_task_deployment_monitoring: Plans partial AI use
+  ai_task_documentation: Plans partial AI use
+  ai_task_learning_concepts: Currently partially AI-assisted
+  ai_task_project_planning: Plans partial AI use
+  ai_task_refactoring: Plans partial AI use
+  ai_task_search_answers: Currently partially AI-assisted
+  ai_task_testing: Plans partial AI use
+  codebase_onboarding_style: Uses search / grep heavily
+  coding_agent_tool_integration_preference: IDE-integrated
+  coding_agent_usage_frequency: Experimental only
+  coding_agent_workflow_impact: Small targeted improvement
+  coding_ai_complexity_comfort: Comfortable with bounded complex tasks
+  coding_ai_usage_frequency: Daily
+  coding_tool_alternative_sensitivity: Moderate concern
+  coding_tool_obsolescence_blocker: Moderate concern
+  coding_tool_open_source_importance: Moderate
+  coding_tool_security_privacy_blocker: Not a concern
+  dev_contribution_context: Mixed contexts
+  dev_ic_manager_orientation: Individual contributor
+  dev_professional_status: Professional developer
+  dev_role_archetype: Back-end developer
+  dev_toolchain_complexity: Moderate multi-tool workflow
+  future_developer_skill_belief: Debugging and diagnosis
+  stackoverflow_usage_pattern: Multiple times daily
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: stackoverflow-c95c526770aa
+  origin_source_row_index: 2151004

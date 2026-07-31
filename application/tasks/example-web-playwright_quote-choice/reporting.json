@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0",
+  "contextRules": [
+    {
+      "match": {
+        "contextType": "decision"
+      },
+      "distributions": [
+        {
+          "id": "decision.basis_by_segment",
+          "facetKey": "basis_primary",
+          "title": "Primary basis"
+        },
+        {
+          "id": "decision.outcome_by_segment",
+          "facetKey": "decision_outcome",
+          "title": "Decision outcome"
+        }
+      ],
+      "summaryAnalyses": [
+        {
+          "id": "decision.reason_by_values_priority",
+          "title": "What each values segment optimized for",
+          "targetFacetKey": "reason",
+          "groupByPersonaDimension": "values_priority",
+          "summaryKind": "llm_bucket_summary",
+          "instruction": "For each values segment, summarize what these personas prioritized when choosing and what tipped their decision, in 1-2 sentences, so the site owner sees how motivations differ across customer segments. Be faithful and concise; do not invent facts."
+        }
+      ]
+    },
+    {
+      "match": {
+        "contextType": "user_feedback"
+      },
+      "distributions": [
+        {
+          "id": "user_feedback.rating_by_segment",
+          "facetKey": "overall_experience_rating",
+          "title": "Overall experience rating"
+        }
+      ]
+    }
+  ]
+}

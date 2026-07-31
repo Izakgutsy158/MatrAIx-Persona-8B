@@ -1,0 +1,38 @@
+persona_id: '0042'
+version: '1.0'
+source: amazon
+display_name: Casey Brooks
+dimensions:
+  role_function: Teaching
+  trust_level: Verifying
+  safety_sensitivity: Benign
+  fam_political_science: Familiar
+  topic_travel: Interested
+  topic_music: Interested
+  att_automation: Skeptical
+  att_data_privacy: Positive
+  att_homeownership: Positive
+  att_authority: Skeptical
+  att_new_technology: Positive
+  att_brand_loyalty: Positive
+  att_online_reviews: Positive
+  att_surveillance: Positive
+  att_minimalism: Positive
+  att_privacy_vs_security: Positive
+  ind_technology: Some exposure
+  ind_education: Some exposure
+  bookg_literary_fiction: Like
+  lstyle_household_size: 5+ people
+  acad_statistics: Interested
+  acad_economics: Interested
+  acad_world_history: Interested
+  acad_civics: Interested
+  acad_literature: Interested
+  trait_hope_optimism: Moderate
+  habit_saving_receipts: Daily
+  coding_tool_alternative_sensitivity: Not a concern
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: amazon-65787f62ebe7
+  origin_source_row_index: 2041495

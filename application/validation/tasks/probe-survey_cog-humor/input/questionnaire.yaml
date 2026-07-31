@@ -1,0 +1,12 @@
+schemaVersion: "1.0"
+id: probe_cog_humor_v1
+title: Short survey
+description: Open-ended survey to probe whether the cog_humor persona attribute is expressed.
+questions:
+  - id: q_main
+    prompt: >-
+      How have things been going for you lately? Answer however you'd tell a
+      friend.
+    type: free_text
+    construct: probe
+    required: true

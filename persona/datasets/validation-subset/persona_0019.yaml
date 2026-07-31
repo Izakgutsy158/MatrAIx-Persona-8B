@@ -1,0 +1,77 @@
+persona_id: 0019
+version: '1.0'
+source: stackoverflow:stackoverflow_2023_253_408
+dimensions:
+  age_bracket: 18-24
+  region: Western Europe
+  domain: Software & AI
+  domain_characteristics: Student
+  highest_education: Bachelor's
+  seniority: Student / intern
+  role_function: Engineering
+  years_experience: 11-20
+  life_stage: Student
+  fam_machine_learning: Familiar
+  fam_deep_learning: Familiar
+  fam_data_science: Familiar
+  fam_databases: Proficient
+  fam_operating_systems: Proficient
+  fam_compilers: Familiar
+  fam_cloud_infrastructure: Familiar
+  fam_devops: Familiar
+  fam_computer_vision: Familiar
+  skill_coding: Master
+  skill_debugging: Master
+  skill_system_design: Advanced
+  skill_time_management: Intermediate
+  skill_research: Advanced
+  tool_docker: Regular
+  tool_kubernetes: Regular
+  tool_azure: Regular
+  tool_vs_code: Regular
+  tool_jetbrains_ides: Regular
+  tool_vim: Regular
+  tool_linux_cli: Regular
+  tool_zoom: Regular
+  tool_chatgpt: Regular
+  tool_github_copilot: Regular
+  att_ai: Skeptical
+  att_open_source: Positive
+  ind_technology: Veteran
+  lstyle_device_ecosystem: Mixed
+  cog_detail_orientation: High
+  trait_curiosity: Strong
+  trait_open_mindedness: Strong
+  pref_team_vs_solo: Solo-leaning
+  pref_big_group_vs_one_on_one: 1-on-1 leaning
+  demo_employment_status: Full-time
+  demo_generation: Gen Z
+  lifex_education_journey: Traditional track
+  code_comment_style: Self-documenting code preference
+  code_naming_verbosity: Highly verbose (long descriptive names)
+  code_structure_preference: Object-oriented design
+  ai_task_code_generation: Does not plan AI use
+  ai_task_code_review: Does not plan AI use
+  ai_task_codebase_learning: Does not plan AI use
+  ai_task_data_generation_analytics: Does not plan AI use
+  ai_task_debugging_fixing: Does not plan AI use
+  ai_task_deployment_monitoring: Does not plan AI use
+  ai_task_documentation: Does not plan AI use
+  ai_task_learning_concepts: Currently partially AI-assisted
+  ai_task_project_planning: Does not plan AI use
+  ai_task_refactoring: Does not plan AI use
+  ai_task_search_answers: Currently partially AI-assisted
+  ai_task_testing: Does not plan AI use
+  code_type_system_orientation: Strong static typing preference
+  codebase_onboarding_style: Reads architecture / docs first
+  coding_agent_failure_tolerance: Does not use agents
+  coding_agent_usage_frequency: No plans
+  coding_agent_workflow_impact: No clear change
+  coding_ai_usage_frequency: Tried but not active
+  debugging_strategy: Search / ask externally
+  dev_ic_manager_orientation: Individual contributor
+  dev_professional_status: Student developer
+  dev_role_archetype: Back-end developer
+  open_source_activity_level: Occasional contributor
+  stackoverflow_participation_style: Reads / searches only
+  stackoverflow_usage_pattern: Weekly reference

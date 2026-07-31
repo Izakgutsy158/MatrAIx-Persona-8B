@@ -1,0 +1,113 @@
+persona_id: 0087
+version: '1.0'
+source: stackoverflow
+display_name: Kai Lim
+dimensions:
+  age_bracket: 25-34
+  region: Southeast Asia
+  domain: Software & AI
+  highest_education: Bachelor's
+  seniority: Mid
+  role_function: Engineering
+  years_experience: 6-10
+  life_stage: Early career
+  tech_savviness: Digital native
+  fam_databases: None
+  fam_cloud_infrastructure: None
+  skill_coding: Advanced
+  skill_debugging: Advanced
+  skill_code_review: Advanced
+  skill_mentoring: Advanced
+  skill_problem_solving: Advanced
+  tool_github: Regular
+  tool_gitlab: Regular
+  tool_vs_code: Regular
+  tool_chatgpt: Regular
+  att_ai: Enthusiast
+  att_automation: Enthusiast
+  att_the_gig_economy: Positive
+  att_rapid_change: Enthusiast
+  att_new_technology: Enthusiast
+  ind_technology: Veteran
+  lstyle_work_schedule: Freelance
+  trait_curiosity: Strong
+  trait_love_of_learning: Strong
+  trait_adaptability: Strong
+  val_security_stability: Core value
+  val_achievement: Core value
+  val_community: Moderate
+  val_knowledge_truth: Important
+  val_independence: Minor
+  val_recognition: Important
+  val_personal_growth: Moderate
+  pref_speed_vs_accuracy: Speed first
+  pref_quality_vs_quantity: Quality first
+  pref_early_vs_late: Early adopter
+  pref_novelty_vs_familiarity: Novelty-leaning
+  demo_employment_status: Self-employed
+  demo_generation: Millennial
+  lifex_career_path_shape: Just starting
+  lifex_education_journey: Traditional track
+  lifex_entrepreneurship_history: Side hustle
+  code_dependencies_approach: Lean on libraries (minimal custom code)
+  prog_typescript: Proficient
+  schwartz_value_self_direction: High
+  schwartz_value_stimulation: High
+  schwartz_value_hedonism: Low
+  schwartz_value_achievement: High
+  schwartz_value_security: High
+  schwartz_value_conformity: Low
+  schwartz_value_tradition: Low
+  schwartz_value_benevolence: High
+  schwartz_value_universalism: Average
+  sdt_need_autonomy: High
+  sdt_need_competence: High
+  sdt_need_relatedness: Low
+  mft_care_harm: High
+  mft_fairness_cheating: Average
+  mft_loyalty_betrayal: Low
+  mft_authority_subversion: Low
+  mft_sanctity_degradation: Low
+  mft_liberty_oppression: High
+  need_for_cognition: High
+  ai_task_code_generation: Currently mostly AI-assisted
+  ai_task_code_review: Currently partially AI-assisted
+  ai_task_codebase_learning: Plans partial AI use
+  ai_task_data_generation_analytics: Does not plan AI use
+  ai_task_debugging_fixing: Currently mostly AI-assisted
+  ai_task_deployment_monitoring: Does not plan AI use
+  ai_task_documentation: Plans partial AI use
+  ai_task_learning_concepts: Plans partial AI use
+  ai_task_project_planning: Does not plan AI use
+  ai_task_search_answers: Currently mostly AI-assisted
+  ai_task_testing: Currently partially AI-assisted
+  codebase_onboarding_style: Uses search / grep heavily
+  coding_agent_usage_frequency: No plans
+  coding_ai_complexity_comfort: Comfortable delegating complex tasks
+  coding_ai_job_threat_perception: Serious threat concern
+  coding_ai_learning_source: AI-enabled coding tools
+  coding_ai_output_trust: Strongly trusts with light review
+  coding_ai_sentiment: Very favorable
+  coding_ai_usage_frequency: Daily
+  coding_tool_ai_capability_importance: High
+  coding_tool_alternative_sensitivity: Moderate concern
+  coding_tool_api_completeness_importance: High
+  coding_tool_ethics_blocker: Moderate concern
+  coding_tool_obsolescence_blocker: Minor concern
+  coding_tool_open_source_importance: Moderate
+  coding_tool_reliability_latency_importance: Critical
+  coding_tool_security_privacy_blocker: Moderate concern
+  debugging_strategy: Search / ask externally
+  dev_contribution_context: Independent / freelance work
+  dev_ic_manager_orientation: Founder / owner
+  dev_professional_status: Professional developer
+  dev_role_archetype: Front-end developer
+  dev_toolchain_complexity: Large integrated toolchain
+  open_source_activity_level: Regular contributor
+  stackoverflow_participation_style: Comments / discusses
+  stackoverflow_usage_pattern: Multiple times daily
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: stackoverflow-b32214b569e2
+  origin_source_row_index: 2207381

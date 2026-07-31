@@ -1,0 +1,162 @@
+persona_id: 0096
+version: '1.0'
+source: prism
+display_name: Avery Kim
+dimensions:
+  age_bracket: 25-34
+  region: Latin America
+  gender_identity: Woman
+  english_proficiency: Fluent (C1-C2)
+  multilingualism: Bilingual
+  highest_education: Bachelor's
+  seniority: Entry
+  years_experience: 0-2
+  life_stage: Early career
+  cultural_background: Latin
+  tech_savviness: Comfortable
+  political_lean: Left
+  religiosity: Secular
+  intent: Learn / explain
+  query_complexity: Simple factual
+  expertise_gap: Novice asking expert
+  tone_expected: Concise
+  trust_level: Verifying
+  safety_sensitivity: Benign
+  prior_context: Returning user
+  fam_machine_learning: Familiar
+  fam_deep_learning: Familiar
+  fam_political_science: Aware
+  fam_ethics: Familiar
+  fam_natural_language_processing: Familiar
+  fam_theology: Aware
+  skill_fact_checking: Advanced
+  tool_chatgpt: Regular
+  topic_politics: Interested
+  topic_technology: Interested
+  topic_personal_finance: Interested
+  topic_parenting: Interested
+  topic_philosophy: Interested
+  topic_religion: Averse
+  topic_activism: Interested
+  topic_languages: Interested
+  topic_self_improvement: Interested
+  lang_english: Fluent
+  att_ai: Positive
+  att_data_privacy: Skeptical
+  att_free_markets: Skeptical
+  att_government_regulation: Positive
+  att_higher_education: Positive
+  att_new_technology: Positive
+  att_privacy_vs_security: Skeptical
+  ind_technology: Some exposure
+  big5_liberalism: High
+  big5_trust: High
+  big5_morality: High
+  big5_altruism: High
+  big5_sympathy: High
+  cog_verbosity: Concise
+  cog_formality: Neutral
+  cog_directness: Direct
+  cog_humor: Serious
+  cog_detail_orientation: Moderate
+  cog_abstraction: Balanced
+  cog_optimism: Moderate
+  cog_curiosity: High
+  cog_skepticism: Moderate
+  cog_open_mindedness: High
+  cog_assertiveness: Moderate
+  cog_emotional_expressiveness: Moderate
+  cog_ambiguity_tolerance: Low
+  cog_perfectionism: Moderate
+  cog_learning_pace: Average
+  cog_question_asking: Sometimes
+  cog_confidence_calibration: Well-calibrated
+  cog_big_picture_vs_detail: Both
+  cog_risk_framing: Balanced
+  cog_empathy_expression: High
+  cog_precision_of_language: Precise
+  cog_use_of_jargon: Avoids jargon
+  cog_politeness: Polite
+  acad_economics: Interested
+  acad_sociology: Interested
+  acad_civics: Interested
+  acad_philosophy: Interested
+  acad_political_theory: Interested
+  trait_honesty: Strong
+  trait_kindness: Strong
+  trait_fairness: Moderate
+  trait_spirituality: Absent
+  trait_loyalty: Strong
+  val_family: Important
+  val_wealth: Moderate
+  val_tradition: Moderate
+  val_power_influence: Irrelevant
+  val_achievement: Important
+  val_community: Important
+  val_spirituality_faith: Irrelevant
+  val_knowledge_truth: Core value
+  val_social_status: Minor
+  val_justice_fairness: Core value
+  val_loyalty: Core value
+  val_helping_others: Important
+  val_integrity_honesty: Core value
+  val_equality: Core value
+  pref_detail_brief_vs_full: Every detail
+  demo_marital_status: Single
+  demo_children_count: Expecting
+  demo_employment_status: Part-time
+  demo_generation: Millennial
+  demo_religion_affiliation: None
+  demo_ethnicity_broad: Hispanic / Latino
+  demo_political_engagement: Occasional voter
+  demo_parental_status: Not a parent
+  demo_relationship_length: Not in one
+  lifex_geographic_mobility: Never left hometown
+  lifex_travel_breadth: Never left country
+  lifex_career_path_shape: Just starting
+  lifex_education_journey: Traditional track
+  lifex_financial_trajectory: Stable
+  lifex_entrepreneurship_history: Never considered
+  lifex_relationship_history: Limited
+  lifex_parenting_journey: No children
+  lifex_faith_journey: Always secular
+  lifex_formative_decade: 2010s
+  lifex_hometown_tie: Still there
+  bfi2_domain_agreeableness: High
+  bfi2_domain_conscientiousness: High
+  bfi2_domain_open_mindedness: High
+  bfi2_facet_compassion: High
+  bfi2_facet_respectfulness: High
+  bfi2_facet_trust: High
+  bfi2_facet_responsibility: High
+  schwartz_value_self_direction: High
+  schwartz_value_achievement: High
+  schwartz_value_power: Low
+  schwartz_value_benevolence: High
+  schwartz_value_universalism: High
+  sdt_need_autonomy: High
+  sdt_need_competence: High
+  mft_care_harm: High
+  mft_fairness_cheating: High
+  mft_loyalty_betrayal: High
+  mft_liberty_oppression: High
+  need_for_cognition: High
+  interpersonal_communion_warmth: High
+  ai_task_learning_concepts: Currently partially AI-assisted
+  ai_task_search_answers: Currently partially AI-assisted
+  coding_agent_security_expectation: Expects basic secret / privacy checks
+  coding_agent_usage_frequency: Monthly or infrequent
+  coding_ai_complexity_comfort: Only simple / boilerplate tasks
+  coding_ai_output_trust: Neutral / depends on task
+  coding_ai_sentiment: Neutral / indifferent
+  coding_ai_usage_frequency: Monthly or infrequent
+  coding_tool_ai_capability_importance: High
+  coding_tool_ethics_blocker: Moderate concern
+  coding_tool_reliability_latency_importance: High
+  coding_tool_security_privacy_blocker: Major concern
+  human_help_boundary_for_ai_coding: When trust is low
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: prism-8357d36534d8
+  origin_source_row_index: 2211548

@@ -1,0 +1,134 @@
+persona_id: 0083
+version: '1.0'
+source: stackoverflow
+display_name: Jordan Lee
+dimensions:
+  age_bracket: 25-34
+  region: Latin America
+  domain: Software & AI
+  highest_education: Bachelor's
+  seniority: Manager
+  company_size: Solo / freelance
+  role_function: Engineering
+  years_experience: 6-10
+  life_stage: Early career
+  tech_savviness: Digital native
+  decision_style: Analytical
+  learning_style: Reading / writing
+  fam_databases: Proficient
+  fam_operating_systems: Proficient
+  fam_cloud_infrastructure: Proficient
+  fam_devops: Proficient
+  fam_natural_language_processing: Familiar
+  skill_coding: Master
+  skill_debugging: Master
+  skill_code_review: Advanced
+  skill_system_design: Advanced
+  skill_leadership: Advanced
+  skill_people_management: Advanced
+  skill_mentoring: Advanced
+  skill_problem_solving: Master
+  tool_git: Regular
+  tool_github: Regular
+  tool_gitlab: Regular
+  tool_docker: Regular
+  tool_aws: Regular
+  tool_vs_code: Regular
+  tool_vim: Regular
+  tool_asana: Regular
+  tool_chatgpt: Regular
+  tool_claude: Regular
+  att_ai: Positive
+  att_rapid_change: Positive
+  ind_technology: Veteran
+  lstyle_work_schedule: Flexible hours
+  cog_skepticism: High
+  cog_learning_pace: Fast
+  cog_big_picture_vs_detail: Detail
+  trait_curiosity: Strong
+  trait_love_of_learning: Strong
+  trait_leadership: Strong
+  trait_hope_optimism: Strong
+  trait_adaptability: Strong
+  val_personal_freedom: Core value
+  val_security_stability: Core value
+  val_community: Core value
+  val_independence: Minor
+  val_recognition: Important
+  val_personal_growth: Moderate
+  pref_team_vs_solo: Team-leaning
+  pref_speed_vs_accuracy: Accuracy-leaning
+  pref_quality_vs_quantity: Quality first
+  pref_early_vs_late: Early adopter
+  pref_novelty_vs_familiarity: Novelty-leaning
+  demo_employment_status: Part-time
+  demo_generation: Millennial
+  lifex_career_path_shape: Linear climb
+  lifex_education_journey: Traditional track
+  code_comment_style: Docstring/documentation blocks only
+  schwartz_value_self_direction: High
+  schwartz_value_stimulation: High
+  schwartz_value_hedonism: Average
+  schwartz_value_achievement: High
+  schwartz_value_power: High
+  schwartz_value_security: High
+  schwartz_value_conformity: Average
+  schwartz_value_tradition: Average
+  schwartz_value_benevolence: High
+  schwartz_value_universalism: Average
+  sdt_need_autonomy: High
+  sdt_need_competence: High
+  sdt_need_relatedness: High
+  mft_care_harm: High
+  mft_fairness_cheating: Average
+  mft_loyalty_betrayal: High
+  mft_authority_subversion: High
+  mft_sanctity_degradation: Average
+  mft_liberty_oppression: High
+  need_for_cognition: High
+  dospert_ethical_risk_tolerance: Low
+  ai_task_code_generation: Currently partially AI-assisted
+  ai_task_code_review: Currently partially AI-assisted
+  ai_task_codebase_learning: Currently partially AI-assisted
+  ai_task_data_generation_analytics: Currently partially AI-assisted
+  ai_task_debugging_fixing: Currently partially AI-assisted
+  ai_task_deployment_monitoring: Does not plan AI use
+  ai_task_documentation: Currently mostly AI-assisted
+  ai_task_learning_concepts: Currently mostly AI-assisted
+  ai_task_project_planning: Does not plan AI use
+  ai_task_search_answers: Currently partially AI-assisted
+  ai_task_testing: Currently mostly AI-assisted
+  codebase_onboarding_style: Uses search / grep heavily
+  coding_agent_adoption_barrier: Integration with existing tools
+  coding_agent_control_expectation: Requires explicit approval before edits
+  coding_agent_security_expectation: Requires strict security review
+  coding_agent_usage_frequency: Not yet but interested
+  coding_agent_workflow_impact: Major productivity increase
+  coding_ai_complexity_comfort: Comfortable with bounded complex tasks
+  coding_ai_job_threat_perception: No perceived threat
+  coding_ai_learning_source: AI-enabled coding tools
+  coding_ai_output_trust: Trusts after verification
+  coding_ai_sentiment: Very favorable
+  coding_ai_usage_frequency: Daily
+  coding_tool_ai_capability_importance: Moderate
+  coding_tool_alternative_sensitivity: Moderate concern
+  coding_tool_api_completeness_importance: Critical
+  coding_tool_ethics_blocker: Minor concern
+  coding_tool_obsolescence_blocker: Moderate concern
+  coding_tool_open_source_importance: Critical
+  coding_tool_reliability_latency_importance: Moderate
+  coding_tool_security_privacy_blocker: Major concern
+  dev_contribution_context: Employee work
+  dev_ic_manager_orientation: People manager
+  dev_professional_status: Professional developer
+  dev_role_archetype: Full-stack developer
+  dev_toolchain_complexity: Moderate multi-tool workflow
+  future_developer_skill_belief: Systems understanding
+  human_help_boundary_for_ai_coding: When trust is low
+  stackoverflow_participation_style: Does not participate
+  stackoverflow_usage_pattern: Weekly reference
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: stackoverflow-114069bffceb
+  origin_source_row_index: 2192148

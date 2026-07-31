@@ -1,0 +1,57 @@
+persona_id: '0065'
+version: '1.0'
+source: stackoverflow
+display_name: Anika Das
+dimensions:
+  age_bracket: 18-24
+  region: South Asia
+  domain: Software & AI
+  domain_characteristics: Hobbyist
+  highest_education: Bachelor's
+  seniority: Entry
+  role_function: Engineering
+  years_experience: 0-2
+  life_stage: Early career
+  tech_savviness: Comfortable
+  trust_level: Verifying
+  fam_databases: Familiar
+  fam_operating_systems: Familiar
+  fam_cloud_infrastructure: Familiar
+  fam_devops: Familiar
+  fam_game_development: Familiar
+  fam_supply_chain: Aware
+  tool_vim: Regular
+  topic_gaming: Interested
+  topic_technology: Interested
+  att_ai: Positive
+  att_online_reviews: Positive
+  att_open_source: Enthusiast
+  ind_manufacturing: Experienced
+  lstyle_commute_mode: Remote
+  peeve_being_interrupted: Major peeve
+  trait_love_of_learning: Strong
+  trait_open_mindedness: Strong
+  trait_adaptability: Strong
+  pref_team_vs_solo: Team-leaning
+  demo_employment_status: Full-time
+  demo_generation: Gen Z
+  lifex_career_path_shape: Just starting
+  lifex_education_journey: Traditional track
+  prog_javascript: Familiar
+  codebase_onboarding_style: Reads architecture / docs first
+  coding_agent_usage_frequency: Not yet but interested
+  coding_ai_output_trust: Distrusts until proven
+  coding_ai_sentiment: Somewhat favorable
+  coding_ai_usage_frequency: Tried but not active
+  debugging_strategy: Search / ask externally
+  dev_contribution_context: Employee work
+  dev_ic_manager_orientation: Individual contributor
+  dev_professional_status: Professional developer
+  dev_role_archetype: Back-end developer
+  dev_toolchain_complexity: Moderate multi-tool workflow
+  stackoverflow_usage_pattern: Weekly reference
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: stackoverflow-7ba73c247731
+  origin_source_row_index: 2134674

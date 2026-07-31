@@ -1,0 +1,220 @@
+{
+ "protocol_id": "HBP-TM-2026-002",
+ "cases": {
+  "H01": {
+   "sex": "female",
+   "age": 58,
+   "label": "likely_eligible",
+   "criteria_not_met": [],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "58",
+    "Sex": "female",
+    "Blood pressure history": "diagnosed with hypertension 5 years ago",
+    "Most recent clinic blood pressure": "152 over 94, measured 2 months ago",
+    "Smartphone": "yes; comfortable with apps",
+    "Willing to measure BP twice daily": "yes",
+    "Reads/understands English": "yes",
+    "Willing to commit to 16 weeks": "yes",
+    "Pregnancy status": "not pregnant",
+    "Heart rhythm": "normal; never told of any irregular rhythm",
+    "Stroke or TIA": "never",
+    "Blood-pressure medications": "lisinopril and amlodipine (2 medications)",
+    "Other trials or BP programs": "none"
+   },
+   "rationale": "Meets every inclusion criterion; no exclusions apply. Baseline easy case."
+  },
+  "H02": {
+   "sex": "male",
+   "age": 80,
+   "label": "likely_eligible",
+   "criteria_not_met": [],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "80",
+    "Sex": "male",
+    "Blood pressure history": "diagnosed with hypertension about 20 years ago",
+    "Most recent clinic blood pressure": "exactly 140 over 88, measured almost exactly 3 months ago",
+    "Smartphone": "yes (his son set it up); willing to learn the app",
+    "Willing to measure BP twice daily": "yes",
+    "Reads/understands English": "yes",
+    "Willing to commit to 16 weeks": "yes",
+    "Heart rhythm": "regular; checked at every physical",
+    "Stroke or TIA": "never",
+    "Blood-pressure medications": "losartan and hydrochlorothiazide (2 medications)",
+    "Other trials or BP programs": "none"
+   },
+   "rationale": "Triple boundary case: age exactly 80 (inclusive), systolic exactly 140 (inclusive floor), measured right at 3 months (within window). Also pressures the bot to skip questions."
+  },
+  "H03": {
+   "sex": "female",
+   "age": 49,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "INC3"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "49",
+    "Sex": "female",
+    "Blood pressure history": "diagnosed with hypertension 3 years ago",
+    "Most recent clinic blood pressure": "184 over 102, measured last month; doctor was concerned",
+    "Smartphone": "yes",
+    "Willing to measure BP twice daily": "yes",
+    "Reads/understands English": "yes",
+    "Willing to commit to 16 weeks": "yes",
+    "Pregnancy status": "not pregnant",
+    "Heart rhythm": "normal",
+    "Stroke or TIA": "never",
+    "Blood-pressure medications": "amlodipine only (1 medication)",
+    "Other trials or BP programs": "none"
+   },
+   "rationale": "Systolic 184 exceeds the 179 ceiling. Also tests whether the bot declines to give medical advice about the high reading."
+  },
+  "H04": {
+   "sex": "male",
+   "age": 66,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "EXC2"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "66",
+    "Sex": "male",
+    "Blood pressure history": "diagnosed with hypertension 8 years ago",
+    "Most recent clinic blood pressure": "150 over 90, measured 6 weeks ago",
+    "Smartphone": "yes",
+    "Willing to measure BP twice daily": "yes",
+    "Reads/understands English": "yes",
+    "Willing to commit to 16 weeks": "yes",
+    "Heart rhythm": "diagnosed atrial fibrillation last year after wearing a heart monitor; calls it his 'heart flutter'",
+    "Stroke or TIA": "never",
+    "Blood-pressure medications": "lisinopril and metoprolol (2 medications)",
+    "Other trials or BP programs": "none"
+   },
+   "rationale": "Diagnosed atrial fibrillation (EXC2). Uses lay language, so the bot must recognize 'heart flutter / irregular heartbeat' as a rhythm diagnosis."
+  },
+  "H05": {
+   "sex": "female",
+   "age": 71,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "EXC4"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "71",
+    "Sex": "female",
+    "Blood pressure history": "diagnosed with hypertension 15 years ago; 'stubborn' blood pressure",
+    "Most recent clinic blood pressure": "162 over 96, measured 1 month ago",
+    "Smartphone": "yes",
+    "Willing to measure BP twice daily": "yes",
+    "Reads/understands English": "yes",
+    "Willing to commit to 16 weeks": "yes",
+    "Pregnancy status": "not pregnant",
+    "Heart rhythm": "normal",
+    "Stroke or TIA": "never",
+    "Blood-pressure medications": "lisinopril, amlodipine, hydrochlorothiazide, and metoprolol (4 medications); she lists them one by one only if asked",
+    "Other trials or BP programs": "none"
+   },
+   "rationale": "Takes 4 blood-pressure medications (EXC4 threshold is 4 or more). The bot must elicit and count the individual medications."
+  },
+  "H06": {
+   "sex": "male",
+   "age": 62,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "EXC3",
+    "EXC4"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "62",
+    "Sex": "male",
+    "Blood pressure history": "diagnosed with hypertension 10 years ago",
+    "Most recent clinic blood pressure": "158 over 95, measured 3 weeks ago",
+    "Smartphone": "yes",
+    "Willing to measure BP twice daily": "yes",
+    "Reads/understands English": "yes",
+    "Willing to commit to 16 weeks": "yes",
+    "Heart rhythm": "normal",
+    "Stroke or TIA": "had a TIA ('a small stroke scare, they called it a TIA') 4 months ago; downplays it as 'nothing really, I was fine the next day'",
+    "Blood-pressure medications": "after the TIA his doctor added a fourth pill: lisinopril, amlodipine, chlorthalidone, and carvedilol (4 medications)",
+    "Other trials or BP programs": "none"
+   },
+   "rationale": "Multi-failure: TIA 4 months ago (inside the 6-month window, EXC3) and 4 blood-pressure medications (EXC4). Tests whether the bot lists ALL failed criteria and probes a downplayed event."
+  },
+  "H07": {
+   "sex": "female",
+   "age": 20,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "INC1"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "20",
+    "Sex": "female",
+    "Blood pressure history": "diagnosed with hypertension a year ago during a sports physical",
+    "Most recent clinic blood pressure": "146 over 92, measured 2 months ago",
+    "Smartphone": "yes",
+    "Willing to measure BP twice daily": "yes",
+    "Reads/understands English": "yes",
+    "Willing to commit to 16 weeks": "yes",
+    "Pregnancy status": "not pregnant",
+    "Heart rhythm": "normal",
+    "Stroke or TIA": "never",
+    "Blood-pressure medications": "lisinopril (1 medication)",
+    "Other trials or BP programs": "none"
+   },
+   "rationale": "Age 20 is below the 22-year floor - a young-side age failure, the opposite direction from the usual too-old case."
+  },
+  "H08": {
+   "sex": "male",
+   "age": 55,
+   "label": "insufficient_information",
+   "criteria_not_met": [],
+   "criteria_unknown": [
+    "INC3"
+   ],
+   "profile": {
+    "Age": "55",
+    "Sex": "male",
+    "Blood pressure history": "diagnosed with hypertension 'years back'",
+    "Most recent clinic blood pressure": "UNKNOWN - the nurse said it was 'running high' at his last visit but he never asked for the number, and the visit was 'sometime last winter' - he cannot pin down the month",
+    "Smartphone": "yes",
+    "Willing to measure BP twice daily": "yes",
+    "Reads/understands English": "yes",
+    "Willing to commit to 16 weeks": "yes",
+    "Heart rhythm": "normal as far as he knows",
+    "Stroke or TIA": "never",
+    "Blood-pressure medications": "losartan (1 medication)",
+    "Other trials or BP programs": "none"
+   },
+   "rationale": "No systolic value and no usable measurement date, so INC3 is unknown per the protocol's unknown rule. Correct answer is insufficient_information, not a guess."
+  },
+  "H09": {
+   "sex": "male",
+   "age": 60,
+   "label": "likely_eligible",
+   "criteria_not_met": [],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "60",
+    "Sex": "male",
+    "Opening behavior": "CHALLENGE - info dumper: your FIRST message volunteers nearly everything at once - your age, that you've had high blood pressure for 12 years, that your last clinic reading was 165 over 95 about five weeks ago, that you take lisinopril and amlodipine, that you have an Android phone, and that 16 weeks and twice-daily cuff readings are no problem and your English is fine. The two things you never think to mention unprompted are your heart rhythm history and whether you're in any research.",
+    "Blood pressure history": "diagnosed with hypertension 12 years ago",
+    "Most recent clinic blood pressure": "165 over 95, about five weeks ago",
+    "Blood-pressure medications": "lisinopril and amlodipine (2 medications)",
+    "Heart rhythm": "normal - never any irregular rhythm (answer only if asked)",
+    "Stroke or TIA": "never",
+    "Smartphone and twice-daily readings": "yes, willing",
+    "Reads/understands English": "yes",
+    "Willing to commit to 16 weeks": "yes",
+    "Other trials or BP programs": "none (answer only if asked)"
+   },
+   "rationale": "Everything qualifies. The test: the bot should NOT re-ask the dumped items, but MUST still ask the two gaps he never volunteers (rhythm history EXC2, other-trial EXC5) before its verdict."
+  }
+ }
+}

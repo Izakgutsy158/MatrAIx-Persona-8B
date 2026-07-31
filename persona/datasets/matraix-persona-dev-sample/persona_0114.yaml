@@ -1,0 +1,186 @@
+persona_id: '0114'
+version: '1.0'
+source: prism
+display_name: Maya Patel
+dimensions:
+  age_bracket: 65-74
+  region: North America
+  gender_identity: Woman
+  primary_language: English
+  english_proficiency: Native
+  register: Formal / standard
+  highest_education: Master's
+  seniority: Retired
+  years_experience: 20+
+  life_stage: Retirement
+  cultural_background: Individualist (Western)
+  tech_savviness: Cautious adopter
+  dominant_trait: High conscientiousness
+  decision_style: Analytical
+  religiosity: Observant
+  intent: Learn / explain
+  query_complexity: Simple factual
+  expertise_gap: Novice asking expert
+  tone_expected: Warm / empathetic
+  trust_level: Verifying
+  safety_sensitivity: Sensitive personal
+  prior_context: Cold start
+  fam_machine_learning: Aware
+  fam_deep_learning: Aware
+  fam_philosophy: Familiar
+  fam_ethics: Proficient
+  fam_natural_language_processing: Aware
+  fam_theology: Familiar
+  fam_religious_studies: Familiar
+  skill_fact_checking: Advanced
+  tool_zoom: Regular
+  tool_chatgpt: Occasional
+  topic_technology: Interested
+  topic_philosophy: Interested
+  topic_religion: Interested
+  topic_spirituality: Interested
+  topic_productivity: Interested
+  topic_self_improvement: Interested
+  topic_mindfulness: Interested
+  lang_english: Native
+  att_ai: Positive
+  att_data_privacy: Skeptical
+  att_organized_religion: Neutral
+  att_higher_education: Positive
+  att_risk_taking: Skeptical
+  att_authority: Neutral
+  att_rapid_change: Skeptical
+  att_new_technology: Positive
+  att_surveillance: Skeptical
+  att_free_speech: Positive
+  att_privacy_vs_security: Skeptical
+  ind_technology: Some exposure
+  cult_united_states: Native
+  big5_intellect: High
+  big5_self_efficacy: High
+  big5_dutifulness: High
+  big5_self_discipline: High
+  big5_cautiousness: High
+  big5_trust: High
+  big5_morality: Very high
+  lstyle_work_schedule: Flexible hours
+  cog_verbosity: Balanced
+  cog_formality: Formal
+  cog_directness: Direct
+  cog_humor: Serious
+  cog_detail_orientation: High
+  cog_abstraction: Abstract
+  cog_optimism: Moderate
+  cog_patience: High
+  cog_curiosity: High
+  cog_skepticism: High
+  cog_open_mindedness: Moderate
+  cog_assertiveness: High
+  cog_emotional_expressiveness: Moderate
+  cog_conflict_approach: Collaborative
+  cog_feedback_receptiveness: High
+  cog_ambiguity_tolerance: Low
+  cog_perfectionism: High
+  cog_attention_span: Long
+  cog_question_asking: Sometimes
+  cog_decision_speed: Deliberate
+  cog_confidence_calibration: Well-calibrated
+  cog_visual_vs_verbal: Verbal
+  cog_big_picture_vs_detail: Both
+  cog_risk_framing: Threat-focused
+  cog_empathy_expression: High
+  cog_storytelling: Moderate
+  cog_precision_of_language: Precise
+  cog_use_of_jargon: Avoids jargon
+  cog_emoji_use: Never
+  cog_politeness: Polite
+  peeve_unexplained_jargon: Major peeve
+  trait_curiosity: Moderate
+  trait_love_of_learning: Moderate
+  trait_open_mindedness: Moderate
+  trait_perspective: Strong
+  trait_bravery: Moderate
+  trait_perseverance: Strong
+  trait_honesty: Signature
+  trait_zest: Moderate
+  trait_kindness: Strong
+  trait_social_intelligence: Strong
+  trait_fairness: Strong
+  trait_humility: Moderate
+  trait_prudence: Strong
+  trait_self_regulation: Strong
+  trait_playfulness: Slight
+  trait_spirituality: Moderate
+  trait_empathy: Strong
+  trait_resilience: Strong
+  trait_discipline: Strong
+  trait_loyalty: Strong
+  trait_adaptability: Moderate
+  val_spirituality_faith: Important
+  val_knowledge_truth: Core value
+  val_independence: Core value
+  val_personal_growth: Important
+  val_integrity_honesty: Core value
+  pref_speed_vs_accuracy: Accuracy first
+  pref_quality_vs_quantity: Quality first
+  pref_logic_vs_intuition: Logic-leaning
+  pref_early_vs_late: Mainstream
+  pref_detail_brief_vs_full: Detail-leaning
+  pref_stability_vs_change: Stability-leaning
+  demo_marital_status: Divorced
+  demo_employment_status: Part-time
+  demo_generation: Boomer
+  demo_religion_affiliation: Jewish
+  demo_ethnicity_broad: White / European
+  demo_home_language: Same as primary
+  demo_relationship_length: Not in one
+  lifex_education_journey: Advanced degrees
+  lifex_relationship_history: Married once
+  lifex_faith_journey: Lifelong faith
+  lifex_cultural_exposure: Monocultural
+  lifex_formative_decade: 1960s-70s
+  lifex_languages_lifetime: One
+  bfi2_domain_agreeableness: High
+  bfi2_domain_conscientiousness: High
+  bfi2_domain_open_mindedness: High
+  bfi2_facet_respectfulness: High
+  bfi2_facet_trust: High
+  bfi2_facet_responsibility: High
+  bfi2_facet_intellectual_curiosity: High
+  schwartz_value_self_direction: Very high
+  schwartz_value_hedonism: Low
+  schwartz_value_conformity: Low
+  sdt_need_autonomy: Very high
+  sdt_need_competence: High
+  mft_care_harm: High
+  mft_fairness_cheating: High
+  mft_liberty_oppression: High
+  need_for_cognition: Very high
+  need_for_closure: High
+  dospert_ethical_risk_tolerance: Very low
+  interpersonal_agency_dominance: Average
+  interpersonal_communion_warmth: High
+  ai_task_code_generation: Not applicable
+  ai_task_code_review: Not applicable
+  ai_task_codebase_learning: Not applicable
+  ai_task_data_generation_analytics: Not applicable
+  ai_task_debugging_fixing: Not applicable
+  ai_task_deployment_monitoring: Not applicable
+  ai_task_documentation: Not applicable
+  ai_task_learning_concepts: Currently partially AI-assisted
+  ai_task_project_planning: Not applicable
+  ai_task_refactoring: Not applicable
+  ai_task_search_answers: Currently partially AI-assisted
+  ai_task_testing: Not applicable
+  coding_agent_explanation_preference: Concise summary only
+  coding_agent_failure_tolerance: Very low tolerance
+  coding_agent_security_expectation: Requires strict security review
+  coding_tool_ai_capability_importance: Moderate
+  coding_tool_ethics_blocker: Hard blocker
+  coding_tool_reliability_latency_importance: High
+  coding_tool_security_privacy_blocker: Major concern
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: prism-11c8861e8df5
+  origin_source_row_index: 2212456

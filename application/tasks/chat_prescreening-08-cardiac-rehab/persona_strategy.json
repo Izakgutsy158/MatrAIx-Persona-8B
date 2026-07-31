@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "1.0",
+  "sources": [],
+  "defaultMode": "stratified",
+  "dimensionFilters": {
+    "age_bracket": [
+      "25-34",
+      "35-44",
+      "45-54",
+      "55-64",
+      "65-74",
+      "75-84"
+    ],
+    "tech_savviness": [
+      "Digital native",
+      "Comfortable",
+      "Cautious adopter",
+      "Reluctant",
+      "Avoidant"
+    ],
+    "values_priority": [
+      "Achievement",
+      "Security",
+      "Autonomy",
+      "Community",
+      "Novelty",
+      "Tradition"
+    ]
+  },
+  "stratifyFields": [
+    "tech_savviness"
+  ],
+  "sampleSize": 6
+}

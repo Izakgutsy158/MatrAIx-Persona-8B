@@ -1,0 +1,85 @@
+persona_id: 0068
+version: '1.0'
+source: stackoverflow
+display_name: Clara Müller
+dimensions:
+  age_bracket: 25-34
+  region: Western Europe
+  domain: Software & AI
+  domain_characteristics: Practitioner
+  highest_education: Master's
+  company_size: SMB (50-500)
+  role_function: Engineering
+  years_experience: 11-20
+  tech_savviness: Comfortable
+  fam_databases: Familiar
+  fam_operating_systems: Familiar
+  fam_cloud_infrastructure: Familiar
+  fam_devops: Familiar
+  skill_coding: Master
+  skill_system_design: Master
+  skill_time_management: Master
+  skill_research: Master
+  skill_problem_solving: Master
+  tool_notion: Regular
+  tool_jira: Regular
+  tool_slack: Regular
+  tool_docker: Regular
+  tool_aws: Regular
+  tool_vs_code: Regular
+  tool_vim: Regular
+  tool_zoom: Regular
+  tool_chatgpt: Regular
+  tool_github_copilot: Regular
+  topic_entrepreneurship: Interested
+  topic_productivity: Interested
+  att_ai: Positive
+  att_rapid_change: Positive
+  att_new_technology: Enthusiast
+  att_open_source: Enthusiast
+  ind_technology: Veteran
+  lstyle_reading_freq: Daily
+  lstyle_device_ecosystem: Apple
+  cog_reading_vs_watching: Prefers reading
+  trait_love_of_learning: Strong
+  trait_teamwork: Strong
+  trait_adaptability: Strong
+  val_career_success: Important
+  val_knowledge_truth: Important
+  val_independence: Important
+  pref_team_vs_solo: Team-leaning
+  pref_early_vs_late: Early adopter
+  demo_generation: Millennial
+  lifex_career_path_shape: Entrepreneurial
+  lifex_education_journey: Advanced degrees
+  code_comment_style: Self-documenting code preference
+  prog_javascript: Proficient
+  prog_typescript: Proficient
+  bfi2_facet_organization: High
+  sdt_need_competence: High
+  sdt_need_relatedness: High
+  need_for_cognition: High
+  need_for_closure: Low
+  interpersonal_communion_warmth: High
+  ai_task_code_generation: Currently partially AI-assisted
+  ai_task_code_review: Plans partial AI use
+  ai_task_debugging_fixing: Plans partial AI use
+  ai_task_documentation: Currently partially AI-assisted
+  ai_task_testing: Plans partial AI use
+  code_modularity_preference: Highly modular small components
+  code_type_system_orientation: Strong static typing preference
+  coding_ai_output_trust: Neutral / depends on task
+  coding_ai_sentiment: Somewhat favorable
+  coding_ai_usage_frequency: Daily
+  debugging_strategy: Search / ask externally
+  dev_contribution_context: Mixed contexts
+  dev_ic_manager_orientation: Individual contributor
+  dev_professional_status: Professional developer
+  dev_role_archetype: Full-stack developer
+  dev_toolchain_complexity: Moderate multi-tool workflow
+  stackoverflow_usage_pattern: Multiple times daily
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: stackoverflow-7f3b2d20cf44
+  origin_source_row_index: 2139743

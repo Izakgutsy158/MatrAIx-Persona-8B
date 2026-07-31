@@ -1,0 +1,346 @@
+persona_id: 0008
+version: '1.0'
+source: wiki
+display_name: Jordan Lee
+dimensions:
+  age_bracket: 65+
+  region: North America
+  gender_identity: Man
+  urbanicity: Small town
+  socioeconomic_band: Upper-middle
+  primary_language: English
+  english_proficiency: Native
+  multilingualism: Monolingual
+  register: Formal / standard
+  domain: Public Sector
+  subject_specialty: Urban planning
+  domain_characteristics: Practitioner
+  highest_education: Bachelor's
+  academic_field: Law
+  institution_tier: Mid-tier university
+  seniority: Senior
+  company_size: Public sector
+  role_function: Executive
+  years_experience: 20+
+  life_stage: Retirement
+  major_life_events: None notable
+  cultural_background: Individualist (Western)
+  tech_savviness: Cautious adopter
+  dominant_trait: High conscientiousness
+  values_priority: Achievement
+  political_lean: Center-right
+  expertise_gap: Teaching the model
+  fam_machine_learning: None
+  fam_deep_learning: None
+  fam_statistics: None
+  fam_data_science: None
+  fam_cardiology: None
+  fam_neurology: None
+  fam_oncology: None
+  fam_pediatrics: None
+  fam_psychiatry: None
+  fam_radiology: None
+  fam_surgery: None
+  fam_immunology: None
+  fam_constitutional_law: Familiar
+  fam_contract_law: Familiar
+  fam_criminal_law: Familiar
+  fam_tax_law: Familiar
+  fam_intellectual_property: Familiar
+  fam_corporate_finance: None
+  fam_quantitative_trading: None
+  fam_accounting: None
+  fam_auditing: None
+  fam_macroeconomics: None
+  fam_microeconomics: None
+  fam_behavioral_economics: None
+  fam_curriculum_design: None
+  fam_pedagogy: None
+  fam_special_education: None
+  fam_structural_engineering: None
+  fam_mechanical_engineering: None
+  fam_electrical_engineering: None
+  fam_civil_engineering: None
+  fam_chemical_engineering: None
+  fam_aerospace_engineering: None
+  fam_robotics: None
+  fam_control_systems: None
+  fam_molecular_biology: None
+  fam_genetics: None
+  fam_biochemistry: None
+  fam_organic_chemistry: None
+  fam_physical_chemistry: None
+  fam_particle_physics: None
+  fam_astrophysics: None
+  fam_astronomy: None
+  fam_geology: None
+  fam_oceanography: None
+  fam_climate_science: None
+  fam_ecology: None
+  fam_political_science: Expert
+  fam_religious_studies: None
+  skill_writing: Advanced
+  skill_editing: Intermediate
+  skill_public_speaking: Master
+  skill_negotiation: Master
+  skill_project_management: Advanced
+  skill_leadership: Master
+  skill_people_management: Advanced
+  skill_conflict_resolution: Master
+  skill_time_management: Advanced
+  skill_prioritization: Advanced
+  skill_research: Advanced
+  skill_critical_thinking: Master
+  skill_problem_solving: Master
+  skill_logical_reasoning: Master
+  skill_budgeting: Advanced
+  skill_technical_writing: Advanced
+  topic_politics: Passionate
+  topic_spirituality: Neutral
+  lang_english: Native
+  lang_mandarin: None
+  lang_cantonese: None
+  lang_spanish: None
+  lang_hindi: None
+  lang_arabic: None
+  lang_french: None
+  lang_portuguese: None
+  lang_bengali: None
+  lang_russian: None
+  lang_japanese: None
+  lang_german: None
+  lang_korean: None
+  lang_italian: None
+  lang_turkish: None
+  lang_vietnamese: None
+  lang_thai: None
+  lang_indonesian: None
+  lang_malay: None
+  lang_swahili: None
+  lang_dutch: None
+  lang_polish: None
+  lang_ukrainian: None
+  lang_persian: None
+  lang_hebrew: None
+  lang_greek: None
+  lang_czech: None
+  lang_hungarian: None
+  lang_romanian: None
+  lang_swedish: None
+  lang_norwegian: None
+  lang_danish: None
+  lang_finnish: None
+  lang_tagalog: None
+  lang_urdu: None
+  lang_tamil: None
+  lang_telugu: None
+  lang_marathi: None
+  lang_punjabi: None
+  lang_gujarati: None
+  lang_hausa: None
+  lang_yoruba: None
+  lang_igbo: None
+  lang_amharic: None
+  lang_zulu: None
+  lang_afrikaans: None
+  lang_serbian: None
+  att_free_markets: Positive
+  att_government_regulation: Positive
+  att_traditional_gender_roles: Neutral
+  att_labor_unions: Neutral
+  att_higher_education: Positive
+  att_risk_taking: Neutral
+  att_authority: Positive
+  att_rapid_change: Neutral
+  ind_technology: None
+  ind_healthcare: None
+  ind_finance: None
+  ind_banking: None
+  ind_insurance: None
+  ind_retail: None
+  ind_e_commerce: None
+  ind_manufacturing: None
+  ind_automotive: None
+  ind_aerospace: None
+  ind_energy: None
+  ind_oil_gas: None
+  ind_utilities: None
+  ind_construction: None
+  ind_real_estate: None
+  ind_hospitality: None
+  ind_travel_tourism: None
+  ind_restaurants: None
+  ind_agriculture: None
+  ind_food_beverage: None
+  ind_pharmaceuticals: None
+  ind_biotech: None
+  ind_telecommunications: None
+  ind_media: None
+  ind_entertainment: None
+  ind_gaming: None
+  ind_publishing: None
+  ind_advertising: None
+  ind_education: None
+  ind_government: Veteran
+  ind_defense: None
+  ind_nonprofit: None
+  ind_logistics: None
+  ind_transportation: None
+  ind_shipping: None
+  ind_mining: None
+  ind_chemicals: None
+  ind_textiles: None
+  ind_apparel: None
+  ind_consumer_electronics: None
+  ind_semiconductors: None
+  ind_legal_services: Veteran
+  ind_consulting: None
+  ind_accounting: None
+  ind_marketing_agencies: None
+  ind_fitness_wellness: None
+  ind_beauty_cosmetics: None
+  ind_sports: None
+  ind_music: None
+  ind_fine_art: None
+  cult_united_states: Native
+  acad_algebra: Neutral
+  acad_geometry: Neutral
+  acad_calculus: Neutral
+  acad_statistics: Neutral
+  acad_physics: Neutral
+  acad_chemistry: Neutral
+  acad_biology: Neutral
+  acad_earth_science: Neutral
+  acad_computer_science: Neutral
+  acad_economics: Neutral
+  acad_psychology: Neutral
+  acad_sociology: Neutral
+  acad_world_history: Neutral
+  acad_geography: Neutral
+  acad_civics: Neutral
+  acad_literature: Neutral
+  acad_creative_writing: Neutral
+  acad_foreign_languages: Neutral
+  acad_philosophy: Neutral
+  acad_visual_art: Neutral
+  acad_music: Neutral
+  acad_drama: Neutral
+  acad_physical_education: Neutral
+  acad_health_science: Neutral
+  acad_business_studies: Neutral
+  acad_environmental_science: Neutral
+  acad_logic: Neutral
+  acad_astronomy: Neutral
+  acad_anthropology: Neutral
+  acad_political_theory: Interested
+  trait_curiosity: Moderate
+  trait_creativity: Moderate
+  trait_love_of_learning: Strong
+  trait_open_mindedness: Moderate
+  trait_perspective: Moderate
+  trait_bravery: Moderate
+  trait_perseverance: Signature
+  trait_honesty: Moderate
+  trait_zest: Moderate
+  trait_capacity_for_love: Slight
+  trait_kindness: Slight
+  trait_social_intelligence: Strong
+  trait_teamwork: Strong
+  trait_fairness: Moderate
+  trait_leadership: Signature
+  trait_forgiveness: Slight
+  trait_humility: Slight
+  trait_prudence: Moderate
+  trait_self_regulation: Moderate
+  trait_appreciation_of_beauty: Slight
+  trait_gratitude: Slight
+  trait_hope_optimism: Moderate
+  trait_playfulness: Slight
+  trait_spirituality: Slight
+  trait_ambition: Signature
+  trait_empathy: Slight
+  trait_resilience: Strong
+  trait_discipline: Strong
+  trait_generosity: Slight
+  trait_loyalty: Strong
+  trait_competitiveness: Strong
+  trait_adaptability: Moderate
+  val_career_success: Core value
+  val_power_influence: Important
+  val_achievement: Core value
+  val_community: Important
+  val_social_status: Important
+  val_recognition: Important
+  demo_marital_status: 'null'
+  demo_children_count: 'null'
+  demo_household_income: 'null'
+  demo_employment_status: Retired
+  demo_housing_status: 'null'
+  demo_generation: Boomer
+  demo_religion_affiliation: 'null'
+  demo_sexual_orientation: 'null'
+  demo_citizenship_status: Citizen by birth
+  demo_ethnicity_broad: White / European
+  demo_disability_status: No disability
+  demo_veteran_status: Civilian
+  demo_birth_order: 'null'
+  demo_home_language: Same as primary
+  demo_political_engagement: Activist
+  demo_parental_status: 'null'
+  demo_relationship_length: 'null'
+  demo_driver_status: Daily driver
+  lifex_childhood_environment: Stable & secure
+  lifex_geographic_mobility: Moved within region
+  lifex_travel_breadth: Never left country
+  lifex_career_path_shape: Linear climb
+  lifex_education_journey: Advanced degrees
+  lifex_financial_trajectory: Steady upward
+  lifex_adversity_level: Minor setbacks
+  lifex_immigration_generation: Third+ generation
+  lifex_military_history: Never served
+  lifex_entrepreneurship_history: Never considered
+  lifex_relationship_history: Limited
+  lifex_parenting_journey: No children
+  lifex_health_journey: No major events
+  lifex_loss_experience: No major loss
+  lifex_faith_journey: Lifelong faith
+  lifex_cultural_exposure: Monocultural
+  lifex_formative_decade: 1960s
+  lifex_public_recognition: Industry-recognized
+  lifex_service_history: Public office
+  lifex_turning_point: No single one
+  lifex_languages_lifetime: One
+  lifex_hometown_tie: Still there
+  schwartz_value_self_direction: Average
+  schwartz_value_stimulation: Low
+  schwartz_value_hedonism: Low
+  schwartz_value_achievement: High
+  schwartz_value_power: High
+  schwartz_value_security: Average
+  schwartz_value_conformity: Average
+  schwartz_value_tradition: Average
+  schwartz_value_benevolence: Average
+  schwartz_value_universalism: Average
+  sdt_need_autonomy: High
+  sdt_need_competence: High
+  sdt_need_relatedness: Average
+  need_for_cognition: High
+  interpersonal_agency_dominance: High
+  code_review_participation_level: No coding activity
+  commit_cadence_style: No coding activity
+  dev_contribution_context: 'null'
+  dev_ic_manager_orientation: 'null'
+  dev_primary_work_surface: 'null'
+  dev_professional_status: Non-developer technologist
+  dev_role_archetype: Other developer
+  dev_toolchain_complexity: 'null'
+  github_contribution_mode: No coding activity
+  issue_engagement_style: No coding activity
+  open_source_activity_level: No coding activity
+  pr_collaboration_style: No coding activity
+  release_maintenance_orientation: No coding activity
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: wiki-85a14238fdd9
+  origin_source_row_index: 848263

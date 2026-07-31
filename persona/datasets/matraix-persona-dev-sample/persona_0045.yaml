@@ -1,0 +1,36 @@
+persona_id: '0045'
+version: '1.0'
+source: amazon
+display_name: Quinn Santos
+dimensions:
+  domain: Skilled Trades
+  subject_specialty: Electrical work
+  major_life_events: Started a business
+  tech_savviness: Comfortable
+  expertise_gap: Peer-level
+  trust_level: Verifying
+  economic_motivation: Value-driven
+  skill_research: Intermediate
+  skill_critical_thinking: Intermediate
+  skill_cooking: Intermediate
+  skill_diy_repair: Advanced
+  skill_gardening: Intermediate
+  topic_music: Interested
+  att_advertising: Skeptical
+  att_online_reviews: Positive
+  ind_education: Experienced
+  musg_rock: Like
+  lstyle_frugality: Balanced
+  trait_social_intelligence: Slight
+  trait_teamwork: Slight
+  trait_loyalty: Slight
+  demo_employment_status: Self-employed
+  lifex_career_path_shape: Entrepreneurial
+  lifex_entrepreneurship_history: Founded once
+  coding_tool_alternative_sensitivity: Moderate concern
+  coding_tool_reliability_latency_importance: High
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: amazon-9d66ac092f13
+  origin_source_row_index: 2052913

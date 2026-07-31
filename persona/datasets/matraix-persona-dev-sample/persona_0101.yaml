@@ -1,0 +1,198 @@
+persona_id: '0101'
+version: '1.0'
+source: prism
+display_name: Ethan Brooks
+dimensions:
+  age_bracket: 35-44
+  region: North America
+  gender_identity: Woman
+  primary_language: English
+  english_proficiency: Native
+  register: Colloquial
+  highest_education: Primary
+  seniority: Mid
+  years_experience: 6-10
+  life_stage: Parent of young kids
+  cultural_background: Individualist (Western)
+  tech_savviness: Comfortable
+  religiosity: Observant
+  intent: Learn / explain
+  query_complexity: Open-ended creative
+  expertise_gap: Novice asking expert
+  tone_expected: Warm / empathetic
+  trust_level: Verifying
+  safety_sensitivity: Benign
+  prior_context: Returning user
+  fam_machine_learning: Aware
+  fam_deep_learning: Aware
+  fam_psychology: Familiar
+  fam_ethics: Familiar
+  fam_history: Familiar
+  fam_public_health: Familiar
+  fam_nutrition: Familiar
+  fam_computer_graphics: Familiar
+  fam_human_computer_interaction: Familiar
+  fam_graphic_design: Familiar
+  fam_culinary_arts: Familiar
+  fam_fashion_design: Familiar
+  fam_counseling: Familiar
+  fam_theology: Familiar
+  fam_religious_studies: Aware
+  skill_mentoring: Intermediate
+  skill_cooking: Intermediate
+  skill_active_listening: Intermediate
+  skill_empathy: Advanced
+  skill_networking: Beginner
+  tool_chatgpt: Regular
+  tool_claude: Occasional
+  topic_fitness: Interested
+  topic_cooking: Interested
+  topic_fashion: Interested
+  topic_technology: Interested
+  topic_parenting: Passionate
+  topic_history: Interested
+  topic_religion: Interested
+  topic_spirituality: Neutral
+  topic_baking: Interested
+  topic_genealogy: Interested
+  topic_stand_up_comedy: Interested
+  topic_productivity: Interested
+  topic_self_improvement: Interested
+  topic_mindfulness: Interested
+  lang_english: Native
+  att_ai: Positive
+  att_organized_religion: Positive
+  att_traditional_gender_roles: Positive
+  att_new_technology: Positive
+  ind_technology: Some exposure
+  ind_consumer_electronics: Some exposure
+  ind_fitness_wellness: Some exposure
+  cult_united_states: Native
+  bookg_cookbooks: Like
+  big5_orderliness: High
+  big5_dutifulness: High
+  big5_friendliness: High
+  big5_cheerfulness: High
+  big5_trust: High
+  big5_morality: High
+  big5_altruism: High
+  big5_sympathy: High
+  lstyle_work_schedule: Flexible hours
+  lstyle_planning_horizon: Yearly
+  lstyle_news_freq: Weekly
+  lstyle_hobby_intensity: Casual
+  cog_verbosity: Concise
+  cog_formality: Neutral
+  cog_directness: Direct
+  cog_humor: Playful
+  cog_detail_orientation: Moderate
+  cog_abstraction: Balanced
+  cog_optimism: Moderate
+  cog_curiosity: Moderate
+  cog_open_mindedness: Moderate
+  cog_emotional_expressiveness: High
+  cog_feedback_receptiveness: High
+  cog_multitasking: Some
+  cog_learning_pace: Average
+  cog_confidence_calibration: Cautious
+  cog_visual_vs_verbal: Mixed
+  cog_big_picture_vs_detail: Both
+  cog_risk_framing: Balanced
+  cog_empathy_expression: High
+  cog_storytelling: Moderate
+  cog_precision_of_language: Average
+  cog_use_of_jargon: Avoids jargon
+  cog_politeness: Polite
+  health_caregiver_status: Child caregiver
+  hob_bread_baking: Active
+  hob_genealogy: Active
+  trait_curiosity: Moderate
+  trait_creativity: Slight
+  trait_love_of_learning: Moderate
+  trait_open_mindedness: Moderate
+  trait_perspective: Moderate
+  trait_perseverance: Moderate
+  trait_honesty: Strong
+  trait_zest: Moderate
+  trait_capacity_for_love: Strong
+  trait_kindness: Strong
+  trait_social_intelligence: Moderate
+  trait_teamwork: Moderate
+  trait_prudence: Moderate
+  trait_self_regulation: Moderate
+  trait_appreciation_of_beauty: Slight
+  trait_hope_optimism: Moderate
+  trait_playfulness: Moderate
+  trait_spirituality: Slight
+  trait_empathy: Strong
+  trait_discipline: Moderate
+  trait_generosity: Moderate
+  trait_loyalty: Strong
+  val_family: Core value
+  val_health: Core value
+  val_tradition: Core value
+  val_spirituality_faith: Important
+  habit_meal_prepping: Weekly
+  demo_marital_status: Married
+  demo_children_count: 2 children
+  demo_employment_status: Part-time
+  demo_generation: Millennial
+  demo_religion_affiliation: Christian
+  demo_ethnicity_broad: White / European
+  demo_home_language: Same as primary
+  demo_parental_status: Parent of minors
+  demo_relationship_length: 5-15 years
+  lifex_career_path_shape: Linear climb
+  lifex_education_journey: Dropped out
+  lifex_financial_trajectory: Stable
+  lifex_immigration_generation: Native multi-generational
+  lifex_entrepreneurship_history: Never considered
+  lifex_relationship_history: Married once
+  lifex_parenting_journey: Young children
+  lifex_health_journey: No major events
+  lifex_faith_journey: Lifelong faith
+  lifex_formative_decade: 2000s
+  lifex_languages_lifetime: One
+  bfi2_domain_agreeableness: High
+  bfi2_domain_conscientiousness: High
+  bfi2_facet_compassion: High
+  bfi2_facet_respectfulness: High
+  bfi2_facet_trust: High
+  bfi2_facet_organization: High
+  bfi2_facet_responsibility: High
+  bfi2_facet_aesthetic_sensitivity: High
+  schwartz_value_tradition: High
+  schwartz_value_benevolence: High
+  sdt_need_relatedness: High
+  mft_care_harm: High
+  mft_loyalty_betrayal: High
+  dospert_health_safety_risk_tolerance: Low
+  interpersonal_communion_warmth: High
+  ai_task_code_generation: Not applicable
+  ai_task_code_review: Not applicable
+  ai_task_codebase_learning: Not applicable
+  ai_task_data_generation_analytics: Not applicable
+  ai_task_debugging_fixing: Not applicable
+  ai_task_deployment_monitoring: Not applicable
+  ai_task_documentation: Not applicable
+  ai_task_learning_concepts: Currently partially AI-assisted
+  ai_task_project_planning: Not applicable
+  ai_task_refactoring: Not applicable
+  ai_task_search_answers: Currently partially AI-assisted
+  ai_task_testing: Not applicable
+  coding_agent_usage_frequency: Weekly
+  coding_ai_complexity_comfort: Only simple / boilerplate tasks
+  coding_ai_output_trust: Trusts after verification
+  coding_ai_sentiment: Neutral / indifferent
+  coding_ai_usage_frequency: Weekly
+  coding_tool_ai_capability_importance: Moderate
+  coding_tool_alternative_sensitivity: Moderate concern
+  coding_tool_reliability_latency_importance: High
+  coding_tool_security_privacy_blocker: Major concern
+  future_developer_skill_belief: Communication and collaboration
+  human_help_boundary_for_ai_coding: When learning deeply
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: prism-f68be24bba7c
+  origin_source_row_index: 2211774

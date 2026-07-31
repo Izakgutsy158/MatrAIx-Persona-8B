@@ -1,0 +1,76 @@
+persona_id: 0080
+version: '1.0'
+source: stackoverflow
+display_name: Jordan Lee
+dimensions:
+  age_bracket: 45-54
+  region: North America
+  domain: Software & AI
+  domain_characteristics: Practitioner
+  highest_education: Primary
+  institution_tier: Self-taught
+  role_function: Engineering
+  years_experience: 20+
+  fam_computer_networking: Familiar
+  fam_databases: Expert
+  fam_operating_systems: Expert
+  fam_compilers: Familiar
+  fam_cloud_infrastructure: Expert
+  fam_devops: Expert
+  skill_writing: Advanced
+  skill_coding: Master
+  skill_debugging: Master
+  skill_code_review: Advanced
+  skill_system_design: Master
+  skill_research: Master
+  skill_problem_solving: Master
+  tool_github_copilot: Regular
+  att_ai: Enthusiast
+  att_new_technology: Enthusiast
+  att_open_source: Enthusiast
+  cog_detail_orientation: High
+  cog_decision_speed: Deliberate
+  cog_reading_vs_watching: Prefers reading
+  trait_curiosity: Strong
+  trait_love_of_learning: Strong
+  trait_adaptability: Strong
+  val_achievement: Important
+  val_knowledge_truth: Important
+  val_independence: Important
+  demo_employment_status: Full-time
+  demo_generation: Gen X
+  lifex_career_path_shape: Linear climb
+  lifex_education_journey: Largely self-taught
+  lifex_formative_decade: 1980s
+  code_comment_style: Docstring/documentation blocks only
+  code_dependencies_approach: Lean on libraries (minimal custom code)
+  prog_sql: Proficient
+  prog_bash: Proficient
+  ai_task_code_generation: Currently partially AI-assisted
+  ai_task_code_review: Plans partial AI use
+  ai_task_codebase_learning: Plans partial AI use
+  ai_task_data_generation_analytics: Currently partially AI-assisted
+  ai_task_debugging_fixing: Currently partially AI-assisted
+  ai_task_deployment_monitoring: Plans partial AI use
+  ai_task_documentation: Currently partially AI-assisted
+  ai_task_learning_concepts: Plans partial AI use
+  ai_task_project_planning: Plans partial AI use
+  ai_task_search_answers: Currently partially AI-assisted
+  ai_task_testing: Currently partially AI-assisted
+  codebase_onboarding_style: Reads architecture / docs first
+  coding_ai_complexity_comfort: Only simple / boilerplate tasks
+  coding_ai_job_threat_perception: No perceived threat
+  coding_ai_output_trust: Neutral / depends on task
+  coding_ai_sentiment: Very favorable
+  coding_tool_api_completeness_importance: High
+  coding_tool_security_privacy_blocker: Major concern
+  dev_professional_status: Professional developer
+  dev_role_archetype: DevOps / SRE / infrastructure
+  dev_toolchain_complexity: Large integrated toolchain
+  stackoverflow_participation_style: Reads / searches only
+  stackoverflow_usage_pattern: Multiple times daily
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: stackoverflow-80a5cce9fcd3
+  origin_source_row_index: 2182021

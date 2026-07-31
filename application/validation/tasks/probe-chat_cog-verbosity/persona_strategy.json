@@ -1,0 +1,8 @@
+{
+  "schemaVersion": "1.0",
+  "sources": [],
+  "defaultMode": "stratified",
+  "dimensionFilters": { "cog_verbosity": ["Rambling", "Terse"] },
+  "stratifyFields": ["cog_verbosity"],
+  "sampleSize": 10
+}

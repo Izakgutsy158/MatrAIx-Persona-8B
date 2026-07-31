@@ -1,0 +1,305 @@
+persona_id: 0029
+version: '1.0'
+source: wiki
+display_name: Liam Murphy
+dimensions:
+  age_bracket: 65-74
+  region: Oceania
+  gender_identity: Woman
+  primary_language: English
+  english_proficiency: Native
+  multilingualism: Monolingual
+  domain: Arts & Humanities
+  domain_characteristics: Practitioner
+  seniority: Director
+  company_size: Public sector
+  role_function: Executive
+  years_experience: 20+
+  life_stage: Retirement
+  major_life_events: None notable
+  cultural_background: Individualist (Western)
+  dominant_trait: High conscientiousness
+  values_priority: Achievement
+  skill_leadership: Master
+  skill_people_management: Master
+  topic_politics: Neutral
+  topic_sports: Passionate
+  topic_fitness: Passionate
+  topic_travel: Neutral
+  lang_english: Native
+  lang_mandarin: None
+  lang_cantonese: None
+  lang_spanish: None
+  lang_hindi: None
+  lang_arabic: None
+  lang_french: None
+  lang_portuguese: None
+  lang_bengali: None
+  lang_russian: None
+  lang_japanese: None
+  lang_german: None
+  lang_korean: None
+  lang_italian: None
+  lang_turkish: None
+  lang_vietnamese: None
+  lang_thai: None
+  lang_indonesian: None
+  lang_malay: None
+  lang_swahili: None
+  lang_dutch: None
+  lang_polish: None
+  lang_ukrainian: None
+  lang_persian: None
+  lang_hebrew: None
+  lang_greek: None
+  lang_czech: None
+  lang_hungarian: None
+  lang_romanian: None
+  lang_swedish: None
+  lang_norwegian: None
+  lang_danish: None
+  lang_finnish: None
+  lang_tagalog: None
+  lang_urdu: None
+  lang_tamil: None
+  lang_telugu: None
+  lang_marathi: None
+  lang_punjabi: None
+  lang_gujarati: None
+  lang_hausa: None
+  lang_yoruba: None
+  lang_igbo: None
+  lang_amharic: None
+  lang_zulu: None
+  lang_afrikaans: None
+  lang_serbian: None
+  ind_technology: None
+  ind_healthcare: None
+  ind_finance: None
+  ind_banking: None
+  ind_insurance: None
+  ind_retail: None
+  ind_e_commerce: None
+  ind_manufacturing: None
+  ind_automotive: None
+  ind_aerospace: None
+  ind_energy: None
+  ind_oil_gas: None
+  ind_utilities: None
+  ind_construction: None
+  ind_real_estate: None
+  ind_hospitality: None
+  ind_travel_tourism: None
+  ind_restaurants: None
+  ind_agriculture: None
+  ind_food_beverage: None
+  ind_pharmaceuticals: None
+  ind_biotech: None
+  ind_telecommunications: None
+  ind_media: None
+  ind_entertainment: None
+  ind_gaming: None
+  ind_publishing: None
+  ind_advertising: None
+  ind_government: Some exposure
+  ind_defense: None
+  ind_nonprofit: Some exposure
+  ind_logistics: None
+  ind_transportation: None
+  ind_shipping: None
+  ind_mining: None
+  ind_chemicals: None
+  ind_textiles: None
+  ind_apparel: None
+  ind_consumer_electronics: None
+  ind_semiconductors: None
+  ind_legal_services: None
+  ind_consulting: None
+  ind_accounting: None
+  ind_marketing_agencies: None
+  ind_fitness_wellness: Some exposure
+  ind_beauty_cosmetics: None
+  ind_sports: Veteran
+  ind_music: None
+  ind_fine_art: None
+  cult_united_states: Unfamiliar
+  cult_canada: Unfamiliar
+  cult_mexico: Unfamiliar
+  cult_brazil: Unfamiliar
+  cult_argentina: Unfamiliar
+  cult_united_kingdom: Unfamiliar
+  cult_france: Unfamiliar
+  cult_germany: Unfamiliar
+  cult_italy: Unfamiliar
+  cult_spain: Unfamiliar
+  cult_netherlands: Unfamiliar
+  cult_sweden: Unfamiliar
+  cult_poland: Unfamiliar
+  cult_russia: Unfamiliar
+  cult_turkey: Unfamiliar
+  cult_egypt: Unfamiliar
+  cult_saudi_arabia: Unfamiliar
+  cult_uae: Unfamiliar
+  cult_israel: Unfamiliar
+  cult_iran: Unfamiliar
+  cult_nigeria: Unfamiliar
+  cult_kenya: Unfamiliar
+  cult_south_africa: Unfamiliar
+  cult_ethiopia: Unfamiliar
+  cult_india: Visited
+  cult_pakistan: Unfamiliar
+  cult_bangladesh: Unfamiliar
+  cult_china: Unfamiliar
+  cult_japan: Unfamiliar
+  cult_south_korea: Unfamiliar
+  cult_vietnam: Unfamiliar
+  cult_thailand: Unfamiliar
+  cult_indonesia: Unfamiliar
+  cult_philippines: Unfamiliar
+  cult_australia: Unfamiliar
+  cult_new_zealand: Native
+  cult_singapore: Unfamiliar
+  cult_malaysia: Unfamiliar
+  cult_greece: Unfamiliar
+  cult_portugal: Unfamiliar
+  sport_soccer: None
+  sport_basketball: None
+  sport_american_football: None
+  sport_baseball: None
+  sport_tennis: None
+  sport_golf: None
+  sport_cricket: Play
+  sport_rugby: None
+  sport_hockey: None
+  sport_volleyball: None
+  sport_swimming: None
+  sport_running: None
+  sport_cycling: None
+  sport_boxing: None
+  sport_mma: None
+  sport_wrestling: None
+  sport_skiing: None
+  sport_snowboarding: None
+  sport_surfing: None
+  sport_skateboarding: None
+  sport_climbing: None
+  sport_gymnastics: None
+  sport_track_field: None
+  sport_badminton: None
+  sport_table_tennis: None
+  sport_squash: None
+  sport_sailing: None
+  sport_rowing: None
+  sport_martial_arts: None
+  sport_yoga: None
+  sport_pilates: None
+  sport_crossfit: None
+  sport_weightlifting: None
+  sport_esports: None
+  sport_darts: None
+  sport_bowling: None
+  sport_archery: None
+  sport_equestrian: None
+  sport_fencing: None
+  sport_triathlon: None
+  big5_self_efficacy: Very high
+  big5_dutifulness: High
+  big5_achievement_striving: Very high
+  big5_self_discipline: High
+  big5_assertiveness: Very high
+  big5_activity_level: High
+  lstyle_exercise_freq: Never
+  trait_curiosity: Moderate
+  trait_creativity: Moderate
+  trait_love_of_learning: Moderate
+  trait_open_mindedness: Strong
+  trait_perspective: Strong
+  trait_bravery: Strong
+  trait_perseverance: Signature
+  trait_honesty: Moderate
+  trait_zest: Strong
+  trait_capacity_for_love: Slight
+  trait_kindness: Slight
+  trait_social_intelligence: Strong
+  trait_teamwork: Signature
+  trait_fairness: Moderate
+  trait_leadership: Signature
+  trait_forgiveness: Slight
+  trait_humility: Slight
+  trait_prudence: Moderate
+  trait_self_regulation: Strong
+  trait_appreciation_of_beauty: Slight
+  trait_gratitude: Slight
+  trait_hope_optimism: Moderate
+  trait_playfulness: Slight
+  trait_spirituality: Slight
+  trait_ambition: Signature
+  trait_empathy: Slight
+  trait_resilience: Signature
+  trait_discipline: Signature
+  trait_generosity: Slight
+  trait_loyalty: Strong
+  trait_competitiveness: Signature
+  trait_adaptability: Strong
+  val_career_success: Core value
+  val_power_influence: Core value
+  val_achievement: Core value
+  val_social_status: Core value
+  val_recognition: Core value
+  pref_team_vs_solo: Strongly team
+  pref_lead_vs_follow: Always leads
+  pref_competition_vs_collab: Highly competitive
+  demo_generation: Gen X
+  demo_citizenship_status: Citizen by birth
+  demo_veteran_status: Civilian
+  lifex_geographic_mobility: Never left hometown
+  lifex_travel_breadth: Well-traveled
+  lifex_career_path_shape: Linear climb
+  lifex_immigration_generation: Native multi-generational
+  lifex_military_history: Never served
+  lifex_entrepreneurship_history: Never considered
+  lifex_cultural_exposure: Multicultural upbringing
+  lifex_formative_decade: 1980s
+  lifex_public_recognition: Industry-recognized
+  lifex_service_history: Long-term volunteer
+  lifex_turning_point: No single one
+  lifex_languages_lifetime: One
+  bfi2_domain_extraversion: High
+  bfi2_domain_conscientiousness: High
+  bfi2_facet_assertiveness: Very high
+  bfi2_facet_energy_level: High
+  bfi2_facet_productiveness: Very high
+  bfi2_facet_responsibility: High
+  schwartz_value_self_direction: High
+  schwartz_value_stimulation: Average
+  schwartz_value_hedonism: Low
+  schwartz_value_achievement: Very high
+  schwartz_value_power: High
+  schwartz_value_security: Average
+  schwartz_value_conformity: Low
+  schwartz_value_tradition: Low
+  schwartz_value_benevolence: Average
+  schwartz_value_universalism: Average
+  sdt_need_autonomy: High
+  sdt_need_competence: Very high
+  sdt_need_relatedness: Average
+  need_for_cognition: Average
+  interpersonal_agency_dominance: Very high
+  code_review_participation_level: No coding activity
+  commit_cadence_style: No coding activity
+  dev_contribution_context: Not applicable
+  dev_ic_manager_orientation: Not applicable
+  dev_primary_work_surface: Not applicable
+  dev_professional_status: Non-developer technologist
+  dev_role_archetype: Other developer
+  dev_toolchain_complexity: Not applicable
+  github_contribution_mode: No coding activity
+  issue_engagement_style: No coding activity
+  open_source_activity_level: No coding activity
+  pr_collaboration_style: No coding activity
+  release_maintenance_orientation: No coding activity
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: wiki-d690fe5ae238
+  origin_source_row_index: 1920905

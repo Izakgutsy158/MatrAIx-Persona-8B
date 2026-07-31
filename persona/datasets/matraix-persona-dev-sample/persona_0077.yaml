@@ -1,0 +1,65 @@
+persona_id: '0077'
+version: '1.0'
+source: stackoverflow
+display_name: Ava Martinez
+dimensions:
+  age_bracket: 45-54
+  region: North America
+  domain: Software & AI
+  highest_education: Vocational / cert
+  role_function: Engineering
+  years_experience: 11-20
+  learning_style: Reading / writing
+  fam_machine_learning: Familiar
+  fam_databases: Familiar
+  fam_operating_systems: Familiar
+  fam_cloud_infrastructure: Familiar
+  fam_devops: Familiar
+  skill_coding: Master
+  skill_debugging: Master
+  skill_code_review: Master
+  skill_system_design: Master
+  skill_research: Master
+  skill_problem_solving: Master
+  tool_sql: Regular
+  tool_microsoft_teams: Regular
+  tool_jetbrains_ides: Regular
+  tool_wordpress: Regular
+  tool_zoom: Regular
+  tool_chatgpt: Regular
+  att_ai: Positive
+  att_online_reviews: Positive
+  att_open_source: Positive
+  trait_curiosity: Strong
+  trait_love_of_learning: Strong
+  trait_open_mindedness: Strong
+  trait_perspective: Strong
+  trait_adaptability: Strong
+  val_security_stability: Important
+  val_community: Important
+  val_knowledge_truth: Important
+  val_justice_fairness: Important
+  val_personal_growth: Important
+  val_integrity_honesty: Important
+  demo_employment_status: Full-time
+  demo_generation: Gen X
+  lifex_career_path_shape: Linear climb
+  lifex_education_journey: Vocational / trade
+  lifex_formative_decade: 1980s
+  prog_javascript: Proficient
+  prog_php: Proficient
+  prog_sql: Proficient
+  codebase_onboarding_style: Asks teammates / AI for map
+  coding_ai_usage_frequency: Daily
+  coding_tool_ethics_blocker: Moderate concern
+  debugging_strategy: Search / ask externally
+  dev_contribution_context: Employee work
+  dev_ic_manager_orientation: Individual contributor
+  dev_professional_status: Professional developer
+  dev_role_archetype: Full-stack developer
+  stackoverflow_usage_pattern: Weekly reference
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: stackoverflow-d208d369f5c4
+  origin_source_row_index: 2175191

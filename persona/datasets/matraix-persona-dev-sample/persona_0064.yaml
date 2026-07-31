@@ -1,0 +1,71 @@
+persona_id: '0064'
+version: '1.0'
+source: stackoverflow
+display_name: Sofia Andersson
+dimensions:
+  age_bracket: 35-44
+  region: Western Europe
+  domain: Software & AI
+  highest_education: Bachelor's
+  company_size: SMB (50-500)
+  role_function: Engineering
+  years_experience: 6-10
+  tech_savviness: Comfortable
+  fam_databases: Familiar
+  fam_operating_systems: Familiar
+  fam_cloud_infrastructure: Familiar
+  fam_devops: Familiar
+  skill_coding: Advanced
+  skill_mentoring: Intermediate
+  tool_slack: Regular
+  tool_microsoft_teams: Regular
+  tool_docker: Regular
+  tool_terraform: Regular
+  tool_google_cloud: Regular
+  tool_trello: Regular
+  tool_chatgpt: Regular
+  topic_productivity: Interested
+  topic_self_improvement: Interested
+  lang_english: Fluent
+  att_ai: Positive
+  att_open_source: Positive
+  ind_technology: Veteran
+  cog_learning_pace: Fast
+  peeve_being_interrupted: Annoys
+  trait_love_of_learning: Strong
+  val_knowledge_truth: Important
+  val_personal_growth: Important
+  demo_employment_status: Full-time
+  demo_generation: Millennial
+  lifex_career_path_shape: Linear climb
+  lifex_education_journey: Traditional track
+  code_comment_style: Mixed approach
+  code_function_length: Small functions (10-30 lines)
+  code_dependencies_approach: Lean on libraries (minimal custom code)
+  prog_javascript: Proficient
+  prog_typescript: Proficient
+  ai_task_code_generation: Currently partially AI-assisted
+  ai_task_learning_concepts: Currently partially AI-assisted
+  code_modularity_preference: Highly modular small components
+  code_type_system_orientation: Strong static typing preference
+  coding_agent_usage_frequency: Not yet but interested
+  coding_agent_workflow_impact: Small targeted improvement
+  coding_ai_learning_source: Self-experimentation
+  coding_ai_output_trust: Trusts after verification
+  coding_ai_sentiment: Somewhat favorable
+  coding_ai_usage_frequency: Daily
+  coding_tool_ai_capability_importance: High
+  coding_tool_reliability_latency_importance: High
+  debugging_strategy: Search / ask externally
+  dev_contribution_context: Mixed contexts
+  dev_ic_manager_orientation: Individual contributor
+  dev_professional_status: Professional developer
+  dev_role_archetype: Full-stack developer
+  open_source_activity_level: Regular contributor
+  stackoverflow_participation_style: Reads / searches only
+  stackoverflow_usage_pattern: Multiple times daily
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: stackoverflow-9704f1fcfa33
+  origin_source_row_index: 2123460

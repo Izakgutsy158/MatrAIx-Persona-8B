@@ -1,0 +1,412 @@
+persona_id: '0070'
+version: '1.0'
+source: wiki:Q5487832
+dimensions:
+  age_bracket: Under 5
+  region: Latin America
+  gender_identity: Man
+  primary_language: Spanish
+  english_proficiency: None
+  multilingualism: Monolingual
+  domain: Skilled Trades
+  domain_characteristics: Practitioner
+  research_output: None
+  seniority: Retired
+  company_size: Solo / freelance
+  role_function: Executive
+  years_experience: 20+
+  linkedin_activity: Inactive
+  life_stage: Retirement
+  major_life_events: Health journey
+  cultural_background: Latin
+  dominant_trait: High conscientiousness
+  risk_tolerance: Risk-seeking
+  decision_style: Analytical
+  values_priority: Achievement
+  fam_supply_chain: None
+  fam_logistics: None
+  fam_operations_management: None
+  fam_lean_manufacturing: None
+  fam_quality_assurance: None
+  fam_human_resources: None
+  fam_organizational_psychology: None
+  fam_project_management: None
+  fam_product_management: None
+  fam_venture_capital: None
+  fam_private_equity: None
+  fam_real_estate: None
+  fam_insurance: None
+  fam_actuarial_science: None
+  fam_hospitality_management: None
+  fam_culinary_arts: None
+  fam_sommelier_knowledge: None
+  fam_fashion_design: None
+  fam_textiles: None
+  fam_photography: None
+  fam_cinematography: None
+  fam_music_production: None
+  fam_sound_engineering: None
+  fam_animation: None
+  fam_3d_modeling: None
+  fam_geographic_information_systems: None
+  fam_meteorology: None
+  fam_forestry: None
+  fam_marine_biology: None
+  fam_paleontology: None
+  fam_materials_science: None
+  fam_nanotechnology: None
+  fam_renewable_energy: None
+  fam_nuclear_engineering: None
+  fam_petroleum_engineering: None
+  fam_mining: None
+  fam_aviation: None
+  fam_maritime_navigation: None
+  fam_military_strategy: None
+  fam_diplomacy: None
+  fam_social_work: None
+  fam_counseling: None
+  fam_theology: None
+  fam_library_science: None
+  skill_driving: Master
+  topic_politics: Passionate
+  topic_sports: Passionate
+  topic_travel: Passionate
+  topic_cooking: Passionate
+  topic_gaming: Passionate
+  topic_fashion: Passionate
+  topic_technology: Passionate
+  topic_science: Passionate
+  topic_space: Passionate
+  topic_personal_finance: Passionate
+  topic_investing: Passionate
+  topic_cryptocurrency: Passionate
+  topic_real_estate: Passionate
+  topic_parenting: Passionate
+  topic_pets: Passionate
+  topic_gardening: Passionate
+  topic_home_improvement: Passionate
+  topic_cars: Passionate
+  topic_motorcycles: Passionate
+  topic_cycling: Passionate
+  topic_running: Passionate
+  topic_photography: Passionate
+  topic_film: Passionate
+  topic_tv_series: Passionate
+  topic_anime: Passionate
+  topic_comics: Passionate
+  topic_music: Passionate
+  topic_live_concerts: Passionate
+  topic_theater: Passionate
+  topic_visual_art: Passionate
+  topic_literature: Passionate
+  topic_poetry: Passionate
+  topic_history: Passionate
+  topic_philosophy: Passionate
+  topic_religion: Passionate
+  topic_meditation: Passionate
+  topic_yoga: Passionate
+  topic_hiking: Passionate
+  topic_camping: Passionate
+  topic_fishing: Passionate
+  topic_birdwatching: Passionate
+  topic_board_games: Passionate
+  topic_tabletop_rpgs: Passionate
+  topic_puzzles: Passionate
+  topic_chess: Passionate
+  topic_astrology: Passionate
+  topic_true_crime: Passionate
+  topic_podcasts: Passionate
+  topic_social_media: Passionate
+  topic_volunteering: Passionate
+  lang_english: None
+  lang_mandarin: None
+  lang_cantonese: None
+  lang_spanish: Native
+  lang_hindi: None
+  lang_arabic: None
+  lang_french: None
+  lang_portuguese: None
+  lang_bengali: None
+  lang_russian: None
+  lang_japanese: None
+  lang_german: None
+  lang_korean: None
+  lang_italian: None
+  lang_turkish: None
+  lang_vietnamese: None
+  lang_thai: None
+  lang_indonesian: None
+  lang_malay: None
+  lang_swahili: None
+  lang_dutch: None
+  lang_polish: None
+  lang_ukrainian: None
+  lang_persian: None
+  lang_hebrew: None
+  lang_greek: None
+  lang_czech: None
+  lang_hungarian: None
+  lang_romanian: None
+  lang_swedish: None
+  lang_norwegian: None
+  lang_danish: None
+  lang_finnish: None
+  lang_tagalog: None
+  lang_urdu: None
+  lang_tamil: None
+  lang_telugu: None
+  lang_marathi: None
+  lang_punjabi: None
+  lang_gujarati: None
+  lang_hausa: None
+  lang_yoruba: None
+  lang_igbo: None
+  lang_amharic: None
+  lang_zulu: None
+  lang_afrikaans: None
+  lang_serbian: None
+  ind_technology: None
+  ind_healthcare: None
+  ind_finance: None
+  ind_banking: None
+  ind_insurance: None
+  ind_retail: None
+  ind_e_commerce: None
+  ind_manufacturing: None
+  ind_automotive: Veteran
+  ind_aerospace: None
+  ind_energy: None
+  ind_oil_gas: None
+  ind_utilities: None
+  ind_construction: None
+  ind_real_estate: None
+  ind_hospitality: None
+  ind_travel_tourism: None
+  ind_restaurants: None
+  ind_agriculture: None
+  ind_food_beverage: None
+  ind_pharmaceuticals: None
+  ind_biotech: None
+  ind_telecommunications: None
+  ind_media: None
+  ind_entertainment: None
+  ind_gaming: None
+  ind_publishing: None
+  ind_advertising: None
+  ind_government: None
+  ind_defense: None
+  ind_nonprofit: None
+  ind_logistics: None
+  ind_transportation: Veteran
+  ind_shipping: None
+  ind_mining: None
+  ind_chemicals: None
+  ind_textiles: None
+  ind_apparel: None
+  ind_consumer_electronics: None
+  ind_semiconductors: None
+  ind_legal_services: None
+  ind_consulting: None
+  ind_accounting: None
+  ind_marketing_agencies: None
+  ind_fitness_wellness: None
+  ind_beauty_cosmetics: None
+  ind_sports: Veteran
+  ind_music: None
+  ind_fine_art: None
+  cult_argentina: Native
+  sport_soccer: None
+  sport_basketball: None
+  sport_american_football: None
+  sport_baseball: None
+  sport_tennis: None
+  sport_golf: None
+  sport_cricket: None
+  sport_rugby: None
+  sport_hockey: None
+  sport_volleyball: None
+  sport_swimming: None
+  sport_running: None
+  sport_cycling: None
+  sport_boxing: None
+  sport_mma: None
+  sport_wrestling: None
+  sport_skiing: None
+  sport_snowboarding: None
+  sport_surfing: None
+  sport_skateboarding: None
+  sport_climbing: None
+  sport_gymnastics: None
+  sport_track_field: None
+  sport_badminton: None
+  sport_table_tennis: None
+  sport_squash: None
+  sport_sailing: None
+  sport_rowing: None
+  sport_martial_arts: None
+  sport_yoga: None
+  sport_pilates: None
+  sport_crossfit: None
+  sport_weightlifting: None
+  sport_esports: None
+  sport_darts: None
+  sport_bowling: None
+  sport_archery: None
+  sport_equestrian: None
+  sport_fencing: None
+  sport_triathlon: None
+  lstyle_work_schedule: Freelance
+  lstyle_hobby_intensity: Obsessive
+  cog_verbosity: Terse
+  cog_formality: Neutral
+  cog_directness: Direct
+  cog_humor: Serious
+  cog_detail_orientation: Very high
+  cog_abstraction: Very concrete
+  cog_optimism: None
+  cog_patience: None
+  cog_curiosity: None
+  cog_skepticism: None
+  cog_open_mindedness: None
+  cog_assertiveness: None
+  cog_emotional_expressiveness: None
+  cog_conflict_approach: Confronting
+  cog_feedback_receptiveness: None
+  cog_ambiguity_tolerance: None
+  cog_perfectionism: None
+  cog_procrastination: None
+  cog_multitasking: Heavy multitasker
+  cog_attention_span: Very long
+  cog_learning_pace: Very fast
+  cog_question_asking: Asks constantly
+  cog_decision_speed: Snap decisions
+  cog_confidence_calibration: Overconfident
+  cog_numeracy_comfort: None
+  cog_reading_vs_watching: Strongly prefers reading
+  cog_visual_vs_verbal: Strongly visual
+  cog_big_picture_vs_detail: Big-picture only
+  cog_risk_framing: Opportunity-focused
+  cog_empathy_expression: None
+  cog_storytelling: None
+  cog_precision_of_language: Very precise
+  cog_use_of_jargon: Heavy
+  cog_emoji_use: Heavy
+  cog_politeness: Very polite
+  health_general_health: Poor
+  health_chronic_condition: Managed
+  health_mobility: Full
+  health_vision: Normal
+  health_hearing: Normal
+  health_color_vision: Typical
+  health_dexterity: Full
+  health_mental_health: Stable
+  health_stress_level: Very high
+  health_energy_level: High
+  health_sleep_quality: Excellent
+  health_pain_level: None
+  health_medication_use: None
+  health_dietary_restriction: None
+  health_neurodivergence: Neurotypical
+  health_caregiver_status: Not a caregiver
+  health_health_literacy: High
+  health_insurance_status: Comprehensive
+  health_fitness_level: Athlete
+  health_cognitive_load_capacity: Very high
+  health_contrast_need: 'No'
+  health_text_size_need: 'No'
+  health_assistive_tech: None
+  health_motion_sensitivity: None
+  health_attention_condition: None
+  trait_curiosity: Moderate
+  trait_creativity: Moderate
+  trait_love_of_learning: Moderate
+  trait_open_mindedness: Moderate
+  trait_perspective: Moderate
+  trait_bravery: Signature
+  trait_perseverance: Signature
+  trait_honesty: Moderate
+  trait_zest: Strong
+  trait_capacity_for_love: Moderate
+  trait_kindness: Moderate
+  trait_social_intelligence: Moderate
+  trait_teamwork: Strong
+  trait_fairness: Moderate
+  trait_leadership: Moderate
+  trait_forgiveness: Moderate
+  trait_humility: Moderate
+  trait_prudence: Moderate
+  trait_self_regulation: Strong
+  trait_appreciation_of_beauty: Moderate
+  trait_gratitude: Moderate
+  trait_hope_optimism: Moderate
+  trait_playfulness: Moderate
+  trait_spirituality: Moderate
+  trait_ambition: Signature
+  trait_empathy: Moderate
+  trait_resilience: Signature
+  trait_discipline: Signature
+  trait_generosity: Moderate
+  trait_loyalty: Moderate
+  trait_competitiveness: Signature
+  trait_adaptability: Signature
+  val_career_success: Core value
+  val_adventure: Important
+  val_achievement: Core value
+  val_social_status: Important
+  val_recognition: Important
+  pref_work_location: Strongly office
+  demo_employment_status: Retired
+  demo_generation: Boomer
+  demo_citizenship_status: Citizen by birth
+  demo_disability_status: No disability
+  demo_veteran_status: Civilian
+  demo_home_language: Same as primary
+  demo_driver_status: Daily driver
+  lifex_childhood_environment: Stable & secure
+  lifex_geographic_mobility: Moved within region
+  lifex_travel_breadth: A few countries
+  lifex_career_path_shape: Portfolio / patchwork
+  lifex_education_journey: Traditional track
+  lifex_financial_trajectory: Steady upward
+  lifex_adversity_level: Overcame major hardship
+  lifex_immigration_generation: Native multi-generational
+  lifex_military_history: Never served
+  lifex_entrepreneurship_history: Founded once
+  lifex_relationship_history: Limited
+  lifex_parenting_journey: No children
+  lifex_health_journey: Major surgery / injury
+  lifex_loss_experience: No major loss
+  lifex_faith_journey: Lifelong faith
+  lifex_cultural_exposure: Monocultural
+  lifex_formative_decade: 1960s-70s
+  lifex_public_recognition: Industry-recognized
+  lifex_service_history: None
+  lifex_turning_point: No single one
+  lifex_languages_lifetime: One
+  lifex_hometown_tie: Still there
+  schwartz_value_self_direction: High
+  schwartz_value_stimulation: Very high
+  schwartz_value_achievement: Very high
+  schwartz_value_power: Average
+  schwartz_value_security: Low
+  schwartz_value_conformity: Low
+  sdt_need_autonomy: High
+  sdt_need_competence: Very high
+  need_for_closure: Very high
+  dospert_ethical_risk_tolerance: Very high
+  dospert_financial_risk_tolerance: Very high
+  dospert_recreational_risk_tolerance: Very high
+  dospert_social_risk_tolerance: Very high
+  code_review_participation_level: Frequent reviewer
+  commit_cadence_style: Many small commits
+  dev_contribution_context: Employee work
+  dev_ic_manager_orientation: Individual contributor
+  dev_primary_work_surface: Mobile / embedded hardware workflow
+  dev_professional_status: Non-developer technologist
+  dev_role_archetype: Other developer
+  dev_toolchain_complexity: Moderate multi-tool workflow
+  github_contribution_mode: Code pusher
+  issue_engagement_style: Detailed bug reports
+  open_source_activity_level: No coding activity
+  pr_collaboration_style: Small focused PRs
+  release_maintenance_orientation: Active release maintainer

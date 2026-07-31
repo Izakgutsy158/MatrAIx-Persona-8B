@@ -1,0 +1,32 @@
+persona_id: 0038
+version: '1.0'
+source: amazon
+display_name: Riley Chen
+dimensions:
+  emotional_state: Calm
+  query_complexity: Simple factual
+  time_pressure: No rush
+  device_context: Desktop, focused
+  learning_style: Kinesthetic
+  skill_data_analysis: Beginner
+  topic_spirituality: Indifferent
+  att_ai: Neutral
+  att_data_privacy: Neutral
+  att_authority: Skeptical
+  att_new_technology: Positive
+  att_brand_loyalty: Neutral
+  att_online_reviews: Positive
+  ind_automotive: Some exposure
+  health_chronic_condition: Managed
+  health_dietary_restriction: Medical
+  trait_teamwork: Slight
+  trait_leadership: Slight
+  trait_appreciation_of_beauty: Slight
+  trait_playfulness: Slight
+  trait_empathy: Slight
+  trait_generosity: Slight
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: amazon-e29e9a63113d
+  origin_source_row_index: 2025235

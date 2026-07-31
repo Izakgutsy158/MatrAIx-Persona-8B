@@ -1,0 +1,26 @@
+persona_id: '0142'
+version: '1.0'
+source: gss
+display_name: Jordan Lee
+dimensions:
+  age_bracket: 25-34
+  region: North America
+  gender_identity: Woman
+  socioeconomic_band: Lower-middle
+  highest_education: Secondary
+  seniority: Student / intern
+  life_stage: Student
+  political_lean: Center
+  religiosity: Secular
+  health_general_health: Fair
+  demo_marital_status: Single
+  demo_children_count: 1 child
+  demo_employment_status: Student
+  demo_religion_affiliation: None
+  demo_citizenship_status: Citizen by birth
+  demo_ethnicity_broad: White / European
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: gss-19b5c8c6dc61
+  origin_source_row_index: 2283606

@@ -1,0 +1,134 @@
+persona_id: '0074'
+version: '1.0'
+source: wiki:Q673567
+dimensions:
+  region: North America
+  primary_language: English
+  english_proficiency: Native
+  register: Colloquial
+  domain: Media & Journalism
+  domain_characteristics: Practitioner
+  highest_education: Bachelor's
+  academic_field: Humanities
+  research_output: Prolific publisher
+  role_function: Teaching
+  years_experience: 20+
+  life_stage: Retirement
+  major_life_events: Bereavement
+  cultural_background: Individualist (Western)
+  religiosity: Secular
+  safety_sensitivity: Sensitive personal
+  fam_political_science: Familiar
+  fam_journalism: Expert
+  fam_religious_studies: Aware
+  skill_writing: Master
+  skill_editing: Advanced
+  skill_storytelling: Advanced
+  skill_coaching: Intermediate
+  skill_research: Intermediate
+  skill_problem_solving: Intermediate
+  skill_logical_reasoning: Intermediate
+  skill_technical_writing: Intermediate
+  skill_persuasion: Intermediate
+  skill_proofreading: Intermediate
+  topic_politics: Interested
+  topic_sports: Interested
+  topic_travel: Interested
+  topic_technology: Interested
+  topic_science: Interested
+  topic_personal_finance: Interested
+  topic_parenting: Interested
+  topic_pets: Interested
+  topic_home_improvement: Interested
+  topic_film: Interested
+  topic_tv_series: Interested
+  topic_comics: Interested
+  topic_music: Passionate
+  topic_live_concerts: Interested
+  topic_literature: Passionate
+  topic_history: Interested
+  topic_religion: Interested
+  topic_puzzles: Passionate
+  topic_craft_beer: Interested
+  topic_languages: Interested
+  topic_stand_up_comedy: Passionate
+  topic_entrepreneurship: Interested
+  topic_productivity: Interested
+  topic_self_improvement: Interested
+  lang_english: Native
+  att_organized_religion: Skeptical
+  att_higher_education: Positive
+  att_authority: Skeptical
+  ind_media: Veteran
+  ind_entertainment: Some exposure
+  ind_publishing: Veteran
+  ind_education: Experienced
+  ind_government: Some exposure
+  ind_consulting: Experienced
+  ind_sports: Some exposure
+  ind_music: Some exposure
+  cult_united_states: Native
+  musg_rock: Like
+  lstyle_pet_ownership: Dog
+  lstyle_hobby_intensity: Dedicated
+  cog_humor: Playful
+  cog_visual_vs_verbal: Verbal
+  cog_storytelling: High
+  cog_precision_of_language: Precise
+  cog_use_of_jargon: Light
+  acad_computer_science: Interested
+  acad_world_history: Interested
+  acad_geography: Interested
+  acad_civics: Interested
+  acad_literature: Passionate
+  acad_creative_writing: Passionate
+  acad_music: Interested
+  acad_business_studies: Interested
+  acad_logic: Interested
+  acad_political_theory: Interested
+  trait_creativity: Strong
+  trait_perspective: Strong
+  trait_teamwork: Moderate
+  trait_leadership: Moderate
+  trait_playfulness: Signature
+  trait_spirituality: Absent
+  trait_discipline: Strong
+  trait_adaptability: Moderate
+  val_family: Important
+  val_career_success: Important
+  val_personal_freedom: Important
+  val_achievement: Important
+  val_creativity_self_expression: Core value
+  val_independence: Important
+  val_recognition: Moderate
+  val_fun_enjoyment: Important
+  demo_marital_status: Married
+  demo_children_count: 2 children
+  demo_employment_status: Self-employed
+  demo_generation: Boomer
+  demo_religion_affiliation: Atheist / agnostic
+  demo_veteran_status: Civilian
+  demo_political_engagement: Activist
+  demo_parental_status: Parent of adults
+  demo_relationship_length: 15+ years
+  lifex_geographic_mobility: Moved nationally
+  lifex_travel_breadth: A few countries
+  lifex_career_path_shape: Multiple pivots
+  lifex_education_journey: Traditional track
+  lifex_adversity_level: Significant struggles
+  lifex_military_history: Never served
+  lifex_relationship_history: Remarried
+  lifex_parenting_journey: Grown children
+  lifex_loss_experience: Multiple bereavements
+  lifex_faith_journey: Lapsed / left faith
+  lifex_formative_decade: 1960s-70s
+  lifex_public_recognition: Famous
+  lifex_turning_point: Mentor encounter
+  schwartz_value_self_direction: High
+  schwartz_value_stimulation: Average
+  schwartz_value_achievement: High
+  sdt_need_autonomy: High
+  sdt_need_competence: High
+  sdt_need_relatedness: Average
+  mft_liberty_oppression: High
+  interpersonal_agency_dominance: High

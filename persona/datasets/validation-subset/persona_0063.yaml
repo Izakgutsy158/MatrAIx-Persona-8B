@@ -1,0 +1,220 @@
+persona_id: '0063'
+version: '1.0'
+source: wiki:Q444459
+dimensions:
+  gender_identity: Man
+  urbanicity: Dense urban
+  register: Formal / standard
+  domain: Arts & Humanities
+  subject_specialty: Comparative literature
+  domain_characteristics: Educator
+  academic_field: Humanities
+  research_output: Prolific publisher
+  seniority: Lead / Principal
+  company_size: Academia
+  role_function: Teaching
+  years_experience: 20+
+  life_stage: Mid-life
+  cultural_background: Individualist (Western)
+  dominant_trait: High openness
+  risk_tolerance: Risk-tolerant
+  decision_style: Intuitive
+  values_priority: Autonomy
+  political_lean: Left
+  safety_sensitivity: Benign
+  fam_pedagogy: Proficient
+  fam_political_science: Proficient
+  fam_comparative_literature: Expert
+  fam_philosophy: Proficient
+  fam_ethics: Familiar
+  fam_linguistics: Proficient
+  fam_religious_studies: Aware
+  skill_writing: Master
+  skill_storytelling: Advanced
+  skill_public_speaking: Master
+  skill_leadership: Advanced
+  skill_mentoring: Advanced
+  skill_technical_writing: Advanced
+  skill_persuasion: Master
+  skill_presenting: Master
+  topic_politics: Interested
+  topic_literature: Passionate
+  topic_poetry: Interested
+  topic_philosophy: Interested
+  topic_activism: Interested
+  lang_greek: Native
+  att_higher_education: Enthusiast
+  att_authority: Skeptical
+  att_free_speech: Enthusiast
+  ind_technology: None
+  ind_healthcare: None
+  ind_finance: None
+  ind_banking: None
+  ind_insurance: None
+  ind_retail: None
+  ind_e_commerce: None
+  ind_manufacturing: None
+  ind_automotive: None
+  ind_aerospace: None
+  ind_energy: None
+  ind_oil_gas: None
+  ind_utilities: None
+  ind_construction: None
+  ind_real_estate: None
+  ind_hospitality: None
+  ind_travel_tourism: None
+  ind_restaurants: None
+  ind_agriculture: None
+  ind_food_beverage: None
+  ind_pharmaceuticals: None
+  ind_biotech: None
+  ind_telecommunications: None
+  ind_media: None
+  ind_entertainment: None
+  ind_gaming: None
+  ind_publishing: None
+  ind_advertising: None
+  ind_education: Veteran
+  ind_government: None
+  ind_defense: None
+  ind_nonprofit: None
+  ind_logistics: None
+  ind_transportation: None
+  ind_shipping: None
+  ind_mining: None
+  ind_chemicals: None
+  ind_textiles: None
+  ind_apparel: None
+  ind_consumer_electronics: None
+  ind_semiconductors: None
+  ind_legal_services: None
+  ind_consulting: None
+  ind_accounting: None
+  ind_marketing_agencies: None
+  ind_fitness_wellness: None
+  ind_beauty_cosmetics: None
+  ind_sports: None
+  ind_music: None
+  ind_fine_art: None
+  cult_turkey: Lived there
+  cult_greece: Native
+  big5_imagination: High
+  big5_artistic_interest: High
+  big5_emotionality: High
+  big5_adventurousness: High
+  big5_intellect: Very high
+  big5_liberalism: Very high
+  big5_self_efficacy: Very high
+  big5_orderliness: Low
+  big5_achievement_striving: High
+  big5_cautiousness: Low
+  big5_assertiveness: Very high
+  big5_activity_level: High
+  big5_morality: High
+  big5_altruism: High
+  big5_cooperation: Low
+  big5_modesty: Low
+  big5_sympathy: High
+  big5_self_consciousness: Low
+  big5_immoderation: High
+  cog_verbosity: Wordy
+  cog_formality: Very formal
+  cog_directness: Direct
+  cog_abstraction: Abstract
+  cog_curiosity: High
+  cog_assertiveness: High
+  cog_emotional_expressiveness: High
+  cog_conflict_approach: Confronting
+  cog_decision_speed: Quick
+  cog_confidence_calibration: Confident
+  cog_visual_vs_verbal: Strongly verbal
+  cog_big_picture_vs_detail: Big-picture
+  cog_empathy_expression: Moderate
+  cog_storytelling: High
+  cog_precision_of_language: Loose
+  cog_use_of_jargon: Heavy
+  cog_emoji_use: Never
+  acad_world_history: Interested
+  acad_civics: Interested
+  acad_literature: Passionate
+  acad_creative_writing: Passionate
+  acad_philosophy: Passionate
+  acad_drama: Interested
+  acad_logic: Interested
+  acad_political_theory: Interested
+  trait_curiosity: Strong
+  trait_creativity: Strong
+  trait_love_of_learning: Strong
+  trait_open_mindedness: Strong
+  trait_perspective: Strong
+  trait_bravery: Strong
+  trait_perseverance: Moderate
+  trait_zest: Moderate
+  trait_kindness: Moderate
+  trait_social_intelligence: Moderate
+  trait_fairness: Strong
+  trait_leadership: Moderate
+  trait_humility: Slight
+  trait_appreciation_of_beauty: Moderate
+  trait_spirituality: Slight
+  trait_ambition: Strong
+  trait_empathy: Moderate
+  trait_loyalty: Slight
+  trait_competitiveness: Signature
+  trait_adaptability: Strong
+  val_career_success: Important
+  val_personal_freedom: Core value
+  val_power_influence: Important
+  val_achievement: Important
+  val_creativity_self_expression: Core value
+  val_knowledge_truth: Important
+  val_independence: Core value
+  val_justice_fairness: Important
+  val_recognition: Moderate
+  val_helping_others: Moderate
+  val_beauty_aesthetics: Moderate
+  val_equality: Core value
+  pref_plan_vs_spontaneous: Spontaneous
+  pref_text_vs_call: Prefers calls
+  pref_competition_vs_collab: Competitive
+  demo_employment_status: Self-employed
+  demo_ethnicity_broad: White / European
+  demo_veteran_status: Civilian
+  lifex_geographic_mobility: Moved internationally
+  lifex_travel_breadth: Lived abroad
+  lifex_career_path_shape: Linear climb
+  lifex_education_journey: Traditional track
+  lifex_immigration_generation: First-generation immigrant
+  lifex_cultural_exposure: Some exposure
+  lifex_public_recognition: Publicly notable
+  lifex_turning_point: Mentor encounter
+  bfi2_domain_extraversion: High
+  bfi2_domain_agreeableness: Average
+  bfi2_domain_conscientiousness: Average
+  bfi2_domain_open_mindedness: Very high
+  bfi2_facet_assertiveness: Very high
+  bfi2_facet_energy_level: High
+  bfi2_facet_compassion: High
+  bfi2_facet_respectfulness: Low
+  bfi2_facet_organization: Low
+  bfi2_facet_productiveness: High
+  bfi2_facet_intellectual_curiosity: Very high
+  bfi2_facet_aesthetic_sensitivity: High
+  bfi2_facet_creative_imagination: High
+  schwartz_value_self_direction: Very high
+  schwartz_value_stimulation: High
+  schwartz_value_achievement: High
+  schwartz_value_power: High
+  schwartz_value_conformity: Low
+  schwartz_value_benevolence: Average
+  schwartz_value_universalism: High
+  sdt_need_autonomy: Very high
+  sdt_need_competence: Very high
+  mft_care_harm: High
+  mft_fairness_cheating: High
+  mft_authority_subversion: Low
+  mft_liberty_oppression: Very high
+  need_for_cognition: Very high
+  dospert_ethical_risk_tolerance: High
+  dospert_social_risk_tolerance: High
+  interpersonal_agency_dominance: High

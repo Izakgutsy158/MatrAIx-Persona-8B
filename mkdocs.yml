@@ -1,0 +1,63 @@
+site_name: MatrAIx Handbook
+site_description: >-
+  Documentation for MatrAIx — a population-scale, persona-driven infrastructure
+  for evaluating AI systems and interactive products with simulated users.
+repo_url: https://github.com/MatrAIx-ai/MatrAIx
+docs_dir: docs
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - tables
+
+nav:
+  - Home: index.md
+  - Getting started: getting-started.md
+  - Configuration: configuration.md
+  - Persona:
+      - Overview: persona.md
+      - Pipeline internals: persona-pipeline.md
+  - Application:
+      - Overview: application.md
+      - Validation: validation.md
+  - Environment: environment.md
+  - Packages: packages.md
+  - Guides:
+      - Quickstart: guides/quickstart.md
+      - Choosing an agent: guides/choosing-an-agent.md
+      - Web interaction modes: guides/web-interaction.md
+      - Large-scale runs: guides/large-scale-runs.md
+      - Task authoring: guides/task-guide.md
+      - REST API: guides/rest-api.md
+      - Runtime runbook: guides/unified-runtime.md
+  - Task specification:
+      - Authoring bundle: task-spec/authoring-bundle.md
+      - Reporting and evaluation: task-spec/reporting-and-evaluation.md
+      - Shared core metrics: task-spec/shared-core-metrics.md
+      - Structured output: task-spec/structured-output-quick-reference.md
+      - Chatbot eval artifacts: task-spec/eval_artifacts.md
+      - Runtime boundary: task-spec/runtime-boundary.md

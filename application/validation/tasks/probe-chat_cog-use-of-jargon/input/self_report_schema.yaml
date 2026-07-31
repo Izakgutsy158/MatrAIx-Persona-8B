@@ -1,0 +1,27 @@
+artifactName: user_feedback.json
+instructions: |
+  Reflect honestly as the persona after the explain-it chat.
+  Focus on whether the exchange felt natural and let you say what you wanted to say.
+fields:
+  - key: needConstraintSatisfaction
+    prompt: How well did the chat let you give the explanation you wanted to give?
+    kind: enum
+    choices: [yes, partially, no]
+  - key: personalPreferenceSatisfaction
+    prompt: How well did the chatbot match your communication preferences?
+    kind: enum
+    choices: [yes, partially, no]
+  - key: overallExperienceRating
+    prompt: Overall, how would you rate the experience from 1 to 10?
+    kind: integer
+    minimum: 1
+    maximum: 10
+    explanation:
+      key: reason
+      prompt: Briefly explain the rating in your own voice.
+  - key: askedUsefulClarificationQuestions
+    prompt: Did the chatbot ask useful clarification questions?
+    kind: boolean
+    explanation:
+      key: clarifyingNotes
+      prompt: Which clarification questions helped, or why they did not.

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0",
+  "sources": [],
+  "defaultMode": "stratified",
+  "dimensionFilters": {
+    "risk_tolerance": [
+      "Risk-averse",
+      "Cautious",
+      "Balanced",
+      "Risk-tolerant",
+      "Risk-seeking"
+    ],
+    "decision_style": [
+      "Analytical",
+      "Intuitive",
+      "Deliberative"
+    ]
+  },
+  "stratifyFields": [
+    "risk_tolerance"
+  ],
+  "sampleSizePerValueGroup": 4
+}

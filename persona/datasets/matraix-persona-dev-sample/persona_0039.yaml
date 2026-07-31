@@ -1,0 +1,34 @@
+persona_id: 0039
+version: '1.0'
+source: amazon
+display_name: Sam Okafor
+dimensions:
+  economic_motivation: Value-driven
+  topic_fitness: Interested
+  topic_parenting: Interested
+  topic_home_improvement: Interested
+  topic_cars: Interested
+  topic_literature: Interested
+  topic_spirituality: Neutral
+  att_ai: Neutral
+  att_automation: Skeptical
+  lstyle_travel_freq: Occasional
+  lstyle_commute_mode: Car
+  cog_curiosity: Moderate
+  cog_question_asking: Rarely asks
+  cog_emoji_use: Rare
+  health_caregiver_status: Child caregiver
+  trait_creativity: Slight
+  trait_perseverance: Slight
+  trait_social_intelligence: Slight
+  trait_teamwork: Slight
+  trait_leadership: Slight
+  trait_ambition: Slight
+  trait_resilience: Slight
+  trait_discipline: Slight
+  coding_tool_alternative_sensitivity: Moderate concern
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: amazon-7e98f9b6a136
+  origin_source_row_index: 2027972

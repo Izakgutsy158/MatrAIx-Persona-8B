@@ -1,0 +1,11 @@
+schemaVersion: "1.0"
+id: probe_cog_verbosity_v1
+title: Short survey
+description: Open-ended survey to probe whether the cog_verbosity persona attribute is expressed.
+questions:
+  - id: q_main
+    prompt: >-
+      What have you been up to lately?
+    type: free_text
+    construct: probe
+    required: true

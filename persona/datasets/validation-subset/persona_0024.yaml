@@ -1,0 +1,71 @@
+persona_id: '0024'
+version: '1.0'
+source: stackoverflow:stackoverflow_2023_560_888
+dimensions:
+  age_bracket: 25-34
+  region: Western Europe
+  domain: Healthcare & Medicine
+  highest_education: Secondary
+  role_function: Engineering
+  years_experience: 11-20
+  life_stage: Early career
+  emotional_state: Frustrated
+  learning_style: Reading / writing
+  fam_computer_networking: Familiar
+  fam_databases: Familiar
+  fam_operating_systems: Familiar
+  fam_devops: Familiar
+  skill_coding: Advanced
+  skill_debugging: Advanced
+  skill_system_design: Advanced
+  skill_time_management: Intermediate
+  skill_research: Advanced
+  skill_problem_solving: Advanced
+  tool_sql: Regular
+  tool_slack: Regular
+  tool_microsoft_teams: Regular
+  tool_docker: Regular
+  tool_vs_code: Regular
+  tool_vim: Regular
+  tool_trello: Regular
+  topic_self_improvement: Interested
+  att_ai: Skeptical
+  att_online_reviews: Positive
+  att_open_source: Positive
+  ind_healthcare: Experienced
+  cog_detail_orientation: High
+  cog_reading_vs_watching: Prefers reading
+  peeve_being_interrupted: Major peeve
+  trait_love_of_learning: Strong
+  trait_adaptability: Strong
+  demo_employment_status: Full-time
+  demo_generation: Millennial
+  lifex_career_path_shape: Just starting
+  lifex_education_journey: Traditional track
+  code_comment_style: No comments
+  code_abstraction_level: Highly abstract and generic
+  code_dependencies_approach: Lean on libraries (minimal custom code)
+  need_for_closure: Very high
+  ai_task_code_generation: Does not plan AI use
+  ai_task_code_review: Does not plan AI use
+  ai_task_codebase_learning: Does not plan AI use
+  ai_task_data_generation_analytics: Does not plan AI use
+  ai_task_debugging_fixing: Does not plan AI use
+  ai_task_deployment_monitoring: Does not plan AI use
+  ai_task_documentation: Does not plan AI use
+  ai_task_learning_concepts: Does not plan AI use
+  ai_task_project_planning: Does not plan AI use
+  ai_task_refactoring: Does not plan AI use
+  ai_task_search_answers: Does not plan AI use
+  ai_task_testing: Does not plan AI use
+  codebase_onboarding_style: Reads architecture / docs first
+  coding_agent_usage_frequency: No plans
+  coding_ai_usage_frequency: Tried but not active
+  dev_contribution_context: Mixed contexts
+  dev_ic_manager_orientation: Individual contributor
+  dev_professional_status: Professional developer
+  dev_role_archetype: Full-stack developer
+  dev_toolchain_complexity: Large integrated toolchain
+  open_source_activity_level: Occasional contributor
+  stackoverflow_participation_style: Comments / discusses
+  stackoverflow_usage_pattern: Multiple times daily

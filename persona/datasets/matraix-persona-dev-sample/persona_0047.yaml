@@ -1,0 +1,22 @@
+persona_id: '0047'
+version: '1.0'
+source: amazon
+display_name: Riley Chen
+dimensions:
+  emotional_state: Calm
+  query_complexity: Simple factual
+  time_pressure: No rush
+  prior_context: Returning user
+  device_context: Mobile, on-the-go
+  att_working_from_office: Enthusiast
+  lstyle_household_size: 2 people
+  lstyle_frugality: Frugal saver
+  trait_discipline: Moderate
+  trait_generosity: Moderate
+  pref_work_location: Strongly remote
+  pref_save_vs_spend: Saver-leaning
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: amazon-d04b667d1a94
+  origin_source_row_index: 2054078

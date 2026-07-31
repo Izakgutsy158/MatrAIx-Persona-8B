@@ -1,0 +1,71 @@
+persona_id: '0075'
+version: '1.0'
+source: stackoverflow
+display_name: Tomas Horvat
+dimensions:
+  age_bracket: 18-24
+  region: Eastern Europe
+  domain: Software & AI
+  domain_characteristics: Practitioner
+  highest_education: Master's
+  company_size: Enterprise (5k+)
+  role_function: Engineering
+  years_experience: 6-10
+  life_stage: Early career
+  emotional_state: Frustrated
+  learning_style: Reading / writing
+  fam_databases: Proficient
+  fam_operating_systems: Proficient
+  fam_cloud_infrastructure: Proficient
+  fam_devops: Proficient
+  tool_python: Regular
+  tool_notion: Regular
+  tool_jira: Regular
+  tool_slack: Regular
+  tool_microsoft_teams: Regular
+  tool_chatgpt: Regular
+  lang_english: Fluent
+  att_ai: Positive
+  att_new_technology: Enthusiast
+  att_open_source: Positive
+  ind_retail: Experienced
+  lstyle_commute_mode: Remote
+  cog_reading_vs_watching: Prefers reading
+  trait_teamwork: Strong
+  trait_adaptability: Strong
+  val_achievement: Important
+  val_community: Important
+  val_knowledge_truth: Important
+  pref_speed_vs_accuracy: Accuracy first
+  demo_employment_status: Full-time
+  demo_generation: Gen Z
+  lifex_career_path_shape: Just starting
+  lifex_education_journey: Advanced degrees
+  code_function_length: Small functions (10-30 lines)
+  schwartz_value_self_direction: High
+  schwartz_value_achievement: High
+  sdt_need_autonomy: High
+  sdt_need_competence: High
+  sdt_need_relatedness: High
+  mft_care_harm: High
+  mft_fairness_cheating: High
+  mft_liberty_oppression: High
+  dospert_ethical_risk_tolerance: Low
+  codebase_onboarding_style: Reads architecture / docs first
+  coding_agent_usage_frequency: Not yet but interested
+  coding_ai_job_threat_perception: Serious threat concern
+  coding_ai_sentiment: Somewhat favorable
+  coding_ai_usage_frequency: Tried but not active
+  dev_contribution_context: Employee work
+  dev_ic_manager_orientation: Individual contributor
+  dev_professional_status: Professional developer
+  dev_role_archetype: Back-end developer
+  human_help_boundary_for_ai_coding: When trust is low
+  open_source_activity_level: No coding activity
+  stackoverflow_participation_style: Reads / searches only
+  stackoverflow_usage_pattern: Multiple times daily
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: stackoverflow-aa7e0844f857
+  origin_source_row_index: 2169168

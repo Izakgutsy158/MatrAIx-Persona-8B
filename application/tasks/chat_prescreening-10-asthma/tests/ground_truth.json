@@ -1,0 +1,217 @@
+{
+ "protocol_id": "BREATHE-EASY-2026-010",
+ "cases": {
+  "R01": {
+   "sex": "female",
+   "age": 29,
+   "label": "likely_eligible",
+   "criteria_not_met": [],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "29",
+    "Sex": "female",
+    "Asthma": "diagnosed in childhood",
+    "Controller inhaler": "yes - fluticasone (Flovent), prescribed daily, though she admits she skips it sometimes",
+    "Rescue inhaler use": "albuterol about 4 times a week, more during pollen season",
+    "COPD or emphysema": "never",
+    "Smoking": "never smoked",
+    "Oral steroids": "none in the past year",
+    "Asthma hospital or ER visits": "none in years",
+    "Smartphone and daily app use": "yes, willing",
+    "Willing to commit to 16 weeks": "yes",
+    "Other trials or programs": "none"
+   },
+   "rationale": "Diagnosed asthma, daily controller prescribed, rescue use 4x/week (above the 2x floor), no exclusions. Baseline easy case."
+  },
+  "R02": {
+   "sex": "male",
+   "age": 65,
+   "label": "likely_eligible",
+   "criteria_not_met": [],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "65",
+    "Sex": "male",
+    "Asthma": "diagnosed 20 years ago",
+    "Controller inhaler": "yes - budesonide/formoterol (Symbicort), daily",
+    "Rescue inhaler use": "exactly twice a week, 'like clockwork - Tuesday stairs and Saturday yard work'",
+    "COPD or emphysema": "never; his lung function tests have always come back 'asthma pattern, not COPD'",
+    "Smoking": "quit 30 years ago; nothing since",
+    "Oral steroids": "finished a prednisone course 5 weeks ago after a spring flare",
+    "Asthma hospital or ER visits": "none in the past year",
+    "Smartphone and daily app use": "yes, willing",
+    "Willing to commit to 16 weeks": "yes",
+    "Other trials or programs": "none"
+   },
+   "rationale": "Triple boundary: age exactly 65 (inclusive), rescue use exactly 2x/week (inclusive floor of INC4), and prednisone finished 5 weeks ago (just outside the 4-week EXC3 window)."
+  },
+  "R03": {
+   "sex": "female",
+   "age": 42,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "INC4"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "42",
+    "Sex": "female",
+    "Asthma": "diagnosed at 19",
+    "Controller inhaler": "yes - daily QVAR, very consistent",
+    "Rescue inhaler use": "maybe once a month - 'my asthma is honestly the best it's ever been'",
+    "COPD or emphysema": "never",
+    "Smoking": "never",
+    "Oral steroids": "none in years",
+    "Asthma hospital or ER visits": "none in a decade",
+    "Smartphone and daily app use": "yes, willing",
+    "Willing to commit to 16 weeks": "yes",
+    "Other trials or programs": "none"
+   },
+   "rationale": "Rescue use about once a month - below the 2x/week floor. Her asthma is too WELL controlled for a study targeting uncontrolled asthma."
+  },
+  "R04": {
+   "sex": "male",
+   "age": 58,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "EXC1"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "58",
+    "Sex": "male",
+    "Asthma": "diagnosed with asthma years ago",
+    "COPD or emphysema": "ALSO diagnosed with COPD two years ago - his pulmonologist calls it 'asthma-COPD overlap'",
+    "Controller inhaler": "yes - daily Advair",
+    "Rescue inhaler use": "albuterol 5-6 times a week",
+    "Smoking": "quit 5 years ago",
+    "Oral steroids": "none in the past 6 months",
+    "Asthma hospital or ER visits": "none in the past year",
+    "Smartphone and daily app use": "yes, willing",
+    "Willing to commit to 16 weeks": "yes",
+    "Other trials or programs": "none"
+   },
+   "rationale": "Carries a COPD (asthma-COPD overlap) diagnosis - a hard exclusion (EXC1) even though the asthma inclusion is met. The asthma-vs-COPD distinction is the test."
+  },
+  "R05": {
+   "sex": "female",
+   "age": 35,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "EXC2"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "35",
+    "Sex": "female",
+    "Asthma": "diagnosed at 22",
+    "Controller inhaler": "yes - daily Pulmicort",
+    "Rescue inhaler use": "albuterol 3-4 times a week",
+    "COPD or emphysema": "never",
+    "Smoking": "yes - about 8 cigarettes a day; 'I know, I know, with the asthma and everything'",
+    "Oral steroids": "none recently",
+    "Asthma hospital or ER visits": "none in the past year",
+    "Smartphone and daily app use": "yes, willing",
+    "Willing to commit to 16 weeks": "yes",
+    "Other trials or programs": "none"
+   },
+   "rationale": "Current daily smoker (EXC2). Everything else qualifies."
+  },
+  "R06": {
+   "sex": "male",
+   "age": 24,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "INC3"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "24",
+    "Sex": "male",
+    "Asthma": "diagnosed at 16",
+    "Controller inhaler": "NO - he has only ever been prescribed a rescue inhaler; 'the blue one, I use it when I need it'; no doctor has put him on a daily inhaler",
+    "Rescue inhaler use": "albuterol 5+ times a week, especially on cold mornings",
+    "COPD or emphysema": "never",
+    "Smoking": "never",
+    "Oral steroids": "none",
+    "Asthma hospital or ER visits": "none in the past year",
+    "Smartphone and daily app use": "yes, willing",
+    "Willing to commit to 16 weeks": "yes",
+    "Other trials or programs": "none"
+   },
+   "rationale": "No daily controller inhaler prescribed (INC3) - only a rescue inhaler. Tests the controller-vs-reliever distinction; his heavy rescue use satisfies INC4 but that is not enough."
+  },
+  "R07": {
+   "sex": "female",
+   "age": 61,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "EXC3",
+    "EXC4"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "61",
+    "Sex": "female",
+    "Asthma": "diagnosed 30 years ago; a rough year",
+    "Controller inhaler": "yes - daily Breo",
+    "Rescue inhaler use": "albuterol nearly daily lately",
+    "COPD or emphysema": "never",
+    "Smoking": "never",
+    "Oral steroids": "finished a prednisone burst 2 weeks ago",
+    "Asthma hospital or ER visits": "spent two nights in the hospital for an asthma flare 6 weeks ago",
+    "Smartphone and daily app use": "yes, willing",
+    "Willing to commit to 16 weeks": "yes",
+    "Other trials or programs": "none"
+   },
+   "rationale": "Multi-failure: prednisone 2 weeks ago (inside the 4-week EXC3 window) AND asthma hospitalization 6 weeks ago (inside the 3-month EXC4 window). Both must be listed."
+  },
+  "R08": {
+   "sex": "male",
+   "age": 50,
+   "label": "insufficient_information",
+   "criteria_not_met": [],
+   "criteria_unknown": [
+    "INC3",
+    "INC4"
+   ],
+   "profile": {
+    "Age": "50",
+    "Sex": "male",
+    "Asthma": "diagnosed about 10 years ago",
+    "Controller inhaler": "UNKNOWN - 'I've got two inhalers, a blue one and a purple-ish one; the pharmacy just refills them. Which one I'm supposed to take every day versus when I need it, I honestly couldn't tell you - I use them when my chest gets tight'",
+    "Rescue inhaler use": "UNKNOWN weekly count - 'no idea how many times a week; bad weeks a lot, good weeks barely at all'",
+    "COPD or emphysema": "never",
+    "Smoking": "never",
+    "Oral steroids": "none in the past year",
+    "Asthma hospital or ER visits": "none in the past year",
+    "Smartphone and daily app use": "yes, willing",
+    "Willing to commit to 16 weeks": "yes",
+    "Other trials or programs": "none"
+   },
+   "rationale": "Cannot identify which inhaler is a daily controller (INC3 unknown) and cannot estimate weekly rescue use (INC4 unknown) - the suite's only two-unknown case. Tests whether the bot lists BOTH unknown criteria."
+  },
+  "R09": {
+   "sex": "female",
+   "age": 33,
+   "label": "likely_eligible",
+   "criteria_not_met": [],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "33",
+    "Sex": "female",
+    "Asthma": "diagnosed at age 12",
+    "Controller inhaler": "yes - budesonide/formoterol (Symbicort), daily",
+    "Rescue inhaler use": "albuterol about 3 times a week",
+    "COPD or emphysema": "never",
+    "Smoking": "never",
+    "Oral steroids": "none in the past year",
+    "Asthma hospital or ER visits": "none in the past year",
+    "Smartphone and daily app use": "yes, willing",
+    "Willing to commit to 16 weeks": "yes",
+    "Other trials or programs": "none"
+   },
+   "rationale": "Everything qualifies (daily controller, rescue 3x/week). The test is conversational memory: producing an accurate mid-conversation read-back and still covering the remaining criteria."
+  }
+ }
+}

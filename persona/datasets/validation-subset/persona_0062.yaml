@@ -1,0 +1,220 @@
+persona_id: '0062'
+version: '1.0'
+source: wiki:Q43989
+dimensions:
+  age_bracket: 45-54
+  region: Eastern Europe
+  gender_identity: Man
+  urbanicity: Rural
+  socioeconomic_band: Low income
+  primary_language: Russian
+  multilingualism: Monolingual
+  register: Colloquial
+  domain: Arts & Humanities
+  domain_characteristics: Practitioner
+  highest_education: No formal
+  institution_tier: Not applicable
+  company_size: Solo / freelance
+  role_function: Clinical
+  years_experience: 11-20
+  life_stage: Mid-life
+  major_life_events: Major relocation
+  dominant_trait: High extraversion
+  risk_tolerance: Risk-seeking
+  decision_style: Intuitive
+  values_priority: Autonomy
+  political_lean: Right
+  religiosity: Devout
+  fam_political_science: Aware
+  fam_theology: Familiar
+  fam_religious_studies: Proficient
+  skill_public_speaking: Advanced
+  skill_leadership: Advanced
+  skill_persuasion: Master
+  skill_networking: Advanced
+  topic_politics: Interested
+  topic_travel: Passionate
+  topic_religion: Passionate
+  topic_spirituality: Passionate
+  lang_russian: Native
+  att_alternative_medicine: Enthusiast
+  att_organized_religion: Skeptical
+  att_risk_taking: Enthusiast
+  ind_healthcare: Some exposure
+  ind_agriculture: Some exposure
+  ind_government: Experienced
+  cult_russia: Native
+  cult_israel: Visited
+  cult_greece: Visited
+  cuis_vegetarian: Like
+  big5_imagination: High
+  big5_emotionality: High
+  big5_adventurousness: Very high
+  big5_liberalism: High
+  big5_self_efficacy: Very high
+  big5_orderliness: Low
+  big5_dutifulness: Low
+  big5_achievement_striving: High
+  big5_self_discipline: Low
+  big5_cautiousness: Very low
+  big5_friendliness: High
+  big5_gregariousness: High
+  big5_assertiveness: Very high
+  big5_activity_level: Very high
+  big5_excitement_seeking: Very high
+  big5_morality: Very low
+  big5_cooperation: Low
+  big5_modesty: Very low
+  big5_anxiety: Low
+  big5_self_consciousness: Very low
+  big5_immoderation: Very high
+  big5_vulnerability: Low
+  lstyle_diet_type: Vegetarian
+  lstyle_alcohol_use: Regularly
+  lstyle_travel_freq: Frequent flyer
+  lstyle_household_size: 5+ people
+  lstyle_vacation_style: Culture
+  cog_verbosity: Concise
+  cog_formality: Casual
+  cog_directness: Direct
+  cog_abstraction: Abstract
+  cog_assertiveness: Very high
+  cog_emotional_expressiveness: High
+  cog_decision_speed: Quick
+  cog_confidence_calibration: Overconfident
+  cog_big_picture_vs_detail: Big-picture
+  cog_risk_framing: Opportunity-focused
+  cog_empathy_expression: High
+  cog_precision_of_language: Loose
+  health_dietary_restriction: Religious
+  acad_civics: Interested
+  acad_philosophy: Interested
+  acad_political_theory: Indifferent
+  trait_curiosity: Moderate
+  trait_love_of_learning: Slight
+  trait_open_mindedness: Moderate
+  trait_perspective: Moderate
+  trait_bravery: Strong
+  trait_perseverance: Strong
+  trait_honesty: Slight
+  trait_zest: Strong
+  trait_capacity_for_love: Moderate
+  trait_kindness: Slight
+  trait_social_intelligence: Signature
+  trait_teamwork: Slight
+  trait_fairness: Absent
+  trait_leadership: Strong
+  trait_humility: Slight
+  trait_prudence: Absent
+  trait_self_regulation: Absent
+  trait_hope_optimism: Moderate
+  trait_spirituality: Signature
+  trait_ambition: Signature
+  trait_empathy: Slight
+  trait_resilience: Strong
+  trait_discipline: Slight
+  trait_adaptability: Strong
+  val_family: Minor
+  val_career_success: Core value
+  val_wealth: Moderate
+  val_health: Moderate
+  val_personal_freedom: Core value
+  val_security_stability: Minor
+  val_adventure: Important
+  val_tradition: Moderate
+  val_power_influence: Core value
+  val_achievement: Core value
+  val_creativity_self_expression: Moderate
+  val_community: Important
+  val_spirituality_faith: Core value
+  val_knowledge_truth: Minor
+  val_social_status: Important
+  val_independence: Core value
+  val_recognition: Important
+  val_helping_others: Important
+  val_personal_growth: Important
+  val_fun_enjoyment: Important
+  val_integrity_honesty: Minor
+  val_order_structure: Minor
+  val_patriotism: Minor
+  pref_team_vs_solo: Solo-leaning
+  pref_plan_vs_spontaneous: Spontaneous
+  pref_routine_vs_variety: Craves variety
+  pref_logic_vs_intuition: Pure intuition
+  pref_save_vs_spend: Free spender
+  pref_lead_vs_follow: Always leads
+  pref_indoor_vs_outdoor: Outdoor-leaning
+  pref_novelty_vs_familiarity: Novelty-leaning
+  pref_stability_vs_change: Craves change
+  demo_marital_status: Married
+  demo_children_count: 3+ children
+  demo_employment_status: Self-employed
+  demo_housing_status: Living with family
+  demo_religion_affiliation: Christian
+  demo_sexual_orientation: Heterosexual
+  demo_citizenship_status: Citizen by birth
+  demo_ethnicity_broad: White / European
+  demo_home_language: Same as primary
+  demo_parental_status: Parent of minors
+  demo_relationship_length: 15+ years
+  lifex_childhood_environment: Modest but steady
+  lifex_geographic_mobility: Moved nationally
+  lifex_travel_breadth: A few countries
+  lifex_career_path_shape: Pivoted once
+  lifex_education_journey: Largely self-taught
+  lifex_financial_trajectory: Steady upward
+  lifex_adversity_level: Overcame major hardship
+  lifex_immigration_generation: Native multi-generational
+  lifex_military_history: Never served
+  lifex_entrepreneurship_history: Never considered
+  lifex_relationship_history: Married once
+  lifex_parenting_journey: Teenagers
+  lifex_health_journey: Major surgery / injury
+  lifex_loss_experience: Lost a partner / child
+  lifex_faith_journey: Returned to faith
+  lifex_cultural_exposure: Some exposure
+  lifex_public_recognition: Famous
+  lifex_turning_point: Spiritual awakening
+  lifex_languages_lifetime: One
+  lifex_hometown_tie: Visits often
+  bfi2_domain_extraversion: Very high
+  bfi2_domain_agreeableness: Low
+  bfi2_domain_conscientiousness: Low
+  bfi2_domain_negative_emotionality: Low
+  bfi2_domain_open_mindedness: Very high
+  bfi2_facet_sociability: High
+  bfi2_facet_assertiveness: Very high
+  bfi2_facet_energy_level: Very high
+  bfi2_facet_respectfulness: Very low
+  bfi2_facet_organization: Low
+  bfi2_facet_productiveness: High
+  bfi2_facet_responsibility: Very low
+  bfi2_facet_anxiety: Low
+  bfi2_facet_intellectual_curiosity: Average
+  bfi2_facet_creative_imagination: High
+  schwartz_value_self_direction: Very high
+  schwartz_value_stimulation: High
+  schwartz_value_hedonism: High
+  schwartz_value_achievement: Very high
+  schwartz_value_power: Very high
+  schwartz_value_security: Low
+  schwartz_value_conformity: Very low
+  schwartz_value_tradition: Average
+  schwartz_value_benevolence: Average
+  schwartz_value_universalism: Low
+  sdt_need_autonomy: Very high
+  sdt_need_competence: High
+  sdt_need_relatedness: High
+  mft_fairness_cheating: Low
+  mft_sanctity_degradation: High
+  mft_liberty_oppression: High
+  need_for_cognition: Low
+  need_for_closure: Low
+  dospert_ethical_risk_tolerance: Very high
+  dospert_financial_risk_tolerance: High
+  dospert_health_safety_risk_tolerance: Very high
+  dospert_recreational_risk_tolerance: High
+  dospert_social_risk_tolerance: Very high
+  attachment_avoidance: High
+  interpersonal_agency_dominance: Very high
+  interpersonal_communion_warmth: High

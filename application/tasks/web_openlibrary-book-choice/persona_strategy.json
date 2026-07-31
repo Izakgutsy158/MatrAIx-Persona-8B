@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1.0",
+  "pool": "persona/datasets/matraix-persona-dev-sample",
+  "sources": [],
+  "defaultMode": "stratified",
+  "dimensionFilters": {
+    "highest_education": [
+      "Primary",
+      "Secondary",
+      "Vocational / cert",
+      "Bachelor's",
+      "Master's",
+      "Doctorate"
+    ],
+    "cog_reading_vs_watching": [
+      "Strongly prefers reading",
+      "Prefers reading",
+      "No preference",
+      "Prefers video",
+      "Strongly prefers video"
+    ]
+  },
+  "stratifyFields": [
+    "highest_education",
+    "cog_reading_vs_watching"
+  ],
+  "sampleSizePerValueGroup": 1
+}

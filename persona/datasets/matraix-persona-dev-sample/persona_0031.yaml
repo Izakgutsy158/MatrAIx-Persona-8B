@@ -1,0 +1,26 @@
+persona_id: '0031'
+version: '1.0'
+source: amazon
+display_name: Quinn Santos
+dimensions:
+  tech_savviness: Comfortable
+  decision_style: Analytical
+  emotional_state: Excited
+  query_complexity: Simple factual
+  expertise_gap: Novice asking expert
+  time_pressure: Deadline
+  device_context: Mobile, on-the-go
+  topic_travel: Interested
+  topic_pets: Interested
+  topic_puzzles: Interested
+  att_brand_loyalty: Positive
+  sport_snowboarding: Follow
+  lstyle_sleep_schedule: Shift-based
+  lstyle_work_schedule: Shift work
+  demo_marital_status: In a relationship
+  need_for_closure: Average
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: amazon-c8cf33c3a3db
+  origin_source_row_index: 2001423

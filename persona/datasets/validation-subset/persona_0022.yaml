@@ -1,0 +1,62 @@
+persona_id: '0022'
+version: '1.0'
+source: stackoverflow:stackoverflow_2023_4081_6404
+dimensions:
+  age_bracket: 25-34
+  region: South Asia
+  domain: Software & AI
+  domain_characteristics: Hobbyist
+  highest_education: Bachelor's
+  company_size: Enterprise (5k+)
+  role_function: Engineering
+  years_experience: 11-20
+  fam_data_science: Aware
+  fam_databases: Familiar
+  fam_operating_systems: Familiar
+  fam_compilers: Familiar
+  fam_cloud_infrastructure: Familiar
+  fam_devops: Familiar
+  tool_jira: Regular
+  tool_slack: Regular
+  tool_microsoft_teams: Regular
+  tool_docker: Regular
+  tool_google_cloud: Regular
+  tool_vs_code: Regular
+  tool_jetbrains_ides: Regular
+  tool_chatgpt: Tried it
+  topic_technology: Passionate
+  att_ai: Positive
+  att_new_technology: Positive
+  att_advertising: Neutral
+  att_online_reviews: Positive
+  ind_finance: Experienced
+  lstyle_commute_mode: Remote
+  lstyle_reading_freq: Weekly
+  lstyle_primary_messenger: WhatsApp
+  lstyle_device_ecosystem: Mixed
+  cog_reading_vs_watching: Prefers reading
+  peeve_being_interrupted: Major peeve
+  trait_love_of_learning: Strong
+  trait_adaptability: Strong
+  val_career_success: Important
+  val_personal_freedom: Important
+  val_knowledge_truth: Important
+  pref_team_vs_solo: Team-leaning
+  demo_employment_status: Full-time
+  demo_generation: Millennial
+  lifex_career_path_shape: Linear climb
+  lifex_education_journey: Traditional track
+  code_comment_style: Extensive inline comments
+  code_naming_verbosity: Highly verbose (long descriptive names)
+  code_refactoring_frequency: Refactor when necessary
+  codebase_onboarding_style: Reads architecture / docs first
+  coding_ai_learning_source: AI-enabled coding tools
+  coding_ai_output_trust: Neutral / depends on task
+  coding_ai_sentiment: Very favorable
+  coding_ai_usage_frequency: Tried but not active
+  dev_contribution_context: Employee work
+  dev_ic_manager_orientation: Individual contributor
+  dev_professional_status: Professional developer
+  dev_role_archetype: Back-end developer
+  stackoverflow_participation_style: Reads / searches only
+  stackoverflow_usage_pattern: Weekly reference

@@ -1,0 +1,77 @@
+persona_id: 0018
+version: '1.0'
+source: stackoverflow:stackoverflow_2023_22065_33791
+dimensions:
+  age_bracket: 35-44
+  region: North America
+  domain: Healthcare & Medicine
+  domain_characteristics: Hobbyist
+  highest_education: Vocational / cert
+  company_size: SMB (50-500)
+  role_function: Engineering
+  years_experience: 11-20
+  decision_style: Analytical
+  emotional_state: Frustrated
+  fam_databases: Familiar
+  fam_cloud_infrastructure: Familiar
+  fam_devops: Familiar
+  skill_coding: Master
+  skill_debugging: Master
+  skill_system_design: Master
+  skill_time_management: Intermediate
+  skill_research: Advanced
+  skill_problem_solving: Master
+  tool_sql: Regular
+  tool_azure: Regular
+  tool_vs_code: Regular
+  tool_chatgpt: Regular
+  att_ai: Skeptical
+  att_new_technology: Positive
+  att_online_reviews: Positive
+  ind_healthcare: Experienced
+  lstyle_commute_mode: Remote
+  lstyle_device_ecosystem: Windows
+  cog_skepticism: High
+  cog_question_asking: Asks often
+  peeve_being_interrupted: Major peeve
+  trait_love_of_learning: Strong
+  trait_adaptability: Strong
+  pref_team_vs_solo: Team-leaning
+  demo_employment_status: Full-time
+  demo_generation: Millennial
+  lifex_career_path_shape: Linear climb
+  lifex_education_journey: Vocational / trade
+  lifex_formative_decade: 1990s
+  code_summary_documentation: Never includes TLDR
+  code_indentation_style: 4 spaces
+  code_structure_preference: Object-oriented design
+  code_error_handling: Explicit error returns/validation
+  code_abstraction_level: Moderate abstraction
+  code_dependencies_approach: Lean on libraries (minimal custom code)
+  code_performance_priority: Readability-first then optimize if needed
+  code_refactoring_frequency: Refactor when necessary
+  prog_javascript: Proficient
+  prog_sql: Proficient
+  prog_powershell: Proficient
+  need_for_closure: High
+  bug_fix_test_behavior: Usually adds tests
+  code_api_design_orientation: Framework-convention driven
+  code_complexity_tolerance: Low
+  code_modularity_preference: Moderately modular
+  code_type_system_orientation: Strong static typing preference
+  codebase_onboarding_style: Reads architecture / docs first
+  coding_agent_usage_frequency: No plans
+  coding_ai_complexity_comfort: Uses AI for explanation only
+  coding_ai_learning_source: Self-experimentation
+  coding_ai_output_trust: Distrusts until proven
+  coding_ai_sentiment: Neutral / indifferent
+  coding_ai_usage_frequency: Tried but not active
+  coding_tool_ai_capability_importance: Low
+  debugging_strategy: Add logging / instrumentation
+  dev_contribution_context: Employee work
+  dev_ic_manager_orientation: Individual contributor
+  dev_professional_status: Professional developer
+  dev_role_archetype: Full-stack developer
+  dev_toolchain_complexity: Moderate multi-tool workflow
+  stackoverflow_participation_style: Reads / searches only
+  stackoverflow_usage_pattern: Weekly reference

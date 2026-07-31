@@ -1,0 +1,133 @@
+persona_id: 0090
+version: '1.0'
+source: prism
+display_name: Li Wei Chen
+dimensions:
+  age_bracket: 25-34
+  region: East Asia
+  gender_identity: Woman
+  english_proficiency: Fluent (C1-C2)
+  highest_education: Bachelor's
+  seniority: Entry
+  years_experience: 3-5
+  life_stage: Early career
+  cultural_background: Collectivist (East Asian)
+  tech_savviness: Cautious adopter
+  religiosity: Observant
+  intent: Learn / explain
+  query_complexity: Ambiguous / underspecified
+  expertise_gap: Novice asking expert
+  tone_expected: Warm / empathetic
+  prior_context: Cold start
+  fam_machine_learning: Aware
+  fam_deep_learning: Aware
+  fam_ethics: Familiar
+  fam_natural_language_processing: Familiar
+  fam_theology: Familiar
+  fam_religious_studies: Aware
+  tool_chatgpt: Occasional
+  topic_technology: Interested
+  topic_philosophy: Interested
+  topic_religion: Interested
+  topic_volunteering: Interested
+  topic_activism: Neutral
+  topic_languages: Interested
+  topic_productivity: Interested
+  topic_self_improvement: Interested
+  topic_mindfulness: Interested
+  lang_english: Fluent
+  att_organized_religion: Positive
+  ind_technology: Some exposure
+  cult_japan: Lived there
+  big5_trust: High
+  big5_morality: High
+  big5_altruism: High
+  lstyle_giving: Regular donor
+  cog_verbosity: Concise
+  cog_formality: Neutral
+  cog_directness: Direct
+  cog_humor: Serious
+  cog_detail_orientation: Low
+  cog_abstraction: Abstract
+  cog_optimism: High
+  cog_patience: High
+  cog_curiosity: Moderate
+  cog_skepticism: Moderate
+  cog_open_mindedness: High
+  cog_assertiveness: Moderate
+  cog_emotional_expressiveness: High
+  cog_conflict_approach: Collaborative
+  cog_feedback_receptiveness: High
+  cog_attention_span: Short
+  cog_learning_pace: Average
+  cog_question_asking: Sometimes
+  cog_decision_speed: Balanced
+  cog_confidence_calibration: Well-calibrated
+  cog_visual_vs_verbal: Verbal
+  cog_big_picture_vs_detail: Big-picture
+  cog_risk_framing: Balanced
+  cog_empathy_expression: High
+  cog_storytelling: Low
+  cog_precision_of_language: Loose
+  cog_use_of_jargon: Avoids jargon
+  cog_emoji_use: Never
+  cog_politeness: Polite
+  trait_curiosity: Moderate
+  trait_creativity: Strong
+  trait_open_mindedness: Moderate
+  trait_honesty: Strong
+  trait_capacity_for_love: Signature
+  trait_kindness: Signature
+  trait_fairness: Strong
+  trait_humility: Moderate
+  trait_gratitude: Moderate
+  trait_hope_optimism: Moderate
+  trait_empathy: Strong
+  trait_generosity: Signature
+  val_creativity_self_expression: Important
+  val_spirituality_faith: Important
+  val_justice_fairness: Core value
+  val_helping_others: Core value
+  demo_marital_status: Single
+  demo_children_count: None
+  demo_employment_status: Full-time
+  demo_generation: Millennial
+  demo_religion_affiliation: Christian
+  demo_ethnicity_broad: East Asian
+  demo_parental_status: Not a parent
+  demo_relationship_length: Not in one
+  lifex_career_path_shape: Just starting
+  lifex_education_journey: Traditional track
+  lifex_entrepreneurship_history: Never considered
+  lifex_relationship_history: Limited
+  lifex_faith_journey: Lifelong faith
+  lifex_formative_decade: 2010s
+  lifex_languages_lifetime: Two
+  bfi2_domain_agreeableness: High
+  bfi2_domain_open_mindedness: High
+  bfi2_facet_compassion: High
+  bfi2_facet_respectfulness: High
+  bfi2_facet_trust: High
+  bfi2_facet_intellectual_curiosity: High
+  bfi2_facet_creative_imagination: High
+  schwartz_value_benevolence: Very high
+  mft_care_harm: High
+  interpersonal_communion_warmth: High
+  ai_task_learning_concepts: Currently partially AI-assisted
+  ai_task_search_answers: Currently partially AI-assisted
+  coding_agent_usage_frequency: Monthly or infrequent
+  coding_ai_complexity_comfort: Only simple / boilerplate tasks
+  coding_ai_learning_source: Not learning AI tooling
+  coding_ai_output_trust: Neutral / depends on task
+  coding_ai_sentiment: Neutral / indifferent
+  coding_ai_usage_frequency: Monthly or infrequent
+  coding_tool_ai_capability_importance: Moderate
+  coding_tool_reliability_latency_importance: High
+  coding_tool_security_privacy_blocker: Major concern
+  future_developer_skill_belief: Ethical judgment
+  human_help_boundary_for_ai_coding: When learning deeply
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: prism-52aee0201872
+  origin_source_row_index: 2211239

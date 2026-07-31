@@ -1,0 +1,85 @@
+persona_id: '0074'
+version: '1.0'
+source: stackoverflow
+display_name: Emma Dubois
+dimensions:
+  age_bracket: 18-24
+  region: Western Europe
+  domain: Software & AI
+  domain_characteristics: Hobbyist
+  highest_education: Bachelor's
+  seniority: Entry
+  company_size: Startup (<50)
+  role_function: Engineering
+  years_experience: 6-10
+  life_stage: Early career
+  tech_savviness: Comfortable
+  emotional_state: Calm
+  learning_style: Reading / writing
+  fam_databases: Familiar
+  fam_operating_systems: Familiar
+  fam_cloud_infrastructure: Familiar
+  fam_devops: Familiar
+  fam_computer_graphics: Familiar
+  skill_debugging: Intermediate
+  skill_problem_solving: Intermediate
+  tool_sql: Regular
+  tool_slack: Regular
+  tool_docker: Regular
+  tool_aws: Regular
+  tool_vs_code: Regular
+  tool_zoom: Regular
+  tool_trello: Regular
+  tool_asana: Regular
+  tool_chatgpt: Regular
+  tool_github_copilot: Tried it
+  topic_productivity: Interested
+  lang_english: Fluent
+  att_ai: Positive
+  att_open_source: Positive
+  ind_technology: Veteran
+  lstyle_commute_mode: Remote
+  cog_skepticism: High
+  cog_reading_vs_watching: Prefers reading
+  peeve_being_interrupted: Annoys
+  trait_love_of_learning: Strong
+  val_security_stability: Important
+  val_achievement: Important
+  val_knowledge_truth: Important
+  val_independence: Important
+  val_personal_growth: Important
+  pref_team_vs_solo: Team-leaning
+  pref_speed_vs_accuracy: Accuracy-leaning
+  demo_employment_status: Full-time
+  demo_generation: Gen Z
+  lifex_career_path_shape: Just starting
+  lifex_education_journey: Traditional track
+  code_comment_style: Docstring/documentation blocks only
+  schwartz_value_security: High
+  sdt_need_autonomy: High
+  sdt_need_competence: High
+  sdt_need_relatedness: Low
+  mft_care_harm: High
+  mft_fairness_cheating: High
+  need_for_closure: High
+  dospert_ethical_risk_tolerance: Low
+  ai_task_data_generation_analytics: Plans partial AI use
+  code_type_system_orientation: Strong static typing preference
+  codebase_onboarding_style: Reads architecture / docs first
+  coding_agent_usage_frequency: Not yet but interested
+  coding_ai_usage_frequency: Daily
+  coding_tool_ethics_blocker: Moderate concern
+  debugging_strategy: Search / ask externally
+  dev_contribution_context: Employee work
+  dev_ic_manager_orientation: Individual contributor
+  dev_professional_status: Professional developer
+  dev_role_archetype: Full-stack developer
+  developer_help_seeking_preference: Ask teammates first
+  open_source_activity_level: Occasional contributor
+  stackoverflow_participation_style: Reads / searches only
+  stackoverflow_usage_pattern: Weekly reference
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: stackoverflow-9093a6dfe7b1
+  origin_source_row_index: 2161765

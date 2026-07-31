@@ -1,0 +1,55 @@
+persona_id: '0056'
+version: '1.0'
+source: amazon
+display_name: Quinn Santos
+dimensions:
+  urbanicity: Small town
+  domain_characteristics: Hobbyist
+  values_priority: Novelty
+  trust_level: Trusting
+  time_pressure: No rush
+  economic_motivation: Value-driven
+  fam_photography: Familiar
+  topic_travel: Interested
+  att_brand_loyalty: Positive
+  att_online_reviews: Positive
+  cult_united_states: Lived there
+  lstyle_travel_freq: A few trips/yr
+  lstyle_frugality: Balanced
+  lstyle_fashion_sense: Practical
+  lstyle_hobby_intensity: Dabbler
+  trait_love_of_learning: Slight
+  trait_perspective: Slight
+  trait_kindness: Slight
+  trait_social_intelligence: Slight
+  trait_fairness: Slight
+  trait_forgiveness: Slight
+  trait_prudence: Slight
+  trait_self_regulation: Slight
+  trait_ambition: Slight
+  trait_empathy: Slight
+  trait_discipline: Slight
+  trait_loyalty: Slight
+  val_adventure: Important
+  val_fun_enjoyment: Important
+  val_beauty_aesthetics: Important
+  lifex_geographic_mobility: Moved nationally
+  lifex_travel_breadth: Well-traveled
+  lifex_financial_trajectory: Stable
+  lifex_adversity_level: Minor setbacks
+  lifex_cultural_exposure: Multicultural upbringing
+  schwartz_value_self_direction: High
+  schwartz_value_stimulation: High
+  schwartz_value_hedonism: Average
+  schwartz_value_achievement: Average
+  schwartz_value_power: Low
+  schwartz_value_security: Average
+  schwartz_value_conformity: Average
+  sdt_need_autonomy: High
+  sdt_need_competence: Average
+  need_for_cognition: Low
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: amazon-656066827cc2
+  origin_source_row_index: 2077143

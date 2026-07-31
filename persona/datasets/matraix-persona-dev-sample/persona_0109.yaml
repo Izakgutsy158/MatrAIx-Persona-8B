@@ -1,0 +1,259 @@
+persona_id: 0109
+version: '1.0'
+source: prism
+display_name: Maya Patel
+dimensions:
+  age_bracket: 18-24
+  region: North America
+  gender_identity: Woman
+  primary_language: English
+  english_proficiency: Fluent (C1-C2)
+  highest_education: Bachelor's
+  seniority: Entry
+  years_experience: 0-2
+  life_stage: Student
+  cultural_background: Individualist (Western)
+  tech_savviness: Digital native
+  values_priority: Achievement
+  religiosity: Secular
+  intent: Learn / explain
+  query_complexity: Simple factual
+  expertise_gap: Novice asking expert
+  tone_expected: Concise
+  trust_level: Verifying
+  safety_sensitivity: Benign
+  prior_context: Cold start
+  device_context: Desktop, focused
+  modality_pref: Text
+  media_diet: Minimal
+  economic_motivation: Value-driven
+  fam_machine_learning: Familiar
+  fam_deep_learning: Familiar
+  fam_philosophy: Familiar
+  fam_ethics: Familiar
+  fam_linguistics: Familiar
+  fam_natural_language_processing: Familiar
+  fam_human_computer_interaction: Familiar
+  skill_active_listening: Advanced
+  skill_empathy: Advanced
+  skill_networking: Intermediate
+  tool_chatgpt: Regular
+  tool_claude: Regular
+  topic_travel: Interested
+  topic_technology: Passionate
+  topic_religion: Indifferent
+  topic_volunteering: Interested
+  topic_languages: Interested
+  topic_productivity: Interested
+  topic_self_improvement: Interested
+  topic_mindfulness: Interested
+  lang_english: Fluent
+  att_ai: Enthusiast
+  att_higher_education: Positive
+  att_new_technology: Enthusiast
+  att_working_from_office: Neutral
+  ind_technology: Some exposure
+  cult_united_states: Unfamiliar
+  cult_canada: Native
+  cult_mexico: Unfamiliar
+  cult_brazil: Unfamiliar
+  cult_argentina: Unfamiliar
+  cult_united_kingdom: Unfamiliar
+  cult_france: Unfamiliar
+  cult_germany: Unfamiliar
+  cult_italy: Unfamiliar
+  cult_spain: Unfamiliar
+  cult_netherlands: Unfamiliar
+  cult_sweden: Unfamiliar
+  cult_poland: Unfamiliar
+  cult_russia: Unfamiliar
+  cult_turkey: Unfamiliar
+  cult_egypt: Unfamiliar
+  cult_saudi_arabia: Unfamiliar
+  cult_uae: Unfamiliar
+  cult_israel: Unfamiliar
+  cult_iran: Unfamiliar
+  cult_nigeria: Unfamiliar
+  cult_kenya: Unfamiliar
+  cult_south_africa: Unfamiliar
+  cult_ethiopia: Unfamiliar
+  cult_india: Unfamiliar
+  cult_pakistan: Unfamiliar
+  cult_bangladesh: Unfamiliar
+  cult_china: Unfamiliar
+  cult_japan: Unfamiliar
+  cult_south_korea: Unfamiliar
+  cult_vietnam: Unfamiliar
+  cult_thailand: Unfamiliar
+  cult_indonesia: Unfamiliar
+  cult_philippines: Unfamiliar
+  cult_australia: Unfamiliar
+  cult_new_zealand: Unfamiliar
+  cult_singapore: Unfamiliar
+  cult_malaysia: Unfamiliar
+  cult_greece: Unfamiliar
+  cult_portugal: Unfamiliar
+  big5_dutifulness: High
+  big5_friendliness: High
+  big5_trust: High
+  big5_morality: High
+  big5_altruism: High
+  big5_cooperation: High
+  big5_sympathy: High
+  lstyle_work_schedule: Unemployed
+  lstyle_screen_time: 8+ hrs
+  cog_verbosity: Concise
+  cog_formality: Neutral
+  cog_directness: Direct
+  cog_humor: Serious
+  cog_detail_orientation: Moderate
+  cog_abstraction: Balanced
+  cog_optimism: Moderate
+  cog_patience: High
+  cog_curiosity: High
+  cog_skepticism: Moderate
+  cog_open_mindedness: High
+  cog_assertiveness: Moderate
+  cog_emotional_expressiveness: Moderate
+  cog_conflict_approach: Collaborative
+  cog_feedback_receptiveness: Very high
+  cog_ambiguity_tolerance: Moderate
+  cog_perfectionism: Moderate
+  cog_attention_span: Average
+  cog_learning_pace: Fast
+  cog_question_asking: Sometimes
+  cog_decision_speed: Balanced
+  cog_confidence_calibration: Well-calibrated
+  cog_big_picture_vs_detail: Both
+  cog_risk_framing: Balanced
+  cog_empathy_expression: High
+  cog_storytelling: Moderate
+  cog_precision_of_language: Precise
+  cog_use_of_jargon: Avoids jargon
+  cog_emoji_use: Rare
+  cog_politeness: Polite
+  trait_curiosity: Moderate
+  trait_creativity: Moderate
+  trait_love_of_learning: Moderate
+  trait_open_mindedness: Strong
+  trait_perspective: Moderate
+  trait_perseverance: Moderate
+  trait_honesty: Signature
+  trait_zest: Moderate
+  trait_capacity_for_love: Moderate
+  trait_kindness: Signature
+  trait_social_intelligence: Strong
+  trait_teamwork: Moderate
+  trait_fairness: Signature
+  trait_prudence: Strong
+  trait_self_regulation: Strong
+  trait_hope_optimism: Moderate
+  trait_ambition: Moderate
+  trait_empathy: Strong
+  trait_resilience: Moderate
+  trait_discipline: Strong
+  trait_generosity: Strong
+  trait_loyalty: Signature
+  trait_adaptability: Strong
+  val_family: Important
+  val_career_success: Important
+  val_wealth: Moderate
+  val_health: Important
+  val_personal_freedom: Important
+  val_security_stability: Important
+  val_adventure: Minor
+  val_tradition: Important
+  val_power_influence: Minor
+  val_achievement: Core value
+  val_creativity_self_expression: Moderate
+  val_community: Important
+  val_spirituality_faith: Irrelevant
+  val_knowledge_truth: Core value
+  val_social_status: Minor
+  val_independence: Important
+  val_justice_fairness: Core value
+  val_loyalty: Core value
+  val_sustainability: Moderate
+  val_recognition: Minor
+  val_helping_others: Core value
+  val_personal_growth: Important
+  val_fun_enjoyment: Moderate
+  val_integrity_honesty: Core value
+  val_order_structure: Important
+  val_patriotism: Important
+  val_equality: Important
+  pref_speed_vs_accuracy: Speed first
+  pref_quality_vs_quantity: Quality first
+  pref_early_vs_late: Early adopter
+  pref_text_vs_call: Prefers text
+  pref_detail_brief_vs_full: Just the gist
+  pref_competition_vs_collab: Collaborative
+  demo_marital_status: Single
+  demo_children_count: None
+  demo_employment_status: Unemployed
+  demo_generation: Gen Z
+  demo_religion_affiliation: None
+  demo_ethnicity_broad: East Asian
+  demo_home_language: Same as primary
+  demo_parental_status: Not a parent
+  demo_relationship_length: Not in one
+  lifex_career_path_shape: Just starting
+  lifex_education_journey: Traditional track
+  lifex_immigration_generation: First-generation immigrant
+  lifex_entrepreneurship_history: Never considered
+  lifex_relationship_history: Limited
+  lifex_faith_journey: Always secular
+  lifex_formative_decade: 2020s
+  lifex_languages_lifetime: Two
+  bfi2_domain_agreeableness: High
+  bfi2_domain_conscientiousness: High
+  bfi2_facet_compassion: High
+  bfi2_facet_respectfulness: High
+  bfi2_facet_trust: High
+  bfi2_facet_responsibility: High
+  schwartz_value_self_direction: High
+  schwartz_value_stimulation: Average
+  schwartz_value_hedonism: Low
+  schwartz_value_achievement: Very high
+  schwartz_value_power: Low
+  schwartz_value_security: High
+  schwartz_value_conformity: High
+  schwartz_value_tradition: High
+  schwartz_value_benevolence: Very high
+  schwartz_value_universalism: High
+  sdt_need_autonomy: High
+  sdt_need_competence: High
+  sdt_need_relatedness: Very high
+  mft_care_harm: High
+  mft_fairness_cheating: High
+  mft_loyalty_betrayal: High
+  mft_authority_subversion: Average
+  need_for_cognition: High
+  dospert_ethical_risk_tolerance: Very high
+  dospert_health_safety_risk_tolerance: Low
+  interpersonal_agency_dominance: Average
+  interpersonal_communion_warmth: High
+  ai_task_learning_concepts: Currently mostly AI-assisted
+  ai_task_search_answers: Currently mostly AI-assisted
+  coding_agent_explanation_preference: Concise summary only
+  coding_agent_security_expectation: Requires strict security review
+  coding_agent_usage_frequency: Daily
+  coding_ai_complexity_comfort: Comfortable with bounded complex tasks
+  coding_ai_learning_source: Self-experimentation
+  coding_ai_output_trust: Trusts after verification
+  coding_ai_sentiment: Very favorable
+  coding_ai_usage_frequency: Daily
+  coding_tool_ai_capability_importance: Critical
+  coding_tool_alternative_sensitivity: Moderate concern
+  coding_tool_ethics_blocker: Major concern
+  coding_tool_obsolescence_blocker: Minor concern
+  coding_tool_reliability_latency_importance: High
+  coding_tool_security_privacy_blocker: Hard blocker
+  developer_help_seeking_preference: Ask AI first
+  future_developer_skill_belief: Ethical judgment
+  human_help_boundary_for_ai_coding: When trust is low
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: prism-77d73adce53a
+  origin_source_row_index: 2212071

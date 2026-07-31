@@ -1,0 +1,36 @@
+artifactName: user_feedback.json
+instructions: |
+  Reflect honestly as the persona after the pre-screening conversation.
+  Focus on whether the screening was thorough, clear, and whether the final
+  assessment matched what you told the assistant.
+fields:
+  - key: needConstraintSatisfaction
+    prompt: How well did the assistant address your question of whether you qualify for the study?
+    kind: enum
+    choices: [yes, partially, no]
+  - key: personalPreferenceSatisfaction
+    prompt: How well did the assistant match your communication preferences?
+    kind: enum
+    choices: [yes, partially, no]
+  - key: overallExperienceRating
+    prompt: Overall, how would you rate the experience from 1 to 10?
+    kind: integer
+    minimum: 1
+    maximum: 10
+  - key: reason
+    prompt: Briefly explain the rating in your own voice.
+  - key: askedUsefulClarificationQuestions
+    prompt: Did the assistant ask about your health history in a clear, complete way?
+    kind: boolean
+  - key: clarifyingNotes
+    prompt: Which screening questions were clear or confusing, and why.
+  - key: trustLevel
+    prompt: How much did you trust the assistant's final assessment on a scale from 1 to 10?
+    kind: integer
+    minimum: 1
+    maximum: 10
+    required: false
+  - key: feltUnderstood
+    prompt: Did you feel the assistant understood your answers?
+    kind: boolean
+    required: false

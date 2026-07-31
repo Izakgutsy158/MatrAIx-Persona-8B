@@ -1,0 +1,44 @@
+persona_id: '0034'
+version: '1.0'
+source: amazon
+display_name: Riley Chen
+dimensions:
+  tech_savviness: Comfortable
+  expertise_gap: Novice asking expert
+  tone_expected: Detailed
+  modality_pref: Step-by-step
+  learning_style: Reading / writing
+  media_diet: Video-first
+  att_online_reviews: Positive
+  att_minimalism: Positive
+  lstyle_sleep_schedule: Flexible
+  lstyle_tidiness: Tidy
+  lstyle_morning_routine: Loosely structured
+  cog_humor: Playful
+  cog_detail_orientation: High
+  cog_abstraction: Concrete
+  cog_patience: High
+  cog_conflict_approach: Collaborative
+  cog_attention_span: Average
+  cog_big_picture_vs_detail: Detail
+  val_fun_enjoyment: Important
+  val_beauty_aesthetics: Important
+  val_order_structure: Important
+  pref_team_vs_solo: Solo-leaning
+  pref_routine_vs_variety: Routine-leaning
+  pref_speed_vs_accuracy: Accuracy first
+  pref_logic_vs_intuition: Logic-leaning
+  pref_lead_vs_follow: Leans lead
+  pref_detail_brief_vs_full: Detail-leaning
+  pref_competition_vs_collab: Competitive
+  need_for_cognition: Average
+  dev_contribution_context: Personal projects
+  dev_primary_work_surface: Mixed surfaces
+  dev_professional_status: Non-developer technologist
+  dev_role_archetype: Other developer
+  dev_toolchain_complexity: Minimal toolchain
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: amazon-dc7ae5c0bb02
+  origin_source_row_index: 2009096

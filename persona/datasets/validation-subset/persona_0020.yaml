@@ -1,0 +1,69 @@
+persona_id: '0020'
+version: '1.0'
+source: stackoverflow:stackoverflow_2023_2871_4538
+dimensions:
+  region: North America
+  gender_identity: Prefer not to say
+  domain: Software & AI
+  domain_characteristics: Cutting-edge researcher
+  highest_education: Primary
+  role_function: Research
+  years_experience: 0-2
+  life_stage: Early career
+  emotional_state: Frustrated
+  learning_style: Reading / writing
+  fam_machine_learning: Familiar
+  fam_statistics: Familiar
+  fam_computer_networking: Familiar
+  fam_databases: Familiar
+  fam_distributed_systems: Familiar
+  fam_operating_systems: Familiar
+  fam_compilers: Familiar
+  fam_cloud_infrastructure: Familiar
+  fam_devops: Familiar
+  fam_computer_vision: Familiar
+  fam_natural_language_processing: Familiar
+  tool_python: Regular
+  tool_sql: Regular
+  tool_notion: Regular
+  tool_jira: Regular
+  tool_slack: Regular
+  tool_docker: Regular
+  tool_kubernetes: Regular
+  tool_terraform: Regular
+  tool_vs_code: Regular
+  tool_vim: Regular
+  tool_jupyter: Regular
+  tool_unreal_engine: Regular
+  tool_zoom: Regular
+  tool_airtable: Regular
+  tool_chatgpt: Regular
+  tool_github_copilot: Regular
+  topic_productivity: Interested
+  att_ai: Enthusiast
+  att_new_technology: Enthusiast
+  att_online_reviews: Positive
+  ind_advertising: Experienced
+  lstyle_commute_mode: Remote
+  lstyle_work_schedule: Freelance
+  cog_detail_orientation: High
+  cog_reading_vs_watching: Prefers reading
+  pref_team_vs_solo: Strongly solo
+  pref_early_vs_late: Early adopter
+  pref_text_vs_call: Prefers text
+  pref_big_group_vs_one_on_one: One-on-one only
+  lifex_career_path_shape: Just starting
+  lifex_education_journey: Traditional track
+  code_comment_style: No comments
+  need_for_closure: High
+  ai_task_data_generation_analytics: Not applicable
+  codebase_onboarding_style: Asks teammates / AI for map
+  coding_ai_output_trust: Strongly trusts with light review
+  coding_ai_sentiment: Very favorable
+  debugging_strategy: Search / ask externally
+  dev_contribution_context: Academic / student work
+  dev_ic_manager_orientation: Individual contributor
+  dev_professional_status: Professional developer
+  dev_role_archetype: Other developer
+  stackoverflow_participation_style: Reads / searches only
+  stackoverflow_usage_pattern: Occasional troubleshooting

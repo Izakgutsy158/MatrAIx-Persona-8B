@@ -1,0 +1,8 @@
+{
+  "schemaVersion": "1.0",
+  "sources": [],
+  "defaultMode": "stratified",
+  "dimensionFilters": { "cog_storytelling": ["Very high", "None"] },
+  "stratifyFields": ["cog_storytelling"],
+  "sampleSize": 10
+}

@@ -1,0 +1,240 @@
+persona_id: 0095
+version: '1.0'
+source: prism
+display_name: Alex Rivera
+dimensions:
+  age_bracket: 25-34
+  region: Latin America
+  gender_identity: Man
+  primary_language: Spanish
+  english_proficiency: Native
+  multilingualism: Bilingual
+  register: Formal / standard
+  domain_characteristics: Cross-disciplinary
+  highest_education: Master's
+  seniority: Entry
+  years_experience: 3-5
+  life_stage: Early career
+  cultural_background: Latin
+  tech_savviness: Digital native
+  dominant_trait: High openness
+  risk_tolerance: Balanced
+  decision_style: Deliberative
+  values_priority: Achievement
+  political_lean: Center
+  religiosity: Secular
+  intent: Learn / explain
+  query_complexity: Ambiguous / underspecified
+  expertise_gap: Peer-level
+  trust_level: Verifying
+  safety_sensitivity: High-stakes (medical/legal/financial)
+  prior_context: Returning user
+  device_context: Desktop, focused
+  fam_machine_learning: Familiar
+  fam_deep_learning: Familiar
+  fam_sociology: Familiar
+  fam_psychology: Aware
+  fam_political_science: Familiar
+  fam_international_relations: Aware
+  fam_philosophy: Familiar
+  fam_ethics: Familiar
+  fam_linguistics: Aware
+  fam_natural_language_processing: Familiar
+  fam_human_computer_interaction: Familiar
+  fam_ux_research: Aware
+  fam_religious_studies: Aware
+  skill_fact_checking: Advanced
+  tool_chatgpt: Regular
+  topic_politics: Interested
+  topic_technology: Interested
+  topic_science: Interested
+  topic_history: Interested
+  topic_philosophy: Interested
+  topic_religion: Indifferent
+  topic_volunteering: Interested
+  topic_activism: Passionate
+  topic_self_improvement: Interested
+  lang_english: Native
+  lang_spanish: Fluent
+  att_ai: Positive
+  att_data_privacy: Positive
+  att_globalization: Positive
+  att_organized_religion: Neutral
+  att_higher_education: Positive
+  att_risk_taking: Positive
+  att_rapid_change: Positive
+  att_new_technology: Positive
+  att_free_speech: Positive
+  att_privacy_vs_security: Positive
+  att_globalized_supply_chains: Positive
+  ind_technology: Some exposure
+  ind_government: Some exposure
+  ind_nonprofit: Some exposure
+  ind_consumer_electronics: Some exposure
+  big5_imagination: High
+  big5_emotionality: Average
+  big5_intellect: High
+  big5_liberalism: High
+  big5_self_efficacy: High
+  big5_dutifulness: High
+  big5_achievement_striving: High
+  big5_friendliness: High
+  big5_assertiveness: High
+  big5_cheerfulness: High
+  big5_trust: High
+  big5_morality: Very high
+  big5_altruism: Very high
+  big5_cooperation: High
+  big5_sympathy: Very high
+  big5_anxiety: Low
+  big5_anger: Low
+  big5_depression: Low
+  big5_immoderation: Low
+  big5_vulnerability: Low
+  cog_verbosity: Concise
+  cog_formality: Neutral
+  cog_directness: Direct
+  cog_detail_orientation: Moderate
+  cog_abstraction: Abstract
+  cog_optimism: High
+  cog_patience: High
+  cog_curiosity: High
+  cog_skepticism: Moderate
+  cog_open_mindedness: High
+  cog_assertiveness: Moderate
+  cog_emotional_expressiveness: Moderate
+  cog_conflict_approach: Collaborative
+  cog_feedback_receptiveness: High
+  cog_ambiguity_tolerance: High
+  cog_attention_span: Long
+  cog_question_asking: Sometimes
+  cog_decision_speed: Deliberate
+  cog_confidence_calibration: Well-calibrated
+  cog_big_picture_vs_detail: Big-picture
+  cog_risk_framing: Opportunity-focused
+  cog_empathy_expression: High
+  cog_storytelling: Moderate
+  cog_precision_of_language: Precise
+  cog_use_of_jargon: Light
+  cog_emoji_use: Never
+  cog_politeness: Polite
+  acad_philosophy: Interested
+  acad_logic: Interested
+  acad_political_theory: Interested
+  trait_curiosity: Strong
+  trait_creativity: Moderate
+  trait_love_of_learning: Strong
+  trait_open_mindedness: Strong
+  trait_perspective: Signature
+  trait_bravery: Moderate
+  trait_perseverance: Moderate
+  trait_honesty: Strong
+  trait_zest: Moderate
+  trait_capacity_for_love: Strong
+  trait_kindness: Strong
+  trait_social_intelligence: Strong
+  trait_teamwork: Moderate
+  trait_fairness: Signature
+  trait_leadership: Moderate
+  trait_humility: Moderate
+  trait_prudence: Strong
+  trait_self_regulation: Strong
+  trait_hope_optimism: Strong
+  trait_ambition: Strong
+  trait_empathy: Signature
+  trait_resilience: Moderate
+  trait_discipline: Strong
+  trait_generosity: Strong
+  trait_adaptability: Moderate
+  val_achievement: Core value
+  val_spirituality_faith: Irrelevant
+  val_knowledge_truth: Core value
+  val_justice_fairness: Core value
+  val_helping_others: Core value
+  val_personal_growth: Core value
+  val_integrity_honesty: Core value
+  val_equality: Core value
+  pref_speed_vs_accuracy: Accuracy first
+  pref_quality_vs_quantity: Quality first
+  pref_logic_vs_intuition: Logic-leaning
+  pref_early_vs_late: Early adopter
+  pref_detail_brief_vs_full: Detail-leaning
+  pref_competition_vs_collab: Collaborative
+  pref_stability_vs_change: Change-leaning
+  demo_marital_status: Single
+  demo_children_count: None
+  demo_employment_status: Full-time
+  demo_generation: Millennial
+  demo_religion_affiliation: None
+  demo_ethnicity_broad: Hispanic / Latino
+  demo_home_language: Same as primary
+  demo_political_engagement: Engaged voter
+  demo_parental_status: Not a parent
+  demo_relationship_length: Not in one
+  lifex_geographic_mobility: Never left hometown
+  lifex_travel_breadth: Never left country
+  lifex_career_path_shape: Linear climb
+  lifex_education_journey: Advanced degrees
+  lifex_immigration_generation: Native multi-generational
+  lifex_relationship_history: Limited
+  lifex_parenting_journey: No children
+  lifex_faith_journey: Lapsed / left faith
+  lifex_cultural_exposure: Monocultural
+  lifex_formative_decade: 2010s
+  lifex_languages_lifetime: Two
+  lifex_hometown_tie: Still there
+  bfi2_domain_extraversion: High
+  bfi2_domain_agreeableness: Very high
+  bfi2_domain_conscientiousness: High
+  bfi2_domain_negative_emotionality: Low
+  bfi2_domain_open_mindedness: Very high
+  bfi2_facet_assertiveness: High
+  bfi2_facet_energy_level: High
+  bfi2_facet_compassion: Very high
+  bfi2_facet_respectfulness: High
+  bfi2_facet_trust: High
+  bfi2_facet_productiveness: High
+  bfi2_facet_responsibility: Very high
+  bfi2_facet_anxiety: Low
+  bfi2_facet_depression: Low
+  bfi2_facet_emotional_volatility: Low
+  bfi2_facet_intellectual_curiosity: Very high
+  bfi2_facet_creative_imagination: High
+  schwartz_value_self_direction: High
+  schwartz_value_achievement: Very high
+  schwartz_value_conformity: Low
+  schwartz_value_tradition: Low
+  schwartz_value_benevolence: Very high
+  schwartz_value_universalism: Very high
+  sdt_need_autonomy: High
+  sdt_need_competence: High
+  sdt_need_relatedness: High
+  mft_care_harm: Very high
+  mft_fairness_cheating: Very high
+  mft_liberty_oppression: Very high
+  need_for_cognition: Very high
+  need_for_closure: Low
+  interpersonal_agency_dominance: High
+  interpersonal_communion_warmth: Average
+  ai_task_learning_concepts: Currently partially AI-assisted
+  ai_task_search_answers: Currently partially AI-assisted
+  coding_agent_explanation_preference: Explain decisions and tradeoffs
+  coding_agent_security_expectation: Requires strict security review
+  coding_agent_usage_frequency: Weekly
+  coding_ai_complexity_comfort: Comfortable with bounded complex tasks
+  coding_ai_job_threat_perception: Minor long-term concern
+  coding_ai_learning_source: Self-experimentation
+  coding_ai_output_trust: Trusts after verification
+  coding_ai_sentiment: Somewhat favorable
+  coding_ai_usage_frequency: Weekly
+  coding_tool_ai_capability_importance: High
+  coding_tool_ethics_blocker: Hard blocker
+  coding_tool_reliability_latency_importance: Critical
+  coding_tool_security_privacy_blocker: Hard blocker
+  future_developer_skill_belief: Ethical judgment
+  human_help_boundary_for_ai_coding: When trust is low
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: prism-848b2cedf8ff
+  origin_source_row_index: 2211528

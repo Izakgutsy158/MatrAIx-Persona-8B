@@ -1,0 +1,58 @@
+services:
+  main:
+    depends_on:
+      tutor-adapter:
+        condition: service_healthy
+
+  tutor-adapter:
+    build:
+      context: ./tutor-adapter
+    environment:
+      DEEPTUTOR_BASE_URL: http://deeptutor:8001
+      DEEPTUTOR_LLM_BINDING: ${DEEPTUTOR_LLM_BINDING:-openai}
+      DEEPTUTOR_LLM_MODEL: ${DEEPTUTOR_LLM_MODEL:-gpt-4o-mini}
+      DEEPTUTOR_LLM_BASE_URL: ${DEEPTUTOR_LLM_BASE_URL:-}
+      DEEPTUTOR_LLM_API_KEY: ${DEEPTUTOR_LLM_API_KEY:-}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      PYTHONUNBUFFERED: "1"
+    expose:
+      - "8000"
+    depends_on:
+      deeptutor:
+        condition: service_healthy
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import urllib.request, json, sys; body = json.load(urllib.request.urlopen('http://localhost:8000/health', timeout=10)); sys.exit(0 if body.get('status') == 'ok' else 1)",
+        ]
+      interval: 5s
+      timeout: 15s
+      retries: 40
+      start_period: 30s
+
+  deeptutor:
+    # Pinned DeepTutor release (org.opencontainers.image.version 1.5.1).
+    image: ghcr.io/hkuds/deeptutor@sha256:8bdcc161b3507b5aa85b7b1a342f725ce3f6093e9a2413f29f59f9025eb25be7
+    expose:
+      - "8001"
+    volumes:
+      - deeptutor-data:/app/data
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://localhost:8001/api/v1/partners', timeout=5).read()",
+        ]
+      interval: 10s
+      timeout: 15s
+      retries: 30
+      start_period: 60s
+
+volumes:
+  deeptutor-data:

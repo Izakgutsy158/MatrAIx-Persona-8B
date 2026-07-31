@@ -1,0 +1,141 @@
+persona_id: 0093
+version: '1.0'
+source: prism
+display_name: Layla Haddad
+dimensions:
+  age_bracket: 18-24
+  region: MENA
+  gender_identity: Man
+  english_proficiency: Native
+  register: Formal / standard
+  highest_education: Vocational / cert
+  seniority: Entry
+  years_experience: 0-2
+  life_stage: Student
+  cultural_background: Middle Eastern
+  tech_savviness: Digital native
+  decision_style: Deliberative
+  religiosity: Observant
+  intent: Learn / explain
+  expertise_gap: Novice asking expert
+  tone_expected: Warm / empathetic
+  trust_level: Verifying
+  safety_sensitivity: Benign
+  prior_context: Returning user
+  fam_machine_learning: Familiar
+  fam_deep_learning: Familiar
+  fam_ethics: Familiar
+  fam_natural_language_processing: Familiar
+  skill_empathy: Intermediate
+  skill_fact_checking: Advanced
+  tool_chatgpt: Regular
+  tool_claude: Occasional
+  topic_technology: Interested
+  topic_religion: Neutral
+  topic_languages: Interested
+  topic_productivity: Interested
+  topic_self_improvement: Interested
+  topic_mindfulness: Interested
+  lang_english: Native
+  att_ai: Positive
+  att_new_technology: Positive
+  ind_technology: Some exposure
+  cult_israel: Native
+  big5_morality: High
+  lstyle_work_schedule: Flexible hours
+  cog_verbosity: Concise
+  cog_formality: Neutral
+  cog_directness: Direct
+  cog_detail_orientation: Moderate
+  cog_abstraction: Balanced
+  cog_optimism: High
+  cog_patience: Moderate
+  cog_curiosity: High
+  cog_skepticism: Moderate
+  cog_open_mindedness: High
+  cog_assertiveness: Moderate
+  cog_emotional_expressiveness: Moderate
+  cog_conflict_approach: Collaborative
+  cog_feedback_receptiveness: High
+  cog_ambiguity_tolerance: Moderate
+  cog_perfectionism: High
+  cog_attention_span: Average
+  cog_learning_pace: Fast
+  cog_question_asking: Sometimes
+  cog_decision_speed: Balanced
+  cog_confidence_calibration: Well-calibrated
+  cog_visual_vs_verbal: Verbal
+  cog_big_picture_vs_detail: Both
+  cog_risk_framing: Balanced
+  cog_empathy_expression: High
+  cog_storytelling: Low
+  cog_precision_of_language: Average
+  cog_use_of_jargon: Avoids jargon
+  cog_emoji_use: Never
+  cog_politeness: Polite
+  trait_curiosity: Moderate
+  trait_love_of_learning: Moderate
+  trait_open_mindedness: Strong
+  trait_kindness: Strong
+  trait_social_intelligence: Strong
+  trait_fairness: Strong
+  trait_humility: Moderate
+  trait_prudence: Strong
+  trait_self_regulation: Strong
+  trait_empathy: Strong
+  trait_discipline: Strong
+  trait_adaptability: Moderate
+  val_knowledge_truth: Core value
+  val_justice_fairness: Important
+  val_helping_others: Important
+  val_personal_growth: Important
+  val_fun_enjoyment: Moderate
+  val_integrity_honesty: Core value
+  val_equality: Important
+  pref_speed_vs_accuracy: Accuracy first
+  pref_quality_vs_quantity: Quality first
+  pref_early_vs_late: Early adopter
+  pref_detail_brief_vs_full: Detail-leaning
+  demo_marital_status: Single
+  demo_children_count: None
+  demo_employment_status: Part-time
+  demo_generation: Gen Z
+  demo_religion_affiliation: Jewish
+  demo_home_language: Same as primary
+  demo_parental_status: Not a parent
+  demo_relationship_length: Not in one
+  lifex_career_path_shape: Just starting
+  lifex_education_journey: Vocational / trade
+  lifex_relationship_history: Limited
+  lifex_faith_journey: Lifelong faith
+  lifex_formative_decade: 2020s
+  bfi2_domain_agreeableness: High
+  bfi2_facet_respectfulness: High
+  schwartz_value_self_direction: Average
+  schwartz_value_stimulation: High
+  sdt_need_autonomy: Average
+  sdt_need_competence: High
+  need_for_cognition: Very high
+  interpersonal_communion_warmth: High
+  ai_task_learning_concepts: Currently mostly AI-assisted
+  ai_task_search_answers: Currently mostly AI-assisted
+  coding_agent_security_expectation: Expects basic secret / privacy checks
+  coding_agent_usage_frequency: Weekly
+  coding_ai_complexity_comfort: Comfortable with bounded complex tasks
+  coding_ai_learning_source: AI-enabled coding tools
+  coding_ai_output_trust: Trusts after verification
+  coding_ai_sentiment: Somewhat favorable
+  coding_ai_usage_frequency: Weekly
+  coding_tool_ai_capability_importance: High
+  coding_tool_alternative_sensitivity: Moderate concern
+  coding_tool_ethics_blocker: Moderate concern
+  coding_tool_reliability_latency_importance: High
+  coding_tool_security_privacy_blocker: Major concern
+  developer_help_seeking_preference: Ask AI first
+  future_developer_skill_belief: Problem decomposition
+  human_help_boundary_for_ai_coding: When trust is low
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: prism-5b8f8d0ea855
+  origin_source_row_index: 2211471

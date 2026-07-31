@@ -1,0 +1,8 @@
+{
+  "schemaVersion": "1.0",
+  "sources": [],
+  "defaultMode": "stratified",
+  "dimensionFilters": { "cog_use_of_jargon": ["Heavy", "Avoids jargon"] },
+  "stratifyFields": ["cog_use_of_jargon"],
+  "sampleSize": 10
+}

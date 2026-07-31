@@ -1,0 +1,351 @@
+persona_id: 0088
+version: '1.0'
+source: wiki:Q5371640
+dimensions:
+  region: Western Europe
+  gender_identity: Woman
+  urbanicity: Dense urban
+  primary_language: English
+  english_proficiency: Native
+  multilingualism: Monolingual
+  register: Colloquial
+  domain: Arts & Humanities
+  subject_specialty: Investigative reporting
+  domain_characteristics: Practitioner
+  research_output: None
+  seniority: Student / intern
+  role_function: Teaching
+  years_experience: 0-2
+  linkedin_activity: Thought leader
+  cultural_background: Mixed / diaspora
+  tech_savviness: Comfortable
+  dominant_trait: High openness
+  values_priority: Novelty
+  religiosity: Secular
+  expertise_gap: Teaching the model
+  safety_sensitivity: Benign
+  economic_motivation: Indifferent
+  fam_machine_learning: None
+  fam_deep_learning: None
+  fam_statistics: None
+  fam_data_science: None
+  fam_cardiology: None
+  fam_neurology: None
+  fam_oncology: None
+  fam_pediatrics: None
+  fam_psychiatry: None
+  fam_radiology: None
+  fam_surgery: None
+  fam_immunology: None
+  fam_constitutional_law: None
+  fam_contract_law: None
+  fam_criminal_law: None
+  fam_tax_law: None
+  fam_intellectual_property: None
+  fam_corporate_finance: None
+  fam_quantitative_trading: None
+  fam_accounting: None
+  fam_auditing: None
+  fam_macroeconomics: None
+  fam_microeconomics: None
+  fam_behavioral_economics: None
+  fam_curriculum_design: None
+  fam_pedagogy: None
+  fam_structural_engineering: None
+  fam_mechanical_engineering: None
+  fam_electrical_engineering: None
+  fam_civil_engineering: None
+  fam_chemical_engineering: None
+  fam_aerospace_engineering: None
+  fam_robotics: None
+  fam_control_systems: None
+  fam_molecular_biology: None
+  fam_genetics: None
+  fam_biochemistry: None
+  fam_organic_chemistry: None
+  fam_physical_chemistry: None
+  fam_particle_physics: None
+  fam_astrophysics: None
+  fam_astronomy: None
+  fam_geology: None
+  fam_oceanography: None
+  fam_climate_science: None
+  fam_ecology: None
+  fam_religious_studies: Familiar
+  skill_writing: Master
+  skill_copywriting: Master
+  skill_editing: Advanced
+  skill_storytelling: Master
+  skill_public_speaking: Master
+  skill_persuasion: Intermediate
+  skill_presenting: Master
+  topic_tv_series: Interested
+  topic_music: Interested
+  topic_theater: Passionate
+  topic_literature: Interested
+  topic_philosophy: Interested
+  topic_religion: Passionate
+  topic_spirituality: Neutral
+  topic_podcasts: Passionate
+  lang_english: Native
+  lang_mandarin: None
+  lang_cantonese: None
+  lang_spanish: None
+  lang_hindi: None
+  lang_arabic: None
+  lang_french: None
+  lang_portuguese: None
+  lang_bengali: None
+  lang_russian: None
+  lang_japanese: None
+  lang_german: None
+  lang_korean: None
+  lang_italian: None
+  lang_turkish: None
+  lang_vietnamese: None
+  lang_thai: None
+  lang_indonesian: None
+  lang_malay: None
+  lang_swahili: None
+  lang_dutch: None
+  lang_polish: None
+  lang_ukrainian: None
+  lang_persian: None
+  lang_hebrew: None
+  lang_greek: None
+  lang_czech: None
+  lang_hungarian: None
+  lang_romanian: None
+  lang_swedish: None
+  lang_norwegian: None
+  lang_danish: None
+  lang_finnish: None
+  lang_tagalog: None
+  lang_urdu: None
+  lang_tamil: None
+  lang_telugu: None
+  lang_marathi: None
+  lang_punjabi: None
+  lang_gujarati: None
+  lang_hausa: None
+  lang_yoruba: None
+  lang_igbo: None
+  lang_amharic: None
+  lang_zulu: None
+  lang_afrikaans: None
+  lang_serbian: None
+  att_organized_religion: Skeptical
+  ind_technology: Some exposure
+  ind_healthcare: None
+  ind_finance: None
+  ind_banking: None
+  ind_insurance: None
+  ind_retail: None
+  ind_e_commerce: None
+  ind_manufacturing: None
+  ind_automotive: None
+  ind_aerospace: None
+  ind_energy: None
+  ind_oil_gas: None
+  ind_utilities: None
+  ind_construction: None
+  ind_real_estate: None
+  ind_hospitality: None
+  ind_travel_tourism: None
+  ind_restaurants: None
+  ind_agriculture: None
+  ind_food_beverage: None
+  ind_pharmaceuticals: None
+  ind_biotech: None
+  ind_media: Veteran
+  ind_entertainment: Veteran
+  ind_gaming: None
+  ind_publishing: None
+  ind_advertising: None
+  ind_government: None
+  ind_defense: None
+  ind_nonprofit: None
+  ind_logistics: None
+  ind_transportation: None
+  ind_shipping: None
+  ind_mining: None
+  ind_chemicals: None
+  ind_textiles: None
+  ind_apparel: None
+  ind_consumer_electronics: None
+  ind_semiconductors: None
+  ind_legal_services: None
+  ind_consulting: None
+  ind_accounting: None
+  ind_marketing_agencies: None
+  ind_fitness_wellness: None
+  ind_beauty_cosmetics: None
+  ind_sports: None
+  ind_music: Some exposure
+  ind_fine_art: None
+  big5_imagination: Very high
+  big5_artistic_interest: High
+  big5_emotionality: High
+  big5_adventurousness: Very high
+  big5_intellect: Average
+  big5_liberalism: High
+  big5_self_efficacy: High
+  big5_orderliness: Low
+  big5_dutifulness: Average
+  big5_achievement_striving: High
+  big5_self_discipline: High
+  big5_cautiousness: Very low
+  big5_friendliness: High
+  big5_gregariousness: High
+  big5_assertiveness: High
+  big5_activity_level: High
+  big5_excitement_seeking: Very high
+  big5_cheerfulness: Average
+  big5_trust: Average
+  big5_morality: High
+  big5_altruism: High
+  big5_cooperation: Average
+  big5_modesty: Very low
+  big5_sympathy: High
+  big5_anxiety: Average
+  big5_anger: Low
+  big5_depression: Average
+  big5_self_consciousness: Low
+  big5_immoderation: Very high
+  big5_vulnerability: High
+  lstyle_sleep_schedule: Night owl
+  lstyle_work_schedule: Freelance
+  cog_verbosity: Wordy
+  cog_formality: Casual
+  cog_directness: Indirect
+  cog_humor: Playful
+  cog_detail_orientation: High
+  cog_abstraction: Abstract
+  cog_optimism: High
+  cog_patience: High
+  cog_curiosity: Moderate
+  cog_skepticism: Low
+  cog_open_mindedness: High
+  cog_assertiveness: High
+  cog_emotional_expressiveness: Very high
+  cog_conflict_approach: Avoidant
+  cog_ambiguity_tolerance: High
+  cog_perfectionism: Low
+  cog_attention_span: Short
+  cog_question_asking: Rarely asks
+  cog_confidence_calibration: Overconfident
+  cog_visual_vs_verbal: Verbal
+  cog_big_picture_vs_detail: Big-picture
+  cog_risk_framing: Opportunity-focused
+  cog_empathy_expression: High
+  cog_storytelling: Very high
+  cog_precision_of_language: Vague
+  cog_use_of_jargon: Light
+  cog_emoji_use: Never
+  cog_politeness: Neutral
+  trait_curiosity: Strong
+  trait_creativity: Signature
+  trait_love_of_learning: Strong
+  trait_open_mindedness: Strong
+  trait_perspective: Signature
+  trait_bravery: Strong
+  trait_perseverance: Strong
+  trait_honesty: Moderate
+  trait_zest: Strong
+  trait_capacity_for_love: Moderate
+  trait_kindness: Moderate
+  trait_social_intelligence: Slight
+  trait_teamwork: Slight
+  trait_fairness: Moderate
+  trait_leadership: Strong
+  trait_forgiveness: Moderate
+  trait_humility: Slight
+  trait_prudence: Slight
+  trait_self_regulation: Slight
+  trait_appreciation_of_beauty: Slight
+  trait_gratitude: Moderate
+  trait_hope_optimism: Strong
+  trait_playfulness: Signature
+  trait_spirituality: Strong
+  trait_ambition: Moderate
+  trait_empathy: Moderate
+  trait_resilience: Strong
+  trait_discipline: Strong
+  trait_generosity: Moderate
+  trait_loyalty: Slight
+  trait_competitiveness: Slight
+  trait_adaptability: Strong
+  val_family: Irrelevant
+  val_career_success: Important
+  val_wealth: Irrelevant
+  val_health: Irrelevant
+  val_personal_freedom: Core value
+  val_security_stability: Irrelevant
+  val_adventure: Important
+  val_tradition: Irrelevant
+  val_power_influence: Important
+  val_achievement: Important
+  val_creativity_self_expression: Core value
+  val_community: Important
+  val_spirituality_faith: Irrelevant
+  val_knowledge_truth: Moderate
+  val_social_status: Irrelevant
+  val_independence: Important
+  val_justice_fairness: Important
+  val_loyalty: Irrelevant
+  val_sustainability: Irrelevant
+  val_recognition: Important
+  val_helping_others: Important
+  val_personal_growth: Important
+  val_fun_enjoyment: Core value
+  val_integrity_honesty: Irrelevant
+  val_beauty_aesthetics: Irrelevant
+  val_order_structure: Irrelevant
+  val_patriotism: Irrelevant
+  val_equality: Important
+  val_privacy: Irrelevant
+  habit_daily_reflection: Daily
+  pref_work_location: Strongly remote
+  demo_religion_affiliation: Christian
+  demo_home_language: Same as primary
+  lifex_public_recognition: Industry-recognized
+  bfi2_domain_extraversion: High
+  bfi2_domain_agreeableness: High
+  bfi2_domain_conscientiousness: Average
+  bfi2_domain_negative_emotionality: Average
+  bfi2_domain_open_mindedness: Very high
+  bfi2_facet_sociability: High
+  bfi2_facet_assertiveness: High
+  bfi2_facet_energy_level: High
+  bfi2_facet_compassion: High
+  bfi2_facet_respectfulness: Low
+  bfi2_facet_trust: Average
+  bfi2_facet_organization: Low
+  bfi2_facet_productiveness: High
+  bfi2_facet_responsibility: High
+  bfi2_facet_anxiety: Average
+  bfi2_facet_depression: Average
+  bfi2_facet_emotional_volatility: High
+  bfi2_facet_intellectual_curiosity: Average
+  bfi2_facet_aesthetic_sensitivity: High
+  bfi2_facet_creative_imagination: Very high
+  schwartz_value_self_direction: High
+  schwartz_value_stimulation: Very high
+  schwartz_value_hedonism: Very high
+  schwartz_value_achievement: High
+  schwartz_value_power: Low
+  schwartz_value_security: Very low
+  schwartz_value_conformity: Very low
+  schwartz_value_tradition: Very low
+  schwartz_value_benevolence: High
+  schwartz_value_universalism: High
+  sdt_need_autonomy: Very high
+  sdt_need_competence: High
+  sdt_need_relatedness: High
+  need_for_cognition: Low
+  dev_contribution_context: Personal projects
+  dev_ic_manager_orientation: Not applicable
+  dev_primary_work_surface: IDE / editor
+  dev_professional_status: Non-developer technologist
+  dev_role_archetype: Other developer
+  dev_toolchain_complexity: Minimal toolchain

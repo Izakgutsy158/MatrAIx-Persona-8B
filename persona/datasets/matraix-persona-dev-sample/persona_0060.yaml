@@ -1,0 +1,54 @@
+persona_id: '0060'
+version: '1.0'
+source: stackoverflow
+display_name: Ivan Kowalski
+dimensions:
+  age_bracket: 18-24
+  region: Eastern Europe
+  domain: Software & AI
+  domain_characteristics: Hobbyist
+  highest_education: Doctorate
+  academic_field: STEM
+  company_size: SMB (50-500)
+  role_function: Engineering
+  years_experience: 6-10
+  fam_databases: Familiar
+  fam_operating_systems: Familiar
+  fam_compilers: Familiar
+  fam_devops: Familiar
+  tool_python: Regular
+  tool_notion: Regular
+  tool_jira: Regular
+  tool_slack: Regular
+  tool_jetbrains_ides: Regular
+  tool_zoom: Regular
+  tool_chatgpt: Never used
+  lang_english: Fluent
+  att_ai: Skeptical
+  ind_technology: Veteran
+  lstyle_commute_mode: Remote
+  lstyle_primary_messenger: Telegram
+  lstyle_device_ecosystem: Linux
+  trait_love_of_learning: Strong
+  pref_team_vs_solo: Team-leaning
+  pref_early_vs_late: Early adopter
+  demo_employment_status: Part-time
+  lifex_education_journey: Advanced degrees
+  prog_sql: Familiar
+  codebase_onboarding_style: Reads architecture / docs first
+  coding_agent_adoption_barrier: Accuracy / reliability concerns
+  coding_ai_output_trust: Does not trust
+  coding_ai_sentiment: Neutral / indifferent
+  coding_ai_usage_frequency: Tried but not active
+  debugging_strategy: Search / ask externally
+  dev_contribution_context: Employee work
+  dev_ic_manager_orientation: Individual contributor
+  dev_professional_status: Professional developer
+  dev_role_archetype: Other developer
+  stackoverflow_participation_style: Reads / searches only
+  stackoverflow_usage_pattern: Weekly reference
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: stackoverflow-53af7d72c6ee
+  origin_source_row_index: 2112472

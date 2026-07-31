@@ -1,0 +1,41 @@
+persona_id: 0048
+version: '1.0'
+source: amazon
+display_name: Casey Brooks
+dimensions:
+  highest_education: Bachelor's
+  risk_tolerance: Cautious
+  topic_pets: Interested
+  topic_motorcycles: Interested
+  topic_cycling: Interested
+  topic_tea: Interested
+  topic_baking: Interested
+  topic_interior_design: Interested
+  sport_cycling: Play
+  big5_imagination: Average
+  big5_self_discipline: Average
+  big5_morality: Average
+  big5_anxiety: Average
+  lstyle_cooking_freq: Daily
+  lstyle_shopping_style: Researcher
+  lstyle_pet_ownership: Dog
+  health_chronic_condition: Multiple
+  health_sleep_quality: Fair
+  health_caregiver_status: Elder caregiver
+  pref_logic_vs_intuition: Pure logic
+  lifex_education_journey: Traditional track
+  lifex_entrepreneurship_history: Side hustle
+  lifex_relationship_history: Married once
+  bfi2_facet_assertiveness: Average
+  bfi2_facet_trust: Average
+  bfi2_facet_anxiety: Average
+  mft_care_harm: High
+  mft_fairness_cheating: High
+  mft_authority_subversion: Average
+  mft_sanctity_degradation: Average
+  mft_liberty_oppression: Average
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: amazon-afd45355d570
+  origin_source_row_index: 2054094

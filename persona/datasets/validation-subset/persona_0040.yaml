@@ -1,0 +1,180 @@
+persona_id: '0040'
+version: '1.0'
+source: wiki:Q211041
+dimensions:
+  region: North America
+  gender_identity: Man
+  urbanicity: Suburban
+  socioeconomic_band: High income
+  english_proficiency: Fluent (C1-C2)
+  multilingualism: Bilingual
+  register: Technical jargon
+  domain: Natural Sciences
+  domain_characteristics: Cutting-edge researcher
+  highest_education: Doctorate
+  academic_field: STEM
+  institution_tier: Top-tier research
+  research_output: Prolific publisher
+  seniority: Lead / Principal
+  company_size: Academia
+  role_function: Research
+  years_experience: 20+
+  life_stage: Retirement
+  major_life_events: Migration / immigration
+  cultural_background: Individualist (Western)
+  dominant_trait: High openness
+  risk_tolerance: Risk-tolerant
+  decision_style: Analytical
+  values_priority: Achievement
+  safety_sensitivity: Benign
+  media_diet: Academic journals
+  fam_statistics: Proficient
+  skill_writing: Advanced
+  skill_public_speaking: Advanced
+  skill_research: Master
+  skill_critical_thinking: Master
+  skill_problem_solving: Master
+  skill_mathematics: Master
+  skill_logical_reasoning: Master
+  skill_technical_writing: Advanced
+  skill_presenting: Advanced
+  topic_science: Passionate
+  lang_english: Fluent
+  lang_norwegian: Native
+  att_higher_education: Enthusiast
+  ind_education: Some exposure
+  cult_united_states: Lived there
+  big5_imagination: High
+  big5_adventurousness: High
+  big5_intellect: Very high
+  big5_liberalism: High
+  big5_self_efficacy: Very high
+  big5_dutifulness: High
+  big5_achievement_striving: Very high
+  big5_self_discipline: Very high
+  big5_gregariousness: Low
+  big5_assertiveness: High
+  big5_activity_level: High
+  big5_morality: High
+  big5_cooperation: Low
+  big5_vulnerability: Low
+  lstyle_household_size: 2 people
+  cog_detail_orientation: Very high
+  cog_abstraction: Highly abstract
+  cog_patience: High
+  cog_curiosity: Very high
+  cog_skepticism: High
+  cog_open_mindedness: High
+  cog_assertiveness: High
+  cog_conflict_approach: Confronting
+  cog_perfectionism: High
+  cog_multitasking: Prefers single-task
+  cog_attention_span: Very long
+  cog_learning_pace: Very fast
+  cog_confidence_calibration: Confident
+  cog_numeracy_comfort: Very high
+  cog_big_picture_vs_detail: Both
+  cog_precision_of_language: Very precise
+  cog_use_of_jargon: Heavy
+  health_cognitive_load_capacity: Very high
+  acad_algebra: Passionate
+  acad_geometry: Interested
+  acad_calculus: Passionate
+  acad_logic: Interested
+  trait_curiosity: Strong
+  trait_creativity: Signature
+  trait_love_of_learning: Strong
+  trait_open_mindedness: Strong
+  trait_perspective: Strong
+  trait_bravery: Signature
+  trait_perseverance: Strong
+  trait_capacity_for_love: Moderate
+  trait_social_intelligence: Slight
+  trait_teamwork: Slight
+  trait_leadership: Moderate
+  trait_appreciation_of_beauty: Moderate
+  trait_ambition: Strong
+  trait_resilience: Signature
+  trait_discipline: Strong
+  trait_competitiveness: Strong
+  trait_adaptability: Strong
+  val_family: Moderate
+  val_career_success: Core value
+  val_personal_freedom: Important
+  val_security_stability: Moderate
+  val_power_influence: Moderate
+  val_achievement: Core value
+  val_creativity_self_expression: Core value
+  val_community: Minor
+  val_knowledge_truth: Core value
+  val_social_status: Minor
+  val_independence: Core value
+  val_justice_fairness: Important
+  val_loyalty: Moderate
+  val_recognition: Moderate
+  val_personal_growth: Important
+  val_integrity_honesty: Important
+  val_beauty_aesthetics: Important
+  val_order_structure: Moderate
+  val_patriotism: Important
+  val_privacy: Important
+  pref_team_vs_solo: Strongly solo
+  pref_speed_vs_accuracy: Accuracy first
+  pref_quality_vs_quantity: Quality first
+  pref_logic_vs_intuition: Pure logic
+  pref_stability_vs_change: Craves stability
+  demo_marital_status: Married
+  demo_children_count: Adult children
+  demo_household_income: $200k+
+  demo_employment_status: Retired
+  demo_housing_status: Own outright
+  demo_generation: Silent
+  demo_sexual_orientation: Heterosexual
+  demo_ethnicity_broad: White / European
+  demo_veteran_status: Veteran
+  demo_parental_status: Grandparent
+  demo_relationship_length: 1-5 years
+  lifex_childhood_environment: Stable & secure
+  lifex_geographic_mobility: Moved internationally
+  lifex_travel_breadth: Lived abroad
+  lifex_career_path_shape: Linear climb
+  lifex_education_journey: Advanced degrees
+  lifex_adversity_level: Overcame major hardship
+  lifex_immigration_generation: First-generation immigrant
+  lifex_military_history: Served briefly
+  lifex_relationship_history: Remarried
+  lifex_parenting_journey: Grown children
+  lifex_health_journey: No major events
+  lifex_loss_experience: Lost a partner / child
+  lifex_cultural_exposure: Lived across cultures
+  lifex_public_recognition: Publicly notable
+  lifex_turning_point: Mentor encounter
+  lifex_languages_lifetime: Two
+  lifex_hometown_tie: Rarely returns
+  bfi2_domain_extraversion: Low
+  bfi2_domain_agreeableness: Low
+  bfi2_domain_conscientiousness: Very high
+  bfi2_domain_open_mindedness: Very high
+  bfi2_facet_sociability: Low
+  bfi2_facet_assertiveness: High
+  bfi2_facet_energy_level: High
+  bfi2_facet_productiveness: Very high
+  bfi2_facet_responsibility: High
+  bfi2_facet_intellectual_curiosity: Very high
+  bfi2_facet_creative_imagination: Very high
+  schwartz_value_self_direction: Very high
+  schwartz_value_achievement: Very high
+  schwartz_value_power: Low
+  schwartz_value_security: Average
+  schwartz_value_conformity: Low
+  sdt_need_autonomy: Very high
+  sdt_need_competence: Very high
+  sdt_need_relatedness: Low
+  mft_fairness_cheating: High
+  mft_liberty_oppression: High
+  need_for_cognition: Very high
+  dospert_ethical_risk_tolerance: High
+  dospert_health_safety_risk_tolerance: High
+  dospert_social_risk_tolerance: High
+  interpersonal_agency_dominance: High
+  interpersonal_communion_warmth: Low

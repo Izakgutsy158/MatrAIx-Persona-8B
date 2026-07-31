@@ -1,0 +1,130 @@
+# LiteLLM proxy — global LLM rate limiter for Playground batch runs (Plan B).
+#
+# Why: Harbor/Playground has NO application-level LLM throttle (only a 3-attempt
+# retry in harbor/llms/lite_llm.py). At high `n_concurrent_trials` (survey/chat
+# fork one subprocess per trial; web/os-app run many trials in one event loop),
+# bursts hit provider 429s. Routing every OpenAI-family call through this single
+# proxy process gives one authoritative rpm/tpm budget that all trials share —
+# including the forked survey/chat subprocesses, because they inherit the
+# OPENAI_BASE_URL / OPENAI_API_BASE env vars.
+#
+# The proxy runs as ONE process, so its in-memory rpm/tpm accounting is exact
+# (no Redis needed for single-host local runs).
+#
+# VALUES BELOW are filled from the operator's real dashboards:
+#   OpenAI    = Usage Tier 2   (platform.openai.com -> Settings -> Limits)
+#   Anthropic = Build tier      (console -> Rate limits)
+# NOTE: LiteLLM `tpm` is a single COMBINED input+output counter.
+#   - OpenAI TPM is already combined -> value maps 1:1.
+#   - Anthropic splits ITPM (input) / OTPM (output). We use the OTPM ceiling as
+#     the safe combined `tpm` so we never 429 on output; raise toward ITPM if
+#     your persona traffic is input-heavy with small outputs.
+
+# All OpenAI values below are the operator's real Usage Tier 2 numbers.
+# TPM here = combined input+output (matches OpenAI's TPM directly).
+# LONG-CONTEXT NOTE: gpt-5.5 / gpt-5.4 / gpt-4.1 have a SEPARATE long-context
+# bucket at a much lower RPM (250-500). LiteLLM can't tell a long request apart
+# (same model name), so if your runs are long-context heavy, lower that model's
+# rpm to the long-context value to stay safe.
+
+model_list:
+  # ================= OpenAI — flagship text models (5,000 RPM / 1,000,000 TPM) =
+  - model_name: gpt-5.5            # long-context bucket = 500 RPM
+    litellm_params: { model: openai/gpt-5.5, api_key: os.environ/OPENAI_API_KEY, rpm: 5000, tpm: 1000000 }
+  - model_name: gpt-5.4            # long-context bucket = 500 RPM
+    litellm_params: { model: openai/gpt-5.4, api_key: os.environ/OPENAI_API_KEY, rpm: 5000, tpm: 1000000 }
+  - model_name: gpt-5.6-sol
+    litellm_params: { model: openai/gpt-5.6-sol, api_key: os.environ/OPENAI_API_KEY, rpm: 5000, tpm: 1000000 }
+  - model_name: gpt-5.6-terra
+    litellm_params: { model: openai/gpt-5.6-terra, api_key: os.environ/OPENAI_API_KEY, rpm: 5000, tpm: 1000000 }
+  - model_name: gpt-5.2
+    litellm_params: { model: openai/gpt-5.2, api_key: os.environ/OPENAI_API_KEY, rpm: 5000, tpm: 1000000 }
+  - model_name: gpt-5.1
+    litellm_params: { model: openai/gpt-5.1, api_key: os.environ/OPENAI_API_KEY, rpm: 5000, tpm: 1000000 }
+  - model_name: gpt-5
+    litellm_params: { model: openai/gpt-5, api_key: os.environ/OPENAI_API_KEY, rpm: 5000, tpm: 1000000 }
+  - model_name: chat-latest
+    litellm_params: { model: openai/chat-latest, api_key: os.environ/OPENAI_API_KEY, rpm: 5000, tpm: 1000000 }
+
+  # ================= OpenAI — mini / nano (5,000 RPM / 2,000,000 TPM) ==========
+  - model_name: gpt-5.6-luna
+    litellm_params: { model: openai/gpt-5.6-luna, api_key: os.environ/OPENAI_API_KEY, rpm: 5000, tpm: 2000000 }
+  - model_name: gpt-5.4-mini
+    litellm_params: { model: openai/gpt-5.4-mini, api_key: os.environ/OPENAI_API_KEY, rpm: 5000, tpm: 2000000 }
+  - model_name: gpt-5.4-nano
+    litellm_params: { model: openai/gpt-5.4-nano, api_key: os.environ/OPENAI_API_KEY, rpm: 5000, tpm: 2000000 }
+  - model_name: gpt-5-mini
+    litellm_params: { model: openai/gpt-5-mini, api_key: os.environ/OPENAI_API_KEY, rpm: 5000, tpm: 2000000 }
+  - model_name: gpt-5-nano
+    litellm_params: { model: openai/gpt-5-nano, api_key: os.environ/OPENAI_API_KEY, rpm: 5000, tpm: 2000000 }
+  - model_name: gpt-4.1-mini
+    litellm_params: { model: openai/gpt-4.1-mini, api_key: os.environ/OPENAI_API_KEY, rpm: 5000, tpm: 2000000 }
+  - model_name: gpt-4.1-nano
+    litellm_params: { model: openai/gpt-4.1-nano, api_key: os.environ/OPENAI_API_KEY, rpm: 5000, tpm: 2000000 }
+  - model_name: gpt-4o-mini       # current default reporting model
+    litellm_params: { model: openai/gpt-4o-mini, api_key: os.environ/OPENAI_API_KEY, rpm: 5000, tpm: 2000000 }
+  - model_name: o3-mini
+    litellm_params: { model: openai/o3-mini, api_key: os.environ/OPENAI_API_KEY, rpm: 5000, tpm: 2000000 }
+  - model_name: o4-mini
+    litellm_params: { model: openai/o4-mini, api_key: os.environ/OPENAI_API_KEY, rpm: 5000, tpm: 2000000 }
+
+  # ================= OpenAI — 450,000 TPM class (5,000 RPM) ====================
+  - model_name: gpt-5-pro
+    litellm_params: { model: openai/gpt-5-pro, api_key: os.environ/OPENAI_API_KEY, rpm: 5000, tpm: 450000 }
+  - model_name: gpt-5-chat-latest
+    litellm_params: { model: openai/gpt-5-chat-latest, api_key: os.environ/OPENAI_API_KEY, rpm: 5000, tpm: 450000 }
+  - model_name: gpt-4.1           # long-context bucket = 250 RPM
+    litellm_params: { model: openai/gpt-4.1, api_key: os.environ/OPENAI_API_KEY, rpm: 5000, tpm: 450000 }
+  - model_name: gpt-4o
+    litellm_params: { model: openai/gpt-4o, api_key: os.environ/OPENAI_API_KEY, rpm: 5000, tpm: 450000 }
+  - model_name: o1
+    litellm_params: { model: openai/o1, api_key: os.environ/OPENAI_API_KEY, rpm: 5000, tpm: 450000 }
+  - model_name: o3
+    litellm_params: { model: openai/o3, api_key: os.environ/OPENAI_API_KEY, rpm: 5000, tpm: 450000 }
+
+  # ================= OpenAI — special / low buckets ============================
+  - model_name: gpt-5.5-pro       # 500 RPM / 200,000 TPM
+    litellm_params: { model: openai/gpt-5.5-pro, api_key: os.environ/OPENAI_API_KEY, rpm: 500, tpm: 200000 }
+  - model_name: gpt-4-turbo       # 500 RPM / 450,000 TPM
+    litellm_params: { model: openai/gpt-4-turbo, api_key: os.environ/OPENAI_API_KEY, rpm: 500, tpm: 450000 }
+  - model_name: gpt-4             # 5,000 RPM / 40,000 TPM (tight!)
+    litellm_params: { model: openai/gpt-4, api_key: os.environ/OPENAI_API_KEY, rpm: 5000, tpm: 40000 }
+
+  # ================= Anthropic / Claude — SCALE tier ==========================
+  # Sonnet 5 / Opus 4.x / Sonnet 4.x / Haiku 4.x: 10,000 RPM / 10M ITPM / 2M OTPM.
+  # tpm here is combined; we use OTPM (2M) as the safe cap so output never 429s.
+  # Raise toward 10000000 (ITPM) if your persona traffic is input-heavy.
+  # NOTE: your earlier "Rate limits" view showed Haiku Requests capped at 1.0K —
+  # if the workspace your key uses has a lower cap than the org Scale tier, set
+  # rpm to that lower number (e.g. 1000) instead of 10000.
+  - model_name: "anthropic/claude-fable-5*"   # Fable 5: 4K RPM / 4M ITPM / 800K OTPM
+    litellm_params: { model: anthropic/claude-fable-5*, api_key: os.environ/ANTHROPIC_API_KEY, rpm: 4000, tpm: 800000 }
+  - model_name: "anthropic/*"
+    litellm_params: { model: anthropic/*, api_key: os.environ/ANTHROPIC_API_KEY, rpm: 10000, tpm: 2000000 }
+
+  # ---- Catch-all passthrough for any other OpenAI model (no explicit cap) ----
+  - model_name: "*"
+    litellm_params:
+      model: openai/*
+      api_key: os.environ/OPENAI_API_KEY
+
+litellm_settings:
+  # Drop provider-unsupported params instead of erroring (e.g. temperature on gpt-5).
+  drop_params: true
+  # Per-request upstream timeout (seconds). Reasoning models are slow — keep generous.
+  request_timeout: 600
+  # Retry on 429/5xx and honor the provider's Retry-After header.
+  num_retries: 3
+
+router_settings:
+  # Back off a deployment when it repeatedly fails, then recover.
+  allowed_fails: 3
+  cooldown_time: 30
+  # Respect the provider-returned Retry-After on 429.
+  retry_after: true
+
+general_settings:
+  # Clients authenticate to the proxy with this key. We reuse the real
+  # OPENAI_API_KEY so existing callers need ZERO key changes — they only add
+  # OPENAI_BASE_URL. (Fine for a local single-user proxy on 127.0.0.1.)
+  master_key: os.environ/OPENAI_API_KEY

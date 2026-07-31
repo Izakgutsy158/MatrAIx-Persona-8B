@@ -1,0 +1,73 @@
+persona_id: '0070'
+version: '1.0'
+source: stackoverflow
+display_name: Omar Khalil
+dimensions:
+  age_bracket: 25-34
+  region: MENA
+  domain: Software & AI
+  highest_education: Vocational / cert
+  company_size: SMB (50-500)
+  role_function: Engineering
+  years_experience: 6-10
+  life_stage: Early career
+  tech_savviness: Comfortable
+  fam_databases: Familiar
+  fam_operating_systems: Familiar
+  fam_cloud_infrastructure: Familiar
+  fam_devops: Familiar
+  skill_coding: Master
+  skill_debugging: Master
+  skill_code_review: Master
+  skill_research: Master
+  skill_problem_solving: Master
+  tool_zoom: Regular
+  tool_chatgpt: Regular
+  tool_github_copilot: Regular
+  topic_productivity: Interested
+  topic_self_improvement: Interested
+  att_ai: Enthusiast
+  att_new_technology: Enthusiast
+  att_open_source: Positive
+  ind_technology: Veteran
+  lstyle_primary_messenger: WhatsApp
+  lstyle_device_ecosystem: Apple
+  cog_reading_vs_watching: Prefers reading
+  cog_big_picture_vs_detail: Detail
+  peeve_being_interrupted: Major peeve
+  trait_curiosity: Strong
+  trait_love_of_learning: Strong
+  trait_adaptability: Strong
+  pref_team_vs_solo: Team-leaning
+  demo_employment_status: Full-time
+  demo_generation: Millennial
+  lifex_career_path_shape: Linear climb
+  lifex_education_journey: Dropped out
+  code_comment_style: Mixed approach
+  code_dependencies_approach: Lean on libraries (minimal custom code)
+  need_for_closure: High
+  ai_task_code_generation: Currently partially AI-assisted
+  ai_task_code_review: Plans partial AI use
+  ai_task_codebase_learning: Does not plan AI use
+  ai_task_debugging_fixing: Currently partially AI-assisted
+  ai_task_deployment_monitoring: Does not plan AI use
+  ai_task_documentation: Plans partial AI use
+  ai_task_learning_concepts: Currently partially AI-assisted
+  ai_task_project_planning: Does not plan AI use
+  ai_task_testing: Currently partially AI-assisted
+  codebase_onboarding_style: Reads architecture / docs first
+  coding_ai_output_trust: Trusts after verification
+  coding_ai_sentiment: Very favorable
+  debugging_strategy: Search / ask externally
+  dev_contribution_context: Mixed contexts
+  dev_ic_manager_orientation: Individual contributor
+  dev_professional_status: Professional developer
+  dev_role_archetype: Front-end developer
+  open_source_activity_level: Occasional contributor
+  stackoverflow_participation_style: Reads / searches only
+  stackoverflow_usage_pattern: Weekly reference
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: stackoverflow-5688d081bab1
+  origin_source_row_index: 2147314

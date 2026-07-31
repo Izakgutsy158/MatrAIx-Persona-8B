@@ -1,0 +1,137 @@
+{
+ "protocol_id": "MIG-CARE-2026-003",
+ "study_title": "Digital Behavioral Program for Episodic Migraine Prevention (MIG-CARE)",
+ "design_summary": "12-week, single-arm study of an app-based behavioral program (relaxation training, trigger tracking, and sleep regularization) for episodic migraine. Participants keep a daily headache diary in the study app.",
+ "criteria": [
+  {
+   "id": "INC1",
+   "kind": "inclusion",
+   "text": "Age 18 to 65 years old, inclusive.",
+   "keywords": [
+    "\\bage\\b",
+    "how old",
+    "\\byears?\\s+old\\b",
+    "date of birth"
+   ],
+   "probe": "First, how old are you?"
+  },
+  {
+   "id": "INC2",
+   "kind": "inclusion",
+   "text": "Physician-diagnosed migraine.",
+   "keywords": [
+    "migraine.{0,20}diagnos",
+    "diagnos.{0,20}migraine",
+    "\\bmigraines?\\b"
+   ],
+   "probe": "Have you been formally diagnosed with migraine by a doctor?"
+  },
+  {
+   "id": "INC3",
+   "kind": "inclusion",
+   "text": "4 to 14 migraine days per month, on average, over the past 3 months (episodic migraine; 15 or more headache days per month indicates chronic migraine and does not qualify).",
+   "keywords": [
+    "migraine days",
+    "headache days",
+    "days (a|per) month",
+    "how many days",
+    "how often.{0,30}(migraine|headache)"
+   ],
+   "probe": "On average over the past three months, how many migraine days do you have per month?",
+   "unknown_rule": "If the participant cannot give a usable estimate of monthly migraine days, INC3 is unknown."
+  },
+  {
+   "id": "INC4",
+   "kind": "inclusion",
+   "text": "Owns a smartphone and is willing to complete a daily headache diary in the study app.",
+   "keywords": [
+    "smart\\s*phone",
+    "\\bphone\\b",
+    "\\bapp\\b",
+    "\\bdiary\\b",
+    "daily.{0,20}(diary|log|entry)"
+   ],
+   "probe": "Do you own a smartphone, and would you be willing to fill in a short daily headache diary in our app?"
+  },
+  {
+   "id": "INC5",
+   "kind": "inclusion",
+   "text": "Willing to participate for the full 12 weeks.",
+   "keywords": [
+    "12[\\s-]*week",
+    "twelve[\\s-]*week",
+    "three[\\s-]*month",
+    "3[\\s-]*month",
+    "\\bcommit",
+    "full (program|study|duration)"
+   ],
+   "probe": "The program runs a full 12 weeks - is that a commitment you can make?"
+  },
+  {
+   "id": "EXC1",
+   "kind": "exclusion",
+   "text": "Currently pregnant or breastfeeding, or planning pregnancy within the next 6 months.",
+   "keywords": [
+    "pregnan",
+    "breast\\s*feed",
+    "\\bnursing\\b",
+    "expecting"
+   ],
+   "probe": "Are you currently pregnant or breastfeeding, or planning a pregnancy in the next six months?",
+   "not_applicable_when": {
+    "sex": "male"
+   }
+  },
+  {
+   "id": "EXC2",
+   "kind": "exclusion",
+   "text": "Uses acute headache medication (triptans or over-the-counter pain relievers taken for headache) on 15 or more days per month (medication-overuse pattern).",
+   "keywords": [
+    "pain reliever",
+    "triptan",
+    "ibuprofen|acetaminophen|aspirin|naproxen",
+    "acute (medication|meds)",
+    "how many days.{0,40}(medication|pain|pill)"
+   ],
+   "probe": "On how many days per month do you take pain relievers or triptans for your headaches?",
+   "unknown_rule": "If the participant cannot estimate how many days per month they take acute headache medication, EXC2 is unknown."
+  },
+  {
+   "id": "EXC3",
+   "kind": "exclusion",
+   "text": "Started a new preventive migraine medication, or changed the dose of one, within the past 8 weeks.",
+   "keywords": [
+    "preventive",
+    "prevention medication",
+    "prophyla",
+    "started.{0,30}(medication|preventive)",
+    "changed.{0,20}dose",
+    "dose.{0,20}chang"
+   ],
+   "probe": "Have you started a new preventive migraine medication, or changed the dose of one, in the past eight weeks?"
+  },
+  {
+   "id": "EXC4",
+   "kind": "exclusion",
+   "text": "Diagnosed cluster headache.",
+   "keywords": [
+    "cluster headache",
+    "cluster attack"
+   ],
+   "probe": "Have you ever been diagnosed with cluster headache?"
+  },
+  {
+   "id": "EXC5",
+   "kind": "exclusion",
+   "text": "Currently enrolled in another interventional clinical trial or structured headache program.",
+   "keywords": [
+    "(another|other|different)\\s+(clinical\\s+|research\\s+)?(trial|study|studies)",
+    "\\benrolled\\b",
+    "research (study|program)",
+    "headache program",
+    "participating in (a|any)"
+   ],
+   "probe": "Are you currently enrolled in another clinical trial or a structured headache program?"
+  }
+ ]
+}

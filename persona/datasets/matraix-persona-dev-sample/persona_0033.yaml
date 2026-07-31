@@ -1,0 +1,25 @@
+persona_id: '0033'
+version: '1.0'
+source: amazon
+display_name: Casey Brooks
+dimensions:
+  subject_specialty: Electrical work
+  risk_tolerance: Cautious
+  decision_style: Analytical
+  trust_level: Verifying
+  topic_fitness: Interested
+  topic_woodworking: Interested
+  att_online_reviews: Positive
+  sport_equestrian: Follow
+  lstyle_work_schedule: Shift work
+  lstyle_fashion_sense: Practical
+  hob_woodworking: Active
+  hob_birdwatching: Active
+  pref_quality_vs_quantity: Quality first
+  pref_save_vs_spend: Saver-leaning
+  need_for_closure: High
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: amazon-cf62fb5aacf4
+  origin_source_row_index: 2006727

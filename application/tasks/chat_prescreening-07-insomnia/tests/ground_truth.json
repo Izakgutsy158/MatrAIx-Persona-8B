@@ -1,0 +1,190 @@
+{
+ "protocol_id": "SLEEP-WELL-2026-007",
+ "cases": {
+  "N01": {
+   "sex": "female",
+   "age": 39,
+   "label": "likely_eligible",
+   "criteria_not_met": [],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "39",
+    "Sex": "female",
+    "Sleep problem": "wakes at 3 a.m. and cannot get back to sleep, about 5 nights a week",
+    "Duration": "roughly 2 years, worse in the past six months",
+    "Sleep apnea": "never diagnosed; no snoring complaints",
+    "Sleep medications": "none - avoids pills",
+    "Smartphone and daily diary": "yes, willing",
+    "Willing to commit to 9 weeks": "yes",
+    "Other trials or programs": "none"
+   },
+   "rationale": "5 nights/week for 2 years, no exclusions. Baseline easy case."
+  },
+  "N02": {
+   "sex": "male",
+   "age": 57,
+   "label": "likely_eligible",
+   "criteria_not_met": [],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "57",
+    "Sex": "male",
+    "Sleep problem": "trouble falling asleep about 4 nights a week",
+    "Duration": "about 8 months",
+    "Sleep apnea": "YES - diagnosed obstructive sleep apnea 3 years ago, and he uses his CPAP every night, 7+ hours; his apnea is well controlled",
+    "Sleep medications": "none",
+    "Smartphone and daily diary": "yes, willing",
+    "Willing to commit to 9 weeks": "yes",
+    "Other trials or programs": "none"
+   },
+   "rationale": "Signature trap: he HAS sleep apnea, but it is treated with nightly CPAP, which the protocol explicitly allows. Bots that exclude any apnea diagnosis get this wrong."
+  },
+  "N03": {
+   "sex": "female",
+   "age": 28,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "INC3"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "28",
+    "Sex": "female",
+    "Sleep problem": "trouble falling asleep 4-5 nights a week",
+    "Duration": "about 5 weeks - started right after a stressful job change",
+    "Sleep apnea": "never diagnosed",
+    "Sleep medications": "none",
+    "Smartphone and daily diary": "yes, willing",
+    "Willing to commit to 9 weeks": "yes",
+    "Other trials or programs": "none"
+   },
+   "rationale": "Sleep problems for only 5 weeks - short of the 3-month chronicity requirement (INC3). Frequency qualifies; duration does not."
+  },
+  "N04": {
+   "sex": "male",
+   "age": 63,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "EXC3"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "63",
+    "Sex": "male",
+    "Sleep problem": "wakes repeatedly, about 5 nights a week",
+    "Duration": "3 years",
+    "Sleep apnea": "never diagnosed",
+    "Sleep medications": "takes trazodone; his doctor DOUBLED the dose 2 weeks ago to see if it helps",
+    "Smartphone and daily diary": "yes, willing",
+    "Willing to commit to 9 weeks": "yes",
+    "Other trials or programs": "none"
+   },
+   "rationale": "Trazodone dose changed 2 weeks ago - inside the 4-week EXC3 window."
+  },
+  "N05": {
+   "sex": "female",
+   "age": 47,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "EXC2"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "47",
+    "Sex": "female",
+    "Sleep problem": "trouble falling asleep and staying asleep, 4-6 nights a week",
+    "Duration": "years",
+    "Sleep apnea": "never diagnosed",
+    "Sleep medications": "none",
+    "Smartphone and daily diary": "yes, willing",
+    "Willing to commit to 9 weeks": "yes",
+    "Other trials or programs": "none",
+    "Work schedule": "rotating shifts including overnight/night shifts"
+   },
+   "rationale": "Rotating shifts including overnights (EXC2) - CBT-I protocols assume a stable day-oriented schedule."
+  },
+  "N06": {
+   "sex": "male",
+   "age": 52,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "EXC1"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "52",
+    "Sex": "male",
+    "Sleep problem": "trouble staying asleep 4 nights a week",
+    "Duration": "about 2 years",
+    "Sleep apnea": "diagnosed obstructive sleep apnea 14 months ago; a CPAP was prescribed but he NEVER PICKED IT UP - 'it's still at the supply company, I keep meaning to deal with it'",
+    "Sleep medications": "none",
+    "Smartphone and daily diary": "yes, willing",
+    "Willing to commit to 9 weeks": "yes",
+    "Other trials or programs": "none"
+   },
+   "rationale": "Diagnosed sleep apnea that is NOT currently treated (EXC1) - the mirror image of N02. The treated/untreated distinction is the whole test."
+  },
+  "N07": {
+   "sex": "female",
+   "age": 69,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "INC2",
+    "EXC3"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "69",
+    "Sex": "female",
+    "Sleep problem": "trouble falling asleep about 2 nights a week - 'the odd bad night'",
+    "Duration": "about a year",
+    "Sleep apnea": "never diagnosed",
+    "Sleep medications": "her doctor started her on zolpidem 1 week ago for those bad nights",
+    "Smartphone and daily diary": "yes, willing",
+    "Willing to commit to 9 weeks": "yes",
+    "Other trials or programs": "none"
+   },
+   "rationale": "Multi-failure: only 2 affected nights/week (below the 3-night floor, INC2) AND started zolpidem 1 week ago (EXC3). Both must be listed."
+  },
+  "N08": {
+   "sex": "male",
+   "age": 35,
+   "label": "insufficient_information",
+   "criteria_not_met": [],
+   "criteria_unknown": [
+    "INC2"
+   ],
+   "profile": {
+    "Age": "35",
+    "Sex": "male",
+    "Sleep problem": "sleeps badly, but the number of bad nights per week is UNKNOWN - 'honestly no idea, I don't keep track; some weeks are fine, some are a mess, I couldn't put a number on it'",
+    "Duration": "on and off for about 2 years",
+    "Sleep apnea": "never diagnosed",
+    "Sleep medications": "none",
+    "Smartphone and daily diary": "yes, willing",
+    "Willing to commit to 9 weeks": "yes",
+    "Other trials or programs": "none"
+   },
+   "rationale": "Cannot estimate affected nights per week, so INC2 is unknown per the protocol rule. Duration is known (about 2 years), so INC3 passes and only INC2 is unknown."
+  },
+  "N09": {
+   "sex": "female",
+   "age": 44,
+   "label": "likely_eligible",
+   "criteria_not_met": [],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "44",
+    "Sex": "female",
+    "Sleep problem": "trouble falling asleep about 4 nights a week",
+    "Duration": "about 14 months",
+    "Sleep apnea": "never diagnosed",
+    "Sleep medications": "none",
+    "Smartphone and daily diary": "yes, willing",
+    "Willing to commit to 9 weeks": "yes",
+    "Other trials or programs": "none"
+   },
+   "rationale": "Everything qualifies. The test is whether the bot explains question purposes briefly and reassures about data use (per its own rules) without getting derailed or skipping criteria."
+  }
+ }
+}

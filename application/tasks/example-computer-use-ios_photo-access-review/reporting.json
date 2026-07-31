@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1.0",
+  "contextRules": [
+    {
+      "match": {
+        "contextType": "decision"
+      },
+      "distributions": [
+        {
+          "id": "decision.photo_access_by_segment",
+          "facetKey": "photo_access_level",
+          "title": "Photo access level chosen"
+        }
+      ]
+    }
+  ]
+}

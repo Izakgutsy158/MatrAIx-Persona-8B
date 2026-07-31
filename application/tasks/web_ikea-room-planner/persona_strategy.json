@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "1.0",
+  "sources": [],
+  "defaultMode": "stratified",
+  "stratifyFields": [
+    "socioeconomic_band"
+  ],
+  "dimensionFilters": {
+    "age_bracket": [
+      "18-24",
+      "25-34",
+      "35-44",
+      "45-54",
+      "55-64",
+      "65-74"
+    ],
+    "socioeconomic_band": [
+      "Low income",
+      "Lower-middle",
+      "Middle",
+      "Upper-middle",
+      "High income"
+    ],
+    "life_stage": [
+      "Student",
+      "Early career",
+      "Parent of young kids",
+      "Mid-life",
+      "Empty nester",
+      "Retirement"
+    ]
+  },
+  "sampleSizePerValueGroup": 2
+}

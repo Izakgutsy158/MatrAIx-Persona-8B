@@ -1,0 +1,67 @@
+persona_id: '0071'
+version: '1.0'
+source: stackoverflow
+display_name: Luka Petrov
+dimensions:
+  age_bracket: 25-34
+  region: Western Europe
+  domain: Engineering
+  domain_characteristics: Hobbyist
+  highest_education: Master's
+  role_function: Engineering
+  years_experience: 3-5
+  life_stage: Early career
+  fam_databases: Familiar
+  fam_compilers: Familiar
+  fam_cloud_infrastructure: Familiar
+  fam_computer_graphics: Familiar
+  tool_python: Regular
+  tool_r: Regular
+  tool_sql: Regular
+  tool_vs_code: Regular
+  tool_jetbrains_ides: Regular
+  tool_chatgpt: Regular
+  topic_productivity: Interested
+  topic_self_improvement: Interested
+  lang_english: Fluent
+  att_new_technology: Enthusiast
+  att_online_reviews: Positive
+  lstyle_commute_mode: Remote
+  lstyle_device_ecosystem: Windows
+  trait_love_of_learning: Strong
+  trait_adaptability: Strong
+  val_achievement: Important
+  val_knowledge_truth: Important
+  val_independence: Important
+  val_personal_growth: Important
+  pref_speed_vs_accuracy: Speed first
+  demo_employment_status: Full-time
+  lifex_career_path_shape: Just starting
+  lifex_education_journey: Advanced degrees
+  prog_python: Proficient
+  prog_javascript: Proficient
+  prog_c: Proficient
+  prog_rust: Proficient
+  ai_task_code_generation: Currently partially AI-assisted
+  ai_task_code_review: Plans partial AI use
+  ai_task_codebase_learning: Currently partially AI-assisted
+  ai_task_debugging_fixing: Currently partially AI-assisted
+  ai_task_deployment_monitoring: Plans partial AI use
+  ai_task_documentation: Plans partial AI use
+  ai_task_learning_concepts: Currently partially AI-assisted
+  ai_task_project_planning: Plans partial AI use
+  ai_task_testing: Plans partial AI use
+  codebase_onboarding_style: Asks teammates / AI for map
+  coding_ai_output_trust: Trusts after verification
+  coding_ai_sentiment: Very favorable
+  coding_ai_usage_frequency: Weekly
+  debugging_strategy: Search / ask externally
+  dev_professional_status: Non-developer technologist
+  dev_role_archetype: Data / ML developer
+  stackoverflow_participation_style: Reads / searches only
+  stackoverflow_usage_pattern: Weekly reference
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: stackoverflow-8277c1bcb536
+  origin_source_row_index: 2150254

@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "1.0",
+  "contextRules": [
+    {
+      "match": { "contextType": "task_outcome" },
+      "distributions": [
+        {
+          "id": "task_outcome.status_by_segment",
+          "facetKey": "outcome_status",
+          "title": "Outcome status"
+        }
+      ]
+    },
+    {
+      "match": { "contextType": "decision" },
+      "distributions": [
+        {
+          "id": "decision.room_type_by_segment",
+          "facetKey": "task_room_type",
+          "title": "Room type"
+        },
+        {
+          "id": "decision.budget_fit_by_segment",
+          "facetKey": "task_budget_fit",
+          "title": "Budget fit"
+        },
+        {
+          "id": "decision.lifestyle_fit_by_segment",
+          "facetKey": "task_lifestyle_fit",
+          "title": "Lifestyle fit"
+        }
+      ],
+      "summaryAnalyses": [
+        {
+          "id": "decision.reason_by_socioeconomic_band",
+          "title": "How each income segment furnished its room",
+          "targetFacetKey": "reason",
+          "groupByPersonaDimension": "socioeconomic_band",
+          "summaryKind": "llm_bucket_summary",
+          "instruction": "For each socioeconomic segment, summarize in 1-2 sentences how these personas built their IKEA room plan and what drove the fit to their budget, space, and lifestyle, so a reviewer sees how furnishing choices differ across income bands. Be faithful and concise; do not invent facts."
+        }
+      ]
+    },
+    {
+      "match": { "contextType": "safety_guidance" },
+      "distributions": [
+        {
+          "id": "safety_guidance.present_by_segment",
+          "facetKey": "safety_present",
+          "title": "Safety guidance present"
+        },
+        {
+          "id": "safety_guidance.boundary_by_segment",
+          "facetKey": "boundary_status",
+          "title": "Professional boundary"
+        }
+      ]
+    },
+    {
+      "match": { "contextType": "user_feedback" },
+      "distributions": [
+        {
+          "id": "user_feedback.satisfaction_by_segment",
+          "facetKey": "satisfaction",
+          "title": "Satisfaction"
+        },
+        {
+          "id": "user_feedback.budget_fit_by_segment",
+          "facetKey": "budget_fit",
+          "title": "Budget fit"
+        }
+      ]
+    }
+  ]
+}

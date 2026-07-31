@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1.0",
+  "sources": [],
+  "defaultMode": "stratified",
+  "dimensionFilters": {
+    "highest_education": [
+      "Primary",
+      "Secondary",
+      "Vocational / cert",
+      "Bachelor's",
+      "Master's",
+      "Doctorate"
+    ],
+    "age_bracket": [
+      "13-17",
+      "18-24",
+      "25-34",
+      "35-44",
+      "45-54",
+      "55-64",
+      "65-74"
+    ]
+  },
+  "stratifyFields": [
+    "highest_education"
+  ],
+  "sampleSize": 8
+}

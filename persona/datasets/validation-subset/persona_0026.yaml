@@ -1,0 +1,50 @@
+persona_id: '0026'
+version: '1.0'
+source: stackoverflow:stackoverflow_2023_648_1023
+dimensions:
+  age_bracket: 25-34
+  region: Eastern Europe
+  domain: Software & AI
+  domain_characteristics: Practitioner
+  highest_education: Master's
+  years_experience: 6-10
+  life_stage: Early career
+  emotional_state: Skeptical
+  fam_machine_learning: Familiar
+  fam_databases: Familiar
+  fam_operating_systems: Familiar
+  fam_cloud_infrastructure: Familiar
+  fam_devops: Familiar
+  tool_microsoft_teams: Regular
+  tool_azure: Regular
+  tool_vs_code: Regular
+  tool_chatgpt: Regular
+  topic_productivity: Interested
+  topic_self_improvement: Interested
+  att_ai: Positive
+  att_new_technology: Positive
+  att_open_source: Positive
+  lstyle_device_ecosystem: Windows
+  cog_detail_orientation: High
+  trait_love_of_learning: Strong
+  trait_adaptability: Strong
+  pref_speed_vs_accuracy: Accuracy-leaning
+  demo_employment_status: Full-time
+  demo_generation: Millennial
+  lifex_career_path_shape: Linear climb
+  lifex_education_journey: Advanced degrees
+  code_naming_verbosity: Highly verbose (long descriptive names)
+  prog_javascript: Proficient
+  need_for_closure: High
+  coding_agent_security_expectation: Expects basic secret / privacy checks
+  coding_ai_learning_source: Self-experimentation
+  coding_ai_output_trust: Distrusts until proven
+  coding_ai_sentiment: Somewhat favorable
+  coding_ai_usage_frequency: Daily
+  dev_ic_manager_orientation: Individual contributor
+  dev_professional_status: Professional developer
+  dev_role_archetype: Full-stack developer
+  dev_toolchain_complexity: Moderate multi-tool workflow
+  human_help_boundary_for_ai_coding: When trust is low
+  open_source_activity_level: Occasional contributor
+  stackoverflow_usage_pattern: Weekly reference

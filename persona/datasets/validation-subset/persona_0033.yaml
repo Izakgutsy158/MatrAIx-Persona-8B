@@ -1,0 +1,288 @@
+persona_id: '0033'
+version: '1.0'
+source: wiki:Q128708
+dimensions:
+  region: North America
+  gender_identity: Man
+  urbanicity: Small town
+  socioeconomic_band: Upper-middle
+  primary_language: English
+  english_proficiency: Native
+  multilingualism: Monolingual
+  register: Formal / standard
+  domain: Public Sector
+  domain_characteristics: Practitioner
+  highest_education: Vocational / cert
+  institution_tier: Not applicable
+  seniority: C-suite
+  company_size: Public sector
+  role_function: Executive
+  years_experience: 20+
+  life_stage: Mid-life
+  major_life_events: Migration / immigration
+  cultural_background: Individualist (Western)
+  dominant_trait: High conscientiousness
+  risk_tolerance: Cautious
+  decision_style: Deliberative
+  values_priority: Community
+  political_lean: Center-left
+  religiosity: Observant
+  media_diet: News
+  economic_motivation: Value-driven
+  fam_constitutional_law: Familiar
+  fam_auditing: Aware
+  fam_macroeconomics: Familiar
+  fam_structural_engineering: Proficient
+  fam_civil_engineering: Proficient
+  fam_political_science: Expert
+  fam_international_relations: Familiar
+  fam_architecture: Familiar
+  fam_journalism: Familiar
+  fam_project_management: Familiar
+  fam_insurance: Aware
+  fam_materials_science: Aware
+  fam_military_strategy: Aware
+  fam_diplomacy: Familiar
+  fam_theology: Aware
+  fam_religious_studies: Familiar
+  skill_writing: Advanced
+  skill_editing: Advanced
+  skill_public_speaking: Advanced
+  skill_negotiation: Advanced
+  skill_project_management: Advanced
+  skill_leadership: Master
+  skill_people_management: Advanced
+  skill_persuasion: Advanced
+  topic_politics: Passionate
+  topic_religion: Interested
+  topic_spirituality: Interested
+  topic_activism: Passionate
+  topic_wine: Averse
+  topic_craft_beer: Averse
+  topic_architecture: Interested
+  topic_entrepreneurship: Interested
+  lang_english: Native
+  att_globalization: Positive
+  att_free_markets: Positive
+  att_government_regulation: Neutral
+  att_organized_religion: Positive
+  att_labor_unions: Positive
+  att_higher_education: Positive
+  att_taking_on_debt: Skeptical
+  att_authority: Skeptical
+  att_free_speech: Positive
+  att_public_transit: Positive
+  ind_finance: Some exposure
+  ind_insurance: Experienced
+  ind_construction: Veteran
+  ind_media: Some exposure
+  ind_publishing: Some exposure
+  ind_government: Veteran
+  ind_defense: Some exposure
+  ind_transportation: Some exposure
+  cult_canada: Lived there
+  cult_united_kingdom: Native
+  big5_imagination: High
+  big5_adventurousness: High
+  big5_intellect: High
+  big5_liberalism: Very high
+  big5_self_efficacy: Very high
+  big5_orderliness: High
+  big5_dutifulness: Very high
+  big5_achievement_striving: Very high
+  big5_self_discipline: Very high
+  big5_cautiousness: High
+  big5_friendliness: High
+  big5_gregariousness: Low
+  big5_assertiveness: Very high
+  big5_activity_level: Very high
+  big5_excitement_seeking: High
+  big5_cheerfulness: High
+  big5_trust: Low
+  big5_morality: Very high
+  big5_altruism: High
+  big5_cooperation: Average
+  big5_modesty: Very high
+  big5_sympathy: High
+  big5_anger: High
+  big5_self_consciousness: Low
+  big5_immoderation: Very low
+  big5_vulnerability: Low
+  lstyle_alcohol_use: Never
+  cog_verbosity: Wordy
+  cog_formality: Casual
+  cog_directness: Blunt
+  cog_humor: Playful
+  cog_detail_orientation: High
+  cog_abstraction: Concrete
+  cog_curiosity: High
+  cog_skepticism: High
+  cog_open_mindedness: Moderate
+  cog_assertiveness: Very high
+  cog_conflict_approach: Confronting
+  cog_perfectionism: High
+  cog_procrastination: Low
+  cog_multitasking: Some
+  cog_decision_speed: Deliberate
+  cog_confidence_calibration: Underconfident
+  cog_numeracy_comfort: High
+  cog_big_picture_vs_detail: Both
+  cog_empathy_expression: Moderate
+  cog_storytelling: Moderate
+  cog_precision_of_language: Precise
+  cog_politeness: Neutral
+  health_general_health: Fair
+  health_chronic_condition: Multiple
+  health_mobility: Mild limitation
+  health_energy_level: Low
+  health_dietary_restriction: Religious
+  health_fitness_level: Fit
+  acad_economics: Interested
+  acad_civics: Passionate
+  acad_creative_writing: Interested
+  acad_business_studies: Interested
+  acad_political_theory: Passionate
+  peeve_spam: Major peeve
+  peeve_condescension: Major peeve
+  peeve_forced_small_talk: Annoys
+  peeve_cold_calls: Major peeve
+  trait_curiosity: Moderate
+  trait_creativity: Slight
+  trait_love_of_learning: Moderate
+  trait_open_mindedness: Strong
+  trait_perspective: Strong
+  trait_bravery: Strong
+  trait_perseverance: Signature
+  trait_honesty: Signature
+  trait_zest: Moderate
+  trait_capacity_for_love: Moderate
+  trait_kindness: Slight
+  trait_social_intelligence: Moderate
+  trait_teamwork: Moderate
+  trait_fairness: Signature
+  trait_leadership: Strong
+  trait_humility: Signature
+  trait_prudence: Strong
+  trait_self_regulation: Strong
+  trait_hope_optimism: Slight
+  trait_playfulness: Strong
+  trait_spirituality: Strong
+  trait_ambition: Strong
+  trait_empathy: Moderate
+  trait_resilience: Signature
+  trait_discipline: Strong
+  trait_generosity: Slight
+  trait_loyalty: Strong
+  trait_competitiveness: Moderate
+  trait_adaptability: Strong
+  val_family: Important
+  val_career_success: Important
+  val_wealth: Minor
+  val_personal_freedom: Important
+  val_security_stability: Moderate
+  val_adventure: Minor
+  val_tradition: Moderate
+  val_power_influence: Minor
+  val_achievement: Important
+  val_creativity_self_expression: Moderate
+  val_community: Core value
+  val_spirituality_faith: Important
+  val_knowledge_truth: Important
+  val_social_status: Irrelevant
+  val_independence: Core value
+  val_justice_fairness: Core value
+  val_loyalty: Important
+  val_recognition: Irrelevant
+  val_helping_others: Important
+  val_personal_growth: Moderate
+  val_fun_enjoyment: Moderate
+  val_integrity_honesty: Core value
+  val_order_structure: Important
+  val_patriotism: Important
+  val_equality: Core value
+  val_privacy: Moderate
+  pref_plan_vs_spontaneous: Balanced
+  pref_speed_vs_accuracy: Accuracy-leaning
+  pref_quality_vs_quantity: Quality first
+  pref_save_vs_spend: Saver-leaning
+  pref_lead_vs_follow: Situational
+  pref_indoor_vs_outdoor: Outdoor-leaning
+  pref_early_vs_late: Early adopter
+  pref_competition_vs_collab: Collaborative
+  pref_stability_vs_change: Change-leaning
+  demo_marital_status: Married
+  demo_children_count: Adult children
+  demo_employment_status: Full-time
+  demo_religion_affiliation: Christian
+  demo_citizenship_status: Naturalized citizen
+  demo_ethnicity_broad: White / European
+  demo_disability_status: Physical
+  demo_veteran_status: Veteran
+  demo_birth_order: Middle
+  demo_political_engagement: Activist
+  demo_parental_status: Grandparent
+  demo_relationship_length: 15+ years
+  lifex_childhood_environment: Hardship
+  lifex_geographic_mobility: Moved internationally
+  lifex_travel_breadth: Lived abroad
+  lifex_career_path_shape: Multiple pivots
+  lifex_education_journey: Vocational / trade
+  lifex_financial_trajectory: Steady upward
+  lifex_adversity_level: Overcame major hardship
+  lifex_immigration_generation: First-generation immigrant
+  lifex_military_history: Served briefly
+  lifex_entrepreneurship_history: Founded once
+  lifex_relationship_history: Remarried
+  lifex_parenting_journey: Grown children
+  lifex_health_journey: Major surgery / injury
+  lifex_loss_experience: Lost a partner / child
+  lifex_faith_journey: Converted
+  lifex_cultural_exposure: Lived across cultures
+  lifex_public_recognition: Publicly notable
+  lifex_service_history: Public office
+  lifex_turning_point: Reinvention
+  lifex_hometown_tie: Rarely returns
+  bfi2_domain_extraversion: High
+  bfi2_domain_agreeableness: High
+  bfi2_domain_conscientiousness: Very high
+  bfi2_domain_negative_emotionality: Low
+  bfi2_domain_open_mindedness: High
+  bfi2_facet_sociability: Average
+  bfi2_facet_assertiveness: Very high
+  bfi2_facet_energy_level: Very high
+  bfi2_facet_compassion: High
+  bfi2_facet_respectfulness: High
+  bfi2_facet_trust: Low
+  bfi2_facet_organization: High
+  bfi2_facet_productiveness: Very high
+  bfi2_facet_responsibility: Very high
+  bfi2_facet_emotional_volatility: Average
+  bfi2_facet_intellectual_curiosity: High
+  bfi2_facet_creative_imagination: High
+  schwartz_value_self_direction: High
+  schwartz_value_stimulation: Average
+  schwartz_value_hedonism: Low
+  schwartz_value_achievement: High
+  schwartz_value_power: Low
+  schwartz_value_security: Average
+  schwartz_value_conformity: Low
+  schwartz_value_tradition: Average
+  schwartz_value_benevolence: High
+  schwartz_value_universalism: Very high
+  sdt_need_autonomy: Very high
+  sdt_need_competence: High
+  sdt_need_relatedness: High
+  mft_care_harm: High
+  mft_fairness_cheating: Very high
+  mft_loyalty_betrayal: High
+  mft_authority_subversion: Low
+  mft_sanctity_degradation: High
+  mft_liberty_oppression: Very high
+  need_for_cognition: Average
+  dospert_ethical_risk_tolerance: Very low
+  dospert_financial_risk_tolerance: Low
+  dospert_health_safety_risk_tolerance: Average
+  dospert_recreational_risk_tolerance: High
+  dospert_social_risk_tolerance: High
+  interpersonal_agency_dominance: High
+  interpersonal_communion_warmth: High

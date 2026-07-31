@@ -1,0 +1,51 @@
+persona_id: '0046'
+version: '1.0'
+source: amazon
+display_name: Quinn Santos
+dimensions:
+  life_stage: Parent of young kids
+  major_life_events: Health journey
+  tech_savviness: Comfortable
+  decision_style: Analytical
+  topic_tea: Interested
+  att_homeownership: Positive
+  att_online_reviews: Positive
+  lstyle_household_size: 3-4 people
+  cog_formality: Casual
+  cog_directness: Direct
+  cog_humor: Serious
+  cog_detail_orientation: High
+  cog_abstraction: Concrete
+  cog_optimism: High
+  cog_patience: Moderate
+  cog_curiosity: Moderate
+  cog_skepticism: Moderate
+  cog_open_mindedness: High
+  cog_assertiveness: High
+  cog_emotional_expressiveness: Very high
+  cog_conflict_approach: Confronting
+  cog_ambiguity_tolerance: Low
+  cog_perfectionism: Moderate
+  cog_question_asking: Sometimes
+  cog_decision_speed: Quick
+  cog_confidence_calibration: Confident
+  cog_numeracy_comfort: Moderate
+  cog_visual_vs_verbal: Verbal
+  cog_big_picture_vs_detail: Detail
+  cog_risk_framing: Balanced
+  cog_empathy_expression: High
+  cog_storytelling: Moderate
+  cog_use_of_jargon: Avoids jargon
+  cog_politeness: Polite
+  health_caregiver_status: Child caregiver
+  pref_quality_vs_quantity: Quality first
+  lifex_parenting_journey: Young children
+  lifex_health_journey: Major surgery / injury
+  need_for_closure: High
+  dospert_ethical_risk_tolerance: Low
+  dospert_social_risk_tolerance: Average
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: amazon-042e1f50b4af
+  origin_source_row_index: 2053472

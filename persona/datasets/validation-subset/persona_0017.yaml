@@ -1,0 +1,101 @@
+persona_id: '0017'
+version: '1.0'
+source: stackoverflow:stackoverflow_2023_1408_2217
+dimensions:
+  age_bracket: 25-34
+  region: MENA
+  domain: Software & AI
+  domain_characteristics: Practitioner
+  highest_education: Bachelor's
+  seniority: Manager
+  company_size: SMB (50-500)
+  role_function: Research
+  years_experience: 11-20
+  tech_savviness: Comfortable
+  fam_computer_networking: Familiar
+  fam_databases: Proficient
+  fam_operating_systems: Proficient
+  fam_cloud_infrastructure: Proficient
+  fam_devops: Proficient
+  skill_coding: Master
+  skill_leadership: Master
+  skill_people_management: Master
+  skill_mentoring: Master
+  skill_research: Master
+  skill_problem_solving: Master
+  tool_jira: Regular
+  tool_slack: Regular
+  tool_microsoft_teams: Regular
+  tool_docker: Regular
+  tool_kubernetes: Regular
+  tool_vs_code: Regular
+  tool_vim: Regular
+  tool_unity: Regular
+  tool_unreal_engine: Regular
+  tool_wordpress: Regular
+  topic_entrepreneurship: Interested
+  topic_productivity: Interested
+  topic_self_improvement: Interested
+  att_ai: Enthusiast
+  att_new_technology: Enthusiast
+  att_open_source: Enthusiast
+  ind_technology: Veteran
+  lstyle_reading_freq: Daily
+  lstyle_device_ecosystem: Mixed
+  cog_learning_pace: Fast
+  cog_big_picture_vs_detail: Both
+  peeve_being_interrupted: Major peeve
+  trait_curiosity: Strong
+  trait_love_of_learning: Strong
+  trait_open_mindedness: Strong
+  trait_teamwork: Strong
+  trait_leadership: Strong
+  trait_adaptability: Strong
+  val_achievement: Important
+  val_knowledge_truth: Important
+  val_personal_growth: Important
+  pref_speed_vs_accuracy: Accuracy first
+  demo_employment_status: Full-time
+  demo_generation: Millennial
+  lifex_career_path_shape: Linear climb
+  lifex_education_journey: Traditional track
+  code_comment_style: Extensive inline comments
+  code_dependencies_approach: Lean on libraries (minimal custom code)
+  prog_ruby: None
+  prog_swift: None
+  prog_kotlin: None
+  prog_objective_c: None
+  prog_scala: None
+  prog_haskell: None
+  prog_elixir: None
+  prog_erlang: None
+  prog_clojure: None
+  prog_lua: None
+  prog_perl: None
+  prog_r: None
+  prog_julia: None
+  prog_matlab: None
+  prog_dart: None
+  prog_f: None
+  prog_ocaml: None
+  prog_cobol: None
+  prog_fortran: None
+  prog_solidity: None
+  prog_graphql: None
+  sdt_need_competence: Very high
+  need_for_cognition: High
+  codebase_onboarding_style: Reads architecture / docs first
+  coding_agent_usage_frequency: Experimental only
+  coding_agent_workflow_impact: Major productivity increase
+  coding_ai_complexity_comfort: Comfortable with bounded complex tasks
+  coding_ai_sentiment: Very favorable
+  coding_ai_usage_frequency: Daily
+  coding_tool_ai_capability_importance: High
+  debugging_strategy: Search / ask externally
+  dev_contribution_context: Mixed contexts
+  dev_ic_manager_orientation: People manager
+  dev_professional_status: Professional developer
+  future_developer_skill_belief: Debugging and diagnosis
+  open_source_activity_level: Regular contributor
+  stackoverflow_participation_style: Asks questions
+  stackoverflow_usage_pattern: Multiple times daily

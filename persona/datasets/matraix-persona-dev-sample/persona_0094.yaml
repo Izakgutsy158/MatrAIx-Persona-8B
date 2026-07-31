@@ -1,0 +1,188 @@
+persona_id: 0094
+version: '1.0'
+source: prism
+display_name: Nadia Rahman
+dimensions:
+  age_bracket: 18-24
+  region: MENA
+  gender_identity: Man
+  english_proficiency: Fluent (C1-C2)
+  register: Colloquial
+  domain: Education
+  subject_specialty: Curriculum design
+  domain_characteristics: Student
+  highest_education: Secondary
+  seniority: Student / intern
+  years_experience: 0-2
+  life_stage: Student
+  cultural_background: Individualist (Western)
+  tech_savviness: Digital native
+  decision_style: Deliberative
+  values_priority: Autonomy
+  emotional_state: Skeptical
+  intent: Verify a claim
+  query_complexity: Multi-step
+  expertise_gap: Peer-level
+  tone_expected: Concise
+  safety_sensitivity: Sensitive personal
+  prior_context: Returning user
+  device_context: Desktop, focused
+  fam_machine_learning: Familiar
+  fam_deep_learning: Familiar
+  fam_statistics: Aware
+  fam_data_science: Aware
+  fam_curriculum_design: Familiar
+  fam_pedagogy: Familiar
+  fam_philosophy: Familiar
+  fam_ethics: Familiar
+  fam_natural_language_processing: Familiar
+  fam_human_computer_interaction: Familiar
+  fam_ux_research: Aware
+  skill_empathy: Intermediate
+  skill_fact_checking: Advanced
+  tool_chatgpt: Regular
+  topic_technology: Interested
+  topic_self_improvement: Interested
+  lang_english: Fluent
+  att_ai: Positive
+  att_new_technology: Positive
+  ind_technology: Some exposure
+  ind_education: Some exposure
+  cult_israel: Native
+  big5_intellect: High
+  big5_self_efficacy: High
+  big5_achievement_striving: High
+  big5_self_discipline: High
+  big5_cautiousness: High
+  big5_trust: Low
+  big5_morality: High
+  big5_altruism: High
+  big5_sympathy: High
+  lstyle_work_schedule: Unemployed
+  cog_verbosity: Concise
+  cog_formality: Neutral
+  cog_directness: Direct
+  cog_humor: Serious
+  cog_detail_orientation: High
+  cog_abstraction: Balanced
+  cog_optimism: High
+  cog_patience: Moderate
+  cog_curiosity: High
+  cog_skepticism: High
+  cog_open_mindedness: Moderate
+  cog_assertiveness: Moderate
+  cog_emotional_expressiveness: Low
+  cog_conflict_approach: Collaborative
+  cog_feedback_receptiveness: High
+  cog_ambiguity_tolerance: Low
+  cog_perfectionism: High
+  cog_attention_span: Average
+  cog_learning_pace: Average
+  cog_question_asking: Sometimes
+  cog_decision_speed: Deliberate
+  cog_confidence_calibration: Well-calibrated
+  cog_numeracy_comfort: High
+  cog_visual_vs_verbal: Verbal
+  cog_big_picture_vs_detail: Detail
+  cog_risk_framing: Threat-focused
+  cog_empathy_expression: Moderate
+  cog_storytelling: Low
+  cog_precision_of_language: Precise
+  cog_use_of_jargon: Light
+  cog_emoji_use: Never
+  cog_politeness: Polite
+  acad_calculus: Averse
+  acad_computer_science: Interested
+  acad_logic: Interested
+  trait_curiosity: Moderate
+  trait_creativity: Strong
+  trait_love_of_learning: Strong
+  trait_open_mindedness: Moderate
+  trait_honesty: Strong
+  trait_kindness: Signature
+  trait_prudence: Moderate
+  trait_self_regulation: Moderate
+  trait_hope_optimism: Moderate
+  trait_ambition: Moderate
+  trait_empathy: Strong
+  trait_discipline: Moderate
+  trait_adaptability: Strong
+  val_career_success: Important
+  val_personal_freedom: Core value
+  val_security_stability: Important
+  val_achievement: Important
+  val_creativity_self_expression: Important
+  val_knowledge_truth: Core value
+  val_independence: Core value
+  val_helping_others: Important
+  val_personal_growth: Core value
+  val_integrity_honesty: Core value
+  val_order_structure: Important
+  pref_speed_vs_accuracy: Accuracy first
+  pref_quality_vs_quantity: Quality first
+  pref_logic_vs_intuition: Logic-leaning
+  pref_early_vs_late: Early adopter
+  pref_detail_brief_vs_full: Every detail
+  demo_marital_status: Single
+  demo_children_count: None
+  demo_employment_status: Student
+  demo_generation: Gen Z
+  demo_home_language: Same as primary
+  demo_parental_status: Not a parent
+  demo_relationship_length: Not in one
+  lifex_career_path_shape: Just starting
+  lifex_education_journey: Traditional track
+  lifex_relationship_history: Limited
+  bfi2_domain_agreeableness: High
+  bfi2_domain_conscientiousness: High
+  bfi2_domain_negative_emotionality: Average
+  bfi2_domain_open_mindedness: High
+  bfi2_facet_compassion: High
+  bfi2_facet_trust: Low
+  bfi2_facet_organization: High
+  bfi2_facet_productiveness: High
+  bfi2_facet_responsibility: High
+  bfi2_facet_intellectual_curiosity: High
+  bfi2_facet_creative_imagination: High
+  schwartz_value_self_direction: Very high
+  schwartz_value_stimulation: Average
+  schwartz_value_achievement: High
+  schwartz_value_security: High
+  schwartz_value_benevolence: High
+  schwartz_value_universalism: Average
+  sdt_need_autonomy: Very high
+  sdt_need_competence: High
+  sdt_need_relatedness: Average
+  mft_care_harm: High
+  mft_fairness_cheating: High
+  need_for_cognition: Very high
+  need_for_closure: Low
+  interpersonal_communion_warmth: High
+  ai_task_learning_concepts: Currently partially AI-assisted
+  ai_task_search_answers: Currently partially AI-assisted
+  coding_agent_adoption_barrier: Accuracy / reliability concerns
+  coding_agent_autonomy_preference: Suggest-only assistant
+  coding_agent_control_expectation: Requires explicit approval before edits
+  coding_agent_explanation_preference: Explain decisions and tradeoffs
+  coding_agent_failure_tolerance: Very low tolerance
+  coding_agent_security_expectation: Expects basic secret / privacy checks
+  coding_agent_usage_frequency: Weekly
+  coding_ai_complexity_comfort: Only simple / boilerplate tasks
+  coding_ai_job_threat_perception: Unsure / mixed
+  coding_ai_learning_source: Self-experimentation
+  coding_ai_output_trust: Distrusts until proven
+  coding_ai_sentiment: Neutral / indifferent
+  coding_ai_usage_frequency: Weekly
+  coding_tool_ai_capability_importance: High
+  coding_tool_alternative_sensitivity: Major concern
+  coding_tool_ethics_blocker: Moderate concern
+  coding_tool_reliability_latency_importance: Critical
+  dev_ic_manager_orientation: Student / learner
+  developer_help_seeking_preference: Ask AI first
+  future_developer_skill_belief: Problem decomposition
+  human_help_boundary_for_ai_coding: When trust is low
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: prism-8868f169a196
+  origin_source_row_index: 2211499

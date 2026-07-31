@@ -1,0 +1,260 @@
+persona_id: '0100'
+version: '1.0'
+source: prism
+display_name: Noah Williams
+dimensions:
+  age_bracket: 35-44
+  region: North America
+  gender_identity: Woman
+  primary_language: English
+  english_proficiency: Native
+  register: Formal / standard
+  highest_education: Bachelor's
+  life_stage: Early career
+  major_life_events: None notable
+  cultural_background: Individualist (Western)
+  tech_savviness: Cautious adopter
+  values_priority: Novelty
+  religiosity: Secular
+  emotional_state: Calm
+  intent: Learn / explain
+  query_complexity: Simple factual
+  expertise_gap: Novice asking expert
+  tone_expected: Warm / empathetic
+  trust_level: Verifying
+  safety_sensitivity: Benign
+  prior_context: Cold start
+  device_context: Desktop, focused
+  fam_machine_learning: Aware
+  fam_deep_learning: Aware
+  fam_psychology: Familiar
+  fam_philosophy: Familiar
+  fam_ethics: Familiar
+  fam_natural_language_processing: Aware
+  fam_human_computer_interaction: Familiar
+  skill_empathy: Advanced
+  skill_fact_checking: Advanced
+  tool_chatgpt: Tried it
+  tool_claude: Tried it
+  topic_technology: Neutral
+  topic_philosophy: Interested
+  topic_religion: Indifferent
+  topic_spirituality: Interested
+  topic_volunteering: Interested
+  topic_productivity: Interested
+  topic_self_improvement: Interested
+  topic_mindfulness: Interested
+  lang_english: Native
+  att_ai: Neutral
+  att_remote_work: Positive
+  att_organized_religion: Skeptical
+  att_higher_education: Positive
+  att_risk_taking: Skeptical
+  att_rapid_change: Skeptical
+  att_new_technology: Neutral
+  att_minimalism: Positive
+  att_consumerism: Skeptical
+  att_four_day_work_week: Positive
+  ind_technology: Some exposure
+  cult_united_states: Native
+  big5_imagination: Average
+  big5_artistic_interest: Average
+  big5_emotionality: High
+  big5_adventurousness: Low
+  big5_intellect: Average
+  big5_self_efficacy: Average
+  big5_orderliness: Average
+  big5_dutifulness: Average
+  big5_achievement_striving: Low
+  big5_self_discipline: Average
+  big5_cautiousness: Average
+  big5_friendliness: High
+  big5_gregariousness: Average
+  big5_activity_level: Low
+  big5_excitement_seeking: Low
+  big5_cheerfulness: High
+  big5_trust: High
+  big5_morality: High
+  big5_altruism: High
+  big5_cooperation: High
+  big5_modesty: High
+  big5_sympathy: High
+  big5_anxiety: Low
+  big5_depression: Low
+  big5_immoderation: Low
+  lstyle_work_schedule: Flexible hours
+  lstyle_hobby_intensity: Dabbler
+  cog_verbosity: Balanced
+  cog_formality: Neutral
+  cog_directness: Direct
+  cog_humor: Serious
+  cog_detail_orientation: Moderate
+  cog_abstraction: Balanced
+  cog_optimism: High
+  cog_patience: High
+  cog_curiosity: Moderate
+  cog_skepticism: Moderate
+  cog_open_mindedness: High
+  cog_assertiveness: Moderate
+  cog_emotional_expressiveness: High
+  cog_conflict_approach: Collaborative
+  cog_feedback_receptiveness: High
+  cog_ambiguity_tolerance: Moderate
+  cog_perfectionism: Moderate
+  cog_attention_span: Average
+  cog_question_asking: Sometimes
+  cog_decision_speed: Deliberate
+  cog_confidence_calibration: Well-calibrated
+  cog_big_picture_vs_detail: Big-picture
+  cog_risk_framing: Balanced
+  cog_empathy_expression: High
+  cog_storytelling: Moderate
+  cog_precision_of_language: Precise
+  cog_use_of_jargon: Light
+  cog_emoji_use: Never
+  cog_politeness: Polite
+  acad_political_theory: Neutral
+  peeve_condescension: Major peeve
+  trait_curiosity: Moderate
+  trait_creativity: Moderate
+  trait_love_of_learning: Slight
+  trait_open_mindedness: Moderate
+  trait_perspective: Moderate
+  trait_perseverance: Moderate
+  trait_honesty: Strong
+  trait_zest: Moderate
+  trait_capacity_for_love: Signature
+  trait_kindness: Signature
+  trait_social_intelligence: Moderate
+  trait_forgiveness: Moderate
+  trait_humility: Moderate
+  trait_prudence: Moderate
+  trait_self_regulation: Moderate
+  trait_appreciation_of_beauty: Moderate
+  trait_hope_optimism: Moderate
+  trait_playfulness: Moderate
+  trait_ambition: Slight
+  trait_empathy: Strong
+  trait_discipline: Moderate
+  trait_generosity: Moderate
+  trait_competitiveness: Slight
+  trait_adaptability: Moderate
+  val_family: Moderate
+  val_career_success: Minor
+  val_wealth: Minor
+  val_personal_freedom: Important
+  val_security_stability: Important
+  val_adventure: Moderate
+  val_achievement: Moderate
+  val_creativity_self_expression: Important
+  val_community: Important
+  val_spirituality_faith: Minor
+  val_knowledge_truth: Core value
+  val_independence: Important
+  val_helping_others: Core value
+  val_personal_growth: Important
+  val_fun_enjoyment: Core value
+  val_integrity_honesty: Core value
+  val_order_structure: Moderate
+  pref_speed_vs_accuracy: Accuracy first
+  pref_quality_vs_quantity: Quality first
+  pref_early_vs_late: Late adopter
+  pref_detail_brief_vs_full: Every detail
+  pref_competition_vs_collab: Highly collaborative
+  pref_stability_vs_change: Stability-leaning
+  demo_marital_status: Single
+  demo_children_count: None
+  demo_employment_status: Part-time
+  demo_generation: Gen X
+  demo_religion_affiliation: None
+  demo_ethnicity_broad: White / European
+  demo_disability_status: No disability
+  demo_home_language: Same as primary
+  demo_parental_status: Not a parent
+  demo_relationship_length: Not in one
+  lifex_career_path_shape: Linear climb
+  lifex_education_journey: Traditional track
+  lifex_adversity_level: Sheltered
+  lifex_immigration_generation: Native multi-generational
+  lifex_entrepreneurship_history: Never considered
+  lifex_relationship_history: Limited
+  lifex_parenting_journey: No children
+  lifex_faith_journey: Always secular
+  lifex_cultural_exposure: Monocultural
+  lifex_formative_decade: 2000s
+  lifex_turning_point: No single one
+  lifex_languages_lifetime: One
+  bfi2_domain_extraversion: Average
+  bfi2_domain_agreeableness: Very high
+  bfi2_domain_conscientiousness: Low
+  bfi2_domain_negative_emotionality: Low
+  bfi2_domain_open_mindedness: Average
+  bfi2_facet_sociability: Average
+  bfi2_facet_energy_level: Low
+  bfi2_facet_compassion: Very high
+  bfi2_facet_respectfulness: High
+  bfi2_facet_trust: High
+  bfi2_facet_organization: Average
+  bfi2_facet_productiveness: Low
+  bfi2_facet_responsibility: Average
+  bfi2_facet_anxiety: Low
+  bfi2_facet_depression: Low
+  bfi2_facet_emotional_volatility: Low
+  bfi2_facet_intellectual_curiosity: Average
+  bfi2_facet_aesthetic_sensitivity: Average
+  bfi2_facet_creative_imagination: Average
+  schwartz_value_self_direction: High
+  schwartz_value_stimulation: High
+  schwartz_value_hedonism: High
+  schwartz_value_achievement: Average
+  schwartz_value_security: High
+  schwartz_value_conformity: Average
+  schwartz_value_tradition: Low
+  schwartz_value_benevolence: Very high
+  schwartz_value_universalism: High
+  sdt_need_autonomy: High
+  sdt_need_relatedness: Very high
+  mft_care_harm: Very high
+  mft_fairness_cheating: High
+  mft_liberty_oppression: High
+  need_for_cognition: High
+  dospert_health_safety_risk_tolerance: Low
+  interpersonal_agency_dominance: Low
+  interpersonal_communion_warmth: Very high
+  ai_task_code_generation: Does not plan AI use
+  ai_task_code_review: Does not plan AI use
+  ai_task_codebase_learning: Does not plan AI use
+  ai_task_data_generation_analytics: Does not plan AI use
+  ai_task_debugging_fixing: Does not plan AI use
+  ai_task_deployment_monitoring: Does not plan AI use
+  ai_task_documentation: Does not plan AI use
+  ai_task_learning_concepts: Currently partially AI-assisted
+  ai_task_project_planning: Does not plan AI use
+  ai_task_refactoring: Does not plan AI use
+  ai_task_search_answers: Currently partially AI-assisted
+  ai_task_testing: Does not plan AI use
+  coding_agent_adoption_barrier: Lack of clear use case
+  coding_agent_autonomy_preference: No agent autonomy
+  coding_agent_context_sharing_comfort: Shares natural-language descriptions only
+  coding_agent_control_expectation: Read-only assistance preferred
+  coding_agent_explanation_preference: Concise summary only
+  coding_agent_memory_preference: Prefers stateless interactions
+  coding_agent_security_expectation: Requires strict security review
+  coding_agent_usage_frequency: No plans
+  coding_agent_workflow_impact: No clear change
+  coding_ai_complexity_comfort: Only simple / boilerplate tasks
+  coding_ai_learning_source: Not learning AI tooling
+  coding_ai_output_trust: Trusts after verification
+  coding_ai_sentiment: Neutral / indifferent
+  coding_ai_usage_frequency: Monthly or infrequent
+  coding_tool_ai_capability_importance: Moderate
+  coding_tool_ethics_blocker: Hard blocker
+  coding_tool_reliability_latency_importance: High
+  coding_tool_security_privacy_blocker: Hard blocker
+  future_developer_skill_belief: Ethical judgment
+  human_help_boundary_for_ai_coding: When trust is low
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: prism-21a2ca11ecf4
+  origin_source_row_index: 2211726

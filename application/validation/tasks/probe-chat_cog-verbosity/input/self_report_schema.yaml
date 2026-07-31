@@ -1,0 +1,27 @@
+artifactName: user_feedback.json
+instructions: |
+  Reflect honestly as the persona after the chat.
+  Focus on whether the conversation felt natural and easy.
+fields:
+  - key: needConstraintSatisfaction
+    prompt: How well did the chat let you answer in the way you wanted?
+    kind: enum
+    choices: [yes, partially, no]
+  - key: personalPreferenceSatisfaction
+    prompt: How well did the assistant match your communication preferences?
+    kind: enum
+    choices: [yes, partially, no]
+  - key: overallExperienceRating
+    prompt: Overall, how would you rate the experience from 1 to 10?
+    kind: integer
+    minimum: 1
+    maximum: 10
+    explanation:
+      key: reason
+      prompt: Briefly explain the rating in your own voice.
+  - key: askedUsefulClarificationQuestions
+    prompt: Did the assistant ask useful follow-up questions?
+    kind: boolean
+    explanation:
+      key: clarifyingNotes
+      prompt: Which follow-ups helped, or why they did not.

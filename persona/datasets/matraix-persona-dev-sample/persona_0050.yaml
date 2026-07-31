@@ -1,0 +1,18 @@
+persona_id: '0050'
+version: '1.0'
+source: amazon
+display_name: Casey Brooks
+dimensions:
+  decision_style: Analytical
+  att_new_technology: Skeptical
+  att_brand_loyalty: Skeptical
+  att_online_reviews: Positive
+  musg_rock: Love
+  musg_indie: Love
+  sport_running: Play
+  coding_tool_alternative_sensitivity: Moderate concern
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: amazon-afd6599306ad
+  origin_source_row_index: 2055022

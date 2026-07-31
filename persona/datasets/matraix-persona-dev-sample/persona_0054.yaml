@@ -1,0 +1,37 @@
+persona_id: '0054'
+version: '1.0'
+source: amazon
+display_name: Quinn Santos
+dimensions:
+  economic_motivation: Value-driven
+  topic_fitness: Interested
+  big5_self_efficacy: High
+  big5_orderliness: Average
+  big5_dutifulness: Average
+  big5_self_discipline: Average
+  big5_cautiousness: Low
+  lstyle_frugality: Frugal saver
+  lstyle_music_listening: Sometimes
+  health_vision: Corrected
+  val_family: Important
+  val_security_stability: Important
+  val_knowledge_truth: Important
+  val_independence: Important
+  val_sustainability: Moderate
+  val_recognition: Minor
+  val_helping_others: Minor
+  val_personal_growth: Minor
+  val_fun_enjoyment: Moderate
+  val_integrity_honesty: Important
+  val_beauty_aesthetics: Moderate
+  bfi2_domain_conscientiousness: Average
+  bfi2_facet_organization: Average
+  bfi2_facet_responsibility: Average
+  coding_tool_alternative_sensitivity: Major concern
+  coding_tool_reliability_latency_importance: High
+  dev_toolchain_complexity: Minimal toolchain
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: amazon-52a9205b8db8
+  origin_source_row_index: 2064426

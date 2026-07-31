@@ -1,0 +1,31 @@
+persona_id: '0035'
+version: '1.0'
+source: amazon
+display_name: Noah Williams
+dimensions:
+  region: North America
+  gender_identity: Woman
+  register: Colloquial
+  tone_expected: Concise
+  safety_sensitivity: Benign
+  topic_history: Interested
+  topic_tea: Indifferent
+  att_online_reviews: Positive
+  bookg_history: Like
+  cog_humor: Serious
+  cog_optimism: Moderate
+  cog_curiosity: Moderate
+  cog_attention_span: Short
+  cog_learning_pace: Average
+  trait_perspective: Slight
+  trait_forgiveness: Slight
+  demo_marital_status: In a relationship
+  demo_children_count: 1 child
+  demo_employment_status: Self-employed
+  demo_ethnicity_broad: Black / African
+  demo_parental_status: Parent of minors
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: amazon-4e7bb4f55e55
+  origin_source_row_index: 2011601

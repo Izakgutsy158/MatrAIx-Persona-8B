@@ -1,0 +1,72 @@
+persona_id: '0061'
+version: '1.0'
+source: stackoverflow
+display_name: Sienna Carter
+dimensions:
+  age_bracket: 25-34
+  region: North America
+  domain: Software & AI
+  domain_characteristics: Practitioner
+  highest_education: Bachelor's
+  company_size: Enterprise (5k+)
+  role_function: Engineering
+  years_experience: 11-20
+  life_stage: Early career
+  fam_databases: Familiar
+  fam_operating_systems: Familiar
+  fam_compilers: Familiar
+  fam_cloud_infrastructure: Familiar
+  fam_devops: Familiar
+  fam_game_development: Familiar
+  tool_docker: Regular
+  tool_azure: Regular
+  tool_jupyter: Regular
+  tool_unity: Regular
+  tool_chatgpt: Regular
+  att_ai: Skeptical
+  att_new_technology: Positive
+  trait_love_of_learning: Strong
+  trait_adaptability: Strong
+  pref_speed_vs_accuracy: Balanced
+  demo_employment_status: Full-time
+  demo_generation: Millennial
+  lifex_career_path_shape: Linear climb
+  lifex_education_journey: Traditional track
+  code_dependencies_approach: Lean on libraries (minimal custom code)
+  prog_ruby: None
+  prog_php: None
+  prog_swift: None
+  prog_kotlin: None
+  prog_objective_c: None
+  prog_scala: None
+  prog_haskell: None
+  prog_elixir: None
+  prog_erlang: None
+  prog_clojure: None
+  prog_lua: None
+  prog_perl: None
+  prog_r: None
+  prog_julia: None
+  prog_matlab: None
+  prog_dart: None
+  prog_f: None
+  prog_ocaml: None
+  prog_assembly: None
+  prog_cobol: None
+  prog_fortran: None
+  prog_solidity: None
+  prog_graphql: None
+  coding_ai_output_trust: Distrusts until proven
+  coding_ai_sentiment: Neutral / indifferent
+  coding_ai_usage_frequency: Tried but not active
+  dev_contribution_context: Employee work
+  dev_ic_manager_orientation: Individual contributor
+  dev_professional_status: Professional developer
+  dev_role_archetype: Full-stack developer
+  stackoverflow_participation_style: Reads / searches only
+  stackoverflow_usage_pattern: Weekly reference
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: stackoverflow-65320a329e97
+  origin_source_row_index: 2115230

@@ -1,0 +1,25 @@
+persona_id: '0126'
+version: '1.0'
+source: gss
+display_name: Ethan Brooks
+dimensions:
+  age_bracket: 25-34
+  region: North America
+  gender_identity: Man
+  socioeconomic_band: Middle
+  highest_education: Associate's
+  political_lean: Right
+  religiosity: Devout
+  trust_level: Skeptical
+  att_traditional_gender_roles: Skeptical
+  demo_marital_status: Single
+  demo_children_count: None
+  demo_employment_status: Part-time
+  demo_religion_affiliation: Christian
+  demo_citizenship_status: Citizen by birth
+  demo_ethnicity_broad: White / European
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: gss-e9742e2fad8a
+  origin_source_row_index: 2239995

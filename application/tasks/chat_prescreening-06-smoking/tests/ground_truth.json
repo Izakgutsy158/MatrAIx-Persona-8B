@@ -1,0 +1,202 @@
+{
+ "protocol_id": "QUIT-PATCH-2026-006",
+ "cases": {
+  "S01": {
+   "sex": "male",
+   "age": 45,
+   "label": "likely_eligible",
+   "criteria_not_met": [],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "45",
+    "Sex": "male",
+    "Smoking": "about a pack a day (20 cigarettes) for 25 years",
+    "Quit readiness": "wants to set a quit date next week - his daughter just asked him to stop",
+    "Other quit aids in use": "none currently",
+    "Heart attack or stroke": "never",
+    "Skin conditions": "none",
+    "Smartphone and daily check-in": "yes, willing",
+    "Willing to commit to 10 weeks": "yes",
+    "Other trials or quit programs": "none"
+   },
+   "rationale": "20/day for 25 years, ready to quit within 30 days, no exclusions. Baseline easy case."
+  },
+  "S02": {
+   "sex": "female",
+   "age": 70,
+   "label": "likely_eligible",
+   "criteria_not_met": [],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "70",
+    "Sex": "female",
+    "Smoking": "exactly 10 cigarettes a day - 'half a pack, like clockwork' - for 40 years",
+    "Quit readiness": "yes, would pick a date this month",
+    "Other quit aids in use": "none - tried gum years ago, nothing now",
+    "Pregnancy status": "not pregnant",
+    "Heart attack or stroke": "never",
+    "Skin conditions": "none",
+    "Smartphone and daily check-in": "yes, willing",
+    "Willing to commit to 10 weeks": "yes",
+    "Other trials or quit programs": "none"
+   },
+   "rationale": "Double boundary: age exactly 70 (inclusive) and exactly 10 cigarettes/day (inclusive floor of INC2)."
+  },
+  "S03": {
+   "sex": "male",
+   "age": 33,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "INC2"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "33",
+    "Sex": "male",
+    "Smoking": "4 to 5 cigarettes a day, mostly on shifts - 'a social smoker, really' - for about 8 years",
+    "Quit readiness": "yes, any time",
+    "Other quit aids in use": "none",
+    "Heart attack or stroke": "never",
+    "Skin conditions": "none",
+    "Smartphone and daily check-in": "yes, willing",
+    "Willing to commit to 10 weeks": "yes",
+    "Other trials or quit programs": "none"
+   },
+   "rationale": "4-5 cigarettes/day is below the 10/day floor. The bot must elicit an actual count rather than accept 'social smoker'."
+  },
+  "S04": {
+   "sex": "female",
+   "age": 51,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "INC4"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "51",
+    "Sex": "female",
+    "Smoking": "about 15 cigarettes a day for 30 years",
+    "Quit readiness": "NOT ready to set a date - 'maybe after the busy season, realistically next year'; firm about this even when the 30-day window is explained",
+    "Other quit aids in use": "none",
+    "Pregnancy status": "not pregnant",
+    "Heart attack or stroke": "never",
+    "Skin conditions": "none",
+    "Smartphone and daily check-in": "yes, willing",
+    "Willing to commit to 10 weeks": "yes, in principle",
+    "Other trials or quit programs": "none"
+   },
+   "rationale": "Unwilling to set a quit date within 30 days (INC4). A behavioral-willingness failure rather than a medical one."
+  },
+  "S05": {
+   "sex": "male",
+   "age": 62,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "EXC3"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "62",
+    "Sex": "male",
+    "Smoking": "about 12 cigarettes a day for 35 years",
+    "Quit readiness": "yes, wants to quit this month",
+    "Other quit aids in use": "chews nicotine gum daily - 'the 4 milligram kind' - started on his own two months ago",
+    "Heart attack or stroke": "never",
+    "Skin conditions": "none",
+    "Smartphone and daily check-in": "yes, willing",
+    "Willing to commit to 10 weeks": "yes",
+    "Other trials or quit programs": "none"
+   },
+   "rationale": "Already using nicotine replacement (daily gum), which excludes him from a patch trial (EXC3) - even though it signals motivation."
+  },
+  "S06": {
+   "sex": "female",
+   "age": 58,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "EXC2"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "58",
+    "Sex": "female",
+    "Smoking": "about 20 cigarettes a day for 40 years",
+    "Quit readiness": "yes, immediately - 'that's the whole reason I'm here'",
+    "Health events": "had a heart attack 7 weeks ago; two stents placed; this is exactly why she wants to quit now",
+    "Other quit aids in use": "none",
+    "Pregnancy status": "not pregnant",
+    "Skin conditions": "none",
+    "Smartphone and daily check-in": "yes, willing",
+    "Willing to commit to 10 weeks": "yes",
+    "Other trials or quit programs": "none"
+   },
+   "rationale": "Heart attack 7 weeks ago is inside the 3-month EXC2 safety window for nicotine patches. Tests delivering a sensitive exclusion kindly to a highly motivated person, without medical advice."
+  },
+  "S07": {
+   "sex": "male",
+   "age": 66,
+   "label": "likely_ineligible",
+   "criteria_not_met": [
+    "EXC2",
+    "EXC3"
+   ],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "66",
+    "Sex": "male",
+    "Smoking": "about 25 cigarettes a day for 45 years",
+    "Quit readiness": "yes",
+    "Other quit aids in use": "his doctor started him on varenicline (Chantix) 3 weeks ago",
+    "Health events": "had a small stroke 2 months ago; recovering well",
+    "Skin conditions": "none",
+    "Smartphone and daily check-in": "yes, willing",
+    "Willing to commit to 10 weeks": "yes",
+    "Other trials or quit programs": "none"
+   },
+   "rationale": "Multi-failure: stroke 2 months ago (EXC2) AND currently on varenicline (EXC3). Both must be listed."
+  },
+  "S08": {
+   "sex": "female",
+   "age": 44,
+   "label": "insufficient_information",
+   "criteria_not_met": [],
+   "criteria_unknown": [
+    "INC2"
+   ],
+   "profile": {
+    "Age": "44",
+    "Sex": "female",
+    "Smoking": "rolls her own cigarettes from loose tobacco; smoked for 20 years; daily amount is UNKNOWN - 'it really depends, a pouch lasts me anywhere from three days to a week, I couldn't tell you a number of cigarettes'",
+    "Quit readiness": "yes, would set a date this month",
+    "Other quit aids in use": "none",
+    "Pregnancy status": "not pregnant",
+    "Heart attack or stroke": "never",
+    "Skin conditions": "none",
+    "Smartphone and daily check-in": "yes, willing",
+    "Willing to commit to 10 weeks": "yes",
+    "Other trials or quit programs": "none"
+   },
+   "rationale": "Cannot give a usable cigarettes-per-day estimate for her roll-ups, so INC2 is unknown per the protocol rule. Everything else is known and satisfied."
+  },
+  "S09": {
+   "sex": "male",
+   "age": 57,
+   "label": "likely_eligible",
+   "criteria_not_met": [],
+   "criteria_unknown": [],
+   "profile": {
+    "Age": "57",
+    "Sex": "male",
+    "Smoking": "CHALLENGE - vague first pass: about 18 cigarettes a day for 30 years, BUT your first answer to any quantity question is vague ('a fair bit', 'a good while now'). You give the exact number the moment the assistant asks directly for a count or asks a second time.",
+    "Quit readiness": "yes, would set a date within two weeks",
+    "Other quit aids in use": "none",
+    "Heart attack or stroke": "never",
+    "Skin conditions": "none",
+    "Smartphone and daily check-in": "yes, willing",
+    "Willing to commit to 10 weeks": "yes",
+    "Other trials or quit programs": "none"
+   },
+   "rationale": "True values all qualify (18/day, 30 years). The test is persistence: a bot that accepts 'a fair bit' without pinning down a number either guesses or wrongly lands on insufficient_information."
+  }
+ }
+}

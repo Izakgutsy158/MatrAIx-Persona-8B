@@ -1,0 +1,161 @@
+persona_id: 0088
+version: '1.0'
+source: prism
+display_name: Maya Patel
+dimensions:
+  age_bracket: 25-34
+  region: Latin America
+  gender_identity: Woman
+  primary_language: Spanish
+  english_proficiency: Intermediate (B1-B2)
+  highest_education: Bachelor's
+  seniority: Entry
+  years_experience: 3-5
+  life_stage: Early career
+  cultural_background: Latin
+  tech_savviness: Cautious adopter
+  religiosity: Secular
+  intent: Learn / explain
+  query_complexity: Ambiguous / underspecified
+  expertise_gap: Novice asking expert
+  tone_expected: Concise
+  safety_sensitivity: Benign
+  prior_context: Returning user
+  fam_machine_learning: Aware
+  fam_deep_learning: Aware
+  fam_psychology: Familiar
+  fam_ethics: Familiar
+  fam_natural_language_processing: Familiar
+  fam_human_computer_interaction: Familiar
+  fam_ux_research: Familiar
+  fam_social_work: Familiar
+  fam_counseling: Familiar
+  skill_empathy: Advanced
+  tool_chatgpt: Occasional
+  tool_claude: Occasional
+  topic_technology: Interested
+  topic_religion: Indifferent
+  topic_volunteering: Interested
+  lang_spanish: Native
+  att_ai: Positive
+  att_higher_education: Positive
+  att_new_technology: Positive
+  ind_technology: Some exposure
+  cult_united_states: Unfamiliar
+  cult_canada: Unfamiliar
+  cult_mexico: Native
+  cult_brazil: Unfamiliar
+  cult_argentina: Unfamiliar
+  cult_united_kingdom: Unfamiliar
+  cult_france: Unfamiliar
+  cult_germany: Unfamiliar
+  cult_italy: Unfamiliar
+  cult_spain: Unfamiliar
+  cult_netherlands: Unfamiliar
+  cult_sweden: Unfamiliar
+  cult_poland: Unfamiliar
+  cult_russia: Unfamiliar
+  cult_turkey: Unfamiliar
+  cult_egypt: Unfamiliar
+  cult_saudi_arabia: Unfamiliar
+  cult_uae: Unfamiliar
+  cult_israel: Unfamiliar
+  cult_iran: Unfamiliar
+  cult_nigeria: Unfamiliar
+  cult_kenya: Unfamiliar
+  cult_south_africa: Unfamiliar
+  cult_ethiopia: Unfamiliar
+  cult_india: Unfamiliar
+  cult_pakistan: Unfamiliar
+  cult_bangladesh: Unfamiliar
+  cult_china: Unfamiliar
+  cult_japan: Unfamiliar
+  cult_south_korea: Unfamiliar
+  cult_vietnam: Unfamiliar
+  cult_thailand: Unfamiliar
+  cult_indonesia: Unfamiliar
+  cult_philippines: Unfamiliar
+  cult_australia: Unfamiliar
+  cult_new_zealand: Unfamiliar
+  cult_singapore: Unfamiliar
+  cult_malaysia: Unfamiliar
+  cult_greece: Unfamiliar
+  cult_portugal: Unfamiliar
+  big5_emotionality: High
+  big5_friendliness: High
+  big5_altruism: High
+  big5_sympathy: High
+  lstyle_work_schedule: 9-to-5
+  cog_verbosity: Concise
+  cog_formality: Neutral
+  cog_directness: Balanced
+  cog_detail_orientation: Moderate
+  cog_abstraction: Balanced
+  cog_curiosity: High
+  cog_skepticism: Moderate
+  cog_open_mindedness: High
+  cog_emotional_expressiveness: High
+  cog_feedback_receptiveness: High
+  cog_ambiguity_tolerance: Moderate
+  cog_perfectionism: High
+  cog_learning_pace: Average
+  cog_question_asking: Sometimes
+  cog_decision_speed: Balanced
+  cog_confidence_calibration: Well-calibrated
+  cog_big_picture_vs_detail: Both
+  cog_risk_framing: Balanced
+  cog_empathy_expression: High
+  cog_precision_of_language: Precise
+  cog_use_of_jargon: Avoids jargon
+  cog_politeness: Polite
+  trait_kindness: Strong
+  trait_empathy: Strong
+  trait_generosity: Strong
+  val_knowledge_truth: Core value
+  val_integrity_honesty: Core value
+  demo_marital_status: Single
+  demo_children_count: None
+  demo_employment_status: Full-time
+  demo_generation: Millennial
+  demo_religion_affiliation: None
+  demo_parental_status: Not a parent
+  demo_relationship_length: Not in one
+  lifex_career_path_shape: Just starting
+  lifex_education_journey: Traditional track
+  lifex_adversity_level: Sheltered
+  lifex_immigration_generation: Native multi-generational
+  lifex_entrepreneurship_history: Never considered
+  lifex_relationship_history: Limited
+  lifex_parenting_journey: No children
+  lifex_faith_journey: Always secular
+  lifex_cultural_exposure: Monocultural
+  lifex_formative_decade: 2010s
+  lifex_languages_lifetime: Two
+  bfi2_facet_compassion: High
+  ai_task_code_generation: Does not plan AI use
+  ai_task_code_review: Does not plan AI use
+  ai_task_codebase_learning: Does not plan AI use
+  ai_task_data_generation_analytics: Does not plan AI use
+  ai_task_debugging_fixing: Does not plan AI use
+  ai_task_deployment_monitoring: Does not plan AI use
+  ai_task_documentation: Does not plan AI use
+  ai_task_learning_concepts: Currently partially AI-assisted
+  ai_task_project_planning: Does not plan AI use
+  ai_task_refactoring: Does not plan AI use
+  ai_task_search_answers: Currently partially AI-assisted
+  ai_task_testing: Does not plan AI use
+  coding_agent_usage_frequency: Weekly
+  coding_ai_complexity_comfort: Only simple / boilerplate tasks
+  coding_ai_output_trust: Trusts after verification
+  coding_ai_sentiment: Neutral / indifferent
+  coding_ai_usage_frequency: Weekly
+  coding_tool_ai_capability_importance: High
+  coding_tool_alternative_sensitivity: Moderate concern
+  coding_tool_reliability_latency_importance: High
+  coding_tool_security_privacy_blocker: Major concern
+  human_help_boundary_for_ai_coding: When trust is low
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: prism-9941fd3627a5
+  origin_source_row_index: 2211092

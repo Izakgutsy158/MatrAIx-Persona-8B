@@ -1,0 +1,17 @@
+persona_id: '0044'
+version: '1.0'
+source: amazon
+display_name: Sam Okafor
+dimensions:
+  fam_horticulture: Familiar
+  fam_nutrition: Aware
+  att_brand_loyalty: Positive
+  att_online_reviews: Positive
+  att_working_from_office: Positive
+  lstyle_pet_ownership: Dog
+  cog_reading_vs_watching: No preference
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: amazon-43fa0cb19894
+  origin_source_row_index: 2048105

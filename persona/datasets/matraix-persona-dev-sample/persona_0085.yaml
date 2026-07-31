@@ -1,0 +1,116 @@
+persona_id: 0085
+version: '1.0'
+source: stackoverflow
+display_name: Luka Petrov
+dimensions:
+  age_bracket: 35-44
+  region: Western Europe
+  domain: Software & AI
+  highest_education: Secondary
+  seniority: Senior
+  role_function: Engineering
+  years_experience: 20+
+  life_stage: Parent of young kids
+  tech_savviness: Comfortable
+  decision_style: Analytical
+  emotional_state: Skeptical
+  learning_style: Reading / writing
+  fam_databases: Familiar
+  fam_operating_systems: Familiar
+  fam_cloud_infrastructure: Familiar
+  fam_devops: Familiar
+  fam_natural_language_processing: Familiar
+  skill_coding: Master
+  skill_debugging: Master
+  skill_code_review: Master
+  tool_sql: Regular
+  tool_notion: Regular
+  tool_jira: Regular
+  tool_git: Regular
+  tool_github: Regular
+  tool_gitlab: Regular
+  tool_docker: Regular
+  tool_kubernetes: Regular
+  tool_aws: Regular
+  tool_azure: Regular
+  tool_vs_code: Regular
+  tool_wordpress: Regular
+  tool_trello: Regular
+  tool_chatgpt: Regular
+  tool_github_copilot: Regular
+  topic_technology: Passionate
+  topic_parenting: Interested
+  topic_self_improvement: Interested
+  lang_english: Fluent
+  att_ai: Positive
+  att_open_source: Positive
+  ind_technology: Experienced
+  lstyle_commute_mode: Remote
+  cog_curiosity: High
+  cog_skepticism: High
+  health_caregiver_status: Both
+  trait_love_of_learning: Strong
+  trait_prudence: Strong
+  val_family: Important
+  val_personal_freedom: Core value
+  val_security_stability: Core value
+  val_community: Minor
+  val_knowledge_truth: Important
+  val_independence: Core value
+  val_recognition: Moderate
+  val_personal_growth: Minor
+  val_privacy: Important
+  pref_team_vs_solo: Solo-leaning
+  pref_early_vs_late: Early adopter
+  pref_novelty_vs_familiarity: Novelty-leaning
+  demo_employment_status: Part-time
+  prog_javascript: Proficient
+  prog_typescript: Proficient
+  prog_php: Proficient
+  prog_sql: Proficient
+  prog_bash: Proficient
+  schwartz_value_security: High
+  sdt_need_autonomy: Very high
+  need_for_closure: High
+  ai_task_code_generation: Currently partially AI-assisted
+  ai_task_code_review: Currently partially AI-assisted
+  ai_task_codebase_learning: Currently partially AI-assisted
+  ai_task_data_generation_analytics: Currently partially AI-assisted
+  ai_task_debugging_fixing: Currently partially AI-assisted
+  ai_task_deployment_monitoring: Currently partially AI-assisted
+  ai_task_documentation: Currently partially AI-assisted
+  ai_task_learning_concepts: Currently partially AI-assisted
+  ai_task_project_planning: Currently partially AI-assisted
+  ai_task_search_answers: Currently partially AI-assisted
+  ai_task_testing: Currently partially AI-assisted
+  code_observability_habit: Structured logging / metrics by default
+  codebase_onboarding_style: Uses search / grep heavily
+  coding_agent_adoption_barrier: Accuracy / reliability concerns
+  coding_agent_control_expectation: Requires explicit approval before edits
+  coding_agent_failure_tolerance: Low tolerance with easy rollback
+  coding_agent_usage_frequency: Monthly or infrequent
+  coding_ai_job_threat_perception: Unsure / mixed
+  coding_ai_learning_source: AI-enabled coding tools
+  coding_ai_usage_frequency: Daily
+  coding_tool_ai_capability_importance: Moderate
+  coding_tool_alternative_sensitivity: Major concern
+  coding_tool_api_completeness_importance: Critical
+  coding_tool_ethics_blocker: Moderate concern
+  coding_tool_obsolescence_blocker: Moderate concern
+  coding_tool_open_source_importance: Moderate
+  coding_tool_reliability_latency_importance: Critical
+  coding_tool_security_privacy_blocker: Hard blocker
+  dev_contribution_context: Employee work
+  dev_ic_manager_orientation: Individual contributor
+  dev_professional_status: Professional developer
+  dev_role_archetype: Front-end developer
+  dev_toolchain_complexity: Large integrated toolchain
+  future_developer_skill_belief: Systems understanding
+  human_help_boundary_for_ai_coding: When trust is low
+  stackoverflow_participation_style: Reads / searches only
+  stackoverflow_usage_pattern: Multiple times daily
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: stackoverflow-a58e054636b4
+  origin_source_row_index: 2202291

@@ -1,0 +1,178 @@
+persona_id: '0041'
+version: '1.0'
+source: wiki:Q213879
+dimensions:
+  region: Western Europe
+  gender_identity: Man
+  urbanicity: Small town
+  socioeconomic_band: Middle
+  primary_language: English
+  english_proficiency: Native
+  multilingualism: Monolingual
+  register: Colloquial
+  domain_characteristics: Practitioner
+  highest_education: Secondary
+  institution_tier: Not applicable
+  research_output: Occasional author
+  seniority: Retired
+  years_experience: 20+
+  life_stage: Retirement
+  major_life_events: Health journey
+  cultural_background: Individualist (Western)
+  dominant_trait: High conscientiousness
+  risk_tolerance: Balanced
+  decision_style: Analytical
+  values_priority: Achievement
+  safety_sensitivity: Benign
+  accessibility_needs: Visual
+  economic_motivation: Cost-sensitive
+  skill_writing: Intermediate
+  skill_leadership: Intermediate
+  skill_people_management: Intermediate
+  skill_coaching: Intermediate
+  topic_sports: Passionate
+  topic_fitness: Passionate
+  topic_entrepreneurship: Interested
+  lang_english: Native
+  ind_construction: Some exposure
+  ind_hospitality: Some exposure
+  ind_media: Some exposure
+  ind_entertainment: Some exposure
+  ind_publishing: Some exposure
+  ind_defense: Some exposure
+  ind_sports: Veteran
+  cult_united_states: Lived there
+  cult_mexico: Visited
+  cult_brazil: Visited
+  cult_united_kingdom: Native
+  cult_germany: Lived there
+  cult_italy: Visited
+  cult_spain: Visited
+  sport_soccer: Play
+  big5_adventurousness: High
+  big5_self_efficacy: Very high
+  big5_dutifulness: High
+  big5_achievement_striving: Very high
+  big5_self_discipline: Very high
+  big5_cautiousness: Low
+  big5_friendliness: High
+  big5_assertiveness: High
+  big5_activity_level: Very high
+  big5_cheerfulness: High
+  big5_cooperation: High
+  big5_anxiety: Low
+  big5_vulnerability: Low
+  lstyle_exercise_freq: Daily
+  lstyle_commute_mode: Car
+  lstyle_household_size: 5+ people
+  cog_directness: Direct
+  cog_detail_orientation: High
+  cog_assertiveness: High
+  cog_emotional_expressiveness: Moderate
+  cog_conflict_approach: Confronting
+  cog_perfectionism: High
+  cog_learning_pace: Fast
+  cog_decision_speed: Quick
+  cog_storytelling: High
+  health_chronic_condition: Multiple
+  health_vision: Low vision
+  health_fitness_level: Athlete
+  acad_creative_writing: Interested
+  acad_physical_education: Passionate
+  trait_curiosity: Moderate
+  trait_creativity: Moderate
+  trait_love_of_learning: Strong
+  trait_bravery: Strong
+  trait_perseverance: Signature
+  trait_zest: Moderate
+  trait_capacity_for_love: Moderate
+  trait_social_intelligence: Moderate
+  trait_teamwork: Strong
+  trait_leadership: Strong
+  trait_humility: Moderate
+  trait_self_regulation: Strong
+  trait_playfulness: Moderate
+  trait_ambition: Signature
+  trait_resilience: Signature
+  trait_discipline: Signature
+  trait_loyalty: Moderate
+  trait_competitiveness: Signature
+  trait_adaptability: Strong
+  val_family: Important
+  val_career_success: Core value
+  val_wealth: Important
+  val_health: Moderate
+  val_security_stability: Important
+  val_adventure: Moderate
+  val_achievement: Core value
+  val_creativity_self_expression: Important
+  val_community: Moderate
+  val_social_status: Important
+  val_independence: Important
+  val_justice_fairness: Important
+  val_loyalty: Important
+  val_recognition: Important
+  val_personal_growth: Core value
+  val_fun_enjoyment: Moderate
+  val_order_structure: Moderate
+  val_patriotism: Important
+  pref_team_vs_solo: Strongly team
+  pref_plan_vs_spontaneous: Highly planned
+  pref_lead_vs_follow: Leans lead
+  pref_indoor_vs_outdoor: Outdoor-leaning
+  pref_competition_vs_collab: Highly competitive
+  demo_marital_status: Married
+  demo_children_count: 3+ children
+  demo_employment_status: Retired
+  demo_generation: Silent
+  demo_sexual_orientation: Heterosexual
+  demo_citizenship_status: Citizen by birth
+  demo_ethnicity_broad: White / European
+  demo_disability_status: Sensory
+  demo_veteran_status: Veteran
+  demo_parental_status: Parent of adults
+  demo_relationship_length: 15+ years
+  lifex_childhood_environment: Turbulent
+  lifex_geographic_mobility: Moved internationally
+  lifex_travel_breadth: Lived abroad
+  lifex_career_path_shape: Linear climb
+  lifex_education_journey: Vocational / trade
+  lifex_financial_trajectory: Volatile
+  lifex_adversity_level: Overcame major hardship
+  lifex_immigration_generation: Native multi-generational
+  lifex_military_history: Served briefly
+  lifex_entrepreneurship_history: Founded once
+  lifex_relationship_history: Married once
+  lifex_parenting_journey: Grown children
+  lifex_health_journey: Major surgery / injury
+  lifex_loss_experience: Multiple bereavements
+  lifex_cultural_exposure: Lived across cultures
+  lifex_formative_decade: 1960s-70s
+  lifex_public_recognition: Famous
+  lifex_turning_point: Near-miss / accident
+  lifex_hometown_tie: Occasional return
+  bfi2_domain_extraversion: High
+  bfi2_domain_agreeableness: Average
+  bfi2_domain_conscientiousness: Very high
+  bfi2_domain_negative_emotionality: Low
+  bfi2_facet_sociability: High
+  bfi2_facet_assertiveness: High
+  bfi2_facet_energy_level: Very high
+  bfi2_facet_productiveness: Very high
+  bfi2_facet_responsibility: High
+  bfi2_facet_anxiety: Low
+  bfi2_facet_emotional_volatility: Low
+  bfi2_facet_creative_imagination: High
+  schwartz_value_self_direction: High
+  schwartz_value_hedonism: Low
+  schwartz_value_achievement: Very high
+  schwartz_value_security: Average
+  sdt_need_autonomy: High
+  sdt_need_competence: Very high
+  sdt_need_relatedness: Average
+  mft_fairness_cheating: High
+  mft_loyalty_betrayal: High
+  need_for_cognition: Average
+  dospert_social_risk_tolerance: High
+  interpersonal_agency_dominance: High
+  interpersonal_communion_warmth: Average

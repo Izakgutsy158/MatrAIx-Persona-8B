@@ -1,0 +1,6 @@
+# runtime outputs and generated recipes — not committed (Data Policy)
+results/*
+!results/REPORT.md
+!results/report.json
+recipes/
+scripts/__pycache__/

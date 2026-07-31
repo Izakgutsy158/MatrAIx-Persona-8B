@@ -1,0 +1,81 @@
+persona_id: '0073'
+version: '1.0'
+source: stackoverflow
+display_name: Sienna Carter
+dimensions:
+  age_bracket: 45-54
+  region: North America
+  domain: Software & AI
+  domain_characteristics: Practitioner
+  highest_education: Doctorate
+  institution_tier: Top-tier research
+  company_size: Solo / freelance
+  role_function: Engineering
+  years_experience: 11-20
+  device_context: Desktop, focused
+  learning_style: Reading / writing
+  fam_machine_learning: Familiar
+  fam_databases: Familiar
+  fam_operating_systems: Familiar
+  fam_cloud_infrastructure: Familiar
+  fam_devops: Familiar
+  tool_sql: Regular
+  tool_slack: Regular
+  tool_docker: Regular
+  tool_aws: Regular
+  tool_google_cloud: Regular
+  tool_vs_code: Regular
+  tool_vim: Regular
+  tool_wordpress: Regular
+  tool_zoom: Regular
+  tool_chatgpt: Regular
+  tool_github_copilot: Regular
+  topic_productivity: Interested
+  topic_self_improvement: Interested
+  att_ai: Positive
+  att_new_technology: Enthusiast
+  att_online_reviews: Positive
+  att_open_source: Enthusiast
+  lstyle_commute_mode: Remote
+  lstyle_work_schedule: Freelance
+  lstyle_device_ecosystem: Apple
+  cog_reading_vs_watching: Prefers reading
+  trait_love_of_learning: Strong
+  trait_open_mindedness: Strong
+  trait_adaptability: Strong
+  val_achievement: Important
+  val_community: Important
+  val_knowledge_truth: Important
+  val_independence: Core value
+  val_personal_growth: Important
+  pref_team_vs_solo: Solo-leaning
+  pref_early_vs_late: Early adopter
+  pref_detail_brief_vs_full: Detail-leaning
+  demo_employment_status: Self-employed
+  demo_generation: Gen X
+  lifex_career_path_shape: Entrepreneurial
+  lifex_education_journey: Advanced degrees
+  ai_task_code_generation: Currently partially AI-assisted
+  ai_task_code_review: Plans partial AI use
+  ai_task_codebase_learning: Plans partial AI use
+  ai_task_debugging_fixing: Plans partial AI use
+  ai_task_deployment_monitoring: Plans partial AI use
+  ai_task_documentation: Plans partial AI use
+  ai_task_learning_concepts: Plans partial AI use
+  ai_task_project_planning: Plans partial AI use
+  ai_task_testing: Plans partial AI use
+  coding_ai_output_trust: Trusts after verification
+  coding_ai_sentiment: Very favorable
+  coding_ai_usage_frequency: Weekly
+  debugging_strategy: Search / ask externally
+  dev_contribution_context: Independent / freelance work
+  dev_ic_manager_orientation: Founder / owner
+  dev_professional_status: Professional developer
+  dev_role_archetype: Full-stack developer
+  open_source_activity_level: Regular contributor
+  stackoverflow_usage_pattern: Weekly reference
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: stackoverflow-957ab133fab6
+  origin_source_row_index: 2151706

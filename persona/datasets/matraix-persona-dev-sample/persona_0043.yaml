@@ -1,0 +1,26 @@
+persona_id: '0043'
+version: '1.0'
+source: amazon
+display_name: Sam Okafor
+dimensions:
+  highest_education: Bachelor's
+  learning_style: Kinesthetic
+  sport_running: Play
+  lstyle_fashion_sense: Practical
+  cog_feedback_receptiveness: High
+  trait_kindness: Moderate
+  trait_leadership: Slight
+  trait_forgiveness: Moderate
+  trait_gratitude: Moderate
+  trait_empathy: Slight
+  lifex_geographic_mobility: Moved within region
+  lifex_travel_breadth: Never left country
+  lifex_parenting_journey: No children
+  lifex_faith_journey: Always secular
+  lifex_cultural_exposure: Monocultural
+  lifex_public_recognition: Private life
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: amazon-33603c5f9ad5
+  origin_source_row_index: 2044647

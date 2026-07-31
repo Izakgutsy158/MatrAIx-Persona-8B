@@ -1,0 +1,90 @@
+persona_id: '0023'
+version: '1.0'
+source: stackoverflow:stackoverflow_2023_4675_7377
+dimensions:
+  age_bracket: 35-44
+  region: Oceania
+  domain: Software & AI
+  highest_education: Master's
+  company_size: SMB (50-500)
+  role_function: Engineering
+  years_experience: 20+
+  tech_savviness: Comfortable
+  emotional_state: Frustrated
+  expertise_gap: Expert testing the system
+  fam_machine_learning: None
+  fam_deep_learning: None
+  fam_statistics: None
+  fam_data_science: None
+  fam_cybersecurity: None
+  fam_cryptography: None
+  fam_computer_networking: Familiar
+  fam_databases: Expert
+  fam_distributed_systems: Familiar
+  fam_operating_systems: Familiar
+  fam_compilers: Familiar
+  fam_cloud_infrastructure: Familiar
+  fam_devops: Familiar
+  fam_game_development: None
+  fam_computer_graphics: None
+  fam_computer_vision: None
+  fam_natural_language_processing: None
+  fam_human_computer_interaction: Familiar
+  fam_ux_research: None
+  skill_coding: Master
+  skill_mentoring: Advanced
+  tool_jira: Regular
+  tool_slack: Regular
+  tool_microsoft_teams: Regular
+  tool_terraform: Regular
+  tool_azure: Regular
+  tool_jetbrains_ides: Regular
+  tool_trello: Regular
+  topic_self_improvement: Interested
+  att_ai: Opposed
+  att_online_reviews: Positive
+  att_open_source: Positive
+  ind_retail: Experienced
+  lstyle_commute_mode: Remote
+  lstyle_reading_freq: Daily
+  lstyle_device_ecosystem: Mixed
+  cog_reading_vs_watching: Prefers reading
+  peeve_being_interrupted: Major peeve
+  trait_curiosity: Strong
+  trait_love_of_learning: Strong
+  trait_adaptability: Strong
+  demo_generation: Millennial
+  lifex_career_path_shape: Linear climb
+  lifex_education_journey: Advanced degrees
+  code_comment_style: Extensive inline comments
+  prog_javascript: Proficient
+  prog_typescript: Proficient
+  prog_c: Proficient
+  prog_ruby: Proficient
+  prog_php: Proficient
+  need_for_closure: High
+  ai_task_code_generation: Does not plan AI use
+  ai_task_code_review: Does not plan AI use
+  ai_task_codebase_learning: Does not plan AI use
+  ai_task_data_generation_analytics: Does not plan AI use
+  ai_task_debugging_fixing: Does not plan AI use
+  ai_task_deployment_monitoring: Does not plan AI use
+  ai_task_documentation: Does not plan AI use
+  ai_task_learning_concepts: Does not plan AI use
+  ai_task_project_planning: Does not plan AI use
+  ai_task_refactoring: Does not plan AI use
+  ai_task_search_answers: Does not plan AI use
+  ai_task_testing: Does not plan AI use
+  codebase_onboarding_style: Reads architecture / docs first
+  coding_agent_failure_tolerance: Does not use agents
+  coding_agent_usage_frequency: No plans
+  coding_agent_workflow_impact: No clear change
+  coding_ai_learning_source: Not learning AI tooling
+  coding_ai_usage_frequency: Never used
+  dev_contribution_context: Mixed contexts
+  dev_ic_manager_orientation: Individual contributor
+  dev_professional_status: Professional developer
+  dev_role_archetype: Full-stack developer
+  open_source_activity_level: Regular contributor
+  stackoverflow_participation_style: Asks questions
+  stackoverflow_usage_pattern: Multiple times daily

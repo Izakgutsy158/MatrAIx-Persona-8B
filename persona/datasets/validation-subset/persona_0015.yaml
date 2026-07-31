@@ -1,0 +1,66 @@
+persona_id: '0015'
+version: '1.0'
+source: stackoverflow:stackoverflow_2023_1208_1911
+dimensions:
+  age_bracket: 25-34
+  region: North America
+  domain: Software & AI
+  domain_characteristics: Hobbyist
+  institution_tier: Not applicable
+  role_function: Engineering
+  years_experience: 6-10
+  life_stage: Early career
+  emotional_state: Frustrated
+  fam_computer_networking: Familiar
+  fam_databases: Familiar
+  fam_operating_systems: Familiar
+  fam_cloud_infrastructure: Familiar
+  fam_devops: Familiar
+  skill_coding: Advanced
+  skill_debugging: Advanced
+  skill_system_design: Intermediate
+  skill_time_management: Advanced
+  skill_research: Advanced
+  skill_problem_solving: Advanced
+  tool_jira: Regular
+  tool_slack: Regular
+  tool_docker: Regular
+  tool_kubernetes: Regular
+  tool_terraform: Regular
+  tool_aws: Regular
+  topic_productivity: Interested
+  att_ai: Positive
+  att_new_technology: Enthusiast
+  att_online_reviews: Enthusiast
+  att_open_source: Positive
+  ind_technology: Experienced
+  lstyle_device_ecosystem: Mixed
+  acad_computer_science: Interested
+  peeve_being_interrupted: Major peeve
+  trait_love_of_learning: Strong
+  trait_adaptability: Strong
+  pref_team_vs_solo: Solo-leaning
+  demo_employment_status: Full-time
+  demo_generation: Millennial
+  lifex_career_path_shape: Just starting
+  lifex_education_journey: Traditional track
+  code_comment_style: No comments
+  need_for_closure: High
+  ai_task_code_generation: Currently partially AI-assisted
+  ai_task_code_review: Plans partial AI use
+  ai_task_debugging_fixing: Plans partial AI use
+  ai_task_deployment_monitoring: Does not plan AI use
+  ai_task_documentation: Plans partial AI use
+  ai_task_project_planning: Plans partial AI use
+  ai_task_testing: Currently partially AI-assisted
+  code_modularity_preference: Highly modular small components
+  code_type_system_orientation: Strong static typing preference
+  codebase_onboarding_style: Asks teammates / AI for map
+  coding_ai_output_trust: Trusts after verification
+  coding_ai_sentiment: Somewhat favorable
+  coding_ai_usage_frequency: Daily
+  dev_ic_manager_orientation: Individual contributor
+  dev_professional_status: Professional developer
+  dev_role_archetype: Full-stack developer
+  stackoverflow_participation_style: Reads / searches only
+  stackoverflow_usage_pattern: Weekly reference

@@ -1,0 +1,180 @@
+persona_id: 0092
+version: '1.0'
+source: prism
+display_name: Ivan Kowalski
+dimensions:
+  age_bracket: 25-34
+  region: Eastern Europe
+  gender_identity: Woman
+  english_proficiency: Fluent (C1-C2)
+  highest_education: Master's
+  seniority: Entry
+  years_experience: 3-5
+  life_stage: Early career
+  major_life_events: None notable
+  cultural_background: Individualist (Western)
+  tech_savviness: Comfortable
+  religiosity: Observant
+  emotional_state: Calm
+  intent: Vent / support
+  query_complexity: Ambiguous / underspecified
+  expertise_gap: Novice asking expert
+  tone_expected: Warm / empathetic
+  safety_sensitivity: Benign
+  prior_context: Returning user
+  device_context: Desktop, focused
+  fam_machine_learning: Familiar
+  fam_deep_learning: Aware
+  fam_psychology: Familiar
+  fam_philosophy: Familiar
+  fam_natural_language_processing: Familiar
+  fam_theology: Familiar
+  fam_religious_studies: Aware
+  skill_active_listening: Advanced
+  skill_empathy: Advanced
+  skill_fact_checking: Advanced
+  tool_chatgpt: Regular
+  tool_claude: Occasional
+  topic_technology: Interested
+  topic_religion: Interested
+  topic_spirituality: Neutral
+  topic_languages: Interested
+  topic_productivity: Interested
+  topic_self_improvement: Interested
+  topic_mindfulness: Interested
+  lang_english: Fluent
+  att_ai: Positive
+  att_organized_religion: Positive
+  att_higher_education: Positive
+  att_new_technology: Positive
+  big5_imagination: High
+  big5_emotionality: Low
+  big5_intellect: High
+  big5_self_efficacy: High
+  big5_dutifulness: High
+  big5_friendliness: High
+  big5_cheerfulness: High
+  big5_trust: High
+  big5_morality: High
+  big5_altruism: High
+  big5_cooperation: High
+  big5_sympathy: High
+  big5_anxiety: Low
+  big5_depression: Low
+  big5_vulnerability: Low
+  cog_verbosity: Concise
+  cog_formality: Neutral
+  cog_directness: Direct
+  cog_detail_orientation: Moderate
+  cog_optimism: High
+  cog_patience: High
+  cog_curiosity: Moderate
+  cog_skepticism: Moderate
+  cog_assertiveness: High
+  cog_emotional_expressiveness: Moderate
+  cog_conflict_approach: Collaborative
+  cog_feedback_receptiveness: High
+  cog_ambiguity_tolerance: Moderate
+  cog_perfectionism: Moderate
+  cog_attention_span: Average
+  cog_learning_pace: Average
+  cog_question_asking: Sometimes
+  cog_decision_speed: Balanced
+  cog_confidence_calibration: Cautious
+  cog_risk_framing: Balanced
+  cog_empathy_expression: High
+  cog_storytelling: Low
+  cog_precision_of_language: Loose
+  cog_use_of_jargon: Avoids jargon
+  cog_emoji_use: Never
+  cog_politeness: Polite
+  health_mental_health: Stable
+  health_stress_level: Low
+  acad_creative_writing: Interested
+  trait_creativity: Strong
+  trait_open_mindedness: Strong
+  trait_bravery: Strong
+  trait_honesty: Signature
+  trait_kindness: Strong
+  trait_self_regulation: Strong
+  trait_empathy: Strong
+  trait_resilience: Strong
+  val_health: Important
+  val_security_stability: Important
+  val_creativity_self_expression: Core value
+  val_community: Important
+  val_spirituality_faith: Important
+  val_knowledge_truth: Core value
+  val_personal_growth: Important
+  val_fun_enjoyment: Important
+  val_integrity_honesty: Core value
+  pref_speed_vs_accuracy: Accuracy first
+  pref_quality_vs_quantity: Quality first
+  pref_early_vs_late: Mainstream
+  pref_detail_brief_vs_full: Every detail
+  pref_competition_vs_collab: Collaborative
+  pref_stability_vs_change: Stability-leaning
+  demo_marital_status: Married
+  demo_employment_status: Full-time
+  demo_religion_affiliation: Christian
+  demo_ethnicity_broad: White / European
+  lifex_career_path_shape: Linear climb
+  lifex_education_journey: Advanced degrees
+  lifex_adversity_level: Sheltered
+  lifex_immigration_generation: Native multi-generational
+  lifex_relationship_history: Married once
+  lifex_parenting_journey: No children
+  lifex_faith_journey: Lifelong faith
+  lifex_cultural_exposure: Monocultural
+  lifex_formative_decade: 2010s
+  lifex_languages_lifetime: Two
+  bfi2_domain_agreeableness: High
+  bfi2_domain_conscientiousness: High
+  bfi2_domain_negative_emotionality: Low
+  bfi2_domain_open_mindedness: High
+  bfi2_facet_compassion: High
+  bfi2_facet_respectfulness: High
+  bfi2_facet_trust: High
+  bfi2_facet_responsibility: High
+  bfi2_facet_anxiety: Low
+  bfi2_facet_depression: Low
+  bfi2_facet_emotional_volatility: Low
+  bfi2_facet_intellectual_curiosity: High
+  bfi2_facet_aesthetic_sensitivity: High
+  bfi2_facet_creative_imagination: High
+  schwartz_value_self_direction: High
+  schwartz_value_stimulation: Average
+  schwartz_value_hedonism: Average
+  schwartz_value_achievement: High
+  schwartz_value_security: High
+  schwartz_value_conformity: Average
+  schwartz_value_tradition: High
+  schwartz_value_benevolence: High
+  schwartz_value_universalism: Average
+  sdt_need_autonomy: High
+  sdt_need_competence: High
+  sdt_need_relatedness: High
+  need_for_cognition: High
+  interpersonal_agency_dominance: Average
+  interpersonal_communion_warmth: High
+  ai_task_learning_concepts: Currently partially AI-assisted
+  ai_task_search_answers: Currently partially AI-assisted
+  coding_agent_usage_frequency: Weekly
+  coding_ai_complexity_comfort: Only simple / boilerplate tasks
+  coding_ai_job_threat_perception: Unsure / mixed
+  coding_ai_learning_source: Not learning AI tooling
+  coding_ai_output_trust: Trusts after verification
+  coding_ai_sentiment: Neutral / indifferent
+  coding_ai_usage_frequency: Weekly
+  coding_tool_ai_capability_importance: High
+  coding_tool_alternative_sensitivity: Minor concern
+  coding_tool_ethics_blocker: Major concern
+  coding_tool_reliability_latency_importance: Moderate
+  coding_tool_security_privacy_blocker: Moderate concern
+  future_developer_skill_belief: Ethical judgment
+  human_help_boundary_for_ai_coding: When trust is low
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: prism-d2932eb75017
+  origin_source_row_index: 2211314

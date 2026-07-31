@@ -1,0 +1,187 @@
+persona_id: 0029
+version: '1.0'
+source: wiki:Q102371
+dimensions:
+  age_bracket: 35-44
+  region: Eastern Europe
+  gender_identity: Man
+  urbanicity: Nomadic / remote
+  socioeconomic_band: High income
+  register: Formal / standard
+  domain: Public Sector
+  domain_characteristics: Practitioner
+  seniority: Founder
+  company_size: Public sector
+  years_experience: 11-20
+  life_stage: Mid-life
+  major_life_events: Migration / immigration
+  dominant_trait: High extraversion
+  risk_tolerance: Risk-seeking
+  decision_style: Directive
+  values_priority: Achievement
+  religiosity: Observant
+  safety_sensitivity: Benign
+  economic_motivation: Value-driven
+  fam_political_science: Proficient
+  fam_military_strategy: Expert
+  fam_diplomacy: Proficient
+  fam_religious_studies: Aware
+  skill_public_speaking: Advanced
+  skill_negotiation: Advanced
+  skill_leadership: Master
+  skill_people_management: Advanced
+  skill_persuasion: Advanced
+  topic_politics: Passionate
+  topic_history: Interested
+  topic_religion: Interested
+  topic_spirituality: Interested
+  att_organized_religion: Positive
+  att_risk_taking: Enthusiast
+  att_authority: Positive
+  ind_telecommunications: None
+  ind_education: None
+  ind_government: Veteran
+  ind_defense: Veteran
+  cult_italy: Lived there
+  cult_turkey: Visited
+  cult_greece: Lived there
+  big5_adventurousness: Very high
+  big5_intellect: High
+  big5_self_efficacy: Very high
+  big5_dutifulness: High
+  big5_achievement_striving: Very high
+  big5_self_discipline: High
+  big5_cautiousness: Low
+  big5_assertiveness: Very high
+  big5_activity_level: Very high
+  big5_trust: Low
+  big5_morality: Average
+  big5_altruism: Average
+  big5_cooperation: Average
+  big5_modesty: Low
+  big5_sympathy: Average
+  big5_anger: High
+  big5_vulnerability: Low
+  lstyle_household_size: 3-4 people
+  cog_verbosity: Terse
+  cog_directness: Blunt
+  cog_patience: Moderate
+  cog_assertiveness: Very high
+  cog_conflict_approach: Confronting
+  cog_decision_speed: Deliberate
+  cog_confidence_calibration: Confident
+  cog_big_picture_vs_detail: Big-picture
+  cog_risk_framing: Opportunity-focused
+  cog_emoji_use: Never
+  acad_political_theory: Interested
+  trait_creativity: Moderate
+  trait_open_mindedness: Moderate
+  trait_perspective: Strong
+  trait_bravery: Signature
+  trait_perseverance: Signature
+  trait_zest: Moderate
+  trait_kindness: Slight
+  trait_social_intelligence: Strong
+  trait_teamwork: Moderate
+  trait_fairness: Moderate
+  trait_leadership: Signature
+  trait_forgiveness: Slight
+  trait_humility: Absent
+  trait_prudence: Moderate
+  trait_self_regulation: Moderate
+  trait_hope_optimism: Moderate
+  trait_playfulness: Slight
+  trait_spirituality: Moderate
+  trait_ambition: Signature
+  trait_empathy: Moderate
+  trait_resilience: Signature
+  trait_discipline: Strong
+  trait_loyalty: Strong
+  trait_competitiveness: Strong
+  trait_adaptability: Strong
+  val_family: Moderate
+  val_career_success: Core value
+  val_wealth: Important
+  val_personal_freedom: Core value
+  val_security_stability: Core value
+  val_tradition: Moderate
+  val_power_influence: Core value
+  val_achievement: Core value
+  val_community: Core value
+  val_spirituality_faith: Moderate
+  val_social_status: Core value
+  val_independence: Core value
+  val_justice_fairness: Important
+  val_loyalty: Important
+  val_recognition: Core value
+  val_helping_others: Important
+  val_integrity_honesty: Moderate
+  val_order_structure: Important
+  val_patriotism: Core value
+  pref_lead_vs_follow: Always leads
+  demo_marital_status: Married
+  demo_children_count: 2 children
+  demo_household_income: $200k+
+  demo_employment_status: Full-time
+  demo_housing_status: Temporary / transitional
+  demo_religion_affiliation: Christian
+  demo_ethnicity_broad: White / European
+  demo_veteran_status: Active duty
+  demo_political_engagement: Activist
+  demo_parental_status: Parent of minors
+  lifex_childhood_environment: Turbulent
+  lifex_geographic_mobility: Serial relocator
+  lifex_travel_breadth: Well-traveled
+  lifex_career_path_shape: Linear climb
+  lifex_financial_trajectory: Volatile
+  lifex_adversity_level: Significant struggles
+  lifex_immigration_generation: First-generation immigrant
+  lifex_military_history: Career veteran
+  lifex_relationship_history: Married once
+  lifex_parenting_journey: Young children
+  lifex_health_journey: No major events
+  lifex_faith_journey: Converted
+  lifex_cultural_exposure: Lived across cultures
+  lifex_public_recognition: Famous
+  lifex_service_history: Public office
+  lifex_turning_point: Reinvention
+  lifex_hometown_tie: No connection
+  bfi2_domain_extraversion: Very high
+  bfi2_domain_agreeableness: Low
+  bfi2_domain_conscientiousness: High
+  bfi2_domain_negative_emotionality: Average
+  bfi2_domain_open_mindedness: High
+  bfi2_facet_assertiveness: Very high
+  bfi2_facet_energy_level: Very high
+  bfi2_facet_compassion: Average
+  bfi2_facet_respectfulness: Low
+  bfi2_facet_trust: Low
+  bfi2_facet_productiveness: High
+  bfi2_facet_responsibility: High
+  bfi2_facet_emotional_volatility: High
+  schwartz_value_self_direction: Very high
+  schwartz_value_hedonism: Low
+  schwartz_value_achievement: Very high
+  schwartz_value_power: Very high
+  schwartz_value_security: High
+  schwartz_value_conformity: Average
+  schwartz_value_tradition: Average
+  schwartz_value_benevolence: High
+  schwartz_value_universalism: Low
+  sdt_need_autonomy: Very high
+  sdt_need_competence: Very high
+  sdt_need_relatedness: High
+  mft_care_harm: Average
+  mft_fairness_cheating: High
+  mft_loyalty_betrayal: Very high
+  mft_authority_subversion: High
+  mft_sanctity_degradation: High
+  mft_liberty_oppression: Very high
+  need_for_cognition: Average
+  need_for_closure: High
+  dospert_ethical_risk_tolerance: High
+  dospert_financial_risk_tolerance: Very high
+  dospert_health_safety_risk_tolerance: Very high
+  dospert_social_risk_tolerance: Very high
+  interpersonal_agency_dominance: Very high
+  interpersonal_communion_warmth: Average

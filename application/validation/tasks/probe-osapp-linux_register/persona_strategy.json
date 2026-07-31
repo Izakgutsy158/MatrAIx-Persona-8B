@@ -1,0 +1,8 @@
+{
+  "schemaVersion": "1.0",
+  "sources": [],
+  "defaultMode": "stratified",
+  "dimensionFilters": { "register": ["Formal / standard", "Colloquial"] },
+  "stratifyFields": ["register"],
+  "sampleSize": 10
+}

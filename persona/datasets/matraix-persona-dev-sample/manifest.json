@@ -1,0 +1,3564 @@
+{
+  "kind": "matraix-persona-dev-sample",
+  "count": 200,
+  "seed": 42,
+  "schema_version": "1.0",
+  "smoke_persona_id": "0042",
+  "dimension_count": 1290,
+  "dimension_ids": [
+    "age_bracket",
+    "region",
+    "gender_identity",
+    "urbanicity",
+    "socioeconomic_band",
+    "primary_language",
+    "english_proficiency",
+    "multilingualism",
+    "register",
+    "domain",
+    "subject_specialty",
+    "domain_characteristics",
+    "highest_education",
+    "academic_field",
+    "institution_tier",
+    "research_output",
+    "seniority",
+    "company_size",
+    "role_function",
+    "years_experience",
+    "linkedin_activity",
+    "life_stage",
+    "major_life_events",
+    "cultural_background",
+    "tech_savviness",
+    "dominant_trait",
+    "risk_tolerance",
+    "decision_style",
+    "values_priority",
+    "political_lean",
+    "religiosity",
+    "neurotype",
+    "emotional_state",
+    "intent",
+    "query_complexity",
+    "expertise_gap",
+    "tone_expected",
+    "trust_level",
+    "safety_sensitivity",
+    "time_pressure",
+    "prior_context",
+    "device_context",
+    "modality_pref",
+    "accessibility_needs",
+    "learning_style",
+    "media_diet",
+    "economic_motivation",
+    "fam_machine_learning",
+    "fam_deep_learning",
+    "fam_statistics",
+    "fam_data_science",
+    "fam_cardiology",
+    "fam_neurology",
+    "fam_oncology",
+    "fam_pediatrics",
+    "fam_psychiatry",
+    "fam_radiology",
+    "fam_surgery",
+    "fam_immunology",
+    "fam_constitutional_law",
+    "fam_contract_law",
+    "fam_criminal_law",
+    "fam_tax_law",
+    "fam_intellectual_property",
+    "fam_corporate_finance",
+    "fam_quantitative_trading",
+    "fam_accounting",
+    "fam_auditing",
+    "fam_macroeconomics",
+    "fam_microeconomics",
+    "fam_behavioral_economics",
+    "fam_curriculum_design",
+    "fam_pedagogy",
+    "fam_special_education",
+    "fam_structural_engineering",
+    "fam_mechanical_engineering",
+    "fam_electrical_engineering",
+    "fam_civil_engineering",
+    "fam_chemical_engineering",
+    "fam_aerospace_engineering",
+    "fam_robotics",
+    "fam_control_systems",
+    "fam_molecular_biology",
+    "fam_genetics",
+    "fam_biochemistry",
+    "fam_organic_chemistry",
+    "fam_physical_chemistry",
+    "fam_particle_physics",
+    "fam_astrophysics",
+    "fam_astronomy",
+    "fam_geology",
+    "fam_oceanography",
+    "fam_climate_science",
+    "fam_ecology",
+    "fam_sociology",
+    "fam_psychology",
+    "fam_cognitive_science",
+    "fam_anthropology",
+    "fam_political_science",
+    "fam_international_relations",
+    "fam_comparative_literature",
+    "fam_philosophy",
+    "fam_ethics",
+    "fam_history",
+    "fam_archaeology",
+    "fam_linguistics",
+    "fam_art_history",
+    "fam_music_theory",
+    "fam_film_studies",
+    "fam_architecture",
+    "fam_urban_planning",
+    "fam_landscape_design",
+    "fam_agronomy",
+    "fam_horticulture",
+    "fam_veterinary_medicine",
+    "fam_nursing",
+    "fam_pharmacology",
+    "fam_public_health",
+    "fam_epidemiology",
+    "fam_nutrition",
+    "fam_sports_science",
+    "fam_cybersecurity",
+    "fam_cryptography",
+    "fam_computer_networking",
+    "fam_databases",
+    "fam_distributed_systems",
+    "fam_operating_systems",
+    "fam_compilers",
+    "fam_cloud_infrastructure",
+    "fam_devops",
+    "fam_game_development",
+    "fam_computer_graphics",
+    "fam_computer_vision",
+    "fam_natural_language_processing",
+    "fam_human_computer_interaction",
+    "fam_ux_research",
+    "fam_graphic_design",
+    "fam_industrial_design",
+    "fam_typography",
+    "fam_journalism",
+    "fam_public_relations",
+    "fam_brand_marketing",
+    "fam_performance_marketing",
+    "fam_seo",
+    "fam_sales_engineering",
+    "fam_supply_chain",
+    "fam_logistics",
+    "fam_operations_management",
+    "fam_lean_manufacturing",
+    "fam_quality_assurance",
+    "fam_human_resources",
+    "fam_organizational_psychology",
+    "fam_project_management",
+    "fam_product_management",
+    "fam_venture_capital",
+    "fam_private_equity",
+    "fam_real_estate",
+    "fam_insurance",
+    "fam_actuarial_science",
+    "fam_hospitality_management",
+    "fam_culinary_arts",
+    "fam_sommelier_knowledge",
+    "fam_fashion_design",
+    "fam_textiles",
+    "fam_photography",
+    "fam_cinematography",
+    "fam_music_production",
+    "fam_sound_engineering",
+    "fam_animation",
+    "fam_3d_modeling",
+    "fam_geographic_information_systems",
+    "fam_meteorology",
+    "fam_forestry",
+    "fam_marine_biology",
+    "fam_paleontology",
+    "fam_materials_science",
+    "fam_nanotechnology",
+    "fam_renewable_energy",
+    "fam_nuclear_engineering",
+    "fam_petroleum_engineering",
+    "fam_mining",
+    "fam_aviation",
+    "fam_maritime_navigation",
+    "fam_military_strategy",
+    "fam_diplomacy",
+    "fam_social_work",
+    "fam_counseling",
+    "fam_theology",
+    "fam_religious_studies",
+    "fam_library_science",
+    "skill_writing",
+    "skill_copywriting",
+    "skill_editing",
+    "skill_storytelling",
+    "skill_public_speaking",
+    "skill_negotiation",
+    "skill_coding",
+    "skill_debugging",
+    "skill_code_review",
+    "skill_system_design",
+    "skill_data_analysis",
+    "skill_data_visualization",
+    "skill_statistical_modeling",
+    "skill_spreadsheet_modeling",
+    "skill_financial_modeling",
+    "skill_project_management",
+    "skill_product_strategy",
+    "skill_leadership",
+    "skill_people_management",
+    "skill_mentoring",
+    "skill_coaching",
+    "skill_conflict_resolution",
+    "skill_time_management",
+    "skill_prioritization",
+    "skill_research",
+    "skill_critical_thinking",
+    "skill_problem_solving",
+    "skill_mathematics",
+    "skill_mental_arithmetic",
+    "skill_logical_reasoning",
+    "skill_language_learning",
+    "skill_translation",
+    "skill_interpretation",
+    "skill_design_thinking",
+    "skill_prototyping",
+    "skill_sketching",
+    "skill_drawing",
+    "skill_painting",
+    "skill_photography",
+    "skill_videography",
+    "skill_video_editing",
+    "skill_audio_production",
+    "skill_cooking",
+    "skill_baking",
+    "skill_budgeting",
+    "skill_investing",
+    "skill_diy_repair",
+    "skill_gardening",
+    "skill_driving",
+    "skill_technical_writing",
+    "skill_note_taking",
+    "skill_speed_reading",
+    "skill_memorization",
+    "skill_active_listening",
+    "skill_empathy",
+    "skill_persuasion",
+    "skill_facilitation",
+    "skill_forecasting",
+    "skill_estimation",
+    "skill_fact_checking",
+    "skill_proofreading",
+    "skill_presenting",
+    "skill_networking",
+    "skill_selling",
+    "tool_excel",
+    "tool_google_sheets",
+    "tool_python",
+    "tool_r",
+    "tool_sql",
+    "tool_tableau",
+    "tool_power_bi",
+    "tool_looker",
+    "tool_figma",
+    "tool_sketch",
+    "tool_photoshop",
+    "tool_illustrator",
+    "tool_indesign",
+    "tool_after_effects",
+    "tool_premiere_pro",
+    "tool_notion",
+    "tool_obsidian",
+    "tool_jira",
+    "tool_linear",
+    "tool_slack",
+    "tool_microsoft_teams",
+    "tool_salesforce",
+    "tool_hubspot",
+    "tool_sap",
+    "tool_oracle_erp",
+    "tool_git",
+    "tool_github",
+    "tool_gitlab",
+    "tool_docker",
+    "tool_kubernetes",
+    "tool_terraform",
+    "tool_aws",
+    "tool_azure",
+    "tool_google_cloud",
+    "tool_vs_code",
+    "tool_jetbrains_ides",
+    "tool_vim",
+    "tool_jupyter",
+    "tool_matlab",
+    "tool_stata",
+    "tool_spss",
+    "tool_sas",
+    "tool_word",
+    "tool_powerpoint",
+    "tool_keynote",
+    "tool_canva",
+    "tool_blender",
+    "tool_autocad",
+    "tool_solidworks",
+    "tool_revit",
+    "tool_unity",
+    "tool_unreal_engine",
+    "tool_linux_cli",
+    "tool_wordpress",
+    "tool_webflow",
+    "tool_shopify",
+    "tool_stripe",
+    "tool_quickbooks",
+    "tool_xero",
+    "tool_zoom",
+    "tool_trello",
+    "tool_asana",
+    "tool_airtable",
+    "tool_chatgpt",
+    "tool_claude",
+    "tool_github_copilot",
+    "tool_midjourney",
+    "tool_zapier",
+    "tool_postman",
+    "topic_politics",
+    "topic_sports",
+    "topic_fitness",
+    "topic_travel",
+    "topic_cooking",
+    "topic_gaming",
+    "topic_fashion",
+    "topic_technology",
+    "topic_science",
+    "topic_space",
+    "topic_personal_finance",
+    "topic_investing",
+    "topic_cryptocurrency",
+    "topic_real_estate",
+    "topic_parenting",
+    "topic_pets",
+    "topic_gardening",
+    "topic_home_improvement",
+    "topic_cars",
+    "topic_motorcycles",
+    "topic_cycling",
+    "topic_running",
+    "topic_photography",
+    "topic_film",
+    "topic_tv_series",
+    "topic_anime",
+    "topic_comics",
+    "topic_music",
+    "topic_live_concerts",
+    "topic_theater",
+    "topic_visual_art",
+    "topic_literature",
+    "topic_poetry",
+    "topic_history",
+    "topic_philosophy",
+    "topic_religion",
+    "topic_spirituality",
+    "topic_meditation",
+    "topic_yoga",
+    "topic_hiking",
+    "topic_camping",
+    "topic_fishing",
+    "topic_birdwatching",
+    "topic_board_games",
+    "topic_tabletop_rpgs",
+    "topic_puzzles",
+    "topic_chess",
+    "topic_astrology",
+    "topic_true_crime",
+    "topic_podcasts",
+    "topic_social_media",
+    "topic_volunteering",
+    "topic_activism",
+    "topic_environment",
+    "topic_sustainability",
+    "topic_wine",
+    "topic_coffee",
+    "topic_craft_beer",
+    "topic_tea",
+    "topic_baking",
+    "topic_interior_design",
+    "topic_architecture",
+    "topic_languages",
+    "topic_genealogy",
+    "topic_collecting",
+    "topic_knitting",
+    "topic_woodworking",
+    "topic_calligraphy",
+    "topic_dance",
+    "topic_stand_up_comedy",
+    "topic_magic_tricks",
+    "topic_astronomy",
+    "topic_robotics",
+    "topic_drones",
+    "topic_3d_printing",
+    "topic_investmentoring",
+    "topic_entrepreneurship",
+    "topic_productivity",
+    "topic_self_improvement",
+    "topic_mindfulness",
+    "lang_english",
+    "lang_mandarin",
+    "lang_cantonese",
+    "lang_spanish",
+    "lang_hindi",
+    "lang_arabic",
+    "lang_french",
+    "lang_portuguese",
+    "lang_bengali",
+    "lang_russian",
+    "lang_japanese",
+    "lang_german",
+    "lang_korean",
+    "lang_italian",
+    "lang_turkish",
+    "lang_vietnamese",
+    "lang_thai",
+    "lang_indonesian",
+    "lang_malay",
+    "lang_swahili",
+    "lang_dutch",
+    "lang_polish",
+    "lang_ukrainian",
+    "lang_persian",
+    "lang_hebrew",
+    "lang_greek",
+    "lang_czech",
+    "lang_hungarian",
+    "lang_romanian",
+    "lang_swedish",
+    "lang_norwegian",
+    "lang_danish",
+    "lang_finnish",
+    "lang_tagalog",
+    "lang_urdu",
+    "lang_tamil",
+    "lang_telugu",
+    "lang_marathi",
+    "lang_punjabi",
+    "lang_gujarati",
+    "lang_hausa",
+    "lang_yoruba",
+    "lang_igbo",
+    "lang_amharic",
+    "lang_zulu",
+    "lang_afrikaans",
+    "lang_serbian",
+    "lang_croatian",
+    "lang_bulgarian",
+    "lang_slovak",
+    "att_ai",
+    "att_automation",
+    "att_data_privacy",
+    "att_social_media",
+    "att_remote_work",
+    "att_globalization",
+    "att_immigration",
+    "att_free_markets",
+    "att_government_regulation",
+    "att_climate_action",
+    "att_nuclear_energy",
+    "att_renewable_energy",
+    "att_genetic_engineering",
+    "att_vaccines",
+    "att_alternative_medicine",
+    "att_organized_religion",
+    "att_traditional_gender_roles",
+    "att_cryptocurrency",
+    "att_the_gig_economy",
+    "att_labor_unions",
+    "att_higher_education",
+    "att_homeownership",
+    "att_taking_on_debt",
+    "att_risk_taking",
+    "att_authority",
+    "att_rapid_change",
+    "att_new_technology",
+    "att_brand_loyalty",
+    "att_advertising",
+    "att_influencers",
+    "att_online_reviews",
+    "att_subscription_services",
+    "att_open_source",
+    "att_surveillance",
+    "att_self_driving_cars",
+    "att_space_exploration",
+    "att_universal_basic_income",
+    "att_minimalism",
+    "att_consumerism",
+    "att_veganism",
+    "att_fast_fashion",
+    "att_gun_ownership",
+    "att_capital_punishment",
+    "att_free_speech",
+    "att_privacy_vs_security",
+    "att_globalized_supply_chains",
+    "att_working_from_office",
+    "att_four_day_work_week",
+    "att_performance_reviews",
+    "att_standardized_testing",
+    "att_tipping_culture",
+    "att_electric_vehicles",
+    "att_public_transit",
+    "att_urban_density",
+    "att_gentrification",
+    "ind_technology",
+    "ind_healthcare",
+    "ind_finance",
+    "ind_banking",
+    "ind_insurance",
+    "ind_retail",
+    "ind_e_commerce",
+    "ind_manufacturing",
+    "ind_automotive",
+    "ind_aerospace",
+    "ind_energy",
+    "ind_oil_gas",
+    "ind_utilities",
+    "ind_construction",
+    "ind_real_estate",
+    "ind_hospitality",
+    "ind_travel_tourism",
+    "ind_restaurants",
+    "ind_agriculture",
+    "ind_food_beverage",
+    "ind_pharmaceuticals",
+    "ind_biotech",
+    "ind_telecommunications",
+    "ind_media",
+    "ind_entertainment",
+    "ind_gaming",
+    "ind_publishing",
+    "ind_advertising",
+    "ind_education",
+    "ind_government",
+    "ind_defense",
+    "ind_nonprofit",
+    "ind_logistics",
+    "ind_transportation",
+    "ind_shipping",
+    "ind_mining",
+    "ind_chemicals",
+    "ind_textiles",
+    "ind_apparel",
+    "ind_consumer_electronics",
+    "ind_semiconductors",
+    "ind_legal_services",
+    "ind_consulting",
+    "ind_accounting",
+    "ind_marketing_agencies",
+    "ind_fitness_wellness",
+    "ind_beauty_cosmetics",
+    "ind_sports",
+    "ind_music",
+    "ind_fine_art",
+    "cult_united_states",
+    "cult_canada",
+    "cult_mexico",
+    "cult_brazil",
+    "cult_argentina",
+    "cult_united_kingdom",
+    "cult_france",
+    "cult_germany",
+    "cult_italy",
+    "cult_spain",
+    "cult_netherlands",
+    "cult_sweden",
+    "cult_poland",
+    "cult_russia",
+    "cult_turkey",
+    "cult_egypt",
+    "cult_saudi_arabia",
+    "cult_uae",
+    "cult_israel",
+    "cult_iran",
+    "cult_nigeria",
+    "cult_kenya",
+    "cult_south_africa",
+    "cult_ethiopia",
+    "cult_india",
+    "cult_pakistan",
+    "cult_bangladesh",
+    "cult_china",
+    "cult_japan",
+    "cult_south_korea",
+    "cult_vietnam",
+    "cult_thailand",
+    "cult_indonesia",
+    "cult_philippines",
+    "cult_australia",
+    "cult_new_zealand",
+    "cult_singapore",
+    "cult_malaysia",
+    "cult_greece",
+    "cult_portugal",
+    "musg_pop",
+    "musg_rock",
+    "musg_hip_hop",
+    "musg_r_b",
+    "musg_jazz",
+    "musg_blues",
+    "musg_classical",
+    "musg_opera",
+    "musg_country",
+    "musg_folk",
+    "musg_reggae",
+    "musg_reggaeton",
+    "musg_electronic",
+    "musg_house",
+    "musg_techno",
+    "musg_trance",
+    "musg_drum_bass",
+    "musg_metal",
+    "musg_punk",
+    "musg_indie",
+    "musg_k_pop",
+    "musg_j_pop",
+    "musg_latin",
+    "musg_afrobeats",
+    "musg_gospel",
+    "musg_soul",
+    "musg_funk",
+    "musg_disco",
+    "musg_ambient",
+    "musg_lo_fi",
+    "musg_bluegrass",
+    "musg_ska",
+    "musg_synthwave",
+    "musg_trap",
+    "musg_bollywood",
+    "filmg_action",
+    "filmg_adventure",
+    "filmg_comedy",
+    "filmg_drama",
+    "filmg_horror",
+    "filmg_thriller",
+    "filmg_sci_fi",
+    "filmg_fantasy",
+    "filmg_romance",
+    "filmg_documentary",
+    "filmg_animation",
+    "filmg_crime",
+    "filmg_mystery",
+    "filmg_historical",
+    "filmg_war",
+    "filmg_western",
+    "filmg_musical",
+    "filmg_noir",
+    "filmg_superhero",
+    "filmg_indie_film",
+    "filmg_art_house",
+    "filmg_biopic",
+    "filmg_comedy_drama",
+    "filmg_disaster",
+    "bookg_literary_fiction",
+    "bookg_science_fiction",
+    "bookg_fantasy",
+    "bookg_mystery",
+    "bookg_thriller",
+    "bookg_romance",
+    "bookg_historical_fiction",
+    "bookg_horror",
+    "bookg_biography",
+    "bookg_memoir",
+    "bookg_self_help",
+    "bookg_business",
+    "bookg_popular_science",
+    "bookg_history",
+    "bookg_philosophy",
+    "bookg_poetry",
+    "bookg_young_adult",
+    "bookg_graphic_novels",
+    "bookg_true_crime",
+    "bookg_travel_writing",
+    "bookg_cookbooks",
+    "bookg_essays",
+    "cuis_italian",
+    "cuis_french",
+    "cuis_spanish",
+    "cuis_greek",
+    "cuis_mexican",
+    "cuis_peruvian",
+    "cuis_brazilian",
+    "cuis_american_bbq",
+    "cuis_southern_soul_food",
+    "cuis_cajun",
+    "cuis_chinese",
+    "cuis_sichuan",
+    "cuis_cantonese",
+    "cuis_japanese",
+    "cuis_korean",
+    "cuis_thai",
+    "cuis_vietnamese",
+    "cuis_indian",
+    "cuis_pakistani",
+    "cuis_middle_eastern",
+    "cuis_lebanese",
+    "cuis_turkish",
+    "cuis_moroccan",
+    "cuis_ethiopian",
+    "cuis_nigerian",
+    "cuis_caribbean",
+    "cuis_german",
+    "cuis_scandinavian",
+    "cuis_russian",
+    "cuis_spanish_tapas",
+    "cuis_sushi",
+    "cuis_ramen",
+    "cuis_vegan",
+    "cuis_vegetarian",
+    "cuis_seafood",
+    "sport_soccer",
+    "sport_basketball",
+    "sport_american_football",
+    "sport_baseball",
+    "sport_tennis",
+    "sport_golf",
+    "sport_cricket",
+    "sport_rugby",
+    "sport_hockey",
+    "sport_volleyball",
+    "sport_swimming",
+    "sport_running",
+    "sport_cycling",
+    "sport_boxing",
+    "sport_mma",
+    "sport_wrestling",
+    "sport_skiing",
+    "sport_snowboarding",
+    "sport_surfing",
+    "sport_skateboarding",
+    "sport_climbing",
+    "sport_gymnastics",
+    "sport_track_field",
+    "sport_badminton",
+    "sport_table_tennis",
+    "sport_squash",
+    "sport_sailing",
+    "sport_rowing",
+    "sport_martial_arts",
+    "sport_yoga",
+    "sport_pilates",
+    "sport_crossfit",
+    "sport_weightlifting",
+    "sport_esports",
+    "sport_darts",
+    "sport_bowling",
+    "sport_archery",
+    "sport_equestrian",
+    "sport_fencing",
+    "sport_triathlon",
+    "mbti_type",
+    "big5_imagination",
+    "big5_artistic_interest",
+    "big5_emotionality",
+    "big5_adventurousness",
+    "big5_intellect",
+    "big5_liberalism",
+    "big5_self_efficacy",
+    "big5_orderliness",
+    "big5_dutifulness",
+    "big5_achievement_striving",
+    "big5_self_discipline",
+    "big5_cautiousness",
+    "big5_friendliness",
+    "big5_gregariousness",
+    "big5_assertiveness",
+    "big5_activity_level",
+    "big5_excitement_seeking",
+    "big5_cheerfulness",
+    "big5_trust",
+    "big5_morality",
+    "big5_altruism",
+    "big5_cooperation",
+    "big5_modesty",
+    "big5_sympathy",
+    "big5_anxiety",
+    "big5_anger",
+    "big5_depression",
+    "big5_self_consciousness",
+    "big5_immoderation",
+    "big5_vulnerability",
+    "lstyle_sleep_schedule",
+    "lstyle_exercise_freq",
+    "lstyle_diet_type",
+    "lstyle_alcohol_use",
+    "lstyle_smoking",
+    "lstyle_caffeine",
+    "lstyle_cooking_freq",
+    "lstyle_shopping_style",
+    "lstyle_travel_freq",
+    "lstyle_commute_mode",
+    "lstyle_pet_ownership",
+    "lstyle_household_size",
+    "lstyle_work_schedule",
+    "lstyle_screen_time",
+    "lstyle_social_battery",
+    "lstyle_planning_horizon",
+    "lstyle_punctuality",
+    "lstyle_tidiness",
+    "lstyle_frugality",
+    "lstyle_giving",
+    "lstyle_news_freq",
+    "lstyle_reading_freq",
+    "lstyle_gaming_freq",
+    "lstyle_streaming_hours",
+    "lstyle_music_listening",
+    "lstyle_podcast_listening",
+    "lstyle_primary_social",
+    "lstyle_primary_messenger",
+    "lstyle_device_ecosystem",
+    "lstyle_browser",
+    "lstyle_payment_pref",
+    "lstyle_banking_style",
+    "lstyle_investment_style",
+    "lstyle_subscription_count",
+    "lstyle_coffee_ritual",
+    "lstyle_fashion_sense",
+    "lstyle_hobby_intensity",
+    "lstyle_vacation_style",
+    "lstyle_morning_routine",
+    "lstyle_volunteering",
+    "cog_verbosity",
+    "cog_formality",
+    "cog_directness",
+    "cog_humor",
+    "cog_detail_orientation",
+    "cog_abstraction",
+    "cog_optimism",
+    "cog_patience",
+    "cog_curiosity",
+    "cog_skepticism",
+    "cog_open_mindedness",
+    "cog_assertiveness",
+    "cog_emotional_expressiveness",
+    "cog_conflict_approach",
+    "cog_feedback_receptiveness",
+    "cog_ambiguity_tolerance",
+    "cog_perfectionism",
+    "cog_procrastination",
+    "cog_multitasking",
+    "cog_attention_span",
+    "cog_learning_pace",
+    "cog_question_asking",
+    "cog_decision_speed",
+    "cog_confidence_calibration",
+    "cog_numeracy_comfort",
+    "cog_reading_vs_watching",
+    "cog_visual_vs_verbal",
+    "cog_big_picture_vs_detail",
+    "cog_risk_framing",
+    "cog_empathy_expression",
+    "cog_storytelling",
+    "cog_precision_of_language",
+    "cog_use_of_jargon",
+    "cog_emoji_use",
+    "cog_politeness",
+    "health_general_health",
+    "health_chronic_condition",
+    "health_mobility",
+    "health_vision",
+    "health_hearing",
+    "health_color_vision",
+    "health_dexterity",
+    "health_mental_health",
+    "health_stress_level",
+    "health_energy_level",
+    "health_sleep_quality",
+    "health_pain_level",
+    "health_medication_use",
+    "health_dietary_restriction",
+    "health_neurodivergence",
+    "health_caregiver_status",
+    "health_health_literacy",
+    "health_insurance_status",
+    "health_fitness_level",
+    "health_cognitive_load_capacity",
+    "health_contrast_need",
+    "health_text_size_need",
+    "health_assistive_tech",
+    "health_motion_sensitivity",
+    "health_attention_condition",
+    "hob_knitting",
+    "hob_crocheting",
+    "hob_pottery",
+    "hob_woodworking",
+    "hob_metalworking",
+    "hob_leatherworking",
+    "hob_candle_making",
+    "hob_origami",
+    "hob_calligraphy",
+    "hob_scrapbooking",
+    "hob_quilting",
+    "hob_embroidery",
+    "hob_jewelry_making",
+    "hob_model_building",
+    "hob_coin_collecting",
+    "hob_stamp_collecting",
+    "hob_antiquing",
+    "hob_vegetable_gardening",
+    "hob_bonsai",
+    "hob_aquariums",
+    "hob_beekeeping",
+    "hob_birdwatching",
+    "hob_stargazing",
+    "hob_geocaching",
+    "hob_rock_climbing",
+    "hob_bouldering",
+    "hob_kayaking",
+    "hob_paddleboarding",
+    "hob_scuba_diving",
+    "hob_snorkeling",
+    "hob_skydiving",
+    "hob_paragliding",
+    "hob_horseback_riding",
+    "hob_foraging",
+    "hob_bread_baking",
+    "hob_home_brewing",
+    "hob_winemaking",
+    "hob_cheesemaking",
+    "hob_karaoke",
+    "hob_ballroom_dance",
+    "hob_salsa_dancing",
+    "hob_improv",
+    "hob_stand_up_comedy",
+    "hob_juggling",
+    "hob_whittling",
+    "hob_letterpress",
+    "hob_urban_sketching",
+    "hob_genealogy",
+    "hob_metal_detecting",
+    "hob_cosplay",
+    "acad_algebra",
+    "acad_geometry",
+    "acad_calculus",
+    "acad_statistics",
+    "acad_physics",
+    "acad_chemistry",
+    "acad_biology",
+    "acad_earth_science",
+    "acad_computer_science",
+    "acad_economics",
+    "acad_psychology",
+    "acad_sociology",
+    "acad_world_history",
+    "acad_geography",
+    "acad_civics",
+    "acad_literature",
+    "acad_creative_writing",
+    "acad_foreign_languages",
+    "acad_philosophy",
+    "acad_visual_art",
+    "acad_music",
+    "acad_drama",
+    "acad_physical_education",
+    "acad_health_science",
+    "acad_business_studies",
+    "acad_environmental_science",
+    "acad_logic",
+    "acad_astronomy",
+    "acad_anthropology",
+    "acad_political_theory",
+    "peeve_typos",
+    "peeve_being_interrupted",
+    "peeve_lateness",
+    "peeve_loud_chewing",
+    "peeve_slow_walkers",
+    "peeve_spam",
+    "peeve_clickbait",
+    "peeve_unexplained_jargon",
+    "peeve_condescension",
+    "peeve_micromanagement",
+    "peeve_forced_small_talk",
+    "peeve_cold_calls",
+    "peeve_pop_up_ads",
+    "peeve_auto_play_video",
+    "peeve_paywalls",
+    "trait_curiosity",
+    "trait_creativity",
+    "trait_love_of_learning",
+    "trait_open_mindedness",
+    "trait_perspective",
+    "trait_bravery",
+    "trait_perseverance",
+    "trait_honesty",
+    "trait_zest",
+    "trait_capacity_for_love",
+    "trait_kindness",
+    "trait_social_intelligence",
+    "trait_teamwork",
+    "trait_fairness",
+    "trait_leadership",
+    "trait_forgiveness",
+    "trait_humility",
+    "trait_prudence",
+    "trait_self_regulation",
+    "trait_appreciation_of_beauty",
+    "trait_gratitude",
+    "trait_hope_optimism",
+    "trait_playfulness",
+    "trait_spirituality",
+    "trait_ambition",
+    "trait_empathy",
+    "trait_resilience",
+    "trait_discipline",
+    "trait_generosity",
+    "trait_loyalty",
+    "trait_competitiveness",
+    "trait_adaptability",
+    "val_family",
+    "val_career_success",
+    "val_wealth",
+    "val_health",
+    "val_personal_freedom",
+    "val_security_stability",
+    "val_adventure",
+    "val_tradition",
+    "val_power_influence",
+    "val_achievement",
+    "val_creativity_self_expression",
+    "val_community",
+    "val_spirituality_faith",
+    "val_knowledge_truth",
+    "val_social_status",
+    "val_independence",
+    "val_justice_fairness",
+    "val_loyalty",
+    "val_sustainability",
+    "val_recognition",
+    "val_helping_others",
+    "val_personal_growth",
+    "val_fun_enjoyment",
+    "val_integrity_honesty",
+    "val_beauty_aesthetics",
+    "val_order_structure",
+    "val_patriotism",
+    "val_equality",
+    "val_privacy",
+    "habit_journaling",
+    "habit_meditation",
+    "habit_to_do_lists",
+    "habit_goal_setting",
+    "habit_daily_reflection",
+    "habit_budget_tracking",
+    "habit_meal_prepping",
+    "habit_stretching_mobility",
+    "habit_morning_walk",
+    "habit_phone_free_downtime",
+    "habit_gratitude_practice",
+    "habit_reading_before_bed",
+    "habit_naps",
+    "habit_power_snoozing_alarm",
+    "habit_skipping_breakfast",
+    "habit_late_night_snacking",
+    "habit_nail_biting_fidgeting",
+    "habit_doomscrolling",
+    "habit_multitab_browsing",
+    "habit_inbox_zero_discipline",
+    "habit_saving_receipts",
+    "habit_pre_trip_overpacking",
+    "habit_talking_to_oneself",
+    "habit_humming_whistling",
+    "habit_cold_showers",
+    "habit_step_counting",
+    "habit_hydration_tracking",
+    "habit_backing_up_files",
+    "habit_re_reading_texts_before_sending",
+    "habit_procrasti_cleaning",
+    "pref_work_location",
+    "pref_team_vs_solo",
+    "pref_plan_vs_spontaneous",
+    "pref_city_vs_nature",
+    "pref_routine_vs_variety",
+    "pref_speed_vs_accuracy",
+    "pref_quality_vs_quantity",
+    "pref_logic_vs_intuition",
+    "pref_save_vs_spend",
+    "pref_lead_vs_follow",
+    "pref_indoor_vs_outdoor",
+    "pref_early_vs_late",
+    "pref_text_vs_call",
+    "pref_big_group_vs_one_on_one",
+    "pref_novelty_vs_familiarity",
+    "pref_detail_brief_vs_full",
+    "pref_competition_vs_collab",
+    "pref_stability_vs_change",
+    "demo_marital_status",
+    "demo_children_count",
+    "demo_household_income",
+    "demo_employment_status",
+    "demo_housing_status",
+    "demo_generation",
+    "demo_religion_affiliation",
+    "demo_sexual_orientation",
+    "demo_citizenship_status",
+    "demo_ethnicity_broad",
+    "demo_disability_status",
+    "demo_veteran_status",
+    "demo_birth_order",
+    "demo_home_language",
+    "demo_political_engagement",
+    "demo_parental_status",
+    "demo_relationship_length",
+    "demo_driver_status",
+    "lifex_childhood_environment",
+    "lifex_geographic_mobility",
+    "lifex_travel_breadth",
+    "lifex_career_path_shape",
+    "lifex_education_journey",
+    "lifex_financial_trajectory",
+    "lifex_adversity_level",
+    "lifex_immigration_generation",
+    "lifex_military_history",
+    "lifex_entrepreneurship_history",
+    "lifex_relationship_history",
+    "lifex_parenting_journey",
+    "lifex_health_journey",
+    "lifex_loss_experience",
+    "lifex_faith_journey",
+    "lifex_cultural_exposure",
+    "lifex_formative_decade",
+    "lifex_public_recognition",
+    "lifex_service_history",
+    "lifex_turning_point",
+    "lifex_languages_lifetime",
+    "lifex_hometown_tie",
+    "code_comment_style",
+    "code_summary_documentation",
+    "code_naming_verbosity",
+    "code_indentation_style",
+    "code_structure_preference",
+    "code_function_length",
+    "code_error_handling",
+    "code_abstraction_level",
+    "code_dependencies_approach",
+    "code_performance_priority",
+    "code_testing_approach",
+    "code_refactoring_frequency",
+    "prog_python",
+    "prog_javascript",
+    "prog_typescript",
+    "prog_java",
+    "prog_c",
+    "prog_go",
+    "prog_rust",
+    "prog_ruby",
+    "prog_php",
+    "prog_swift",
+    "prog_kotlin",
+    "prog_objective_c",
+    "prog_scala",
+    "prog_haskell",
+    "prog_elixir",
+    "prog_erlang",
+    "prog_clojure",
+    "prog_lua",
+    "prog_perl",
+    "prog_r",
+    "prog_julia",
+    "prog_matlab",
+    "prog_sql",
+    "prog_bash",
+    "prog_powershell",
+    "prog_dart",
+    "prog_f",
+    "prog_ocaml",
+    "prog_assembly",
+    "prog_cobol",
+    "prog_fortran",
+    "prog_solidity",
+    "prog_graphql",
+    "bfi2_domain_extraversion",
+    "bfi2_domain_agreeableness",
+    "bfi2_domain_conscientiousness",
+    "bfi2_domain_negative_emotionality",
+    "bfi2_domain_open_mindedness",
+    "bfi2_facet_sociability",
+    "bfi2_facet_assertiveness",
+    "bfi2_facet_energy_level",
+    "bfi2_facet_compassion",
+    "bfi2_facet_respectfulness",
+    "bfi2_facet_trust",
+    "bfi2_facet_organization",
+    "bfi2_facet_productiveness",
+    "bfi2_facet_responsibility",
+    "bfi2_facet_anxiety",
+    "bfi2_facet_depression",
+    "bfi2_facet_emotional_volatility",
+    "bfi2_facet_intellectual_curiosity",
+    "bfi2_facet_aesthetic_sensitivity",
+    "bfi2_facet_creative_imagination",
+    "schwartz_value_self_direction",
+    "schwartz_value_stimulation",
+    "schwartz_value_hedonism",
+    "schwartz_value_achievement",
+    "schwartz_value_power",
+    "schwartz_value_security",
+    "schwartz_value_conformity",
+    "schwartz_value_tradition",
+    "schwartz_value_benevolence",
+    "schwartz_value_universalism",
+    "sdt_need_autonomy",
+    "sdt_need_competence",
+    "sdt_need_relatedness",
+    "mft_care_harm",
+    "mft_fairness_cheating",
+    "mft_loyalty_betrayal",
+    "mft_authority_subversion",
+    "mft_sanctity_degradation",
+    "mft_liberty_oppression",
+    "need_for_cognition",
+    "need_for_closure",
+    "dospert_ethical_risk_tolerance",
+    "dospert_financial_risk_tolerance",
+    "dospert_health_safety_risk_tolerance",
+    "dospert_recreational_risk_tolerance",
+    "dospert_social_risk_tolerance",
+    "attachment_anxiety",
+    "attachment_avoidance",
+    "interpersonal_agency_dominance",
+    "interpersonal_communion_warmth",
+    "dev_professional_status",
+    "dev_role_archetype",
+    "dev_contribution_context",
+    "dev_ic_manager_orientation",
+    "dev_toolchain_complexity",
+    "dev_primary_work_surface",
+    "coding_ai_usage_frequency",
+    "coding_ai_sentiment",
+    "coding_ai_output_trust",
+    "coding_ai_complexity_comfort",
+    "coding_ai_job_threat_perception",
+    "coding_ai_learning_source",
+    "coding_agent_usage_frequency",
+    "coding_agent_autonomy_preference",
+    "coding_agent_workflow_impact",
+    "coding_agent_adoption_barrier",
+    "coding_agent_control_expectation",
+    "coding_agent_explanation_preference",
+    "coding_agent_context_sharing_comfort",
+    "coding_agent_security_expectation",
+    "coding_agent_memory_preference",
+    "coding_agent_tool_integration_preference",
+    "coding_agent_failure_tolerance",
+    "ai_task_code_generation",
+    "ai_task_debugging_fixing",
+    "ai_task_testing",
+    "ai_task_code_review",
+    "ai_task_documentation",
+    "ai_task_codebase_learning",
+    "ai_task_project_planning",
+    "ai_task_deployment_monitoring",
+    "ai_task_search_answers",
+    "ai_task_learning_concepts",
+    "ai_task_refactoring",
+    "ai_task_data_generation_analytics",
+    "coding_tool_ai_capability_importance",
+    "coding_tool_api_completeness_importance",
+    "coding_tool_reliability_latency_importance",
+    "coding_tool_open_source_importance",
+    "coding_tool_security_privacy_blocker",
+    "coding_tool_ethics_blocker",
+    "coding_tool_alternative_sensitivity",
+    "coding_tool_obsolescence_blocker",
+    "stackoverflow_usage_pattern",
+    "stackoverflow_participation_style",
+    "developer_help_seeking_preference",
+    "developer_problem_profile",
+    "open_source_activity_level",
+    "github_contribution_mode",
+    "pr_collaboration_style",
+    "issue_engagement_style",
+    "code_review_participation_level",
+    "commit_cadence_style",
+    "release_maintenance_orientation",
+    "code_complexity_tolerance",
+    "code_modularity_preference",
+    "code_type_system_orientation",
+    "code_api_design_orientation",
+    "code_security_review_habit",
+    "code_observability_habit",
+    "bug_fix_scope_preference",
+    "bug_fix_test_behavior",
+    "debugging_strategy",
+    "codebase_onboarding_style",
+    "human_help_boundary_for_ai_coding",
+    "future_developer_skill_belief"
+  ],
+  "source_counts": {
+    "wiki": 29,
+    "amazon": 29,
+    "stackoverflow": 29,
+    "prism": 28,
+    "gss": 29,
+    "real_human_survey": 28,
+    "synthetic": 28
+  },
+  "dimension_categories": "persona/schema/dimensions.json",
+  "parent_pool": "persona/datasets/matraix-persona-1m",
+  "hf_repo": "MatrAIx2026/MatrAIx_Persona_1M_Public_Release",
+  "created_at": "2026-07-29T08:42:18Z",
+  "personas": [
+    {
+      "persona_id": "0001",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0001.yaml",
+      "source": "wiki",
+      "display_name": "Tomas Horvat",
+      "dimensions": {
+        "age_bracket": "55-64",
+        "region": "Eastern Europe",
+        "domain": "Skilled Trades"
+      }
+    },
+    {
+      "persona_id": "0002",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0002.yaml",
+      "source": "wiki",
+      "display_name": "Ethan Brooks",
+      "dimensions": {
+        "age_bracket": "65+",
+        "region": "North America",
+        "domain": "Social Sciences",
+        "life_stage": "Mid-life"
+      }
+    },
+    {
+      "persona_id": "0003",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0003.yaml",
+      "source": "wiki",
+      "display_name": "Marco Rossi",
+      "dimensions": {
+        "age_bracket": "65+",
+        "region": "Western Europe",
+        "domain": "Arts & Humanities",
+        "life_stage": "Retirement"
+      }
+    },
+    {
+      "persona_id": "0004",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0004.yaml",
+      "source": "wiki",
+      "display_name": "Sienna Carter",
+      "dimensions": {
+        "region": "North America",
+        "domain": "Public Sector",
+        "life_stage": "Mid-life"
+      }
+    },
+    {
+      "persona_id": "0005",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0005.yaml",
+      "source": "wiki",
+      "display_name": "Marco Rossi",
+      "dimensions": {
+        "age_bracket": "18-24",
+        "region": "Western Europe",
+        "domain": "Public Sector",
+        "life_stage": "Early career"
+      }
+    },
+    {
+      "persona_id": "0006",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0006.yaml",
+      "source": "wiki",
+      "display_name": "Sienna Carter",
+      "dimensions": {
+        "age_bracket": "65+",
+        "region": "North America",
+        "domain": "Public Sector",
+        "life_stage": "Retirement"
+      }
+    },
+    {
+      "persona_id": "0007",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0007.yaml",
+      "source": "wiki",
+      "display_name": "Layla Haddad",
+      "dimensions": {
+        "age_bracket": "45-54",
+        "region": "MENA",
+        "domain": "Arts & Humanities",
+        "life_stage": "Mid-life"
+      }
+    },
+    {
+      "persona_id": "0008",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0008.yaml",
+      "source": "wiki",
+      "display_name": "Jordan Lee",
+      "dimensions": {
+        "age_bracket": "65+",
+        "region": "North America",
+        "domain": "Public Sector",
+        "life_stage": "Retirement"
+      }
+    },
+    {
+      "persona_id": "0009",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0009.yaml",
+      "source": "wiki",
+      "display_name": "Karim Nasser",
+      "dimensions": {
+        "age_bracket": "65+",
+        "region": "MENA",
+        "domain": "Law & Policy",
+        "life_stage": "Retirement"
+      }
+    },
+    {
+      "persona_id": "0010",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0010.yaml",
+      "source": "wiki",
+      "display_name": "Jordan Lee",
+      "dimensions": {
+        "region": "North America",
+        "domain": "Law & Policy",
+        "life_stage": "Mid-life"
+      }
+    },
+    {
+      "persona_id": "0011",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0011.yaml",
+      "source": "wiki",
+      "display_name": "Emma Dubois",
+      "dimensions": {
+        "age_bracket": "65+",
+        "region": "Western Europe",
+        "domain": "Arts & Humanities",
+        "life_stage": "Retirement"
+      }
+    },
+    {
+      "persona_id": "0012",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0012.yaml",
+      "source": "wiki",
+      "display_name": "Elena Popescu",
+      "dimensions": {
+        "region": "Eastern Europe",
+        "domain": "Arts & Humanities",
+        "life_stage": "Retirement"
+      }
+    },
+    {
+      "persona_id": "0013",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0013.yaml",
+      "source": "wiki",
+      "display_name": "Marco Rossi",
+      "dimensions": {
+        "age_bracket": "65+",
+        "region": "Western Europe",
+        "domain": "Arts & Humanities",
+        "life_stage": "Mid-life"
+      }
+    },
+    {
+      "persona_id": "0014",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0014.yaml",
+      "source": "wiki",
+      "display_name": "Jordan Lee",
+      "dimensions": {
+        "region": "North America",
+        "domain": "Arts & Humanities",
+        "life_stage": "Mid-life"
+      }
+    },
+    {
+      "persona_id": "0015",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0015.yaml",
+      "source": "wiki",
+      "display_name": "Jun Park",
+      "dimensions": {
+        "age_bracket": "55-64",
+        "region": "East Asia",
+        "domain": "Public Sector",
+        "life_stage": "Mid-life"
+      }
+    },
+    {
+      "persona_id": "0016",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0016.yaml",
+      "source": "wiki",
+      "display_name": "Avery Kim",
+      "dimensions": {
+        "age_bracket": "65+",
+        "region": "Latin America",
+        "domain": "Finance & Economics",
+        "life_stage": "Retirement"
+      }
+    },
+    {
+      "persona_id": "0017",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0017.yaml",
+      "source": "wiki",
+      "display_name": "Sofia Andersson",
+      "dimensions": {
+        "region": "Western Europe",
+        "domain": "Arts & Humanities",
+        "life_stage": "Retirement"
+      }
+    },
+    {
+      "persona_id": "0018",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0018.yaml",
+      "source": "wiki",
+      "display_name": "Ethan Brooks",
+      "dimensions": {
+        "age_bracket": "65+",
+        "region": "North America",
+        "domain": "Arts & Humanities",
+        "life_stage": "Retirement"
+      }
+    },
+    {
+      "persona_id": "0019",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0019.yaml",
+      "source": "wiki",
+      "display_name": "Arif Hassan",
+      "dimensions": {
+        "age_bracket": "35-44",
+        "region": "Southeast Asia",
+        "domain": "Skilled Trades",
+        "life_stage": "Mid-life"
+      }
+    },
+    {
+      "persona_id": "0020",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0020.yaml",
+      "source": "wiki",
+      "display_name": "Ava Martinez",
+      "dimensions": {
+        "age_bracket": "65+",
+        "region": "North America",
+        "domain": "Media & Journalism",
+        "life_stage": "Retirement"
+      }
+    },
+    {
+      "persona_id": "0021",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0021.yaml",
+      "source": "wiki",
+      "display_name": "Kwame Mensah",
+      "dimensions": {
+        "age_bracket": "65+",
+        "region": "Sub-Saharan Africa",
+        "domain": "Skilled Trades",
+        "life_stage": "Mid-life"
+      }
+    },
+    {
+      "persona_id": "0022",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0022.yaml",
+      "source": "wiki",
+      "display_name": "Siti Rahman",
+      "dimensions": {
+        "age_bracket": "35-44",
+        "region": "Southeast Asia",
+        "domain": "Arts & Humanities",
+        "life_stage": "Early career"
+      }
+    },
+    {
+      "persona_id": "0023",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0023.yaml",
+      "source": "wiki",
+      "display_name": "Quinn Santos",
+      "dimensions": {
+        "age_bracket": "18-24",
+        "region": "Southern Europe",
+        "domain": "Arts & Humanities",
+        "life_stage": "Early career"
+      }
+    },
+    {
+      "persona_id": "0024",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0024.yaml",
+      "source": "wiki",
+      "display_name": "Ava Martinez",
+      "dimensions": {
+        "region": "North America",
+        "domain": "Public Sector",
+        "life_stage": "Retirement"
+      }
+    },
+    {
+      "persona_id": "0025",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0025.yaml",
+      "source": "wiki",
+      "display_name": "Aiko Nakamura",
+      "dimensions": {
+        "age_bracket": "65+",
+        "region": "East Asia",
+        "domain": "Engineering",
+        "life_stage": "Mid-life"
+      }
+    },
+    {
+      "persona_id": "0026",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0026.yaml",
+      "source": "wiki",
+      "display_name": "Sienna Carter",
+      "dimensions": {
+        "age_bracket": "25-34",
+        "region": "North America",
+        "domain": "Skilled Trades",
+        "life_stage": "Early career"
+      }
+    },
+    {
+      "persona_id": "0027",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0027.yaml",
+      "source": "wiki",
+      "display_name": "Maya Patel",
+      "dimensions": {
+        "age_bracket": "65-74",
+        "region": "North America",
+        "domain": "Law & Policy",
+        "life_stage": "Retirement"
+      }
+    },
+    {
+      "persona_id": "0028",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0028.yaml",
+      "source": "wiki",
+      "display_name": "Petra Jansen",
+      "dimensions": {
+        "age_bracket": "85+",
+        "region": "Eastern Europe",
+        "domain": "Public Sector",
+        "life_stage": "Retirement"
+      }
+    },
+    {
+      "persona_id": "0029",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0029.yaml",
+      "source": "wiki",
+      "display_name": "Liam Murphy",
+      "dimensions": {
+        "age_bracket": "65-74",
+        "region": "Oceania",
+        "domain": "Arts & Humanities",
+        "life_stage": "Retirement"
+      }
+    },
+    {
+      "persona_id": "0030",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0030.yaml",
+      "source": "amazon",
+      "display_name": "Maya Patel",
+      "dimensions": {}
+    },
+    {
+      "persona_id": "0031",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0031.yaml",
+      "source": "amazon",
+      "display_name": "Quinn Santos",
+      "dimensions": {}
+    },
+    {
+      "persona_id": "0032",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0032.yaml",
+      "source": "amazon",
+      "display_name": "Maya Patel",
+      "dimensions": {}
+    },
+    {
+      "persona_id": "0033",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0033.yaml",
+      "source": "amazon",
+      "display_name": "Casey Brooks",
+      "dimensions": {}
+    },
+    {
+      "persona_id": "0034",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0034.yaml",
+      "source": "amazon",
+      "display_name": "Riley Chen",
+      "dimensions": {}
+    },
+    {
+      "persona_id": "0035",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0035.yaml",
+      "source": "amazon",
+      "display_name": "Noah Williams",
+      "dimensions": {
+        "region": "North America"
+      }
+    },
+    {
+      "persona_id": "0036",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0036.yaml",
+      "source": "amazon",
+      "display_name": "Ethan Brooks",
+      "dimensions": {
+        "age_bracket": "65+",
+        "region": "North America",
+        "life_stage": "Mid-life"
+      }
+    },
+    {
+      "persona_id": "0037",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0037.yaml",
+      "source": "amazon",
+      "display_name": "Casey Brooks",
+      "dimensions": {}
+    },
+    {
+      "persona_id": "0038",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0038.yaml",
+      "source": "amazon",
+      "display_name": "Riley Chen",
+      "dimensions": {}
+    },
+    {
+      "persona_id": "0039",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0039.yaml",
+      "source": "amazon",
+      "display_name": "Sam Okafor",
+      "dimensions": {}
+    },
+    {
+      "persona_id": "0040",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0040.yaml",
+      "source": "amazon",
+      "display_name": "Sienna Carter",
+      "dimensions": {
+        "region": "North America"
+      }
+    },
+    {
+      "persona_id": "0041",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0041.yaml",
+      "source": "amazon",
+      "display_name": "Quinn Santos",
+      "dimensions": {}
+    },
+    {
+      "persona_id": "0042",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0042.yaml",
+      "source": "amazon",
+      "display_name": "Casey Brooks",
+      "dimensions": {}
+    },
+    {
+      "persona_id": "0043",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0043.yaml",
+      "source": "amazon",
+      "display_name": "Sam Okafor",
+      "dimensions": {}
+    },
+    {
+      "persona_id": "0044",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0044.yaml",
+      "source": "amazon",
+      "display_name": "Sam Okafor",
+      "dimensions": {}
+    },
+    {
+      "persona_id": "0045",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0045.yaml",
+      "source": "amazon",
+      "display_name": "Quinn Santos",
+      "dimensions": {
+        "domain": "Skilled Trades"
+      }
+    },
+    {
+      "persona_id": "0046",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0046.yaml",
+      "source": "amazon",
+      "display_name": "Quinn Santos",
+      "dimensions": {
+        "life_stage": "Parent of young kids"
+      }
+    },
+    {
+      "persona_id": "0047",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0047.yaml",
+      "source": "amazon",
+      "display_name": "Riley Chen",
+      "dimensions": {}
+    },
+    {
+      "persona_id": "0048",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0048.yaml",
+      "source": "amazon",
+      "display_name": "Casey Brooks",
+      "dimensions": {}
+    },
+    {
+      "persona_id": "0049",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0049.yaml",
+      "source": "amazon",
+      "display_name": "Maya Patel",
+      "dimensions": {}
+    },
+    {
+      "persona_id": "0050",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0050.yaml",
+      "source": "amazon",
+      "display_name": "Casey Brooks",
+      "dimensions": {}
+    },
+    {
+      "persona_id": "0051",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0051.yaml",
+      "source": "amazon",
+      "display_name": "Jordan Lee",
+      "dimensions": {}
+    },
+    {
+      "persona_id": "0052",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0052.yaml",
+      "source": "amazon",
+      "display_name": "Quinn Santos",
+      "dimensions": {}
+    },
+    {
+      "persona_id": "0053",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0053.yaml",
+      "source": "amazon",
+      "display_name": "Alex Rivera",
+      "dimensions": {}
+    },
+    {
+      "persona_id": "0054",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0054.yaml",
+      "source": "amazon",
+      "display_name": "Quinn Santos",
+      "dimensions": {}
+    },
+    {
+      "persona_id": "0055",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0055.yaml",
+      "source": "amazon",
+      "display_name": "Ava Martinez",
+      "dimensions": {
+        "age_bracket": "45-54",
+        "region": "North America",
+        "life_stage": "Mid-life"
+      }
+    },
+    {
+      "persona_id": "0056",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0056.yaml",
+      "source": "amazon",
+      "display_name": "Quinn Santos",
+      "dimensions": {}
+    },
+    {
+      "persona_id": "0057",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0057.yaml",
+      "source": "amazon",
+      "display_name": "Alex Rivera",
+      "dimensions": {}
+    },
+    {
+      "persona_id": "0058",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0058.yaml",
+      "source": "amazon",
+      "display_name": "Casey Brooks",
+      "dimensions": {
+        "domain": "Arts & Humanities"
+      }
+    },
+    {
+      "persona_id": "0059",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0059.yaml",
+      "source": "stackoverflow",
+      "display_name": "Amina Diallo",
+      "dimensions": {
+        "age_bracket": "35-44",
+        "region": "Sub-Saharan Africa",
+        "domain": "Software & AI"
+      }
+    },
+    {
+      "persona_id": "0060",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0060.yaml",
+      "source": "stackoverflow",
+      "display_name": "Ivan Kowalski",
+      "dimensions": {
+        "age_bracket": "18-24",
+        "region": "Eastern Europe",
+        "domain": "Software & AI"
+      }
+    },
+    {
+      "persona_id": "0061",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0061.yaml",
+      "source": "stackoverflow",
+      "display_name": "Sienna Carter",
+      "dimensions": {
+        "age_bracket": "25-34",
+        "region": "North America",
+        "domain": "Software & AI",
+        "life_stage": "Early career"
+      }
+    },
+    {
+      "persona_id": "0062",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0062.yaml",
+      "source": "stackoverflow",
+      "display_name": "Noah Williams",
+      "dimensions": {
+        "age_bracket": "35-44",
+        "region": "North America",
+        "domain": "Software & AI"
+      }
+    },
+    {
+      "persona_id": "0063",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0063.yaml",
+      "source": "stackoverflow",
+      "display_name": "Maya Patel",
+      "dimensions": {
+        "age_bracket": "65+",
+        "region": "North America",
+        "domain": "Software & AI",
+        "life_stage": "Retirement"
+      }
+    },
+    {
+      "persona_id": "0064",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0064.yaml",
+      "source": "stackoverflow",
+      "display_name": "Sofia Andersson",
+      "dimensions": {
+        "age_bracket": "35-44",
+        "region": "Western Europe",
+        "domain": "Software & AI"
+      }
+    },
+    {
+      "persona_id": "0065",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0065.yaml",
+      "source": "stackoverflow",
+      "display_name": "Anika Das",
+      "dimensions": {
+        "age_bracket": "18-24",
+        "region": "South Asia",
+        "domain": "Software & AI",
+        "life_stage": "Early career"
+      }
+    },
+    {
+      "persona_id": "0066",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0066.yaml",
+      "source": "stackoverflow",
+      "display_name": "Jordan Lee",
+      "dimensions": {
+        "age_bracket": "25-34",
+        "domain": "Healthcare & Medicine",
+        "life_stage": "Early career"
+      }
+    },
+    {
+      "persona_id": "0067",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0067.yaml",
+      "source": "stackoverflow",
+      "display_name": "Ivan Kowalski",
+      "dimensions": {
+        "age_bracket": "35-44",
+        "region": "Eastern Europe",
+        "domain": "Software & AI"
+      }
+    },
+    {
+      "persona_id": "0068",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0068.yaml",
+      "source": "stackoverflow",
+      "display_name": "Clara Müller",
+      "dimensions": {
+        "age_bracket": "25-34",
+        "region": "Western Europe",
+        "domain": "Software & AI"
+      }
+    },
+    {
+      "persona_id": "0069",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0069.yaml",
+      "source": "stackoverflow",
+      "display_name": "Li Wei Chen",
+      "dimensions": {
+        "age_bracket": "25-34",
+        "region": "East Asia",
+        "domain": "Software & AI",
+        "life_stage": "Early career"
+      }
+    },
+    {
+      "persona_id": "0070",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0070.yaml",
+      "source": "stackoverflow",
+      "display_name": "Omar Khalil",
+      "dimensions": {
+        "age_bracket": "25-34",
+        "region": "MENA",
+        "domain": "Software & AI",
+        "life_stage": "Early career"
+      }
+    },
+    {
+      "persona_id": "0071",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0071.yaml",
+      "source": "stackoverflow",
+      "display_name": "Luka Petrov",
+      "dimensions": {
+        "age_bracket": "25-34",
+        "region": "Western Europe",
+        "domain": "Engineering",
+        "life_stage": "Early career"
+      }
+    },
+    {
+      "persona_id": "0072",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0072.yaml",
+      "source": "stackoverflow",
+      "display_name": "Alex Rivera",
+      "dimensions": {
+        "age_bracket": "25-34",
+        "domain": "Software & AI",
+        "life_stage": "Early career"
+      }
+    },
+    {
+      "persona_id": "0073",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0073.yaml",
+      "source": "stackoverflow",
+      "display_name": "Sienna Carter",
+      "dimensions": {
+        "age_bracket": "45-54",
+        "region": "North America",
+        "domain": "Software & AI"
+      }
+    },
+    {
+      "persona_id": "0074",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0074.yaml",
+      "source": "stackoverflow",
+      "display_name": "Emma Dubois",
+      "dimensions": {
+        "age_bracket": "18-24",
+        "region": "Western Europe",
+        "domain": "Software & AI",
+        "life_stage": "Early career"
+      }
+    },
+    {
+      "persona_id": "0075",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0075.yaml",
+      "source": "stackoverflow",
+      "display_name": "Tomas Horvat",
+      "dimensions": {
+        "age_bracket": "18-24",
+        "region": "Eastern Europe",
+        "domain": "Software & AI",
+        "life_stage": "Early career"
+      }
+    },
+    {
+      "persona_id": "0076",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0076.yaml",
+      "source": "stackoverflow",
+      "display_name": "Amina Diallo",
+      "dimensions": {
+        "age_bracket": "35-44",
+        "region": "Sub-Saharan Africa",
+        "domain": "Software & AI"
+      }
+    },
+    {
+      "persona_id": "0077",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0077.yaml",
+      "source": "stackoverflow",
+      "display_name": "Ava Martinez",
+      "dimensions": {
+        "age_bracket": "45-54",
+        "region": "North America",
+        "domain": "Software & AI"
+      }
+    },
+    {
+      "persona_id": "0078",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0078.yaml",
+      "source": "stackoverflow",
+      "display_name": "Petra Jansen",
+      "dimensions": {
+        "age_bracket": "45-54",
+        "region": "Eastern Europe",
+        "domain": "Software & AI"
+      }
+    },
+    {
+      "persona_id": "0079",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0079.yaml",
+      "source": "stackoverflow",
+      "display_name": "Ava Martinez",
+      "dimensions": {
+        "age_bracket": "25-34",
+        "region": "North America",
+        "domain": "Software & AI",
+        "life_stage": "Early career"
+      }
+    },
+    {
+      "persona_id": "0080",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0080.yaml",
+      "source": "stackoverflow",
+      "display_name": "Jordan Lee",
+      "dimensions": {
+        "age_bracket": "45-54",
+        "region": "North America",
+        "domain": "Software & AI"
+      }
+    },
+    {
+      "persona_id": "0081",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0081.yaml",
+      "source": "stackoverflow",
+      "display_name": "Sofia Andersson",
+      "dimensions": {
+        "age_bracket": "45-54",
+        "region": "Western Europe",
+        "domain": "Healthcare & Medicine"
+      }
+    },
+    {
+      "persona_id": "0082",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0082.yaml",
+      "source": "stackoverflow",
+      "display_name": "Noah Williams",
+      "dimensions": {
+        "age_bracket": "35-44",
+        "region": "North America",
+        "domain": "Software & AI"
+      }
+    },
+    {
+      "persona_id": "0083",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0083.yaml",
+      "source": "stackoverflow",
+      "display_name": "Jordan Lee",
+      "dimensions": {
+        "age_bracket": "25-34",
+        "region": "Latin America",
+        "domain": "Software & AI",
+        "life_stage": "Early career"
+      }
+    },
+    {
+      "persona_id": "0084",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0084.yaml",
+      "source": "stackoverflow",
+      "display_name": "Marco Rossi",
+      "dimensions": {
+        "age_bracket": "35-44",
+        "region": "Western Europe",
+        "domain": "Software & AI",
+        "life_stage": "Mid-life"
+      }
+    },
+    {
+      "persona_id": "0085",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0085.yaml",
+      "source": "stackoverflow",
+      "display_name": "Luka Petrov",
+      "dimensions": {
+        "age_bracket": "35-44",
+        "region": "Western Europe",
+        "domain": "Software & AI",
+        "life_stage": "Parent of young kids"
+      }
+    },
+    {
+      "persona_id": "0086",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0086.yaml",
+      "source": "stackoverflow",
+      "display_name": "Jordan Lee",
+      "dimensions": {
+        "age_bracket": "25-34",
+        "region": "North America",
+        "domain": "Software & AI",
+        "life_stage": "Early career"
+      }
+    },
+    {
+      "persona_id": "0087",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0087.yaml",
+      "source": "stackoverflow",
+      "display_name": "Kai Lim",
+      "dimensions": {
+        "age_bracket": "25-34",
+        "region": "Southeast Asia",
+        "domain": "Software & AI",
+        "life_stage": "Early career"
+      }
+    },
+    {
+      "persona_id": "0088",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0088.yaml",
+      "source": "prism",
+      "display_name": "Maya Patel",
+      "dimensions": {
+        "age_bracket": "25-34",
+        "region": "Latin America",
+        "intent": "Learn / explain",
+        "life_stage": "Early career"
+      }
+    },
+    {
+      "persona_id": "0089",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0089.yaml",
+      "source": "prism",
+      "display_name": "Clara Müller",
+      "dimensions": {
+        "age_bracket": "25-34",
+        "region": "Western Europe",
+        "intent": "Learn / explain",
+        "life_stage": "Student"
+      }
+    },
+    {
+      "persona_id": "0090",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0090.yaml",
+      "source": "prism",
+      "display_name": "Li Wei Chen",
+      "dimensions": {
+        "age_bracket": "25-34",
+        "region": "East Asia",
+        "intent": "Learn / explain",
+        "life_stage": "Early career"
+      }
+    },
+    {
+      "persona_id": "0091",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0091.yaml",
+      "source": "prism",
+      "display_name": "Amina Diallo",
+      "dimensions": {
+        "age_bracket": "18-24",
+        "region": "Sub-Saharan Africa",
+        "intent": "Learn / explain",
+        "life_stage": "Early career"
+      }
+    },
+    {
+      "persona_id": "0092",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0092.yaml",
+      "source": "prism",
+      "display_name": "Ivan Kowalski",
+      "dimensions": {
+        "age_bracket": "25-34",
+        "region": "Eastern Europe",
+        "intent": "Vent / support",
+        "life_stage": "Early career"
+      }
+    },
+    {
+      "persona_id": "0093",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0093.yaml",
+      "source": "prism",
+      "display_name": "Layla Haddad",
+      "dimensions": {
+        "age_bracket": "18-24",
+        "region": "MENA",
+        "intent": "Learn / explain",
+        "life_stage": "Student"
+      }
+    },
+    {
+      "persona_id": "0094",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0094.yaml",
+      "source": "prism",
+      "display_name": "Nadia Rahman",
+      "dimensions": {
+        "age_bracket": "18-24",
+        "region": "MENA",
+        "domain": "Education",
+        "intent": "Verify a claim",
+        "life_stage": "Student"
+      }
+    },
+    {
+      "persona_id": "0095",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0095.yaml",
+      "source": "prism",
+      "display_name": "Alex Rivera",
+      "dimensions": {
+        "age_bracket": "25-34",
+        "region": "Latin America",
+        "intent": "Learn / explain",
+        "life_stage": "Early career"
+      }
+    },
+    {
+      "persona_id": "0096",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0096.yaml",
+      "source": "prism",
+      "display_name": "Avery Kim",
+      "dimensions": {
+        "age_bracket": "25-34",
+        "region": "Latin America",
+        "intent": "Learn / explain",
+        "life_stage": "Early career"
+      }
+    },
+    {
+      "persona_id": "0097",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0097.yaml",
+      "source": "prism",
+      "display_name": "Ruby Taylor",
+      "dimensions": {
+        "age_bracket": "25-34",
+        "region": "Oceania",
+        "intent": "Learn / explain",
+        "life_stage": "Early career"
+      }
+    },
+    {
+      "persona_id": "0098",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0098.yaml",
+      "source": "prism",
+      "display_name": "Sienna Carter",
+      "dimensions": {
+        "age_bracket": "25-34",
+        "region": "North America",
+        "intent": "Learn / explain",
+        "life_stage": "Early career"
+      }
+    },
+    {
+      "persona_id": "0099",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0099.yaml",
+      "source": "prism",
+      "display_name": "Ava Martinez",
+      "dimensions": {
+        "age_bracket": "45-54",
+        "region": "North America",
+        "intent": "Learn / explain",
+        "life_stage": "Mid-life"
+      }
+    },
+    {
+      "persona_id": "0100",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0100.yaml",
+      "source": "prism",
+      "display_name": "Noah Williams",
+      "dimensions": {
+        "age_bracket": "35-44",
+        "region": "North America",
+        "intent": "Learn / explain",
+        "life_stage": "Early career"
+      }
+    },
+    {
+      "persona_id": "0101",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0101.yaml",
+      "source": "prism",
+      "display_name": "Ethan Brooks",
+      "dimensions": {
+        "age_bracket": "35-44",
+        "region": "North America",
+        "intent": "Learn / explain",
+        "life_stage": "Parent of young kids"
+      }
+    },
+    {
+      "persona_id": "0102",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0102.yaml",
+      "source": "prism",
+      "display_name": "Noah Bakker",
+      "dimensions": {
+        "age_bracket": "45-54",
+        "region": "Western Europe",
+        "intent": "Learn / explain",
+        "life_stage": "Parent of young kids"
+      }
+    },
+    {
+      "persona_id": "0103",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0103.yaml",
+      "source": "prism",
+      "display_name": "Emma Dubois",
+      "dimensions": {
+        "age_bracket": "45-54",
+        "region": "Western Europe",
+        "intent": "Learn / explain",
+        "life_stage": "Mid-life"
+      }
+    },
+    {
+      "persona_id": "0104",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0104.yaml",
+      "source": "prism",
+      "display_name": "Jordan Lee",
+      "dimensions": {
+        "age_bracket": "45-54",
+        "region": "North America",
+        "intent": "Verify a claim",
+        "life_stage": "Mid-life"
+      }
+    },
+    {
+      "persona_id": "0105",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0105.yaml",
+      "source": "prism",
+      "display_name": "Sofia Andersson",
+      "dimensions": {
+        "age_bracket": "35-44",
+        "region": "Western Europe",
+        "intent": "Learn / explain",
+        "life_stage": "Early career"
+      }
+    },
+    {
+      "persona_id": "0106",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0106.yaml",
+      "source": "prism",
+      "display_name": "Clara Müller",
+      "dimensions": {
+        "age_bracket": "45-54",
+        "region": "Western Europe",
+        "intent": "Learn / explain",
+        "life_stage": "Mid-life"
+      }
+    },
+    {
+      "persona_id": "0107",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0107.yaml",
+      "source": "prism",
+      "display_name": "Noah Bakker",
+      "dimensions": {
+        "age_bracket": "55-64",
+        "region": "Western Europe",
+        "domain": "Education",
+        "intent": "Verify a claim",
+        "life_stage": "Empty nester"
+      }
+    },
+    {
+      "persona_id": "0108",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0108.yaml",
+      "source": "prism",
+      "display_name": "Noah Bakker",
+      "dimensions": {
+        "age_bracket": "45-54",
+        "region": "Western Europe",
+        "intent": "Learn / explain",
+        "life_stage": "Mid-life"
+      }
+    },
+    {
+      "persona_id": "0109",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0109.yaml",
+      "source": "prism",
+      "display_name": "Maya Patel",
+      "dimensions": {
+        "age_bracket": "18-24",
+        "region": "North America",
+        "intent": "Learn / explain",
+        "life_stage": "Student"
+      }
+    },
+    {
+      "persona_id": "0110",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0110.yaml",
+      "source": "prism",
+      "display_name": "Sofia Andersson",
+      "dimensions": {
+        "age_bracket": "65-74",
+        "region": "Western Europe",
+        "intent": "Learn / explain",
+        "life_stage": "Retirement"
+      }
+    },
+    {
+      "persona_id": "0111",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0111.yaml",
+      "source": "prism",
+      "display_name": "Clara Müller",
+      "dimensions": {
+        "age_bracket": "18-24",
+        "region": "Western Europe",
+        "intent": "Learn / explain",
+        "life_stage": "Student"
+      }
+    },
+    {
+      "persona_id": "0112",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0112.yaml",
+      "source": "prism",
+      "display_name": "Luka Petrov",
+      "dimensions": {
+        "age_bracket": "55-64",
+        "region": "Western Europe",
+        "intent": "Learn / explain",
+        "life_stage": "Mid-life"
+      }
+    },
+    {
+      "persona_id": "0113",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0113.yaml",
+      "source": "prism",
+      "display_name": "Jordan Lee",
+      "dimensions": {
+        "age_bracket": "65-74",
+        "region": "North America",
+        "intent": "Learn / explain",
+        "life_stage": "Empty nester"
+      }
+    },
+    {
+      "persona_id": "0114",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0114.yaml",
+      "source": "prism",
+      "display_name": "Maya Patel",
+      "dimensions": {
+        "age_bracket": "65-74",
+        "region": "North America",
+        "intent": "Learn / explain",
+        "life_stage": "Retirement"
+      }
+    },
+    {
+      "persona_id": "0115",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0115.yaml",
+      "source": "prism",
+      "display_name": "Jordan Lee",
+      "dimensions": {
+        "age_bracket": "55-64",
+        "region": "North America",
+        "life_stage": "Mid-life"
+      }
+    },
+    {
+      "persona_id": "0116",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0116.yaml",
+      "source": "gss",
+      "display_name": "Ava Martinez",
+      "dimensions": {
+        "age_bracket": "18-24",
+        "region": "North America"
+      }
+    },
+    {
+      "persona_id": "0117",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0117.yaml",
+      "source": "gss",
+      "display_name": "Jordan Lee",
+      "dimensions": {
+        "age_bracket": "45-54",
+        "region": "North America"
+      }
+    },
+    {
+      "persona_id": "0118",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0118.yaml",
+      "source": "gss",
+      "display_name": "Ethan Brooks",
+      "dimensions": {
+        "age_bracket": "35-44",
+        "region": "North America"
+      }
+    },
+    {
+      "persona_id": "0119",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0119.yaml",
+      "source": "gss",
+      "display_name": "Jordan Lee",
+      "dimensions": {
+        "age_bracket": "18-24",
+        "region": "North America"
+      }
+    },
+    {
+      "persona_id": "0120",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0120.yaml",
+      "source": "gss",
+      "display_name": "Noah Williams",
+      "dimensions": {
+        "age_bracket": "45-54",
+        "region": "North America"
+      }
+    },
+    {
+      "persona_id": "0121",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0121.yaml",
+      "source": "gss",
+      "display_name": "Noah Williams",
+      "dimensions": {
+        "age_bracket": "45-54",
+        "region": "North America"
+      }
+    },
+    {
+      "persona_id": "0122",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0122.yaml",
+      "source": "gss",
+      "display_name": "Jordan Lee",
+      "dimensions": {
+        "age_bracket": "45-54",
+        "region": "North America"
+      }
+    },
+    {
+      "persona_id": "0123",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0123.yaml",
+      "source": "gss",
+      "display_name": "Jordan Lee",
+      "dimensions": {
+        "age_bracket": "35-44",
+        "region": "North America"
+      }
+    },
+    {
+      "persona_id": "0124",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0124.yaml",
+      "source": "gss",
+      "display_name": "Sienna Carter",
+      "dimensions": {
+        "age_bracket": "65-74",
+        "region": "North America",
+        "life_stage": "Retirement"
+      }
+    },
+    {
+      "persona_id": "0125",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0125.yaml",
+      "source": "gss",
+      "display_name": "Jordan Lee",
+      "dimensions": {
+        "age_bracket": "25-34",
+        "region": "North America"
+      }
+    },
+    {
+      "persona_id": "0126",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0126.yaml",
+      "source": "gss",
+      "display_name": "Ethan Brooks",
+      "dimensions": {
+        "age_bracket": "25-34",
+        "region": "North America"
+      }
+    },
+    {
+      "persona_id": "0127",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0127.yaml",
+      "source": "gss",
+      "display_name": "Ava Martinez",
+      "dimensions": {
+        "age_bracket": "45-54",
+        "region": "North America"
+      }
+    },
+    {
+      "persona_id": "0128",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0128.yaml",
+      "source": "gss",
+      "display_name": "Maya Patel",
+      "dimensions": {
+        "age_bracket": "65-74",
+        "region": "North America",
+        "life_stage": "Retirement"
+      }
+    },
+    {
+      "persona_id": "0129",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0129.yaml",
+      "source": "gss",
+      "display_name": "Maya Patel",
+      "dimensions": {
+        "age_bracket": "25-34",
+        "region": "North America"
+      }
+    },
+    {
+      "persona_id": "0130",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0130.yaml",
+      "source": "gss",
+      "display_name": "Ethan Brooks",
+      "dimensions": {
+        "age_bracket": "45-54",
+        "region": "North America"
+      }
+    },
+    {
+      "persona_id": "0131",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0131.yaml",
+      "source": "gss",
+      "display_name": "Maya Patel",
+      "dimensions": {
+        "age_bracket": "45-54",
+        "region": "North America"
+      }
+    },
+    {
+      "persona_id": "0132",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0132.yaml",
+      "source": "gss",
+      "display_name": "Ethan Brooks",
+      "dimensions": {
+        "age_bracket": "55-64",
+        "region": "North America"
+      }
+    },
+    {
+      "persona_id": "0133",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0133.yaml",
+      "source": "gss",
+      "display_name": "Sienna Carter",
+      "dimensions": {
+        "age_bracket": "55-64",
+        "region": "North America"
+      }
+    },
+    {
+      "persona_id": "0134",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0134.yaml",
+      "source": "gss",
+      "display_name": "Noah Williams",
+      "dimensions": {
+        "age_bracket": "45-54",
+        "region": "North America"
+      }
+    },
+    {
+      "persona_id": "0135",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0135.yaml",
+      "source": "gss",
+      "display_name": "Noah Williams",
+      "dimensions": {
+        "age_bracket": "25-34",
+        "region": "North America"
+      }
+    },
+    {
+      "persona_id": "0136",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0136.yaml",
+      "source": "gss",
+      "display_name": "Jordan Lee",
+      "dimensions": {
+        "age_bracket": "25-34",
+        "region": "North America"
+      }
+    },
+    {
+      "persona_id": "0137",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0137.yaml",
+      "source": "gss",
+      "display_name": "Jordan Lee",
+      "dimensions": {
+        "age_bracket": "35-44",
+        "region": "North America"
+      }
+    },
+    {
+      "persona_id": "0138",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0138.yaml",
+      "source": "gss",
+      "display_name": "Jordan Lee",
+      "dimensions": {
+        "age_bracket": "65-74",
+        "region": "North America"
+      }
+    },
+    {
+      "persona_id": "0139",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0139.yaml",
+      "source": "gss",
+      "display_name": "Noah Williams",
+      "dimensions": {
+        "age_bracket": "55-64",
+        "region": "North America"
+      }
+    },
+    {
+      "persona_id": "0140",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0140.yaml",
+      "source": "gss",
+      "display_name": "Sienna Carter",
+      "dimensions": {
+        "age_bracket": "35-44",
+        "region": "North America"
+      }
+    },
+    {
+      "persona_id": "0141",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0141.yaml",
+      "source": "gss",
+      "display_name": "Noah Williams",
+      "dimensions": {
+        "region": "North America"
+      }
+    },
+    {
+      "persona_id": "0142",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0142.yaml",
+      "source": "gss",
+      "display_name": "Jordan Lee",
+      "dimensions": {
+        "age_bracket": "25-34",
+        "region": "North America",
+        "life_stage": "Student"
+      }
+    },
+    {
+      "persona_id": "0143",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0143.yaml",
+      "source": "gss",
+      "display_name": "Sienna Carter",
+      "dimensions": {
+        "age_bracket": "65-74",
+        "region": "North America"
+      }
+    },
+    {
+      "persona_id": "0144",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0144.yaml",
+      "source": "gss",
+      "display_name": "Ethan Brooks",
+      "dimensions": {
+        "age_bracket": "65-74",
+        "region": "North America"
+      }
+    },
+    {
+      "persona_id": "0145",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0145.yaml",
+      "source": "real_human_survey",
+      "display_name": "Priya Sharma",
+      "dimensions": {
+        "age_bracket": "65-74",
+        "region": "South Asia",
+        "domain": "Business & Management",
+        "intent": "Brainstorm",
+        "life_stage": "Empty nester"
+      }
+    },
+    {
+      "persona_id": "0146",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0146.yaml",
+      "source": "real_human_survey",
+      "display_name": "Casey Brooks",
+      "dimensions": {
+        "age_bracket": "65-74",
+        "region": "Latin America",
+        "domain": "Media & Journalism",
+        "intent": "Brainstorm",
+        "life_stage": "Retirement"
+      }
+    },
+    {
+      "persona_id": "0147",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0147.yaml",
+      "source": "real_human_survey",
+      "display_name": "Arif Hassan",
+      "dimensions": {
+        "age_bracket": "25-34",
+        "region": "Southeast Asia",
+        "domain": "Hospitality",
+        "intent": "Brainstorm",
+        "life_stage": "Early career"
+      }
+    },
+    {
+      "persona_id": "0148",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0148.yaml",
+      "source": "real_human_survey",
+      "display_name": "Priya Sharma",
+      "dimensions": {
+        "age_bracket": "18-24",
+        "region": "South Asia",
+        "domain": "Hospitality",
+        "intent": "Brainstorm",
+        "life_stage": "Early career"
+      }
+    },
+    {
+      "persona_id": "0149",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0149.yaml",
+      "source": "real_human_survey",
+      "display_name": "Zola Ndlovu",
+      "dimensions": {
+        "age_bracket": "25-34",
+        "region": "Sub-Saharan Africa",
+        "domain": "Hospitality",
+        "intent": "Learn / explain",
+        "life_stage": "Career change"
+      }
+    },
+    {
+      "persona_id": "0150",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0150.yaml",
+      "source": "real_human_survey",
+      "display_name": "Arjun Mehta",
+      "dimensions": {
+        "age_bracket": "75-84",
+        "region": "South Asia",
+        "domain": "Agriculture",
+        "intent": "Brainstorm",
+        "life_stage": "Retirement"
+      }
+    },
+    {
+      "persona_id": "0151",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0151.yaml",
+      "source": "real_human_survey",
+      "display_name": "Luka Petrov",
+      "dimensions": {
+        "age_bracket": "13-17",
+        "region": "Western Europe",
+        "domain": "Media & Journalism",
+        "intent": "Learn / explain",
+        "life_stage": "Student"
+      }
+    },
+    {
+      "persona_id": "0152",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0152.yaml",
+      "source": "real_human_survey",
+      "display_name": "Rohan Kapoor",
+      "dimensions": {
+        "age_bracket": "5-12",
+        "region": "South Asia",
+        "domain": "Healthcare & Medicine",
+        "intent": "Decide",
+        "life_stage": "Student"
+      }
+    },
+    {
+      "persona_id": "0153",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0153.yaml",
+      "source": "real_human_survey",
+      "display_name": "Maya Patel",
+      "dimensions": {
+        "age_bracket": "18-24",
+        "region": "Latin America",
+        "domain": "Agriculture",
+        "intent": "Probe / red-team",
+        "life_stage": "Career change"
+      }
+    },
+    {
+      "persona_id": "0154",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0154.yaml",
+      "source": "real_human_survey",
+      "display_name": "Amina Diallo",
+      "dimensions": {
+        "age_bracket": "35-44",
+        "region": "Sub-Saharan Africa",
+        "domain": "Manufacturing",
+        "intent": "Debug / troubleshoot",
+        "life_stage": "Mid-life"
+      }
+    },
+    {
+      "persona_id": "0155",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0155.yaml",
+      "source": "real_human_survey",
+      "display_name": "Quinn Santos",
+      "dimensions": {
+        "age_bracket": "25-34",
+        "region": "Latin America",
+        "domain": "Manufacturing",
+        "intent": "Get task done",
+        "life_stage": "Early career"
+      }
+    },
+    {
+      "persona_id": "0156",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0156.yaml",
+      "source": "real_human_survey",
+      "display_name": "Amara Okafor",
+      "dimensions": {
+        "age_bracket": "55-64",
+        "region": "Sub-Saharan Africa",
+        "domain": "Business & Management",
+        "intent": "Get task done",
+        "life_stage": "Mid-life"
+      }
+    },
+    {
+      "persona_id": "0157",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0157.yaml",
+      "source": "real_human_survey",
+      "display_name": "Amara Okafor",
+      "dimensions": {
+        "age_bracket": "45-54",
+        "region": "Sub-Saharan Africa",
+        "domain": "Social Sciences",
+        "intent": "Vent / support",
+        "life_stage": "Mid-life"
+      }
+    },
+    {
+      "persona_id": "0158",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0158.yaml",
+      "source": "real_human_survey",
+      "display_name": "Li Wei Chen",
+      "dimensions": {
+        "age_bracket": "35-44",
+        "region": "East Asia",
+        "domain": "Agriculture",
+        "intent": "Get task done",
+        "life_stage": "Parent of young kids"
+      }
+    },
+    {
+      "persona_id": "0159",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0159.yaml",
+      "source": "real_human_survey",
+      "display_name": "Rohan Kapoor",
+      "dimensions": {
+        "age_bracket": "18-24",
+        "region": "South Asia",
+        "domain": "Education",
+        "intent": "Learn / explain",
+        "life_stage": "Early career"
+      }
+    },
+    {
+      "persona_id": "0160",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0160.yaml",
+      "source": "real_human_survey",
+      "display_name": "Rohan Kapoor",
+      "dimensions": {
+        "age_bracket": "5-12",
+        "region": "South Asia",
+        "domain": "Healthcare & Medicine",
+        "intent": "Debug / troubleshoot",
+        "life_stage": "Student"
+      }
+    },
+    {
+      "persona_id": "0161",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0161.yaml",
+      "source": "real_human_survey",
+      "display_name": "Rohan Kapoor",
+      "dimensions": {
+        "age_bracket": "45-54",
+        "region": "South Asia",
+        "domain": "Law & Policy",
+        "intent": "Get task done",
+        "life_stage": "Mid-life"
+      }
+    },
+    {
+      "persona_id": "0162",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0162.yaml",
+      "source": "real_human_survey",
+      "display_name": "Wei Zhang",
+      "dimensions": {
+        "age_bracket": "18-24",
+        "region": "East Asia",
+        "domain": "Healthcare & Medicine",
+        "intent": "Vent / support",
+        "life_stage": "Career change"
+      }
+    },
+    {
+      "persona_id": "0163",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0163.yaml",
+      "source": "real_human_survey",
+      "display_name": "Hana Kim",
+      "dimensions": {
+        "age_bracket": "25-34",
+        "region": "East Asia",
+        "domain": "Agriculture",
+        "intent": "Vent / support",
+        "life_stage": "Early career"
+      }
+    },
+    {
+      "persona_id": "0164",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0164.yaml",
+      "source": "real_human_survey",
+      "display_name": "Nisha Iyer",
+      "dimensions": {
+        "age_bracket": "55-64",
+        "region": "South Asia",
+        "domain": "Healthcare & Medicine",
+        "intent": "Get task done",
+        "life_stage": "Retirement"
+      }
+    },
+    {
+      "persona_id": "0165",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0165.yaml",
+      "source": "real_human_survey",
+      "display_name": "Mila Novak",
+      "dimensions": {
+        "age_bracket": "5-12",
+        "region": "Eastern Europe",
+        "domain": "Agriculture",
+        "intent": "Decide",
+        "life_stage": "Student"
+      }
+    },
+    {
+      "persona_id": "0166",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0166.yaml",
+      "source": "real_human_survey",
+      "display_name": "Amina Diallo",
+      "dimensions": {
+        "age_bracket": "65-74",
+        "region": "Sub-Saharan Africa",
+        "domain": "Agriculture",
+        "intent": "Learn / explain",
+        "life_stage": "Retirement"
+      }
+    },
+    {
+      "persona_id": "0167",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0167.yaml",
+      "source": "real_human_survey",
+      "display_name": "Noah Williams",
+      "dimensions": {
+        "age_bracket": "45-54",
+        "region": "North America",
+        "domain": "Business & Management",
+        "intent": "Get task done",
+        "life_stage": "Mid-life"
+      }
+    },
+    {
+      "persona_id": "0168",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0168.yaml",
+      "source": "real_human_survey",
+      "display_name": "Emma Dubois",
+      "dimensions": {
+        "age_bracket": "25-34",
+        "region": "Western Europe",
+        "domain": "Education",
+        "intent": "Decide",
+        "life_stage": "Parent of young kids"
+      }
+    },
+    {
+      "persona_id": "0169",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0169.yaml",
+      "source": "real_human_survey",
+      "display_name": "Anya Volkova",
+      "dimensions": {
+        "age_bracket": "25-34",
+        "region": "Eastern Europe",
+        "domain": "Healthcare & Medicine",
+        "intent": "Decide",
+        "life_stage": "Mid-life"
+      }
+    },
+    {
+      "persona_id": "0170",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0170.yaml",
+      "source": "real_human_survey",
+      "display_name": "Clara Müller",
+      "dimensions": {
+        "age_bracket": "65-74",
+        "region": "Western Europe",
+        "domain": "Healthcare & Medicine",
+        "intent": "Get task done",
+        "life_stage": "Empty nester"
+      }
+    },
+    {
+      "persona_id": "0171",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0171.yaml",
+      "source": "real_human_survey",
+      "display_name": "Arjun Mehta",
+      "dimensions": {
+        "age_bracket": "55-64",
+        "region": "South Asia",
+        "domain": "Education",
+        "intent": "Brainstorm",
+        "life_stage": "Mid-life"
+      }
+    },
+    {
+      "persona_id": "0172",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0172.yaml",
+      "source": "real_human_survey",
+      "display_name": "Casey Brooks",
+      "dimensions": {
+        "domain": "Software & AI",
+        "intent": "Probe / red-team"
+      }
+    },
+    {
+      "persona_id": "0173",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0173.yaml",
+      "source": "synthetic",
+      "display_name": "Priya Sharma",
+      "dimensions": {
+        "age_bracket": "45-54",
+        "region": "South Asia",
+        "domain": "Engineering",
+        "intent": "Learn / explain",
+        "life_stage": "Parent of young kids"
+      }
+    },
+    {
+      "persona_id": "0174",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0174.yaml",
+      "source": "synthetic",
+      "display_name": "Nisha Iyer",
+      "dimensions": {
+        "age_bracket": "35-44",
+        "region": "South Asia",
+        "domain": "Arts & Humanities",
+        "intent": "Learn / explain",
+        "life_stage": "Parent of young kids"
+      }
+    },
+    {
+      "persona_id": "0175",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0175.yaml",
+      "source": "synthetic",
+      "display_name": "Nisha Iyer",
+      "dimensions": {
+        "age_bracket": "65-74",
+        "region": "South Asia",
+        "domain": "Engineering",
+        "intent": "Get task done",
+        "life_stage": "Retirement"
+      }
+    },
+    {
+      "persona_id": "0176",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0176.yaml",
+      "source": "synthetic",
+      "display_name": "Hana Kim",
+      "dimensions": {
+        "age_bracket": "Under 5",
+        "region": "East Asia",
+        "domain": "Education",
+        "intent": "Brainstorm",
+        "life_stage": "Student"
+      }
+    },
+    {
+      "persona_id": "0177",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0177.yaml",
+      "source": "synthetic",
+      "display_name": "Li Wei Chen",
+      "dimensions": {
+        "age_bracket": "Under 5",
+        "region": "East Asia",
+        "domain": "Education",
+        "intent": "Get task done",
+        "life_stage": "Student"
+      }
+    },
+    {
+      "persona_id": "0178",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0178.yaml",
+      "source": "synthetic",
+      "display_name": "Mai Tran",
+      "dimensions": {
+        "age_bracket": "5-12",
+        "region": "Southeast Asia",
+        "domain": "Arts & Humanities",
+        "intent": "Verify a claim",
+        "life_stage": "Student"
+      }
+    },
+    {
+      "persona_id": "0179",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0179.yaml",
+      "source": "synthetic",
+      "display_name": "Anika Das",
+      "dimensions": {
+        "age_bracket": "5-12",
+        "region": "South Asia",
+        "domain": "Agriculture",
+        "intent": "Learn / explain",
+        "life_stage": "Student"
+      }
+    },
+    {
+      "persona_id": "0180",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0180.yaml",
+      "source": "synthetic",
+      "display_name": "Layla Haddad",
+      "dimensions": {
+        "age_bracket": "75-84",
+        "region": "MENA",
+        "domain": "Public Sector",
+        "intent": "Brainstorm",
+        "life_stage": "Retirement"
+      }
+    },
+    {
+      "persona_id": "0181",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0181.yaml",
+      "source": "synthetic",
+      "display_name": "Kwame Mensah",
+      "dimensions": {
+        "age_bracket": "75-84",
+        "region": "Sub-Saharan Africa",
+        "domain": "Finance & Economics",
+        "intent": "Brainstorm",
+        "life_stage": "Retirement"
+      }
+    },
+    {
+      "persona_id": "0182",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0182.yaml",
+      "source": "synthetic",
+      "display_name": "Avery Kim",
+      "dimensions": {
+        "age_bracket": "13-17",
+        "region": "Latin America",
+        "domain": "Engineering",
+        "intent": "Decide",
+        "life_stage": "Student"
+      }
+    },
+    {
+      "persona_id": "0183",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0183.yaml",
+      "source": "synthetic",
+      "display_name": "Yuki Sato",
+      "dimensions": {
+        "age_bracket": "18-24",
+        "region": "East Asia",
+        "domain": "Law & Policy",
+        "intent": "Learn / explain",
+        "life_stage": "Student"
+      }
+    },
+    {
+      "persona_id": "0184",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0184.yaml",
+      "source": "synthetic",
+      "display_name": "Anika Das",
+      "dimensions": {
+        "age_bracket": "18-24",
+        "region": "South Asia",
+        "domain": "Manufacturing",
+        "intent": "Debug / troubleshoot",
+        "life_stage": "Student"
+      }
+    },
+    {
+      "persona_id": "0185",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0185.yaml",
+      "source": "synthetic",
+      "display_name": "Yuki Sato",
+      "dimensions": {
+        "age_bracket": "13-17",
+        "region": "East Asia",
+        "domain": "Business & Management",
+        "intent": "Vent / support",
+        "life_stage": "Student"
+      }
+    },
+    {
+      "persona_id": "0186",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0186.yaml",
+      "source": "synthetic",
+      "display_name": "Mei Lin Tan",
+      "dimensions": {
+        "age_bracket": "55-64",
+        "region": "East Asia",
+        "domain": "Manufacturing",
+        "intent": "Get task done",
+        "life_stage": "Career change"
+      }
+    },
+    {
+      "persona_id": "0187",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0187.yaml",
+      "source": "synthetic",
+      "display_name": "Arif Hassan",
+      "dimensions": {
+        "age_bracket": "Under 5",
+        "region": "Southeast Asia",
+        "domain": "Arts & Humanities",
+        "intent": "Debug / troubleshoot",
+        "life_stage": "Student"
+      }
+    },
+    {
+      "persona_id": "0188",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0188.yaml",
+      "source": "synthetic",
+      "display_name": "Rizal Putra",
+      "dimensions": {
+        "age_bracket": "Under 5",
+        "region": "Southeast Asia",
+        "domain": "Engineering",
+        "intent": "Vent / support",
+        "life_stage": "Student"
+      }
+    },
+    {
+      "persona_id": "0189",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0189.yaml",
+      "source": "synthetic",
+      "display_name": "Wei Zhang",
+      "dimensions": {
+        "age_bracket": "13-17",
+        "region": "East Asia",
+        "domain": "Agriculture",
+        "intent": "Learn / explain",
+        "life_stage": "Student"
+      }
+    },
+    {
+      "persona_id": "0190",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0190.yaml",
+      "source": "synthetic",
+      "display_name": "Rizal Putra",
+      "dimensions": {
+        "age_bracket": "13-17",
+        "region": "Southeast Asia",
+        "domain": "Healthcare & Medicine",
+        "intent": "Vent / support",
+        "life_stage": "Student"
+      }
+    },
+    {
+      "persona_id": "0191",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0191.yaml",
+      "source": "synthetic",
+      "display_name": "Anh Nguyen",
+      "dimensions": {
+        "age_bracket": "25-34",
+        "region": "Southeast Asia",
+        "domain": "Manufacturing",
+        "intent": "Brainstorm",
+        "life_stage": "Career change"
+      }
+    },
+    {
+      "persona_id": "0192",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0192.yaml",
+      "source": "synthetic",
+      "display_name": "Anika Das",
+      "dimensions": {
+        "age_bracket": "25-34",
+        "region": "South Asia",
+        "domain": "Engineering",
+        "intent": "Get task done",
+        "life_stage": "Parent of young kids"
+      }
+    },
+    {
+      "persona_id": "0193",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0193.yaml",
+      "source": "synthetic",
+      "display_name": "Zola Ndlovu",
+      "dimensions": {
+        "age_bracket": "5-12",
+        "region": "Sub-Saharan Africa",
+        "domain": "Agriculture",
+        "intent": "Decide",
+        "life_stage": "Student"
+      }
+    },
+    {
+      "persona_id": "0194",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0194.yaml",
+      "source": "synthetic",
+      "display_name": "Amina Diallo",
+      "dimensions": {
+        "age_bracket": "25-34",
+        "region": "Sub-Saharan Africa",
+        "domain": "Education",
+        "intent": "Get task done",
+        "life_stage": "Career change"
+      }
+    },
+    {
+      "persona_id": "0195",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0195.yaml",
+      "source": "synthetic",
+      "display_name": "Nisha Iyer",
+      "dimensions": {
+        "age_bracket": "18-24",
+        "region": "South Asia",
+        "domain": "Business & Management",
+        "intent": "Debug / troubleshoot",
+        "life_stage": "Early career"
+      }
+    },
+    {
+      "persona_id": "0196",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0196.yaml",
+      "source": "synthetic",
+      "display_name": "Tendai Moyo",
+      "dimensions": {
+        "age_bracket": "5-12",
+        "region": "Sub-Saharan Africa",
+        "domain": "Manufacturing",
+        "intent": "Vent / support",
+        "life_stage": "Student"
+      }
+    },
+    {
+      "persona_id": "0197",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0197.yaml",
+      "source": "synthetic",
+      "display_name": "Arjun Mehta",
+      "dimensions": {
+        "age_bracket": "75-84",
+        "region": "South Asia",
+        "domain": "Software & AI",
+        "intent": "Learn / explain",
+        "life_stage": "Retirement"
+      }
+    },
+    {
+      "persona_id": "0198",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0198.yaml",
+      "source": "synthetic",
+      "display_name": "Arjun Mehta",
+      "dimensions": {
+        "age_bracket": "Under 5",
+        "region": "South Asia",
+        "domain": "Agriculture",
+        "intent": "Get task done",
+        "life_stage": "Student"
+      }
+    },
+    {
+      "persona_id": "0199",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0199.yaml",
+      "source": "synthetic",
+      "display_name": "Rohan Kapoor",
+      "dimensions": {
+        "age_bracket": "45-54",
+        "region": "South Asia",
+        "domain": "Public Sector",
+        "intent": "Verify a claim",
+        "life_stage": "Career change"
+      }
+    },
+    {
+      "persona_id": "0200",
+      "path": "persona/datasets/matraix-persona-dev-sample/persona_0200.yaml",
+      "source": "synthetic",
+      "display_name": "Siti Rahman",
+      "dimensions": {
+        "age_bracket": "13-17",
+        "region": "Southeast Asia",
+        "domain": "Finance & Economics",
+        "intent": "Learn / explain",
+        "life_stage": "Student"
+      }
+    }
+  ]
+}

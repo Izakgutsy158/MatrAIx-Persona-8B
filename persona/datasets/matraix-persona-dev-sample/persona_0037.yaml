@@ -1,0 +1,28 @@
+persona_id: '0037'
+version: '1.0'
+source: amazon
+display_name: Casey Brooks
+dimensions:
+  seniority: Retired
+  years_experience: 20+
+  linkedin_activity: Inactive
+  cultural_background: Indigenous
+  tech_savviness: Comfortable
+  accessibility_needs: Visual
+  fam_statistics: Familiar
+  topic_baking: Interested
+  bookg_self_help: Like
+  lstyle_commute_mode: Car
+  lstyle_planning_horizon: Weekly
+  health_chronic_condition: Managed
+  health_vision: Corrected
+  health_dietary_restriction: Medical
+  hob_bread_baking: Active
+  peeve_typos: Major peeve
+  demo_ethnicity_broad: Multiracial
+  demo_parental_status: Parent of adults
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: amazon-58cd333c7db8
+  origin_source_row_index: 2022132

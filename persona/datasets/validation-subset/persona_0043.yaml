@@ -1,0 +1,186 @@
+persona_id: '0043'
+version: '1.0'
+source: wiki:Q235901
+dimensions:
+  region: MENA
+  gender_identity: Man
+  urbanicity: Dense urban
+  socioeconomic_band: High income
+  domain: Public Sector
+  domain_characteristics: Practitioner
+  seniority: C-suite
+  company_size: Public sector
+  role_function: Executive
+  years_experience: 20+
+  life_stage: Mid-life
+  major_life_events: Military service
+  cultural_background: Middle Eastern
+  dominant_trait: High extraversion
+  risk_tolerance: Risk-seeking
+  decision_style: Directive
+  values_priority: Achievement
+  religiosity: Devout
+  safety_sensitivity: Benign
+  economic_motivation: Premium-seeking
+  fam_political_science: Proficient
+  fam_military_strategy: Proficient
+  fam_diplomacy: Proficient
+  fam_theology: Familiar
+  fam_religious_studies: Familiar
+  skill_negotiation: Advanced
+  skill_leadership: Advanced
+  topic_politics: Passionate
+  topic_literature: Interested
+  topic_religion: Passionate
+  topic_spirituality: Passionate
+  topic_interior_design: Interested
+  topic_architecture: Interested
+  att_globalization: Positive
+  att_organized_religion: Enthusiast
+  att_higher_education: Positive
+  att_risk_taking: Positive
+  att_authority: Enthusiast
+  att_minimalism: Opposed
+  att_consumerism: Enthusiast
+  att_capital_punishment: Positive
+  att_free_speech: Opposed
+  ind_construction: Some exposure
+  ind_government: Veteran
+  ind_defense: Experienced
+  cult_israel: Native
+  big5_artistic_interest: High
+  big5_emotionality: High
+  big5_adventurousness: High
+  big5_liberalism: High
+  big5_self_efficacy: Very high
+  big5_dutifulness: Low
+  big5_achievement_striving: Very high
+  big5_cautiousness: Low
+  big5_assertiveness: Very high
+  big5_activity_level: Very high
+  big5_excitement_seeking: High
+  big5_trust: High
+  big5_morality: Very low
+  big5_altruism: Average
+  big5_cooperation: Low
+  big5_modesty: Very low
+  big5_sympathy: Low
+  big5_anger: High
+  big5_immoderation: Very high
+  big5_vulnerability: High
+  lstyle_household_size: 5+ people
+  lstyle_frugality: Splurger
+  lstyle_giving: Regular donor
+  acad_political_theory: Interested
+  trait_creativity: Moderate
+  trait_love_of_learning: Moderate
+  trait_open_mindedness: Strong
+  trait_bravery: Strong
+  trait_perseverance: Strong
+  trait_honesty: Slight
+  trait_zest: Strong
+  trait_kindness: Moderate
+  trait_social_intelligence: Strong
+  trait_teamwork: Moderate
+  trait_fairness: Slight
+  trait_leadership: Signature
+  trait_humility: Slight
+  trait_prudence: Slight
+  trait_self_regulation: Slight
+  trait_appreciation_of_beauty: Moderate
+  trait_spirituality: Strong
+  trait_ambition: Signature
+  trait_resilience: Moderate
+  trait_discipline: Moderate
+  trait_generosity: Strong
+  trait_loyalty: Slight
+  trait_competitiveness: Strong
+  trait_adaptability: Moderate
+  val_family: Important
+  val_career_success: Core value
+  val_wealth: Core value
+  val_security_stability: Important
+  val_tradition: Irrelevant
+  val_power_influence: Core value
+  val_achievement: Core value
+  val_creativity_self_expression: Moderate
+  val_spirituality_faith: Core value
+  val_knowledge_truth: Important
+  val_social_status: Core value
+  val_independence: Important
+  val_justice_fairness: Irrelevant
+  val_recognition: Important
+  val_helping_others: Moderate
+  val_personal_growth: Moderate
+  val_integrity_honesty: Irrelevant
+  val_beauty_aesthetics: Moderate
+  val_order_structure: Important
+  val_patriotism: Moderate
+  val_equality: Irrelevant
+  pref_save_vs_spend: Free spender
+  pref_lead_vs_follow: Always leads
+  demo_marital_status: Married
+  demo_children_count: 3+ children
+  demo_household_income: $200k+
+  demo_employment_status: Full-time
+  demo_housing_status: Own outright
+  demo_religion_affiliation: Folk / traditional
+  demo_ethnicity_broad: Middle Eastern
+  demo_veteran_status: Active duty
+  demo_parental_status: Parent of adults
+  lifex_childhood_environment: Privileged
+  lifex_geographic_mobility: Never left hometown
+  lifex_career_path_shape: Linear climb
+  lifex_financial_trajectory: Inherited wealth
+  lifex_adversity_level: Significant struggles
+  lifex_immigration_generation: Native multi-generational
+  lifex_military_history: Combat veteran
+  lifex_relationship_history: Married once
+  lifex_parenting_journey: Grown children
+  lifex_health_journey: Major surgery / injury
+  lifex_faith_journey: Converted
+  lifex_cultural_exposure: Some exposure
+  lifex_public_recognition: Famous
+  lifex_service_history: Public office
+  lifex_turning_point: Reinvention
+  bfi2_domain_extraversion: Very high
+  bfi2_domain_agreeableness: Low
+  bfi2_domain_conscientiousness: Average
+  bfi2_domain_negative_emotionality: Average
+  bfi2_domain_open_mindedness: High
+  bfi2_facet_assertiveness: Very high
+  bfi2_facet_energy_level: Very high
+  bfi2_facet_compassion: Low
+  bfi2_facet_respectfulness: Average
+  bfi2_facet_trust: High
+  bfi2_facet_productiveness: High
+  bfi2_facet_responsibility: Low
+  bfi2_facet_emotional_volatility: High
+  bfi2_facet_intellectual_curiosity: Average
+  bfi2_facet_aesthetic_sensitivity: High
+  schwartz_value_self_direction: Very high
+  schwartz_value_hedonism: High
+  schwartz_value_achievement: Very high
+  schwartz_value_power: Very high
+  schwartz_value_security: High
+  schwartz_value_conformity: Very low
+  schwartz_value_tradition: Low
+  schwartz_value_benevolence: Low
+  schwartz_value_universalism: Very low
+  sdt_need_autonomy: Very high
+  sdt_need_competence: High
+  sdt_need_relatedness: Average
+  mft_care_harm: Low
+  mft_fairness_cheating: Low
+  mft_loyalty_betrayal: Average
+  mft_authority_subversion: Very high
+  mft_sanctity_degradation: Low
+  mft_liberty_oppression: Low
+  need_for_cognition: Average
+  dospert_ethical_risk_tolerance: Very high
+  dospert_financial_risk_tolerance: High
+  dospert_health_safety_risk_tolerance: High
+  dospert_recreational_risk_tolerance: Very high
+  dospert_social_risk_tolerance: Very high
+  interpersonal_agency_dominance: Very high
+  interpersonal_communion_warmth: Low

@@ -1,0 +1,147 @@
+persona_id: '0102'
+version: '1.0'
+source: prism
+display_name: Noah Bakker
+dimensions:
+  age_bracket: 45-54
+  region: Western Europe
+  gender_identity: Woman
+  primary_language: English
+  english_proficiency: Native
+  register: Colloquial
+  highest_education: Secondary
+  seniority: Mid
+  years_experience: 11-20
+  life_stage: Parent of young kids
+  cultural_background: Individualist (Western)
+  tech_savviness: Cautious adopter
+  religiosity: Secular
+  intent: Learn / explain
+  query_complexity: Ambiguous / underspecified
+  expertise_gap: Novice asking expert
+  safety_sensitivity: Benign
+  prior_context: Returning user
+  fam_machine_learning: Aware
+  fam_deep_learning: Aware
+  fam_ecology: Familiar
+  fam_ethics: Familiar
+  fam_nutrition: Familiar
+  fam_natural_language_processing: Aware
+  tool_chatgpt: Occasional
+  topic_technology: Interested
+  topic_parenting: Interested
+  topic_pets: Interested
+  topic_philosophy: Interested
+  topic_religion: Indifferent
+  topic_activism: Interested
+  topic_environment: Interested
+  topic_sustainability: Interested
+  lang_english: Native
+  att_ai: Positive
+  att_new_technology: Positive
+  att_veganism: Enthusiast
+  ind_technology: Some exposure
+  ind_food_beverage: Some exposure
+  ind_nonprofit: Some exposure
+  ind_fitness_wellness: Some exposure
+  cult_united_kingdom: Native
+  cuis_vegan: Love
+  cuis_vegetarian: Like
+  cuis_seafood: Avoid
+  big5_liberalism: High
+  big5_morality: High
+  big5_altruism: High
+  big5_sympathy: High
+  lstyle_diet_type: Vegan
+  cog_verbosity: Concise
+  cog_formality: Neutral
+  cog_directness: Direct
+  cog_detail_orientation: Moderate
+  cog_abstraction: Abstract
+  cog_optimism: High
+  cog_curiosity: Moderate
+  cog_skepticism: Moderate
+  cog_open_mindedness: High
+  cog_assertiveness: Moderate
+  cog_emotional_expressiveness: Moderate
+  cog_big_picture_vs_detail: Big-picture
+  cog_risk_framing: Balanced
+  cog_empathy_expression: High
+  cog_storytelling: Low
+  cog_precision_of_language: Average
+  cog_use_of_jargon: Avoids jargon
+  cog_emoji_use: Never
+  cog_politeness: Polite
+  health_dietary_restriction: Ethical
+  health_caregiver_status: Child caregiver
+  acad_biology: Interested
+  acad_philosophy: Interested
+  acad_environmental_science: Interested
+  trait_open_mindedness: Moderate
+  trait_perspective: Moderate
+  trait_capacity_for_love: Moderate
+  trait_kindness: Moderate
+  trait_fairness: Strong
+  trait_hope_optimism: Moderate
+  trait_empathy: Strong
+  val_family: Important
+  val_security_stability: Important
+  val_spirituality_faith: Irrelevant
+  val_knowledge_truth: Important
+  val_justice_fairness: Core value
+  val_sustainability: Important
+  val_helping_others: Important
+  val_integrity_honesty: Important
+  val_equality: Core value
+  demo_marital_status: Married
+  demo_children_count: 2 children
+  demo_employment_status: Part-time
+  demo_generation: Gen X
+  demo_religion_affiliation: None
+  demo_ethnicity_broad: White / European
+  demo_home_language: Same as primary
+  demo_parental_status: Parent of minors
+  demo_relationship_length: 5-15 years
+  lifex_education_journey: Traditional track
+  lifex_relationship_history: Long-term partnership
+  lifex_parenting_journey: Young children
+  lifex_faith_journey: Always secular
+  lifex_formative_decade: 1990s
+  bfi2_domain_agreeableness: High
+  bfi2_domain_open_mindedness: High
+  bfi2_facet_compassion: High
+  bfi2_facet_respectfulness: High
+  bfi2_facet_responsibility: High
+  schwartz_value_security: High
+  schwartz_value_benevolence: High
+  schwartz_value_universalism: Very high
+  mft_care_harm: Very high
+  need_for_cognition: High
+  interpersonal_communion_warmth: High
+  ai_task_code_generation: Does not plan AI use
+  ai_task_code_review: Does not plan AI use
+  ai_task_codebase_learning: Does not plan AI use
+  ai_task_data_generation_analytics: Does not plan AI use
+  ai_task_debugging_fixing: Does not plan AI use
+  ai_task_deployment_monitoring: Does not plan AI use
+  ai_task_documentation: Does not plan AI use
+  ai_task_learning_concepts: Currently partially AI-assisted
+  ai_task_project_planning: Does not plan AI use
+  ai_task_refactoring: Does not plan AI use
+  ai_task_search_answers: Currently partially AI-assisted
+  ai_task_testing: Does not plan AI use
+  coding_ai_complexity_comfort: Only simple / boilerplate tasks
+  coding_ai_output_trust: Trusts after verification
+  coding_ai_sentiment: Neutral / indifferent
+  coding_ai_usage_frequency: Monthly or infrequent
+  coding_tool_ai_capability_importance: Moderate
+  coding_tool_ethics_blocker: Hard blocker
+  coding_tool_reliability_latency_importance: High
+  coding_tool_security_privacy_blocker: Major concern
+  future_developer_skill_belief: Ethical judgment
+  human_help_boundary_for_ai_coding: When trust is low
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: prism-dd7aeba767c8
+  origin_source_row_index: 2211796

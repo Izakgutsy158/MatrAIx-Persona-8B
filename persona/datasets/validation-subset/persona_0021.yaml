@@ -1,0 +1,59 @@
+persona_id: '0021'
+version: '1.0'
+source: stackoverflow:stackoverflow_2023_352_562
+dimensions:
+  age_bracket: 35-44
+  region: North America
+  domain: Software & AI
+  domain_characteristics: Practitioner
+  highest_education: Master's
+  company_size: Enterprise (5k+)
+  role_function: Engineering
+  years_experience: 11-20
+  learning_style: Reading / writing
+  fam_computer_networking: Familiar
+  fam_databases: Proficient
+  fam_operating_systems: Proficient
+  fam_cloud_infrastructure: Proficient
+  fam_devops: Proficient
+  tool_jira: Regular
+  tool_microsoft_teams: Regular
+  tool_docker: Regular
+  tool_kubernetes: Regular
+  tool_terraform: Regular
+  tool_azure: Regular
+  tool_vs_code: Regular
+  tool_jetbrains_ides: Regular
+  tool_vim: Regular
+  tool_linux_cli: Regular
+  tool_zoom: Regular
+  tool_chatgpt: Regular
+  att_new_technology: Positive
+  att_open_source: Positive
+  ind_technology: Experienced
+  lstyle_device_ecosystem: Linux
+  cog_reading_vs_watching: Prefers reading
+  peeve_being_interrupted: Major peeve
+  trait_love_of_learning: Strong
+  trait_adaptability: Strong
+  demo_employment_status: Full-time
+  demo_generation: Millennial
+  lifex_career_path_shape: Linear climb
+  lifex_education_journey: Advanced degrees
+  code_comment_style: Mixed approach
+  code_naming_verbosity: Highly verbose (long descriptive names)
+  sdt_need_autonomy: High
+  sdt_need_competence: High
+  sdt_need_relatedness: High
+  codebase_onboarding_style: Reads architecture / docs first
+  coding_agent_usage_frequency: Not yet but interested
+  coding_ai_learning_source: Self-experimentation
+  coding_ai_output_trust: Neutral / depends on task
+  coding_ai_sentiment: Neutral / indifferent
+  coding_ai_usage_frequency: Tried but not active
+  dev_ic_manager_orientation: Individual contributor
+  dev_professional_status: Professional developer
+  dev_role_archetype: Full-stack developer
+  dev_toolchain_complexity: Large integrated toolchain
+  open_source_activity_level: Occasional contributor
+  stackoverflow_usage_pattern: Weekly reference

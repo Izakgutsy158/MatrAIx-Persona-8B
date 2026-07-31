@@ -1,0 +1,11 @@
+schemaVersion: "1.0"
+id: probe_code_summary_documentation_v1
+title: Short survey
+description: Open-ended survey to probe whether the code_summary_documentation persona attribute is expressed.
+questions:
+  - id: q_main
+    prompt: >-
+      A teammate asks you to send over a small `stats.py` helper module with three functions they can drop into their script: `mean(nums)` (arithmetic average), `median(nums)` (middle value, averaging the two middle values when the list length is even), and `mode(nums)` (most frequent value). Paste exactly what you'd send them, the way you normally would when handing code to a teammate — your own natural style, not a stripped-down version.
+    type: free_text
+    construct: probe
+    required: true

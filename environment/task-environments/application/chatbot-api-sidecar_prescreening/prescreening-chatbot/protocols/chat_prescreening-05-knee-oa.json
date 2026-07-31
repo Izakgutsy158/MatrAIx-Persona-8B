@@ -1,0 +1,137 @@
+{
+ "protocol_id": "KNEE-MOVE-2026-005",
+ "study_title": "App-Guided Exercise Therapy for Knee Osteoarthritis (KNEE-MOVE)",
+ "design_summary": "12-week, single-arm study of an app-guided home exercise program for knee osteoarthritis. Participants complete three guided strengthening sessions per week and log pain weekly in the study app.",
+ "criteria": [
+  {
+   "id": "INC1",
+   "kind": "inclusion",
+   "text": "Age 40 to 80 years old, inclusive.",
+   "keywords": [
+    "\\bage\\b",
+    "how old",
+    "\\byears?\\s+old\\b",
+    "date of birth"
+   ],
+   "probe": "First, how old are you?"
+  },
+  {
+   "id": "INC2",
+   "kind": "inclusion",
+   "text": "Physician-diagnosed osteoarthritis of the knee.",
+   "keywords": [
+    "osteoarthritis",
+    "arthritis.{0,20}knee",
+    "knee.{0,20}(arthritis|diagnos)",
+    "wear[\\s-]and[\\s-]tear"
+   ],
+   "probe": "Has a doctor diagnosed you with osteoarthritis of the knee?"
+  },
+  {
+   "id": "INC3",
+   "kind": "inclusion",
+   "text": "Knee pain on most days for at least the past 3 months.",
+   "keywords": [
+    "most days",
+    "how long.{0,30}pain",
+    "three months|3 months",
+    "daily.{0,15}pain",
+    "pain.{0,20}(how often|most days)"
+   ],
+   "probe": "Have you had knee pain on most days for at least the past three months?"
+  },
+  {
+   "id": "INC4",
+   "kind": "inclusion",
+   "text": "Average knee pain between 4 and 8 inclusive on a 0-10 scale over the past week.",
+   "keywords": [
+    "\\bscale\\b",
+    "0.{0,10}10|zero.{0,10}ten",
+    "rate your pain",
+    "pain (level|score|rating)",
+    "out of (10|ten)"
+   ],
+   "probe": "On a scale from 0 to 10, what has your average knee pain been over the past week?",
+   "unknown_rule": "If the participant cannot or will not give a usable 0-10 average pain rating, INC4 is unknown."
+  },
+  {
+   "id": "INC5",
+   "kind": "inclusion",
+   "text": "Able to walk without a walker or wheelchair (using a cane is acceptable).",
+   "keywords": [
+    "\\bwalker\\b",
+    "wheelchair",
+    "walk without",
+    "\\bcane\\b",
+    "get around",
+    "walking aid"
+   ],
+   "probe": "Are you able to walk without a walker or wheelchair - a cane is fine?"
+  },
+  {
+   "id": "INC6",
+   "kind": "inclusion",
+   "text": "Owns a smartphone and is willing to complete three guided exercise sessions per week for 12 weeks.",
+   "keywords": [
+    "smart\\s*phone",
+    "\\bphone\\b",
+    "\\bapp\\b",
+    "three sessions|3 sessions",
+    "sessions (a|per) week",
+    "12[\\s-]*week",
+    "\\bcommit"
+   ],
+   "probe": "Do you own a smartphone, and could you commit to three guided sessions a week for the full 12 weeks?"
+  },
+  {
+   "id": "EXC1",
+   "kind": "exclusion",
+   "text": "Knee replacement surgery on the affected knee, either already performed or scheduled within the next 6 months.",
+   "keywords": [
+    "knee replacement",
+    "\\bsurgery\\b",
+    "replacement.{0,20}(scheduled|done|had)"
+   ],
+   "probe": "Have you had knee replacement surgery on that knee, or is one scheduled in the next six months?"
+  },
+  {
+   "id": "EXC2",
+   "kind": "exclusion",
+   "text": "Corticosteroid (cortisone) injection in the affected knee within the past 3 months.",
+   "keywords": [
+    "injection",
+    "cortisone",
+    "steroid shot",
+    "\\bshot\\b.{0,20}knee",
+    "knee.{0,20}\\bshot\\b"
+   ],
+   "probe": "Have you had a cortisone injection in that knee in the past three months?"
+  },
+  {
+   "id": "EXC3",
+   "kind": "exclusion",
+   "text": "Diagnosed inflammatory arthritis (for example rheumatoid or psoriatic arthritis).",
+   "keywords": [
+    "rheumatoid",
+    "psoriatic",
+    "inflammatory arthritis",
+    "autoimmune.{0,20}arthritis"
+   ],
+   "probe": "Have you been diagnosed with an inflammatory arthritis, such as rheumatoid or psoriatic arthritis?"
+  },
+  {
+   "id": "EXC4",
+   "kind": "exclusion",
+   "text": "Currently enrolled in another interventional clinical trial, or currently attending a structured physical-therapy program for the knee.",
+   "keywords": [
+    "(another|other|different)\\s+(clinical\\s+|research\\s+)?(trial|study|studies)",
+    "\\benrolled\\b",
+    "physical therapy",
+    "physio",
+    "research (study|program)",
+    "participating in (a|any)"
+   ],
+   "probe": "Are you currently in another clinical trial, or attending a structured physical therapy program for your knee?"
+  }
+ ]
+}

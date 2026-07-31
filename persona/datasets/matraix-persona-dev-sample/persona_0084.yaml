@@ -1,0 +1,92 @@
+persona_id: 0084
+version: '1.0'
+source: stackoverflow
+display_name: Marco Rossi
+dimensions:
+  age_bracket: 35-44
+  region: Western Europe
+  domain: Software & AI
+  domain_characteristics: Practitioner
+  highest_education: Bachelor's
+  seniority: Mid
+  role_function: Product
+  years_experience: 11-20
+  life_stage: Mid-life
+  tech_savviness: Comfortable
+  emotional_state: Skeptical
+  trust_level: Verifying
+  fam_machine_learning: Familiar
+  fam_databases: Familiar
+  fam_supply_chain: Familiar
+  fam_product_management: Proficient
+  tool_jira: Regular
+  tool_chatgpt: Regular
+  att_ai: Positive
+  ind_travel_tourism: Experienced
+  lstyle_commute_mode: Remote
+  lstyle_device_ecosystem: Windows
+  cog_curiosity: High
+  cog_skepticism: High
+  trait_love_of_learning: Strong
+  trait_adaptability: Strong
+  val_security_stability: Important
+  val_knowledge_truth: Important
+  val_independence: Important
+  val_personal_growth: Important
+  val_privacy: Important
+  pref_speed_vs_accuracy: Balanced
+  pref_early_vs_late: Early adopter
+  demo_employment_status: Full-time
+  demo_generation: Millennial
+  lifex_career_path_shape: Pivoted once
+  lifex_education_journey: Traditional track
+  code_error_handling: Explicit error returns/validation
+  code_dependencies_approach: Lean on libraries (minimal custom code)
+  prog_typescript: Proficient
+  prog_sql: Proficient
+  need_for_closure: Average
+  ai_task_code_generation: Currently partially AI-assisted
+  ai_task_code_review: Currently partially AI-assisted
+  ai_task_codebase_learning: Currently partially AI-assisted
+  ai_task_data_generation_analytics: Plans mostly AI use
+  ai_task_debugging_fixing: Currently partially AI-assisted
+  ai_task_deployment_monitoring: Does not plan AI use
+  ai_task_documentation: Currently partially AI-assisted
+  ai_task_learning_concepts: Currently partially AI-assisted
+  ai_task_project_planning: Does not plan AI use
+  ai_task_search_answers: Currently partially AI-assisted
+  ai_task_testing: Currently partially AI-assisted
+  codebase_onboarding_style: Uses search / grep heavily
+  coding_agent_adoption_barrier: Accuracy / reliability concerns
+  coding_agent_autonomy_preference: Suggest-only assistant
+  coding_agent_control_expectation: Requires explicit approval before edits
+  coding_agent_security_expectation: Requires strict security review
+  coding_agent_usage_frequency: No plans
+  coding_agent_workflow_impact: Small targeted improvement
+  coding_ai_complexity_comfort: Only simple / boilerplate tasks
+  coding_ai_job_threat_perception: Unsure / mixed
+  coding_ai_learning_source: AI-enabled coding tools
+  coding_ai_output_trust: Distrusts until proven
+  coding_ai_sentiment: Somewhat favorable
+  coding_ai_usage_frequency: Weekly
+  coding_tool_ai_capability_importance: Moderate
+  coding_tool_alternative_sensitivity: Major concern
+  coding_tool_api_completeness_importance: High
+  coding_tool_ethics_blocker: Moderate concern
+  coding_tool_obsolescence_blocker: Hard blocker
+  coding_tool_open_source_importance: High
+  coding_tool_reliability_latency_importance: Moderate
+  coding_tool_security_privacy_blocker: Moderate concern
+  debugging_strategy: Search / ask externally
+  dev_contribution_context: Employee work
+  dev_ic_manager_orientation: Individual contributor
+  dev_professional_status: Former / inactive developer
+  dev_role_archetype: Product / UX technical role
+  dev_toolchain_complexity: Moderate multi-tool workflow
+  human_help_boundary_for_ai_coding: When comparing approaches
+  stackoverflow_participation_style: Reads / searches only
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: stackoverflow-f4405973b90d
+  origin_source_row_index: 2200375

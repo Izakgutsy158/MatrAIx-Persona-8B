@@ -1,0 +1,151 @@
+persona_id: '0046'
+version: '1.0'
+source: wiki:Q310155
+dimensions:
+  region: Western Europe
+  gender_identity: Man
+  urbanicity: Rural
+  primary_language: English
+  english_proficiency: Native
+  register: Formal / standard
+  domain: Media & Journalism
+  domain_characteristics: Practitioner
+  highest_education: Bachelor's
+  research_output: Prolific publisher
+  seniority: Retired
+  company_size: Academia
+  role_function: Executive
+  years_experience: 20+
+  life_stage: Retirement
+  major_life_events: Migration / immigration
+  cultural_background: Individualist (Western)
+  dominant_trait: High openness
+  risk_tolerance: Cautious
+  values_priority: Novelty
+  safety_sensitivity: Benign
+  modality_pref: Text
+  fam_intellectual_property: Aware
+  fam_history: Familiar
+  fam_linguistics: Familiar
+  fam_journalism: Expert
+  fam_photography: Aware
+  fam_library_science: Aware
+  skill_writing: Master
+  skill_editing: Advanced
+  skill_storytelling: Advanced
+  skill_public_speaking: Advanced
+  skill_leadership: Advanced
+  skill_research: Advanced
+  skill_technical_writing: Advanced
+  skill_proofreading: Advanced
+  skill_presenting: Advanced
+  topic_travel: Passionate
+  topic_science: Passionate
+  topic_literature: Passionate
+  topic_history: Interested
+  topic_hiking: Interested
+  topic_podcasts: Interested
+  topic_activism: Interested
+  topic_environment: Interested
+  topic_languages: Passionate
+  lang_english: Native
+  att_higher_education: Positive
+  ind_healthcare: Some exposure
+  ind_travel_tourism: Experienced
+  ind_media: Veteran
+  ind_publishing: Veteran
+  ind_education: Experienced
+  ind_government: Some exposure
+  ind_nonprofit: Some exposure
+  ind_chemicals: Some exposure
+  ind_legal_services: Some exposure
+  ind_sports: Some exposure
+  cult_united_states: Native
+  cult_united_kingdom: Lived there
+  bookg_popular_science: Love
+  bookg_history: Like
+  bookg_travel_writing: Like
+  bookg_essays: Like
+  big5_intellect: High
+  cog_curiosity: Very high
+  cog_storytelling: High
+  cog_precision_of_language: Precise
+  cog_use_of_jargon: Avoids jargon
+  acad_physics: Interested
+  acad_chemistry: Interested
+  acad_biology: Interested
+  acad_earth_science: Interested
+  acad_world_history: Interested
+  acad_geography: Interested
+  acad_civics: Interested
+  acad_literature: Passionate
+  acad_creative_writing: Passionate
+  acad_foreign_languages: Interested
+  acad_health_science: Interested
+  acad_business_studies: Neutral
+  acad_environmental_science: Interested
+  acad_astronomy: Interested
+  trait_curiosity: Signature
+  trait_love_of_learning: Strong
+  trait_bravery: Absent
+  trait_leadership: Strong
+  trait_appreciation_of_beauty: Moderate
+  trait_playfulness: Strong
+  trait_adaptability: Moderate
+  val_career_success: Important
+  val_personal_freedom: Moderate
+  val_adventure: Important
+  val_achievement: Important
+  val_creativity_self_expression: Core value
+  val_community: Moderate
+  val_knowledge_truth: Core value
+  val_independence: Moderate
+  val_sustainability: Important
+  val_recognition: Moderate
+  val_helping_others: Moderate
+  val_fun_enjoyment: Moderate
+  pref_plan_vs_spontaneous: Spontaneous
+  pref_city_vs_nature: Prefers nature
+  pref_routine_vs_variety: Variety-leaning
+  pref_speed_vs_accuracy: Accuracy-leaning
+  pref_quality_vs_quantity: Quality-leaning
+  pref_logic_vs_intuition: Logic-leaning
+  pref_lead_vs_follow: Leans lead
+  pref_indoor_vs_outdoor: Outdoor-leaning
+  pref_text_vs_call: Prefers text
+  pref_novelty_vs_familiarity: Novelty-leaning
+  pref_detail_brief_vs_full: Detail-leaning
+  pref_competition_vs_collab: Collaborative
+  pref_stability_vs_change: Change-leaning
+  demo_marital_status: Married
+  demo_employment_status: Retired
+  demo_generation: Boomer
+  demo_citizenship_status: Dual national
+  demo_ethnicity_broad: White / European
+  demo_birth_order: Middle
+  demo_relationship_length: 15+ years
+  lifex_geographic_mobility: Serial relocator
+  lifex_travel_breadth: Lived abroad
+  lifex_career_path_shape: Multiple pivots
+  lifex_education_journey: Dropped out
+  lifex_immigration_generation: First-generation immigrant
+  lifex_relationship_history: Married once
+  lifex_cultural_exposure: Lived across cultures
+  lifex_formative_decade: 1960s-70s
+  lifex_public_recognition: Famous
+  lifex_service_history: Activist / organizer
+  lifex_turning_point: Career break
+  lifex_hometown_tie: Occasional return
+  bfi2_domain_open_mindedness: High
+  bfi2_facet_intellectual_curiosity: High
+  schwartz_value_self_direction: High
+  schwartz_value_stimulation: High
+  schwartz_value_hedonism: Average
+  schwartz_value_achievement: High
+  schwartz_value_power: Average
+  schwartz_value_benevolence: Average
+  schwartz_value_universalism: High
+  sdt_need_autonomy: High
+  sdt_need_competence: High
+  need_for_cognition: Very high
+  interpersonal_agency_dominance: High

@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "1.0",
+  "pool": "persona/datasets/matraix-persona-dev-sample",
+  "sources": [],
+  "defaultMode": "stratified",
+  "dimensionFilters": {
+    "risk_tolerance": [
+      "Risk-averse",
+      "Cautious",
+      "Balanced",
+      "Risk-tolerant",
+      "Risk-seeking"
+    ],
+    "decision_style": [
+      "Analytical",
+      "Intuitive",
+      "Consensus-driven",
+      "Directive",
+      "Deliberative"
+    ],
+    "age_bracket": [
+      "18-24",
+      "25-34",
+      "35-44",
+      "45-54",
+      "55-64"
+    ]
+  },
+  "stratifyFields": [
+    "risk_tolerance",
+    "decision_style"
+  ],
+  "sampleSizePerValueGroup": 1
+}

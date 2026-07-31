@@ -1,0 +1,33 @@
+persona_id: 0058
+version: '1.0'
+source: amazon
+display_name: Casey Brooks
+dimensions:
+  domain: Arts & Humanities
+  role_function: Teaching
+  tech_savviness: Comfortable
+  risk_tolerance: Balanced
+  decision_style: Analytical
+  time_pressure: No rush
+  topic_travel: Interested
+  topic_social_media: Interested
+  topic_tea: Interested
+  topic_dance: Interested
+  att_online_reviews: Positive
+  ind_technology: Some exposure
+  filmg_sci_fi: Like
+  sport_swimming: Play
+  health_general_health: Fair
+  health_mobility: Full
+  health_sleep_quality: Poor
+  health_medication_use: Daily
+  peeve_typos: Major peeve
+  trait_creativity: Strong
+  habit_reading_before_bed: Daily
+  dospert_social_risk_tolerance: High
+  dev_professional_status: Non-developer technologist
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: amazon-142941ed9c6c
+  origin_source_row_index: 2095995

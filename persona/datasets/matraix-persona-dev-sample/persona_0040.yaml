@@ -1,0 +1,71 @@
+persona_id: '0040'
+version: '1.0'
+source: amazon
+display_name: Sienna Carter
+dimensions:
+  region: North America
+  urbanicity: Suburban
+  major_life_events: Health journey
+  risk_tolerance: Balanced
+  decision_style: Analytical
+  time_pressure: No rush
+  topic_fitness: Passionate
+  topic_travel: Interested
+  topic_gaming: Interested
+  topic_technology: Interested
+  topic_home_improvement: Interested
+  topic_cars: Neutral
+  topic_cycling: Passionate
+  topic_wine: Interested
+  topic_coffee: Interested
+  cult_united_states: Lived there
+  sport_cycling: Play
+  big5_adventurousness: High
+  big5_self_efficacy: High
+  big5_orderliness: High
+  big5_dutifulness: High
+  big5_self_discipline: High
+  big5_cautiousness: High
+  big5_activity_level: Very high
+  big5_excitement_seeking: High
+  big5_trust: Average
+  big5_anxiety: Average
+  big5_immoderation: Low
+  lstyle_exercise_freq: Daily
+  lstyle_shopping_style: Bargain hunter
+  lstyle_travel_freq: A few trips/yr
+  lstyle_commute_mode: Bike
+  lstyle_pet_ownership: Dog
+  lstyle_coffee_ritual: Home brew
+  health_chronic_condition: Managed
+  hob_kayaking: Active
+  trait_perspective: Slight
+  trait_perseverance: Slight
+  trait_fairness: Slight
+  trait_humility: Slight
+  trait_gratitude: Slight
+  trait_empathy: Slight
+  trait_loyalty: Strong
+  val_creativity_self_expression: Minor
+  val_community: Minor
+  val_personal_growth: Minor
+  demo_employment_status: Full-time
+  demo_disability_status: Chronic illness
+  demo_driver_status: Daily driver
+  lifex_geographic_mobility: Moved within region
+  lifex_adversity_level: Significant struggles
+  lifex_health_journey: Manages chronic condition
+  bfi2_domain_conscientiousness: High
+  bfi2_facet_energy_level: Very high
+  bfi2_facet_trust: Average
+  bfi2_facet_organization: High
+  bfi2_facet_productiveness: High
+  bfi2_facet_responsibility: High
+  bfi2_facet_emotional_volatility: Low
+  schwartz_value_conformity: Average
+  need_for_closure: Average
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: amazon-1c71163add1b
+  origin_source_row_index: 2032321

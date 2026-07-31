@@ -1,0 +1,37 @@
+persona_id: '0036'
+version: '1.0'
+source: amazon
+display_name: Ethan Brooks
+dimensions:
+  age_bracket: 65+
+  region: North America
+  urbanicity: Suburban
+  register: Colloquial
+  life_stage: Mid-life
+  major_life_events: Health journey
+  topic_fitness: Interested
+  topic_cooking: Interested
+  topic_technology: Interested
+  topic_home_improvement: Interested
+  topic_literature: Interested
+  topic_coffee: Interested
+  att_brand_loyalty: Positive
+  cult_united_states: Lived there
+  lstyle_frugality: Balanced
+  lstyle_reading_freq: Weekly
+  lstyle_coffee_ritual: Home brew
+  lstyle_fashion_sense: Practical
+  lstyle_hobby_intensity: Casual
+  health_caregiver_status: Elder caregiver
+  demo_children_count: Adult children
+  demo_employment_status: Retired
+  demo_housing_status: Own outright
+  demo_generation: Boomer
+  demo_parental_status: Parent of adults
+  demo_driver_status: Daily driver
+  lifex_health_journey: Major surgery / injury
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: amazon-96332e6c00d1
+  origin_source_row_index: 2019048

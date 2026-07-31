@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "1.0",
+  "contextRules": [
+    {
+      "match": { "contextType": "task_outcome" },
+      "distributions": [
+        {
+          "id": "task_outcome.status_by_segment",
+          "facetKey": "outcome_status",
+          "title": "Outcome status",
+          "groupByPersonaDimensions": ["age_bracket", "tech_savviness", "values_priority"]
+        },
+        {
+          "id": "task_outcome.predicted_label_by_segment",
+          "facetKey": "task_predicted_label",
+          "title": "Predicted eligibility",
+          "groupByPersonaDimensions": ["age_bracket", "tech_savviness", "values_priority"]
+        }
+      ],
+      "summaryAnalyses": [
+        {
+          "id": "task_outcome.reason_by_status",
+          "title": "Outcome reason by verdict correctness",
+          "targetFacetKey": "outcome_reason",
+          "groupByFacetKey": "outcome_status",
+          "groupByMode": "categorical",
+          "summaryKind": "llm_bucket_summary"
+        },
+        {
+          "id": "task_outcome.reason_by_predicted_label",
+          "title": "Outcome reason by predicted eligibility label",
+          "targetFacetKey": "outcome_reason",
+          "groupByFacetKey": "task_predicted_label",
+          "groupByMode": "categorical",
+          "summaryKind": "llm_bucket_summary"
+        }
+      ]
+    },
+    {
+      "match": { "contextType": "conversation_summary" },
+      "distributions": [
+        {
+          "id": "conversation_summary.path_by_segment",
+          "facetKey": "conversation_path",
+          "title": "Conversation path",
+          "groupByPersonaDimensions": ["age_bracket", "tech_savviness", "values_priority"]
+        },
+        {
+          "id": "conversation_summary.questions_by_segment",
+          "facetKey": "clarification_question_count",
+          "title": "Screening question count",
+          "groupByPersonaDimensions": ["age_bracket", "tech_savviness", "values_priority"]
+        }
+      ]
+    },
+    {
+      "match": { "contextType": "user_feedback" },
+      "distributions": [
+        {
+          "id": "user_feedback.need_by_segment",
+          "facetKey": "need_constraint_satisfaction",
+          "title": "Need or constraint satisfaction",
+          "groupByPersonaDimensions": ["age_bracket", "tech_savviness", "values_priority"]
+        },
+        {
+          "id": "user_feedback.preference_by_segment",
+          "facetKey": "personal_preference_satisfaction",
+          "title": "Personal preference satisfaction",
+          "groupByPersonaDimensions": ["age_bracket", "tech_savviness", "values_priority"]
+        },
+        {
+          "id": "user_feedback.rating_by_segment",
+          "facetKey": "overall_experience_rating",
+          "title": "Overall experience rating",
+          "groupByPersonaDimensions": ["age_bracket", "tech_savviness", "values_priority"]
+        },
+        {
+          "id": "user_feedback.trust_by_segment",
+          "facetKey": "trust_level",
+          "title": "Trust in final assessment",
+          "groupByPersonaDimensions": ["age_bracket", "tech_savviness", "values_priority"]
+        }
+      ]
+    }
+  ]
+}

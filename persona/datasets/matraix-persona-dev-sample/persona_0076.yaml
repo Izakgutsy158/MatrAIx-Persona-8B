@@ -1,0 +1,78 @@
+persona_id: '0076'
+version: '1.0'
+source: stackoverflow
+display_name: Amina Diallo
+dimensions:
+  age_bracket: 35-44
+  region: Sub-Saharan Africa
+  domain: Software & AI
+  domain_characteristics: Practitioner
+  highest_education: Bachelor's
+  company_size: Mid (500-5k)
+  role_function: Engineering
+  years_experience: 6-10
+  emotional_state: Frustrated
+  learning_style: Reading / writing
+  fam_databases: Proficient
+  fam_devops: Familiar
+  skill_coding: Advanced
+  skill_debugging: Advanced
+  skill_time_management: Intermediate
+  skill_research: Advanced
+  skill_problem_solving: Advanced
+  tool_jira: Regular
+  tool_slack: Regular
+  tool_microsoft_teams: Regular
+  tool_zoom: Regular
+  tool_trello: Regular
+  att_ai: Skeptical
+  att_new_technology: Enthusiast
+  att_online_reviews: Positive
+  ind_technology: Veteran
+  lstyle_commute_mode: Remote
+  cog_reading_vs_watching: Prefers reading
+  trait_curiosity: Strong
+  trait_love_of_learning: Strong
+  trait_adaptability: Strong
+  val_achievement: Important
+  val_knowledge_truth: Important
+  val_independence: Important
+  pref_team_vs_solo: Team-leaning
+  pref_speed_vs_accuracy: Accuracy first
+  demo_employment_status: Full-time
+  lifex_career_path_shape: Linear climb
+  lifex_formative_decade: 1990s
+  code_comment_style: Mixed approach
+  code_testing_approach: Comprehensive unit test coverage
+  code_refactoring_frequency: Regular refactoring cycles
+  prog_sql: Proficient
+  prog_bash: Proficient
+  schwartz_value_self_direction: High
+  schwartz_value_achievement: High
+  sdt_need_autonomy: High
+  sdt_need_competence: High
+  sdt_need_relatedness: Average
+  mft_care_harm: High
+  mft_fairness_cheating: High
+  need_for_cognition: High
+  need_for_closure: High
+  code_observability_habit: Logs important flows / errors
+  coding_ai_job_threat_perception: Unsure / mixed
+  coding_ai_sentiment: Neutral / indifferent
+  coding_ai_usage_frequency: Tried but not active
+  coding_tool_api_completeness_importance: Critical
+  debugging_strategy: Search / ask externally
+  dev_contribution_context: Mixed contexts
+  dev_ic_manager_orientation: Individual contributor
+  dev_professional_status: Professional developer
+  dev_role_archetype: Front-end developer
+  dev_toolchain_complexity: Moderate multi-tool workflow
+  developer_help_seeking_preference: Search docs first
+  future_developer_skill_belief: Problem decomposition
+  stackoverflow_participation_style: Reads / searches only
+  stackoverflow_usage_pattern: Weekly reference
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: stackoverflow-3b7511aa9864
+  origin_source_row_index: 2173705

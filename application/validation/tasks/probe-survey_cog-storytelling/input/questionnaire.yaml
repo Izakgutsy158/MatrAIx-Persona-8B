@@ -1,0 +1,11 @@
+schemaVersion: "1.0"
+id: probe_cog_storytelling_v1
+title: Short survey
+description: Open-ended survey to probe whether the cog_storytelling persona attribute is expressed.
+questions:
+  - id: q_main
+    prompt: >-
+      Tell me about how you got into the work or hobby you care most about — walk me through how it started and what's kept you with it. Take it wherever you like.
+    type: free_text
+    construct: probe
+    required: true

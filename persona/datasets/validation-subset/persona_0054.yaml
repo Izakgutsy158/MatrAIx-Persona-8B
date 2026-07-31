@@ -1,0 +1,138 @@
+persona_id: '0054'
+version: '1.0'
+source: wiki:Q35500
+dimensions:
+  gender_identity: Woman
+  domain_characteristics: Practitioner
+  dominant_trait: High extraversion
+  risk_tolerance: Risk-seeking
+  decision_style: Directive
+  values_priority: Autonomy
+  safety_sensitivity: Benign
+  skill_persuasion: Master
+  topic_travel: Interested
+  topic_fashion: Passionate
+  topic_parenting: Interested
+  topic_pets: Interested
+  topic_gardening: Interested
+  topic_visual_art: Interested
+  topic_religion: Passionate
+  topic_spirituality: Passionate
+  att_organized_religion: Enthusiast
+  att_authority: Enthusiast
+  att_free_speech: Skeptical
+  cult_italy: Lived there
+  cult_turkey: Lived there
+  cult_egypt: Lived there
+  cult_greece: Native
+  big5_artistic_interest: Very high
+  big5_emotionality: Very high
+  big5_adventurousness: High
+  big5_self_efficacy: High
+  big5_dutifulness: Very low
+  big5_achievement_striving: High
+  big5_self_discipline: Very low
+  big5_cautiousness: Low
+  big5_gregariousness: High
+  big5_assertiveness: Very high
+  big5_activity_level: High
+  big5_excitement_seeking: Very high
+  big5_cheerfulness: High
+  big5_morality: Very low
+  big5_cooperation: Low
+  big5_modesty: Very low
+  big5_anger: Very high
+  big5_self_consciousness: Very low
+  big5_immoderation: Very high
+  big5_vulnerability: Low
+  trait_creativity: Moderate
+  trait_open_mindedness: Absent
+  trait_perspective: Moderate
+  trait_bravery: Moderate
+  trait_perseverance: Strong
+  trait_honesty: Absent
+  trait_zest: Signature
+  trait_capacity_for_love: Signature
+  trait_kindness: Slight
+  trait_social_intelligence: Strong
+  trait_teamwork: Slight
+  trait_fairness: Absent
+  trait_leadership: Strong
+  trait_forgiveness: Absent
+  trait_humility: Absent
+  trait_prudence: Absent
+  trait_self_regulation: Absent
+  trait_appreciation_of_beauty: Signature
+  trait_gratitude: Moderate
+  trait_hope_optimism: Slight
+  trait_playfulness: Strong
+  trait_spirituality: Signature
+  trait_ambition: Strong
+  trait_empathy: Slight
+  trait_resilience: Strong
+  trait_discipline: Absent
+  trait_generosity: Moderate
+  trait_loyalty: Absent
+  trait_competitiveness: Signature
+  trait_adaptability: Strong
+  val_family: Moderate
+  val_personal_freedom: Core value
+  val_security_stability: Minor
+  val_adventure: Important
+  val_tradition: Minor
+  val_power_influence: Core value
+  val_achievement: Important
+  val_creativity_self_expression: Important
+  val_knowledge_truth: Minor
+  val_social_status: Core value
+  val_independence: Core value
+  val_justice_fairness: Minor
+  val_loyalty: Irrelevant
+  val_recognition: Core value
+  val_helping_others: Moderate
+  val_fun_enjoyment: Core value
+  val_integrity_honesty: Irrelevant
+  val_beauty_aesthetics: Core value
+  val_order_structure: Minor
+  demo_marital_status: Married
+  demo_children_count: 3+ children
+  demo_sexual_orientation: Heterosexual
+  demo_parental_status: Parent of adults
+  lifex_public_recognition: Famous
+  bfi2_domain_extraversion: Very high
+  bfi2_domain_agreeableness: Very low
+  bfi2_domain_conscientiousness: Very low
+  bfi2_domain_negative_emotionality: High
+  bfi2_domain_open_mindedness: High
+  bfi2_facet_sociability: Very high
+  bfi2_facet_assertiveness: Very high
+  bfi2_facet_energy_level: High
+  bfi2_facet_respectfulness: Low
+  bfi2_facet_responsibility: Very low
+  bfi2_facet_emotional_volatility: Very high
+  bfi2_facet_aesthetic_sensitivity: Very high
+  bfi2_facet_creative_imagination: High
+  schwartz_value_self_direction: Very high
+  schwartz_value_stimulation: Very high
+  schwartz_value_hedonism: Very high
+  schwartz_value_achievement: High
+  schwartz_value_power: Very high
+  schwartz_value_security: Very low
+  schwartz_value_conformity: Very low
+  schwartz_value_tradition: Low
+  schwartz_value_benevolence: Low
+  schwartz_value_universalism: Very low
+  sdt_need_autonomy: Very high
+  sdt_need_competence: High
+  sdt_need_relatedness: High
+  mft_authority_subversion: Very high
+  mft_sanctity_degradation: Very high
+  need_for_cognition: Low
+  need_for_closure: High
+  dospert_ethical_risk_tolerance: Very high
+  dospert_recreational_risk_tolerance: High
+  dospert_social_risk_tolerance: Very high
+  attachment_anxiety: High
+  attachment_avoidance: Very low
+  interpersonal_agency_dominance: Very high
+  interpersonal_communion_warmth: Average

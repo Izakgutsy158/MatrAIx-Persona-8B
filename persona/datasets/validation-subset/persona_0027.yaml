@@ -1,0 +1,64 @@
+persona_id: '0027'
+version: '1.0'
+source: stackoverflow:stackoverflow_2023_870_1385
+dimensions:
+  age_bracket: 25-34
+  region: Western Europe
+  domain: Software & AI
+  domain_characteristics: Hobbyist
+  highest_education: Master's
+  seniority: Manager
+  company_size: Startup (<50)
+  role_function: Engineering
+  years_experience: 6-10
+  fam_computer_networking: Familiar
+  fam_databases: Proficient
+  fam_operating_systems: Familiar
+  fam_cloud_infrastructure: Familiar
+  fam_devops: Familiar
+  skill_people_management: Intermediate
+  tool_aws: Regular
+  tool_vs_code: Regular
+  att_ai: Opposed
+  att_new_technology: Enthusiast
+  att_open_source: Enthusiast
+  ind_technology: Experienced
+  ind_legal_services: Experienced
+  lstyle_commute_mode: Remote
+  lstyle_device_ecosystem: Mixed
+  peeve_being_interrupted: Major peeve
+  trait_love_of_learning: Strong
+  trait_leadership: Strong
+  demo_employment_status: Full-time
+  demo_generation: Millennial
+  lifex_career_path_shape: Just starting
+  lifex_education_journey: Advanced degrees
+  code_naming_verbosity: Highly verbose (long descriptive names)
+  code_dependencies_approach: Balance of libraries and custom
+  prog_c: Proficient
+  need_for_closure: High
+  interpersonal_agency_dominance: High
+  ai_task_code_generation: Does not plan AI use
+  ai_task_code_review: Does not plan AI use
+  ai_task_codebase_learning: Does not plan AI use
+  ai_task_data_generation_analytics: Does not plan AI use
+  ai_task_debugging_fixing: Does not plan AI use
+  ai_task_deployment_monitoring: Does not plan AI use
+  ai_task_documentation: Does not plan AI use
+  ai_task_learning_concepts: Does not plan AI use
+  ai_task_project_planning: Does not plan AI use
+  ai_task_refactoring: Does not plan AI use
+  ai_task_search_answers: Plans partial AI use
+  ai_task_testing: Does not plan AI use
+  code_modularity_preference: Highly modular small components
+  code_type_system_orientation: Strong static typing preference
+  coding_agent_failure_tolerance: Does not use agents
+  coding_agent_usage_frequency: No plans
+  coding_agent_workflow_impact: No clear change
+  coding_ai_learning_source: Not learning AI tooling
+  coding_ai_usage_frequency: Never used
+  dev_contribution_context: Employee work
+  dev_ic_manager_orientation: People manager
+  dev_professional_status: Professional developer
+  stackoverflow_participation_style: Comments / discusses
+  stackoverflow_usage_pattern: Weekly reference

@@ -1,0 +1,26 @@
+artifactName: user_feedback.json
+instructions: |
+  Reflect honestly as the persona after the tutoring conversation. Judge the
+  experience by whether you actually got closer to understanding the thing you
+  came for, based only on what the tutor said in the chat.
+fields:
+  - key: goalProgressSatisfaction
+    prompt: Did you make real progress toward what you wanted to understand?
+    kind: enum
+    choices: [yes, partially, no]
+  - key: explanationLevelFit
+    prompt: Were the tutor's explanations pitched at the right level for you?
+    kind: enum
+    choices: [too_simple, right_level, too_advanced, inconsistent]
+  - key: overallExperienceRating
+    prompt: Overall, how would you rate the experience from 1 to 10?
+    kind: integer
+    minimum: 1
+    maximum: 10
+  - key: reason
+    prompt: Briefly explain the rating in your own voice.
+  - key: checkedMyUnderstanding
+    prompt: Did the tutor check whether you were following along?
+    kind: boolean
+  - key: comprehensionNotes
+    prompt: What did the tutor do that helped or hurt your understanding the most?

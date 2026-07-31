@@ -1,0 +1,210 @@
+persona_id: 0089
+version: '1.0'
+source: prism
+display_name: Clara Müller
+dimensions:
+  age_bracket: 25-34
+  region: Western Europe
+  gender_identity: Man
+  english_proficiency: Fluent (C1-C2)
+  register: Formal / standard
+  domain_characteristics: Student
+  highest_education: Master's
+  academic_field: Interdisciplinary
+  seniority: Student / intern
+  years_experience: 0-2
+  life_stage: Student
+  cultural_background: Individualist (Western)
+  tech_savviness: Comfortable
+  values_priority: Autonomy
+  political_lean: Left
+  religiosity: Secular
+  emotional_state: Calm
+  intent: Learn / explain
+  query_complexity: Open-ended creative
+  expertise_gap: Novice asking expert
+  tone_expected: Detailed
+  trust_level: Verifying
+  safety_sensitivity: Sensitive personal
+  prior_context: Returning user
+  device_context: Desktop, focused
+  fam_machine_learning: Familiar
+  fam_deep_learning: Aware
+  fam_sociology: Familiar
+  fam_political_science: Familiar
+  fam_international_relations: Aware
+  fam_philosophy: Familiar
+  fam_ethics: Proficient
+  fam_history: Aware
+  fam_natural_language_processing: Familiar
+  fam_human_computer_interaction: Familiar
+  fam_ux_research: Aware
+  fam_religious_studies: Aware
+  skill_empathy: Intermediate
+  skill_fact_checking: Advanced
+  tool_chatgpt: Occasional
+  topic_politics: Interested
+  topic_technology: Interested
+  topic_philosophy: Interested
+  topic_religion: Indifferent
+  topic_activism: Passionate
+  topic_environment: Interested
+  topic_sustainability: Interested
+  lang_english: Fluent
+  att_ai: Positive
+  att_data_privacy: Positive
+  att_globalization: Skeptical
+  att_free_markets: Skeptical
+  att_government_regulation: Positive
+  att_climate_action: Positive
+  att_renewable_energy: Positive
+  att_organized_religion: Skeptical
+  att_traditional_gender_roles: Skeptical
+  att_labor_unions: Positive
+  att_higher_education: Positive
+  att_authority: Skeptical
+  att_new_technology: Positive
+  att_surveillance: Skeptical
+  att_universal_basic_income: Positive
+  att_consumerism: Skeptical
+  att_fast_fashion: Skeptical
+  att_free_speech: Positive
+  att_privacy_vs_security: Positive
+  att_globalized_supply_chains: Skeptical
+  ind_technology: Some exposure
+  ind_education: Some exposure
+  cult_spain: Lived there
+  cuis_spanish: Like
+  cuis_spanish_tapas: Like
+  big5_intellect: High
+  big5_liberalism: Very high
+  big5_morality: High
+  big5_altruism: High
+  big5_sympathy: High
+  cog_verbosity: Balanced
+  cog_formality: Neutral
+  cog_directness: Direct
+  cog_humor: Serious
+  cog_detail_orientation: Moderate
+  cog_abstraction: Abstract
+  cog_optimism: Moderate
+  cog_patience: High
+  cog_curiosity: High
+  cog_skepticism: Moderate
+  cog_open_mindedness: Very high
+  cog_assertiveness: High
+  cog_emotional_expressiveness: Moderate
+  cog_conflict_approach: Collaborative
+  cog_feedback_receptiveness: High
+  cog_ambiguity_tolerance: High
+  cog_perfectionism: Moderate
+  cog_attention_span: Long
+  cog_learning_pace: Fast
+  cog_question_asking: Sometimes
+  cog_decision_speed: Deliberate
+  cog_confidence_calibration: Well-calibrated
+  cog_reading_vs_watching: Prefers reading
+  cog_visual_vs_verbal: Verbal
+  cog_big_picture_vs_detail: Big-picture
+  cog_risk_framing: Balanced
+  cog_empathy_expression: High
+  cog_storytelling: Low
+  cog_precision_of_language: Precise
+  cog_use_of_jargon: Light
+  cog_emoji_use: Never
+  cog_politeness: Polite
+  acad_economics: Interested
+  acad_sociology: Interested
+  acad_civics: Interested
+  acad_philosophy: Interested
+  acad_environmental_science: Interested
+  acad_political_theory: Interested
+  trait_curiosity: Strong
+  trait_creativity: Strong
+  trait_love_of_learning: Strong
+  trait_open_mindedness: Signature
+  trait_perspective: Strong
+  trait_honesty: Strong
+  trait_kindness: Strong
+  trait_social_intelligence: Strong
+  trait_fairness: Signature
+  trait_prudence: Strong
+  trait_hope_optimism: Strong
+  trait_spirituality: Absent
+  trait_ambition: Strong
+  trait_empathy: Signature
+  trait_discipline: Strong
+  val_wealth: Minor
+  val_personal_freedom: Core value
+  val_creativity_self_expression: Important
+  val_spirituality_faith: Irrelevant
+  val_knowledge_truth: Important
+  val_social_status: Minor
+  val_independence: Core value
+  val_justice_fairness: Core value
+  val_sustainability: Important
+  val_helping_others: Important
+  val_integrity_honesty: Important
+  val_equality: Core value
+  val_privacy: Core value
+  pref_speed_vs_accuracy: Accuracy first
+  pref_quality_vs_quantity: Quality first
+  pref_early_vs_late: Early adopter
+  pref_detail_brief_vs_full: Every detail
+  pref_stability_vs_change: Craves change
+  demo_marital_status: Single
+  demo_children_count: None
+  demo_employment_status: Student
+  demo_generation: Millennial
+  demo_religion_affiliation: None
+  demo_ethnicity_broad: White / European
+  demo_home_language: Same as primary
+  demo_political_engagement: Occasional voter
+  demo_parental_status: Not a parent
+  demo_relationship_length: Not in one
+  lifex_career_path_shape: Just starting
+  lifex_education_journey: Advanced degrees
+  lifex_relationship_history: Limited
+  lifex_faith_journey: Always secular
+  lifex_languages_lifetime: Two
+  bfi2_domain_agreeableness: High
+  bfi2_domain_open_mindedness: Very high
+  bfi2_facet_compassion: High
+  bfi2_facet_respectfulness: High
+  bfi2_facet_intellectual_curiosity: High
+  schwartz_value_self_direction: Very high
+  schwartz_value_power: Very low
+  schwartz_value_conformity: Very low
+  schwartz_value_benevolence: High
+  schwartz_value_universalism: High
+  sdt_need_autonomy: Very high
+  sdt_need_competence: High
+  mft_care_harm: High
+  mft_fairness_cheating: High
+  mft_liberty_oppression: High
+  need_for_cognition: High
+  dospert_ethical_risk_tolerance: High
+  dospert_social_risk_tolerance: High
+  ai_task_learning_concepts: Currently partially AI-assisted
+  ai_task_search_answers: Currently partially AI-assisted
+  coding_agent_security_expectation: Expects basic secret / privacy checks
+  coding_agent_usage_frequency: Weekly
+  coding_ai_complexity_comfort: Only simple / boilerplate tasks
+  coding_ai_learning_source: Self-experimentation
+  coding_ai_output_trust: Trusts after verification
+  coding_ai_sentiment: Neutral / indifferent
+  coding_ai_usage_frequency: Monthly or infrequent
+  coding_tool_ai_capability_importance: High
+  coding_tool_alternative_sensitivity: Moderate concern
+  coding_tool_ethics_blocker: Hard blocker
+  coding_tool_obsolescence_blocker: Major concern
+  coding_tool_reliability_latency_importance: High
+  coding_tool_security_privacy_blocker: Hard blocker
+  dev_ic_manager_orientation: Student / learner
+  future_developer_skill_belief: Ethical judgment
+  human_help_boundary_for_ai_coding: When trust is low
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: prism-824e4591f411
+  origin_source_row_index: 2211109

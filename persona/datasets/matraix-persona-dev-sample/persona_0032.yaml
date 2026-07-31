@@ -1,0 +1,70 @@
+persona_id: '0032'
+version: '1.0'
+source: amazon
+display_name: Maya Patel
+dimensions:
+  emotional_state: Calm
+  query_complexity: Simple factual
+  att_new_technology: Positive
+  att_online_reviews: Positive
+  filmg_action: Like
+  filmg_superhero: Like
+  filmg_biopic: Like
+  filmg_comedy_drama: Like
+  big5_imagination: High
+  big5_artistic_interest: High
+  big5_emotionality: Average
+  big5_adventurousness: Average
+  big5_intellect: Average
+  big5_self_efficacy: High
+  big5_orderliness: Average
+  big5_dutifulness: Average
+  big5_achievement_striving: High
+  big5_self_discipline: Average
+  big5_cautiousness: Average
+  big5_friendliness: Average
+  big5_gregariousness: Average
+  big5_assertiveness: Average
+  big5_activity_level: High
+  big5_excitement_seeking: Average
+  big5_cheerfulness: Average
+  big5_trust: Average
+  big5_anxiety: Low
+  big5_anger: Low
+  big5_depression: Low
+  big5_self_consciousness: Low
+  big5_immoderation: Low
+  big5_vulnerability: Low
+  lstyle_frugality: Balanced
+  hob_cosplay: Active
+  acad_visual_art: Interested
+  trait_perspective: Moderate
+  trait_social_intelligence: Slight
+  trait_leadership: Slight
+  demo_children_count: 1 child
+  demo_parental_status: Parent of minors
+  lifex_parenting_journey: Young children
+  bfi2_domain_extraversion: Average
+  bfi2_domain_agreeableness: Average
+  bfi2_domain_conscientiousness: High
+  bfi2_domain_negative_emotionality: Low
+  bfi2_domain_open_mindedness: High
+  bfi2_facet_sociability: Average
+  bfi2_facet_assertiveness: Average
+  bfi2_facet_energy_level: High
+  bfi2_facet_respectfulness: Average
+  bfi2_facet_trust: Average
+  bfi2_facet_organization: Average
+  bfi2_facet_productiveness: High
+  bfi2_facet_responsibility: High
+  bfi2_facet_anxiety: Low
+  bfi2_facet_depression: Low
+  bfi2_facet_emotional_volatility: Low
+  bfi2_facet_intellectual_curiosity: High
+  bfi2_facet_aesthetic_sensitivity: High
+  bfi2_facet_creative_imagination: High
+provenance:
+  parent_pool: persona/datasets/matraix-persona-1m
+  hf_repo: MatrAIx2026/MatrAIx_Persona_1M_Public_Release
+  origin_persona_id: amazon-19c840f933dc
+  origin_source_row_index: 2005602

@@ -1,0 +1,122 @@
+{
+ "protocol_id": "SLEEP-WELL-2026-007",
+ "study_title": "Digital Cognitive Behavioral Therapy for Chronic Insomnia (SLEEP-WELL)",
+ "design_summary": "9-week, single-arm study of a self-guided digital CBT-I program. Participants complete a daily sleep diary in the study app and weekly program modules.",
+ "criteria": [
+  {
+   "id": "INC1",
+   "kind": "inclusion",
+   "text": "Age 18 to 70 years old, inclusive.",
+   "keywords": [
+    "\\bage\\b",
+    "how old",
+    "\\byears?\\s+old\\b",
+    "date of birth"
+   ],
+   "probe": "First, how old are you?"
+  },
+  {
+   "id": "INC2",
+   "kind": "inclusion",
+   "text": "Trouble falling asleep or staying asleep on 3 or more nights per week.",
+   "keywords": [
+    "nights? (a|per) week",
+    "falling asleep",
+    "staying asleep",
+    "how often.{0,30}sleep",
+    "trouble sleep"
+   ],
+   "probe": "On how many nights per week do you have trouble falling asleep or staying asleep?",
+   "unknown_rule": "If the participant cannot give a usable estimate of affected nights per week, INC2 is unknown."
+  },
+  {
+   "id": "INC3",
+   "kind": "inclusion",
+   "text": "Sleep problems have been present for at least 3 months.",
+   "keywords": [
+    "how long",
+    "3 months|three months",
+    "when did.{0,25}(start|begin)",
+    "\\bmonths\\b",
+    "\\byears\\b"
+   ],
+   "probe": "How long have these sleep problems been going on?"
+  },
+  {
+   "id": "INC4",
+   "kind": "inclusion",
+   "text": "Owns a smartphone and is willing to complete a daily sleep diary in the study app.",
+   "keywords": [
+    "smart\\s*phone",
+    "\\bphone\\b",
+    "\\bapp\\b",
+    "\\bdiary\\b",
+    "daily.{0,20}(diary|log|entry)"
+   ],
+   "probe": "Do you own a smartphone, and would you be willing to fill in a short daily sleep diary in our app?"
+  },
+  {
+   "id": "INC5",
+   "kind": "inclusion",
+   "text": "Willing to participate for the full 9 weeks.",
+   "keywords": [
+    "9[\\s-]*week",
+    "nine[\\s-]*week",
+    "\\bcommit",
+    "full (program|study|duration)"
+   ],
+   "probe": "The program runs a full 9 weeks - is that a commitment you can make?"
+  },
+  {
+   "id": "EXC1",
+   "kind": "exclusion",
+   "text": "Diagnosed sleep apnea that is NOT currently being treated. (Sleep apnea treated with CPAP or another prescribed therapy is acceptable.)",
+   "keywords": [
+    "sleep apnea",
+    "\\bcpap\\b",
+    "apnea.{0,30}(treat|therapy)"
+   ],
+   "probe": "Have you been diagnosed with sleep apnea, and if so, are you currently treating it, for example with CPAP?"
+  },
+  {
+   "id": "EXC2",
+   "kind": "exclusion",
+   "text": "Works overnight shifts or rotating shifts that include nights.",
+   "keywords": [
+    "\\bshifts?\\b",
+    "overnight",
+    "rotating",
+    "night shift",
+    "work schedule",
+    "work.{0,20}nights"
+   ],
+   "probe": "Do you work overnight or rotating shifts?"
+  },
+  {
+   "id": "EXC3",
+   "kind": "exclusion",
+   "text": "Started a prescription sleep medication, or changed the dose of one, within the past 4 weeks.",
+   "keywords": [
+    "sleep(ing)? (medication|pill|aid)",
+    "zolpidem|ambien|trazodone|eszopiclone|lunesta",
+    "dose.{0,20}chang",
+    "started.{0,25}(medication|pill)",
+    "changed.{0,20}dose"
+   ],
+   "probe": "Have you started a prescription sleep medication, or changed the dose of one, in the past four weeks?"
+  },
+  {
+   "id": "EXC4",
+   "kind": "exclusion",
+   "text": "Currently enrolled in another interventional clinical trial or structured sleep program.",
+   "keywords": [
+    "(another|other|different)\\s+(clinical\\s+|research\\s+)?(trial|study|studies)",
+    "\\benrolled\\b",
+    "research (study|program)",
+    "sleep program",
+    "participating in (a|any)"
+   ],
+   "probe": "Are you currently enrolled in another clinical trial or a structured sleep program?"
+  }
+ ]
+}
