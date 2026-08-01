@@ -41,7 +41,7 @@ flowchart TB
   W_REF -.-> folder
 ```
 
-Web verifiers use **two layers**: shared core ([shared-core-metrics.md](../../../docs/task-spec/shared-core-metrics.md))
+Web verifiers use **two layers**: shared core ([shared-core-metrics.md](../../../application/task-spec/docs/shared-core-metrics.md))
 plus web-specific contexts (`decision`, `decision_process`, `web_interaction`, …).
 **No** `input/output_schema.md` — put the submission JSON schema in `instruction.md`.
 
@@ -92,7 +92,7 @@ Web tasks should still reuse the same core benchmark contexts as `os-app/`:
 
 So the two folders are aligned, not identical.
 
-Use [`shared-core-metrics.md`](../../../docs/task-spec/shared-core-metrics.md) as the source of truth for the shared core context names,
+Use [`shared-core-metrics.md`](../../../application/task-spec/docs/shared-core-metrics.md) as the source of truth for the shared core context names,
 facet keys, and reuse rules. See
 `../shared_core_metric_contract.example.json` for the machine-readable
 companion.
