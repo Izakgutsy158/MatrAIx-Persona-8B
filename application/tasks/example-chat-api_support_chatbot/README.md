@@ -14,7 +14,7 @@ For the MCP variant, see [`example-chat-mcp_support_chatbot`](../example-chat-mc
 uv run harbor run -p application/tasks/example-chat-api_support_chatbot -a oracle
 ```
 
-**Full run** — Playground UI or terminal auto mode: [Application Quickstart](../../../docs/guides/quickstart.md).
+**Full run** — Playground UI or terminal auto mode: [Application Quickstart](../../../docs/quickstart.md).
 
 ## Layout
 

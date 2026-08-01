@@ -28,7 +28,7 @@ export MATRIX_SURVEY_TASK_PATH=application/tasks/example-survey_product-feedback
 uv run harbor run -c configs/jobs/application-task-job-recipe/example-survey-product-feedback-auto-n1.yaml
 ```
 
-See [Application Quickstart](../../../docs/guides/quickstart.md) for the UI path and full env vars.
+See [Application Quickstart](../../../docs/quickstart.md) for the UI path and full env vars.
 
 ## What this exercises
 

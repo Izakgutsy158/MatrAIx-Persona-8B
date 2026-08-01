@@ -4,6 +4,9 @@ set -uo pipefail
 # shellcheck disable=SC1091
 source "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/verifier_env.sh"
 
+# Primary hand-in for host_verifier JSON recovery (parsed from this file):
+# OUTPUT_DIR / "book_interest.json"
+
 if ! command -v uvx >/dev/null 2>&1; then
   curl -LsSf https://astral.sh/uv/0.9.7/install.sh | sh
   source "$HOME/.local/bin/env"
