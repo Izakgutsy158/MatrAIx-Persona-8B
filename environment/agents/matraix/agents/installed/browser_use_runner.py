@@ -96,6 +96,38 @@ def _copy_screenshot(
     return f"images/{dest.name}"
 
 
+def _atomic_write_json(path: Path, payload: dict[str, Any]) -> None:
+    """Atomically rewrite JSON so the host can poll a growing trajectory."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    tmp.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+    tmp.replace(path)
+
+
+def flush_browser_use_trajectory(
+    history: Any,
+    *,
+    instruction: str,
+    model_name: str,
+    trajectory_path: Path,
+    agent_version: str = "unknown",
+    session_id: str | None = None,
+    promoted_outputs: list[str] | None = None,
+) -> dict[str, Any]:
+    """Convert history → ATIF and persist under the bind-mounted agent logs dir."""
+    trajectory = history_to_atif(
+        history,
+        instruction=instruction,
+        model_name=model_name,
+        trajectory_path=trajectory_path,
+        agent_version=agent_version,
+        session_id=session_id,
+        promoted_outputs=promoted_outputs,
+    )
+    _atomic_write_json(trajectory_path, trajectory)
+    return trajectory
+
+
 def _action_name_and_args(action: Any) -> tuple[str, dict[str, Any]]:
     action_dump = action.model_dump(exclude_none=True, mode="json")
     if len(action_dump) == 1:
@@ -315,22 +347,50 @@ async def _run(args: argparse.Namespace) -> int:
     if extend:
         agent_kwargs["extend_system_message"] = extend
 
-    agent = Agent(**agent_kwargs)
-    history = await agent.run(max_steps=max_steps)
-    promoted_outputs = promote_browser_use_outputs(agent)
-
     trajectory_path = Path(args.trajectory_path)
     trajectory_path.parent.mkdir(parents=True, exist_ok=True)
-    trajectory = history_to_atif(
+    session_id = str(uuid4())
+
+    async def _on_step_end(agent_obj: Any) -> None:
+        """Flush screenshots + trajectory after each browser-use step."""
+        try:
+            flush_browser_use_trajectory(
+                getattr(agent_obj, "history", None),
+                instruction=args.instruction,
+                model_name=args.model,
+                trajectory_path=trajectory_path,
+                agent_version=agent_version,
+                session_id=session_id,
+            )
+        except Exception as exc:  # noqa: BLE001 — live flush must not kill the run
+            print(f"[browser-use] live trajectory flush failed: {exc}", flush=True)
+
+    agent = Agent(**agent_kwargs)
+    try:
+        history = await agent.run(max_steps=max_steps, on_step_end=_on_step_end)
+    except TypeError:
+        # Older browser-use: flush via register_new_step_callback instead.
+        agent_ref: dict[str, Any] = {}
+
+        async def _legacy_new_step(_state: Any, _output: Any, _n: int) -> None:
+            current = agent_ref.get("agent")
+            if current is not None:
+                await _on_step_end(current)
+
+        agent_kwargs["register_new_step_callback"] = _legacy_new_step
+        agent = Agent(**agent_kwargs)
+        agent_ref["agent"] = agent
+        history = await agent.run(max_steps=max_steps)
+
+    promoted_outputs = promote_browser_use_outputs(agent)
+    flush_browser_use_trajectory(
         history,
         instruction=args.instruction,
         model_name=args.model,
         trajectory_path=trajectory_path,
         agent_version=agent_version,
+        session_id=session_id,
         promoted_outputs=promoted_outputs,
-    )
-    trajectory_path.write_text(
-        json.dumps(trajectory, indent=2) + "\n", encoding="utf-8"
     )
 
     if history and not history.is_successful():

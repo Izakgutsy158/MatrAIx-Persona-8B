@@ -278,10 +278,136 @@ def _flush_partial_trajectory(
         },
         "steps": steps,
     }
-    trajectory_path.write_text(
-        json.dumps(payload, indent=2) + "\n",
-        encoding="utf-8",
-    )
+    trajectory_path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = trajectory_path.with_suffix(trajectory_path.suffix + ".tmp")
+    tmp.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+    tmp.replace(trajectory_path)
+
+
+def _install_cocoa_live_flush(
+    agent: Any,
+    *,
+    instruction: str,
+    model_name: str,
+    trajectory_path: Path,
+    agent_version: str,
+    session_id: str,
+) -> None:
+    """Hook Cocoa sandbox I/O so screenshots + ATIF land mid-run on the host mount."""
+    executor = getattr(agent, "executor", None)
+    if executor is None:
+        return
+    client = getattr(executor, "sandbox_client", None)
+    controller = getattr(executor, "controller", None)
+    if client is None or controller is None:
+        return
+
+    screenshots_by_call: dict[str, str] = {}
+    synthetic_n = 0
+
+    def _flush() -> None:
+        try:
+            partial = {
+                "conversation": controller.get_history(),
+                "execution_trace": client.get_history(),
+                "visualization_data": {
+                    "iterations": [
+                        {
+                            "actions": [
+                                {
+                                    "action": {"tool_call_id": call_id},
+                                    "screenshot": shot,
+                                }
+                                for call_id, shot in screenshots_by_call.items()
+                            ]
+                        }
+                    ]
+                },
+                "status": "running",
+            }
+            cocoa_to_atif(
+                partial,
+                instruction=instruction,
+                model_name=model_name,
+                trajectory_path=trajectory_path,
+                agent_version=agent_version,
+                session_id=session_id,
+            )
+        except Exception as exc:  # noqa: BLE001
+            print(f"[cocoa] live trajectory flush failed: {exc}", flush=True)
+
+    def _remember(call_id: str | None, screenshot_b64: str | None) -> None:
+        nonlocal synthetic_n
+        if not isinstance(screenshot_b64, str) or not screenshot_b64:
+            _flush()
+            return
+        key = call_id if isinstance(call_id, str) and call_id else None
+        if key is None:
+            synthetic_n += 1
+            key = f"live_shot_{synthetic_n}"
+        screenshots_by_call[key] = screenshot_b64
+        _flush()
+
+    def _last_tool_call_id() -> str | None:
+        try:
+            hist = client.get_history()
+        except Exception:
+            return None
+        if not isinstance(hist, list) or not hist:
+            return None
+        last = hist[-1]
+        if not isinstance(last, dict):
+            return None
+        action = last.get("action")
+        if isinstance(action, dict):
+            call_id = action.get("tool_call_id")
+            return call_id if isinstance(call_id, str) else None
+        return None
+
+    orig_take = getattr(client, "take_screenshot", None)
+    if callable(orig_take):
+
+        def take_screenshot(*args: Any, **kwargs: Any) -> Any:
+            result = orig_take(*args, **kwargs)
+            b64 = result[0] if isinstance(result, tuple) and result else None
+            _remember(_last_tool_call_id(), b64 if isinstance(b64, str) else None)
+            return result
+
+        client.take_screenshot = take_screenshot
+
+    orig_feedback = getattr(client, "get_feedback", None)
+    if callable(orig_feedback):
+
+        def get_feedback(action: Any, *args: Any, **kwargs: Any) -> Any:
+            feedback = orig_feedback(action, *args, **kwargs)
+            call_id = None
+            action_type = None
+            if isinstance(action, dict):
+                raw_id = action.get("tool_call_id")
+                call_id = raw_id if isinstance(raw_id, str) else None
+                action_type = action.get("action_type")
+            if (
+                isinstance(feedback, dict)
+                and action_type in {"browser_screenshot", "image_read"}
+                and isinstance(feedback.get("image_base64"), str)
+            ):
+                _remember(call_id, feedback.get("image_base64"))
+            else:
+                # Conversation / execution_trace may have advanced without a new image.
+                _flush()
+            return feedback
+
+        client.get_feedback = get_feedback
+
+    orig_call = getattr(controller, "call", None)
+    if callable(orig_call):
+
+        def call(*args: Any, **kwargs: Any) -> Any:
+            result = orig_call(*args, **kwargs)
+            _flush()
+            return result
+
+        controller.call = call
 
 
 def cocoa_to_atif(
@@ -492,9 +618,22 @@ def main() -> int:
         "task_name": "harbor",
     }
 
+    trajectory_path = Path(args.trajectory_path)
+    trajectory_path.parent.mkdir(parents=True, exist_ok=True)
+    agent_version = os.environ.get("COCOA_VERSION", "unknown")
+    session_id = str(uuid4())
+
     result: dict
     try:
         agent.setup_environment(task)
+        _install_cocoa_live_flush(
+            agent,
+            instruction=args.instruction,
+            model_name=args.model,
+            trajectory_path=trajectory_path,
+            agent_version=agent_version,
+            session_id=session_id,
+        )
         result = agent.run_task(task)
     finally:
         try:
@@ -502,19 +641,17 @@ def main() -> int:
         except Exception:
             pass
 
-    trajectory_path = Path(args.trajectory_path)
-    trajectory_path.parent.mkdir(parents=True, exist_ok=True)
-    agent_version = os.environ.get("COCOA_VERSION", "unknown")
     trajectory = cocoa_to_atif(
         result,
         instruction=args.instruction,
         model_name=args.model,
         trajectory_path=trajectory_path,
         agent_version=agent_version,
+        session_id=session_id,
     )
-    trajectory_path.write_text(
-        json.dumps(trajectory, indent=2) + "\n", encoding="utf-8"
-    )
+    tmp = trajectory_path.with_suffix(trajectory_path.suffix + ".tmp")
+    tmp.write_text(json.dumps(trajectory, indent=2) + "\n", encoding="utf-8")
+    tmp.replace(trajectory_path)
 
     if result.get("status") == "error":
         return 1

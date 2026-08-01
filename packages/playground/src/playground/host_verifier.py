@@ -12,9 +12,10 @@ scored ``0`` despite a recoverable host-side submission.
 
 Artifact source paths and timeouts come from the task's ``task.toml``; the
 host path under ``trial/artifacts/`` follows Harbor's
-``source_relative_path`` mapping. When the primary JSON is missing under
-``artifacts/app/output/``, this module materializes it from agent logs before
-running ``tests/test.sh``.
+``source_relative_path`` mapping. Before running ``tests/test.sh``, this module
+mirrors ``trajectory.json`` / ``final_answer.txt`` into
+``artifacts/app/output/`` (task-agnostic) and, when ``test.sh`` declares a
+primary JSON hand-in, recovers that object from agent logs too.
 """
 
 from __future__ import annotations
@@ -38,7 +39,7 @@ _DEFAULT_TIMEOUT_SEC = 120.0
 _OUTPUT_ARTIFACT_RE = re.compile(
     r"""OUTPUT_DIR\s*/\s*["']([^"']+\.json)["']"""
 )
-_SKIP_OUTPUT_ARTIFACTS = frozenset({"user_feedback.json"})
+_SKIP_OUTPUT_ARTIFACTS = frozenset({"user_feedback.json", "trajectory.json"})
 
 
 def _lock_for(key: str) -> Lock:
@@ -261,21 +262,50 @@ def _extract_submission_from_agent_logs(trial_dir: Path) -> dict | None:
     return None
 
 
+def _mirror_agent_log_file(
+    *, agent_dir: Path, output_dir: Path, name: str
+) -> bool:
+    """Copy ``agent/<name>`` into downloaded ``/app/output`` when missing."""
+    src = agent_dir / name
+    dst = output_dir / name
+    if not src.is_file() or dst.is_file():
+        return False
+    try:
+        output_dir.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(src, dst)
+    except OSError:
+        return False
+    return True
+
+
 def _materialize_output_from_agent_logs(
     *, trial_dir: Path, task_dir: Path, sources: list[str]
 ) -> bool:
-    """Write missing primary JSON into downloaded ``/app/output`` from agent logs.
+    """Materialize agent logs into downloaded ``/app/output``.
 
-    Returns ``True`` when at least one new submission file was written.
+    Always mirrors ``trajectory.json`` / ``final_answer.txt`` when present so
+    task-local ``tests/test.sh`` can read CUA signals on the host (additive,
+    task-agnostic). Additionally recovers a primary JSON hand-in into filenames
+    declared by ``test.sh``.
+
+    Returns ``True`` only when a **primary JSON** artifact was newly recovered.
+    Signal mirroring alone does not count — otherwise every ``reward=0`` trial
+    with a trajectory would be re-scored (and can flip to a false pass when the
+    host lacks persona/probe context).
     """
     output_sources = [source for source in sources if source.rstrip("/") == "/app/output"]
     if not output_sources:
         return False
-    artifact_names = _expected_output_artifacts(task_dir)
-    if not artifact_names:
-        return False
 
     output_dir = _downloaded_artifact_dir(trial_dir, "/app/output")
+    agent_dir = trial_dir / "agent"
+
+    # Task-agnostic CUA signals — available to every task's host verifier.
+    for name in ("trajectory.json", "final_answer.txt"):
+        _mirror_agent_log_file(agent_dir=agent_dir, output_dir=output_dir, name=name)
+
+    # Named JSON hand-in recovery (declared by test.sh via OUTPUT_DIR/"….json").
+    artifact_names = _expected_output_artifacts(task_dir)
     missing = [name for name in artifact_names if not (output_dir / name).is_file()]
     if not missing:
         return False

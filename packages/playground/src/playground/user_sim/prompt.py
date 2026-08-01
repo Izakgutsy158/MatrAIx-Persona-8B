@@ -76,7 +76,7 @@ def assemble_system_prompt(
 ) -> str:
     task_bundle = task_bundle or TaskContentBundle()
     blocks = [
-        "## Persona\n{}".format(render_persona_block(persona, persona_yaml_path=persona_yaml_path)),
+        render_persona_block(persona, persona_yaml_path=persona_yaml_path),
         current_date_block(),
         load_sim_guidelines(),
         _section("Task instruction", task_bundle.instruction_markdown),
@@ -93,7 +93,7 @@ def assemble_report_system_prompt(
 ) -> str:
     task_bundle = task_bundle or TaskContentBundle()
     blocks = [
-        "## Persona\n{}".format(render_persona_block(persona, persona_yaml_path=persona_yaml_path)),
+        render_persona_block(persona, persona_yaml_path=persona_yaml_path),
         current_date_block(),
         _section("Task instruction", task_bundle.instruction_markdown),
         _section("Task context", task_bundle.context_markdown),
@@ -109,9 +109,7 @@ def prompt_bundle(
     task_prompt: str = "",
 ) -> dict[str, str]:
     task_bundle = task_bundle or TaskContentBundle()
-    persona_block = "## Persona\n{}".format(
-        render_persona_block(persona, persona_yaml_path=persona_yaml_path)
-    )
+    persona_block = render_persona_block(persona, persona_yaml_path=persona_yaml_path)
     system = assemble_system_prompt(
         persona,
         persona_yaml_path=persona_yaml_path,

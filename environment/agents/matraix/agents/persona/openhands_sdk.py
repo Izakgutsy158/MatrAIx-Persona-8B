@@ -9,7 +9,7 @@ from harbor.environments.base import BaseEnvironment
 from harbor.models.agent.context import AgentContext
 from harbor.models.agent.name import AgentName
 
-from matraix.agents.persona.cua_submission import materialize_ecommerce_interaction_file
+from matraix.agents.persona.cua_submission import materialize_final_answer_file
 from matraix.agents.persona.mixin import PersonaMixin
 
 
@@ -44,7 +44,8 @@ class PersonaOpenHandsSDK(PersonaMixin, OpenHandsSDK):
     ) -> None:
         await self._prepare_persona_trial(environment)
         await super().run(instruction, environment, context)
-        await materialize_ecommerce_interaction_file(
+        # Task-agnostic hand-in; schema recovery belongs in the task verifier.
+        await materialize_final_answer_file(
             environment,
             self.logs_dir,
             logger=self.logger,

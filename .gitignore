@@ -269,14 +269,19 @@ configs/jobs/application-task-job-recipe/*.meta.json
 configs/jobs/application-task-job-recipe/*.launch.json
 !configs/jobs/application-task-job-recipe/appSim-example-survey-product-feedback-random-n4.yaml
 !configs/jobs/application-task-job-recipe/appSim-example-survey-product-feedback-random-n4.meta.json
-configs/jobs/persona-task-grounding-job-recipe/*.yaml
-configs/jobs/persona-task-grounding-job-recipe/*.meta.json
-configs/jobs/persona-task-grounding-job-recipe/*.launch.json
-!configs/jobs/persona-task-grounding-job-recipe/playground-example-survey-product-feedback-economic-motivation-pg2.yaml
-!configs/jobs/persona-task-grounding-job-recipe/playground-example-survey-product-feedback-economic-motivation-pg2.meta.json
+configs/jobs/persona-job-recipe/*.yaml
+configs/jobs/persona-job-recipe/*.meta.json
+configs/jobs/persona-job-recipe/*.launch.json
 
 # Local Harbor job outputs (recipes live under configs/jobs/)
 /jobs/*
+# Grounding eval handoff: keep model job trees, drop screen recordings (>100MB).
+!/jobs/gpt55/
+!/jobs/gpt55/**
+!/jobs/opus/
+!/jobs/opus/**
+/jobs/**/*.mp4
+/jobs/**/recording.mp4
 
 # Trial verifier output accidentally written under task folders during local runs
 application/tasks/*/verifier/

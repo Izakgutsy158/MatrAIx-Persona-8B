@@ -20,7 +20,18 @@ if TYPE_CHECKING:
 
 
 class PersonaMixin:
-    """Load persona YAML and write trial-level persona_meta.json."""
+    """Load persona YAML and write trial-level persona_meta.json.
+
+    Injection contract (see docs/application.md § Persona Injection):
+
+    - Persona is **identity** (who the agent is acting as).
+    - Task ``instruction.md`` is **task** (what they are trying to do).
+    - Prefer a dedicated system / identity channel when the backend supports it
+      (``_render_persona_system``). Only fall back to
+      ``_render_persona_instruction`` when the backend has a single user-text
+      channel — and even then identity must lead, never nest under a harness
+      "You are <tool-agent>" + "Task instructions:" wrapper.
+    """
 
     _persona: Persona
     _persona_agent_name: str
@@ -47,6 +58,7 @@ class PersonaMixin:
         )
 
     def _render_persona_system(self) -> str:
+        """Persona identity block for system / identity channels."""
         template = resolve_persona_template(
             self._persona,
             self._persona_template_path,
@@ -55,6 +67,11 @@ class PersonaMixin:
         return render_persona_template(template, self._persona)
 
     def _render_persona_instruction(self, instruction: str) -> str:
+        """Single-channel fallback: identity first, then the task.
+
+        Prefer ``_render_persona_system`` + a raw task instruction when the
+        backend can keep them separate.
+        """
         template = resolve_persona_template(
             self._persona,
             self._persona_template_path,

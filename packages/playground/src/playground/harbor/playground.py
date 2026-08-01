@@ -133,12 +133,15 @@ def _default_harbor_command() -> Sequence[str]:
     if binary:
         return (binary, "run")
 
-    # Persona agents (persona-user-sim, persona-json-survey, …) live in this
-    # repo's Harbor fork, not in the globally installed harbor CLI.
+    # Persona agents and optional extras live in this project environment. Use
+    # `uv run` before falling back to a globally installed Harbor CLI so local
+    # Playground jobs see the repo's PYTHONPATH and synced extras.
     try:
         venv_harbor = _repo_root() / ".venv" / "bin" / "harbor"
         if venv_harbor.is_file():
             return (str(venv_harbor), "run")
+        if (_repo_root() / "pyproject.toml").is_file():
+            return ("uv", "run", "python", "-m", "harbor.cli.main", "run")
     except ValueError:
         pass
 
@@ -295,13 +298,13 @@ def build_chatbot_simulation_prompt(
 
 {sut_description}
 
-Based on your assigned persona, silently decide what you realistically want from
-this system and which constraints or preferences matter to you. Start the
-conversation naturally. Do not reveal everything at once. Let the system ask
-follow-up questions, answer in character, and give feedback when a response does
-not fit. Keep messages short and conversational (1-3 sentences), and avoid
-analytical monologues or explaining your hidden reasoning. Continue until you
-can judge whether the system satisfied your need.{turn_limit}
+Silently decide what you realistically want from this system and which
+constraints or preferences matter to you. Start the conversation naturally.
+Do not reveal everything at once. Let the system ask follow-up questions,
+answer as yourself, and give feedback when a response does not fit. Keep
+messages short and conversational (1-3 sentences), and avoid analytical
+monologues or explaining your hidden reasoning. Continue until you can judge
+whether the system satisfied your need.{turn_limit}
 
 """.format(
         system_label=system_label,

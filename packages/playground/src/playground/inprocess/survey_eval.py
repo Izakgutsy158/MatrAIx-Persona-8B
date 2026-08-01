@@ -30,7 +30,7 @@ def persona_system_prompt(persona: Persona, *, persona_yaml_path: str) -> str:
     ).strip()
     if not persona_body:
         raise ValueError(f"empty persona render for yaml path: {persona_yaml_path}")
-    return "## Persona\n{}".format(persona_body)
+    return persona_body
 
 
 def build_survey_task_prompt(*, instrument: SurveyInstrument) -> str:

@@ -1,4 +1,8 @@
-"""Materialize CUA trajectory submissions onto the task environment filesystem."""
+"""Task-agnostic CUA hand-in helpers (final_answer mirror + legacy iOS extractor).
+
+Named JSON schema recovery belongs in each task's verifier (``tests/test.sh`` /
+``test_state.py``) and host_verifier — not in per-task agent materializers.
+"""
 
 from __future__ import annotations
 
@@ -13,22 +17,8 @@ _JSON_FENCE_RE = re.compile(r"```(?:json)?\s*(\{.*?\})\s*```", re.DOTALL)
 
 TERMINAL_COMPUTER_ACTION_TYPES = frozenset({"done", "answer", "terminate"})
 
-BOOK_INTEREST_REQUIRED_KEYS = frozenset({"title", "price_gbp", "interested", "reason"})
-ECOMMERCE_INTERACTION_REQUIRED_KEYS = frozenset(
-    {
-        "selected_product_id",
-        "selected_product_name",
-        "need_satisfaction",
-        "ease_of_use",
-        "overall_experience_rating",
-        "reason",
-    }
-)
 IOS_DECISION_REQUIRED_KEYS = frozenset(
     {"keep_notifications_on", "app_reviewed", "reason"}
-)
-IOS_NEWS_SUBSCRIPTION_REQUIRED_KEYS = frozenset(
-    {"app_reviewed", "clicked_get_started", "price_seen", "highlights_noticed", "reason"}
 )
 
 
@@ -185,69 +175,6 @@ def extract_ios_decision_from_trajectory(
     )
 
 
-def extract_ios_news_subscription_from_trajectory(
-    trajectory: dict[str, Any],
-) -> dict[str, Any] | None:
-    """Return the last valid iOS News+ subscription decision from a trajectory."""
-
-    def _validate(data: dict[str, Any]) -> bool:
-        if not isinstance(data.get("clicked_get_started"), bool):
-            return False
-        highlights = data.get("highlights_noticed")
-        if not isinstance(highlights, list) or not highlights:
-            return False
-        reason = data.get("reason")
-        return isinstance(reason, str) and len(reason.strip()) >= 10
-
-    return _extract_payload_from_trajectory(
-        trajectory,
-        required_keys=IOS_NEWS_SUBSCRIPTION_REQUIRED_KEYS,
-        accept_payload=_validate,
-    )
-
-
-def extract_book_interest_from_trajectory(
-    trajectory: dict[str, Any],
-) -> dict[str, Any] | None:
-    """Return the last valid book-interest payload from a Docker CUA trajectory."""
-
-    def _validate(data: dict[str, Any]) -> bool:
-        return isinstance(data.get("interested"), bool)
-
-    return _extract_payload_from_trajectory(
-        trajectory,
-        required_keys=BOOK_INTEREST_REQUIRED_KEYS,
-        accept_payload=_validate,
-    )
-
-
-def _valid_ecommerce_score(value: Any) -> bool:
-    return isinstance(value, int) and not isinstance(value, bool) and 1 <= value <= 10
-
-
-def extract_ecommerce_interaction_from_trajectory(
-    trajectory: dict[str, Any],
-) -> dict[str, Any] | None:
-    """Return the last valid ecommerce web submission from an OpenHands trajectory."""
-
-    def _validate(data: dict[str, Any]) -> bool:
-        for field in (
-            "need_satisfaction",
-            "ease_of_use",
-            "overall_experience_rating",
-        ):
-            if not _valid_ecommerce_score(data.get(field)):
-                return False
-        reason = data.get("reason")
-        return isinstance(reason, str) and len(reason.strip()) >= 20
-
-    return _extract_payload_from_trajectory(
-        trajectory,
-        required_keys=ECOMMERCE_INTERACTION_REQUIRED_KEYS,
-        accept_payload=_validate,
-    )
-
-
 async def materialize_json_file(
     environment: Any,
     logs_dir: Path,
@@ -257,7 +184,11 @@ async def materialize_json_file(
     logger: Any | None = None,
     log_label: str = "cua submission",
 ) -> bool:
-    """Write *output_path* in the environment from trajectory JSON."""
+    """Write *output_path* in the environment from trajectory JSON.
+
+    Kept for legacy callers (e.g. ``ios_submission``). Prefer
+    ``materialize_final_answer_file`` + task-local recovery for new work.
+    """
     trajectory_path = logs_dir / "trajectory.json"
     if not trajectory_path.is_file():
         return False
@@ -299,60 +230,6 @@ async def materialize_json_file(
     if logger:
         logger.info("%s: wrote %s from trajectory submission", log_label, output_path)
     return True
-
-
-async def materialize_book_interest_file(
-    environment: Any,
-    logs_dir: Path,
-    *,
-    output_path: str = "/app/output/book_interest.json",
-    logger: Any | None = None,
-) -> bool:
-    """Write book_interest.json from a Docker Linux CUA done/answer submission."""
-    return await materialize_json_file(
-        environment,
-        logs_dir,
-        extractor=extract_book_interest_from_trajectory,
-        output_path=output_path,
-        logger=logger,
-        log_label="linux web submission",
-    )
-
-
-async def materialize_ecommerce_interaction_file(
-    environment: Any,
-    logs_dir: Path,
-    *,
-    output_path: str = "/app/output/ecommerce_interaction.json",
-    logger: Any | None = None,
-) -> bool:
-    """Write ecommerce_interaction.json from an OpenHands web-task final answer."""
-    return await materialize_json_file(
-        environment,
-        logs_dir,
-        extractor=extract_ecommerce_interaction_from_trajectory,
-        output_path=output_path,
-        logger=logger,
-        log_label="ecommerce web submission",
-    )
-
-
-async def materialize_ios_news_subscription_file(
-    environment: Any,
-    logs_dir: Path,
-    *,
-    output_path: str = "/app/output/decision.json",
-    logger: Any | None = None,
-) -> bool:
-    """Write decision.json from an iOS News+ subscription CUA trajectory."""
-    return await materialize_json_file(
-        environment,
-        logs_dir,
-        extractor=extract_ios_news_subscription_from_trajectory,
-        output_path=output_path,
-        logger=logger,
-        log_label="ios news subscription",
-    )
 
 
 def extract_final_answer_text(trajectory: dict[str, Any]) -> str:
@@ -476,27 +353,3 @@ async def materialize_final_answer_file(
             " and environment mirrors" if wrote_env else " (env mirror skipped)",
         )
     return True
-
-
-_SUBMISSION_PROFILES: dict[str, Callable[..., Any]] = {
-    "book_interest": materialize_book_interest_file,
-    "ecommerce_interaction": materialize_ecommerce_interaction_file,
-    "ios_news_subscription": materialize_ios_news_subscription_file,
-}
-
-
-async def materialize_cua_submission_profile(
-    profile: str,
-    environment: Any,
-    logs_dir: Path,
-    *,
-    logger: Any | None = None,
-) -> bool:
-    """Run a named post-run submission materializer."""
-    normalized = profile.strip().lower().replace("-", "_")
-    handler = _SUBMISSION_PROFILES.get(normalized)
-    if handler is None:
-        if logger:
-            logger.warning("unknown cua_submission_profile=%r", profile)
-        return False
-    return await handler(environment, logs_dir, logger=logger)

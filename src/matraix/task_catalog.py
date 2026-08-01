@@ -332,7 +332,7 @@ def application_harbor_name(dirname: str) -> str:
 def persona_bench_harbor_name(
     dirname: str, *, bench_dim_index: int | None = None
 ) -> str:
-    """Harbor registry name for a persona/tasks/<dirname> folder."""
+    """Harbor registry name for a legacy persona benchmark task folder."""
     slug = _example_slug(dirname)
     if bench_dim_index is not None:
         return f"personabench/persona-bench-dim-{bench_dim_index:03d}-{slug}"
@@ -423,7 +423,7 @@ def apply_task_metadata(
 
 
 def task_dirname_from_harbor_path(task_path: str) -> str:
-    """``persona/tasks/example-survey_product-feedback`` → ``example-survey_product-feedback``."""
+    """Return the example task directory name from a Harbor task path."""
     name = task_path.rstrip("/").split("/")[-1]
     if not name.startswith("example-"):
         raise ValueError(f"Expected an example task path, got {task_path!r}")

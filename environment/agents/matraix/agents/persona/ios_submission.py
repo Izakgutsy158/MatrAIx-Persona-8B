@@ -1,4 +1,10 @@
-"""Bridge iOS CUA `done` submissions to on-host decision.json for verifiers."""
+"""Legacy iOS notification-decision materializer (schema-specific).
+
+macOS/iOS use.computer tasks now default to task-agnostic
+``materialize_final_answer_file`` + host_verifier / test.sh recovery.
+This module remains for older notification-decision schemas that still
+call it explicitly.
+"""
 
 from __future__ import annotations
 

@@ -29,7 +29,7 @@ def main() -> None:
         required=True,
         help=(
             "Job meta JSON sidecar (e.g. "
-            "configs/jobs/persona-task-grounding-job-recipe/example-survey-product-feedback-age-group-n1.meta.json)"
+            "configs/jobs/persona-job-recipe/<name>.meta.json)"
         ),
     )
     parser.add_argument(

@@ -39,6 +39,11 @@ SYSTEM_PROMPT = (
     "When the task is complete, respond with the final answer without using tools."
 )
 
+_CAPABILITY_AFTER_IDENTITY = (
+    "You are using a computer with the provided tool. Be efficient and precise. "
+    "When the task is complete, respond with the final answer without using tools."
+)
+
 _SKIP_ACTIONS = frozenset({"screenshot", "cursor_position"})
 _SCROLL_DIR_TO_PIXELS = {
     "down": (0, 1),
@@ -278,6 +283,7 @@ class AnthropicProvider(StepProvider):
         desktop_width: int,
         desktop_height: int,
         aws_region: str | None = None,
+        identity_prompt: str | None = None,
     ) -> None:
         super().__init__(
             model_name=model_name,
@@ -285,6 +291,7 @@ class AnthropicProvider(StepProvider):
             desktop_height=desktop_height,
         )
         self._cua_beta, self._cua_tool_type = cua_protocol_for_model(self.model_name)
+        self._identity_prompt = (identity_prompt or "").strip() or None
         # Typed Any: Anthropic and AnthropicBedrock expose the same
         # beta.messages.create surface through distinct resource classes.
         # Import the SDK here (not at module import) so protocol helpers can be
@@ -305,7 +312,13 @@ class AnthropicProvider(StepProvider):
             desktop_width=agent._desktop_geometry.desktop_width,
             desktop_height=agent._desktop_geometry.desktop_height,
             aws_region=agent._aws_region_name,
+            identity_prompt=getattr(agent, "_identity_prompt", None),
         )
+
+    def _system_prompt(self) -> str:
+        if not self._identity_prompt:
+            return SYSTEM_PROMPT
+        return f"{self._identity_prompt}\n\n{_CAPABILITY_AFTER_IDENTITY}"
 
     @property
     def _tools(self) -> list[dict[str, Any]]:
@@ -335,7 +348,7 @@ class AnthropicProvider(StepProvider):
             return self._client.beta.messages.create(
                 model=self.model_name,
                 max_tokens=4096,
-                system=cast("Any", [{"type": "text", "text": SYSTEM_PROMPT}]),
+                system=cast("Any", [{"type": "text", "text": self._system_prompt()}]),
                 messages=cast("Any", self._messages),
                 tools=cast("Any", self._tools),
                 betas=[self._cua_beta],

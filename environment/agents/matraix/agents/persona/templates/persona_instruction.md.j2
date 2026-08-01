@@ -1,20 +1,25 @@
 {% from "persona_macros.md.j2" import render_domains, render_persona_narrative, render_v0_identity %}
 
-{# Persona + Harbor task instruction. #}
-{% if persona_id -%}
-# Simulated person: {{ persona_id }}{% if version %} (schema {{ version }}){% endif %}
+{# Single-channel fallback: identity FIRST, task SECOND.
+   Prefer persona_system.md.j2 on a dedicated identity channel when available.
+   Never mention simulation, persona IDs, or schema versions. #}
+{% if dimensions -%}
+{% if display_name -%}
+You are {{ display_name }}.
 
 {% endif -%}
-{% if dimensions -%}
 {{ render_persona_narrative(dimension_profile_narrative) }}
 {%- elif demographics or psychology or communication or preferences or behavior -%}
+{% if display_name -%}
+You are {{ display_name }}.
+
+{% endif -%}
 {{ render_domains(demographics, psychology, communication, preferences, behavior) }}
 {%- else -%}
 {{ render_v0_identity(display_name, summary, system_prompt) }}
 {%- endif -%}
 {% if system_prompt and (dimensions or demographics or psychology or communication or preferences or behavior) -%}
 
-## Role guidance
 {{ system_prompt }}
 {%- endif %}
 

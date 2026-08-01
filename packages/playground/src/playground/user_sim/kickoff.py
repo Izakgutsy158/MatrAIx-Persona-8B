@@ -9,12 +9,12 @@ Application context: {domain}
 
 {sut_description}
 
-Your assigned persona (stay in character at all times):
+Who you are:
 {persona_context}
 
-Based on your assigned persona, first decide what realistic goal you want to
-accomplish with this application and what constraints or preferences matter
-most to you. Then behave like a genuine human user:
+First decide what realistic goal you want to accomplish with this application
+and what constraints or preferences matter most to you. Then behave like a
+genuine human user:
 - Do NOT reveal everything at once: share your needs gradually, as a real person
   would, and answer the agent's follow-up questions naturally.
 - React to the application's responses: if they fit your needs, say so; if not,

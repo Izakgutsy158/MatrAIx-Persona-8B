@@ -617,6 +617,7 @@ class Computer1(BaseAgent):
         provider: str | None = None,
         aws_region_name: str | None = None,
         gemini_auto_ack_safety: bool = False,
+        identity_prompt: str | None = None,
     ) -> None:
         super().__init__(
             logs_dir=logs_dir,
@@ -629,6 +630,7 @@ class Computer1(BaseAgent):
         self._provider_override = provider.lower() if provider else None
         self._aws_region_name = aws_region_name
         self._gemini_auto_ack_safety = gemini_auto_ack_safety
+        self._identity_prompt = (identity_prompt or "").strip() or None
 
         if model_name is None:
             raise ValueError("model_name is required for computer-1")
@@ -786,6 +788,21 @@ class Computer1(BaseAgent):
         )
         return provider_cls.from_agent(self)
 
+    def _instruction_for_provider(self, instruction: str) -> str:
+        """Attach identity only when the provider has no separate identity channel.
+
+        Anthropic/Bedrock use the system prompt; the generic JSON harness uses
+        the template identity block. OpenAI/Gemini CUA only take a user
+        instruction, so identity must lead that message — still as identity,
+        never labeled as the task itself.
+        """
+        identity = (self._identity_prompt or "").strip()
+        if not identity:
+            return instruction
+        if self._provider_name in {"anthropic", "bedrock", "litellm"}:
+            return instruction
+        return f"{identity}\n\n## Task instruction\n{instruction}"
+
     # ------------------------------------------------------------------
     # Setup / run
     # ------------------------------------------------------------------
@@ -825,6 +842,11 @@ class Computer1(BaseAgent):
         # JSON harness.
         native = isinstance(self._provider, (StepProvider, SelfDrivingProvider))
         self._chat = None if native else Computer1Chat(self._llm)
+
+        # Keep task text as task. Persona/identity is injected via
+        # identity_prompt (system / template), except providers that only
+        # accept a single user instruction channel.
+        instruction = self._instruction_for_provider(instruction)
 
         initial_screenshot_path = await self._capture_screenshot(
             EnvironmentPaths.agent_dir / f"screenshot_init.{self._screenshot_suffix}"

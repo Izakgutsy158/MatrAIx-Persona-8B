@@ -203,13 +203,70 @@ def test_host_verifier_rescues_zero_reward_from_trajectory(tmp_path: Path):
         ),
         encoding="utf-8",
     )
+    (agent_dir / "final_answer.txt").write_text(
+        '{\n  "clicked": true\n}', encoding="utf-8"
+    )
 
     ran = maybe_run_host_verifier(repo_root=repo_root, trial_dir=trial_dir)
     assert ran is True
-    assert (trial_dir / "artifacts" / "app" / "output" / "decision.json").is_file()
+    output_dir = trial_dir / "artifacts" / "app" / "output"
+    assert (output_dir / "decision.json").is_file()
+    assert (output_dir / "trajectory.json").is_file()
+    assert (output_dir / "final_answer.txt").is_file()
     assert (verifier_dir / "reward.txt").read_text(encoding="utf-8").strip() == "1"
     result = json.loads((trial_dir / "result.json").read_text(encoding="utf-8"))
     assert result["verifier_result"] == {"rewards": {"reward": 1.0}}
+
+
+def test_host_verifier_mirrors_trajectory_even_without_declared_json_artifact(
+    tmp_path: Path,
+):
+    """Persona-style test.sh may not declare OUTPUT_DIR/\"*.json\"; still mirror CUA logs."""
+    repo_root = tmp_path / "repo"
+    task_rel = "persona/validation/tasks/fake-os-app"
+    task_dir = repo_root / task_rel
+    (task_dir / "tests").mkdir(parents=True, exist_ok=True)
+    (task_dir / "task.toml").write_text(
+        'artifacts = ["/app/output"]\n[verifier]\ntimeout_sec = 30.0\n',
+        encoding="utf-8",
+    )
+    (task_dir / "tests" / "test.sh").write_text(
+        """\
+#!/usr/bin/env bash
+set -euo pipefail
+python3 - <<'PY'
+import os
+from pathlib import Path
+OUTPUT_DIR = Path(os.environ["PLAYGROUND_OUTPUT_DIR"])
+assert (OUTPUT_DIR / "trajectory.json").is_file()
+assert (OUTPUT_DIR / "final_answer.txt").is_file()
+verifier_dir = Path(os.environ["HARBOR_VERIFIER_DIR"])
+verifier_dir.mkdir(parents=True, exist_ok=True)
+(verifier_dir / "reward.txt").write_text("1")
+PY
+""",
+        encoding="utf-8",
+    )
+
+    trial_dir = tmp_path / "trial"
+    trial_dir.mkdir(parents=True, exist_ok=True)
+    (trial_dir / "config.json").write_text(
+        json.dumps({"task": {"path": task_rel}}), encoding="utf-8"
+    )
+    (trial_dir / "result.json").write_text("{}", encoding="utf-8")
+    agent_dir = trial_dir / "agent"
+    agent_dir.mkdir(parents=True, exist_ok=True)
+    (agent_dir / "trajectory.json").write_text(
+        json.dumps({"steps": [{"message": "done"}]}), encoding="utf-8"
+    )
+    (agent_dir / "final_answer.txt").write_text("done", encoding="utf-8")
+
+    ran = maybe_run_host_verifier(repo_root=repo_root, trial_dir=trial_dir)
+    assert ran is True
+    output_dir = trial_dir / "artifacts" / "app" / "output"
+    assert (output_dir / "trajectory.json").is_file()
+    assert (output_dir / "final_answer.txt").is_file()
+    assert (trial_dir / "verifier" / "reward.txt").read_text(encoding="utf-8").strip() == "1"
 
 
 def test_parse_json_object_uses_first_balanced_object_when_agent_keeps_talking():
@@ -280,6 +337,60 @@ def test_host_verifier_materializes_when_trajectory_has_trailing_second_json(
         )
     )
     assert decision == {"clicked": True}
+
+
+def test_host_verifier_mirror_alone_does_not_rescue_zero_reward(tmp_path: Path):
+    """Trajectory mirror is additive; reward=0 only retries after JSON recovery."""
+    repo_root = tmp_path / "repo"
+    task_rel = "persona/validation/tasks/fake-os-app-linux"
+    task_dir = repo_root / task_rel
+    (task_dir / "tests").mkdir(parents=True, exist_ok=True)
+    (task_dir / "task.toml").write_text(
+        'artifacts = ["/app/output"]\n[verifier]\ntimeout_sec = 30.0\n',
+        encoding="utf-8",
+    )
+    # No OUTPUT_DIR/"….json" declaration — mirror only.
+    (task_dir / "tests" / "test.sh").write_text(
+        """\
+#!/usr/bin/env bash
+set -euo pipefail
+python3 - <<'PY'
+import os
+from pathlib import Path
+verifier_dir = Path(os.environ["HARBOR_VERIFIER_DIR"])
+verifier_dir.mkdir(parents=True, exist_ok=True)
+(verifier_dir / "reward.txt").write_text("1")
+PY
+""",
+        encoding="utf-8",
+    )
+
+    trial_dir = tmp_path / "trial"
+    trial_dir.mkdir(parents=True, exist_ok=True)
+    (trial_dir / "config.json").write_text(
+        json.dumps({"task": {"path": task_rel}}), encoding="utf-8"
+    )
+    (trial_dir / "result.json").write_text(
+        json.dumps({"verifier_result": {"rewards": {"reward": 0.0}}}),
+        encoding="utf-8",
+    )
+    out = trial_dir / "artifacts" / "app" / "output"
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "solution.py").write_text("def f():\n    return 1\n", encoding="utf-8")
+    verifier_dir = trial_dir / "verifier"
+    verifier_dir.mkdir(parents=True, exist_ok=True)
+    (verifier_dir / "reward.txt").write_text("0", encoding="utf-8")
+    agent_dir = trial_dir / "agent"
+    agent_dir.mkdir(parents=True, exist_ok=True)
+    (agent_dir / "trajectory.json").write_text('{"steps":[]}', encoding="utf-8")
+    (agent_dir / "final_answer.txt").write_text("done", encoding="utf-8")
+
+    ran = maybe_run_host_verifier(repo_root=repo_root, trial_dir=trial_dir)
+    assert ran is False
+    assert (verifier_dir / "reward.txt").read_text(encoding="utf-8").strip() == "0"
+    # Signals still mirrored for task-local / offline use.
+    assert (out / "trajectory.json").is_file()
+    assert (out / "final_answer.txt").is_file()
 
 
 def test_host_verifier_skips_zero_reward_without_recoverable_submission(tmp_path: Path):

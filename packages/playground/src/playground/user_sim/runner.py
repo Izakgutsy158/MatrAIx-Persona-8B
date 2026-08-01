@@ -83,7 +83,7 @@ def _chatbot_observation(
     )
     return (
         '{label} Answer:\n"""{message}"""{extra}'
-        "\nDecide your next move in character using the available tools."
+        "\nDecide your next move using the available tools."
     ).format(label=chatbot_label, message=assistant_message, extra=extra)
 
 
