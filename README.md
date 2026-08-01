@@ -6,20 +6,20 @@
     and interactive products with heterogeneous simulated users.
   </p>
   <p>
+    <a href="https://discord.gg/vruP88PTZ"><img alt="Discord" src="https://img.shields.io/badge/Discord-join%20MatrAIx-5865F2?style=for-the-badge&logo=discord&logoColor=white"></a>
     <a href="https://matraix.ai/"><img alt="Website" src="https://img.shields.io/badge/Website-matraix.ai-4f7cff?style=for-the-badge"></a>
     <a href="docs/README.md"><img alt="Docs" src="https://img.shields.io/badge/Docs-Handbook-5b5b5b?style=for-the-badge"></a>
     <a href="https://huggingface.co/datasets/MatrAIx2026/MatrAIx_Persona_1M_Public_Release"><img alt="Hugging Face" src="https://img.shields.io/badge/Hugging%20Face-Persona%201M-ffcc4d?style=for-the-badge"></a>
-    <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/License-Apache--2.0-c33b32?style=for-the-badge"></a>
-    <a href="https://www.python.org/"><img alt="Python" src="https://img.shields.io/badge/Python-3.12%2B-3776ab?style=for-the-badge"></a>
-    <a href="docs/quickstart.md#10-playground-play-tasks-visually"><img alt="Playground" src="https://img.shields.io/badge/Playground-Visual%20Runner-56b879?style=for-the-badge"></a>
+    <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/License-MIT-c33b32?style=for-the-badge"></a>
+    <a href="docs/quickstart.md#10-playground--play-tasks-visually"><img alt="Playground" src="https://img.shields.io/badge/Playground-Visual%20Runner-56b879?style=for-the-badge"></a>
   </p>
 </div>
 
 <div align="center">
-  <video src="https://github.com/user-attachments/assets/7c9ae1d9-5d80-4821-9e30-5981ecc77afc" controls playsinline width="900">
-    Your browser does not support the video tag.
-    <a href="https://www.youtube.com/watch?v=cNFkz9Wo1y4">Watch the MatrAIx demo on YouTube</a>
-  </video>
+  <a href="https://www.youtube.com/watch?v=cNFkz9Wo1y4&t=15s">
+    <img src="https://img.youtube.com/vi/cNFkz9Wo1y4/maxresdefault.jpg" alt="Watch the MatrAIx demo on YouTube" width="900">
+  </a>
+  <p><em>▶ Watch the MatrAIx demo on YouTube</em></p>
 </div>
 
 ---
@@ -113,7 +113,7 @@ cd application/playground/frontend && npm ci && npm run dev
 
 Open **http://localhost:5173** → Playground → pick a persona cohort →
 pick Survey / Chat / Web / OS app tasks → **Lock pipeline** → **Run eval**.
-Details: [Playground §10](docs/quickstart.md#10-playground-play-tasks-visually).
+Details: [Playground §10](docs/quickstart.md#10-playground--play-tasks-visually).
 
 ### CLI task develop / runs
 
@@ -199,16 +199,6 @@ Large generated datasets stay outside git (see the Hugging Face release above).
 2. Say hi to us! We like to connect you for the shared interest or experience!
 3. Participating MatrAIx research community for collaboration or contribution!
 
-## Star History
-
-<a href="https://www.star-history.com/#MatrAIx-ai/MatrAIx-Community&Date">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=MatrAIx-ai/MatrAIx-Community&type=Date&theme=dark&legend=top-left" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=MatrAIx-ai/MatrAIx-Community&type=Date&legend=top-left" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=MatrAIx-ai/MatrAIx-Community&type=Date&legend=top-left" />
-  </picture>
-</a>
-
 ## License
 
-Apache 2.0 — see [LICENSE](LICENSE).
+MIT — see [LICENSE](LICENSE).
