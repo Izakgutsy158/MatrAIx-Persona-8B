@@ -10,11 +10,7 @@ from harbor.environments.base import BaseEnvironment
 from harbor.models.agent.context import AgentContext
 from harbor.models.agent.name import AgentName
 
-from matraix.agents.persona.cua_submission import (
-    materialize_cua_submission_profile,
-    materialize_final_answer_file,
-)
-from matraix.agents.persona.ios_submission import materialize_ios_decision_file
+from matraix.agents.persona.cua_submission import materialize_final_answer_file
 from matraix.agents.persona.mixin import PersonaMixin
 
 CuaBackendKind = Literal["use_computer_desktop", "ios", "docker_computer1"]
@@ -149,8 +145,17 @@ def _build_cua_delegate(
 
     from harbor.agents.computer_1 import Computer1
 
+    # Shared Playground / job YAML often uses max_steps (use.computer); Docker
+    # Computer1 only accepts max_turns. Remap so mixed configs do not TypeError.
+    docker_kwargs = dict(common)
+    if "max_steps" in docker_kwargs:
+        if "max_turns" not in docker_kwargs:
+            docker_kwargs["max_turns"] = docker_kwargs.pop("max_steps")
+        else:
+            docker_kwargs.pop("max_steps")
+
     try:
-        return Computer1(**common)
+        return Computer1(**docker_kwargs)
     except ModuleNotFoundError as exc:
         raise ModuleNotFoundError(
             "persona-computer-1 Docker CUA requires "
@@ -189,7 +194,16 @@ class PersonaComputer1(PersonaMixin, BaseAgent):
             persona_template_path=persona_template_path,
         )
         self._cua_backend_override = cua_backend
-        self._cua_submission_profile = cua_submission_profile
+        # Accepted for backward-compatible Harbor YAML / --ak, but ignored:
+        # task schema recovery lives in task tests + host_verifier, not agent infra.
+        if cua_submission_profile:
+            logger = getattr(self, "logger", None)
+            if logger is not None:
+                logger.warning(
+                    "cua_submission_profile=%r is deprecated and ignored; "
+                    "use task-local verifier recovery from final_answer/trajectory",
+                    cua_submission_profile,
+                )
         self._delegate_kwargs = dict(kwargs)
         self._delegate: BaseAgent | None = None
         self._delegate_kind: CuaBackendKind | None = None
@@ -241,28 +255,21 @@ class PersonaComputer1(PersonaMixin, BaseAgent):
         context: AgentContext,
     ) -> None:
         await self._prepare_persona_trial(environment)
-        rendered = self._render_persona_instruction(instruction)
+        identity = self._render_persona_system()
         delegate = self._get_delegate(environment)
-        await delegate.run(rendered, environment, context)
-        if self._cua_submission_profile:
-            await materialize_cua_submission_profile(
-                self._cua_submission_profile,
-                environment,
-                self.logs_dir,
-                logger=self.logger,
-            )
-        elif self._delegate_kind == "ios":
-            await materialize_ios_decision_file(
-                environment,
-                self.logs_dir,
-                logger=self.logger,
-            )
-        elif self._delegate_kind == "use_computer_desktop":
-            # Task-agnostic hand-in: mirror Computer1's final_answer.txt contract
-            # into host logs + /app/output so artifact collection / host_verifier
-            # can recover the submission without a per-task profile.
-            await materialize_final_answer_file(
-                environment,
-                self.logs_dir,
-                logger=self.logger,
-            )
+        if self._delegate_kind == "docker_computer1":
+            # Dedicated identity channel: keep task instruction.md pure.
+            setattr(delegate, "_identity_prompt", identity)
+            await delegate.run(instruction, environment, context)
+        else:
+            # use.computer / iOS backends only accept one user-text channel.
+            composed = self._render_persona_instruction(instruction)
+            await delegate.run(composed, environment, context)
+        # Task-agnostic hand-in for every CUA backend (macOS/iOS/Docker):
+        # mirror final_answer.txt into host logs + /app/output. Named JSON
+        # schema recovery belongs in the task verifier, not agent infra.
+        await materialize_final_answer_file(
+            environment,
+            self.logs_dir,
+            logger=self.logger,
+        )

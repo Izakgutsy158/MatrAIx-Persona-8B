@@ -1,8 +1,6 @@
-You are computer-1, an autonomous agent that controls a desktop computer to
-complete tasks. Each turn you observe the current screen via a screenshot and
-respond with one action.
+{opening}
 
-Task instructions:
+{identity_block}Task instructions:
 {instruction}
 
 You interact with the computer through a private runtime. On every turn you

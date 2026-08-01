@@ -285,6 +285,18 @@ def parse_computer_1_response(response: str) -> ParsedAction:
 # ---------------------------------------------------------------------------
 
 
+_OPENING_DEFAULT = (
+    "You are computer-1, an autonomous agent that controls a desktop computer to "
+    "complete tasks. Each turn you observe the current screen via a screenshot and "
+    "respond with one action."
+)
+
+_CAPABILITY_WITH_IDENTITY = (
+    "You are using a desktop computer. Each turn you observe the current screen "
+    "via a screenshot and respond with one action.\n\n"
+)
+
+
 class GenericJsonProvider(ChatCompletionsProvider):
     """Strict-JSON dialect: any vision model, no native computer-use tool."""
 
@@ -297,6 +309,7 @@ class GenericJsonProvider(ChatCompletionsProvider):
         desktop_width: int,
         desktop_height: int,
         enable_images: bool = True,
+        identity_prompt: str | None = None,
     ) -> None:
         super().__init__(
             model_name=model_name,
@@ -304,6 +317,7 @@ class GenericJsonProvider(ChatCompletionsProvider):
             desktop_height=desktop_height,
         )
         self.enable_images = enable_images
+        self.identity_prompt = (identity_prompt or "").strip() or None
         self._prompt_template = (_TEMPLATES_DIR / "computer-1-json.txt").read_text()
 
     @classmethod
@@ -313,10 +327,21 @@ class GenericJsonProvider(ChatCompletionsProvider):
             desktop_width=agent._desktop_geometry.desktop_width,
             desktop_height=agent._desktop_geometry.desktop_height,
             enable_images=agent._enable_images,
+            identity_prompt=getattr(agent, "_identity_prompt", None),
         )
 
     def _prompt_text(self, instruction: str) -> str:
+        identity = self.identity_prompt
+        if identity:
+            # Identity first (who you are), then computer capability, then task.
+            opening = identity
+            identity_block = _CAPABILITY_WITH_IDENTITY
+        else:
+            opening = _OPENING_DEFAULT
+            identity_block = ""
         return self._prompt_template.format(
+            opening=opening,
+            identity_block=identity_block,
             instruction=instruction,
             desktop_width=self.desktop_width,
             desktop_height=self.desktop_height,

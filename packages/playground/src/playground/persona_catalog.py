@@ -113,9 +113,24 @@ def _persona_context(data: Dict[str, Any], *, fallback_name: str) -> str:
     return fallback_name
 
 
+_CURATED_CACHE: List[Persona] | None = None
+_PERSONAS_BY_ID: Dict[str, Persona] | None = None
+
+
+def clear_persona_catalog_cache() -> None:
+    """Drop in-process curated persona cache (tests / pool reloads)."""
+    global _CURATED_CACHE, _PERSONAS_BY_ID
+    _CURATED_CACHE = None
+    _PERSONAS_BY_ID = None
+
+
 def _load_curated() -> List[Persona]:
+    global _CURATED_CACHE
+    if _CURATED_CACHE is not None:
+        return _CURATED_CACHE
     personas: List[Persona] = []
     if not _CURATED_DIR.exists():
+        _CURATED_CACHE = personas
         return personas
     for path in sorted(_CURATED_DIR.glob("*.yaml")):
         data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
@@ -133,10 +148,14 @@ def _load_curated() -> List[Persona]:
             context=_persona_context(data, fallback_name=name),
         )
         personas.append(persona)
+    _CURATED_CACHE = personas
     return personas
 
 
 def _load_all() -> Dict[str, Persona]:
+    global _PERSONAS_BY_ID
+    if _PERSONAS_BY_ID is not None:
+        return _PERSONAS_BY_ID
     personas: Dict[str, Persona] = {}
     for persona in _load_curated():
         personas[persona.id] = persona
@@ -146,6 +165,7 @@ def _load_all() -> Dict[str, Persona]:
         if persona.id.isdigit():
             stem = "persona_{}".format(persona.id.zfill(4))
             personas.setdefault(stem, persona)
+    _PERSONAS_BY_ID = personas
     return personas
 
 

@@ -1,16 +1,15 @@
-{# Shared Jinja macros for persona rendering. #}
+{# Shared Jinja macros for persona rendering.
+   Agent-facing text must read as direct identity — never mention simulation,
+   persona IDs, schema versions, or "stay in character" roleplay cues. #}
 
 {% macro render_persona_narrative(paragraphs) -%}
 {% if paragraphs %}
 ## Who you are
 
-The following is your full attribute profile. Embody every listed trait; ignore anything not listed. Attributes that are null, default, or irrelevant have already been omitted.
-
 {% for paragraph in paragraphs -%}
 {{ paragraph }}
 
 {% endfor -%}
-Stay in character according to all of the above.
 {% endif -%}
 {% endmacro %}
 
@@ -110,7 +109,6 @@ Stay in character according to all of the above.
 {{ render_communication(communication) }}
 {{ render_preferences(preferences) }}
 {{ render_behavior(behavior) }}
-Stay in character according to all of the above.
 {% endmacro %}
 
 {% macro render_v0_identity(display_name, summary, system_prompt) -%}

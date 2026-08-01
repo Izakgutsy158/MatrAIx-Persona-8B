@@ -20,7 +20,6 @@ agents:
     model_name: anthropic/claude-sonnet-4-6
     kwargs:
       persona_path: persona/datasets/matraix-persona-dev-sample/persona_0042.yaml
-      cua_submission_profile: book_interest
 
 tasks:
   - path: application/tasks/example-web-cua_bookshop-choice

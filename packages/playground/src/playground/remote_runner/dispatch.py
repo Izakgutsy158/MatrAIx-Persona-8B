@@ -42,7 +42,9 @@ def build_harbor_env(*, repo_root: Path, payload: dict[str, Any]) -> dict[str, s
     path_entries = [entry for entry in existing.split(":") if entry]
     required_paths = [
         str(repo_root),
+        str(repo_root / "src"),
         str(repo_root / "environment" / "runtime"),
+        str(repo_root / "environment" / "agents"),
         str(repo_root / "packages" / "playground" / "src"),
         str(repo_root / "application" / "playground"),
         str(

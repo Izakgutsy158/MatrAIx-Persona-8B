@@ -23,7 +23,7 @@ from personabench.task_catalog import (
 )
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_JOBS_DIR = REPO_ROOT / "configs" / "jobs" / "persona-task-grounding-job-recipe"
+DEFAULT_JOBS_DIR = REPO_ROOT / "configs" / "jobs" / "persona-job-recipe"
 
 
 def _slug(value: str) -> str:
@@ -83,7 +83,7 @@ def main() -> None:
     parser.add_argument(
         "--task",
         required=True,
-        help="Harbor task path (e.g. persona/tasks/example-survey_product-feedback)",
+        help="Harbor task path (e.g. application/tasks/example-survey_product-feedback)",
     )
     parser.add_argument(
         "--stratify",
@@ -170,7 +170,7 @@ def main() -> None:
         "--out",
         type=Path,
         default=None,
-        help="Output job YAML (default: configs/jobs/persona-task-grounding-job-recipe/<name>.yaml)",
+        help="Output job YAML (default: configs/jobs/persona-job-recipe/<name>.yaml)",
     )
     args = parser.parse_args()
 

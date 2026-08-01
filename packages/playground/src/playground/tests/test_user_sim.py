@@ -165,7 +165,7 @@ def test_prompt_bundle_separates_persona_and_task():
 
     persona = Persona(id="p1", name="Test", source="", context="Bio line")
     task_bundle = TaskContentBundle(
-        instruction_markdown="Stay in character and judge the chatbot honestly.",
+        instruction_markdown="Judge the chatbot honestly.",
         context_markdown="The chatbot helps a user discover products.",
         output_schema_markdown="Write transcript.json and user_feedback.json.",
     )
@@ -179,7 +179,9 @@ def test_prompt_bundle_separates_persona_and_task():
         task_bundle=task_bundle,
     )
     assert "Progressive disclosure" not in bundle["personaPrompt"]
-    assert "## Persona" in bundle["personaPrompt"]
+    assert "Bio line" in bundle["personaPrompt"]
+    assert "## Persona" not in bundle["personaPrompt"]
+    assert "Simulated person" not in bundle["personaPrompt"]
     assert "## Task instruction" not in bundle["personaPrompt"]
     assert "## Task instruction" in bundle["taskPrompt"]
     assert "## Task context" in bundle["taskPrompt"]
@@ -187,9 +189,14 @@ def test_prompt_bundle_separates_persona_and_task():
     assert "Progressive disclosure" in bundle["harborPrompt"]
     assert "Today is " in bundle["harborPrompt"]
     assert "Today is " in report_prompt
-    assert bundle["harborPrompt"].index("## Persona") < bundle["harborPrompt"].index("Progressive disclosure")
+    assert bundle["harborPrompt"].index("Bio line") < bundle["harborPrompt"].index(
+        "Progressive disclosure"
+    )
     assert "Keep messages short and natural (usually 1-3 sentences)." in bundle["harborPrompt"]
     assert "Prefer plainspoken end-user language" in bundle["harborPrompt"]
+    assert "simulating" not in bundle["harborPrompt"].lower()
+    assert "assigned persona" not in bundle["harborPrompt"].lower()
+    assert "stay in character" not in bundle["harborPrompt"].lower()
     assert "## Task instruction" in bundle["harborPrompt"]
     assert "## Task context" in bundle["harborPrompt"]
     assert "## Task instruction" in report_prompt

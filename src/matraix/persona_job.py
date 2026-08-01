@@ -21,7 +21,7 @@ DEFAULT_DATASET = "persona/datasets/matraix-persona-dev-sample"
 DEFAULT_STRATIFY_FIELDS = ["dimensions.economic_motivation"]
 SMOKE_PERSONA_ID = "0001"
 SMOKE_PERSONA_PATH = f"{DEFAULT_DATASET}/persona_{SMOKE_PERSONA_ID}.yaml"
-DEFAULT_GROUNDING_JOBS_DIR = "configs/jobs/persona-task-grounding-job-recipe"
+DEFAULT_GROUNDING_JOBS_DIR = "configs/jobs/persona-job-recipe"
 GENERATED_COHORTS_DIR = "persona/datasets/_generated/cohorts"
 DEFAULT_DIMENSIONS_SCHEMA = "persona/schema/dimensions.json"
 

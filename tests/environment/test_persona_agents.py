@@ -91,6 +91,63 @@ def test_resolve_desktop_cua_provider_from_model_and_backend() -> None:
     ) == "anthropic"
 
 
+def test_build_cua_delegate_remaps_max_steps_to_max_turns_for_docker(monkeypatch) -> None:
+    """Playground historically injects max_steps; Docker Computer1 wants max_turns."""
+    from matraix.agents.persona import computer_1 as computer_1_mod
+
+    captured: dict[str, object] = {}
+
+    class _FakeComputer1:
+        def __init__(self, **kwargs):
+            captured.update(kwargs)
+
+    monkeypatch.setattr(
+        "harbor.agents.computer_1.Computer1",
+        _FakeComputer1,
+    )
+
+    agent = computer_1_mod._build_cua_delegate(
+        "docker_computer1",
+        logs_dir=pathlib.Path("/tmp/logs"),
+        model_name="anthropic/claude-sonnet-4-6",
+        logger=None,
+        mcp_servers=None,
+        skills_dir=None,
+        delegate_kwargs={"max_steps": 100, "temperature": 0.2},
+    )
+    assert isinstance(agent, _FakeComputer1)
+    assert captured["max_turns"] == 100
+    assert "max_steps" not in captured
+    assert captured["temperature"] == 0.2
+
+
+def test_build_cua_delegate_prefers_explicit_max_turns_over_max_steps(monkeypatch) -> None:
+    from matraix.agents.persona import computer_1 as computer_1_mod
+
+    captured: dict[str, object] = {}
+
+    class _FakeComputer1:
+        def __init__(self, **kwargs):
+            captured.update(kwargs)
+
+    monkeypatch.setattr(
+        "harbor.agents.computer_1.Computer1",
+        _FakeComputer1,
+    )
+
+    computer_1_mod._build_cua_delegate(
+        "docker_computer1",
+        logs_dir=pathlib.Path("/tmp/logs"),
+        model_name="anthropic/claude-sonnet-4-6",
+        logger=None,
+        mcp_servers=None,
+        skills_dir=None,
+        delegate_kwargs={"max_steps": 100, "max_turns": 45},
+    )
+    assert captured["max_turns"] == 45
+    assert "max_steps" not in captured
+
+
 def test_correct_anthropic_cua_create_kwargs_opus_4_8_uses_new_tool() -> None:
     from matraix.agents.persona.use_computer_cua_protocol import (
         correct_anthropic_cua_create_kwargs,
@@ -143,3 +200,155 @@ def test_apply_use_computer_anthropic_cua_protocol_patch_is_idempotent() -> None
     # patched; second must always be False (idempotent).
     assert second is False
     assert first in {True, False}
+
+
+def test_persona_system_template_is_identity_only() -> None:
+    from matraix.agents.persona.loader import load_persona
+    from matraix.agents.persona.templating import (
+        PERSONA_INSTRUCTION_TEMPLATE,
+        PERSONA_SYSTEM_TEMPLATE,
+        render_persona_template,
+        resolve_persona_template,
+    )
+
+    persona = load_persona(
+        ROOT / "persona/datasets/matraix-persona-dev-sample/persona_0042.yaml"
+    )
+    system = render_persona_template(
+        resolve_persona_template(persona, None, PERSONA_SYSTEM_TEMPLATE),
+        persona,
+    )
+    instruction = render_persona_template(
+        resolve_persona_template(persona, None, PERSONA_INSTRUCTION_TEMPLATE),
+        persona,
+        instruction="Pick a book on the site.",
+    )
+
+    assert "You are Casey Brooks." in system
+    assert "## Who you are" in system
+    assert "## Task instruction" not in system
+    assert "Pick a book on the site." not in system
+    assert "Simulated person" not in system
+    assert "schema" not in system.lower()
+    assert "stay in character" not in system.lower()
+    assert "embody" not in system.lower()
+
+    assert "You are Casey Brooks." in instruction
+    assert "## Task instruction" in instruction
+    assert "Pick a book on the site." in instruction
+    assert "Simulated person" not in instruction
+    assert instruction.index("You are Casey Brooks.") < instruction.index(
+        "## Task instruction"
+    )
+
+
+def test_generic_json_prompt_keeps_identity_outside_task_instructions() -> None:
+    from harbor.agents.computer_1.providers.generic import GenericJsonProvider
+
+    provider = GenericJsonProvider(
+        model_name="openai/gpt-4o",
+        desktop_width=1024,
+        desktop_height=900,
+        identity_prompt="You are Casey Brooks.\n\n## Who you are\nA careful shopper.",
+    )
+    text = provider._prompt_text("Open the bookstore and choose a novel.")
+
+    assert text.startswith("You are Casey Brooks.")
+    assert "You are using a desktop computer." in text
+    assert "You are computer-1" not in text
+    assert "acting as" not in text.lower()
+    assert "stay in character" not in text.lower()
+    assert "Simulated person" not in text
+    assert "Task instructions:\nOpen the bookstore and choose a novel." in text
+    task_idx = text.index("Task instructions:")
+    assert text.index("You are Casey Brooks.") < task_idx
+
+
+def test_generic_json_prompt_without_identity_keeps_computer_1_opening() -> None:
+    from harbor.agents.computer_1.providers.generic import GenericJsonProvider
+
+    provider = GenericJsonProvider(
+        model_name="openai/gpt-4o",
+        desktop_width=1024,
+        desktop_height=900,
+    )
+    text = provider._prompt_text("Click the Start button.")
+    assert text.startswith("You are computer-1")
+    assert "Task instructions:\nClick the Start button." in text
+
+
+def test_persona_computer_1_docker_uses_identity_channel(monkeypatch, tmp_path) -> None:
+    """Docker Computer1 gets identity_prompt + raw task, not persona stuffed into task."""
+    import asyncio
+    from types import SimpleNamespace
+
+    from matraix.agents.persona.computer_1 import PersonaComputer1
+
+    captured: dict[str, object] = {}
+
+    class _FakeComputer1:
+        def __init__(self, **kwargs):
+            captured["init_kwargs"] = kwargs
+            self._identity_prompt = kwargs.get("identity_prompt")
+            self.logs_dir = kwargs.get("logs_dir")
+
+        def version(self):
+            return "fake"
+
+        async def setup(self, environment):
+            return None
+
+        async def run(self, instruction, environment, context):
+            captured["instruction"] = instruction
+            captured["identity_prompt"] = getattr(self, "_identity_prompt", None)
+
+    monkeypatch.setattr(
+        "harbor.agents.computer_1.Computer1",
+        _FakeComputer1,
+    )
+
+    async def _noop_materialize(*args, **kwargs):
+        return None
+
+    monkeypatch.setattr(
+        "matraix.agents.persona.computer_1.materialize_final_answer_file",
+        _noop_materialize,
+    )
+
+    logs_dir = tmp_path / "agent"
+    logs_dir.mkdir()
+    agent = PersonaComputer1(
+        logs_dir=logs_dir,
+        model_name="openai/gpt-4o",
+        persona_path=str(
+            ROOT / "persona/datasets/matraix-persona-dev-sample/persona_0042.yaml"
+        ),
+        cua_backend="docker",
+    )
+    agent.logger = SimpleNamespace(
+        info=lambda *a, **k: None,
+        warning=lambda *a, **k: None,
+        debug=lambda *a, **k: None,
+    )
+
+    class _Env:
+        async def upload_file(self, *args, **kwargs):
+            return None
+
+    async def _run():
+        await agent.run(
+            "Open Settings and enable Do Not Disturb.",
+            _Env(),
+            SimpleNamespace(),
+        )
+
+    asyncio.run(_run())
+
+    assert captured["instruction"] == "Open Settings and enable Do Not Disturb."
+    identity = captured["identity_prompt"]
+    assert isinstance(identity, str)
+    assert "You are Casey Brooks." in identity
+    assert "Simulated person" not in identity
+    assert "schema" not in identity.lower()
+    assert "Open Settings and enable Do Not Disturb." not in identity
+
