@@ -919,11 +919,22 @@ def _find_row_by_persona_id(
     persona_id: str,
 ) -> dict[str, Any] | None:
     """Locate one persona by id using cheap source/index matching, then decode."""
+    found = _find_rows_by_persona_ids(paths, codec, [persona_id])
+    return found.get(persona_id.strip())
+
+
+def _find_rows_by_persona_ids(
+    paths: Persona1MPaths,
+    codec,
+    persona_ids: list[str],
+) -> dict[str, dict[str, Any]]:
+    """Locate many personas by id in a single Parquet pass."""
     import pyarrow.parquet as pq
 
-    wanted = persona_id.strip()
+    wanted = {pid.strip() for pid in persona_ids if isinstance(pid, str) and pid.strip()}
     if not wanted:
-        return None
+        return {}
+    found: dict[str, dict[str, Any]] = {}
     for parquet_path in paths.parquet_files:
         parquet = pq.ParquetFile(parquet_path)
         cursor = 0
@@ -933,12 +944,113 @@ def _find_row_by_persona_id(
         ):
             sources = batch.column("source").to_pylist()
             row_indices = batch.column("source_row_index").to_pylist()
+            hits: list[tuple[str, int]] = []
             for local_idx, (source, row_index) in enumerate(zip(sources, row_indices)):
-                if _persona_id(str(source or "unknown"), int(row_index)) == wanted:
-                    decoded = _read_decoded_rows_at(parquet_path, codec, [cursor + local_idx])
-                    return decoded[0] if decoded else None
+                persona_id = _persona_id(str(source or "unknown"), int(row_index))
+                if persona_id in wanted and persona_id not in found:
+                    hits.append((persona_id, cursor + local_idx))
+            if hits:
+                decoded = _read_decoded_rows_at(
+                    parquet_path, codec, [offset for _, offset in hits]
+                )
+                for (persona_id, _), row in zip(hits, decoded):
+                    found[persona_id] = row
+                if len(found) >= len(wanted):
+                    return found
             cursor += len(batch)
-    return None
+    return found
+
+
+def _row_from_cohort_yaml(yaml_path: Path, *, persona_id: str) -> dict[str, Any] | None:
+    try:
+        payload = yaml.safe_load(yaml_path.read_text(encoding="utf-8")) or {}
+    except (OSError, yaml.YAMLError):
+        return None
+    if not isinstance(payload, dict):
+        return None
+    return {
+        "persona_id": str(payload.get("persona_id") or persona_id),
+        "source": payload.get("source") or "unknown",
+        "dimensions": payload.get("dimensions") or {},
+    }
+
+
+def materialize_production_1m_persona_ids(
+    *,
+    repo_root: Path,
+    persona_ids: list[str],
+    seed: int = 42,
+) -> dict[str, Any]:
+    """Materialize an explicit 1M persona-id selection into a local cohort.
+
+    Playground can preview ids from the HF/Parquet index without on-disk YAML.
+    Harbor launch needs YAML under a cohort pool — this bridges the gap for
+    hand-picked single (or few) personas from ``matraix-persona-1m``.
+    """
+    ordered_ids: list[str] = []
+    seen: set[str] = set()
+    for raw in persona_ids:
+        pid = str(raw or "").strip()
+        if not pid or pid in seen:
+            continue
+        seen.add(pid)
+        ordered_ids.append(pid)
+    if not ordered_ids:
+        raise ValueError("persona_ids must not be empty")
+
+    rows_by_id: dict[str, dict[str, Any]] = {}
+    missing = list(ordered_ids)
+
+    # Prefer already-materialized cohort YAMLs (exact launch artifacts).
+    cohorts_root = repo_root / PRODUCTION_1M_POOL / "cohorts"
+    if cohorts_root.is_dir():
+        still_missing: list[str] = []
+        for pid in missing:
+            hit: dict[str, Any] | None = None
+            for cohort_dir in sorted(cohorts_root.iterdir()):
+                if not cohort_dir.is_dir():
+                    continue
+                yaml_path = cohort_dir / f"persona_{pid}.yaml"
+                if not yaml_path.is_file():
+                    continue
+                hit = _row_from_cohort_yaml(yaml_path, persona_id=pid)
+                if hit is not None:
+                    break
+            if hit is None:
+                still_missing.append(pid)
+            else:
+                rows_by_id[pid] = hit
+        missing = still_missing
+
+    if missing:
+        paths = resolve_1m_paths(repo_root)
+        codec = load_codec(paths.schema_path)
+        found = _find_rows_by_persona_ids(paths, codec, missing)
+        rows_by_id.update(found)
+        missing = [pid for pid in missing if pid not in found]
+
+    if missing:
+        raise ValueError(
+            "unknown persona in matraix-persona-1m: {}".format(", ".join(missing))
+        )
+
+    rows = [rows_by_id[pid] for pid in ordered_ids]
+    cohort = materialize_cohort(
+        repo_root=repo_root,
+        rows=rows,
+        seed=seed,
+        sample_size=len(rows),
+    )
+    return {
+        "pool": cohort["pool"],
+        "matchedCount": len(rows),
+        "sampleSize": len(cohort["personaIds"]),
+        "seed": seed,
+        "personaIds": cohort["personaIds"],
+        "personas": cohort["personas"],
+        "stratifyFields": [],
+        "productionSource": HF_1M_REPO,
+    }
 
 
 def get_production_1m_persona_detail(

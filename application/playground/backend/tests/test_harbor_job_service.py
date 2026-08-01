@@ -415,7 +415,9 @@ def test_launch_auto_chat_uses_local_distributed_executor(tmp_path, monkeypatch)
     assert env["MATRIX_CHATBOT_TASK_PATH"] == "application/tasks/chat_recai"
     pythonpath = env["PYTHONPATH"].split(":")
     assert str(repo) in pythonpath
+    assert str(repo / "src") in pythonpath
     assert str(repo / "environment" / "runtime") in pythonpath
+    assert str(repo / "environment" / "agents") in pythonpath
     assert str(repo / "packages" / "playground" / "src") in pythonpath
     assert str(repo / "application" / "playground") in pythonpath
     service.shutdown()
@@ -610,6 +612,55 @@ def test_launch_ios_cua_uses_use_computer_environment(tmp_path, monkeypatch):
     assert "type: use-computer" in text
     assert "platform: ios" in text
     assert "cua_backend: ios" in text
+    assert "max_steps: 100" in text
+    assert "max_turns:" not in text
+    service.shutdown()
+
+
+def test_launch_docker_cua_injects_max_turns_not_max_steps(tmp_path, monkeypatch):
+    repo = tmp_path
+    jobs_dir = repo / "jobs"
+    jobs_dir.mkdir()
+    pool = repo / "persona" / "datasets" / "matraix-persona-dev-sample"
+    pool.mkdir(parents=True)
+    (pool / "persona_0020.yaml").write_text(
+        "persona_id: '0020'\nversion: '1.0'\nsource: OASIS\ndimensions: {}\n",
+        encoding="utf-8",
+    )
+    task_dir = repo / "application" / "tasks" / "example-computer-use-linux_note-to-csv"
+    task_dir.mkdir(parents=True)
+    (task_dir / "task.toml").write_text("metadata:\n  type: computer\n", encoding="utf-8")
+
+    def _fake_run(command, *, cwd, env):
+        return 0
+
+    monkeypatch.setattr(
+        "playground.harbor.playground._repo_root",
+        lambda: repo,
+    )
+    service = HarborJobService(
+        repo_root=repo,
+        jobs_dir=jobs_dir,
+        generated_configs_dir=repo / "configs" / "jobs" / "application-task-job-recipe",
+        command_runner=_fake_run,
+        harbor_command=("echo", "harbor"),
+    )
+
+    job_name = service.launch(
+        task_path="application/tasks/example-computer-use-linux_note-to-csv",
+        persona_ids=["0020"],
+        persona_model="anthropic/claude-sonnet-4-6",
+        cua_backend="docker",
+        job_name="docker-cua-job",
+    )
+    assert job_name == "docker-cua-job"
+    text = (
+        repo / "configs" / "jobs" / "application-task-job-recipe" / "docker-cua-job.yaml"
+    ).read_text(encoding="utf-8")
+    assert "type: docker" in text
+    assert "cua_backend: docker" in text
+    assert "max_turns: 100" in text
+    assert "max_steps:" not in text
     service.shutdown()
 
 

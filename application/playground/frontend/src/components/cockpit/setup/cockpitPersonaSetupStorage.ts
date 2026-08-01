@@ -9,10 +9,17 @@ import {
   type PersonaSamplingMode,
 } from "./personaSamplingTypes";
 
+/** Legacy pool slug renamed to matraix-persona-dev-sample (directory removed). */
+const LEGACY_BENCH_DEV_SAMPLE = "persona/datasets/bench-dev-sample";
+
 /** Drop legacy synthetic strategy pools from restored setup. */
 export function sanitizePersonaPool(pool: string | null | undefined): string {
   const text = (pool ?? "").trim();
   if (!text || text.includes("/_generated/")) return PERSONA_BENCH_POOL;
+  // Old cockpit / task setups still point at the removed bench-dev-sample path.
+  if (text === LEGACY_BENCH_DEV_SAMPLE || text.endsWith("/bench-dev-sample")) {
+    return PERSONA_BENCH_POOL;
+  }
   return text;
 }
 

@@ -284,7 +284,8 @@ export function WebEvalCockpit({
           );
         }
       } catch {
-        // trajectory.json is written once near the end of a Cocoa run
+        // trajectory.json is flushed mid-run for computer-1 / browser-use / Cocoa /
+        // OpenHands; keep polling until the first checkpoint appears.
       }
     };
 

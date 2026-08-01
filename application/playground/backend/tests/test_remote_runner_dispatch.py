@@ -46,7 +46,9 @@ def test_run_harbor_job_invokes_command_runner(tmp_path, monkeypatch) -> None:
     assert calls[0]["env"]["MATRIX_SURVEY_TASK_PATH"] == "application/tasks/survey_product-attitudes"
     pythonpath = calls[0]["env"]["PYTHONPATH"].split(":")
     assert str(tmp_path) in pythonpath
+    assert str(tmp_path / "src") in pythonpath
     assert str(tmp_path / "environment" / "runtime") in pythonpath
+    assert str(tmp_path / "environment" / "agents") in pythonpath
     assert str(tmp_path / "packages" / "playground" / "src") in pythonpath
     assert str(tmp_path / "application" / "playground") in pythonpath
 

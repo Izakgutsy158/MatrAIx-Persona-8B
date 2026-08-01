@@ -116,17 +116,24 @@ def _persona_path_from_trial(trial_dir: Path, repo_root: Path) -> str | None:
     return None
 
 
+def _persona_from_catalog_stem(stem: str) -> Persona | None:
+    """Lookup a curated catalog persona by stem/id. Avoid on path-backed loads."""
+    try:
+        from playground.persona_catalog import get_persona
+
+        return get_persona(stem)
+    except KeyError:
+        return None
+
+
 def _load_playground_persona(repo_root: Path, persona_rel: str | None) -> Persona:
     if persona_rel:
         abs_path = (repo_root / persona_rel).resolve()
+        stem = abs_path.stem if abs_path.name else Path(persona_rel).stem
+        # Path-backed personas (wiki cohorts, trial snapshots): load that file
+        # only. Never scan the curated catalog first — get_persona() reloads
+        # every curated YAML and dominated trail-report open latency (~3s).
         if abs_path.is_file():
-            stem = abs_path.stem
-            try:
-                from playground.persona_catalog import get_persona
-
-                return get_persona(stem)
-            except KeyError:
-                pass
             try:
                 from matraix.agents.persona.loader import load_persona as load_harbor_persona
 
@@ -149,7 +156,10 @@ def _load_playground_persona(repo_root: Path, persona_rel: str | None) -> Person
                     source=str(raw.get("source") or ""),
                     context=context,
                 )
-            raw = yaml.safe_load(abs_path.read_text(encoding="utf-8"))
+            try:
+                raw = yaml.safe_load(abs_path.read_text(encoding="utf-8"))
+            except Exception:  # noqa: BLE001
+                raw = None
             if isinstance(raw, dict):
                 pid = str(raw.get("persona_id") or raw.get("id") or stem)
                 return Persona(
@@ -158,8 +168,10 @@ def _load_playground_persona(repo_root: Path, persona_rel: str | None) -> Person
                     source=str(raw.get("source") or ""),
                     context=str(raw.get("system_prompt") or raw.get("summary") or pid),
                 )
+        catalog = _persona_from_catalog_stem(stem)
+        if catalog is not None:
+            return catalog
     return Persona(id="unknown", name="Persona", source="", context="")
-
 
 def _task_path_from_trial(trial_dir: Path) -> str | None:
     config_path = trial_dir / "config.json"
@@ -540,34 +552,50 @@ def _read_trial_snapshot_doc(trial_dir: Path, filename: str) -> str | None:
     return text or None
 
 
-def _read_trial_task_doc(trial_dir: Path, filename: str, repo_root: Path) -> str | None:
+_TASK_DOC_DETAIL_KEYS = {
+    "task_instruction.md": "instructionMarkdown",
+    "context.md": "contextMarkdown",
+    "questionnaire.md": "questionnaireMarkdown",
+    "output_schema.md": "outputSchemaMarkdown",
+}
+
+
+def _live_task_detail_for_trial(trial_dir: Path, repo_root: Path) -> dict[str, Any] | None:
+    """Load live task detail once per debrief (shared by rail doc readers)."""
+    task_rel = _task_path_from_trial(trial_dir)
+    if not task_rel:
+        return None
+    from backend.service.task_detail_service import get_task_detail
+
+    try:
+        detail = get_task_detail(task_rel, repo_root=repo_root)
+    except (FileNotFoundError, ValueError, OSError):
+        return None
+    return detail if isinstance(detail, dict) else None
+
+
+def _read_trial_task_doc(
+    trial_dir: Path,
+    filename: str,
+    repo_root: Path,
+    *,
+    task_detail: dict[str, Any] | None = None,
+) -> str | None:
     """Read a task doc for debrief rails.
 
     For contributor-facing docs (``context.md``, questionnaire, instruction),
     prefer the live task definition via ``get_task_detail`` so Playground
     reflects authoring edits. Trial snapshots are only a fallback.
     """
-    task_rel = _task_path_from_trial(trial_dir)
-    mapping = {
-        "task_instruction.md": "instructionMarkdown",
-        "context.md": "contextMarkdown",
-        "questionnaire.md": "questionnaireMarkdown",
-        "output_schema.md": "outputSchemaMarkdown",
-    }
-    key = mapping.get(filename)
-    if task_rel and key:
-        from backend.service.task_detail_service import get_task_detail
-
-        try:
-            detail = get_task_detail(task_rel, repo_root=repo_root)
-        except (FileNotFoundError, ValueError, OSError):
-            detail = None
-        if isinstance(detail, dict):
-            value = str(detail.get(key) or "").strip()
-            if value:
-                return value
+    key = _TASK_DOC_DETAIL_KEYS.get(filename)
+    detail = task_detail
+    if detail is None and key:
+        detail = _live_task_detail_for_trial(trial_dir, repo_root)
+    if isinstance(detail, dict) and key:
+        value = str(detail.get(key) or "").strip()
+        if value:
+            return value
     return _read_trial_snapshot_doc(trial_dir, filename)
-
 def _persona_prompt_abs_path(repo_root: Path, persona_rel: str | None) -> str | None:
     if not persona_rel:
         return None
@@ -580,26 +608,24 @@ def _humanize_dimension_key(key: str) -> str:
 
 
 def _format_persona_dimensions_from_yaml(raw: dict[str, Any]) -> str:
-    persona_id = str(raw.get("persona_id") or raw.get("id") or "").strip()
-    source = str(raw.get("source") or "").strip()
-    name = str(raw.get("display_name") or "").strip() or (
-        "persona-{}".format(persona_id) if persona_id else "Persona"
-    )
-    lines = [name]
-    if source:
-        lines.append("Source: {}".format(source))
+    display_name = str(raw.get("display_name") or "").strip()
+    lines: list[str] = []
+    if display_name:
+        lines.append("You are {}.".format(display_name))
+        lines.append("")
     dims = raw.get("dimensions")
     if isinstance(dims, dict) and dims:
-        lines.extend(["", "Profile dimensions"])
+        lines.append("## Who you are")
+        lines.append("")
         for key in sorted(dims.keys()):
             value = dims.get(key)
             if value is None or str(value).strip() == "":
                 continue
             lines.append("- {}: {}".format(_humanize_dimension_key(key), value))
     elif raw.get("system_prompt"):
-        lines.extend(["", str(raw.get("system_prompt")).strip()])
+        lines.append(str(raw.get("system_prompt")).strip())
     elif raw.get("summary"):
-        lines.extend(["", str(raw.get("summary")).strip()])
+        lines.append(str(raw.get("summary")).strip())
     return "\n".join(lines).strip()
 
 
@@ -617,16 +643,18 @@ def _read_persona_yaml_raw(repo_root: Path, persona_rel: str | None) -> dict[str
 def _render_persona_prompt(
     repo_root: Path, persona_rel: str | None, persona: Persona
 ) -> str:
-    raw = _read_persona_yaml_raw(repo_root, persona_rel)
-    if raw:
-        block = _format_persona_dimensions_from_yaml(raw)
-        if block and not _is_thin_persona_prompt(block, persona=persona):
-            return "## Persona\n{}".format(block).strip()
     from playground.user_sim.prompt import render_persona_block
 
     yaml_path = _persona_prompt_abs_path(repo_root, persona_rel)
-    block = render_persona_block(persona, persona_yaml_path=yaml_path)
-    return "## Persona\n{}".format(block).strip()
+    block = render_persona_block(persona, persona_yaml_path=yaml_path).strip()
+    if block and not _is_thin_persona_prompt(block, persona=persona):
+        return block
+    raw = _read_persona_yaml_raw(repo_root, persona_rel)
+    if raw:
+        fallback = _format_persona_dimensions_from_yaml(raw)
+        if fallback and not _is_thin_persona_prompt(fallback, persona=persona):
+            return fallback
+    return block
 
 
 def _is_thin_persona_prompt(text: str, *, persona: Persona) -> bool:
@@ -636,7 +664,9 @@ def _is_thin_persona_prompt(text: str, *, persona: Persona) -> bool:
     if "You are a simulated user with predefined persona attributes" in stripped:
         return True
     body = stripped
-    if body.startswith("## Persona"):
+    if body.startswith("## Who you are"):
+        pass
+    elif body.startswith("## Persona"):
         body = body.split("\n", 1)[1].strip() if "\n" in body else ""
     if not body:
         return True
@@ -712,9 +742,17 @@ def _enrich_debrief_prompts(
 
     task_prompt = str(prompts.get("taskPrompt") or "").strip()
     instruction = _read_trial_instruction_markdown(trial_dir, repo_root)
-    context_markdown = _read_trial_task_doc(trial_dir, "context.md", repo_root)
-    questionnaire_markdown = _read_trial_task_doc(trial_dir, "questionnaire.md", repo_root)
-    output_schema_markdown = _read_trial_task_doc(trial_dir, "output_schema.md", repo_root)
+    # One live task-detail fetch for all rails — avoid 3× questionnaire scans.
+    task_detail = _live_task_detail_for_trial(trial_dir, repo_root)
+    context_markdown = _read_trial_task_doc(
+        trial_dir, "context.md", repo_root, task_detail=task_detail
+    )
+    questionnaire_markdown = _read_trial_task_doc(
+        trial_dir, "questionnaire.md", repo_root, task_detail=task_detail
+    )
+    output_schema_markdown = _read_trial_task_doc(
+        trial_dir, "output_schema.md", repo_root, task_detail=task_detail
+    )
     if instruction:
         if not task_prompt:
             prompts["taskPrompt"] = instruction

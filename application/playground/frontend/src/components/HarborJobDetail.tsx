@@ -3,7 +3,7 @@
  */
 import { useId, useMemo, useRef, useState, type ReactNode } from "react";
 import { flushSync } from "react-dom";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
 
 import { api, ApiError } from "@/lib/api";
 import {
@@ -2698,10 +2698,21 @@ function personaPoolFromPath(personaPath: string | null | undefined): string | n
   if (parts.length < 2) return null;
   const leaf = parts[parts.length - 1] ?? "";
   const parent = parts[parts.length - 2] ?? "";
-  if (/^persona_\d+/i.test(leaf) || leaf.endsWith(".yaml") || leaf.endsWith(".yml")) {
-    return parent || null;
+  const isPersonaFile =
+    /^persona_/i.test(leaf) || leaf.endsWith(".yaml") || leaf.endsWith(".yml");
+  if (!isPersonaFile) {
+    return parent || leaf || null;
   }
-  return parent || leaf || null;
+  // .../<dataset>/cohorts/cohort-<id>/persona_*.yaml → keep both dataset and cohort
+  if (
+    parent.startsWith("cohort-") &&
+    parts.length >= 4 &&
+    parts[parts.length - 3] === "cohorts"
+  ) {
+    const dataset = parts[parts.length - 4] ?? "";
+    return dataset ? `${dataset} · ${parent}` : parent;
+  }
+  return parent || null;
 }
 
 function readPersonaPool(config: Record<string, unknown> | null): string | null {
@@ -2957,7 +2968,7 @@ function BatchReportMetaByline({ meta }: { meta: BatchReportPdfMeta }) {
     facts.push({
       label: "Dataset",
       value: meta.personaPool,
-      title: "Persona pool actually used",
+      title: "Source dataset and cohort actually used for this job",
     });
   }
   if (personasRun > 0) {
@@ -5492,6 +5503,7 @@ function MetricLine({ label, value }: { label: string; value: string }) {
 }
 
 export function HarborJobDetail({ jobName, onBack, onOpenTrial }: HarborJobDetailProps) {
+  const queryClient = useQueryClient();
   const query = useQuery<HarborJobDetail>({
     queryKey: ["harbor-job", jobName],
     queryFn: () => api.getHarborJob(jobName),
@@ -5557,6 +5569,14 @@ export function HarborJobDetail({ jobName, onBack, onOpenTrial }: HarborJobDetai
     if (aggregationQuery.isEnabled) {
       void aggregationQuery.refetch();
     }
+  };
+  const prefetchTrialDebrief = (trialName: string) => {
+    if (!onOpenTrial) return;
+    void queryClient.prefetchQuery({
+      queryKey: ["harbor-trial-debrief", jobName, trialName],
+      queryFn: () => api.getHarborTrialDebrief(jobName, trialName),
+      staleTime: 60_000,
+    });
   };
 
   return (
@@ -5705,7 +5725,12 @@ export function HarborJobDetail({ jobName, onBack, onOpenTrial }: HarborJobDetai
                       <button
                         type="button"
                         disabled={!clickable}
-                        onClick={() => onOpenTrial?.(trial.trialName)}
+                        onPointerEnter={() => prefetchTrialDebrief(trial.trialName)}
+                        onFocus={() => prefetchTrialDebrief(trial.trialName)}
+                        onClick={() => {
+                          prefetchTrialDebrief(trial.trialName);
+                          onOpenTrial?.(trial.trialName);
+                        }}
                         className={`grid w-full grid-cols-[minmax(0,1.4fr)_minmax(0,1.2fr)_5.5rem_2rem] items-center gap-3 px-4 py-3 text-left text-[15px] ${
                           clickable ? "hover:bg-surface/40" : ""
                         } ${FOCUS_RING}`}

@@ -78,8 +78,9 @@ def test_persona_system_prompt_renders_dimensions_yaml(tmp_path: Path):
 
     prompt = persona_system_prompt(persona, persona_yaml_path=str(yaml_path))
 
-    assert "## Persona" in prompt
-    assert "Who you are" in prompt or "Simulated person: 0902" in prompt
+    assert "Who you are" in prompt
+    assert "Simulated person" not in prompt
+    assert "## Persona" not in prompt
     assert "65" in prompt or "South Asia" in prompt or "Retirement" in prompt
 
 

@@ -153,7 +153,7 @@ def _write_example_survey_task(repo: Path) -> None:
             [
                 "# Survey Product Feedback",
                 "",
-                "Answer this product-concept survey as the assigned persona.",
+                "Answer this product-concept survey.",
                 "",
                 "You are reacting to FocusLoop. Use the task context, then complete",
                 "every required question in the questionnaire.",
@@ -181,9 +181,9 @@ def test_map_trial_debrief_chatbot_enriches_prompts_from_events(tmp_path: Path) 
         encoding="utf-8",
     )
     prompts = {
-        "personaPrompt": "## Persona\n# Simulated person: 0042\n## Who you are\n\nA detailed persona biography.",
-        "harborPrompt": "## Persona\n# Simulated person: 0042\n## Who you are\n\nA detailed persona biography.\n\n## Task instruction\nStay in character.\n\n## Task context\nThis chatbot helps people discover movies.",
-        "taskPrompt": "## Task instruction\nStay in character.\n\n## Application kickoff\nReveal needs gradually.",
+        "personaPrompt": "You are Casey Brooks.\n\n## Who you are\n\nA detailed biography.",
+        "harborPrompt": "You are Casey Brooks.\n\n## Who you are\n\nA detailed biography.\n\n## Task instruction\nJudge the chatbot honestly.\n\n## Task context\nThis chatbot helps people discover movies.",
+        "taskPrompt": "## Task instruction\nJudge the chatbot honestly.\n\n## Application kickoff\nReveal needs gradually.",
     }
     (trial_dir / "events.jsonl").write_text(
         json.dumps({"type": "prompts", "prompts": prompts}) + "\n",
@@ -195,7 +195,9 @@ def test_map_trial_debrief_chatbot_enriches_prompts_from_events(tmp_path: Path) 
         job_name="job-prompts",
         trial_name="trial-prompts",
     )
-    assert "## Persona" in debrief["prompts"]["personaPrompt"]
+    assert "You are Casey Brooks." in debrief["prompts"]["personaPrompt"]
+    assert "Simulated person" not in debrief["prompts"]["personaPrompt"]
+    assert "## Persona" not in debrief["prompts"]["personaPrompt"]
     assert "Task context" in debrief["prompts"]["harborPrompt"]
     assert "Task instruction" in debrief["prompts"]["taskPrompt"]
     assert debrief["instructionMarkdown"].startswith("# Task instruction")

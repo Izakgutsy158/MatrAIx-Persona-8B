@@ -4,8 +4,10 @@ from pathlib import Path
 import pytest
 import yaml
 
+from playground.harbor import playground as harbor_playground_module
 from playground.harbor.playground import (
     HarborPlaygroundRunner,
+    _default_harbor_command,
     _harbor_failure_summary,
     build_chatbot_simulation_prompt,
     build_result_from_harbor_artifacts,
@@ -1441,6 +1443,26 @@ def test_harbor_runner_default_command_uses_configured_harbor_command(
         "--frozen",
         "harbor",
     ]
+
+
+def test_default_harbor_command_prefers_project_uv_run_without_venv_script(
+    tmp_path, monkeypatch
+):
+    monkeypatch.delenv("MATRIX_HARBOR_COMMAND", raising=False)
+    monkeypatch.delenv("HARBOR_COMMAND", raising=False)
+    monkeypatch.delenv("MATRIX_HARBOR_BIN", raising=False)
+    monkeypatch.delenv("HARBOR_BIN", raising=False)
+    monkeypatch.setattr(harbor_playground_module, "_repo_root", lambda: tmp_path)
+    (tmp_path / "pyproject.toml").write_text("[project]\nname = 'demo'\n")
+
+    assert _default_harbor_command() == (
+        "uv",
+        "run",
+        "python",
+        "-m",
+        "harbor.cli.main",
+        "run",
+    )
 
 
 def test_harbor_runner_surfaces_trial_errors_when_artifacts_are_missing(tmp_path):

@@ -118,9 +118,9 @@ def build_recommender_simulation_prompt(
     """Build the application-owned task prompt for a Harbor persona agent."""
     return f"""# Application task prompt: recommender simulation
 
-Harbor supplies the persona system prompt. Use that persona as your identity,
-communication style, preferences, and decision-making style. This application
-supplies only the task-specific simulation prompt below.
+Harbor supplies who you are. Use that identity for your communication style,
+preferences, and decision-making. This application supplies only the
+task-specific prompt below.
 
 You are testing a {domain} recommendation system.
 
@@ -128,9 +128,9 @@ You are testing a {domain} recommendation system.
 
 Goal context: {goal_context_description}
 
-Start by deciding, silently and in character, what kind of {domain} items you
-realistically want and which constraints or personal preferences matter. Do not
-reveal everything at once.
+Start by deciding, silently, what kind of {domain} items you realistically want
+and which constraints or personal preferences matter. Do not reveal everything
+at once.
 
 Interact naturally with the recommender, answer its follow-up questions, push
 back when recommendations do not fit, and stop when you can judge whether the

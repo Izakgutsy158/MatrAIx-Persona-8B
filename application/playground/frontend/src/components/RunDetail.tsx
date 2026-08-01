@@ -95,6 +95,7 @@ export function RunDetail({ harborTrial, onBack }: RunDetailProps) {
   const query = useQuery<PlaygroundResult>({
     queryKey: ["harbor-trial-debrief", harborTrial.jobName, harborTrial.trialName],
     queryFn: () => api.getHarborTrialDebrief(harborTrial.jobName, harborTrial.trialName),
+    staleTime: 60_000,
   });
 
   const run = useMemo(() => (query.data ? asRunDetail(query.data) : null), [query.data]);
