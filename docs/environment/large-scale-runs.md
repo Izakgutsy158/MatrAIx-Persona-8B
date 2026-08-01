@@ -1,118 +1,121 @@
-# Large-Scale Run — Representative Tasks × 1000 Personas
+# Large-scale runs
 
-## The task
+How to scale a Harbor job from a single smoke persona to hundreds or thousands
+of trials — using public persona sources and local artifacts only.
 
-Run **all representative tasks** for the Large-scale run, listed in the
-planning spreadsheet:
+For a first end-to-end run, start with [quickstart.md](../quickstart.md). This
+page assumes you already have API keys, Docker (when needed), and a working
+single-persona job.
 
-https://docs.google.com/spreadsheets/d/1CiXWXKKs9AxyqJbq1ZyBYqZj4-6RxRPPWzlB7zVzRyk/edit?gid=0#gid=0
+---
 
-**Right now the scope is rows 2-7, and all of them are ready.**
+## What “large-scale” means here
 
-All tasks live in the MatrAIx codebase:
+| Piece | Small / smoke | Large-scale |
+|-------|---------------|-------------|
+| Personas | One YAML (e.g. `persona_0042`) | Stratified sample or imported 1M subset |
+| Launch | One `harbor run` or Playground trial | Job recipe with many trials + concurrency |
+| Outputs | One trial under `jobs/<job>/` | Full job tree + optional batch PDF |
 
-https://github.com/MatrAIx-ai/MatrAIx
+Tasks live under [`application/tasks/`](../../application/tasks/). Pick any
+checked-in task that matches your surface (survey, chat, web, OS app).
 
-**Everything should be run on `main`.**
+---
 
-## Personas
+## Persona cohorts
 
-> [!IMPORTANT]
-> **A task-specific Hugging Face persona check is mandatory before every
-> run. Do not generate, sample, or substitute personas until this check has
-> been completed.**
+Use one of these sources — do **not** invent a private upload destination for
+personas unless you manage that storage yourself.
 
-The canonical published data is under:
+### 1. Task strategy (recommended starting point)
 
-https://huggingface.co/datasets/MatrAIx2026/Demo_Application_Data/tree/main
+Most tasks ship a `persona_strategy.json`. Generate a cohort with the Playground
+or `generate_application_job.py` so filters, stratification, and `sampleSize`
+come from the task:
 
-For **each task independently**:
-
-1. Identify the task's type and exact task folder in the dataset, for example
-   `Type 2 - Chatbot/<task>/`.
-2. Inspect that exact task folder for a case-sensitive
-   `Persona Profiles/` directory.
-3. If `Persona Profiles/` exists, use the persona YAML files from that folder.
-   These are the canonical cohort for the task. **Do not randomly generate a
-   new cohort, rerun stratified generation, use a generic sample, or silently
-   fall back to another persona source.**
-4. Validate the published cohort before running: record the dataset revision,
-   count the `persona_*.yaml` files, check `manifest.json` when present, and
-   ensure the run configuration references the downloaded files.
-5. Record the Hugging Face task path, revision, persona count, and local
-   download path in the run README/configuration so the cohort is reproducible.
-
-The check must be performed even if another task of the same type has a
-`Persona Profiles/` folder. Personas are task-specific and must not be reused
-across tasks unless the dataset explicitly publishes them under that task.
-
-Only when the exact task folder has **no** `Persona Profiles/` directory may
-you generate personas from the task's own `persona_strategy.json`. In that
-fallback case, run with **1000 personas** in **stratified mode**. Set
-`sampleSize` to `1000` and do not also set `sampleSizePerValueGroup`: the two
-fields are mutually exclusive, and `sampleSizePerValueGroup` sets a quota for
-every stratum rather than an exact total. Save the generated cohort as the
-task-level `Persona Profiles/` directory so later runs can reuse it.
-
-If the dataset lookup fails because of authentication, connectivity, an
-ambiguous task mapping, or an invalid/mismatched manifest, stop and resolve
-the issue. **Failure to complete the check is not permission to generate a
-replacement cohort.**
-
-## Running
-
-Run each task following the specification in the codebase. You will need
-to specify what model to use.
-
-## Where to find what you need to save
-
-You need to know where to find the artifacts folder, and where to package
-up the generated persona files. They are under `_generated`, and it is
-better to package them before a clean-up for the next task.
-
-## What to save
-
-Save everything for each run to the HuggingFace dataset:
-
-https://huggingface.co/datasets/MatrAIx2026/Demo_Application_Data/tree/main
-
-Place the run inside the existing dataset task folder, using the standard
-task-level persona and model-level artifact structure:
-
-```
-folder: <type folder>/<task>/
-├── README.md
-├── Persona Profiles/         canonical task cohort
-│   ├── manifest.json         when available
-│   ├── persona_strategy.json when available
-│   └── persona_<id>.yaml
-└── <model-or-provider>/
-    ├── artifact/
-    │   └── jobs/
-    │       └── <evaluation-run>/  all run data and telemetry
-    └── report/                    required PDF batch report plus aggregation
+```bash
+# Example: build a job that samples from the task strategy
+uv run python application/scripts/generate_application_job.py \
+  --task application/tasks/<task-name> \
+  --help
 ```
 
-Do not duplicate `Persona Profiles/` inside a model/provider folder. Smoke
-tests, preflight runs, scheduler logs, sidecar/service logs, and report-build
-logs are not final evaluation artifacts and should not be uploaded.
+When using stratified sampling, set `sampleSize` to the **exact total** you
+want. Do not also set `sampleSizePerValueGroup`: the two fields are mutually
+exclusive, and `sampleSizePerValueGroup` sets a quota per stratum rather than
+an exact total.
 
-## Generate and validate the PDF report
+### 2. Public Persona 1M coreset
 
-Every completed large-scale run must include a batch-level PDF in `report/`.
-Do not treat the PDF as optional, and do not upload only `reporting.json` or a
-JSON summary.
+For population-scale studies, import
+[`MatrAIx2026/MatrAIx_Persona_1M_Public_Release`](https://huggingface.co/datasets/MatrAIx2026/MatrAIx_Persona_1M_Public_Release)
+and point jobs at the local mirror. See
+[Persona setup](../persona/README.md#setup-and-usage) and
+[configuration.md](../configuration.md#persona-profile-and-default-sample).
 
-The canonical PDF is the **Persona-Task Batch Report**. It is generated by
-the Playground frontend's `Download PDF` action, which captures the rendered
-batch-report UI and packages it with task front matter and the full persona
-roster. Do not substitute the compact server-side PDF from
-`backend.service.report_pdf`; it does not contain the same report content.
+### 3. In-repo sample dataset
 
-The canonical exporter is
-`application/playground/frontend/src/lib/exportBatchReportPdf.ts` and uses the
-frontend dependencies `jspdf` and `html-to-image`. Install and build the
-Playground frontend before generating the report:
+For development and CI-sized batches:
+
+```text
+persona/datasets/matraix-persona-dev-sample/
+```
+
+Record the persona source (path, revision if Hugging Face, count) in your job
+README or recipe comments so runs stay reproducible.
+
+---
+
+## Running the job
+
+1. Choose agent and model for the task surface — see [agents.md](agents.md) and
+   [web-interaction.md](web-interaction.md).
+2. Launch via a recipe under `configs/jobs/` or generate one from Playground /
+   `generate_application_job.py`.
+3. Raise concurrency only as far as your machine, Docker, and API quotas allow.
+4. Keep the job on a stable git revision of this repo so task + verifier match
+   the artifacts you archive.
+
+Example shape (paths and flags vary by task):
+
+```bash
+uv run harbor run -c configs/jobs/<your-recipe>.yaml
+```
+
+Remote or multi-machine dispatch: [runtime.md](runtime.md).
+
+---
+
+## Where artifacts land
+
+Harbor writes under the repo-local `jobs/` tree (gitignored):
+
+```text
+jobs/<job_name>/
+├── <task>__<trial>/
+│   ├── agent/          trajectory, screenshots, …
+│   ├── verifier/       scores / reports
+│   └── result.json
+├── job.log
+└── result.json         job-level rollup when present
+```
+
+Generated persona YAMLs used for a run often sit under a task or job
+`_generated/` (or Playground materialization) directory — package or copy them
+**before** cleaning the workspace if you need to reproduce the cohort later.
+
+You own archival: copy `jobs/<job_name>/` (and any persona cohort you generated)
+to whatever storage your org uses. This handbook does not prescribe a shared
+external dataset for uploads.
+
+---
+
+## Batch PDF report (optional but useful)
+
+For multi-persona jobs, Playground can export a **Persona-Task Batch Report**
+PDF via **Download PDF** on the run detail view. That export is produced by
+`application/playground/frontend/src/lib/exportBatchReportPdf.ts` (frontend
+`jspdf` + `html-to-image`), not the compact server-side `report_pdf` helper.
 
 ```bash
 cd application/playground/frontend
@@ -120,51 +123,25 @@ npm install
 npm run build
 ```
 
-The dependencies are declared in `application/playground/frontend/package.json`.
-If a coding agent automates the UI download in a headless browser, it also
-needs a browser runtime. One supported setup is:
+After trials finish:
 
-```bash
-uv pip install --python .venv/bin/python playwright
-.venv/bin/playwright install chromium
-```
+1. Confirm the job has the expected number of completed trials (no pending /
+   running / errored trials you still care about).
+2. Build or refresh aggregation with `application/scripts/report_job.py`
+   (`--no-llm` when you only need deterministic rollups).
+3. Open the job in Playground **Runs**, wait for the batch report UI to load,
+   then **Download PDF**.
+4. Keep the PDF next to `aggregation.json` in your own archive layout if you
+   want a shareable deliverable.
 
-`fpdf2` (import name `fpdf`) is required only for the separate Python
-server-side renderer. Installing it may resolve a server-renderer import error,
-but an `fpdf2` output is **not** a replacement for the Playground PDF.
+Expected filename pattern: `<job_name>-persona-task-batch-report.pdf`.
 
-After all trials finish:
+---
 
-1. Confirm the Harbor result reports exactly 1000 completed trials and no
-   pending, running, cancelled, or errored trials.
-2. Build or refresh `aggregation.json` from the completed job. Use
-   `application/scripts/report_job.py`; pass `--no-llm` when only deterministic
-   aggregation is needed, or omit it when the task's reporting configuration
-   requires live LLM summaries.
-3. Make the completed job visible in the Playground's `jobs/` directory, start
-   the Playground, open **Runs**, select the job, and wait for **Persona-task
-   batch report** to finish loading.
-4. Click **Download PDF**. For automation, use a real browser and wait for the
-   browser download event; calling the backend PDF endpoint is not equivalent.
-   The expected filename is
-   `<job_name>-persona-task-batch-report.pdf`.
-5. Save the downloaded PDF and its `aggregation.json` under `report/`.
-6. Validate that the PDF exists, is non-empty, opens as a PDF, and has at least
-   one page before upload. For example:
+## Related
 
-   ```bash
-   file report/<job_name>-persona-task-batch-report.pdf
-   pdfinfo report/<job_name>-persona-task-batch-report.pdf
-   ```
-
-The `pdfinfo` metadata should identify `MatrAIx Playground` as the creator and
-`jsPDF` as the producer. Visually confirm that the PDF includes task details,
-instructions/context, persona strategy, captured batch results, and the
-persona cohort. A successful trial run without this canonical PDF is not a
-complete large-scale deliverable.
-
-**Final note:** upload the final evaluation deliverables to
-[MatrAIx2026/Demo_Application_Data](https://huggingface.co/datasets/MatrAIx2026/Demo_Application_Data/tree/main)
-on Hugging Face. Put each model/provider folder under the exact task folder on
-the dataset's `main` branch, and keep the canonical persona cohort at the task
-level in `Persona Profiles/`.
+- [Environment overview](README.md)
+- [Quickstart](../quickstart.md)
+- [Persona 1M](../persona/README.md#public-coreset-matraix-persona-1m)
+- [Configuration](../configuration.md)
+- [Playground API](../application/playground-api.md)
