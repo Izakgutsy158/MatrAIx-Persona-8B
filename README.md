@@ -16,9 +16,10 @@
 </div>
 
 <div align="center">
-  <a href="https://www.youtube.com/watch?v=cNFkz9Wo1y4">
-    <img src="https://img.youtube.com/vi/cNFkz9Wo1y4/maxresdefault.jpg" alt="Watch the MatrAIx demo video" width="900">
-  </a>
+  <video src="https://github.com/user-attachments/assets/7c9ae1d9-5d80-4821-9e30-5981ecc77afc" controls playsinline width="900">
+    Your browser does not support the video tag.
+    <a href="https://www.youtube.com/watch?v=cNFkz9Wo1y4">Watch the MatrAIx demo on YouTube</a>
+  </video>
 </div>
 
 ---
