@@ -51,7 +51,7 @@ flowchart TB
 | `policy_and_trust`, `coordination` | Optional depth |
 
 **Do not** add per-task `output_schema.md` — platform owns harness artifacts in
-[`eval_artifacts.md`](../../../docs/task-spec/eval_artifacts.md).
+[`eval_artifacts.md`](../docs/eval_artifacts.md).
 
 ## Contract
 
@@ -88,7 +88,7 @@ supplementary materials under `input/`:
   for `user_feedback.json`
 
 Platform-managed eval artifacts (`transcript.json`, `application_result.json`) are
-documented in [`eval_artifacts.md`](../../../docs/task-spec/eval_artifacts.md). Chatbot tasks do **not**
+documented in [`eval_artifacts.md`](../docs/eval_artifacts.md). Chatbot tasks do **not**
 use per-task `input/output_schema.md`; subjective feedback is owned by
 `self_report_schema.yaml`.
 

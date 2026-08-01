@@ -7,7 +7,7 @@ comparable, and reportable across tasks.
 
 **Start here if you are adding or editing a task under `application/tasks/`.**
 Operational copy-paste steps also live in
-[`../tasks/README.md`](../tasks/README.md) and [`task-guide.md`](../../docs/guides/task-guide.md);
+[`../tasks/README.md`](../tasks/README.md) and [`task-guide.md`](../../docs/application/task-guide.md);
 this document explains *why* the files exist and *how* they connect.
 
 ---
@@ -24,10 +24,10 @@ this document explains *why* the files exist and *how* they connect.
 | Kind of doc | Examples | You read it to… |
 |---|---|---|
 | **Onboarding** | this README | Follow the path + see big-picture diagrams below |
-| **File layouts** | [authoring-bundle.md](../../docs/task-spec/authoring-bundle.md) | Per-type file trees |
+| **File layouts** | [authoring-bundle.md](docs/authoring-bundle.md) | Per-type file trees |
 | **Type contract** | `survey/`, `chatbot/`, `web/`, `os-app/` README | **Per-type diagram** + metric detail |
-| **Cheat sheets** | [structured-output-quick-reference.md](../../docs/task-spec/structured-output-quick-reference.md) | Verifier context/facet keys |
-| **Deep reference** | [reporting-and-evaluation.md](../../docs/task-spec/reporting-and-evaluation.md) | Aggregation internals |
+| **Cheat sheets** | [structured-output-quick-reference.md](docs/structured-output-quick-reference.md) | Verifier context/facet keys |
+| **Deep reference** | [reporting-and-evaluation.md](docs/reporting-and-evaluation.md) | Aggregation internals |
 | **Copy-from** | `example-*` tasks, `*.example.json` | Start from working code |
 
 ---
@@ -139,7 +139,7 @@ need it.
 choose **web**. If the benchmark is **settings, files, mail, calendar, or
 cross-app operating work**, choose **os-app** — even when a browser appears
 along the way. Decision guide + shared facet keys:
-[shared-core-metrics.md](../../docs/task-spec/shared-core-metrics.md).
+[shared-core-metrics.md](docs/shared-core-metrics.md).
 
 Copy the closest `example-*` sibling, then rename the folder under
 `application/tasks/<your-task-name>/`.
@@ -158,14 +158,14 @@ and **`reporting.json`**. Supplementary files depend on type:
 | Scenario prose | `instruction.md` | `instruction.md` | `instruction.md` |
 | Background / product context | `input/context.md` | `input/context.md` | `input/context.md` (optional) |
 | Structured task input | `input/questionnaire.yaml` (includes `askRationale` / `askConfidence`) | `input/chatbot.yaml`, optional `input/protocol.md` | — |
-| Objective evidence / harness | platform writes `survey_result.json` + trajectory | platform-managed ([chatbot/eval_artifacts.md](../../docs/task-spec/eval_artifacts.md)) | prefer trace/state; optional agent submission inline in `instruction.md` |
+| Objective evidence / harness | platform writes `survey_result.json` + trajectory | platform-managed ([chatbot/eval_artifacts.md](docs/eval_artifacts.md)) | prefer trace/state; optional agent submission inline in `instruction.md` |
 | Persona self-report | — | `input/self_report_schema.yaml` | `input/self_report_schema.yaml` (optional) |
 | Batch policy stub | `reporting.json` | `reporting.json` | `reporting.json` |
 | Target cohort / sampling | `persona_strategy.json` | `persona_strategy.json` | `persona_strategy.json` |
 
 Per-type folder trees, `persona_strategy.json` schema, and edge cases:
-[authoring-bundle.md](../../docs/task-spec/authoring-bundle.md). Harbor metadata (`task.toml`,
-timeouts, `[environment].definition`): see [`task-guide.md`](../../docs/guides/task-guide.md).
+[authoring-bundle.md](docs/authoring-bundle.md). Harbor metadata (`task.toml`,
+timeouts, `[environment].definition`): see [`task-guide.md`](../../docs/application/task-guide.md).
 
 **Authoring rules that matter early:**
 
@@ -175,7 +175,7 @@ timeouts, `[environment].definition`): see [`task-guide.md`](../../docs/guides/t
   and/or `cohortId`, stratify axes, optional `sampleSize`) — not under `input/`.
   Playground applies them under Random / Stratified; operators can turn the task
   default off and edit filters. Schema:
-  [authoring-bundle.md § persona_strategy.json](../../docs/task-spec/authoring-bundle.md#persona_strategyjson).
+  [authoring-bundle.md § persona_strategy.json](docs/authoring-bundle.md#persona_strategyjson).
 - Put **scenario and product background** in `input/context.md` for every task
   type when it helps; keep `instruction.md` focused on goals, steps, and schemas.
 - Keep **operator setup** (agent names, smoke commands) in the task's own
@@ -214,11 +214,11 @@ rename shared keys to fit one scenario.
 |---|---|
 | Survey | `question_response` (per question), `trial_summary` |
 | Chatbot | `task_outcome`, `conversation_summary`, `user_feedback` when self-report exists |
-| Web | shared core ([shared-core-metrics.md](../../docs/task-spec/shared-core-metrics.md)) + `decision` / `decision_process` for browse/choose tasks |
+| Web | shared core ([shared-core-metrics.md](docs/shared-core-metrics.md)) + `decision` / `decision_process` for browse/choose tasks |
 | OS / app | shared core + scenario-specific artifact or handoff contexts |
 
 Context/facet cheat sheet and JSON templates:
-[structured-output-quick-reference.md](../../docs/task-spec/structured-output-quick-reference.md).
+[structured-output-quick-reference.md](docs/structured-output-quick-reference.md).
 
 ---
 
@@ -242,7 +242,7 @@ Layer 1 still runs. Add `contextRules[]` when you want semantic summaries (for
 example "summarize `reason` grouped by `response`" on survey questions).
 
 End-to-end flow, Layer 1 internals, Layer 2 directives, and template index:
-[reporting-and-evaluation.md](../../docs/task-spec/reporting-and-evaluation.md).
+[reporting-and-evaluation.md](docs/reporting-and-evaluation.md).
 
 **Do not** hide reporting policy inside verifier code. The verifier writes
 **facts**; `reporting.json` declares **optional extra analysis**.
@@ -251,9 +251,9 @@ End-to-end flow, Layer 1 internals, Layer 2 directives, and template index:
 
 ### Step 5 — Smoke, batch, debrief
 
-1. **Smoke one persona** — [`quickstart.md`](../../docs/guides/quickstart.md)
+1. **Smoke one persona** — [`quickstart.md`](../../docs/quickstart.md)
 2. **Launch a batch job** — [`../tasks/README.md`](../tasks/README.md),
-   [Job Generation Scripts](../../docs/application.md#job-generation-scripts)
+   [Job Generation Scripts](../../docs/application/README.md)
 3. **Review aggregation** — Playground **Runs** UI or `report_job.py`
 
 Iterate on `instruction.md` / verifier until smoke passes, then scale personas.
@@ -270,7 +270,7 @@ Iterate on `instruction.md` / verifier until smoke passes, then scale personas.
 | **Verifier output** | `verifier/structured_output.json` | Author (`tests/`) | Normalized evaluation facts for one trial |
 | **Batch policy** | `reporting.json` | Author | Optional Layer 2 aggregation rules |
 | **Job summary** | `aggregation.json` | Platform | Cross-trial stats + optional LLM units |
-| **Persona profile** | `persona/datasets/*` | Persona team | Who the simulated user is |
+| **Persona profile** | `persona/datasets/*` | Dataset / release | Who the simulated user is |
 
 ---
 
@@ -284,7 +284,7 @@ ratings:
 3. Verifier maps into a `user_feedback` **context** in `structured_output.json`
 
 Shared facet names (`overall_experience_rating`, `trust_level`, …) live in
-[shared-core-metrics.md § Shared subjective channel](../../docs/task-spec/shared-core-metrics.md#shared-subjective-channel-interactive-tasks).
+[shared-core-metrics.md § Shared subjective channel](docs/shared-core-metrics.md#shared-subjective-channel-interactive-tasks).
 Family-specific slices (`experience` on web, conversation-only chatbot fields)
 **add on top** — they do not replace `user_feedback`.
 
@@ -296,7 +296,7 @@ The persona agent only sees the **protocol surface** for the task type (survey
 instrument, chat loop, browser/computer-use API, OS surface). Internal APIs,
 databases, and health checks belong to setup, reset, and verifier logic — not
 the agent's reachable interface. Full statement:
-[runtime-boundary.md](../../docs/task-spec/runtime-boundary.md).
+[runtime-boundary.md](docs/runtime-boundary.md).
 
 ---
 
@@ -306,29 +306,29 @@ Use this when a step above is not enough — not as a flat reading list.
 
 **Authoring & folder layout**
 
-- [authoring-bundle.md](../../docs/task-spec/authoring-bundle.md) — per-type file trees + `persona_strategy.json`
+- [authoring-bundle.md](docs/authoring-bundle.md) — per-type file trees + `persona_strategy.json`
 - [survey/README.md](survey/README.md) — `questionnaire.yaml` contract
 - [chatbot/README.md](chatbot/README.md) — chat loop + reporting contexts
-- [chatbot/eval_artifacts.md](../../docs/task-spec/eval_artifacts.md) — platform-managed chat artifacts
+- [chatbot/eval_artifacts.md](docs/eval_artifacts.md) — platform-managed chat artifacts
 - [web/README.md](web/README.md) — browser metrics + persona-sensitive browse tasks
 - [os-app/README.md](os-app/README.md) — outcome-based OS benchmarks
 
 **Evaluation & metrics**
 
-- [structured-output-quick-reference.md](../../docs/task-spec/structured-output-quick-reference.md) — contexts, facets, example JSON paths
-- [shared-core-metrics.md](../../docs/task-spec/shared-core-metrics.md) — web/os shared core + subjective channel
+- [structured-output-quick-reference.md](docs/structured-output-quick-reference.md) — contexts, facets, example JSON paths
+- [shared-core-metrics.md](docs/shared-core-metrics.md) — web/os shared core + subjective channel
 - `shared_core_metric_contract.example.json` — machine-readable shared core
 
 **Reporting & jobs**
 
-- [reporting-and-evaluation.md](../../docs/task-spec/reporting-and-evaluation.md) — Layer 1/2, mermaid flows, `contextRules`
+- [reporting-and-evaluation.md](docs/reporting-and-evaluation.md) — Layer 1/2, mermaid flows, `contextRules`
 - [`../tasks/README.md`](../tasks/README.md) — reporting policy examples, operational notes
 
 **Repo layout & operations**
 
-- [`task-guide.md`](../../docs/guides/task-guide.md) — `task.toml`, environments, verifier layout
-- [`quickstart.md`](../../docs/guides/quickstart.md) — first end-to-end run
-- [`choosing-an-agent.md`](../../docs/guides/choosing-an-agent.md) — agent + API keys
+- [`task-guide.md`](../../docs/application/task-guide.md) — `task.toml`, environments, verifier layout
+- [`quickstart.md`](../../docs/quickstart.md) — first end-to-end run
+- [`agents.md`](../../docs/environment/agents.md) — agent + API keys
 
 ---
 
@@ -339,8 +339,8 @@ Use this when a step above is not enough — not as a flat reading list.
 - [ ] `task.toml` `[metadata].type` matches the contract folder you followed
 - [ ] Verifier emits `structured_output.json` with shared context names where applicable
 - [ ] `reporting.json` exists (empty `contextRules` is fine)
-- [ ] `persona_strategy.json` at task root with a target cohort (`dimensionFilters` and/or `cohortId`; see [authoring-bundle.md](../../docs/task-spec/authoring-bundle.md#persona_strategyjson))
-- [ ] If strategy filters are narrower than `matraix-persona-dev-sample` coverage, sample from `matraix-persona-1m`, widen filters, or use a saved cohort (see [authoring-bundle.md](../../docs/task-spec/authoring-bundle.md#ensuring-pool-coverage))
+- [ ] `persona_strategy.json` at task root with a target cohort (`dimensionFilters` and/or `cohortId`; see [authoring-bundle.md](docs/authoring-bundle.md#persona_strategyjson))
+- [ ] If strategy filters are narrower than `matraix-persona-dev-sample` coverage, sample from `matraix-persona-1m`, widen filters, or use a saved cohort (see [authoring-bundle.md](docs/authoring-bundle.md#ensuring-pool-coverage))
 - [ ] Interactive tasks: `self_report_schema.yaml` → `user_feedback` context when used
 - [ ] Smoke run passes on at least one persona before batch scale-up
 - [ ] Multi-persona batch validation: attach the **Playground UI** batch PDF
@@ -354,14 +354,10 @@ Use this when a step above is not enough — not as a flat reading list.
 ## This directory at a glance
 
 ```text
-task-spec/
-├── README.md                          ← you are here (diagrams + onboarding)
+application/task-spec/
+├── README.md
+├── docs/                     authoring, reporting, metrics, …
+├── survey/ chatbot/ web/ os-app/
 ├── manifest.json
-├── survey/   chatbot/   web/   os-app/   ← type contracts + example JSON
 └── shared_core_metric_contract.example.json
-
-Deep-dive guides now live in the handbook under `docs/task-spec/`:
-authoring-bundle.md, reporting-and-evaluation.md,
-structured-output-quick-reference.md, shared-core-metrics.md,
-runtime-boundary.md, eval_artifacts.md.
 ```

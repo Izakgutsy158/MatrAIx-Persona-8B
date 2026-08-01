@@ -41,7 +41,7 @@ flowchart TB
 ```
 
 Outcome-based verification (final state, not action sequence). Reuse the **same shared core**
-as web ([shared-core-metrics.md](../../../docs/task-spec/shared-core-metrics.md)); add scenario-specific contexts on top.
+as web ([shared-core-metrics.md](../../../application/task-spec/docs/shared-core-metrics.md)); add scenario-specific contexts on top.
 Put long scenario or product background in `input/context.md`; keep steps and the
 submission JSON schema in `instruction.md` (same convention as survey, chatbot, and web tasks).
 
@@ -61,7 +61,7 @@ Use this folder when the benchmark question is fundamentally:
 Use `../web/README.md` for browser-mediated web tasks. Use this folder for
 native app, settings, file, and cross-app operating benchmarks.
 
-Use [`shared-core-metrics.md`](../../../docs/task-spec/shared-core-metrics.md) as the source of truth for the shared core context names,
+Use [`shared-core-metrics.md`](../../../application/task-spec/docs/shared-core-metrics.md) as the source of truth for the shared core context names,
 facet keys, and reuse rules that `os-app/` shares with `web/`. See
 `../shared_core_metric_contract.example.json` for the machine-readable
 companion.
