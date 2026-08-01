@@ -5,10 +5,17 @@ import os
 import re
 from pathlib import Path
 
-OUTPUT = Path("/app/output/book_interest.json")
-USER_FEEDBACK = Path("/app/output/user_feedback.json")
+OUTPUT_DIR = Path(
+    os.environ.get("PLAYGROUND_OUTPUT_DIR")
+    or os.environ.get("HARBOR_OUTPUT_DIR")
+    or os.environ.get("MATRIX_OUTPUT_DIR")
+    or "/app/output"
+)
+OUTPUT = OUTPUT_DIR / "book_interest.json"
+USER_FEEDBACK = OUTPUT_DIR / "user_feedback.json"
 PRICE_PATTERN = re.compile(r"^£\d+\.\d{2}$")
 DECISION_OUTCOMES = {"selected", "considered", "rejected", "deferred", "skipped"}
+_TERMINAL_ACTIONS = frozenset({"done", "answer", "terminate"})
 BASIS_PRIMARY = {
     "price",
     "quality",
@@ -23,6 +30,150 @@ BASIS_PRIMARY = {
 }
 EXPLORATION_STYLES = {"quick_pick", "compared_multiple", "deep_research", "hesitant"}
 SATISFACTION_BUCKETS = {"yes", "partially", "no"}
+
+
+def _first_balanced_json_object(text: str) -> str | None:
+    if not text:
+        return None
+    start = -1
+    depth = 0
+    in_string = False
+    escape = False
+    for index, char in enumerate(text):
+        if escape:
+            escape = False
+            continue
+        if in_string:
+            if char == "\\":
+                escape = True
+            elif char == '"':
+                in_string = False
+            continue
+        if char == '"':
+            in_string = True
+            continue
+        if char == "{":
+            if depth == 0:
+                start = index
+            depth += 1
+        elif char == "}":
+            if depth == 0:
+                continue
+            depth -= 1
+            if depth == 0 and start != -1:
+                return text[start : index + 1]
+    return None
+
+
+def _parse_submission(text: str) -> dict | None:
+    candidate = _first_balanced_json_object((text or "").strip())
+    if candidate is None:
+        return None
+    try:
+        obj = json.loads(candidate)
+    except json.JSONDecodeError:
+        return None
+    return obj if isinstance(obj, dict) else None
+
+
+def _texts_from_step(step: dict) -> list[str]:
+    texts: list[str] = []
+    tool_calls = step.get("tool_calls") or []
+    if isinstance(tool_calls, list):
+        for call in reversed(tool_calls):
+            if not isinstance(call, dict):
+                continue
+            arguments = call.get("arguments") or {}
+            if not isinstance(arguments, dict):
+                continue
+            name = call.get("function_name")
+            if name == "done" and isinstance(arguments.get("message"), str):
+                texts.append(arguments["message"])
+            if name == "mark_task_complete" and isinstance(
+                arguments.get("result"), str
+            ):
+                texts.append(arguments["result"])
+            if name == "computer_action":
+                action_type = arguments.get("type")
+                if action_type in _TERMINAL_ACTIONS:
+                    for field in ("result", "text"):
+                        value = arguments.get(field)
+                        if isinstance(value, str):
+                            texts.append(value)
+    message = step.get("message")
+    if isinstance(message, str):
+        texts.append(message)
+    return texts
+
+
+def _extract_from_trajectory(traj_path: Path) -> dict | None:
+    try:
+        trajectory = json.loads(traj_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return None
+    steps = trajectory.get("steps") if isinstance(trajectory, dict) else None
+    if not isinstance(steps, list):
+        return None
+    for step in reversed(steps):
+        if not isinstance(step, dict):
+            continue
+        for text in _texts_from_step(step):
+            parsed = _parse_submission(text)
+            if parsed is not None:
+                return parsed
+    return None
+
+
+def _recover_submission_from_host_signals() -> None:
+    """Materialize book_interest.json from host-mirrored final_answer / trajectory."""
+    if OUTPUT.is_file():
+        return
+    text_candidates = [
+        OUTPUT_DIR / "final_answer.txt",
+        Path("/tmp/harbor/logs/agent/final_answer.txt"),
+        Path("/logs/agent/final_answer.txt"),
+    ]
+    for fa_path in text_candidates:
+        if not fa_path.is_file():
+            continue
+        parsed = _parse_submission(
+            fa_path.read_text(encoding="utf-8", errors="replace")
+        )
+        if parsed is None:
+            continue
+        try:
+            OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+            OUTPUT.write_text(
+                json.dumps(parsed, indent=2, ensure_ascii=False),
+                encoding="utf-8",
+            )
+            return
+        except OSError:
+            continue
+
+    trajectory_candidates = [
+        Path(OUTPUT_DIR, "trajectory.json"),
+        Path("/tmp/harbor/logs/agent/trajectory.json"),
+        Path("/logs/agent/trajectory.json"),
+    ]
+    for traj_path in trajectory_candidates:
+        if not traj_path.is_file():
+            continue
+        parsed = _extract_from_trajectory(traj_path)
+        if parsed is None:
+            continue
+        try:
+            OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+            OUTPUT.write_text(
+                json.dumps(parsed, indent=2, ensure_ascii=False),
+                encoding="utf-8",
+            )
+            return
+        except OSError:
+            continue
+
+
+_recover_submission_from_host_signals()
 
 
 def _navigation_path_type(exploration_style: str) -> str:

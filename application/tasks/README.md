@@ -5,7 +5,7 @@ MatrAIx and organized under the MatrAIx `application/` module.
 
 This import contains application task folders, tests, and reference solutions.
 Runtime build contexts live under `environment/task-environments/application/`.
-Generated job recipes land under `configs/jobs/` (see [QUICKSTART.md](../../docs/guides/quickstart.md)).
+Generated job recipes land under `configs/jobs/` (see [quickstart.md](../../docs/quickstart.md)).
 
 ## Naming
 
@@ -57,12 +57,12 @@ the scenario, task metadata, and verifier.
 8. Add `persona_strategy.json` at the task root with a target cohort
    (`dimensionFilters` and/or `cohortId`; default mode, optional `sampleSize`).
    See
-   [`authoring-bundle.md`](../../docs/task-spec/authoring-bundle.md#persona_strategyjson).
+   [`authoring-bundle.md`](../../application/task-spec/docs/authoring-bundle.md#persona_strategyjson).
 9. If those filters are narrower than `matraix-persona-dev-sample` (~200 personas),
    sample from `persona/datasets/matraix-persona-1m`, widen filters / sources, or
    use a saved cohort. Playground does **not** synthesize coverage pools.
    Details:
-   [Ensuring pool coverage](../../docs/task-spec/authoring-bundle.md#ensuring-pool-coverage).
+   [Ensuring pool coverage](../../application/task-spec/docs/authoring-bundle.md#ensuring-pool-coverage).
 10. Use `persona/datasets/matraix-persona-dev-sample/persona_0042.yaml` for lightweight
    smoke examples; use `matraix-persona-1m` for production-scale cohorts.
 
@@ -87,7 +87,7 @@ For chatbot tasks, keep task docs under `input/`:
 - `self_report_schema.yaml` (persona self-report for `user_feedback.json`)
 
 Platform-managed chat artifacts (`transcript.json`, `application_result.json`) are
-documented in [`eval_artifacts.md`](../../docs/task-spec/eval_artifacts.md),
+documented in [`eval_artifacts.md`](../../application/task-spec/docs/eval_artifacts.md),
 not in per-task `output_schema.md`.
 
 For web and OS/app tasks, keep the task-result JSON schema inline in
@@ -218,7 +218,7 @@ shape below is an **opt-in** Layer 2 example when `askRationale` is true:
 | **domain** | Vertical: `software` · `finance` · `healthcare` · `commerce-retail` |
 | **tags** | Task-specific labels; do not repeat `type` or `domain`. |
 
-Persona benchmark and grounding tasks should live under `persona/tasks/`, not
+Persona adherence validation probes live under `persona/validation/tasks/`, not
 in this module.
 
 ## Task spec
@@ -259,5 +259,5 @@ runtime or sidecar topology. Survey tasks stay task-local only for `input/`
 content; they still reuse `environment/task-environments/application/shared-survey-form/`.
 
 Survey and chat reference tasks run in **auto** mode without building a task image
-(see [QUICKSTART.md](../../docs/guides/quickstart.md)). Web and computer-use tasks need a
+(see [quickstart.md](../../docs/quickstart.md)). Web and computer-use tasks need a
 Dockerfile in the task environment directory.

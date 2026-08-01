@@ -47,4 +47,4 @@ export MATRIX_CHATBOT_TASK_PATH="application/tasks/chat_meal-planning-nutrition"
 uv run harbor run -c configs/jobs/application-task-job-recipe/chat-meal-planning-nutrition-4p.yaml
 ```
 
-See [Application Quickstart](../../../docs/guides/quickstart.md) for the UI path.
+See [Application Quickstart](../../../docs/quickstart.md) for the UI path.

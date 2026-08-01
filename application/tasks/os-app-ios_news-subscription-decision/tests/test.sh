@@ -10,7 +10,6 @@ from __future__ import annotations
 
 import json
 import os
-import re
 import sys
 from pathlib import Path
 
@@ -82,47 +81,156 @@ def _llm_signal_facets(text, *, specs, context_desc, rubric):
 
 
 OUTPUT_DIR = Path(
-    os.environ.get("HARBOR_OUTPUT_DIR")
+    os.environ.get("PLAYGROUND_OUTPUT_DIR")
+    or os.environ.get("HARBOR_OUTPUT_DIR")
     or os.environ.get("MATRIX_OUTPUT_DIR")
-    or os.environ.get("PLAYGROUND_OUTPUT_DIR")
     or "/app/output"
 )
 
 path = OUTPUT_DIR / "decision.json"
+_TERMINAL_ACTIONS = frozenset({"done", "answer", "terminate"})
 
-def _recover_submission_from_final_answer() -> None:
+
+def _first_balanced_json_object(text: str) -> str | None:
+    if not text:
+        return None
+    start = -1
+    depth = 0
+    in_string = False
+    escape = False
+    for index, char in enumerate(text):
+        if escape:
+            escape = False
+            continue
+        if in_string:
+            if char == "\\":
+                escape = True
+            elif char == '"':
+                in_string = False
+            continue
+        if char == '"':
+            in_string = True
+            continue
+        if char == "{":
+            if depth == 0:
+                start = index
+            depth += 1
+        elif char == "}":
+            if depth == 0:
+                continue
+            depth -= 1
+            if depth == 0 and start != -1:
+                return text[start : index + 1]
+    return None
+
+
+def _parse_submission(text: str) -> dict | None:
+    candidate = _first_balanced_json_object((text or "").strip())
+    if candidate is None:
+        return None
+    try:
+        obj = json.loads(candidate)
+    except json.JSONDecodeError:
+        return None
+    return obj if isinstance(obj, dict) else None
+
+
+def _texts_from_step(step: dict) -> list[str]:
+    texts: list[str] = []
+    tool_calls = step.get("tool_calls") or []
+    if isinstance(tool_calls, list):
+        for call in reversed(tool_calls):
+            if not isinstance(call, dict):
+                continue
+            arguments = call.get("arguments") or {}
+            if not isinstance(arguments, dict):
+                continue
+            name = call.get("function_name")
+            if name == "done" and isinstance(arguments.get("message"), str):
+                texts.append(arguments["message"])
+            if name == "mark_task_complete" and isinstance(
+                arguments.get("result"), str
+            ):
+                texts.append(arguments["result"])
+            if name == "computer_action":
+                action_type = arguments.get("type")
+                if action_type in _TERMINAL_ACTIONS:
+                    for field in ("result", "text"):
+                        value = arguments.get(field)
+                        if isinstance(value, str):
+                            texts.append(value)
+    message = step.get("message")
+    if isinstance(message, str):
+        texts.append(message)
+    return texts
+
+
+def _extract_from_trajectory(traj_path: Path) -> dict | None:
+    try:
+        trajectory = json.loads(traj_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return None
+    steps = trajectory.get("steps") if isinstance(trajectory, dict) else None
+    if not isinstance(steps, list):
+        return None
+    for step in reversed(steps):
+        if not isinstance(step, dict):
+            continue
+        for text in _texts_from_step(step):
+            parsed = _parse_submission(text)
+            if parsed is not None:
+                return parsed
+    return None
+
+
+def _write_submission(obj: dict) -> bool:
+    try:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(
+            json.dumps(obj, indent=2, ensure_ascii=False),
+            encoding="utf-8",
+        )
+        return True
+    except OSError:
+        return False
+
+
+def _recover_submission_from_host_signals() -> None:
+    """Materialize decision.json from host-mirrored final_answer / trajectory.
+
+    host_verifier mirrors agent logs into OUTPUT_DIR before this runs; keep
+    classic agent-log mounts as fallback for in-sandbox verify.
+    """
     if path.is_file():
         return
-    candidates = [
+    text_candidates = [
         OUTPUT_DIR / "final_answer.txt",
         Path("/tmp/harbor/logs/agent/final_answer.txt"),
         Path("/logs/agent/final_answer.txt"),
     ]
-    for fa_path in candidates:
+    for fa_path in text_candidates:
         if not fa_path.is_file():
             continue
-        raw = fa_path.read_text(encoding="utf-8", errors="replace").strip()
-        match = re.search(r"\{[\s\S]*\}", raw)
-        if not match:
-            continue
-        try:
-            candidate = json.loads(match.group())
-        except json.JSONDecodeError:
-            continue
-        if not isinstance(candidate, dict):
-            continue
-        try:
-            path.parent.mkdir(parents=True, exist_ok=True)
-            path.write_text(
-                json.dumps(candidate, indent=2, ensure_ascii=False),
-                encoding="utf-8",
-            )
+        parsed = _parse_submission(
+            fa_path.read_text(encoding="utf-8", errors="replace")
+        )
+        if parsed is not None and _write_submission(parsed):
             return
-        except OSError:
+
+    trajectory_candidates = [
+        OUTPUT_DIR / "trajectory.json",
+        Path("/tmp/harbor/logs/agent/trajectory.json"),
+        Path("/logs/agent/trajectory.json"),
+    ]
+    for traj_path in trajectory_candidates:
+        if not traj_path.is_file():
             continue
+        parsed = _extract_from_trajectory(traj_path)
+        if parsed is not None and _write_submission(parsed):
+            return
 
 
-_recover_submission_from_final_answer()
+_recover_submission_from_host_signals()
 
 if not path.is_file():
     sys.exit(f"missing {path}")
