@@ -847,7 +847,7 @@ function OsAppResults({
             <p className="text-[12px] text-text-variant">{task.description}</p>
           </div>
         )}
-        {hasLiveView && (
+        {hasLiveView ? (
           <section
             ref={liveViewRef}
             className={
@@ -888,6 +888,10 @@ function OsAppResults({
               </div>
             )}
           </section>
+        ) : (
+          // Docker Linux has no published VNC / use.computer screenshot — still
+          // show the polled trajectory steps so single-trial runs are not a blank pane.
+          <div className="min-h-0 flex-1">{stepsPanel}</div>
         )}
       </div>
     );

@@ -49,7 +49,7 @@ class LocalAppWorldEvalRunner:
             if on_event is not None:
                 on_event(event)
 
-        persona_prompt = "## Persona\n{}".format(render_persona_block(persona).strip())
+        persona_prompt = render_persona_block(persona).strip()
         task_prompt = build_appworld_task_prompt(task)
         prompts = {
             "personaPrompt": persona_prompt,

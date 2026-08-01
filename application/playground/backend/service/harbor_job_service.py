@@ -441,6 +441,13 @@ STATUS_CODE_PENDING = 0
 STATUS_CODE_RUNNING = 1
 STATUS_CODE_DONE = 2
 STATUS_CODE_ERROR = 3
+_TRIAL_DEBRIEF_CACHE_MAX = 128
+
+
+@dataclass
+class _TrialDebriefCacheEntry:
+    fingerprint: tuple[tuple[str, int, int], ...]
+    payload: dict[str, Any]
 
 
 @dataclass
@@ -492,6 +499,8 @@ class HarborJobService:
     _guard: threading.Lock = field(default_factory=threading.Lock)
     _status_states: dict[str, "_JobStatusState"] = field(default_factory=dict)
     _status_guard: threading.Lock = field(default_factory=threading.Lock)
+    _debrief_cache: dict[tuple[str, str], _TrialDebriefCacheEntry] = field(default_factory=dict)
+    _debrief_cache_guard: threading.Lock = field(default_factory=threading.Lock)
     # Poll interval for per-trial host scoring while Harbor is still running.
     _host_score_poll_sec: float = 2.0
     _host_score_join_timeout_sec: float = 600.0
@@ -1046,6 +1055,22 @@ class HarborJobService:
             resolved_persona_ids = list(sampled["personaIds"])
             resolved_pool = str(sampled.get("pool") or resolved_pool)
 
+        # Hand-picked ids from the 1M root are preview-only until materialized.
+        # Mirror sample_production_1m: write a cohort, then launch against it.
+        from backend.service.persona_1m_pool import (
+            is_production_1m_root,
+            materialize_production_1m_persona_ids,
+        )
+
+        if is_production_1m_root(resolved_pool) and resolved_persona_ids:
+            materialized = materialize_production_1m_persona_ids(
+                repo_root=self.repo_root,
+                persona_ids=resolved_persona_ids,
+                seed=resolved_seed,
+            )
+            resolved_pool = str(materialized["pool"])
+            resolved_persona_ids = list(materialized["personaIds"])
+
         task_slug = _slug(Path(task_path).name)
         resolved_job_name = job_name or "pg-{}-{}".format(task_slug, uuid.uuid4().hex[:8])
         model = persona_model or default_persona_model()
@@ -1105,26 +1130,30 @@ class HarborJobService:
                     agent_cfg,
                     model_name=str(agent_cfg.get("model_name") or model),
                 )
-        if os_app_submission_profile:
-            for agent in job_config.get("agents", []):
-                if isinstance(agent, dict):
-                    kwargs = agent.setdefault("kwargs", {})
-                    if isinstance(kwargs, dict):
-                        kwargs["cua_submission_profile"] = os_app_submission_profile
+        # os_app_submission_profile / cua_submission_profile are no longer injected:
+        # agents mirror final_answer only; task verifiers recover named JSON.
         if os_app_backend:
             job_config["environment"] = resolve_job_environment(
                 execution_mode=execution_mode,
                 trial_profile=trial_profile,
                 cua_backend=os_app_backend,
             )
+            env_type = ""
+            env_block = job_config.get("environment")
+            if isinstance(env_block, dict):
+                env_type = str(env_block.get("type") or "")
             for agent in job_config.get("agents", []):
                 if isinstance(agent, dict):
                     kwargs = agent.setdefault("kwargs", {})
                     if isinstance(kwargs, dict):
                         kwargs["cua_backend"] = os_app_backend
-                        # use.computer defaults to 50 steps; stocks/news-style
-                        # browse+decide tasks routinely need more headroom.
-                        kwargs.setdefault("max_steps", 100)
+                        # use.computer CUA agents take max_steps (default 50);
+                        # Docker Computer1 takes max_turns. Give both more
+                        # headroom for stocks/news-style browse+decide tasks.
+                        if env_type == "use-computer":
+                            kwargs.setdefault("max_steps", 100)
+                        else:
+                            kwargs.setdefault("max_turns", 100)
         # use-computer OS-app tasks hand in JSON; sandbox path remap makes
         # *remote* in-VM verify flaky. Disable Harbor's per-trial verifier and
         # score on the Playground host as each trial finishes (watcher), with a
@@ -1265,7 +1294,9 @@ class HarborJobService:
         path_entries = [entry for entry in existing.split(":") if entry]
         required_paths = [
             str(self.repo_root),
+            str(self.repo_root / "src"),
             str(self.repo_root / "environment" / "runtime"),
+            str(self.repo_root / "environment" / "agents"),
             str(self.repo_root / "packages" / "playground" / "src"),
             str(self.repo_root / "application" / "playground"),
             str(
@@ -1911,16 +1942,133 @@ class HarborJobService:
 
         return {"jobName": job_name, "retried": len(failed_dirs)}
 
+    def _trial_debrief_fingerprint(
+        self,
+        job_name: str,
+        trial_name: str,
+    ) -> tuple[tuple[str, int, int], ...] | None:
+        """Stable cache key for completed trial debrief inputs."""
+        trial_dir = self.jobs_dir / job_name / trial_name
+        if not (trial_dir / "result.json").is_file():
+            return None
+
+        entries: list[tuple[str, int, int]] = []
+
+        def add_file(path: Path) -> None:
+            try:
+                stat = path.stat()
+            except OSError:
+                return
+            if not path.is_file():
+                return
+            try:
+                label = str(path.relative_to(self.repo_root))
+            except ValueError:
+                label = str(path)
+            entries.append((label.replace("\\", "/"), stat.st_mtime_ns, stat.st_size))
+
+        for rel in (
+            "config.json",
+            "result.json",
+            "events.jsonl",
+            "exception.txt",
+            "reward.txt",
+            "persona_meta.json",
+            "instruction.md",
+            "task_instruction.md",
+            "context.md",
+            "questionnaire.md",
+            "output_schema.md",
+            "verifier/reward.txt",
+            "verifier/test-stdout.txt",
+            "verifier/structured_output.json",
+            "verifier/user_feedback.json",
+            "logs/verifier/reward.txt",
+            "logs/verifier/test-stdout.txt",
+            "logs/verifier/structured_output.json",
+            "logs/verifier/user_feedback.json",
+            "agent/trajectory.json",
+        ):
+            add_file(trial_dir / rel)
+
+        output_dir = trial_dir / "artifacts" / "app" / "output"
+        if output_dir.is_dir():
+            for path in sorted(output_dir.iterdir()):
+                if path.is_file():
+                    add_file(path)
+
+        task_path = _task_path_from_trial_config(trial_dir)
+        if task_path:
+            task_dir = self.repo_root / task_path
+            for rel in (
+                "task.toml",
+                "instruction.md",
+                "input/context.md",
+                "input/questionnaire.yaml",
+                "input/self_report_schema.yaml",
+                "input/chatbot.yaml",
+                "reporting.json",
+            ):
+                add_file(task_dir / rel)
+
+        return tuple(sorted(entries))
+
+    def _cached_trial_debrief(
+        self,
+        key: tuple[str, str],
+        fingerprint: tuple[tuple[str, int, int], ...] | None,
+    ) -> dict[str, Any] | None:
+        if fingerprint is None:
+            return None
+        with self._debrief_cache_guard:
+            entry = self._debrief_cache.get(key)
+            if entry is None or entry.fingerprint != fingerprint:
+                return None
+            self._debrief_cache.pop(key, None)
+            self._debrief_cache[key] = entry
+            return entry.payload
+
+    def _store_trial_debrief(
+        self,
+        key: tuple[str, str],
+        fingerprint: tuple[tuple[str, int, int], ...] | None,
+        payload: dict[str, Any],
+    ) -> None:
+        if fingerprint is None:
+            return
+        with self._debrief_cache_guard:
+            self._debrief_cache[key] = _TrialDebriefCacheEntry(
+                fingerprint=fingerprint,
+                payload=payload,
+            )
+            while len(self._debrief_cache) > _TRIAL_DEBRIEF_CACHE_MAX:
+                oldest = next(iter(self._debrief_cache))
+                self._debrief_cache.pop(oldest, None)
+
     def get_trial_debrief(self, job_name: str, trial_name: str) -> dict[str, Any]:
         from backend.service.harbor_trial_debrief import map_trial_debrief
 
+        key = (job_name, trial_name)
+        fingerprint = self._trial_debrief_fingerprint(job_name, trial_name)
+        cached = self._cached_trial_debrief(key, fingerprint)
+        if cached is not None:
+            return cached
+
         try:
-            return map_trial_debrief(
+            payload = map_trial_debrief(
                 repo_root=self.repo_root,
                 jobs_dir=self.jobs_dir,
                 job_name=job_name,
                 trial_name=trial_name,
             )
+            # Mapping can materialize missing artifacts, so cache the final
+            # on-disk state that produced this payload.
+            self._store_trial_debrief(
+                key,
+                self._trial_debrief_fingerprint(job_name, trial_name),
+                payload,
+            )
+            return payload
         except FileNotFoundError as exc:
             raise ValueError(str(exc)) from exc
 

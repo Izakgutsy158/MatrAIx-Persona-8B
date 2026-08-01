@@ -755,6 +755,7 @@ export function formatBatchReportMetaLines(meta: BatchReportPdfMeta): string[] {
   const lines: string[] = [];
   lines.push(`Job: ${meta.jobName}`);
   if (meta.taskTitle || meta.taskPath) lines.push(`Task: ${meta.taskTitle || meta.taskPath}`);
+  if (meta.personaPool) lines.push(`Dataset: ${meta.personaPool}`);
   if (meta.agentModel) lines.push(`Agent model: ${meta.agentModel}`);
   if (meta.parallelism != null) lines.push(`Parallelism: ${meta.parallelism}`);
   if (meta.personas?.length) lines.push(`Personas: ${meta.personas.length}`);

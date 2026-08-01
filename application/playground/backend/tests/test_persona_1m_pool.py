@@ -172,6 +172,56 @@ def test_sample_production_1m_materializes_cohort(tmp_path, monkeypatch):
     assert all(card["source"] == "wiki" for card in result["personas"])
 
 
+def test_materialize_production_1m_persona_ids(tmp_path, monkeypatch):
+    release = _write_tiny_release(tmp_path)
+    monkeypatch.setenv(pool_mod.ENV_1M_DIR, str(release))
+    repo = tmp_path / "repo"
+    repo.mkdir()
+    (repo / "persona/schema").mkdir(parents=True)
+    (repo / "persona/schema/dimension_categories.json").write_text(
+        json.dumps({"schemaVersion": "1.0", "personaSources": [], "devProfile": {"groups": []}}),
+        encoding="utf-8",
+    )
+
+    preview = pool_mod.sample_production_1m(
+        repo_root=repo,
+        sample_size=3,
+        seed=11,
+        sources=["wiki"],
+    )
+    target_ids = preview["personaIds"][:2]
+
+    # Drop the sampled cohort so lookup must go through Parquet.
+    import shutil
+
+    shutil.rmtree(repo / preview["pool"])
+
+    result = pool_mod.materialize_production_1m_persona_ids(
+        repo_root=repo,
+        persona_ids=target_ids,
+        seed=11,
+    )
+    assert result["personaIds"] == target_ids
+    assert result["pool"].startswith("persona/datasets/matraix-persona-1m/cohorts/")
+    out = repo / result["pool"]
+    assert (out / "manifest.json").is_file()
+    for persona_id in target_ids:
+        assert (out / f"persona_{persona_id}.yaml").is_file()
+
+
+def test_materialize_production_1m_persona_ids_unknown(tmp_path, monkeypatch):
+    release = _write_tiny_release(tmp_path)
+    monkeypatch.setenv(pool_mod.ENV_1M_DIR, str(release))
+    repo = tmp_path / "repo"
+    repo.mkdir()
+    with pytest.raises(ValueError, match="unknown persona"):
+        pool_mod.materialize_production_1m_persona_ids(
+            repo_root=repo,
+            persona_ids=["wiki-does-not-exist"],
+            seed=1,
+        )
+
+
 def test_persona_pool_service_samples_production_1m(tmp_path, monkeypatch):
     release = _write_tiny_release(tmp_path)
     monkeypatch.setenv(pool_mod.ENV_1M_DIR, str(release))

@@ -65,7 +65,7 @@ def render_survey_task_instruction_markdown(instrument: SurveyInstrument) -> str
     goal = blurb or "Answer every required question using the task context and questionnaire."
     return "\n".join(
         [
-            "Answer **{}** as the assigned persona.".format(title),
+            "Answer **{}**.".format(title),
             "",
             goal,
             "",

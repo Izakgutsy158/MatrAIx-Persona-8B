@@ -36,6 +36,8 @@ BACKEND_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 EVAL_DIR="$(cd "${BACKEND_DIR}/.." && pwd)"  # application/playground
 REPO_ROOT="$(cd "${EVAL_DIR}/../.." && pwd)"
 PLAYGROUND_CORE_DIR="${REPO_ROOT}/packages/playground/src"
+MATRAIX_SRC_DIR="${REPO_ROOT}/src"
+MATRIX_AGENTS_DIR="${REPO_ROOT}/environment/agents"
 CHATBOT_API_DIR="${REPO_ROOT}/environment/task-environments/application/chatbot-api-sidecar_recai/recommender-api"
 
 # --- interpreter: $VENV/bin/python if VENV is set, else `python` on PATH -------
@@ -64,7 +66,8 @@ HOST="${HOST:-127.0.0.1}"
 APP="backend.api.app:app"
 
 # Make `backend`, `playground`, and task-owned `recbot` importable.
-export PYTHONPATH="${REPO_ROOT}:${REPO_ROOT}/environment/runtime:${PLAYGROUND_CORE_DIR}:${EVAL_DIR}:${CHATBOT_API_DIR}${PYTHONPATH:+:${PYTHONPATH}}"
+export PYTHONPATH="${REPO_ROOT}:${MATRAIX_SRC_DIR}:${REPO_ROOT}/environment/runtime:${MATRIX_AGENTS_DIR}:${PLAYGROUND_CORE_DIR}:${EVAL_DIR}:${CHATBOT_API_DIR}${PYTHONPATH:+:${PYTHONPATH}}"
+export MATRIX_HARBOR_COMMAND="${MATRIX_HARBOR_COMMAND:-uv run python -m harbor.cli.main run}"
 
 # The catalog is served from the real per-domain bundle under
 # recai/InteRecAgent/resources/<domain>/ (see backend.service.bundle_catalog).
@@ -79,9 +82,10 @@ fi
 
 echo "[run_dev] python      : ${VENV_PY}"
 echo "[run_dev] backend dir : ${BACKEND_DIR}"
-echo "[run_dev] PYTHONPATH  : ${REPO_ROOT}:${REPO_ROOT}/environment/runtime:${PLAYGROUND_CORE_DIR}:${EVAL_DIR}:${CHATBOT_API_DIR}"
+echo "[run_dev] PYTHONPATH  : ${REPO_ROOT}:${MATRAIX_SRC_DIR}:${REPO_ROOT}/environment/runtime:${MATRIX_AGENTS_DIR}:${PLAYGROUND_CORE_DIR}:${EVAL_DIR}:${CHATBOT_API_DIR}"
 echo "[run_dev] catalog     : ${INTERECAGENT_CATALOG_PATH:-(bundle default)}"
 echo "[run_dev] serving     : http://${HOST}:${PORT}  (app ${APP})"
+echo "[run_dev] harbor cmd  : ${MATRIX_HARBOR_COMMAND}"
 echo "[run_dev] frontend    : in another terminal, run:"
 echo "[run_dev]                 cd ${EVAL_DIR}/frontend && npm install && npm run dev"
 echo "[run_dev]               then open http://localhost:5173 (it proxies /api here)."
