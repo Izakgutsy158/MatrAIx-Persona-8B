@@ -1,18 +1,40 @@
 # Choosing a Persona Agent and Model
 
-Every run specifies the agent, model, persona, and task on the command line (or
-via Playground / `generate_application_job.py`, which pin the same
-fields in the job YAML).
+Every run specifies the agent, model, persona, and task — via Playground,
+`generate_application_job.py`, or a hand-written Harbor recipe.
+
+## Execution mode (default: **auto**)
+
+Playground **Mode** and `generate_application_job.py --execution-mode` share the
+same three values. **Use `auto` unless you have a reason not to.**
+
+| Mode | Survey / chat | Web / OS-app |
+|------|---------------|--------------|
+| **`auto`** (default) | Host: `persona-json-survey` / `persona-user-sim` | Docker (or use.computer for macOS/iOS CUA); agent from task path |
+| **`force_docker`** | Docker CLI harness (default `persona-claude-code` unless `--agent-name`) | Docker |
+| **`smoke`** | Smoke profile | — |
+
+**Important:** `auto` does **not** mean “no Docker” for web/os-app — only
+survey/chat skip the task image. CLI walkthrough for all four types:
+[quickstart.md §6–7](../quickstart.md#6-one-persona--cli-with-mode-auto-default).
+
+Web agent under auto (path heuristics):
+
+- `*browser-use*` → `persona-browser-use`
+- `*cocoa*` → `persona-cocoa`
+- `*cua*` / `*os-app*` / `*computer-use*` → `persona-computer-1`
+- else web → `persona-openhands-sdk`
 
 ## Parameters
 
 | Flag | Meaning | Example |
 |------|---------|---------|
-| `-a` | Persona agent | `persona-claude-code` |
+| `-a` | Persona agent (manual `harbor run` only) | `persona-browser-use` |
 | `-m` | Persona LLM (simulated user) | `anthropic/claude-sonnet-4-6` |
 | `-p` | Task scenario | `application/tasks/example-survey_product-feedback` |
 | `--ak persona_path` | Persona YAML (**which profile**) | `persona/datasets/matraix-persona-dev-sample/persona_0042.yaml` |
 | `--model-name` | Same as `-m`, on `generate_application_job.py` | `openai/gpt-4o-mini` |
+| `--execution-mode` | `auto` / `force_docker` / `smoke` | `auto` |
 
 Default smoke persona: **`persona_0042`** in `persona/datasets/matraix-persona-dev-sample/`.
 
@@ -48,10 +70,10 @@ set.
 | CLI name | Application | Typical use | Example task |
 |----------|-------------|-------------|----------------|
 | `persona-json-survey` | survey | **Auto mode (recommended):** one-shot JSON survey on the host; no Docker | [product-feedback](../../application/tasks/example-survey_product-feedback) |
-| `persona-user-sim` | chat | **Auto mode (recommended):** multi-turn user simulator + task sidecar on the host | [chat_recai](../../application/tasks/chat_recai)<br>[chat_openbb](../../application/tasks/chat_openbb)<br>[acme-support-api](../../application/tasks/example-chat-api_support_chatbot) |
-| `persona-claude-code` | survey<br>chat | CLI agent in Docker; forms, surveys, multi-turn chat, API/MCP sidecars | [product-feedback](../../application/tasks/example-survey_product-feedback)<br>[acme-support-api](../../application/tasks/example-chat-api_support_chatbot)<br>[acme-support-mcp](../../application/tasks/example-chat-mcp_support_chatbot)<br>[chat_recai](../../application/tasks/chat_recai)<br>[chat_openbb](../../application/tasks/chat_openbb) |
-| `persona-gemini-cli` | survey<br>chat | Same as `persona-claude-code`; Google Gemini CLI backend | [product-feedback](../../application/tasks/example-survey_product-feedback)<br>[acme-support-api](../../application/tasks/example-chat-api_support_chatbot) |
-| `persona-codex` | survey<br>chat | Same as `persona-claude-code`; OpenAI Codex CLI backend | [product-feedback](../../application/tasks/example-survey_product-feedback)<br>[acme-support-api](../../application/tasks/example-chat-api_support_chatbot) |
+| `persona-user-sim` | chat | **Auto mode (recommended):** multi-turn user simulator + task sidecar on the host | [meal-planning](../../application/tasks/chat_meal-planning-nutrition)<br>[openbb-honesty](../../application/tasks/chat_openbb-corporate-action-honesty)<br>[acme-support-api](../../application/tasks/example-chat-api_support_chatbot) |
+| `persona-claude-code` | survey<br>chat | Docker CLI harness — use with `--execution-mode force_docker`, not Mode auto | [product-feedback](../../application/tasks/example-survey_product-feedback)<br>[acme-support-api](../../application/tasks/example-chat-api_support_chatbot)<br>[acme-support-mcp](../../application/tasks/example-chat-mcp_support_chatbot) |
+| `persona-gemini-cli` | survey<br>chat | Same role as `persona-claude-code`; Google Gemini CLI | [product-feedback](../../application/tasks/example-survey_product-feedback) |
+| `persona-codex` | survey<br>chat | Same role as `persona-claude-code`; OpenAI Codex CLI | [product-feedback](../../application/tasks/example-survey_product-feedback) |
 | `persona-openhands-sdk` | web | Python Playwright in the terminal (DOM selectors); fast, CI-friendly | [quote-choice-playwright](../../application/tasks/example-web-playwright_quote-choice) |
 | `persona-browser-use` | web | browser-use agent loop over Chromium | [laptop-choice-browser-use](../../application/tasks/example-web-browser-use_laptop-choice) |
 | `persona-cocoa` | web | browser + shell + files in one container | [plan-choice-cocoa](../../application/tasks/example-web-cocoa_plan-choice) |
@@ -146,23 +168,7 @@ Web CLI runs (Playground **Web → CLI family**) use the same runner credentials
 
 ## Examples
 
-```bash
-uv run harbor run \
-  -a persona-claude-code \
-  -m anthropic/claude-sonnet-4-6 \
-  --ak persona_path=persona/datasets/matraix-persona-dev-sample/persona_0042.yaml \
-  -p application/tasks/example-chat-mcp_support_chatbot
-```
-
-```bash
-uv run harbor run \
-  -a persona-browser-use \
-  -m anthropic/claude-sonnet-4-6 \
-  --ak persona_path=persona/datasets/matraix-persona-dev-sample/persona_0042.yaml \
-  -p application/tasks/example-web-browser-use_laptop-choice
-```
-
-Auto mode (matches Playground; `persona-json-survey` / `persona-user-sim`):
+Auto mode (matches Playground; preferred for all four types):
 
 ```bash
 uv run python application/scripts/generate_application_job.py \
@@ -176,8 +182,28 @@ uv run python application/scripts/generate_application_job.py \
 The generated YAML includes `agents[].model_name`; edit it or pass `--model-name`
 on regenerate to swap the persona LLM.
 
-Batch runs: [quickstart.md §7](quickstart.md#7-batch--sample-many-personas-job),
-[../docs/configuration.md](../configuration.md#batch-job-generation).
+Manual Docker web one-liner (when you already know the agent):
+
+```bash
+uv run harbor run \
+  -a persona-browser-use \
+  -m anthropic/claude-sonnet-4-6 \
+  --ak persona_path=persona/datasets/matraix-persona-dev-sample/persona_0042.yaml \
+  -p application/tasks/example-web-browser-use_laptop-choice
+```
+
+Force Docker CLI harness for survey/chat (optional; not Mode auto):
+
+```bash
+uv run harbor run \
+  -a persona-claude-code \
+  -m anthropic/claude-sonnet-4-6 \
+  --ak persona_path=persona/datasets/matraix-persona-dev-sample/persona_0042.yaml \
+  -p application/tasks/example-chat-mcp_support_chatbot
+```
+
+Batch runs: [quickstart.md §7](../quickstart.md#7-batch--sample-many-personas-job),
+[../configuration.md](../configuration.md#batch-job-generation).
 
 ## For task authors
 
@@ -190,7 +216,7 @@ task.
 
 ## Related
 
-- [quickstart.md](quickstart.md)
-- [task-guide.md](task-guide.md)
+- [quickstart.md](../quickstart.md)
+- [task-guide.md](../application/task-guide.md)
 - [web-interaction.md](web-interaction.md)
-- [../docs/configuration.md](../configuration.md#job-recipe-conventions)
+- [../configuration.md](../configuration.md#job-recipe-conventions)

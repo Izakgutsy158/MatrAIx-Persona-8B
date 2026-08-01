@@ -1,17 +1,17 @@
 # Validation
 
-The persona-adherence validation suite checks whether a persona's **attributes actually drive agent behavior** — not just whether they appear in the prompt. It lives under `application/validation/`.
+The persona-adherence validation suite checks whether a persona's **attributes actually drive agent behavior** — not just whether they appear in the prompt. It lives under `persona/validation/`.
 
 For each attribute we run a *positive* persona (which should express the trait) and a *negative* persona (which should express the opposite), let the agent produce a trajectory/artifact, and LLM-judge whether the target attribute value shows up in the behavior. If persona conditioning works, the positive and negative runs separate cleanly.
 
-The suite spans **10 attributes × 4 environments** (survey / chat / web / osapp-linux). Each `(attribute, env)` pair is a self-contained task under `application/validation/tasks/`.
+The suite spans **10 attributes × 4 environments** (survey / chat / web / osapp-linux). Each `(attribute, env)` pair is a self-contained task under `persona/validation/tasks/`.
 
 ---
 
 ## Layout
 
 ```text
-application/validation/
+persona/validation/
 ├── tasks/      probe tasks, one per (env, attribute) — probe-<env>_<attr>/
 ├── scripts/    matrix runner, LLM judge, report builder, helpers
 └── results/    committed summary report (REPORT.md, report.json)
@@ -42,33 +42,33 @@ export JUDGE_MODEL=gpt-4o                         # model the judge runs as
 Run the full matrix (1 positive + 1 negative persona per cell):
 
 ```bash
-python application/validation/scripts/run_matrix.py
+python persona/validation/scripts/run_matrix.py
 ```
 
 Scope it down while iterating:
 
 ```bash
-python application/validation/scripts/run_matrix.py \
+python persona/validation/scripts/run_matrix.py \
     --attrs cog-politeness,cog-humor --envs survey,chat --n 1
 ```
 
 Run a single probe recipe directly through Harbor:
 
 ```bash
-application/validation/scripts/run_probe.sh <recipe.yaml> [survey_task_path]
+persona/validation/scripts/run_probe.sh <recipe.yaml> [survey_task_path]
 ```
 
 Judge a finished Harbor job dir on its own:
 
 ```bash
-python application/validation/scripts/judge_adherence.py jobs/<job> \
+python persona/validation/scripts/judge_adherence.py jobs/<job> \
     --attribute code_comment_style --value "Extensive inline comments"
 ```
 
 Build the summary report from per-cell shards:
 
 ```bash
-python application/validation/scripts/build_report.py
+python persona/validation/scripts/build_report.py
 ```
 
 ---

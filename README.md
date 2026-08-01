@@ -1,12 +1,27 @@
-# MatrAIx
+<div align="center">
+  <h1>MatrAIx</h1>
+  <p><strong>Simulate before reality.</strong></p>
+  <p>
+    Population-scale, persona-driven infrastructure for evaluating AI systems
+    and interactive products with heterogeneous simulated users.
+  </p>
+  <p>
+    <a href="https://matraix.ai/"><img alt="Website" src="https://img.shields.io/badge/Website-matraix.ai-4f7cff?style=for-the-badge"></a>
+    <a href="docs/README.md"><img alt="Docs" src="https://img.shields.io/badge/Docs-Handbook-5b5b5b?style=for-the-badge"></a>
+    <a href="https://huggingface.co/datasets/MatrAIx2026/MatrAIx_Persona_1M_Public_Release"><img alt="Hugging Face" src="https://img.shields.io/badge/Hugging%20Face-Persona%201M-ffcc4d?style=for-the-badge"></a>
+    <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/License-Apache--2.0-c33b32?style=for-the-badge"></a>
+    <a href="https://www.python.org/"><img alt="Python" src="https://img.shields.io/badge/Python-3.12%2B-3776ab?style=for-the-badge"></a>
+    <a href="docs/quickstart.md#10-playground-play-tasks-visually"><img alt="Playground" src="https://img.shields.io/badge/Playground-Visual%20Runner-56b879?style=for-the-badge"></a>
+  </p>
+</div>
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
-[![Python](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/)
-[![Website](https://img.shields.io/badge/Website-matraix.ai-0A0A0A)](https://matraix.ai/)
-[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Persona%201M-ffd21e)](https://huggingface.co/datasets/MatrAIx2026/MatrAIx_Persona_1M_Public_Release)
-[![Discord](https://img.shields.io/badge/Discord-Join%20us-5865F2?logo=discord&logoColor=white)](https://discord.gg/knVyQQnRFa)
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=cNFkz9Wo1y4">
+    <img src="https://img.youtube.com/vi/cNFkz9Wo1y4/maxresdefault.jpg" alt="Watch the MatrAIx demo video" width="900">
+  </a>
+</div>
 
-> **Simulate before reality.**
+---
 
 **MatrAIx** is a population-scale, persona-driven infrastructure for evaluating
 AI systems and interactive products with heterogeneous simulated users. Instead
@@ -24,54 +39,16 @@ for research on
 Shared telemetry, task-owned verification, and reporting connect individual
 responses and trajectories to subgroup- and population-level findings.
 
-The name nods to *The Matrix* — a simulated world useful for exploration, stress
+The name nods to *The Matrix*: a simulated world useful for exploration, stress
 testing, and hypothesis generation, **not a replacement for evidence from real
 people**.
-
----
-
-## What's in this repository
-
-```text
-MatrAIx/
-├── persona/           Persona dimension schema, dev sample pool, curation
-│                      and grounding pipelines, and quality/post-processing.
-├── application/       Reusable task specifications (survey, chat, web, app),
-│                      shared task contracts, and the Playground UI + API.
-├── environment/       Harbor runtime, persona-conditioned agents, and the
-│                      shared task environments (Docker images, sidecars).
-├── packages/          playground · rewardkit · harbor-langsmith
-├── apps/              viewer — frontend paired with `harbor view`
-├── examples/          minimal example tasks
-├── src/               the `matraix` Python package
-├── configs/jobs/      curated Harbor job recipes
-└── scripts/           helper scripts
-```
-
-Harbor writes run outputs to `jobs/` when you launch recipes from
-`configs/jobs/`; those stay local and are gitignored. Large generated datasets
-live outside git (see the Hugging Face release above).
-
-📖 **Full documentation:** the [MatrAIx Handbook](docs/index.md) collects the
-module overviews and how-to guides (getting started, running simulations,
-persona, application, environment). Per-task docs live next to each task.
-
-Browse it as a searchable site with [MkDocs](https://www.mkdocs.org/):
-
-```bash
-uv run --with mkdocs-material mkdocs serve   # then open http://127.0.0.1:8000
-```
-
----
 
 ## Requirements
 
 - [Docker](https://docs.docker.com/get-docker/)
 - [uv](https://docs.astral.sh/uv/) and Python 3.12
 - Node.js 20+ (Playground / viewer frontends only)
-- Model API keys for persona-agent examples — see [choosing-an-agent.md](docs/guides/choosing-an-agent.md)
-
----
+- Model API keys for persona-agent examples — see [agents.md](docs/environment/agents.md)
 
 ## Installation
 
@@ -88,129 +65,148 @@ uv pip install -e environment/adapters/simpleqa
 
 All Harbor commands run as **`uv run harbor …`**.
 
----
+Set the model API key matching your provider before GUI or CLI task runs
+(smoke test does not need one):
+
+```bash
+export ANTHROPIC_API_KEY="sk-ant-..."   # anthropic/claude-* models
+# export OPENAI_API_KEY="sk-..."        # openai/gpt-* models
+```
+
+See [agents.md](docs/environment/agents.md) for the full key matrix.
+Playground can also load keys from `application/playground/.env.local`.
+
+### Import Persona 1M (optional)
+
+```bash
+huggingface-cli download MatrAIx2026/MatrAIx_Persona_1M_Public_Release \
+  --repo-type dataset \
+  --local-dir persona/datasets/matraix-persona-1m/release
+```
+
+Playground: Dataset → **`matraix-persona-1m`**. CLI: `--dataset persona/datasets/matraix-persona-1m`.
+Details: [Handbook § Persona 1M](docs/README.md#3-persona-1m-optional).
 
 ## Quick start
 
-**Smoke test** (terminal, no API key required):
+### Smoke test
+
+No API key required:
 
 ```bash
 uv run harbor run -c configs/jobs/example-job-recipe/harbor-smoke-local.yaml
 ```
 
-**Run an application task** — walk through [QUICKSTART.md](docs/guides/quickstart.md)
-(terminal → batch → UI). For interactive play, jump to
-[Playground §10](docs/guides/quickstart.md#10-playground--play-tasks-visually) (Node.js 20+).
+### GUI task runs
 
-A terminal batch run (CI, scripts) uses the same Harbor jobs, e.g.:
-
-```bash
-export ANTHROPIC_API_KEY="sk-ant-..."
-uv run harbor run -c configs/jobs/example-job-recipe/appSim-example-survey-local.yaml
-```
-
-**Inspect results** — use Playground **Runs** for a cohort debrief, or
-`uv run harbor view jobs/<job_name> --build` for raw trajectories, agent logs,
-and file-level artifacts.
-
----
-
-## How it works
-
-1. A **job recipe** (`configs/jobs/…`) selects a task, a persona agent, a model,
-   and one or more persona records to sample.
-2. Each **trial** instantiates one persona as an agent, materializes the task
-   instruction, and runs the agent in its environment (survey / chat / web / app).
-3. A **verifier** (task-owned, under `application/tasks/<name>/tests/`) scores the
-   outputs.
-4. **Reporting** rolls per-trial results up to cohort- and population-level
-   metrics.
-
-Persona profiles live under `persona/datasets/`; tasks reference them by path at
-launch and never copy persona data into task folders.
-
----
-
-## Configuration
-
-A run is fully described by a **job recipe** — a YAML file under
-`configs/jobs/`. Point Harbor at one with `-c`:
+Playground picks tasks, samples personas, and launches the same Harbor jobs as CLI auto mode.
+Start API + frontend (two terminals):
 
 ```bash
-uv run harbor run -c configs/jobs/example-job-recipe/appSim-example-survey-local.yaml
+# Terminal A — API
+VENV=.venv bash application/playground/backend/run_dev.sh
+
+# Terminal B — frontend
+cd application/playground/frontend && npm ci && npm run dev
 ```
 
-A recipe has three parts — run settings, the persona agent, and the task(s):
+Open **http://localhost:5173** → Playground → pick a persona cohort →
+pick Survey / Chat / Web / OS app tasks → **Lock pipeline** → **Run eval**.
+Details: [Playground §10](docs/quickstart.md#10-playground-play-tasks-visually).
 
-```yaml
-job_name: appSim-example-survey-local   # output goes to jobs/<job_name>/
-jobs_dir: jobs                           # where run artifacts are written
-n_attempts: 1                            # attempts per (persona, task) trial
-n_concurrent_trials: 1                   # parallelism
-timeout_multiplier: 1.0                  # scale per-task timeouts
-quiet: false
+### CLI task develop / runs
 
-environment:
-  type: docker                           # docker | host
-  delete: true                           # remove the container after the run
-
-agents:
-  - name: persona-claude-code            # which persona agent (see table below)
-    model_name: anthropic/claude-sonnet-4-6   # simulated-user LLM
-    kwargs:
-      persona_path: persona/datasets/matraix-persona-dev-sample/persona_0042.yaml
-
-tasks:
-  - path: application/tasks/example-survey_product-feedback
-```
-
-**Fields at a glance**
-
-| Field | Meaning |
-|-------|---------|
-| `job_name` / `jobs_dir` | Run label and output location (`jobs/<job_name>/`). |
-| `n_attempts` | Repeat each trial N times (variance / pass@k). |
-| `n_concurrent_trials` | How many trials run in parallel. |
-| `environment.type` | `docker` (isolated, default) or `host` (run on the machine). |
-| `agents[].name` | The persona agent to instantiate (see below). |
-| `agents[].model_name` | Provider-prefixed model, e.g. `anthropic/claude-sonnet-4-6`, `openai/gpt-4o-mini`. |
-| `agents[].kwargs.persona_path` | The persona YAML to instantiate (`persona_0042` is the default smoke profile). |
-| `tasks[].path` | One or more task directories under `application/tasks/`. |
-
-**Persona agents** (pick by environment):
-
-| Agent | Environment | Example recipe |
-|-------|-------------|----------------|
-| `persona-claude-code` | Survey, Chatbot | `appSim-example-survey-local.yaml`, `appSim-example-chat-local.yaml` |
-| `persona-openhands-sdk` | Web (Playwright) | `appSim-example-web-playwright-local.yaml` |
-| `persona-browser-use` | Web (browser automation) | `appSim-example-web-browser-use-local.yaml` |
-| `persona-cocoa` | Web (macOS Cocoa) | `appSim-example-web-cocoa-local.yaml` |
-| `persona-computer-1` | App / computer-use (macOS, iOS, Linux) | `appSim-example-computer-use-macos-local.yaml` |
-
-**API keys** — set the key matching your `model_name` provider in your shell:
+**Develop** — copy a reference task under `application/tasks/`, edit
+`task.toml` / `instruction.md` / `input/` / verifier, then register it for Playground
+([task-guide.md](docs/application/task-guide.md)):
 
 ```bash
-export ANTHROPIC_API_KEY="sk-ant-..."   # anthropic/claude-* models
-export OPENAI_API_KEY="sk-..."          # openai/gpt-* models
-export DASHSCOPE_API_KEY="..."          # dashscope/* (OpenAI-compatible) models
+cp -R application/tasks/example-survey_product-feedback \
+  application/tasks/<your-task-name>
 ```
 
-The smoke recipe (`harbor-smoke-local.yaml`) uses the `oracle` reference agent
-and needs **no API key**. See
-[choosing-an-agent.md](docs/guides/choosing-an-agent.md) for the full
-agent ↔ model ↔ key matrix, and [docs/configuration.md](docs/configuration.md#job-recipe-conventions) for recipe conventions.
+| Type | Reference task |
+|------|----------------|
+| Survey | `application/tasks/example-survey_product-feedback` |
+| Chat | `application/tasks/example-chat-api_support_chatbot` |
+| Web | `application/tasks/example-web-playwright_quote-choice` |
+| OS-app | `application/tasks/example-computer-use-linux_note-to-csv` |
 
-To generate recipes for many personas or tasks at once, use
-`application/scripts/generate_application_job.py`.
+**Run** — generate a Harbor job (pins agent + model), then execute it:
 
----
+```bash
+uv run python application/scripts/generate_application_job.py \
+  --task application/tasks/example-survey_product-feedback \
+  --execution-mode auto \
+  --persona-ids 0042 \
+  --model-name anthropic/claude-sonnet-4-6
 
-## Community
+# Use the export lines + recipe path the script prints, e.g.:
+uv run harbor run -c configs/jobs/application-task-job-recipe/example-survey-product-feedback-auto-n1.yaml
+```
 
-Questions, ideas, or want to get involved? Join us on
-[Discord](https://discord.gg/knVyQQnRFa).
+Batch (`--sample-size N`), filters, and chat / web / os-app examples:
+[docs/quickstart.md](docs/quickstart.md).
 
----
+## Docs
+
+**[MatrAIx Handbook](docs/README.md)** — guides, persona / application / environment docs.
+
+<p align="center">
+  <img src="docs/assets/matraix-architecture.png" alt="MatrAIx architecture" width="900">
+</p>
+
+## Repository layout
+
+```text
+MatrAIx/
+├── persona/                 Schema, datasets, synthesis/curation/validation pipelines
+│   ├── schema/              1,290-dimension persona schema
+│   ├── datasets/            Dev sample pool and persona YAMLs
+│   ├── validation/          Grounding / quality validation suites
+│   └── scripts/             Persona job & pipeline helpers
+├── application/
+│   ├── tasks/               Survey · chat · web · os-app task specs
+│   ├── task-spec/           Shared task contracts
+│   ├── playground/          Visual runner (backend API + frontend)
+│   └── scripts/             generate_application_job.py and task tooling
+├── environment/
+│   ├── runtime/             Harbor runtime
+│   ├── agents/              Persona-conditioned agents
+│   ├── task-environments/   Docker images / sidecars
+│   └── adapters/            External adapters (e.g. SimpleQA)
+├── packages/                playground · rewardkit · harbor-langsmith
+├── apps/viewer/             Frontend paired with `harbor view`
+├── configs/jobs/            Curated & generated Harbor job recipes
+├── docs/                    Handbook — persona/ · application/ · environment/
+├── examples/                Minimal example tasks
+├── src/matraix/             Python package entrypoints
+├── scripts/                 Repo-level helpers
+├── tests/                   Unit / environment tests
+└── jobs/                    Local Harbor run outputs (gitignored)
+```
+
+Large generated datasets stay outside git (see the Hugging Face release above).
+
+## Join the Community
+
+[![Discord](https://img.shields.io/badge/Discord-join%20MatrAIx-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/vruP88PTZ)
+[![Google Form](https://img.shields.io/badge/Google%20Form-join%20MatrAIx-4285F4?style=for-the-badge&logo=googleforms&logoColor=white)](https://forms.gle/hwEHng5HGWRqcJue9)
+
+1. Join Discord — nickname **`Full Name - Affiliation`**. Fill the Google Form
+   (background, interests, paper authorship / acknowledgements).
+2. Say hi to us! We like to connect you for the shared interest or experience!
+3. Participating MatrAIx research community for collaboration or contribution!
+
+## Star History
+
+<a href="https://www.star-history.com/#MatrAIx-ai/MatrAIx-Community&Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=MatrAIx-ai/MatrAIx-Community&type=Date&theme=dark&legend=top-left" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=MatrAIx-ai/MatrAIx-Community&type=Date&legend=top-left" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=MatrAIx-ai/MatrAIx-Community&type=Date&legend=top-left" />
+  </picture>
+</a>
 
 ## License
 

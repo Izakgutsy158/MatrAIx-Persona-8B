@@ -1,8 +1,8 @@
-# Application team — getting started
+# Quickstart
 
 A step-by-step path from zero to your first multi-persona survey run, then into
 the **Playground** for interactive task play. No prior Harbor experience
-required.
+required. More docs: the [MatrAIx Handbook](README.md).
 
 **What you are doing:** loading a synthetic user profile (persona), putting that
 user in a product scenario (survey, chat, web, …), and inspecting what they
@@ -23,7 +23,9 @@ user in a product scenario (survey, chat, web, …), and inspecting what they
 | **OpenAI API key** | Some chat tasks and alternate LLM backends |
 
 Persona pool for local runs: `persona/datasets/matraix-persona-dev-sample/` (200 profiles;
-smoke persona **`0042`**).
+smoke persona **`0042`**). For population-scale eval, import the public **Persona 1M**
+coreset — [Handbook § Persona 1M](README.md#3-persona-1m-optional) ·
+[Persona setup](persona/README.md#setup-and-usage).
 
 ---
 
@@ -91,17 +93,21 @@ First run builds the Docker image (several minutes).
 
 ## 4. Set your API key
 
-Survey and chat examples use **`persona-claude-code`**, which reads
-**`ANTHROPIC_API_KEY`** from your **shell** (not committed to git).
+**Auto** survey / chat / most web agents read provider keys from your **shell**
+(not committed to git). For Anthropic persona models:
 
 ```bash
 export ANTHROPIC_API_KEY="sk-ant-..."   # replace with your key
 ```
 
-To keep it across terminal sessions, add the same line to `~/.zshrc` or
+Also set `OPENAI_API_KEY` when the chat **sidecar** needs it, and
+`LLM_API_KEY="$ANTHROPIC_API_KEY"` for Playwright (`persona-openhands-sdk`).
+macOS/iOS computer-use also needs `USE_COMPUTER_API_KEY`.
+
+To keep keys across terminal sessions, add the same lines to `~/.zshrc` or
 `~/.bashrc`, then open a new terminal.
 
-Other agents and keys: [choosing-an-agent.md](choosing-an-agent.md).
+Full agent ↔ key matrix: [choosing-an-agent.md](environment/agents.md).
 
 ---
 
@@ -124,34 +130,51 @@ person.
 
 | Term | In this guide |
 |------|----------------|
-| **Task** | The scenario — e.g. [example-survey_product-feedback](../../application/tasks/example-survey_product-feedback/) (product brief + survey questions + verifier). Same task for every persona. |
+| **Task** | The scenario — e.g. [example-survey_product-feedback](../application/tasks/example-survey_product-feedback/) (product brief + survey questions + verifier). Same task for every persona. |
 | **Trial** | One full run: **one persona** + **one task** → agent acts → verifier scores. Step 6 is a single trial. |
 | **Job** | A batch container: Harbor runs **many trials** from one YAML (step 7). Output lands in `jobs/<job_name>/` with one subfolder per trial. |
-| **Agent** | How the LLM is invoked — e.g. `persona-claude-code` (Claude Code CLI with persona injected). |
-| **Model** | Which LLM backs the agent — e.g. `anthropic/claude-sonnet-4-6`. Agent and model are independent flags. |
+| **Agent** | How the simulated user is driven — under **auto**: `persona-json-survey` / `persona-user-sim` (host), or web/os-app Docker agents. |
+| **Model** | Which LLM plays the persona — e.g. `anthropic/claude-sonnet-4-6`. Independent of the agent harness. |
 | **Persona** | Which synthetic user profile — `persona_path=persona/datasets/matraix-persona-dev-sample/persona_0042.yaml`. |
+| **Execution mode** | Playground **Mode** / `generate_application_job.py --execution-mode`. Default **`auto`**. |
 
-**Step 6 vs 7:** Step 6 = you **name one persona** on the command line. Step 7 =
-`generate_application_job.py` **samples N personas** (with a **seed** for
-reproducibility), writes a **job YAML**, then Harbor runs all trials.
+**Step 6 vs 7:** Step 6 = **one persona** (`--persona-ids`). Step 7 =
+`generate_application_job.py` **samples N personas** (seed + pool) into a job
+YAML, then you `harbor run -c` that file once.
 
 **Terminal vs Playground:** Steps 6–9 use the terminal (good for CI and smoke).
-[Section 10](#10-playground--play-tasks-visually) uses the Playground UI —
+[Section 10](#10-playground-play-tasks-visually) uses the Playground UI —
 same Harbor contracts, better for exploring trajectories and iterating on new tasks.
 
 ---
 
-## 6. One persona — you pick who
+## 6. One persona — CLI with Mode **auto** (default)
 
-### Survey (checked-in smoke recipe)
+**Prefer this path for all four application types.** It matches Playground
+**Mode → auto**.
 
 ```bash
-uv run harbor run -c configs/jobs/example-job-recipe/appSim-example-survey-local.yaml
+uv run python application/scripts/generate_application_job.py \
+  --task <task_path> \
+  --execution-mode auto \
+  --persona-ids 0042 \
+  --model-name anthropic/claude-sonnet-4-6
+# Then run the printed export lines and:
+# uv run harbor run -c configs/jobs/application-task-job-recipe/<generated>-auto-n1.yaml
 ```
 
-### Survey / chat (auto mode — recommended)
+| Type | Auto picks | Runs on | Example `--task` |
+|------|------------|---------|------------------|
+| **Survey** | `persona-json-survey` | **host** (no task image build) | `application/tasks/example-survey_product-feedback` |
+| **Chat** | `persona-user-sim` | **host** (+ sidecar env the script prints) | `application/tasks/chat_meal-planning-nutrition` |
+| **Web** | path heuristic (OpenHands / browser-use / Cocoa / computer-1) | **docker** | `…/example-web-playwright_quote-choice`, `…/example-web-browser-use_laptop-choice`, … |
+| **OS-app** | `persona-computer-1` | Linux **docker**; macOS/iOS **use-computer** | `…/example-computer-use-linux_note-to-csv`, `…/example-computer-use-macos_calendar-reminder-handoff` |
 
-Generate a job recipe, then run Harbor:
+Web agent under auto (same as Playground): `*browser-use*` → `persona-browser-use`;
+`*cocoa*` → `persona-cocoa`; `*cua*` / `*os-app*` / `*computer-use*` →
+`persona-computer-1`; else → `persona-openhands-sdk`.
+
+### Survey (auto)
 
 ```bash
 uv run python application/scripts/generate_application_job.py \
@@ -164,59 +187,80 @@ export MATRIX_SURVEY_TASK_PATH=application/tasks/example-survey_product-feedback
 uv run harbor run -c configs/jobs/application-task-job-recipe/example-survey-product-feedback-auto-n1.yaml
 ```
 
+### Chat (auto)
+
 ```bash
-# Chat (+ sidecar if prompted)
 uv run python application/scripts/generate_application_job.py \
-  --task application/tasks/chat_recai \
+  --task application/tasks/chat_meal-planning-nutrition \
   --execution-mode auto \
   --persona-ids 0042
 
 export ANTHROPIC_API_KEY="sk-ant-..."
-export OPENAI_API_KEY="sk-..."
-export MATRIX_CHATBOT_DOMAIN=movie
-export MATRIX_CHATBOT_APPLICATION_ID=recai
-export MATRIX_CHATBOT_MAX_TURNS=8
-uv run harbor run -c configs/jobs/application-task-job-recipe/chat-recai-auto-n1.yaml
+# Use the MATRIX_CHATBOT_* export lines the script prints, then:
+uv run harbor run -c configs/jobs/application-task-job-recipe/<generated>-auto-n1.yaml
 ```
 
-The generator prints exact `export` lines. Script reference: [Job Generation Scripts](../application.md#job-generation-scripts).
-
-### Manual one-liner (any task)
+### Web / OS-app (auto still uses Docker or use.computer)
 
 ```bash
-uv run harbor run \
-  -a persona-claude-code \
-  -m anthropic/claude-sonnet-4-6 \
-  --ak persona_path=persona/datasets/matraix-persona-dev-sample/persona_0042.yaml \
-  -p application/tasks/example-survey_product-feedback
+# Playwright web
+uv run python application/scripts/generate_application_job.py \
+  --task application/tasks/example-web-playwright_quote-choice \
+  --execution-mode auto \
+  --persona-ids 0042
+
+export LLM_API_KEY="$ANTHROPIC_API_KEY"
+uv run harbor run -c configs/jobs/application-task-job-recipe/example-web-playwright-quote-choice-auto-n1.yaml
+
+# Linux computer-use (macOS/iOS need USE_COMPUTER_API_KEY)
+uv run python application/scripts/generate_application_job.py \
+  --task application/tasks/example-computer-use-linux_note-to-csv \
+  --execution-mode auto \
+  --persona-ids 0042
 ```
 
-| Flag | Meaning |
-|------|---------|
-| `-p` | Task path (the scenario) |
-| `-a` | Agent (`persona-claude-code`, `persona-browser-use`, …) |
-| `-m` | Model ID for that agent |
-| `--ak persona_path=...` | **Which person** — any `persona_XXXX.yaml` under `matraix-persona-dev-sample` |
-
-Agent ↔ form mapping: [choosing-an-agent.md](choosing-an-agent.md).
+The generator always prints the exact `export` lines and recipe path.
+Script reference: [Job Generation Scripts](application/README.md).
+Agent / key details: [choosing-an-agent.md](environment/agents.md).
 
 **What happens**
 
-1. Harbor builds the task Docker image the first time (web/CUA only; survey/chat
-   in **auto** mode run on the host).
-2. The agent reads the persona + task materials.
-3. It writes answers to `/app/output/…`.
+1. Survey/chat **auto**: host-native agent (no application image build).
+2. Web/os-app **auto**: Harbor builds the task Docker image the first time
+   (or starts a use.computer sandbox for macOS/iOS).
+3. The agent reads the persona + task materials and writes `/app/output/…`.
 4. The verifier runs; Harbor writes one trial under `jobs/`.
 
 **Success:** command ends without error; you see a path under `jobs/`.
+
+### Optional: checked-in Docker recipes (`force_docker`-style)
+
+Hand-written YAMLs under `configs/jobs/example-job-recipe/appSim-*-local.yaml`
+are **smoke / Docker harness** examples (often `persona-claude-code` for
+survey/chat). They are **not** Mode auto. Prefer the generator above unless you
+intentionally want the CLI harness in Docker:
+
+```bash
+uv run harbor run -c configs/jobs/example-job-recipe/appSim-example-survey-local.yaml
+uv run harbor run -c configs/jobs/example-job-recipe/appSim-example-web-playwright-local.yaml
+```
+
+To force Docker CLI agents from the generator: `--execution-mode force_docker`.
 
 ---
 
 ## 7. Batch — sample many personas (job)
 
-Running step 6 ten times by hand does not scale. **`generate_application_job.py`**
-samples personas, pins **agent**, **model**, and **seed**, and writes a **job YAML**
-under `configs/jobs/application-task-job-recipe/` (gitignored except curated examples).
+Same generator as step 6; swap `--persona-ids` for **`--sample-size N`**
+(or keep strategy filters). Works for **survey, chat, web, and os-app** —
+auto still picks host vs Docker the same way.
+
+**`generate_application_job.py`** samples personas, pins **agent**, **model**,
+and **seed**, and writes a **job YAML** under
+`configs/jobs/application-task-job-recipe/` (gitignored except curated examples).
+
+Batch ≠ parallel: N personas = N trials. Edit `n_concurrent_trials` in the YAML
+to run trials in parallel (generator often writes `1`; Playground defaults higher).
 
 ### Generate your own batch
 
@@ -227,6 +271,18 @@ uv run python application/scripts/generate_application_job.py \
   --sample-size 10 \
   --seed 42 \
   --dataset persona/datasets/matraix-persona-dev-sample
+```
+
+**Persona 1M pool** (after
+[importing the public coreset](README.md#3-persona-1m-optional)):
+
+```bash
+uv run python application/scripts/generate_application_job.py \
+  --task application/tasks/example-survey_product-feedback \
+  --execution-mode auto \
+  --dataset persona/datasets/matraix-persona-1m \
+  --sample-size 10 \
+  --seed 42
 ```
 
 **Playground-parity retrieval** (sources / dimension filters / task strategy / cohorts):
@@ -318,7 +374,7 @@ uv run python application/scripts/report_job.py jobs/<job_name>
 For a **task PR**, also open the job in Playground **Runs** and download the
 persona-task batch report with **Download PDF**. Attach that UI PDF to the PR —
 not the server text `…/report.pdf` export. See
-[tasks/README.md — PR batch evidence](../../application/tasks/README.md#pr-batch-evidence-required).
+[tasks/README.md — PR batch evidence](../application/tasks/README.md#pr-batch-evidence-required).
 
 ---
 
@@ -334,7 +390,7 @@ logs. Use this to compare personas side by side.
 To explore without spending API credits, browse checked-in examples under `jobs/`
 if present, or run the no-key smoke recipe from step 3.
 
-Job recipe layout: [../docs/configuration.md](../configuration.md#job-recipe-conventions).
+Job recipe layout: [../docs/configuration.md](configuration.md#job-recipe-conventions).
 
 ---
 
@@ -371,8 +427,8 @@ cd ../../.. && application/playground/run_demo.sh
 # → http://127.0.0.1:8765
 ```
 
-More detail: [docs/application.md § Playground App](../application.md#playground-app),
-[rest-api.md](rest-api.md).
+More detail: [docs/application/README.md § Playground App](application/README.md),
+[rest-api.md](application/playground-api.md).
 
 ### In the Playground
 
@@ -398,7 +454,7 @@ Chat env exports (`MATRIX_CHATBOT_*`) are applied automatically from the UI.
 ### Register a new task for Playground
 
 New tasks must be indexed before they appear in the task picker. See
-[task-guide.md § Playground registration](task-guide.md#playground-registration).
+[task-guide.md § Playground registration](application/task-guide.md#playground-registration).
 
 ---
 
@@ -406,20 +462,20 @@ New tasks must be indexed before they appear in the task picker. See
 
 ### 1. Understand task structure
 
-Read [task-guide.md](task-guide.md) — `task.toml`, `instruction.md`, `input/`,
+Read [task-guide.md](application/task-guide.md) — `task.toml`, `instruction.md`, `input/`,
 shared runtimes under `environment/task-environments/application/`, `tests/`.
 
 ### 2. View other scenario types
 
-Survey is only one **form**. Chat, web, and computer-use need different runtimes
-and **different persona agents** (e.g. web uses Playwright or browser-use, not
-`persona-claude-code` alone).
+Survey is only one **form**. Chat, web, and computer-use use different runtimes
+and agents — under Mode **auto** the generator picks them
+([choosing-an-agent.md](environment/agents.md)).
 
-Browse the example table in [task-guide.md § Reference scenarios](task-guide.md#reference-scenarios),
+Browse the example table in [task-guide.md § Reference scenarios](application/task-guide.md#reference-scenarios),
 run any example with the suggested agent, then inspect with Playground or
 `harbor view`.
 
-Web stack choice: [web-interaction.md](web-interaction.md).
+Web stack choice: [web-interaction.md](environment/web-interaction.md).
 
 ### 3. Scaffold a new task
 
@@ -438,7 +494,7 @@ cp -R application/tasks/example-chat-mcp_support_chatbot application/tasks/<your
 
 # For real benchmark tasks, rename to survey_* / chat_<sut> (see tasks/README.md).
 # HTTP adapter over an internal MCP data layer still uses chatbot-api-sidecar_*
-# (example: chat_openbb → chatbot-api-sidecar_openbb).
+# (example: chat_openbb-corporate-action-honesty → chatbot-api-sidecar_openbb).
 
 # web — pick one example-web-* stack (see web-interaction.md)
 cp -R application/tasks/example-web-playwright_quote-choice application/tasks/<your-task-name>
@@ -468,11 +524,11 @@ uv run python application/scripts/generate_application_job.py \
 # Run the printed harbor command + exports
 ```
 
-Use the agent from [choosing-an-agent.md](choosing-an-agent.md) for your form.
+Use the agent from [choosing-an-agent.md](environment/agents.md) for your form.
 
 ### 6. Iterate in Playground
 
-Register the task ([task-guide.md](task-guide.md)), restart the backend, then
+Register the task ([task-guide.md](application/task-guide.md)), restart the backend, then
 play with Quick pick personas before scaling sample size.
 
 ### 7. Batch of personas
@@ -487,7 +543,7 @@ Playground **Runs** tab, or:
 uv run harbor view jobs/<job_name> --build
 ```
 
-Full task checklist: [tasks/README.md](../../application/tasks/README.md).
+Full task checklist: [tasks/README.md](../application/tasks/README.md).
 
 ---
 
@@ -496,9 +552,9 @@ Full task checklist: [tasks/README.md](../../application/tasks/README.md).
 | Goal | Tool | Output |
 |------|------|--------|
 | Explore / debug visually | Playground (Mode **auto**) | `jobs/` |
-| Survey / chat (terminal) | `generate_application_job.py --execution-mode auto` | `jobs/<job_name>/` |
+| Any of 4 types (terminal, single or batch) | `generate_application_job.py --execution-mode auto` + `harbor run -c` | `jobs/<job_name>/` |
 | Validate Docker/Harbor only | `harbor-smoke-local.yaml` | smoke task image |
-| Batch / CI | `generate_application_job.py` + `harbor run` | job YAML + `jobs/` |
+| Docker CLI harness (survey/chat) | `--execution-mode force_docker` or `appSim-*-local.yaml` | Docker trials |
 | Browse trajectories | `harbor view` or Playground **Runs** | local viewer |
 | New scenario | copy `example-*` + register for Playground | `application/tasks/<name>/` |
 
@@ -508,9 +564,9 @@ Full task checklist: [tasks/README.md](../../application/tasks/README.md).
 
 | Doc | Purpose |
 |-----|---------|
-| [task-guide.md](task-guide.md) | Task folder structure and reference scenarios |
-| [web-interaction.md](web-interaction.md) | Playwright vs browser-use vs Cocoa vs CUA |
-| [choosing-an-agent.md](choosing-an-agent.md) | Agent ↔ form mapping and API keys |
-| [tasks/README.md](../../application/tasks/README.md) | Task-authoring checklist and reporting |
-| [docs/application.md § Job Generation Scripts](../application.md#job-generation-scripts) | Job generator and reporting scripts |
-| [unified-runtime.md](unified-runtime.md) | Harbor vs remote execution plane |
+| [task-guide.md](application/task-guide.md) | Task folder structure and reference scenarios |
+| [web-interaction.md](environment/web-interaction.md) | Playwright vs browser-use vs Cocoa vs CUA |
+| [choosing-an-agent.md](environment/agents.md) | Agent ↔ form mapping and API keys |
+| [tasks/README.md](../application/tasks/README.md) | Task-authoring checklist and reporting |
+| [docs/application/README.md § Job Generation Scripts](application/README.md) | Job generator and reporting scripts |
+| [unified-runtime.md](environment/runtime.md) | Harbor vs remote execution plane |

@@ -1,8 +1,7 @@
 # Environment
 
-The **Environment module** owns how simulations run — Harbor jobs, trial execution, persona agents, shared task environments, and optional remote workers. This page explains the runtime contract, execution surfaces, and configuration.
-
-If you are new to MatrAIx, read this page to understand how personas, applications, and environments connect at runtime.
+This page covers how simulations run — Harbor jobs, trial execution, persona
+agents, shared task environments, and optional remote workers.
 
 ---
 
@@ -33,7 +32,8 @@ MatrAIx separates **what to simulate** (persona profiles and task scenarios) fro
 | Job recipes | `configs/jobs/` | Multi-trial batches, concurrency, agent/model defaults |
 | Outputs | `jobs/` | Per-trial artifacts, verifier results, optional aggregation |
 
-Applications define scenarios. Environment executes them. Persona data is **referenced** (`persona_path=…`), never copied into task folders.
+Task folders define scenarios; Harbor + agents execute them. Persona data is
+**referenced** (`persona_path=…`), never copied into task folders.
 
 ---
 
@@ -44,8 +44,8 @@ Three ways to launch the same Harbor contract:
 | Surface | When to use | Entry |
 |---------|-------------|-------|
 | **Harbor CLI** | Scripts, CI, debugging | `uv run harbor run -c configs/jobs/…` |
-| **Playground** | Interactive task play, persona sampling | [quickstart.md §10](guides/quickstart.md#10-playground--play-tasks-visually) |
-| **Playground API** | Automation, external tools | `POST /api/harbor/jobs` — [rest-api.md](guides/rest-api.md) |
+| **Playground** | Interactive task play, persona sampling | [quickstart.md §10](../quickstart.md#10-playground-play-tasks-visually) |
+| **Playground API** | Automation, external tools | `POST /api/harbor/jobs` — [rest-api.md](../application/playground-api.md) |
 
 All paths share:
 
@@ -60,7 +60,7 @@ All paths share:
 | `harbor` (default) | API or laptop runs `harbor run` locally | `MATRIX_EXECUTION_PLANE=harbor` |
 | `remote` | API dispatches to a Remote Runner worker over HTTP | `MATRIX_EXECUTION_PLANE=remote` + `REMOTE_RUNNER_API_URL` |
 
-Remote plane details: [unified-runtime.md](guides/unified-runtime.md).
+Remote plane details: [unified-runtime.md](runtime.md).
 
 **Security note:** the remote plane sends only `PYTHONPATH` and `MATRIX_*` task exports over HTTP. API keys must live on the **worker**, not in the dispatch payload.
 
@@ -129,7 +129,7 @@ Not sent over the remote plane. Per-agent names:
 | `persona-browser-use`, OpenHands SDK | `LLM_API_KEY` or provider-specific |
 | `persona-computer-1` on use.computer | `USE_COMPUTER_API_KEY` |
 
-Full matrix: [choosing-an-agent.md](guides/choosing-an-agent.md).
+Full matrix: [choosing-an-agent.md](agents.md).
 
 ### Playground reporting (optional)
 
@@ -176,7 +176,8 @@ flowchart LR
 
 ## Benchmark adapters
 
-Adapters convert external benchmarks into Harbor-compatible task directories. They belong under `environment/adapters/<adapter-name>/` because they are runtime integration code, not Persona schema or application task definitions.
+Adapters convert external benchmarks into Harbor-compatible task directories under
+`environment/adapters/<adapter-name>/`.
 
 ### Adapter layout
 
@@ -252,6 +253,9 @@ In `task.toml`, set `[environment].docker_image` to a Docker image name (convert
 
 | Doc | Topic |
 |-----|-------|
-| [Choosing an agent](guides/choosing-an-agent.md) | Agent ↔ API key matrix |
-| [Harbor vs remote plane](guides/unified-runtime.md) | Execution plane details |
-| [Playground HTTP API](guides/rest-api.md) | REST API reference |
+| [Handbook](../README.md) | Docs home |
+| [Agents](agents.md) | Agent ↔ API key matrix |
+| [Runtime](runtime.md) | Harbor vs remote plane |
+| [Web interaction](web-interaction.md) | Playwright / browser-use / Cocoa / CUA |
+| [Application](../application/README.md) | Tasks and Playground |
+| [Playground API](../application/playground-api.md) | HTTP API reference |
