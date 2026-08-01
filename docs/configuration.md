@@ -2,9 +2,25 @@
 
 A MatrAIx run is fully described by a **job recipe** — a YAML file that specifies the task, persona agent, language model, and persona profile(s) to instantiate. Job recipes live under `configs/jobs/`.
 
-## Quick start
+## Preferred CLI path (Mode **auto**)
 
-Point Harbor at a recipe with the `-c` flag:
+For survey, chat, web, and os-app, generate a recipe that matches Playground
+**Mode → auto**, then run it:
+
+```bash
+uv run python application/scripts/generate_application_job.py \
+  --task application/tasks/example-survey_product-feedback \
+  --execution-mode auto \
+  --persona-ids 0042   # or --sample-size N for batch
+
+uv run harbor run -c configs/jobs/application-task-job-recipe/<generated>.yaml
+```
+
+Walkthrough for all four types: [quickstart.md §6–7](quickstart.md#6-one-persona--cli-with-mode-auto-default).
+Agent matrix: [environment/agents.md](environment/agents.md).
+
+Hand-point Harbor at a **checked-in** recipe with `-c` only when you intentionally
+want a Docker harness smoke (often `force_docker`-style for survey/chat):
 
 ```bash
 uv run harbor run -c configs/jobs/example-job-recipe/appSim-example-survey-local.yaml
@@ -15,20 +31,20 @@ uv run harbor run -c configs/jobs/example-job-recipe/appSim-example-survey-local
 A recipe has four main sections — run settings, environment, persona agent, and task(s):
 
 ```yaml
-job_name: appSim-example-survey-local   # output label; artifacts go to jobs/<job_name>/
-jobs_dir: jobs                           # where run artifacts are written
-n_attempts: 1                            # repeat each (persona, task) trial N times
-n_concurrent_trials: 1                   # how many trials run in parallel
-timeout_multiplier: 1.0                  # scale per-task timeouts
-quiet: false                             # verbosity
+job_name: example-survey-product-feedback-auto-n1
+jobs_dir: jobs
+n_attempts: 1
+n_concurrent_trials: 1
+timeout_multiplier: 1.0
+quiet: false
 
 environment:
-  type: docker                           # docker (isolated) or host (run locally)
-  delete: true                           # remove the container after the run
+  type: host                             # auto survey/chat; docker for web/os-app
+  delete: true
 
 agents:
-  - name: persona-claude-code            # which persona agent to use
-    model_name: anthropic/claude-sonnet-4-6  # simulated-user LLM (provider/model)
+  - name: persona-json-survey            # auto picks this for survey
+    model_name: anthropic/claude-sonnet-4-6
     kwargs:
       persona_path: persona/datasets/matraix-persona-dev-sample/persona_0042.yaml
 
@@ -53,7 +69,7 @@ tasks:
 
 | Field | Type | Meaning |
 |-------|------|---------|
-| `environment.type` | string | `docker` (recommended, isolated) or `host` (run on the current machine). |
+| `environment.type` | string | `host` for Mode **auto** survey/chat; `docker` for web/os-app (and force_docker survey/chat); `use-computer` for macOS/iOS CUA. |
 | `environment.delete` | bool | If `true`, remove the Docker container after the run completes. |
 
 ### Agent
@@ -79,11 +95,11 @@ Every run specifies a **persona agent** (the automation harness), a **persona LL
 
 | Agent | Application | Persona model | Example recipe | API key on host |
 |-------|-------------|---------------|-----------------|-----------------|
-| `persona-json-survey` | Survey | Any (auto pick) | – | `ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, or `DASHSCOPE_API_KEY` |
-| `persona-user-sim` | Chatbot | Any (auto pick) | – | `ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, or `DASHSCOPE_API_KEY` |
-| `persona-claude-code` | Survey, Chatbot | `anthropic/claude-*` | `appSim-example-survey-local.yaml`, `appSim-example-chat-local.yaml` | `ANTHROPIC_API_KEY` |
-| `persona-gemini-cli` | Survey, Chatbot | `google/gemini-*` | `appSim-example-survey-local.yaml` | `GEMINI_API_KEY` |
-| `persona-codex` | Survey, Chatbot | `openai/gpt-*` | `appSim-example-survey-local.yaml` | `OPENAI_API_KEY` |
+| `persona-json-survey` | Survey (**auto**) | Any | generated `*-auto-n*.yaml` | `ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, or `DASHSCOPE_API_KEY` |
+| `persona-user-sim` | Chatbot (**auto**) | Any | generated `*-auto-n*.yaml` | Persona key + often `OPENAI_API_KEY` for SUT |
+| `persona-claude-code` | Survey, Chatbot (`force_docker`) | `anthropic/claude-*` | `appSim-example-survey-local.yaml`, `appSim-example-chat-local.yaml` | `ANTHROPIC_API_KEY` |
+| `persona-gemini-cli` | Survey, Chatbot (`force_docker`) | `google/gemini-*` | `appSim-example-survey-local.yaml` | `GEMINI_API_KEY` |
+| `persona-codex` | Survey, Chatbot (`force_docker`) | `openai/gpt-*` | `appSim-example-survey-local.yaml` | `OPENAI_API_KEY` |
 | `persona-openhands-sdk` | Web (Playwright) | Any | `appSim-example-web-playwright-local.yaml` | `LLM_API_KEY` (or `DASHSCOPE_API_KEY` for DashScope models) |
 | `persona-browser-use` | Web (browser automation) | Any | `appSim-example-web-browser-use-local.yaml` | `ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, `DASHSCOPE_API_KEY`, or `LLM_API_KEY` |
 | `persona-cocoa` | Web (browser + shell) | Any | `appSim-example-web-cocoa-local.yaml` | `ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, `DASHSCOPE_API_KEY`, or `LLM_API_KEY` |
@@ -199,7 +215,7 @@ uv run harbor run -c configs/jobs/example-job-recipe/appSim-example-web-playwrig
 uv run harbor run -c configs/jobs/example-job-recipe/appSim-example-web-browser-use-local.yaml
 ```
 
-See [web-interaction.md](guides/web-interaction.md) for detailed mode comparison, web submission contracts, and how to author new web tasks.
+See [web-interaction.md](environment/web-interaction.md) for detailed mode comparison, web submission contracts, and how to author new web tasks.
 
 ## Persona profile and default sample
 
@@ -226,7 +242,7 @@ All job recipes live under `configs/jobs/` and follow these guidelines:
 
 - `example-job-recipe/` — local application task examples backed by `application/tasks/` and the sample persona dataset; includes smoke recipe `harbor-smoke-local.yaml` for API-key-free testing.
 - `application-task-job-recipe/` — generated application job recipes from Playground UI launches and `application/scripts/generate_application_job.py`; most files are gitignored; a small set of curated fixtures is checked in.
-- `persona-task-grounding-job-recipe/` — curated generated persona grounding recipe fixtures.
+- `persona-job-recipe/` — generated persona job YAMLs from `persona/scripts/generate_persona_job.py` (gitignored).
 
 ### Example recipes
 
@@ -236,11 +252,14 @@ Run any example recipe from the repository root with:
 uv run harbor run -c configs/jobs/example-job-recipe/<recipe>.yaml
 ```
 
-The example recipes use the checked-in sample persona `persona/datasets/matraix-persona-dev-sample/persona_0042.yaml`:
+The example recipes use the checked-in sample persona `persona/datasets/matraix-persona-dev-sample/persona_0042.yaml`.
+**Note:** `appSim-example-survey-local.yaml` / `appSim-example-chat-local.yaml` use
+Docker CLI harnesses (`persona-claude-code`) — they are **not** Mode auto. Prefer
+`generate_application_job.py --execution-mode auto` for day-to-day survey/chat.
 
 - `harbor-smoke-local.yaml` — no-API-key smoke check using the generic `hello-world` task and built-in `oracle` agent (preferred quick check).
-- `appSim-example-survey-local.yaml`
-- `appSim-example-chat-local.yaml`
+- `appSim-example-survey-local.yaml` — Docker CLI survey smoke (`force_docker`-style)
+- `appSim-example-chat-local.yaml` — Docker CLI chat smoke
 - `appSim-example-debug-local.yaml`
 - `appSim-example-web-playwright-local.yaml`
 - `appSim-example-web-browser-use-local.yaml`
@@ -270,7 +289,43 @@ Generated recipes land under `configs/jobs/application-task-job-recipe/` (see [R
 
 ## Examples
 
-### Survey task with Claude
+### Survey / chat with Mode auto (preferred)
+
+```bash
+uv run python application/scripts/generate_application_job.py \
+  --task application/tasks/example-survey_product-feedback \
+  --execution-mode auto \
+  --persona-ids 0042 \
+  --model-name anthropic/claude-sonnet-4-6
+# Follow printed exports + harbor run -c …
+```
+
+### Web (browser-use) one-liner
+
+```bash
+export ANTHROPIC_API_KEY="sk-ant-..."
+
+uv run harbor run \
+  -a persona-browser-use \
+  -m anthropic/claude-sonnet-4-6 \
+  --ak persona_path=persona/datasets/matraix-persona-dev-sample/persona_0042.yaml \
+  -p application/tasks/example-web-browser-use_laptop-choice
+```
+
+### Chatbot host auto (after generating a recipe, or manual)
+
+```bash
+export ANTHROPIC_API_KEY="sk-ant-..."
+export OPENAI_API_KEY="sk-..."  # sidecar / SUT when required
+
+uv run harbor run \
+  -a persona-user-sim \
+  -m anthropic/claude-sonnet-4-6 \
+  --ak persona_path=persona/datasets/matraix-persona-dev-sample/persona_0042.yaml \
+  -p application/tasks/chat_recai
+```
+
+### Force Docker CLI survey (optional)
 
 ```bash
 export ANTHROPIC_API_KEY="sk-ant-..."
@@ -280,19 +335,6 @@ uv run harbor run \
   -m anthropic/claude-sonnet-4-6 \
   --ak persona_path=persona/datasets/matraix-persona-dev-sample/persona_0042.yaml \
   -p application/tasks/example-survey_product-feedback
-```
-
-### Chatbot task with Claude
-
-```bash
-export ANTHROPIC_API_KEY="sk-ant-..."
-export OPENAI_API_KEY="sk-..."  # optional, for chat sidecar
-
-uv run harbor run \
-  -a persona-user-sim \
-  -m anthropic/claude-sonnet-4-6 \
-  --ak persona_path=persona/datasets/matraix-persona-dev-sample/persona_0042.yaml \
-  -p application/tasks/chat_recai
 ```
 
 ### Computer-use task (macOS)
@@ -324,7 +366,8 @@ This uses the `oracle` reference agent (not a real LLM) and is useful for verify
 
 ## Related
 
-- [../README.md](../README.md) — Project overview and quick start.
-- [quickstart.md](guides/quickstart.md) — End-to-end walkthrough: terminal → batch → Playground UI.
-- [choosing-an-agent.md](guides/choosing-an-agent.md) — Detailed agent, model, and API-key matrix with subscription auth options.
-- [web-interaction.md](guides/web-interaction.md) — Deep dive into web interaction modes, submission contracts, and task authoring.
+- [Handbook](README.md) — docs home
+- [Project README](../README.md) — install and short overview
+- [Quickstart](quickstart.md) — terminal → batch → Playground
+- [Agents](environment/agents.md) — agent, model, and API-key matrix
+- [Web interaction](environment/web-interaction.md) — browser modes and web contracts

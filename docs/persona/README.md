@@ -1,8 +1,10 @@
 # Persona
 
-The Persona module provides a 1,290-dimensional schema for representing human profiles, attribute extraction pipelines, grounding validation tasks, and a public 1 million row coreset for developing and evaluating persona-aware AI systems.
+MatrAIx personas use a 1,290-dimensional schema for human profiles, plus
+attribute extraction pipelines, grounding validation, and a public 1 million
+row coreset for persona-aware evaluation.
 
-> **Pipeline internals:** for how the corpus is actually built end to end — curation, human extraction, synthetic generation, and the post-processing chain (quality filter → deduplication → unified dataset → 1M coreset → statistics) — see [Persona Pipeline](persona-pipeline.md).
+> **Pipeline internals:** for how the corpus is actually built end to end — curation, human extraction, synthetic generation, and the post-processing chain (quality filter → deduplication → unified dataset → 1M coreset → statistics) — see [Persona Pipeline](pipeline.md).
 
 ## Overview
 
@@ -25,7 +27,7 @@ The persona schema defines 1,290 categorical dimensions organized hierarchically
 
 Each dimension has specific categorical values (e.g., age: "Under 5", "5-12", ..., "85+"; proficiency: "Expert", "Proficient", "Intermediate", "Familiar", "No knowledge"). A persona assigns exactly one value per dimension, though extraction may discover only a subset of assignments from source text.
 
-See `../persona/schema/` for the complete taxonomy, calibration targets, and category mappings.
+See `../../persona/schema/` for the complete taxonomy, calibration targets, and category mappings.
 
 ## Attribute Extraction: Treiver
 
@@ -84,7 +86,7 @@ The extraction module (`persona/extraction/`) contains:
 - `treiver.py` — orchestrator, merges regex and LLM results
 - `__main__.py` — CLI interface
 
-For deep details on algorithms, dependencies, and edge cases, see `../persona/extraction/README.md`.
+Implementation: `../../persona/extraction/` (`treiver.py`, `llm_judge.py`, `regex_matcher.py`).
 
 ## Curation and Data Sources
 
@@ -100,7 +102,7 @@ The 1M coreset combines multiple human-grounded sources:
 
 Human-grounded means derived from a real profile, history, or survey record. It does **not** mean every extracted attribute is a verified fact—model extraction can contain errors, and survey mappings depend on crosswalk quality.
 
-Curation pipeline notes, schema decisions, and attribute-pool construction live in `../persona/curation/`.
+Curation pipeline notes, schema decisions, and attribute-pool construction live in `../../persona/curation/`.
 
 ## Public Coreset: MatrAIx Persona 1M
 
@@ -159,47 +161,16 @@ The index is used automatically when present; Parquet is scanned if not.
 
 ## Grounding and Validation Tasks
 
-Persona bench tasks validate that AI systems behave consistently with their assigned personas. Each task probes one specific dimension (e.g., economic motivation, technical expertise) via realistic scenarios.
-
-### Task Structure
-
-Copy a task template and customize:
-```bash
-cp -R persona/tasks/example-survey_product-feedback persona/tasks/example-survey_my-scenario
-```
-
-Edit in this order:
-1. **`grounding.toml`** — declare `probe_dimension` and `confounders` for sampling
-2. **`src/matraix/task_catalog.py`** — register task metadata (type, domain, tags, dimension index)
-3. **`task.toml`** — set task name (auto-generated from catalog) and metadata
-4. **`instruction.md`**, **`environment/`**, **`tests/`** — implement your scenario
-
-Run validation:
-```bash
-uv run harbor run \
-  -a persona-claude-code \
-  --ak persona_path=persona/datasets/matraix-persona-1m/persona_0042.yaml \
-  -p persona/tasks/example-survey_my-scenario
-```
-
-### Task Design
-
-- **One probe dimension** per task, declared in `grounding.toml`
-- **Probe pressure** — the stimulus should elicit generic "average" answers; grounded agents answer from their profile
-- **Human instruction tone** — write like forwarding a real request; persona metadata is separate (no "as your persona")
-- **Multiple valid paths** — prefer MCQ options with multiple correct answers (e.g., decline with low relevance vs. full form)
-- **Verifier gates** — `test_state.py` validates output shape (reward 0 if invalid); `test_grounding.py` scores behavior and writes `/logs/verifier/grounding.json`
-
-Gold template: [`example-survey_product-feedback`](../persona/tasks/example-survey_product-feedback/README.md) probes **economic motivation** (dim-047) via neutral spending scenarios on a control cohort.
-
-For generic application tasks (chat, web, computer-use), start from `../application/tasks/` instead.
+Persona-adherence probes live under `persona/validation/tasks/`, with runners
+and reporting helpers in `persona/validation/scripts/`. For product scenarios
+(survey, chat, web, computer-use), use `../application/tasks/`.
 
 ## Grounding Reporting
 
 After a multi-persona Harbor job completes:
 ```bash
 uv run python persona/reporting/eval_grounding_job.py jobs/<job_name> \
-  --meta configs/jobs/persona-task-grounding-job-recipe/<name>.meta.json
+  --meta configs/jobs/persona-job-recipe/<name>.meta.json
 ```
 
 Outputs `persona_grounding_report.json` with:
@@ -227,15 +198,12 @@ Optional flags:
 - `--strategy <path>` — expand a task `persona_strategy.json` into a local pool for experiments
 
 ### Job Generation
-Create a Harbor job YAML from a task and persona pool:
-```bash
-uv run python persona/scripts/generate_persona_job.py \
-  --task persona/tasks/example-survey_product-feedback
-```
+Create a Harbor job YAML from a task and persona pool by passing an
+application or validation task path to `persona/scripts/generate_persona_job.py`.
 
 This reads `grounding.toml` to sample stratified cohorts and filter on confounders when present. Use `--controlled-probe` for anchor-based cohorts (default for catalog tasks); `--no-controlled-probe` to disable.
 
-See `../persona/scripts/README.md` for full options.
+See scripts under `../../persona/scripts/` for full options.
 
 ## Docker Integration
 
@@ -255,7 +223,7 @@ The 1M coreset was built through a multi-stage post-processing pipeline:
 - **Unified dataset construction** — merges all sources and applies deduplication
 - **Calibration and sampling** — balances marginals and performs deterministic selection
 
-Implementation and audit tools are in `../persona/post_process/`. Each stage produces detailed logs and diagnostics; see [Persona Pipeline → 1M coreset](persona-pipeline.md#1m-coreset) for the full build process and reproducibility notes.
+Implementation and audit tools are in `../../persona/post_process/`. Each stage produces detailed logs and diagnostics; see [Persona Pipeline → 1M coreset](pipeline.md#1m-coreset) for the full build process and reproducibility notes.
 
 ## Project Layout
 
@@ -266,9 +234,9 @@ persona/
 ├── curation/                        # Source pipelines, schema decisions, attribute pool
 │   ├── attribute_pool/              # Dimension construction and validation
 │   └── existing_data/               # Wikipedia, Amazon, survey processing
-├── tasks/                           # Persona bench validation tasks
-│   ├── example-survey_*             # Copy as template
-│   └── README.md                    # Task design guidelines
+├── validation/                      # Persona-adherence validation probes
+│   ├── tasks/                       # Probe tasks
+│   └── scripts/                     # Matrix runners and reporting helpers
 ├── scripts/                         # Job generation and persona sampling
 │   ├── generate_dev_personas.py     # Offline cohort generation
 │   ├── generate_persona_job.py      # Harbor job YAML from task + pool
@@ -303,13 +271,23 @@ uv run python persona/scripts/generate_dev_personas.py
 ```bash
 uv run harbor run -a persona-claude-code \
   --ak persona_path=persona/datasets/matraix-persona-1m/persona_0001.yaml \
-  -p persona/tasks/example-survey_product-feedback
+  -p persona/validation/tasks/probe-survey_register
 ```
 
 **Aggregate results:**
 ```bash
 uv run python persona/reporting/eval_grounding_job.py jobs/my_job \
-  --meta configs/jobs/persona-task-grounding-job-recipe/my_job.meta.json
+  --meta configs/jobs/persona-job-recipe/my_job.meta.json
 ```
 
-For more details, see the module READMEs and docstrings in each subdirectory.
+For more details, see READMEs and docstrings under `persona/`.
+
+## Related
+
+| Doc | Role |
+|-----|------|
+| [Handbook](../README.md) | Docs home |
+| [Persona pipeline](pipeline.md) | Curation → coreset build |
+| [Validation](validation.md) | Persona-adherence probes |
+| [Quickstart](../quickstart.md) | Run tasks with personas |
+| [Application](../application/README.md) | Product scenarios |

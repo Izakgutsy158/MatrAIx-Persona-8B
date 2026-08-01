@@ -34,7 +34,7 @@ REMOTE_RUNNER_API_KEY=...        # optional bearer token for the worker API
 ```
 
 Survey, chatbot, web, and os-app jobs share the same API regardless of plane.
-See [unified-runtime.md](unified-runtime.md) for worker setup and remote payload
+See [unified-runtime.md](../environment/runtime.md) for worker setup and remote payload
 fields.
 
 Optional per-request override: `"plane": "harbor"` or `"plane": "remote"` on
@@ -280,6 +280,6 @@ with task metadata plus optional profile markdown when available.
 
 ## Related docs
 
-- [unified-runtime.md](unified-runtime.md) — Harbor vs remote execution planes
-- [quickstart.md](quickstart.md) — terminal smoke and Playground setup
+- [unified-runtime.md](../environment/runtime.md) — Harbor vs remote execution planes
+- [quickstart.md](../quickstart.md) — terminal smoke and Playground setup
 - OpenAPI `/docs` — generated from FastAPI models in `backend/api/schemas.py`

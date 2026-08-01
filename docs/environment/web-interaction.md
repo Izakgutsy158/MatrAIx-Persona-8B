@@ -141,8 +141,9 @@ Runtime: `environment/task-environments/application/shared-web-cocoa/`.
 
 **How it works:** A real desktop browser window in Docker (Xvfb + XFCE); each turn
 the model receives a **screenshot** and returns actions (`navigate`, `click`,
-`scroll`, …). The agent finishes with a **done** JSON action; Harbor materializes
-`/app/output/book_interest.json`.
+`scroll`, …). The agent finishes with a **done** JSON action; the task verifier
+recovers `/app/output/book_interest.json` from the mirrored final answer /
+trajectory when needed.
 
 **Pros:** Closest to end-user behavior among Docker web modes; no
 `USE_COMPUTER_API_KEY` for **Docker Linux** web CUA.
@@ -166,7 +167,7 @@ Runtime: `environment/task-environments/application/shared-web-cua-linux/`.
 
 For **macOS / iOS** screenshot CUA (system settings, not live web), use
 `application/tasks/example-computer-use-*` with `-e use-computer` — see
-[choosing-an-agent.md](choosing-an-agent.md).
+[agents.md](agents.md).
 
 ## What we do *not* treat as a web mode
 
@@ -199,7 +200,7 @@ Task `instruction.md`, verifier, and output contract stay unchanged; only the
 runtime image switches.
 
 **Credentials:** API keys or CLI subscription auth are configured on the Harbor
-runner — see [choosing-an-agent.md](choosing-an-agent.md) § CLI subscription auth
+runner — see [agents.md](agents.md) § CLI subscription auth
 and `application/playground/.env.local.example`.
 
 ## Authoring a new live-web application
@@ -210,7 +211,7 @@ and `application/playground/.env.local.example`.
 3. Set `network_mode = "public"` where the agent must reach the internet.
 4. Point `[environment].definition` at the matching `shared-web-*` runtime (or
    create a task-specific environment only when the stack is genuinely new).
-5. Register the task for Playground — [task-guide.md § Playground registration](task-guide.md#playground-registration).
+5. Register the task for Playground — [task-guide.md § Playground registration](../application/task-guide.md#playground-registration).
 6. Add **Suggested setup (non-binding)** in `tasks/.../README.md` — do not put
    agent names in `instruction.md`.
 7. Document URL stability and login requirements in README **Known limitations**.
@@ -224,6 +225,6 @@ and `application/playground/.env.local.example`.
 | `application/tasks/example-web-cocoa_plan-choice/` | Cocoa + live URL |
 | `application/tasks/example-web-cua_bookshop-choice/` | CUA + live URL (Docker Linux) |
 
-See also [task-guide.md](task-guide.md) and [choosing-an-agent.md](choosing-an-agent.md).
+See also [task-guide.md](../application/task-guide.md) and [agents.md](agents.md).
 
-Play tasks in the Playground: [quickstart.md §10](quickstart.md#10-playground--play-tasks-visually).
+Play tasks in the Playground: [quickstart.md §10](../quickstart.md#10-playground-play-tasks-visually).

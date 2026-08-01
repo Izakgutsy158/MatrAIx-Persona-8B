@@ -241,9 +241,11 @@ Use Node.js 20.19.0 or newer. The checked-in `.node-version` and `.nvmrc` files 
 
 ---
 
-## Next steps
+## Related
 
-- Integrate Rewardkit into your Harbor tasks for automated grading
+- [Handbook](README.md) — docs home
+- [Quickstart](quickstart.md) — first runs
+- [Environment](environment/README.md) — Harbor runtime
+- Integrate Rewardkit into Harbor tasks for automated grading
 - Use harbor-langsmith to trace agent behavior and manage evaluation datasets
-- Explore job results with `harbor view` to inspect trajectories and compare runs
-- Check the [full handbook](./README.md) for recipes, persona data, and task specifications
+- Explore job results with `harbor view`

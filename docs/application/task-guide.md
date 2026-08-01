@@ -21,7 +21,7 @@ application/tasks/example-survey_product-feedback/
 ├── reporting.json      # Batch reporting policy (contextRules, judge directives)
 ├── persona_strategy.json  # target cohort + Playground sampling defaults
 ├── solution/           # optional — reference solution for CI smoke
-└── README.md           # notes for your team (smoke commands, suggested agent)
+└── README.md           # optional notes (smoke commands, suggested agent)
 ```
 
 **Runtime build contexts** live separately under
@@ -123,7 +123,7 @@ and/or `cohortId`, optional `sampleSize`). Other fields may use defaults.
 The checked-in `matraix-persona-dev-sample` pool is only ~200 personas — narrow
 filters often undershoot it. For real coverage, sample from
 `persona/datasets/matraix-persona-1m`, widen filters, or use a saved cohort.
-See [Ensuring pool coverage](../task-spec/authoring-bundle.md#ensuring-pool-coverage).
+See [Ensuring pool coverage](../../application/task-spec/docs/authoring-bundle.md#ensuring-pool-coverage).
 
 ## Conventions
 
@@ -147,19 +147,19 @@ See [Ensuring pool coverage](../task-spec/authoring-bundle.md#ensuring-pool-cove
 | web (CUA) | `application/tasks/example-web-cua_bookshop-choice/` |
 | computer-use | `application/tasks/example-computer-use-macos_calendar-reminder-handoff/` (macOS / iOS / Linux) |
 
-Agent choice depends on the form — [choosing-an-agent.md](choosing-an-agent.md).
-Web stack details — [web-interaction.md](web-interaction.md).
+Agent choice depends on the form — [agents.md](../environment/agents.md).
+Web stack details — [web-interaction.md](../environment/web-interaction.md).
 
 ## Reference scenarios
 
-| Form | Path | Suggested agent |
-|------|------|-----------------|
-| survey | `application/tasks/example-survey_product-feedback/` | `persona-claude-code` |
-| chat (API) | `application/tasks/example-chat-api_support_chatbot/` | `persona-claude-code` |
-| chat (MCP) | `application/tasks/example-chat-mcp_support_chatbot/` | `persona-claude-code` |
-| chat (recommender) | `application/tasks/chat_recai/` | `persona-claude-code` |
-| chat (OpenBB / HTTP over MCP data) | `application/tasks/chat_openbb/` | `persona-claude-code` |
-| chat (medical) | `application/tasks/chat_multi-agent-medical-assistant/` | `persona-claude-code` |
+| Form | Path | Auto agent (default) |
+|------|------|----------------------|
+| survey | `application/tasks/example-survey_product-feedback/` | `persona-json-survey` (host) |
+| chat (API) | `application/tasks/example-chat-api_support_chatbot/` | `persona-user-sim` (host) |
+| chat (MCP) | `application/tasks/example-chat-mcp_support_chatbot/` | `persona-user-sim` (host) |
+| chat (recommender) | `application/tasks/chat_recai/` | `persona-user-sim` (host) |
+| chat (OpenBB / HTTP over MCP data) | `application/tasks/chat_openbb/` | `persona-user-sim` (host) |
+| chat (medical) | `application/tasks/chat_multi-agent-medical-assistant/` | `persona-user-sim` (host) |
 | web (Playwright) | `application/tasks/example-web-playwright_quote-choice/` | `persona-openhands-sdk` |
 | web (browser-use) | `application/tasks/example-web-browser-use_laptop-choice/` | `persona-browser-use` |
 | web (Cocoa) | `application/tasks/example-web-cocoa_plan-choice/` | `persona-cocoa` |
@@ -210,26 +210,27 @@ Restart the Playground backend after registry changes.
 | [`configs/jobs/example-job-recipe/`](../../configs/jobs/example-job-recipe/) | Hand-written smoke jobs (`appSim-*`, 1 persona) |
 | [`configs/jobs/application-task-job-recipe/`](../../configs/jobs/application-task-job-recipe/) | Multi-persona runs from `generate_application_job.py` or Playground |
 
-**Smoke** (checked-in YAML):
+**Smoke** — prefer Mode **auto** ([quickstart §6](../quickstart.md#6-one-persona--cli-with-mode-auto-default)).
+Checked-in Docker recipes below are optional harness smokes (`force_docker`-style):
 
 ```bash
 # Harbor hello-world (no API key)
 uv run harbor run -c configs/jobs/example-job-recipe/harbor-smoke-local.yaml
 
-# Application survey (needs ANTHROPIC_API_KEY)
+# Docker survey harness (not Mode auto)
 uv run harbor run -c configs/jobs/example-job-recipe/appSim-example-survey-local.yaml
 
-# Web examples (see docs/configuration.md for the full list)
+# Web examples
 uv run harbor run -c configs/jobs/example-job-recipe/appSim-example-web-playwright-local.yaml
 ```
 
 Full list: [`docs/configuration.md`](../configuration.md#example-recipes).
 
-**Multi-persona batch:** [quickstart.md §7](quickstart.md#7-batch--sample-many-personas-job).
+**Multi-persona batch:** [quickstart.md §7](../quickstart.md#7-batch--sample-many-personas-job).
 
 ## Related
 
-- [quickstart.md](quickstart.md) — install through Playground play
-- [web-interaction.md](web-interaction.md) — live-web modes
-- [choosing-an-agent.md](choosing-an-agent.md) — agents and API keys
+- [quickstart.md](../quickstart.md) — install through Playground play
+- [web-interaction.md](../environment/web-interaction.md) — live-web modes
+- [agents.md](../environment/agents.md) — agents and API keys
 - [task-spec/](../../application/task-spec/) — shared metric and artifact contracts

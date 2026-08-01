@@ -97,4 +97,4 @@ Harbor resolves execution per task `metadata.type`:
 - `survey` / `chatbot` → host-native agents in `auto` mode
 - `web` / `os-app` → docker or `use-computer` backends
 
-See [quickstart.md](quickstart.md) for terminal `harbor run` examples.
+See [quickstart.md](../quickstart.md) for terminal `harbor run` examples.

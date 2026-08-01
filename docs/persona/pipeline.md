@@ -9,7 +9,7 @@ It consolidates the per-stage engineering notes that previously lived in
 directory READMEs. Each stage below links to the actual code directory; run
 commands from the repository root unless stated otherwise. For the user-facing
 overview of the schema, the Treiver extractor, grounding tasks, and the public
-dataset, see [Persona](persona.md).
+dataset, see [Persona](README.md).
 
 Large generated artifacts (raw dumps, `outputs/`, `results/`, `generated/`,
 SQLite DBs, worker archives, Parquet snapshots) are intentionally git-ignored at
@@ -39,7 +39,7 @@ schema (1,290 dims)
 ## Schema
 
 The 1,290-dimension categorical taxonomy is the contract every stage reads.
-It lives in [`../persona/schema/`](../persona/schema/):
+It lives in [`../../persona/schema/`](../../persona/schema/):
 
 - `dimensions.json` — the 1,290 attributes across 43 categories, each with its
   allowed categorical values.
@@ -49,16 +49,16 @@ It lives in [`../persona/schema/`](../persona/schema/):
 - `render_persona_schema_taxonomy.py` — renders the taxonomy figure.
 
 Extraction, synthesis, dedup, and calibration all validate values against this
-schema. See [Persona → schema](persona.md#the-1290-dimension-schema) for the
+schema. See [Persona → schema](README.md#the-1290-dimension-schema) for the
 conceptual overview.
 
 ## Curation
 
-Source: [`../persona/curation/`](../persona/curation/).
+Source: [`../../persona/curation/`](../../persona/curation/).
 
 ### Attribute pool
 
-Directory: [`../persona/curation/attribute_pool/`](../persona/curation/attribute_pool/)
+Directory: [`../../persona/curation/attribute_pool/`](../../persona/curation/attribute_pool/)
 
 Aggregation, normalization, and LLM-assisted deduplication of candidate persona
 attributes into the schema. `scripts/` holds the pipeline (aggregate →
@@ -74,7 +74,7 @@ the git-ignored `outputs/` (see `OUTPUTS.md` for the large-artifact policy).
 
 ### Existing-data curation
 
-Directory: [`../persona/curation/existing_data/`](../persona/curation/existing_data/)
+Directory: [`../../persona/curation/existing_data/`](../../persona/curation/existing_data/)
 
 Repo-local tools that build persona records from external datasets (Wikipedia
 person pages, Amazon Reviews 2023, and survey/reference registries) and package
@@ -123,7 +123,7 @@ indexing needs the extra `pip install -e ".[amazon-modal]"` dependencies.
 
 ## Human extraction
 
-Directory: [`../persona/human_extraction/`](../persona/human_extraction/)
+Directory: [`../../persona/human_extraction/`](../../persona/human_extraction/)
 
 Extracts 1,290-dim personas from **real** human data (MatrAIx wiki person
 profiles), in contrast to synthesis. The directory README doubles as a GPU
@@ -167,13 +167,13 @@ with `scripts/score_personas.py`.
 
 ## Synthesis
 
-Source: [`../persona/synthesis/`](../persona/synthesis/). A Full-DAG graph over
+Source: [`../../persona/synthesis/`](../../persona/synthesis/). A Full-DAG graph over
 the schema drives synthetic persona sampling; the sampler and renderers live in
-`../persona/synthesis/scripts/` (`sample_personas.py`, `render_personas.py`).
+`../../persona/synthesis/scripts/` (`sample_personas.py`, `render_personas.py`).
 
 ### Full-DAG 10B generation
 
-Directory: [`../persona/synthesis/jobs/graph_10b_generation/`](../persona/synthesis/jobs/graph_10b_generation/)
+Directory: [`../../persona/synthesis/jobs/graph_10b_generation/`](../../persona/synthesis/jobs/graph_10b_generation/)
 
 CPU-only SLURM templates that generate large synthetic shards as compressed
 graph `codes.gz` (not rendered text — render lazily for samples/analytics).
@@ -210,7 +210,7 @@ Monitor with `./monitor_generation.sh <RUN_TAG> <SLURM_JOB_ID>`.
 
 ### Visualization
 
-Directory: [`../persona/synthesis/visualization/`](../persona/synthesis/visualization/)
+Directory: [`../../persona/synthesis/visualization/`](../../persona/synthesis/visualization/)
 
 Generated static views of the Full-DAG graph and schema (not checked in —
 regenerate). Run from the repo root:
@@ -233,7 +233,7 @@ covers exactly the 1,290 real attributes. Do not hand-edit generated
 
 ## Post-processing
 
-Source: [`../persona/post_process/`](../persona/post_process/). This chain turns
+Source: [`../../persona/post_process/`](../../persona/post_process/). This chain turns
 the raw synthetic codes plus human-extracted products into the published corpus.
 It is **non-destructive**: each stage emits per-shard rejection bitmaps rather
 than rewriting the ~4 TB of source codes. Reported figures below come from the
@@ -241,7 +241,7 @@ audited production runs recorded in each directory.
 
 ### Quality filter
 
-Directory: [`../persona/post_process/quality_filter/`](../persona/post_process/quality_filter/)
+Directory: [`../../persona/post_process/quality_filter/`](../../persona/post_process/quality_filter/)
 
 Scans all six persona products against conservative categorical contradiction
 rules in `contradictions.json`. Each source shard produces `*.reject.bits` (one
@@ -259,7 +259,7 @@ After the arrays succeed, a dependent job validates all shard reports and writes
 
 ### Deduplication
 
-Directory: [`../persona/post_process/deduplication/`](../persona/post_process/deduplication/)
+Directory: [`../../persona/post_process/deduplication/`](../../persona/post_process/deduplication/)
 
 Separates two operations. **Deduplication** removes exact/near-identical
 personas; **diversity selection** then trims dense regions deterministically
@@ -295,7 +295,7 @@ acceptance criteria.
 
 ### Unified dataset (Persona8B)
 
-Directory: [`../persona/post_process/unified_dataset/`](../persona/post_process/unified_dataset/)
+Directory: [`../../persona/post_process/unified_dataset/`](../../persona/post_process/unified_dataset/)
 
 Materializes the post-filter, post-dedup corpus as a physical Parquet dataset —
 every retained persona is written out, so downstream reads need neither the raw
@@ -320,7 +320,7 @@ was validated against the unified Arrow schema before upload.
 
 ### 1M coreset
 
-Directory: [`../persona/post_process/coreset_1m/`](../persona/post_process/coreset_1m/)
+Directory: [`../../persona/post_process/coreset_1m/`](../../persona/post_process/coreset_1m/)
 
 Builds the public **MatrAIx Persona 1M** — a deterministic, quality-filtered,
 deduplicated 1,000,000-row coreset (600,000 human-grounded / 400,000 synthetic).
@@ -366,12 +366,12 @@ known/missing counts, clipped residual mass, and synthetic candidate provenance.
 The published Parquet uses the same packed representation as the unified dataset
 (645-byte `attributes`, `null_bitmap`, sparse overrides/descriptions/grounding);
 ten 100K-row Zstandard shards with a `manifest.json` of exact counts, byte sizes,
-and SHA-256 hashes. See [Persona → Public Coreset](persona.md#public-coreset-matraix-persona-1m)
+and SHA-256 hashes. See [Persona → Public Coreset](README.md#public-coreset-matraix-persona-1m)
 for setup, download, and Playground usage.
 
 ### Dataset statistics
 
-Directory: [`../persona/post_process/dataset_statistics/`](../persona/post_process/dataset_statistics/)
+Directory: [`../../persona/post_process/dataset_statistics/`](../../persona/post_process/dataset_statistics/)
 
 Profiles the six persona products once and caches compact aggregates for fast
 paper analysis and plotting. `profile_datasets.py` is the streaming profiler

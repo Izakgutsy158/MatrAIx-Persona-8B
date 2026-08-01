@@ -35,29 +35,22 @@ markdown_extensions:
   - tables
 
 nav:
-  - Home: index.md
-  - Getting started: getting-started.md
-  - Configuration: configuration.md
+  - Home: README.md
+  - Start here:
+      - Quickstart: quickstart.md
+      - Configuration: configuration.md
   - Persona:
-      - Overview: persona.md
-      - Pipeline internals: persona-pipeline.md
+      - Overview: persona/README.md
+      - Pipeline: persona/pipeline.md
+      - Validation: persona/validation.md
   - Application:
-      - Overview: application.md
-      - Validation: validation.md
-  - Environment: environment.md
+      - Overview: application/README.md
+      - Task guide: application/task-guide.md
+      - Playground API: application/playground-api.md
+  - Environment:
+      - Overview: environment/README.md
+      - Agents: environment/agents.md
+      - Web interaction: environment/web-interaction.md
+      - Runtime: environment/runtime.md
+      - Large-scale runs: environment/large-scale-runs.md
   - Packages: packages.md
-  - Guides:
-      - Quickstart: guides/quickstart.md
-      - Choosing an agent: guides/choosing-an-agent.md
-      - Web interaction modes: guides/web-interaction.md
-      - Large-scale runs: guides/large-scale-runs.md
-      - Task authoring: guides/task-guide.md
-      - REST API: guides/rest-api.md
-      - Runtime runbook: guides/unified-runtime.md
-  - Task specification:
-      - Authoring bundle: task-spec/authoring-bundle.md
-      - Reporting and evaluation: task-spec/reporting-and-evaluation.md
-      - Shared core metrics: task-spec/shared-core-metrics.md
-      - Structured output: task-spec/structured-output-quick-reference.md
-      - Chatbot eval artifacts: task-spec/eval_artifacts.md
-      - Runtime boundary: task-spec/runtime-boundary.md
