@@ -21,7 +21,9 @@
   <a href="https://www.youtube.com/watch?v=cNFkz9Wo1y4&t=15s">
     <img src="https://img.youtube.com/vi/cNFkz9Wo1y4/maxresdefault.jpg" alt="Watch the MatrAIx demo on YouTube" width="900">
   </a>
-  <p><em>▶ Watch the MatrAIx demo on YouTube</em></p>
+  <p>
+    <a href="https://www.youtube.com/watch?v=cNFkz9Wo1y4&t=15s"><img alt="Watch the MatrAIx demo on YouTube" src="https://img.shields.io/badge/%E2%96%B6%20Watch%20the%20demo-on%20YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"></a>
+  </p>
 </div>
 
 ---
